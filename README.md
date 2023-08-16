@@ -1,11 +1,11 @@
-Template Data Repo
+Horus Heresy: Legions Imperialis
 ==================
 
-[![Latest release](https://img.shields.io/github/release/BSData/TemplateDataRepo.svg?style=flat-square)](https://github.com/BSData/TemplateDataRepo/releases/latest)
-[![Commits (since latest release)](https://img.shields.io/github/commits-since/BSData/TemplateDataRepo/latest.svg?style=flat-square)](https://github.com/BSData/TemplateDataRepo/releases)
-[![Open bugs](https://img.shields.io/github/issues/BSData/TemplateDataRepo/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/TemplateDataRepo/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
-[![Contributors](https://img.shields.io/github/contributors/BSData/TemplateDataRepo.svg?style=flat-square)](https://github.com/BSData/TemplateDataRepo/graphs/contributors)
-[![Commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/TemplateDataRepo.svg?style=flat-square)](https://github.com/BSData/TemplateDataRepo/pulse/monthly)
+[![Latest release](https://img.shields.io/github/release/BSData/Horus-Heresy-Legions-Imperialis.svg?style=flat-square)](https://github.com/BSData/Horus-Heresy-Legions-Imperialis/releases/latest)
+[![Commits (since latest release)](https://img.shields.io/github/commits-since/BSData/Horus-Heresy-Legions-Imperialis/latest.svg?style=flat-square)](https://github.com/BSData/Horus-Heresy-Legions-Imperialis/releases)
+[![Open bugs](https://img.shields.io/github/issues/BSData/Horus-Heresy-Legions-Imperialis/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/Horus-Heresy-Legions-Imperialis/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+[![Contributors](https://img.shields.io/github/contributors/BSData/Horus-Heresy-Legions-Imperialis.svg?style=flat-square)](https://github.com/BSData/Horus-Heresy-Legions-Imperialis/graphs/contributors)
+[![Commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/Horus-Heresy-Legions-Imperialis.svg?style=flat-square)](https://github.com/BSData/Horus-Heresy-Legions-Imperialis/pulse/monthly)
 
 [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://www.bsdata.net/discord)
 
@@ -31,4 +31,4 @@ Great, thank you! Please [Report a bug][bug report] - you can also suggest enhan
 * [BattleScribe app homepage](https://www.battlescribe.net/)
 
 [BSData.net]: https://www.bsdata.net/
-[bug report]: https://github.com/BSData/TemplateDataRepo/issues/new/choose
+[bug report]: https://github.com/BSData/Horus-Heresy-Legions-Imperialis/issues/new/choose
