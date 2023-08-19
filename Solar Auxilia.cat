@@ -1,2 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <publications>
+    <publication id="5823-85fd-1314-b472" name="Legions Imperialis Rulebook" shortName="LI" publisher="" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
+  </publications>
+  <forceEntries>
+    <forceEntry id="ce8c-264f-56b4-47bf" name="Solar Auxilia Army" hidden="false">
+      <categoryLinks>
+        <categoryLink id="c7ae-bbfa-c2a7-2f36" name="Allegiance" hidden="false" targetId="15d9-8b7c-0b8e-3632" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7e3-a701-6e7f-d400" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c906-588e-900d-1969" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="191d-8da3-737a-a8f6" name="Formation" hidden="false" targetId="4f9-973a-d47c-dd6f" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <entryLinks>
+    <entryLink id="dfac-20e9-69f2-2d38" name="Traitor" hidden="false" collective="false" import="false" targetId="a998-72f0-8675-4375" type="selectionEntry"/>
+    <entryLink id="26d3-3627-57e6-508d" name="Loyalist" hidden="false" collective="false" import="false" targetId="3977-f94b-6bb8-eaa0" type="selectionEntry"/>
+  </entryLinks>
+</catalogue>
