@@ -54,6 +54,7 @@
     <categoryEntry id="98f1-ce9c-c2b2-cea5" name="Artillery" hidden="false"/>
     <categoryEntry id="2879-da90-6a37-c897" name="Air Support" hidden="false"/>
     <categoryEntry id="b1cc-138-d83e-2228" name="Compulsory" hidden="false"/>
+    <categoryEntry id="15d9-8b7c-0b8e-3632" name="Allegiance" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="default-force" name="Army" publicationId="c1b8-2180-635c-14cd" hidden="false">
@@ -70,6 +71,18 @@
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="3977-f94b-6bb8-eaa0" name="Loyalist" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="b079-8337-008b-eb10" name="New CategoryLink" hidden="false" targetId="15d9-8b7c-0b8e-3632" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="a998-72f0-8675-4375" name="Traitor" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="95de-f1d6-1b76-5f52" name="New CategoryLink" hidden="false" targetId="15d9-8b7c-0b8e-3632" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedRules>
     <rule id="e368-00fb-7a9b-9eb0" name="Assault" publicationId="c1b8-2180-635c-14cd" hidden="false"/>
     <rule id="c731-70f4-ffcd-4ff7" name="Light AT" publicationId="c1b8-2180-635c-14cd" hidden="false"/>
