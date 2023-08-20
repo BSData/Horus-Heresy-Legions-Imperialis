@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus-Heresy-Legions-Imperialis" revision="2" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus-Heresy-Legions-Imperialis" revision="3" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
   </publications>
@@ -10,11 +10,6 @@
     <profileType id="6c4e-cc0f-8b44-d1ab" name="Detachment">
       <characteristicTypes>
         <characteristicType id="6367-21ac-f590-479a" name="Name"/>
-        <characteristicType id="77ae-ddcc-f55a-7441" name="Move"/>
-        <characteristicType id="ddb1-4f55-6b17-7bc8" name="Sv"/>
-        <characteristicType id="b9d2-6ffb-17a1-757f" name="CAF"/>
-        <characteristicType id="8485-4ee2-6feb-d93c" name="Morale"/>
-        <characteristicType id="b00f-3f1c-eb63-461a" name="W"/>
         <characteristicType id="32a1-de36-5a73-c17e" name="Size"/>
         <characteristicType id="aa37-cca8-e02d-6de3" name="Unit Type"/>
       </characteristicTypes>
@@ -55,6 +50,7 @@
     <categoryEntry id="2879-da90-6a37-c897" name="Air Support" hidden="false"/>
     <categoryEntry id="b1cc-138-d83e-2228" name="Compulsory" hidden="false"/>
     <categoryEntry id="15d9-8b7c-0b8e-3632" name="Allegiance" hidden="false"/>
+    <categoryEntry id="2acd-5d21-6e5b-88df" name="Battle Tank" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="default-force" name="Army" publicationId="c1b8-2180-635c-14cd" hidden="false">
@@ -76,11 +72,17 @@
       <categoryLinks>
         <categoryLink id="b079-8337-008b-eb10" name="New CategoryLink" hidden="false" targetId="15d9-8b7c-0b8e-3632" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a998-72f0-8675-4375" name="Traitor" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="95de-f1d6-1b76-5f52" name="New CategoryLink" hidden="false" targetId="15d9-8b7c-0b8e-3632" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -105,5 +107,9 @@
     <rule id="4078-b206-6442-bbfa" name="Hover" publicationId="c1b8-2180-635c-14cd" hidden="false"/>
     <rule id="9b11-ba2c-eeaf-2402" name="Jink (x+)" publicationId="c1b8-2180-635c-14cd" hidden="false"/>
     <rule id="c101-1585-cef0-d31b" name="Large Assault Transport (x)" publicationId="c1b8-2180-635c-14cd" hidden="false"/>
+    <rule id="b679-91ec-5801-3b24" name="Rend" publicationId="c1b8-2180-635c-14cd" hidden="false"/>
+    <rule id="df65-0fe8-f006-943c" name="Demolisher" publicationId="c1b8-2180-635c-14cd" hidden="false"/>
+    <rule id="f65f-5c0c-2848-098a" name="Ignores Cover" publicationId="c1b8-2180-635c-14cd" hidden="false"/>
+    <rule id="5b91-3e67-7869-557b" name="Line" publicationId="c1b8-2180-635c-14cd" hidden="false"/>
   </sharedRules>
 </gameSystem>
