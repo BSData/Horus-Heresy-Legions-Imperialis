@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Legion Tactical Detachment" hidden="false" id="366b-bafc-b972-3b3f">
+    <selectionEntry type="unit" import="true" name="Legion Tactical Detachment" hidden="false" id="366b-bafc-b972-3b3f">
       <categoryLinks>
         <categoryLink targetId="68c1-de55-26b1-8ca4" id="fd5-415e-52fe-847d" primary="false" name="Infantry (1)"/>
         <categoryLink targetId="446a-abe3-63c3-5709" id="bdc1-d3e7-e0a6-ca1" primary="true" name="Core"/>
@@ -17,7 +17,7 @@
                     <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="1626-8bf3-2cec-5b79"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Tactical Legionaries" hidden="false" id="7fd0-3645-58c-ea34" collective="true">
+                    <selectionEntry type="model" import="true" name="Tactical Legionaries" hidden="false" id="7fd0-3645-58c-ea34" collective="true">
                       <profiles>
                         <profile name="Tactical Legionaries" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="be99-1943-ce0c-cc57">
                           <characteristics>
@@ -64,7 +64,7 @@
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="50a7-b664-defa-53cf"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Missile Launcher Heavy Support Legionaries" hidden="false" id="1eef-6fcb-3544-bc30" collective="true">
+                    <selectionEntry type="model" import="true" name="Missile Launcher Heavy Support Legionaries" hidden="false" id="1eef-6fcb-3544-bc30" collective="true">
                       <constraints>
                         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2095-819d-aced-f0a"/>
                         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c5d3-ae74-5ab-d41b"/>
@@ -121,7 +121,7 @@
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="be19-a9fa-48bb-a96a"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Plasma Tactical Support Legionaries" hidden="false" id="6933-f3b1-92c8-10a8" collective="true">
+                    <selectionEntry type="model" import="true" name="Plasma Tactical Support Legionaries" hidden="false" id="6933-f3b1-92c8-10a8" collective="true">
                       <constraints>
                         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="50db-b71b-5395-6509"/>
                         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="56b7-a9a5-6f2e-cb7a"/>
@@ -168,7 +168,7 @@
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Legion Terminators" hidden="false" id="8b3b-f57c-b265-2fc9" collective="false">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Legion Terminators" hidden="false" id="ac39-423c-c7fa-c8a1" collective="true">
+                    <selectionEntry type="model" import="true" name="Legion Terminators" hidden="false" id="ac39-423c-c7fa-c8a1" collective="true">
                       <profiles>
                         <profile name="Legion Terminators" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="5c3b-8c9e-1af8-70f9">
                           <characteristics>
@@ -231,7 +231,7 @@
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Assault Marines" hidden="false" id="2c3b-9390-40f2-d959" collective="false">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Assault Marines" hidden="false" id="eef7-e0d4-da0e-785c" collective="true">
+                    <selectionEntry type="model" import="true" name="Assault Marines" hidden="false" id="eef7-e0d4-da0e-785c" collective="true">
                       <profiles>
                         <profile name="Assault Marines" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="c8ac-271a-2172-e485">
                           <characteristics>
@@ -287,6 +287,16 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="c6cd-994b-c042-7d3a"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="c6cd-994b-c042-7d3a">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="6cda-5812-cf52-3fee" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Allegiance" hidden="false" id="67b8-2f03-7b84-3897">
       <selectionEntryGroups>
@@ -317,16 +327,260 @@ If a Formation has a Dedicated Transport, the model types gain the relevant spec
                       </characteristics>
                     </profile>
                   </profiles>
+                  <categoryLinks>
+                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="2e0c-3316-cb95-3e7e" primary="false" name="Loyalist"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Iron Hands" hidden="false" id="668a-9f91-4d43-a152">
+                  <categoryLinks>
+                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="1824-6117-4a1-fba7" primary="false" name="Loyalist"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Inviolate Armour" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="d8ce-d2b4-51a2-1f5b">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Iron Hands models with the Feel No Pain special rule benefit from its effects when they suffer a Wound from a weapon with the Light or Light AT trait, instead of just the Light trait. In addition, any Hits scored against an Iron Hands Vehicle or Super-heavy Vehicle issued with a First Fire Order worsens their AP by 1, to a minimum of 0, e.g., a weapon an AP of -2 would become -1.
+
+The First Fire Order must still be in effect (i.e., it cannot have Overwatched or fired yet this round) for this rule to take effect. This does not affect the AP if Hits are allocated to Void Shields.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="White Scars" hidden="false" id="8535-9e53-34dd-7a85">
+                  <categoryLinks>
+                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="bbb1-df2-8ab6-6bad" primary="false" name="Loyalist"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Born in the Saddle" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="e57-a59f-f1b5-5e6b">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">All White Scars models with the Jink (X) special rule improve their Jink Save (the number shown in brackets) by 1 (i.e., a model with Jink (6+) would become Jink (5+), etc.), to a maximum of 3+.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Space Wolves" hidden="false" id="60b7-f1e-e478-fd7">
+                  <categoryLinks>
+                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="cdab-191c-c8ef-58e0" primary="false" name="Loyalist"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Preternatural Sense" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="c564-502d-1b9d-5cf1">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Enemy Detachments with the Infiltrate special rule cannot be deployed within 16&quot; of a Space Wolves model. In addition, an enemy model with the Outflank special rule may not be placed on the battlefield within 8&quot; of any Space Wolves model when arriving from Reserve, unless it is arriving from its own battlefield edge.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Raven Guard" hidden="false" id="4581-3dd1-3db5-3e7b">
+                  <categoryLinks>
+                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="657b-722e-2599-f98a" primary="false" name="Loyalist"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="By Wing and Talon" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="b9bc-1ebe-dea6-7150">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">All Detachments that contain only Raven Guard Infantry models gain the Infiltrate special rule - if the Formation has Dedicated Transports, it does not gain this rule. All Detachments that contain only Raven Guard Cavalry or Walker models, or Raven Guard Infantry models with Dedicated Transports, gain the Forward Deployment special rule.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Ultramarines" hidden="false" id="3c0b-8c4-c4df-aee7">
+                  <categoryLinks>
+                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="1340-4d18-f3c4-b2b6" primary="false" name="Loyalist"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Interlocking Tactics" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="7de9-9617-2445-12b4">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">An Ultramarines model may re-roll any Hits rolls of a 1 when firing upon an enemy Detachment that has already had one or more Hits scored against this round by an Ultramarines model from the same Formation as the firing model.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Blood Angels" hidden="false" id="df62-7a66-e370-2363">
+                  <categoryLinks>
+                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="a6ec-f59f-fec8-f9c7" primary="false" name="Loyalist"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Encarmine Fury" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="2b33-64fa-1e1-4876">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">All models within a Blood Angels Detachment that win a Combat may move up to 3&quot; after all Withdrawal moves have been completed, so long as the Detachment is not Engaged. Models can move into base contact with enemy models during this move. They may not Embark or Garrison a Structure as part of this move.
+
+If a Detachment Engages an enemy Detachment in this way that is in a Combat but has yet to Fight, the Blood Angels Detachment may Fight again this round. Otherwise, do not resolve the Combat. A Detachment can only move via the Encarmine Fury rule once per round and cannot move if it is still Engaged after the Combat is won.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Imperial Fists" hidden="false" id="2f5d-ede7-da13-150e">
+                  <categoryLinks>
+                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="8a43-4d0d-497-f94d" primary="false" name="Loyalist"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Disciplined Fire" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="cbf3-5eec-b816-f261">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">If an Imperial Fists Infantry Detachment is issued with the First Fire Order, any weapons models within the Detachment have that are listed below gain the Accurate trait until the end of that round:
+
+- Legion bolters
+- Legion combi-bolters
+- Legion bolt pistols
+- Missile launchers
+- Plasma cannon
+- Lascannon
+- Autocannon</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Salamanders" hidden="false" id="6a99-38d6-1bbe-fa11">
+                  <categoryLinks>
+                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="899c-53cb-c34d-a3d7" primary="false" name="Loyalist"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Strength of Will" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="97b5-8546-b0f0-ae13">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">When making a Morale check, a Detachment that contains only Salamanders models rolls two D6 and chooses which results they prefer. In addition, all Salamanders Detachments in the Army gain the Implacable special rule.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                 </selectionEntry>
               </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="0" field="137-162f-f04d-77c0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="437a-7951-c93d-1e14" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="Traitor" hidden="false" id="6891-5754-5a89-68b6">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10cf-b37f-275f-254d"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Emperor&apos;s Children" hidden="false" id="ee36-151c-ea1e-5e0b"/>
+                <selectionEntry type="upgrade" import="true" name="Emperor&apos;s Children" hidden="false" id="ee36-151c-ea1e-5e0b">
+                  <profiles>
+                    <profile name="Exemplars of War" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="a374-9349-8807-61db">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Once per battle, an Army that includes at least one Formation consisting entirely of Emperor&apos;s Children models (ignoring models within an Allied Contingent) may choose to win Initiative instead of rolling. They must declare they are doing this before rolling. If both players have this rule, the player who did not have Initiative last round chooses if they use the rule first - if they do so, no other player can use it this round.
+
+If an Army includes at least one Allied Contingent comprised entirely of Emperor&apos;s Children Detachments then once per battle the controlling player may re-roll the dice roll for Initiative instead. They can only do this if at least one Emperor&apos;s Children Detachment is on the battlefield or in Reserve, if all have been destroyed or left the battlefield due to other special rules, this rule has no effect.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <categoryLinks>
+                    <categoryLink targetId="437a-7951-c93d-1e14" id="2a6a-ea1e-feea-89bb" primary="false" name="Traitor"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Iron Warriors" hidden="false" id="81ae-768e-576c-482b">
+                  <categoryLinks>
+                    <categoryLink targetId="437a-7951-c93d-1e14" id="ba7a-a0c0-1318-506c" primary="false" name="Traitor"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="The Bitter End" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="be1b-43b2-d2f9-f5f8">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">When determining which player controls a neutral Objective marker, Iron Warriors Infantry and Walker models count their Tactical Strength as 1 higher than normal. In addition, when determining who controls an Objective marker in a deployment zone, Iron Warriors Infantry and Walker models count their Tactical Strength as 2 higher than normal if within their own deployment zone.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Word Bearers" hidden="false" id="8d6e-108d-ffa-ef20">
+                  <categoryLinks>
+                    <categoryLink targetId="437a-7951-c93d-1e14" id="8dcc-3240-4d54-38ce" primary="false" name="Traitor"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="True Believers" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="299a-d6a8-f5ba-8b11">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Detachments within a Word Bearers Formation never count as Broken for the purposes of being issued an Order, i.e., they can be issued any Order they normally could instead of just the Advance Order or March Order. In addition, all Word Bearers Detachments ignore the effects of the Dread Aura (X) special rule.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Night Lords" hidden="false" id="dc4a-a6e1-5aa1-9cfe">
+                  <categoryLinks>
+                    <categoryLink targetId="437a-7951-c93d-1e14" id="a893-95-53fa-6cb3" primary="false" name="Traitor"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Seeds of Dissent" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="c7cd-e1e7-db80-eb">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">If a Night Lords model destroys an enemy model with the Commander or the Solar Auxilia HQ (X) special rule, each enemy Detachment within 4&quot; of the destroyed model suffers a number of Hits equal to three times the starting Wounds characteristic of the destroyed model (e.g., a model with a starting Wounds characteristic of 1 would generate 3 Hits).
+
+When making Save rolls against these Hits, models count their Save characteristic as equal to their Morale characteristic and cannot use any additional saves, such as an Invulnerable Save, Cover Save, etc., not can these Hits be allocated to Void Shields. Models that are part of a Detachment that is Broken subtract 2 from the results of these Save rolls.
+
+Knights, Titans and models with a Morale characteristic of &quot;-&quot; are unaffected by this rule.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="World Eaters" hidden="false" id="f681-94fd-82c6-e43">
+                  <categoryLinks>
+                    <categoryLink targetId="437a-7951-c93d-1e14" id="6061-87b2-a3ea-c244" primary="false" name="Traitor"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Incarnate Violence" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="801f-4000-a27f-fdd4">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Whenever they make a Fight Roll, all World Eaters Infantry, Cavalry and Walker models can re-roll a single D6 when making Fight rolls.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Death Guard" hidden="false" id="729d-d920-7614-a2fa">
+                  <categoryLinks>
+                    <categoryLink targetId="437a-7951-c93d-1e14" id="364c-5e72-5ebb-8bbc" primary="false" name="Traitor"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Sons of Barbarus" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="3cee-5291-1802-a421">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Death Guard Detachments do not suffer Hits for moving through Dangerous terrain.
+
+In addition, at the start of the battle, before any Detachments are deployed, a player may pick up to two areas of terrain if their Army contains at least one Death Guard Formation. For the remainder of the battle, these areas count as Dangerous terrain, in addition to any other rules that apply.
+
+Two Structures can be selected in place of a single area of terrain. Each time a model Garrisons or leaves a Structure designated as Dangerous terrain, it counts as having moved 1&quot; through it.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Thousand Sons" hidden="false" id="4222-6316-8181-ddb">
+                  <categoryLinks>
+                    <categoryLink targetId="437a-7951-c93d-1e14" id="5e69-71f9-fa7c-6b20" primary="false" name="Traitor"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Kine Shields" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="bd69-e00-5cc4-40e0">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Thousand Sons models with the Commander special rule gain the Shield Generator (6+) special rule.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Alpha Legion" hidden="false" id="87eb-a9b3-f3c5-a6ca">
+                  <categoryLinks>
+                    <categoryLink targetId="437a-7951-c93d-1e14" id="8217-d250-8bec-e067" primary="false" name="Traitor"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Mutable Tactics" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="4d45-3521-6465-e892">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">For each Formation in an Army made up entirely of Alpha Legion Detachments (ignoring Allied Contingents) the controlling player may select up to 3 Alpha Legion Detachments in the Army to be affected by Mutable Tactics. For each Allied Contingent in an Army made up entirely of Alpha Legion Detachments, the controlling player may select up to 1 Alpha Legion Detachment to be affected by Mutable Tactics. Detachments with the Flyer special rule cannot be chosen.
+
+A Detachment chosen to be affected by Mutable Tactics gains a special rule dependent on the Detachment Type. If a selected Detachment is made up of Infantry, Cavalry, Walker or Vehicle models, all models within it gain either the Infiltrate, Outflank or Forward Deployment special rule - this is chosen by the controlling player and different Detachments can choose different rules. If the selected Detachment is of another type, it gains the Forward Deployment rule.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Sons of Horus" hidden="false" id="11ac-d960-a376-1ef1">
+                  <categoryLinks>
+                    <categoryLink targetId="437a-7951-c93d-1e14" id="cf1-5115-106b-ab65" primary="false" name="Traitor"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Death Dealers" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="f26d-8392-65a6-713a">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">When a Sons of Horus model issued with an Advance Order is firing at a target within 6&quot; of it, it may re-roll Hit rolls of a 1 when firing a weapon with the Light or Light AT trait while the Order is in effect.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
               </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="0" field="10cf-b37f-275f-254d">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="1b68-cce9-e11c-fde7" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -350,24 +604,241 @@ If a Formation has a Dedicated Transport, the model types gain the relevant spec
         <categoryLink name="Configuration" hidden="false" id="234b-b389-7176-97f2" targetId="3779-422e-5fe9-5654" type="category"/>
         <categoryLink name="Core" hidden="false" id="cf79-6af6-26c6-e104" targetId="446a-abe3-63c3-5709">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6471-5f2c-f913-7ff3"/>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="6471-5f2c-f913-7ff3"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9b98-658a-264b-8fd2"/>
           </constraints>
+        </categoryLink>
+        <categoryLink name="HQ" hidden="false" id="d4df-977-657f-ea26" targetId="d950-ad23-9b2-9325" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3440-6cb3-ae72-e9e2"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="b2e6-91f0-605-c5a4" targetId="be19-7658-5258-71d9" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="51a-7709-361a-b686"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="94d4-ad7f-beff-1730"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Bastion" hidden="false" id="7ac1-2279-2ded-5b3e" targetId="2005-60e5-e49d-32f2" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b64f-4bfd-ed0a-5081"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Transport" hidden="false" id="e711-4961-4ee-b2cf" targetId="3751-fb88-3656-b7d1" type="category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="aba4-f0d8-33dc-1182"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Vanguard" hidden="false" id="7463-43e6-41f1-5de4" targetId="8416-456c-a6f-e059" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2ad0-f389-6d5a-95c5"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Light Armour" hidden="false" id="def8-706c-36ba-1408" targetId="3b81-6b3e-4546-ade3" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ced9-b1d3-436f-cf1c"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="ced9-b1d3-436f-cf1c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2879-da90-6a37-c897" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Air Support" hidden="false" id="2e63-c905-ca52-b508" targetId="2879-da90-6a37-c897" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="db51-1a32-cb0d-5b65"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="db51-1a32-cb0d-5b65">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3b81-6b3e-4546-ade3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Battle Tank" hidden="false" id="1d84-f0c7-1c4c-6eea" targetId="4e02-d7ec-4d81-d5fa" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5688-7dd8-703-57fc"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="5688-7dd8-703-57fc">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1f6b-d764-352d-1e74" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="98f1-ce9c-c2b2-cea5" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Heavy Armour" hidden="false" id="8c09-db65-da52-ac67" targetId="1f6b-d764-352d-1e74" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="87f-a868-23c-7485"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="87f-a868-23c-7485">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="4e02-d7ec-4d81-d5fa" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="98f1-ce9c-c2b2-cea5" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Artillery" hidden="false" id="8eff-a25a-518f-ad54" targetId="98f1-ce9c-c2b2-cea5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4cd2-b024-c2df-d18f"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="4cd2-b024-c2df-d18f">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1f6b-d764-352d-1e74" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="4e02-d7ec-4d81-d5fa" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Legion Garrison Force" hidden="false" id="27c3-962c-f101-ec45">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="c1e4-5c7a-fc86-b584" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="HQ" hidden="false" id="88d4-f2ae-bfc1-6a90" targetId="d950-ad23-9b2-9325">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="a948-8379-c0ce-b63e"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="2cd5-a29d-ec0f-7984" targetId="be19-7658-5258-71d9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="2f3b-1672-a198-8fa6"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9830-89cd-8b50-6cb0"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core" hidden="false" id="4b94-eb1e-6997-8546" targetId="446a-abe3-63c3-5709">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="b58f-40a-9506-a90e"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="f149-8c61-8ec0-76be"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Bastion" hidden="false" id="69ef-a450-203c-344c" targetId="2005-60e5-e49d-32f2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="c161-724c-823a-12a7"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="68c7-39b-666b-c946"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Air Support" hidden="false" id="71a5-786f-c68a-8002" targetId="2879-da90-6a37-c897">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1c98-152a-5585-2703"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Artillery" hidden="false" id="fa62-d14b-e73-cff6" targetId="98f1-ce9c-c2b2-cea5">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="f162-9d4e-d68f-f8da"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="f162-9d4e-d68f-f8da">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1f6b-d764-352d-1e74" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Heavy Armour" hidden="false" id="f5dd-830d-1714-8a5d" targetId="1f6b-d764-352d-1e74">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="da67-7d63-5362-5244"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="da67-7d63-5362-5244">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="98f1-ce9c-c2b2-cea5" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Legion Armoured Company" hidden="false" id="2597-c58-f21-eb13">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="48df-504-1c06-1f4f" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="Battle Tank" hidden="false" id="b865-8c28-f04a-d9d7" targetId="4e02-d7ec-4d81-d5fa">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="ca38-fae8-e735-f572"/>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="59d6-f3d6-5a29-d122"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Armour" hidden="false" id="db5f-2b27-8b9e-444a" targetId="1f6b-d764-352d-1e74">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="5b8a-5a8d-ce1-e98e"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="28ec-1b29-cba1-600f"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="28ec-1b29-cba1-600f">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2879-da90-6a37-c897" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Light Armour" hidden="false" id="3aed-b4ac-ab16-4bb" targetId="3b81-6b3e-4546-ade3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5e08-1af6-1bc2-20e"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Air Support" hidden="false" id="e6a4-da2b-dd39-cfcc" targetId="2879-da90-6a37-c897">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5910-e71c-14f0-f4c9"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="5910-e71c-14f0-f4c9">
+              <conditions>
+                <condition type="greaterThan" value="2" field="selections" scope="force" childId="1f6b-d764-352d-1e74" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Legion Aerial Assault" hidden="false" id="dde7-b850-8e13-b7ff">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="3b04-b05d-d15a-b218" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="HQ" hidden="false" id="b426-9e57-ae08-8968" targetId="d950-ad23-9b2-9325">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="2615-aa19-61dd-5c80"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="a03d-c796-7e06-3a" targetId="be19-7658-5258-71d9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="aea7-3efb-ef55-6f13"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2225-d44b-d8c6-b221"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core" hidden="false" id="8533-c5a7-dd89-17ec" targetId="446a-abe3-63c3-5709">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="b7e-f1e8-735f-b9f3"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="5403-47b4-e09-50c5"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Vanguard" hidden="false" id="d669-18d1-c0c1-7812" targetId="8416-456c-a6f-e059">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="72d0-db82-d562-1555"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Air Support" hidden="false" id="a97e-ebb1-801b-e63f" targetId="2879-da90-6a37-c897">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="15f7-7641-6f28-b8ca"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
