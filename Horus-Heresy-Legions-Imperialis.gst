@@ -106,7 +106,6 @@ If a weapon has the Engine Killer (X) trait and the Rend trait, enemy Super-heav
 
 In addition, Hits scored by a weapon with this Trait cannot be allocated to Void Shields, regardless of the weapon&apos;s AP, and thus are automatically discarded if a target has active Void Shields.</description>
     </rule>
-    <rule id="f968-be84-3862-8206" name="Bulky" publicationId="c1b8-2180-635c-14cd" hidden="false"/>
     <rule id="0462-6759-307e-3004" name="Deep Strike" publicationId="c1b8-2180-635c-14cd" hidden="false">
       <description>During deployment, if all models within a Detachment have the Deep Strike special rule, then the Detachment can be placed in Reserve instead of being deployed as normal. Detachments with the Deep Strike special rule in Reserve can only be issued the Advance Order or March Order.
 
