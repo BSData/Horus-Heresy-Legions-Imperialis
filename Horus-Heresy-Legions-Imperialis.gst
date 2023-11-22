@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="3" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="4" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication name="GitHub" hidden="false" id="eab5-2233-3200-3063" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -26,6 +26,11 @@
         <characteristicType id="d0f2-61ea-138a-81af" name="Traits"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Special Rules" hidden="false" id="fe63-c171-b59c-9d89">
+      <characteristicTypes>
+        <characteristicType id="ec59-2e55-c763-6e6a" name="Description"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="4f9-973a-d47c-dd6f" name="Formation" publicationId="c1b8-2180-635c-14cd" hidden="false"/>
@@ -42,6 +47,7 @@
     <categoryEntry id="b1cc-138-d83e-2228" name="Compulsory" hidden="false"/>
     <categoryEntry id="15d9-8b7c-0b8e-3632" name="Allegiance" hidden="false"/>
     <categoryEntry name="Infantry (1)" hidden="false" id="68c1-de55-26b1-8ca4"/>
+    <categoryEntry name="Configuration" hidden="false" id="3779-422e-5fe9-5654"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="4a76-6ee3-196d-e2ef" name="Allied Contingents" hidden="false">
@@ -53,48 +59,6 @@
       </categoryLinks>
     </forceEntry>
   </forceEntries>
-  <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Allegiance" hidden="false" id="e971-2b20-e201-4edd">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="f61a-471c-8e89-8562"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f356-dc5f-bdd5-2815"/>
-      </constraints>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Allegiance" hidden="false" id="aa0a-2dd7-89fb-6dc1">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Loyalist" hidden="false" id="a553-1f0d-c5fc-2848">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Loyalist" hidden="false" id="1c84-9bc2-24b0-37e0">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6179-1964-2718-758"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9acd-fefb-1306-9ff2"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Traitor" hidden="false" id="8e68-cc73-519f-48f3">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Traitor" hidden="false" id="11b3-9937-b822-fe84">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="879f-cdd2-e985-3feb"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb2b-a34-29e2-7191"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24-c979-e3d4-3ee8"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4344-d9f8-5e31-d5f3"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
-  </sharedSelectionEntries>
   <sharedRules>
     <rule id="e368-00fb-7a9b-9eb0" name="Assault" publicationId="c1b8-2180-635c-14cd" hidden="false">
       <description>When firing a weapon with the Assault trait, a model doubles its Dice value if its within a number of inches equal to half the weapon&apos;s Range of at least one model from the target Detachment.</description>
@@ -538,7 +502,4 @@ Hits can only be allocated to Void Shields if they were scored by a weapon with 
 During the End phase, in the Resolve End Phase Effects stage, a model with the Void Shields (X) special rule may attempt to reignite any collapsed Void Shields. The controlling player rolls a number of D6 equal to the difference between a model&apos;s current Void Shield level and its starting Void Shield level. For each 4+ rolled, increase that model&apos;s Void Shield level by 1.</description>
     </rule>
   </sharedRules>
-  <entryLinks>
-    <entryLink import="true" name="Allegiance" hidden="false" type="selectionEntry" id="d30d-238e-b6d4-2828" targetId="e971-2b20-e201-4edd"/>
-  </entryLinks>
 </gameSystem>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Legion Tactical Detachment" hidden="false" id="366b-bafc-b972-3b3f">
       <categoryLinks>
@@ -288,22 +288,87 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Allegiance" hidden="false" id="67b8-2f03-7b84-3897">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Allegiance" hidden="false" id="cc67-4928-2351-90e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7912-125d-e2c2-ea08"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a1c-3081-c608-392a"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Loyalist" hidden="false" id="48-f29d-d8cd-ba2c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="137-162f-f04d-77c0"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Dark Angels" hidden="false" id="a180-461b-72e9-63c4">
+                  <profiles>
+                    <profile name="Formations of the Hexagrammaton" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="db4a-11f9-82b9-aaf6">
+                      <characteristics>
+                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">At the start of the battle, before any Detachment is deployed, determine which Dark Angels Formations contain a total of three or more different Detachment types - Dedicated Transports are ignored for the purposes of this calculation.
+
+Any Formation that meets these requirements gains one of the following benefits, chosen by the controlling player from the list below:
+
+- All Detachments within the Formation that contain only Dark Angels Infantry models gain the Phosphex and Implacable special rules.
+- All Detachments within the Formation that contain only Cavalry models gain the Outflank special rule.
+- All Detachments within the Formation that contain only Vehicle models gain the Nimble special rule.
+
+If a Formation has a Dedicated Transport, the model types gain the relevant special rules but the Transports do not.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Traitor" hidden="false" id="6891-5754-5a89-68b6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10cf-b37f-275f-254d"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Emperor&apos;s Children" hidden="false" id="ee36-151c-ea1e-5e0b"/>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="3779-422e-5fe9-5654" id="e73a-3fb3-3c8c-4417" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="de60-38e1-cf3d-3725"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="adee-6788-14b6-eda0"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Legion Tactical Detachment" hidden="false" type="selectionEntry" id="1e49-fe4-a5c7-5d23" targetId="366b-bafc-b972-3b3f"/>
+    <entryLink import="true" name="Allegiance" hidden="false" type="selectionEntry" id="f8a1-50cc-618a-5f74" targetId="67b8-2f03-7b84-3897"/>
   </entryLinks>
   <forceEntries>
     <forceEntry name="Legion Demi-Company" hidden="false" id="6cda-5812-cf52-3fee">
       <categoryLinks>
-        <categoryLink name="Core" hidden="false" id="538b-79a8-369f-37a0" targetId="446a-abe3-63c3-5709" type="category">
+        <categoryLink name="Configuration" hidden="false" id="234b-b389-7176-97f2" targetId="3779-422e-5fe9-5654" type="category"/>
+        <categoryLink name="Core" hidden="false" id="cf79-6af6-26c6-e104" targetId="446a-abe3-63c3-5709">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4380-cbb2-f267-57d0"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6471-5f2c-f913-7ff3"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Legion Garrison Force" hidden="false" id="27c3-962c-f101-ec45"/>
-    <forceEntry name="Legion Armoured Company" hidden="false" id="2597-c58-f21-eb13"/>
-    <forceEntry name="Legion Aerial Assault" hidden="false" id="dde7-b850-8e13-b7ff"/>
+    <forceEntry name="Legion Garrison Force" hidden="false" id="27c3-962c-f101-ec45">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="c1e4-5c7a-fc86-b584" targetId="3779-422e-5fe9-5654"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Legion Armoured Company" hidden="false" id="2597-c58-f21-eb13">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="48df-504-1c06-1f4f" targetId="3779-422e-5fe9-5654"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Legion Aerial Assault" hidden="false" id="dde7-b850-8e13-b7ff">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="3b04-b05d-d15a-b218" targetId="3779-422e-5fe9-5654"/>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
 </catalogue>
