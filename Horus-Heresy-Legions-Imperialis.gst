@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="4" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="5" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication name="GitHub" hidden="false" id="eab5-2233-3200-3063" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -48,6 +48,8 @@
     <categoryEntry id="15d9-8b7c-0b8e-3632" name="Allegiance" hidden="false"/>
     <categoryEntry name="Infantry (1)" hidden="false" id="68c1-de55-26b1-8ca4"/>
     <categoryEntry name="Configuration" hidden="false" id="3779-422e-5fe9-5654"/>
+    <categoryEntry name="Loyalist" hidden="false" id="1b68-cce9-e11c-fde7"/>
+    <categoryEntry name="Traitor" hidden="false" id="437a-7951-c93d-1e14"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="4a76-6ee3-196d-e2ef" name="Allied Contingents" hidden="false">
