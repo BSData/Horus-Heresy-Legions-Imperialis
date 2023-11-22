@@ -52,8 +52,6 @@
     <categoryEntry id="437a-7951-c93d-1e14" name="Traitor" hidden="false"/>
     <categoryEntry name="Battle Tank" hidden="false" id="4e02-d7ec-4d81-d5fa"/>
     <categoryEntry name="Vehicle (2)" hidden="false" id="49b3-dae7-33f8-f8e"/>
-    <categoryEntry name="Titan (5)" hidden="false" id="5025-b0eb-9790-8d5d"/>
-    <categoryEntry name="Knight (4)" hidden="false" id="a2ec-87f6-846f-73b5"/>
     <categoryEntry name="Walker (1)" hidden="false" id="1a2a-6f7d-dff8-8be1"/>
     <categoryEntry name="Super-heavy Vehicle (3)" hidden="false" id="be9f-b973-245e-49bf"/>
   </categoryEntries>
