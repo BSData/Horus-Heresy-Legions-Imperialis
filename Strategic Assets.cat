@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="4af6-b876-ccef-e4ad" name="Strategic Assets" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="Titan" hidden="false" id="7607-c99-6d05-3469"/>
+  </categoryEntries>
+</catalogue>
