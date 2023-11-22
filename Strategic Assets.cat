@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="7607-c99-6d05-3469" name="Titan" hidden="false"/>
     <categoryEntry id="1c89-9a08-75f1-df93" name="Knight" hidden="false"/>
@@ -406,6 +406,9 @@
                   </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <costs>
+                <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -462,6 +465,9 @@
             <infoLink id="e6f7-5e2f-83b6-da85" name="Rapid Fire" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
             <infoLink id="c610-0551-6539-cb0a" name="Shieldbane" hidden="false" targetId="8208-8da0-3822-65da" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -895,6 +901,9 @@
             <infoLink id="8167-24c6-a263-e15b" name="Point Defence" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
             <infoLink id="68fb-138d-12a3-e253" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="2f76-ae74-b77c-0163" name="Anvillus Pattern Defence Batteries" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -916,6 +925,9 @@
             <infoLink id="89fa-2a8e-8fa7-6764" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
             <infoLink id="510c-eaa6-522e-7b1f" name="Point Defence" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -1049,6 +1061,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="b403-37ff-44fc-c800" name="Hekaton Siege Claw" hidden="false" collective="true" import="true" type="upgrade">
                   <profiles>
@@ -1062,6 +1077,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="dd84-e4cd-7d1e-61ac" name="Graviton Gun" hidden="false" collective="true" import="true" type="upgrade">
                   <profiles>
@@ -1075,6 +1093,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -1113,6 +1134,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="40f7-4c42-6d68-c62d" name="Phased Plasma-Fusil" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -1130,6 +1154,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="5dcd-94ef-23ff-14e4" name="Lightning Cannon" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -1147,6 +1174,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -1522,6 +1552,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="6d3e-fca3-dc9d-232e" name="Acheron Pattern Flame Cannon" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -1539,6 +1572,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="8f30-3694-b7d7-668a" name="Twin-linked Heavy Bolters" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -1556,6 +1592,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -1604,6 +1643,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="46e5-9adf-3aa4-c344" name="Castigator Pattern Bolt Cannon" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -1621,6 +1663,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -1671,6 +1716,9 @@
                       </modifiers>
                     </infoLink>
                   </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="5401-c3c4-3cee-e9f5" name="Shock Lance" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -1688,6 +1736,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -1737,6 +1788,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="bb87-e41a-ee5c-9951" name="Atrapos Lascutter" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -1754,6 +1808,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -1868,6 +1925,9 @@
                     </infoLink>
                     <infoLink id="ad97-1682-ed0e-883d" name="Deflagrate" hidden="false" targetId="711e-2910-b797-71a8" type="rule"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="3bad-3ad4-b37d-6438" name="Karacnos Mortar Battery" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -1894,6 +1954,9 @@
                     <infoLink id="1aec-3d52-623a-7747" name="Barrage" hidden="false" targetId="862d-b036-2018-dbaf" type="rule"/>
                     <infoLink id="34dd-a903-4e0b-7f0e" name="Ignores Cover" hidden="false" targetId="bff7-b88a-2145-2c63" type="rule"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -2055,6 +2118,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5d4b-8a93-a527-605d" name="Warlord Sinister Battle Titan" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2107,6 +2173,9 @@
             <infoLink id="f9d6-10dd-7d9a-0e64" name="Saturation Fire" hidden="false" targetId="a2b9-3b30-b56f-650a" type="rule"/>
             <infoLink id="7e5e-62c8-34d3-9b6c" name="Psi" hidden="false" targetId="5660-5016-824b-2555" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="9a28-5d4e-a0eb-730e" name="Antipathic Tempest" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2134,6 +2203,9 @@
             <infoLink id="42d5-8301-d461-c9f6" name="Psi" hidden="false" targetId="5660-5016-824b-2555" type="rule"/>
             <infoLink id="a7fb-36c7-3d8d-2d38" name="Quake" hidden="false" targetId="1090-d918-d47e-1317" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2214,6 +2286,9 @@
               </modifiers>
             </infoLink>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="0f8d-2f15-ca8f-1875" name="Suzerain Class Plasma Destructors" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2253,6 +2328,9 @@
             </infoLink>
             <infoLink id="a915-1b0b-9a17-0781" name="Demolisher" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2324,6 +2402,9 @@
             </infoLink>
             <infoLink id="800f-7f24-b4b0-ae3a" name="Reach" hidden="false" targetId="cfe1-b50e-d70d-6959" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -2353,6 +2434,9 @@
                 </infoLink>
                 <infoLink id="458f-aced-7148-9da6" name="Rend" hidden="false" targetId="6d1b-9fcd-3541-f46e" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="a2d0-c5d7-a1a0-3c4f" name="Kirus Grav Imploder" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -2817,6 +2901,9 @@
         <infoLink id="c2eb-b8ac-9a61-e645" name="Point Defence" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
         <infoLink id="3682-6623-9302-b7d6" name="Light" hidden="false" targetId="4f6f-3184-9172-ef3f" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0220-6a14-dfd9-0fcd" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2838,6 +2925,9 @@
         </infoLink>
         <infoLink id="8f3f-1b42-61c2-56f7" name="Anti-tank" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6874-b51d-d7e7-223c" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2859,6 +2949,9 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <costs>
+        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e745-1397-9192-3b8e" name="Rocket Pods" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2880,6 +2973,9 @@
         </infoLink>
         <infoLink id="0764-4b9e-1e08-af85" name="Barrage" hidden="false" targetId="862d-b036-2018-dbaf" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="02fd-e37f-0301-063c" name="Reaper Chainsword" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2896,6 +2992,9 @@
       <infoLinks>
         <infoLink id="a5d9-3a46-ad8d-72e4" name="Rend" hidden="false" targetId="6d1b-9fcd-3541-f46e" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="db2f-eae1-02ed-b5d9" name="Questoris Avenger Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2918,6 +3017,9 @@
         <infoLink id="ed0d-a3a7-5c87-b495" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
         <infoLink id="6704-536f-57c4-1d96" name="Rapid Fire" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e5fe-740d-744e-12c7" name="Rapid-fire Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2939,6 +3041,9 @@
         </infoLink>
         <infoLink id="51a8-f969-93b7-d5cc" name="Rapid Fire" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7308-2c6e-0b84-3103" name="Ardex-defensor Mauler Bolt Cannon Turrets" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2960,6 +3065,9 @@
         <infoLink id="d178-7752-0849-a413" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
         <infoLink id="c395-8051-753d-1746" name="Point Defence" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2b28-180a-8846-dfff" name="Ardex-defensor Lascannon turrets" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2986,6 +3094,9 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <costs>
+        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b0e2-6bb7-191f-76fb" name="Arioch Power Claw" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -3512,6 +3623,9 @@
             <infoLink id="8476-c6c3-42b0-a36c" name="Point Defence" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
             <infoLink id="cd17-a19e-ad57-cd3a" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="2b46-0139-158d-dfa2" name="Ardes-defensor Bombard Turrets" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -3530,6 +3644,9 @@
             <infoLink id="887f-9aaf-95c3-cbaf" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
             <infoLink id="94a9-8bc9-dd7f-91e4" name="Ignores Cover" hidden="false" targetId="bff7-b88a-2145-2c63" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
