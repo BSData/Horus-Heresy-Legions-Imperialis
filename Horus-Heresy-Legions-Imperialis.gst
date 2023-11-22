@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="6" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="7" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="eab5-2233-3200-3063" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
   </publications>
   <costTypes>
-    <costType id="ee95-a20e-f9ff-e2c2" name="Points" defaultCostLimit="3000.0" hidden="false"/>
+    <costType id="ee95-a20e-f9ff-e2c2" name="Points" defaultCostLimit="3000" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="6c4e-cc0f-8b44-d1ab" name="Detachment">
@@ -50,11 +50,17 @@
     <categoryEntry id="3779-422e-5fe9-5654" name="Configuration" hidden="false"/>
     <categoryEntry id="1b68-cce9-e11c-fde7" name="Loyalist" hidden="false"/>
     <categoryEntry id="437a-7951-c93d-1e14" name="Traitor" hidden="false"/>
+    <categoryEntry name="Battle Tank" hidden="false" id="4e02-d7ec-4d81-d5fa"/>
+    <categoryEntry name="Vehicle (2)" hidden="false" id="49b3-dae7-33f8-f8e"/>
+    <categoryEntry name="Titan (5)" hidden="false" id="5025-b0eb-9790-8d5d"/>
+    <categoryEntry name="Knight (4)" hidden="false" id="a2ec-87f6-846f-73b5"/>
+    <categoryEntry name="Walker (1)" hidden="false" id="1a2a-6f7d-dff8-8be1"/>
+    <categoryEntry name="Super-heavy Vehicle (3)" hidden="false" id="be9f-b973-245e-49bf"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="4a76-6ee3-196d-e2ef" name="Allied Contingents" hidden="false">
       <constraints>
-        <constraint field="ee95-a20e-f9ff-e2c2" scope="roster" value="30.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="maxPercentage" type="max"/>
+        <constraint field="ee95-a20e-f9ff-e2c2" scope="roster" value="30" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="maxPercentage" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="520b-0c52-1e14-9d54" name="Formation" publicationId="c1b8-2180-635c-14cd" hidden="false" targetId="4f9-973a-d47c-dd6f" primary="false"/>
