@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Legion Tactical Detachment" hidden="false" id="366b-bafc-b972-3b3f">
       <categoryLinks>
@@ -69,10 +69,17 @@
                   <categoryLinks>
                     <categoryLink targetId="68c1-de55-26b1-8ca4" id="9655-e604-80cd-21b2" primary="false" name="Infantry (1)"/>
                   </categoryLinks>
+                  <modifiers>
+                    <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="366b-bafc-b972-3b3f" childId="d24f-60c9-d6a8-4ec9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
+                <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2 Plasma Tactical Support Legionaries" hidden="false" id="b8bd-cfc8-6628-74f0">
@@ -121,10 +128,17 @@
                   <categoryLinks>
                     <categoryLink targetId="68c1-de55-26b1-8ca4" id="d783-7b-f81-9de7" primary="false" name="Infantry (1)"/>
                   </categoryLinks>
+                  <modifiers>
+                    <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="366b-bafc-b972-3b3f" childId="d24f-60c9-d6a8-4ec9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
+                <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2 Tactical Legionaries" hidden="false" id="21ae-fc91-b07-2936">
@@ -175,10 +189,17 @@
                   <categoryLinks>
                     <categoryLink targetId="68c1-de55-26b1-8ca4" id="2af9-d1ae-6ba0-f09b" primary="false" name="Infantry (1)"/>
                   </categoryLinks>
+                  <modifiers>
+                    <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="366b-bafc-b972-3b3f" childId="d24f-60c9-d6a8-4ec9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="12"/>
+                <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="12"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2 Legion Terminators" hidden="false" id="83dd-7cfa-9f44-98da" collective="false">
@@ -226,6 +247,23 @@
                   <categoryLinks>
                     <categoryLink targetId="68c1-de55-26b1-8ca4" id="df62-6730-ba78-5286" primary="false" name="Infantry (1)"/>
                   </categoryLinks>
+                  <modifiers>
+                    <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="366b-bafc-b972-3b3f" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="366b-bafc-b972-3b3f" childId="d24f-60c9-d6a8-4ec9" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="366b-bafc-b972-3b3f" childId="d24f-60c9-d6a8-4ec9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -243,7 +281,7 @@
                 </infoLink>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
+                <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2 Assault Marines" hidden="false" id="8c11-2246-ce5d-93c1" collective="false">
@@ -289,6 +327,23 @@
                   <categoryLinks>
                     <categoryLink targetId="68c1-de55-26b1-8ca4" id="5c4b-1c92-7d60-922" primary="false" name="Infantry (1)"/>
                   </categoryLinks>
+                  <modifiers>
+                    <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="366b-bafc-b972-3b3f" childId="d24f-60c9-d6a8-4ec9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="366b-bafc-b972-3b3f" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="366b-bafc-b972-3b3f" childId="d24f-60c9-d6a8-4ec9" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -299,136 +354,36 @@
                 <infoLink name="Jump Packs" hidden="false" type="rule" id="faa1-70d8-ff7c-1d82" targetId="130c-4ba7-dab7-34b3"/>
               </infoLinks>
               <costs>
-                <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="12"/>
+                <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="12"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Dedicated Transports" hidden="false" id="8d0d-92e7-1455-be4e">
+        <selectionEntryGroup name="Dedicated Transports" hidden="false" id="530-9fbf-4bae-81ac">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Air Support" hidden="false" id="5426-9927-6522-8c1d">
+            <selectionEntryGroup name="Air Support" hidden="false" id="cbd2-929e-aec-d52">
               <entryLinks>
-                <entryLink import="true" name="Thunderhawk Gunship" hidden="false" type="selectionEntry" id="6144-781c-ea6a-1650" targetId="2e30-7078-712d-4c9a">
+                <entryLink import="true" name="Thunderhawk Gunship" hidden="false" type="selectionEntry" id="c7ff-c9a0-9b6d-f28" targetId="2e30-7078-712d-4c9a">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1521-4ed0-45b0-1436"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5340-d1cc-17a7-ba91"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2b53-a7cf-d1ed-edea"/>
                   </constraints>
                   <costs>
-                    <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
                   </costs>
-                  <modifiers>
-                    <modifier type="increment" value="2" field="5340-d1cc-17a7-ba91">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="5" field="selections" scope="parent" childId="cf1e-d92d-90a0-297a" shared="true" includeChildSelections="true"/>
-                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="2e8d-9082-ab37-c4cd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="increment" value="1" field="1521-4ed0-45b0-1436">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="5" field="selections" scope="parent" childId="cf1e-d92d-90a0-297a" shared="true" includeChildSelections="true"/>
-                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="2e8d-9082-ab37-c4cd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="increment" value="1" field="5340-d1cc-17a7-ba91">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="5" field="selections" scope="parent" childId="cf1e-d92d-90a0-297a" shared="true" includeChildSelections="true"/>
-                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="2e8d-9082-ab37-c4cd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Storm Eagle" hidden="false" type="selectionEntry" id="8f39-7eee-7731-f8cb" targetId="2e8d-9082-ab37-c4cd">
+                <entryLink import="true" name="Storm Eagle" hidden="false" type="selectionEntry" id="35cb-2d62-b84d-cbc7" targetId="2e8d-9082-ab37-c4cd">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dff-69e6-d612-42bc"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2253-645b-4ccf-d7e6"/>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4cd9-c656-cf6-1fb0"/>
                   </constraints>
                   <costs>
-                    <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-5"/>
                   </costs>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="2253-645b-4ccf-d7e6">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="5" field="selections" scope="parent" childId="cf1e-d92d-90a0-297a" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="increment" value="2" field="2253-645b-4ccf-d7e6">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e8d-9082-ab37-c4cd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="3" field="selections" scope="parent" childId="cf1e-d92d-90a0-297a" shared="true" includeChildSelections="true"/>
-                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="increment" value="1" field="2253-645b-4ccf-d7e6">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e8d-9082-ab37-c4cd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="6" field="selections" scope="parent" childId="cf1e-d92d-90a0-297a" shared="true" includeChildSelections="true"/>
-                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="increment" value="1" field="dff-69e6-d612-42bc">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e8d-9082-ab37-c4cd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="3" field="selections" scope="parent" childId="cf1e-d92d-90a0-297a" shared="true" includeChildSelections="true"/>
-                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="increment" value="1" field="dff-69e6-d612-42bc">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e8d-9082-ab37-c4cd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="6" field="selections" scope="parent" childId="cf1e-d92d-90a0-297a" shared="true" includeChildSelections="true"/>
-                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="decrement" value="1" field="dff-69e6-d612-42bc">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="5" field="selections" scope="parent" childId="cf1e-d92d-90a0-297a" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3e9b-5e5d-6607-26eb"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5825-7099-9cae-bb89"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
@@ -436,34 +391,63 @@
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="d24f-60c9-d6a8-4ec9" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Rhinos" hidden="false" id="3271-e99-dce-9008">
+            <selectionEntryGroup name="Rhinos" hidden="false" id="3ef8-6580-fe66-70c6">
               <entryLinks>
-                <entryLink import="true" name="Rhino w/ havoc launcher" hidden="false" type="selectionEntry" id="963f-1ac1-f0de-cb36" targetId="b749-9cc7-ae95-13fa">
+                <entryLink import="true" name="Rhino w/ havoc launcher" hidden="false" type="selectionEntry" id="3e2a-e5b0-43e1-67a1" targetId="b749-9cc7-ae95-13fa">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c23-a8a7-7936-38f0"/>
+                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="46f3-e533-1274-ca76"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
                 </entryLink>
-                <entryLink import="true" name="Rhino w/ multi-melta" hidden="false" type="selectionEntry" id="b5bc-c48e-e220-c9f" targetId="9be6-d4b8-2b8a-18be">
+                <entryLink import="true" name="Rhino w/ multi-melta" hidden="false" type="selectionEntry" id="b681-aed7-677b-a919" targetId="9be6-d4b8-2b8a-18be">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cb5-338b-988e-4650"/>
+                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="af52-e67b-6c82-62b2"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
                 </entryLink>
-                <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" type="selectionEntry" id="1859-7c3-c691-747d" targetId="3279-c298-e2dc-8b55">
+                <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" type="selectionEntry" id="ea7a-5844-b283-352b" targetId="3279-c298-e2dc-8b55">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c90-73b1-1de6-b571"/>
+                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e530-d473-d6bd-a8f7"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3c0-c12b-ba79-c4f6"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="4ae0-d7b2-52ce-8d05"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
                   </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="d24f-60c9-d6a8-4ec9" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="4ae0-d7b2-52ce-8d05">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="366b-bafc-b972-3b3f" childId="8c11-2246-ce5d-93c1" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="366b-bafc-b972-3b3f" childId="83dd-7cfa-9f44-98da" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -481,9 +465,9 @@
             </modifier>
           </modifiers>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="9747-6b9e-725d-cfab">
+            <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="d24f-60c9-d6a8-4ec9">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b3e-ce34-7eeb-c00e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93dc-4dfa-e127-ce1a"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
@@ -491,6 +475,8 @@
       </selectionEntryGroups>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="c6cd-994b-c042-7d3a"/>
+        <constraint type="min" value="-4" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="a4bb-17fe-517f-f292" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="8b1a-7392-e0a-5384" includeChildSelections="false"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="2" field="c6cd-994b-c042-7d3a">
@@ -498,9 +484,30 @@
             <condition type="atLeast" value="1" field="forces" scope="roster" childId="6cda-5812-cf52-3fee" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="-7" field="a4bb-17fe-517f-f292">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="2e8d-9082-ab37-c4cd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="-1" field="a4bb-17fe-517f-f292">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b749-9cc7-ae95-13fa" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9be6-d4b8-2b8a-18be" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3279-c298-e2dc-8b55" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <costs>
-        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="11"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="11"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Allegiance" hidden="false" id="67b8-2f03-7b84-3897">
@@ -858,13 +865,20 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
           <categoryLinks>
             <categoryLink targetId="68c1-de55-26b1-8ca4" id="d16c-aca3-77-719e" primary="false" name="Infantry (1)"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="878a-155e-4b7d-ac93" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="d950-ad23-9b2-9325" id="79d5-5762-e488-7ea" primary="true" name="HQ"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="25"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="25"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Dedicated Transports" hidden="false" id="1bd2-d011-94a3-125">
@@ -876,7 +890,8 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62c1-3785-6812-b2e3"/>
                   </constraints>
                   <costs>
-                    <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Storm Eagle" hidden="false" type="selectionEntry" id="b36d-4150-119d-ea66" targetId="2e8d-9082-ab37-c4cd">
@@ -884,7 +899,8 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fc3-84e7-32d1-791f"/>
                   </constraints>
                   <costs>
-                    <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-5"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -897,6 +913,11 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="878a-155e-4b7d-ac93" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="Rhinos" hidden="false" id="5e28-87fb-57a-ef0e">
@@ -905,16 +926,25 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="829e-1cc9-6877-db05"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
                 </entryLink>
                 <entryLink import="true" name="Rhino w/ multi-melta" hidden="false" type="selectionEntry" id="f3a9-8fe4-16c2-47ec" targetId="9be6-d4b8-2b8a-18be">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f39-3bbd-ef2e-2c89"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
                 </entryLink>
                 <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" type="selectionEntry" id="936f-faeb-cdb6-c2fd" targetId="3279-c298-e2dc-8b55">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7b5-d9c7-a7f3-3c5"/>
                   </constraints>
+                  <costs>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -924,6 +954,11 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="878a-155e-4b7d-ac93" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -941,8 +976,18 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
               </conditionGroups>
             </modifier>
           </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="878a-155e-4b7d-ac93">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a43c-7bbe-e478-495b"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="a655-7ccc-ecfe-2f08" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Rhino Detachment" hidden="false" id="7f79-6682-8817-213d">
       <categoryLinks>
@@ -1022,6 +1067,13 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
               <categoryLinks>
                 <categoryLink targetId="68c1-de55-26b1-8ca4" id="829e-dc27-90c3-2e9d" primary="false" name="Infantry (1)"/>
               </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="8d5-3359-de64-ed2e" childId="7432-9db4-6e54-35bb" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1029,13 +1081,150 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="3883-92d6-2d6e-d504"/>
           </constraints>
           <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
+            <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
       </costs>
+      <constraints>
+        <constraint type="min" value="-5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="ca23-5e4d-7ab5-29f4" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="d2fc-69a3-bc0b-94cd" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="-7" field="ca23-5e4d-7ab5-29f4">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="2e8d-9082-ab37-c4cd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="-1" field="ca23-5e4d-7ab5-29f4">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b749-9cc7-ae95-13fa" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9be6-d4b8-2b8a-18be" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3279-c298-e2dc-8b55" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Dedicated Transports" hidden="false" id="daf7-f9ce-6ac9-851">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Air Support" hidden="false" id="4aaa-217d-5bcb-13ea">
+              <entryLinks>
+                <entryLink import="true" name="Thunderhawk Gunship" hidden="false" type="selectionEntry" id="8bae-df17-912d-3c4a" targetId="2e30-7078-712d-4c9a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2a6-cd51-8419-a067"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Storm Eagle" hidden="false" type="selectionEntry" id="7855-9c77-f0b9-418" targetId="2e8d-9082-ab37-c4cd">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b2f8-bf7c-c9d2-d9ed"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9eb4-845d-2d3b-ed4f"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="7432-9db4-6e54-35bb" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="9eb4-845d-2d3b-ed4f">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Rhinos" hidden="false" id="7f98-c3c4-6054-40f4">
+              <entryLinks>
+                <entryLink import="true" name="Rhino w/ havoc launcher" hidden="false" type="selectionEntry" id="a3-f482-9d61-5164" targetId="b749-9cc7-ae95-13fa">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="180e-ee07-29d9-30c3"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Rhino w/ multi-melta" hidden="false" type="selectionEntry" id="8d01-c972-da3-f32a" targetId="9be6-d4b8-2b8a-18be">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="d599-ff9c-c38a-7b9a"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" type="selectionEntry" id="4720-f306-24ac-fbc3" targetId="3279-c298-e2dc-8b55">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="df61-cb96-7eef-402f"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e817-3b65-1e86-fa39"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="7432-9db4-6e54-35bb" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="7432-9db4-6e54-35bb">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8e-6676-b309-c6f6"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Missile Launcher Support Detachment" hidden="false" id="f6b8-625a-fa41-a503">
       <categoryLinks>
@@ -1096,6 +1285,13 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
               <categoryLinks>
                 <categoryLink targetId="68c1-de55-26b1-8ca4" id="20da-48bc-aa51-8851" primary="false" name="Infantry (1)"/>
               </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="f6b8-625a-fa41-a503" childId="1aed-ca6-8fba-f408" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1103,13 +1299,150 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="b372-eb0f-49d0-83a7"/>
           </constraints>
           <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
+            <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Dedicated Transports" hidden="false" id="56b0-7e9d-83f-a9cc">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Air Support" hidden="false" id="fa6b-e0a5-89a-a2a7">
+              <entryLinks>
+                <entryLink import="true" name="Thunderhawk Gunship" hidden="false" type="selectionEntry" id="8980-6440-e268-51d" targetId="2e30-7078-712d-4c9a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d197-d260-beba-90db"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Storm Eagle" hidden="false" type="selectionEntry" id="942-5f77-3e78-a9fd" targetId="2e8d-9082-ab37-c4cd">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="76ed-484f-aba0-be66"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4879-a6de-ce6e-4dd5"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="1aed-ca6-8fba-f408" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="4879-a6de-ce6e-4dd5">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Rhinos" hidden="false" id="1394-b0ea-1408-f926">
+              <entryLinks>
+                <entryLink import="true" name="Rhino w/ havoc launcher" hidden="false" type="selectionEntry" id="3af4-ac7d-c2a2-53fc" targetId="b749-9cc7-ae95-13fa">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="1c24-6fa9-a3e9-2988"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Rhino w/ multi-melta" hidden="false" type="selectionEntry" id="b235-2277-1723-e555" targetId="9be6-d4b8-2b8a-18be">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="416f-3353-2dae-270f"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" type="selectionEntry" id="4f05-d2cc-9458-cd1b" targetId="3279-c298-e2dc-8b55">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5cc4-c230-90c2-d75d"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="dc4f-e573-9da5-e3f3"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="1aed-ca6-8fba-f408" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="1aed-ca6-8fba-f408">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc20-9b04-23dd-36f9"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="min" value="-5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="306-8fa4-8af6-36d4" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="be5-d697-4714-601a" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="-7" field="306-8fa4-8af6-36d4">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="2e8d-9082-ab37-c4cd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="-1" field="306-8fa4-8af6-36d4">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b749-9cc7-ae95-13fa" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9be6-d4b8-2b8a-18be" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3279-c298-e2dc-8b55" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Assault Detachment" hidden="false" id="f7c7-9e9-6a4b-a0cd">
       <categoryLinks>
@@ -1162,6 +1495,23 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
               <infoLinks>
                 <infoLink name="Jump Packs" hidden="false" type="rule" id="7269-30ce-abf7-777a" targetId="130c-4ba7-dab7-34b3"/>
               </infoLinks>
+              <modifiers>
+                <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="f7c7-9e9-6a4b-a0cd" childId="24a2-9e85-ff75-bd8b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="f7c7-9e9-6a4b-a0cd" childId="24a2-9e85-ff75-bd8b" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="f7c7-9e9-6a4b-a0cd" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1169,13 +1519,91 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4e0-7dd-96dc-d7c5"/>
           </constraints>
           <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="12"/>
+            <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="12"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="6"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="6"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Dedicated Transports" hidden="false" id="e807-2ec5-94c0-5e77">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Air Support" hidden="false" id="222f-feb2-fd8b-b4ac">
+              <entryLinks>
+                <entryLink import="true" name="Thunderhawk Gunship" hidden="false" type="selectionEntry" id="9994-357c-1042-17c5" targetId="2e30-7078-712d-4c9a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db1-cc26-aa2f-fb21"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Storm Eagle" hidden="false" type="selectionEntry" id="6fe4-77aa-cc4f-fe3d" targetId="2e8d-9082-ab37-c4cd">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="fb9b-4fce-dff-d7ae"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="1a40-9080-5c1e-737c"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="24a2-9e85-ff75-bd8b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="1a40-9080-5c1e-737c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="24a2-9e85-ff75-bd8b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10dc-e75-33a-559c"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="min" value="-5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="2bd8-9541-8e3b-ed58" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="97d1-879e-80ca-2ec4" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="-7" field="2bd8-9541-8e3b-ed58">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="2e8d-9082-ab37-c4cd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Terminator Detachment" hidden="false" id="6789-cdf-f85c-40eb">
       <categoryLinks>
@@ -1227,6 +1655,23 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
               <categoryLinks>
                 <categoryLink targetId="68c1-de55-26b1-8ca4" id="764-c013-aa99-d3f6" primary="false" name="Infantry (1)"/>
               </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="6789-cdf-f85c-40eb" childId="cf15-35ce-7639-627a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="6789-cdf-f85c-40eb" childId="cf15-35ce-7639-627a" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="6789-cdf-f85c-40eb" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1245,13 +1690,91 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
             </infoLink>
           </infoLinks>
           <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
+            <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="20"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="20"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Dedicated Transports" hidden="false" id="7ab2-11a-e88c-b500">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Air Support" hidden="false" id="9de3-a21b-dca3-2cc1">
+              <entryLinks>
+                <entryLink import="true" name="Thunderhawk Gunship" hidden="false" type="selectionEntry" id="6973-6bc-def7-ccda" targetId="2e30-7078-712d-4c9a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8837-aa53-9587-899"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Storm Eagle" hidden="false" type="selectionEntry" id="38b8-1a-2721-8697" targetId="2e8d-9082-ab37-c4cd">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ea8d-7d91-9dc9-7b08"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="abbf-63d7-1b1f-d7fd"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="cf15-35ce-7639-627a" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="abbf-63d7-1b1f-d7fd">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="cf15-35ce-7639-627a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94d7-3c5a-70d5-f7f6"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="min" value="-5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="f18b-456f-704b-e63b" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="8366-f19-8993-ea59" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="-7" field="f18b-456f-704b-e63b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="2e8d-9082-ab37-c4cd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Rapier Battery Detachment" hidden="false" id="7210-def-1f79-1071">
       <categoryLinks>
@@ -1311,8 +1834,25 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
+                <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="7210-def-1f79-1071" childId="cf1f-c2e8-a00a-9b43" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="7210-def-1f79-1071" childId="cf1f-c2e8-a00a-9b43" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="7210-def-1f79-1071" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Legion Rapier w/ Laser destroyer array" hidden="false" id="b5a-2d4a-fca0-701d" collective="false">
               <constraints>
@@ -1355,8 +1895,25 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
+                <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="7210-def-1f79-1071" childId="cf1f-c2e8-a00a-9b43" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="7210-def-1f79-1071" childId="cf1f-c2e8-a00a-9b43" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="7210-def-1f79-1071" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1366,25 +1923,101 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
           <modifiers>
             <modifier type="set" value="4" field="b1ac-9a80-9d5a-9f2c">
               <conditions>
-                <condition type="atLeast" value="3" field="selections" scope="parent" childId="model" shared="true"/>
+                <condition type="atLeast" value="3" field="selections" scope="parent" childId="8b94-6aae-e4e8-61b4" shared="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="6" field="b1ac-9a80-9d5a-9f2c">
               <conditions>
-                <condition type="atLeast" value="5" field="selections" scope="parent" childId="model" shared="true"/>
+                <condition type="atLeast" value="5" field="selections" scope="parent" childId="8b94-6aae-e4e8-61b4" shared="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="8" field="b1ac-9a80-9d5a-9f2c">
               <conditions>
-                <condition type="atLeast" value="7" field="selections" scope="parent" childId="model" shared="true"/>
+                <condition type="atLeast" value="7" field="selections" scope="parent" childId="8b94-6aae-e4e8-61b4" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Dedicated Transports" hidden="false" id="5c4-4c3-b1cc-692b">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Air Support" hidden="false" id="54-767c-fe7b-e405">
+              <entryLinks>
+                <entryLink import="true" name="Thunderhawk Gunship" hidden="false" type="selectionEntry" id="2a24-f489-6b05-aa0d" targetId="2e30-7078-712d-4c9a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f403-f2d5-1101-3251"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Storm Eagle" hidden="false" type="selectionEntry" id="9839-f99-4a31-f112" targetId="2e8d-9082-ab37-c4cd">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="44cd-1f3b-ba8d-6e2b"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="173f-5f2d-3107-3f6e"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="cf1f-c2e8-a00a-9b43" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="173f-5f2d-3107-3f6e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="cf1f-c2e8-a00a-9b43">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3379-170-a7d9-4e36"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
       </costs>
+      <constraints>
+        <constraint type="min" value="-5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="6ecb-3ba1-13e9-2039" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="f8f5-6fcf-2264-6d7b" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="-7" field="6ecb-3ba1-13e9-2039">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="2e8d-9082-ab37-c4cd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Leviathan Siege Dreadnought Detachment" hidden="false" id="4e06-9288-4fc2-f5ad">
       <selectionEntryGroups>
@@ -1394,11 +2027,25 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="de89-80a9-debb-bb4c"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="4e06-9288-4fc2-f5ad" childId="3a5c-3d85-9509-b9db" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Leviathan Dreadnought w/ Storm cannon" hidden="false" type="selectionEntry" id="7e75-fd3d-8627-bb76" targetId="cfd1-805d-837a-a26">
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="185f-6bec-582b-3194"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="4e06-9288-4fc2-f5ad" childId="3a5c-3d85-9509-b9db" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -1408,35 +2055,85 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
           <modifiers>
             <modifier type="set" value="6" field="284a-9b59-6e4-6b10">
               <conditions>
-                <condition type="atLeast" value="5" field="selections" scope="parent" childId="model" shared="true"/>
+                <condition type="atLeast" value="5" field="selections" scope="parent" childId="790-5612-41e8-3d5e" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
             <modifier type="set" value="8" field="284a-9b59-6e4-6b10">
               <conditions>
-                <condition type="atLeast" value="7" field="selections" scope="parent" childId="model" shared="true"/>
+                <condition type="atLeast" value="7" field="selections" scope="parent" childId="790-5612-41e8-3d5e" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Dedicated Transports" hidden="false" id="af80-c054-65b2-154e">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Air Support" hidden="false" id="5f26-f1af-921a-4de2">
+              <entryLinks>
+                <entryLink import="true" name="Thunderhawk Gunship" hidden="false" type="selectionEntry" id="cd40-aaf2-2630-d74c" targetId="2e30-7078-712d-4c9a">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d498-76a-3936-4236"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c27c-29e2-5534-fe9a"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="3a5c-3d85-9509-b9db" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="3a5c-3d85-9509-b9db">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71e9-24bc-2d22-c34e"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="75"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="75"/>
       </costs>
       <modifiers>
         <modifier type="set" value="110" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="atLeast" value="5" field="selections" scope="4e06-9288-4fc2-f5ad" childId="model" shared="false" includeChildSelections="true"/>
+            <condition type="atLeast" value="5" field="selections" scope="4e06-9288-4fc2-f5ad" childId="790-5612-41e8-3d5e" shared="false" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="145" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="atLeast" value="7" field="selections" scope="4e06-9288-4fc2-f5ad" childId="model" shared="false" includeChildSelections="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="4e06-9288-4fc2-f5ad" childId="790-5612-41e8-3d5e" shared="false" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="be19-7658-5258-71d9" id="b3f0-9b26-f070-9f73" primary="true" name="Support"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="min" value="-7" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="533a-14f1-5eea-d4e2" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="84f9-1937-b310-c97" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Dreadnought Talon" hidden="false" id="358-8d4d-a40a-5a2c">
       <categoryLinks>
@@ -1518,6 +2215,13 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
                   <constraints>
                     <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="65ec-1e46-4b8b-1f43"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="358-8d4d-a40a-5a2c" childId="bf12-7ba2-fd83-becd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Contemptor Dreadnought w/ Kheres assault cannon" hidden="false" id="2e08-de44-b2a4-1bea">
                   <profiles>
@@ -1590,6 +2294,13 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
                   <constraints>
                     <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="2973-57f1-50b-d8f5"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="358-8d4d-a40a-5a2c" childId="bf12-7ba2-fd83-becd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -1640,11 +2351,25 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
                   <constraints>
                     <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="f068-dfeb-8a1-d98a"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="358-8d4d-a40a-5a2c" childId="bf12-7ba2-fd83-becd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Leviathan Dreadnought w/ Storm cannon" hidden="false" type="selectionEntry" id="bb1f-eab7-170c-a090" targetId="cfd1-805d-837a-a26">
                   <constraints>
                     <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="9612-2236-654c-c4b"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="358-8d4d-a40a-5a2c" childId="bf12-7ba2-fd83-becd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -1654,9 +2379,55 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="7e50-7238-32ca-57d5"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Dedicated Transports" hidden="false" id="f41f-a281-6405-6f71">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Air Support" hidden="false" id="498d-16fa-2e05-f2d3">
+              <entryLinks>
+                <entryLink import="true" name="Thunderhawk Gunship" hidden="false" type="selectionEntry" id="fa1-1f97-e90e-a996" targetId="2e30-7078-712d-4c9a">
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="adc0-1f8f-e3df-ff0b"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
+                    <cost name=" Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c18-780b-bf2-84e1"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="bf12-7ba2-fd83-becd" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="bf12-7ba2-fd83-becd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b941-f532-93d8-c2a5"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="70"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="70"/>
       </costs>
       <modifiers>
         <modifier type="increment" value="30" field="ee95-a20e-f9ff-e2c2">
@@ -1683,6 +2454,10 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="min" value="-7" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="3f58-6404-c682-d025" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="3b5-8a80-5241-c254" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -1980,7 +2755,7 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="36"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="36"/>
       </costs>
       <modifiers>
         <modifier type="increment" value="15" field="ee95-a20e-f9ff-e2c2">
@@ -2207,7 +2982,7 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
       </costs>
       <modifiers>
         <modifier type="increment" value="40" field="ee95-a20e-f9ff-e2c2">
@@ -2335,7 +3110,7 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="115"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="115"/>
       </costs>
       <modifiers>
         <modifier type="increment" value="35" field="ee95-a20e-f9ff-e2c2">
@@ -2506,7 +3281,7 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="105"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="105"/>
       </costs>
       <modifiers>
         <modifier type="increment" value="40" field="ee95-a20e-f9ff-e2c2">
@@ -2763,7 +3538,7 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
       </costs>
       <modifiers>
         <modifier type="increment" value="60" field="ee95-a20e-f9ff-e2c2">
@@ -2871,7 +3646,7 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="95"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="95"/>
       </costs>
       <modifiers>
         <modifier type="increment" value="85" field="ee95-a20e-f9ff-e2c2">
@@ -2896,7 +3671,7 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
         <categoryLink targetId="2879-da90-6a37-c897" id="1128-dd02-374d-f53e" primary="true" name="Air Support"/>
       </categoryLinks>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
       </costs>
       <modifiers>
         <modifier type="increment" value="100" field="ee95-a20e-f9ff-e2c2">
@@ -3075,7 +3850,7 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
         </modifier>
       </modifiers>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Thunderhawk Gunship" hidden="false" id="3794-2d9e-49db-fe94">
@@ -3083,7 +3858,7 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
         <categoryLink targetId="2879-da90-6a37-c897" id="dfcb-45c-224d-5fa1" primary="true" name="Air Support"/>
       </categoryLinks>
       <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
       </costs>
       <modifiers>
         <modifier type="increment" value="150" field="ee95-a20e-f9ff-e2c2">
@@ -3223,6 +3998,7 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
             <modifier type="set" value="Jink (5+)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Transport (X)" hidden="false" type="rule" id="69cb-3ccc-baab-a371" targetId="b82-1269-e912-cb88"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Thunderhawk Gunship" hidden="false" id="2e30-7078-712d-4c9a">
@@ -3240,14 +4016,15 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
       <infoLinks>
         <infoLink name="Hover" hidden="false" type="rule" id="3a46-c388-f5f8-bb50" targetId="4078-b206-6442-bbfa"/>
         <infoLink name="Flyer" hidden="false" type="rule" id="524f-796b-311e-b8d7" targetId="83bf-9c55-ebbb-83f8"/>
-        <infoLink name="Large Assault Transport (X)" hidden="false" type="rule" id="f48b-38ac-ecda-58a" targetId="c101-1585-cef0-d31b">
-          <modifiers>
-            <modifier type="set" value="Large Assault Transport (8)" field="name"/>
-          </modifiers>
-        </infoLink>
+        <infoLink name="Large Transport (X)" hidden="false" type="rule" id="f48b-38ac-ecda-58a" targetId="d33b-3fa4-492e-6d3e"/>
         <infoLink name="Jink (X)" hidden="false" type="rule" id="e0d5-476b-2f20-742d" targetId="9b11-ba2c-eeaf-2402">
           <modifiers>
             <modifier type="set" value="Jink (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Large Assault Transport (X)" hidden="false" type="rule" id="36ea-57c1-6cd3-526f" targetId="c101-1585-cef0-d31b">
+          <modifiers>
+            <modifier type="set" value="Large Assault Transport (8)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -3388,7 +4165,7 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
         <categoryLink targetId="49b3-dae7-33f8-f8e" id="764b-1a60-b287-ca72" primary="false" name="Vehicle (2)"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="12"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="12"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Rhino w/ multi-melta" hidden="false" id="9be6-d4b8-2b8a-18be" collective="false">
@@ -3437,7 +4214,7 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
         <categoryLink targetId="49b3-dae7-33f8-f8e" id="c57c-d5c8-b265-4b43" primary="false" name="Vehicle (2)"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="14"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="14"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Rhino w/ twin-linked bolter" hidden="false" id="3279-c298-e2dc-8b55" collective="false" defaultAmount="1">
@@ -3488,7 +4265,7 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
         <categoryLink targetId="49b3-dae7-33f8-f8e" id="f376-1d62-bf13-96d7" primary="false" name="Vehicle (2)"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
+        <cost name=" points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
