@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5823-85fd-1314-b472" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
   </publications>
@@ -3721,4 +3721,9 @@
   <categoryEntries>
     <categoryEntry name="Solar Auxilia" hidden="false" id="1cf6-bb4c-e11f-3da9"/>
   </categoryEntries>
+  <rules>
+    <rule name="Close Formation Fighting" hidden="false" id="10c1-203d-86c8-472b">
+      <description>A Solar Auxilia Infantry model increases its CAF by 1 while in base to base contact with one or more friendly Solar Auxilia Infantry models. If a Detachment is Garrisoned within a Structure, it is presumed to be in base contact with at least one other model from that Detachment.</description>
+    </rule>
+  </rules>
 </catalogue>
