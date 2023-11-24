@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -1227,7 +1227,7 @@ If an Army includes at least one Allied Contingent comprised entirely of Emperor
                       <characteristics>
                         <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">If a Night Lords model destroys an enemy model with the Commander or the Solar Auxilia HQ (X) special rule, each enemy Detachment within 4&quot; of the destroyed model suffers a number of Hits equal to three times the starting Wounds characteristic of the destroyed model (e.g., a model with a starting Wounds characteristic of 1 would generate 3 Hits).
 
-When making Save rolls against these Hits, models count their Save characteristic as equal to their Morale characteristic and cannot use any additional saves, such as an Invulnerable Save, Cover Save, etc., not can these Hits be allocated to Void Shields. Models that are part of a Detachment that is Broken subtract 2 from the results of these Save rolls.
+When making Save rolls against these Hits, models count their Save characteristic as equal to their Morale characteristic and cannot use any additional saves, such as an Invulnerable Save, Cover Save, etc., nor can these Hits be allocated to Void Shields. Models that are part of a Detachment that is Broken subtract 2 from the results of these Save rolls.
 
 Knights, Titans and models with a Morale characteristic of &quot;-&quot; are unaffected by this rule.</characteristic>
                       </characteristics>

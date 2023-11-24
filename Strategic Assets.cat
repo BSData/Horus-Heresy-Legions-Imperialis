@@ -5,11 +5,7 @@
     <categoryEntry id="1c89-9a08-75f1-df93" name="Knight" hidden="false"/>
     <categoryEntry id="1c28-218e-42c6-1ed4" name="Titan (5)" hidden="false"/>
     <categoryEntry id="ebbc-4775-1167-b265" name="Knight (4)" hidden="false"/>
-    <categoryEntry name="Strategic Assets" hidden="false" id="76ec-afbd-859f-876e">
-      <constraints>
-        <constraint type="max" value="30" field="limit::ee95-a20e-f9ff-e2c2" scope="roster" shared="true" id="462f-d297-3748-7fdd" percentValue="true" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry name="Strategic Assets" hidden="false" id="76ec-afbd-859f-876e"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="4c79-51fb-1b1a-a287" name="Knight Household Lance" hidden="false">
