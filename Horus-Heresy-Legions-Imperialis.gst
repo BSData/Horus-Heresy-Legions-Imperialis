@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="9" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="10" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="eab5-2233-3200-3063" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
   </publications>
   <costTypes>
-    <costType id="ee95-a20e-f9ff-e2c2" name=" points" defaultCostLimit="3000" hidden="false"/>
-    <costType name=" Transport Usage" defaultCostLimit="-1" id="54cb-1324-71d0-d324" hidden="true"/>
+    <costType id="ee95-a20e-f9ff-e2c2" name="‏‏‎‏‏‎ ‎points" defaultCostLimit="3000" hidden="false"/>
+    <costType name="‏‏‎‏‏‎ ‎Transport Usage" defaultCostLimit="-1" id="54cb-1324-71d0-d324" hidden="true"/>
   </costTypes>
   <profileTypes>
     <profileType id="6c4e-cc0f-8b44-d1ab" name="Detachment">
@@ -34,7 +34,6 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="4f9-973a-d47c-dd6f" name="Formation" publicationId="c1b8-2180-635c-14cd" hidden="false"/>
     <categoryEntry id="d950-ad23-9b2-9325" name="HQ" hidden="false"/>
     <categoryEntry id="be19-7658-5258-71d9" name="Support" hidden="false"/>
     <categoryEntry id="446a-abe3-63c3-5709" name="Core" hidden="false"/>
@@ -56,16 +55,6 @@
     <categoryEntry name="Walker (1)" hidden="false" id="1a2a-6f7d-dff8-8be1"/>
     <categoryEntry name="Super-heavy Vehicle (3)" hidden="false" id="be9f-b973-245e-49bf"/>
   </categoryEntries>
-  <forceEntries>
-    <forceEntry id="4a76-6ee3-196d-e2ef" name="Allied Contingents" hidden="false">
-      <constraints>
-        <constraint field="ee95-a20e-f9ff-e2c2" scope="roster" value="30" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="maxPercentage" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="520b-0c52-1e14-9d54" name="Formation" publicationId="c1b8-2180-635c-14cd" hidden="false" targetId="4f9-973a-d47c-dd6f" primary="false"/>
-      </categoryLinks>
-    </forceEntry>
-  </forceEntries>
   <sharedRules>
     <rule id="e368-00fb-7a9b-9eb0" name="Assault" publicationId="c1b8-2180-635c-14cd" hidden="false">
       <description>When firing a weapon with the Assault trait, a model doubles its Dice value if its within a number of inches equal to half the weapon&apos;s Range of at least one model from the target Detachment.</description>
@@ -509,4 +498,30 @@ Hits can only be allocated to Void Shields if they were scored by a weapon with 
 During the End phase, in the Resolve End Phase Effects stage, a model with the Void Shields (X) special rule may attempt to reignite any collapsed Void Shields. The controlling player rolls a number of D6 equal to the difference between a model&apos;s current Void Shield level and its starting Void Shield level. For each 4+ rolled, increase that model&apos;s Void Shield level by 1.</description>
     </rule>
   </sharedRules>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Primary Army" hidden="false" id="ea1c-389d-7b84-e550">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="4b66-17e9-d891-1fa6"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f7f1-edc3-4cf9-4bc7"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Primary Army" hidden="false" id="92e-264b-88f-8125">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6106-9f8a-e9c3-4536"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5093-37a4-f914-895e"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Solar Auxilia" hidden="false" id="e7e9-f3e8-b4e9-5faa"/>
+            <selectionEntry type="upgrade" import="true" name="Legiones Astartes" hidden="false" id="d2ad-10fe-19bb-b5ed"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="3779-422e-5fe9-5654" id="175b-4dbb-4277-7053" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Primary Army" hidden="false" type="selectionEntry" id="773b-3c3e-917a-9dd5" targetId="ea1c-389d-7b84-e550"/>
+  </entryLinks>
 </gameSystem>
