@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -3298,13 +3298,13 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Predator lascannon" hidden="false" id="9e3f-9ead-c520-5b8e">
                   <profiles>
-                    <profile name="Predator lascannon" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="719f-37ec-40db-7746">
+                    <profile name="Predator lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="719f-37ec-40db-7746">
                       <characteristics>
-                        <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">22&quot;</characteristic>
-                        <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">1</characteristic>
-                        <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">4+</characteristic>
-                        <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-1</characteristic>
-                        <characteristic name="W" typeId="b00f-3f1c-eb63-461a">Accurate, Anti-tank</characteristic>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Anti-tank</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
