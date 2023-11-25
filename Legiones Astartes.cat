@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -1037,136 +1037,6 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69e3-4e5a-e24c-16cd"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Dark Angels" hidden="false" id="bdfd-760a-bbfa-a46e">
-                  <profiles>
-                    <profile name="Formations of the Hexagrammaton" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="b3e4-9ed6-1f92-29d">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">At the start of the battle, before any Detachment is deployed, determine which Dark Angels Formations contain a total of three or more different Detachment types - Dedicated Transports are ignored for the purposes of this calculation.
-
-Any Formation that meets these requirements gains one of the following benefits, chosen by the controlling player from the list below:
-
-- All Detachments within the Formation that contain only Dark Angels Infantry models gain the Phosphex and Implacable special rules.
-- All Detachments within the Formation that contain only Cavalry models gain the Outflank special rule.
-- All Detachments within the Formation that contain only Vehicle models gain the Nimble special rule.
-
-If a Formation has a Dedicated Transport, the model types gain the relevant special rules but the Transports do not.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <categoryLinks>
-                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="55e6-7263-9d2e-2ff1" primary="false" name="Loyalist"/>
-                  </categoryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Iron Hands" hidden="false" id="e706-8c90-49b5-4a45">
-                  <categoryLinks>
-                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="8205-d30f-f498-4372" primary="false" name="Loyalist"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="Inviolate Armour" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="daaa-4e55-5323-2e16">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Iron Hands models with the Feel No Pain special rule benefit from its effects when they suffer a Wound from a weapon with the Light or Light AT trait, instead of just the Light trait. In addition, any Hits scored against an Iron Hands Vehicle or Super-heavy Vehicle issued with a First Fire Order worsens their AP by 1, to a minimum of 0, e.g., a weapon an AP of -2 would become -1.
-
-The First Fire Order must still be in effect (i.e., it cannot have Overwatched or fired yet this round) for this rule to take effect. This does not affect the AP if Hits are allocated to Void Shields.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="White Scars" hidden="false" id="4587-482-144c-b822">
-                  <categoryLinks>
-                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="c832-8b0f-155-991" primary="false" name="Loyalist"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="Born in the Saddle" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="b5ff-c51f-aac3-1802">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">All White Scars models with the Jink (X) special rule improve their Jink Save (the number shown in brackets) by 1 (i.e., a model with Jink (6+) would become Jink (5+), etc.), to a maximum of 3+.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Space Wolves" hidden="false" id="4c82-420b-2c34-d693">
-                  <categoryLinks>
-                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="f0ab-a5d8-6c7b-c359" primary="false" name="Loyalist"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="Preternatural Sense" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="8535-adc5-cf1f-dc4c">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Enemy Detachments with the Infiltrate special rule cannot be deployed within 16&quot; of a Space Wolves model. In addition, an enemy model with the Outflank special rule may not be placed on the battlefield within 8&quot; of any Space Wolves model when arriving from Reserve, unless it is arriving from its own battlefield edge.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Raven Guard" hidden="false" id="e6a8-5005-29f8-abf">
-                  <categoryLinks>
-                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="a907-f02a-8d0c-3a98" primary="false" name="Loyalist"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="By Wing and Talon" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="cde9-a919-afb7-6094">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">All Detachments that contain only Raven Guard Infantry models gain the Infiltrate special rule - if the Formation has Dedicated Transports, it does not gain this rule. All Detachments that contain only Raven Guard Cavalry or Walker models, or Raven Guard Infantry models with Dedicated Transports, gain the Forward Deployment special rule.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Ultramarines" hidden="false" id="db85-4572-d299-e543">
-                  <categoryLinks>
-                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="add7-d210-c300-f33c" primary="false" name="Loyalist"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="Interlocking Tactics" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="3bee-3df9-8841-c006">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">An Ultramarines model may re-roll any Hits rolls of a 1 when firing upon an enemy Detachment that has already had one or more Hits scored against this round by an Ultramarines model from the same Formation as the firing model.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Blood Angels" hidden="false" id="2d0f-3825-638b-9c4e">
-                  <categoryLinks>
-                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="b48e-c4d0-8c78-232d" primary="false" name="Loyalist"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="Encarmine Fury" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="6214-334-8d4-8533">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">All models within a Blood Angels Detachment that win a Combat may move up to 3&quot; after all Withdrawal moves have been completed, so long as the Detachment is not Engaged. Models can move into base contact with enemy models during this move. They may not Embark or Garrison a Structure as part of this move.
-
-If a Detachment Engages an enemy Detachment in this way that is in a Combat but has yet to Fight, the Blood Angels Detachment may Fight again this round. Otherwise, do not resolve the Combat. A Detachment can only move via the Encarmine Fury rule once per round and cannot move if it is still Engaged after the Combat is won.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Imperial Fists" hidden="false" id="dc76-c457-7107-bd13">
-                  <categoryLinks>
-                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="14a0-5db3-c6dc-bfd" primary="false" name="Loyalist"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="Disciplined Fire" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="7361-5bad-d198-b6a4">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">If an Imperial Fists Infantry Detachment is issued with the First Fire Order, any weapons models within the Detachment have that are listed below gain the Accurate trait until the end of that round:
-
-- Legion bolters
-- Legion combi-bolters
-- Legion bolt pistols
-- Missile launchers
-- Plasma cannon
-- Lascannon
-- Autocannon</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Salamanders" hidden="false" id="8ab9-4d88-351c-3a88">
-                  <categoryLinks>
-                    <categoryLink targetId="1b68-cce9-e11c-fde7" id="8a50-786c-a339-bb82" primary="false" name="Loyalist"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="Strength of Will" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="9e48-2f14-49be-9acb">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">When making a Morale check, a Detachment that contains only Salamanders models rolls two D6 and chooses which results they prefer. In addition, all Salamanders Detachments in the Army gain the Implacable special rule.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
               <modifiers>
                 <modifier type="set" value="0" field="69e3-4e5a-e24c-16cd">
                   <conditions>
@@ -1175,134 +1045,12 @@ If a Detachment Engages an enemy Detachment in this way that is in a Combat but 
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Traitor" hidden="false" id="eb36-a18b-7fbf-7ded">
+            <selectionEntryGroup name="Traitor" hidden="false" id="4e4e-9171-8f28-2e33">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39e2-22ef-3451-dd11"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7209-c348-d8b7-e7a9"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Emperor&apos;s Children" hidden="false" id="c9d1-da65-d093-936f">
-                  <profiles>
-                    <profile name="Exemplars of War" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="61c9-ed9e-9912-b49f">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Once per battle, an Army that includes at least one Formation consisting entirely of Emperor&apos;s Children models (ignoring models within an Allied Contingent) may choose to win Initiative instead of rolling. They must declare they are doing this before rolling. If both players have this rule, the player who did not have Initiative last round chooses if they use the rule first - if they do so, no other player can use it this round.
-
-If an Army includes at least one Allied Contingent comprised entirely of Emperor&apos;s Children Detachments then once per battle the controlling player may re-roll the dice roll for Initiative instead. They can only do this if at least one Emperor&apos;s Children Detachment is on the battlefield or in Reserve, if all have been destroyed or left the battlefield due to other special rules, this rule has no effect.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <categoryLinks>
-                    <categoryLink targetId="437a-7951-c93d-1e14" id="d7cf-612d-eaa8-18de" primary="false" name="Traitor"/>
-                  </categoryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Iron Warriors" hidden="false" id="e449-71b7-91e9-f23">
-                  <categoryLinks>
-                    <categoryLink targetId="437a-7951-c93d-1e14" id="70d1-8bad-b86e-5f2d" primary="false" name="Traitor"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="The Bitter End" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="b147-6f17-8a4a-35d5">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">When determining which player controls a neutral Objective marker, Iron Warriors Infantry and Walker models count their Tactical Strength as 1 higher than normal. In addition, when determining who controls an Objective marker in a deployment zone, Iron Warriors Infantry and Walker models count their Tactical Strength as 2 higher than normal if within their own deployment zone.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Word Bearers" hidden="false" id="28a1-ae95-ef2e-6ed3">
-                  <categoryLinks>
-                    <categoryLink targetId="437a-7951-c93d-1e14" id="1633-e568-2f7d-4c58" primary="false" name="Traitor"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="True Believers" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="fa13-1db5-4cd0-78eb">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Detachments within a Word Bearers Formation never count as Broken for the purposes of being issued an Order, i.e., they can be issued any Order they normally could instead of just the Advance Order or March Order. In addition, all Word Bearers Detachments ignore the effects of the Dread Aura (X) special rule.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Night Lords" hidden="false" id="bec4-5634-8c1b-464d">
-                  <categoryLinks>
-                    <categoryLink targetId="437a-7951-c93d-1e14" id="9bcf-db2d-ca23-a72a" primary="false" name="Traitor"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="Seeds of Dissent" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="7016-2883-c058-a07d">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">If a Night Lords model destroys an enemy model with the Commander or the Solar Auxilia HQ (X) special rule, each enemy Detachment within 4&quot; of the destroyed model suffers a number of Hits equal to three times the starting Wounds characteristic of the destroyed model (e.g., a model with a starting Wounds characteristic of 1 would generate 3 Hits).
-
-When making Save rolls against these Hits, models count their Save characteristic as equal to their Morale characteristic and cannot use any additional saves, such as an Invulnerable Save, Cover Save, etc., nor can these Hits be allocated to Void Shields. Models that are part of a Detachment that is Broken subtract 2 from the results of these Save rolls.
-
-Knights, Titans and models with a Morale characteristic of &quot;-&quot; are unaffected by this rule.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="World Eaters" hidden="false" id="885a-eaaf-7c58-a16a">
-                  <categoryLinks>
-                    <categoryLink targetId="437a-7951-c93d-1e14" id="a945-7c93-224d-7d86" primary="false" name="Traitor"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="Incarnate Violence" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="affe-76ba-c806-8c2b">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Whenever they make a Fight Roll, all World Eaters Infantry, Cavalry and Walker models can re-roll a single D6 when making Fight rolls.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Death Guard" hidden="false" id="d2a1-c1a7-dd59-960c">
-                  <categoryLinks>
-                    <categoryLink targetId="437a-7951-c93d-1e14" id="b6fe-263a-d03-9495" primary="false" name="Traitor"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="Sons of Barbarus" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="d0bc-3ab1-f4d9-a988">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Death Guard Detachments do not suffer Hits for moving through Dangerous terrain.
-
-In addition, at the start of the battle, before any Detachments are deployed, a player may pick up to two areas of terrain if their Army contains at least one Death Guard Formation. For the remainder of the battle, these areas count as Dangerous terrain, in addition to any other rules that apply.
-
-Two Structures can be selected in place of a single area of terrain. Each time a model Garrisons or leaves a Structure designated as Dangerous terrain, it counts as having moved 1&quot; through it.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Thousand Sons" hidden="false" id="6aaa-2bc2-5e3a-6588">
-                  <categoryLinks>
-                    <categoryLink targetId="437a-7951-c93d-1e14" id="a0df-c5af-f881-f19e" primary="false" name="Traitor"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="Kine Shields" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="cd83-42d1-1fd2-6cca">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Thousand Sons models with the Commander special rule gain the Shield Generator (6+) special rule.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Alpha Legion" hidden="false" id="ada3-7069-6cab-faa">
-                  <categoryLinks>
-                    <categoryLink targetId="437a-7951-c93d-1e14" id="e00e-1032-f31-b382" primary="false" name="Traitor"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="Mutable Tactics" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="207e-4968-84df-89ee">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">For each Formation in an Army made up entirely of Alpha Legion Detachments (ignoring Allied Contingents) the controlling player may select up to 3 Alpha Legion Detachments in the Army to be affected by Mutable Tactics. For each Allied Contingent in an Army made up entirely of Alpha Legion Detachments, the controlling player may select up to 1 Alpha Legion Detachment to be affected by Mutable Tactics. Detachments with the Flyer special rule cannot be chosen.
-
-A Detachment chosen to be affected by Mutable Tactics gains a special rule dependent on the Detachment Type. If a selected Detachment is made up of Infantry, Cavalry, Walker or Vehicle models, all models within it gain either the Infiltrate, Outflank or Forward Deployment special rule - this is chosen by the controlling player and different Detachments can choose different rules. If the selected Detachment is of another type, it gains the Forward Deployment rule.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Sons of Horus" hidden="false" id="8341-787-6185-b89a">
-                  <categoryLinks>
-                    <categoryLink targetId="437a-7951-c93d-1e14" id="57d0-673a-625e-1feb" primary="false" name="Traitor"/>
-                  </categoryLinks>
-                  <profiles>
-                    <profile name="Death Dealers" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="651e-fb23-2516-e113">
-                      <characteristics>
-                        <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">When a Sons of Horus model issued with an Advance Order is firing at a target within 6&quot; of it, it may re-roll Hit rolls of a 1 when firing a weapon with the Light or Light AT trait while the Order is in effect.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
               <modifiers>
-                <modifier type="set" value="0" field="39e2-22ef-3451-dd11">
+                <modifier type="set" value="0" field="7209-c348-d8b7-e7a9">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="1b68-cce9-e11c-fde7" shared="true" includeChildForces="true" includeChildSelections="true"/>
                   </conditions>
@@ -1316,8 +1064,8 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
         <categoryLink targetId="3779-422e-5fe9-5654" id="3ddc-a8fe-5523-d187" primary="true" name="Configuration"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="718-f5ca-24a-1fa5"/>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="98a-62c5-ef44-4a9f"/>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="718-f5ca-24a-1fa5"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="98a-62c5-ef44-4a9f"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Assault Detachment" hidden="false" id="54f9-7ac-7b98-a2c6">
@@ -4907,6 +4655,267 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Legion" hidden="false" id="4d3d-4e78-c509-b572">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="7b9f-7bfd-f16c-dafa"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a84e-2667-3f47-ac55"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="57c1-a274-8e8d-d212"/>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="ad6f-c434-f39a-b049"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Blood Angels" hidden="false" id="bb9a-ee44-98-6aff">
+          <categoryLinks>
+            <categoryLink targetId="1b68-cce9-e11c-fde7" id="2c37-c31b-b2a2-774a" primary="false" name="Loyalist"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Encarmine Fury" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="9e5a-6335-6e97-d1c2">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">All models within a Blood Angels Detachment that win a Combat may move up to 3&quot; after all Withdrawal moves have been completed, so long as the Detachment is not Engaged. Models can move into base contact with enemy models during this move. They may not Embark or Garrison a Structure as part of this move.
+
+If a Detachment Engages an enemy Detachment in this way that is in a Combat but has yet to Fight, the Blood Angels Detachment may Fight again this round. Otherwise, do not resolve the Combat. A Detachment can only move via the Encarmine Fury rule once per round and cannot move if it is still Engaged after the Combat is won.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dark Angels" hidden="false" id="3261-e184-6394-7423">
+          <profiles>
+            <profile name="Formations of the Hexagrammaton" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="34b7-6b58-be4d-931b">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">At the start of the battle, before any Detachment is deployed, determine which Dark Angels Formations contain a total of three or more different Detachment types - Dedicated Transports are ignored for the purposes of this calculation.
+
+Any Formation that meets these requirements gains one of the following benefits, chosen by the controlling player from the list below:
+
+- All Detachments within the Formation that contain only Dark Angels Infantry models gain the Phosphex and Implacable special rules.
+- All Detachments within the Formation that contain only Cavalry models gain the Outflank special rule.
+- All Detachments within the Formation that contain only Vehicle models gain the Nimble special rule.
+
+If a Formation has a Dedicated Transport, the model types gain the relevant special rules but the Transports do not.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1b68-cce9-e11c-fde7" id="97a8-ffa1-8088-b5a8" primary="false" name="Loyalist"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Imperial Fists" hidden="false" id="77d6-2f65-3436-f91">
+          <categoryLinks>
+            <categoryLink targetId="1b68-cce9-e11c-fde7" id="5a69-858-5483-6642" primary="false" name="Loyalist"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Disciplined Fire" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="705e-6d1f-f53b-26e2">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">If an Imperial Fists Infantry Detachment is issued with the First Fire Order, any weapons models within the Detachment have that are listed below gain the Accurate trait until the end of that round:
+
+- Legion bolters
+- Legion combi-bolters
+- Legion bolt pistols
+- Missile launchers
+- Plasma cannon
+- Lascannon
+- Autocannon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Iron Hands" hidden="false" id="a77e-5a88-9e36-9270">
+          <categoryLinks>
+            <categoryLink targetId="1b68-cce9-e11c-fde7" id="af03-47fc-1b9d-bcaf" primary="false" name="Loyalist"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Inviolate Armour" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="6806-5a3-e531-6d95">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Iron Hands models with the Feel No Pain special rule benefit from its effects when they suffer a Wound from a weapon with the Light or Light AT trait, instead of just the Light trait. In addition, any Hits scored against an Iron Hands Vehicle or Super-heavy Vehicle issued with a First Fire Order worsens their AP by 1, to a minimum of 0, e.g., a weapon an AP of -2 would become -1.
+
+The First Fire Order must still be in effect (i.e., it cannot have Overwatched or fired yet this round) for this rule to take effect. This does not affect the AP if Hits are allocated to Void Shields.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Raven Guard" hidden="false" id="a63e-2b5e-bd3b-fbcd">
+          <categoryLinks>
+            <categoryLink targetId="1b68-cce9-e11c-fde7" id="4a4f-8931-68d6-808f" primary="false" name="Loyalist"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="By Wing and Talon" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="8536-449-166-5bfd">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">All Detachments that contain only Raven Guard Infantry models gain the Infiltrate special rule - if the Formation has Dedicated Transports, it does not gain this rule. All Detachments that contain only Raven Guard Cavalry or Walker models, or Raven Guard Infantry models with Dedicated Transports, gain the Forward Deployment special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Salamanders" hidden="false" id="31f8-ad06-c73b-5a45">
+          <categoryLinks>
+            <categoryLink targetId="1b68-cce9-e11c-fde7" id="7c1-1821-17b3-742" primary="false" name="Loyalist"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Strength of Will" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="a06b-307-7853-9aea">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">When making a Morale check, a Detachment that contains only Salamanders models rolls two D6 and chooses which results they prefer. In addition, all Salamanders Detachments in the Army gain the Implacable special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Space Wolves" hidden="false" id="b6ea-7a7e-f6fa-c4c0">
+          <categoryLinks>
+            <categoryLink targetId="1b68-cce9-e11c-fde7" id="d594-8a3c-5c18-fe34" primary="false" name="Loyalist"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Preternatural Sense" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="2d9b-c5f9-8a5-d99c">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Enemy Detachments with the Infiltrate special rule cannot be deployed within 16&quot; of a Space Wolves model. In addition, an enemy model with the Outflank special rule may not be placed on the battlefield within 8&quot; of any Space Wolves model when arriving from Reserve, unless it is arriving from its own battlefield edge.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ultramarines" hidden="false" id="90ee-b0f8-b05a-78d4">
+          <categoryLinks>
+            <categoryLink targetId="1b68-cce9-e11c-fde7" id="dd2f-a16b-1122-a519" primary="false" name="Loyalist"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Interlocking Tactics" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="8d76-5667-2e17-cce7">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">An Ultramarines model may re-roll any Hits rolls of a 1 when firing upon an enemy Detachment that has already had one or more Hits scored against this round by an Ultramarines model from the same Formation as the firing model.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="White Scars" hidden="false" id="11f2-1964-1a50-19f1">
+          <categoryLinks>
+            <categoryLink targetId="1b68-cce9-e11c-fde7" id="7c5e-f1b4-2e01-6094" primary="false" name="Loyalist"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Born in the Saddle" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="2074-11cb-6ae2-5c01">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">All White Scars models with the Jink (X) special rule improve their Jink Save (the number shown in brackets) by 1 (i.e., a model with Jink (6+) would become Jink (5+), etc.), to a maximum of 3+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Alpha Legion" hidden="false" id="7b1c-51b-5714-9726">
+          <categoryLinks>
+            <categoryLink targetId="437a-7951-c93d-1e14" id="3a60-cb6c-b910-b9a4" primary="false" name="Traitor"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Mutable Tactics" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="7f74-1ada-2efe-6a08">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">For each Formation in an Army made up entirely of Alpha Legion Detachments (ignoring Allied Contingents) the controlling player may select up to 3 Alpha Legion Detachments in the Army to be affected by Mutable Tactics. For each Allied Contingent in an Army made up entirely of Alpha Legion Detachments, the controlling player may select up to 1 Alpha Legion Detachment to be affected by Mutable Tactics. Detachments with the Flyer special rule cannot be chosen.
+
+A Detachment chosen to be affected by Mutable Tactics gains a special rule dependent on the Detachment Type. If a selected Detachment is made up of Infantry, Cavalry, Walker or Vehicle models, all models within it gain either the Infiltrate, Outflank or Forward Deployment special rule - this is chosen by the controlling player and different Detachments can choose different rules. If the selected Detachment is of another type, it gains the Forward Deployment rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Death Guard" hidden="false" id="1d63-5445-bf42-582f">
+          <categoryLinks>
+            <categoryLink targetId="437a-7951-c93d-1e14" id="7bae-1faf-c69f-334f" primary="false" name="Traitor"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Sons of Barbarus" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="216b-a82-52dd-5dee">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Death Guard Detachments do not suffer Hits for moving through Dangerous terrain.
+
+In addition, at the start of the battle, before any Detachments are deployed, a player may pick up to two areas of terrain if their Army contains at least one Death Guard Formation. For the remainder of the battle, these areas count as Dangerous terrain, in addition to any other rules that apply.
+
+Two Structures can be selected in place of a single area of terrain. Each time a model Garrisons or leaves a Structure designated as Dangerous terrain, it counts as having moved 1&quot; through it.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Emperor&apos;s Children" hidden="false" id="c3a1-bfd5-3a30-97bd">
+          <profiles>
+            <profile name="Exemplars of War" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="b09c-4a15-4548-9f31">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Once per battle, an Army that includes at least one Formation consisting entirely of Emperor&apos;s Children models (ignoring models within an Allied Contingent) may choose to win Initiative instead of rolling. They must declare they are doing this before rolling. If both players have this rule, the player who did not have Initiative last round chooses if they use the rule first - if they do so, no other player can use it this round.
+
+If an Army includes at least one Allied Contingent comprised entirely of Emperor&apos;s Children Detachments then once per battle the controlling player may re-roll the dice roll for Initiative instead. They can only do this if at least one Emperor&apos;s Children Detachment is on the battlefield or in Reserve, if all have been destroyed or left the battlefield due to other special rules, this rule has no effect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="437a-7951-c93d-1e14" id="9c48-f388-cebd-be9d" primary="false" name="Traitor"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Iron Warriors" hidden="false" id="ab32-d824-e8a9-33d6">
+          <categoryLinks>
+            <categoryLink targetId="437a-7951-c93d-1e14" id="55d8-de97-5a46-a792" primary="false" name="Traitor"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="The Bitter End" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="79eb-1bfa-8a81-5aee">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">When determining which player controls a neutral Objective marker, Iron Warriors Infantry and Walker models count their Tactical Strength as 1 higher than normal. In addition, when determining who controls an Objective marker in a deployment zone, Iron Warriors Infantry and Walker models count their Tactical Strength as 2 higher than normal if within their own deployment zone.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Night Lords" hidden="false" id="394a-3a98-b8d-92a9">
+          <categoryLinks>
+            <categoryLink targetId="437a-7951-c93d-1e14" id="c89f-650b-3b61-e633" primary="false" name="Traitor"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Seeds of Dissent" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="5648-ea76-d1b-4e3c">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">If a Night Lords model destroys an enemy model with the Commander or the Solar Auxilia HQ (X) special rule, each enemy Detachment within 4&quot; of the destroyed model suffers a number of Hits equal to three times the starting Wounds characteristic of the destroyed model (e.g., a model with a starting Wounds characteristic of 1 would generate 3 Hits).
+
+When making Save rolls against these Hits, models count their Save characteristic as equal to their Morale characteristic and cannot use any additional saves, such as an Invulnerable Save, Cover Save, etc., nor can these Hits be allocated to Void Shields. Models that are part of a Detachment that is Broken subtract 2 from the results of these Save rolls.
+
+Knights, Titans and models with a Morale characteristic of &quot;-&quot; are unaffected by this rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sons of Horus" hidden="false" id="e983-c32e-4a8f-78e4">
+          <categoryLinks>
+            <categoryLink targetId="437a-7951-c93d-1e14" id="2980-55f0-f619-7d88" primary="false" name="Traitor"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Death Dealers" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="b44b-9a19-75b7-877">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">When a Sons of Horus model issued with an Advance Order is firing at a target within 6&quot; of it, it may re-roll Hit rolls of a 1 when firing a weapon with the Light or Light AT trait while the Order is in effect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Thousand Sons" hidden="false" id="c12a-5e71-33be-98c0">
+          <categoryLinks>
+            <categoryLink targetId="437a-7951-c93d-1e14" id="58fc-8600-a88a-3a14" primary="false" name="Traitor"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Kine Shields" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="d8e4-28d9-6612-14be">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Thousand Sons models with the Commander special rule gain the Shield Generator (6+) special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Word Bearers" hidden="false" id="672a-eac9-84d0-6e5a">
+          <categoryLinks>
+            <categoryLink targetId="437a-7951-c93d-1e14" id="27e0-41fb-5dff-38da" primary="false" name="Traitor"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="True Believers" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="c918-6013-3875-608a">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Detachments within a Word Bearers Formation never count as Broken for the purposes of being issued an Order, i.e., they can be issued any Order they normally could instead of just the Advance Order or March Order. In addition, all Word Bearers Detachments ignore the effects of the Dread Aura (X) special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="World Eaters" hidden="false" id="9017-8319-c904-b654">
+          <categoryLinks>
+            <categoryLink targetId="437a-7951-c93d-1e14" id="f5c8-8f04-7f63-8956" primary="false" name="Traitor"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Incarnate Violence" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="44f8-e5a9-102e-a3a6">
+              <characteristics>
+                <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Whenever they make a Fight Roll, all World Eaters Infantry, Cavalry and Walker models can re-roll a single D6 when making Fight rolls.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="3779-422e-5fe9-5654" id="3883-a05f-4fb2-745e" primary="true" name="Configuration"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>
