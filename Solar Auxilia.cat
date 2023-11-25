@@ -1932,8 +1932,8 @@
         <categoryLink targetId="3779-422e-5fe9-5654" id="5ca3-8578-3f81-f50b" primary="true" name="Configuration"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="d00c-d061-ac1c-da45"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2c23-f270-f530-8f38"/>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="d00c-d061-ac1c-da45"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2c23-f270-f530-8f38"/>
       </constraints>
     </selectionEntry>
   </selectionEntries>
