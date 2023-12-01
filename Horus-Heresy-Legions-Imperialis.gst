@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="13" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="14" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="eab5-2233-3200-3063" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -61,11 +61,11 @@
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="49dd-d763-6836-b4f8" name=" " hidden="true"/>
+    <forceEntry id="49dd-d763-6836-b4f8" hidden="true"/>
   </forceEntries>
   <sharedRules>
     <rule id="e368-00fb-7a9b-9eb0" name="Assault" publicationId="c1b8-2180-635c-14cd" hidden="false">
-      <description>When firing a weapon with the Assault trait, a model doubles its Dice value if its within a number of inches equal to half the weapon&apos;s Range of at least one model from the target Detachment.</description>
+      <description>When firing a weapon with the Assault trait, a model doubles its Dice value if it is within a number of inches equal to half the weapon&apos;s Range of at least one model from the target Detachment.</description>
     </rule>
     <rule id="c731-70f4-ffcd-4ff7" name="Light AT" publicationId="c1b8-2180-635c-14cd" hidden="false">
       <description>Hits scored by a weapon with the Light AT trait against a Vehicle, Super-heavy Vehicle, Knight or Titan model treat their AP as 0, regardless of the weapon&apos;s base AP value. This can prevent Hits from a weapon with the Light AT trait from being allocated to Void Shields.</description>
@@ -105,7 +105,7 @@ Some Detachments have both the Deep Strike and Transport (X) special rule. If an
       <description>Hits scored by a weapon with the Anti-tank trait against an Infantry or Cavalry model treat their AP as 0, regardless of the weapon&apos;s base AP value.</description>
     </rule>
     <rule id="e2f7-4ff5-3f66-fed5" name="Armourbane" publicationId="c1b8-2180-635c-14cd" hidden="false">
-      <description>Any successful Save rolls made for a Vehicle, Super-heavy Vehicle, Knight or Titan model using its Armour Save charactertistic against a Hit scored by a weapon with the Armourbane trait must be re-rolled.</description>
+      <description>Any successful Save rolls made for a Vehicle, Super-heavy Vehicle, Knight or Titan model using its Armour Save characteristic against a Hit scored by a weapon with the Armourbane trait must be re-rolled.</description>
     </rule>
     <rule id="3be1-fdf0-05dc-4c02" name="Co-axial" publicationId="c1b8-2180-635c-14cd" hidden="false">
       <description>Some weapons are directly attached to another weapon and will be listed on the Detachment&apos;s datasheet as Co-axial. Weapons with this Trait can only target the same Detachment as the weapon it is Co-axial to, even if a special rule allows a model to fire different weapons at different targets.</description>
@@ -118,11 +118,11 @@ Weapons with the Bunker Buster trait can damage Structures.</description>
     <rule id="f921-10ce-33f7-19fd" name="Point Defence" publicationId="c1b8-2180-635c-14cd" hidden="false">
       <description>A weapon with the Point Defence trait represents a weapon system tailored towards defensive fire, be that heavy bolter sponsons on a Vehicle or the Ardex weapons of some Titans.
 
-Models with at least one weapon with the Point Defence trait may choose to fire on its Detachment&apos;s target or a Secondary Target; a Secondary Target is an eligible targets (i.e., within range and line of sight of the firing model) different from the first chosen target. All Point Defence weapons in a Detachment must fire at the same target, unless another rule overrides this.
+Models with at least one weapon with the Point Defence trait may choose to fire on its Detachment&apos;s target or a Secondary Target; a Secondary Target is an eligible target (i.e., within range and line of sight of the firing model) different from the first chosen target. All Point Defence weapons in a Detachment must fire at the same target, unless another rule overrides this.
 
-A Detachment which contains one or models with weapons with the Point Defence trait may fire those weapons during the Movement phase, if issued an Advance or March Order, or the Combat phase. During the Movement phase, a Detachment may fire its Point Defence weapons immediately after it is activated or at the end of its activation; all Point Defence weapons must fire at the same target unless otherwise specified; if fired at the start of its activation, the firing is resolved and then the Detachment completes its activation as normal. A Detachment can only fire its Point Defence weapons once per round - if it fires one or more its Point Defence weapons in the Movement phase, it cannot fire any Point Defence weapons in the Combat phase.
+A Detachment which contains one or models with weapons with the Point Defence trait may fire those weapons during the Movement phase, if issued an Advance or March Order, or the Combat phase. During the Movement phase, a Detachment may fire its Point Defence weapons immediately after it is activated or at the end of its activation; all Point Defence weapons must fire at the same target unless otherwise specified; if fired at the start of its activation, the firing is resolved and then the Detachment completes its activation as normal. A Detachment can only fire its Point Defence weapons once per round - if it fires one or more of its Point Defence weapons in the Movement phase, it cannot fire any Point Defence weapons in the Combat phase.
 
-If fire during the Combat phase, a weapon with the Point Defence trait is fired like any other weapon. Models with Point Defence weapons may fire them at a different target from the Detachment&apos;s main target.
+If fired during the Combat phase, a weapon with the Point Defence trait is fired like any other weapon. Models with Point Defence weapons may fire them at a different target from the Detachment&apos;s main target.
 
 Point Defence weapons can be fired as part of an Overwatch attack. When fired as part of an Overwatch attack, Point Defence weapons ignore the -2 penalty to Hit rolls and instead fire as normal (i.e., use the To Hit value of the weapon then apply any positive or negative modifiers).</description>
     </rule>
@@ -139,9 +139,9 @@ Models with at least one weapon with the Skyfire trait may choose to fire on its
 
 Unless instructed otherwise, Flyers are not deployed on the battlefield at the start of the battle and are instead placed in Reserve. Unless instructed otherwise, a model with the Flyer special rule that is in Reserve can only be issued with an Advance Order or a March Order. Any weapons with the Point Defence trait that the Flyer has count as having the Skyfire trait when firing upon an enemy model with the Flyer special rule.
 
-When activated during the Movement phase, the controlling player places the Flyer so the read of its base is touching a point on the controlling player&apos;s board edge or touching any board edge at a point within 8&quot; of the controlling player&apos;s board edge. The Flyer then moves and can only move in a straight line. A Flyer can make a single turn of up to 90° during its movement. Flyers can move over any model or area of terrain during their movement. A Flyer can end its movement overlapping Impassable terrain.
+When activated during the Movement phase, the controlling player places the Flyer so the rear of its base is touching a point on the controlling player&apos;s board edge or touching any board edge at a point within 8&quot; of the controlling player&apos;s board edge. The Flyer then moves and can only move in a straight line. A Flyer can make a single turn of up to 90° during its movement. Flyers can move over any model or area of terrain during their movement. A Flyer can end its movement overlapping Impassable terrain.
 
-Flyers fire as normal during the Combat phase. Due to their altitude, a Flyer is considered to have line of sigh to all models on the battlefield, unless instructed otherwise. Similarly, all Detachments are considered to have line of sight to a Flyer. A Flyer suffers no penalties to Hit rolls for targeting obscured models, though they do suffer penalties for firing upon Detachments within an area of terrain as normal.
+Flyers fire as normal during the Combat phase. Due to their altitude, a Flyer is considered to have line of sight to all models on the battlefield, unless instructed otherwise. Similarly, all Detachments are considered to have line of sight to a Flyer. A Flyer suffers no penalties to Hit rolls for targeting obscured models, though they do suffer penalties for firing upon Detachments within an area of terrain as normal.
 
 In the Remove Flyers stage of the End phase, all Flyers on the battlefield are removed and placed back in Reserve - they do not count as being destroyed and may return to the battlefield in the following round. Any Wounds a Flyer has suffered remain; for example, if it leaves the battlefield having suffered 2 Wounds, when it next returns it still has suffered 2 Wounds.
 
@@ -267,7 +267,7 @@ If the result of the firing player&apos;s roll is higher than the target player&
       <description>Hits scored by a weapon with the Psi trait bypass Invulnerable Saves, Cover Saves, Ion Shields and Void Shields. Each model may only fire with a single weapon with the Psi trait per round. Psi weapons cannot be fired as part of an Overwatch.</description>
     </rule>
     <rule id="1090-d918-d47e-1317" name="Quake" publicationId="c1b8-2180-635c-14cd" hidden="false">
-      <description>If one or more Hits are scored against a Detachment by a weapon with the Quake trait, halve the Movement characteristic of all models within that Detachment. In addition, subtract 1 from the result of any Hit rolls the Detachment makes; both effects until the end of the round. This Trait is ignored if all Hits scored by a weapon with this Trait are allocated to a target&apos;s Void Shields.</description>
+      <description>If one or more Hits are scored against a Detachment by a weapon with the Quake trait, halve the Movement characteristic of all models within that Detachment. In addition, subtract 1 from the result of any Hit rolls the Detachment makes; both effects last until the end of the round. This Trait is ignored if all Hits scored by a weapon with this Trait are allocated to a target&apos;s Void Shields.</description>
     </rule>
     <rule id="d56d-6332-debe-ab1a" name="Rapid Fire" publicationId="c1b8-2180-635c-14cd" hidden="false">
       <description>When making Hit rolls for a weapon with the Rapid Fire trait, any natural rolls of a 6 score 2 Hits instead of 1.</description>
@@ -313,7 +313,7 @@ In addition, each Hit scored by a weapon with Shock Pulse that is allocated to a
 In addition, Hits scored by a weapon with the Warp trait bypass the following: Armour Saves, Cover Saves, Invulnerable Saves, Ion Shields, Void Shields.</description>
     </rule>
     <rule id="e40-19fc-8c79-9a12" name="Wrecker (X)" publicationId="c1b8-2180-635c-14cd" hidden="false">
-      <description>A model with a weapon with the Wrecker trait may attempt to destroy a Structure when activated in the First Fire sage or Advancing Fire stage. Choose a Structure the model is in base contact with - the opposing player makes a Save roll for that Structure, taking into account the AP characteristic of the weapon. If the Save roll is failed, the Structure suffers a number of Wounds equal to the value shown in brackets.
+      <description>A model with a weapon with the Wrecker trait may attempt to destroy a Structure when activated in the First Fire stage or Advancing Fire stage. Choose a Structure the model is in base contact with - the opposing player makes a Save roll for that Structure, taking into account the AP characteristic of the weapon. If the Save roll is failed, the Structure suffers a number of Wounds equal to the value shown in brackets.
 
 If a model has more than one Wrecker (X) weapon, then it may attempt to destroy a number of Structures equal to the number of Wrecker weapons it has. Alternatively, a model may attempt to destroy a single Structure with all its Wrecker weapons, in which case the combined total of the weapons&apos; AP is taken into account when making a Save roll for the Structure and the Structure suffers a number of Wounds equal to the combined total of the Wrecker values for all weapons the model is using against that Structure.</description>
     </rule>
@@ -403,7 +403,7 @@ Models with the Independent and Deep Strike special rules may start the game in 
       <description>Detachments with the Infiltrate special rule are not deployed as normal. Instead, after all players have finished deploying, players take it in turns, starting with the player who has command of the battlefield, to deploy an Infiltrating Detachment anywhere on the battlefield outside of the opposing player&apos;s deployment zone. Infiltrating models must be deployed at least 4&quot; away from a previously deployed enemy model; if it cannot be deployed in this way, then it is deployed as normal within the controlling player&apos;s deployment zone.</description>
     </rule>
     <rule id="941e-dc74-2689-bf1f" name="Inspire (X)" publicationId="c1b8-2180-635c-14cd" hidden="false">
-      <description>Friendly Detachments within a number of inches equal to the value shown in brackets of a Detachment with this special rule may use this Detachment&apos;s Moral value in place of their own when making Morale checks.</description>
+      <description>Friendly Detachments within a number of inches equal to the value shown in brackets of a Detachment with this special rule may use this Detachment&apos;s Morale value in place of their own when making Morale checks.</description>
     </rule>
     <rule id="c5cb-479b-fa6b-d376" name="Interceptor" publicationId="c1b8-2180-635c-14cd" hidden="false">
       <description>After a model with the Interceptor rule has finished moving, it may immediately fire a single weapon of the controlling player&apos;s choice that does not have the Point Defence trait. A model firing this way may only target Flyer models and suffers a -2 to all Hit rolls when doing so. An Interceptor model that fires in this way may still fire as normal during the Combat phase, including with the weapon it fired as part of the Interceptor special rule, but may not also fire as part of an Overwatch.</description>
@@ -455,18 +455,18 @@ Models with the Jump Packs special rule count as having the Bulky special rule f
 When a Detachment with the Outflank special rule that is in Reserve is activated in any Movement phase other than the first, the controlling player may choose to leave it in Reserve or Flank the enemy. When a Detachment Flanks the enemy, the controlling player places the models in that Detachment in base contact with any battlefield edge, although no model can be deployed within 8&quot; of the enemy&apos;s battlefield edge. Once deployed in this way, the Detachment may complete its activation as normal (i.e., it may move during the Movement phase and/or fire during the Combat phase, etc.).</description>
     </rule>
     <rule id="45cc-2c29-f0e6-19aa" name="Phosphex" publicationId="c1b8-2180-635c-14cd" hidden="false">
-      <description>Models Engaged with an enemy Detachment with the Phosphex special rule gain no postivie modifiers to the CAF characteristic for being Garrison within a Structure.</description>
+      <description>Models Engaged with an enemy Detachment with the Phosphex special rule gain no positive modifiers to the CAF characteristic for being Garrison within a Structure.</description>
     </rule>
     <rule id="20d1-2027-5605-3f28" name="Shield Generator (X)" publicationId="c1b8-2180-635c-14cd" hidden="false">
       <description>Any model, friend or foe, including the model with this special rule, within 6&quot; of a model with the Shield Generator (X) special rule, gains an Invulnerable Save equal to the number shown in brackets. This Save can only be made against Hits scored by models more than 6&quot; from the Shield Generator model, i.e., if they firing model and the target are both benefitting from a Save given by the same model with this special rule then the target cannot use that Save.</description>
     </rule>
     <rule id="ea1-6996-9b3e-1dc1" name="Scout" publicationId="c1b8-2180-635c-14cd" hidden="false">
-      <description>Models with the Scout special rule improve any Cover Save they have by 1, the a maximum of 2+.</description>
+      <description>Models with the Scout special rule improve any Cover Save they have by 1, to a maximum of 2+.</description>
     </rule>
     <rule id="4f70-6a67-930b-d0fc" name="Skimmer" publicationId="c1b8-2180-635c-14cd" hidden="false">
-      <description>Models with the Skimmer special rule can move over all other models and areas of terrain, suffering no movement penalties for doing so, such as due to Difficult terrain or moving over an Obstacle. Models with the Skimmer special rule cannot end their movement overlapping other models, not can they end their movement within an enemy model&apos;s Engagement Zone unless they are Engaged with it. They can move Impassable terrain but cannot end their movement overlapping it - any model that ends its movement overlapping an area of Impassable terrain is destroyed.
+      <description>Models with the Skimmer special rule can move over all other models and areas of terrain, suffering no movement penalties for doing so, such as due to Difficult terrain or moving over an Obstacle. Models with the Skimmer special rule cannot end their movement overlapping other models, nor can they end their movement within an enemy model&apos;s Engagement Zone unless they are Engaged with it. They can move over Impassable terrain but cannot end their movement overlapping it - any model that ends its movement overlapping an area of Impassable terrain is destroyed.
 
-During the First Fire stage of the Combat phase, a Detachment with the Skimmer special rule that is issued with a First Fire Order may may a &quot;Pop-up attack&quot;. To make a Pop-up attack, the controlling player declares that the Detachment is doing so when it is activated. The Detachment then fires as normal. However, when making a Pop-up attack, Skimmer models trace their line of sight from a position 10&quot; directly above the current position of the model; to determine line of sight, hold the model up in the air a model&apos;s eye view.
+During the First Fire stage of the Combat phase, a Detachment with the Skimmer special rule that is issued with a First Fire Order may make a &quot;Pop-up attack&quot;. To make a Pop-up attack, the controlling player declares that the Detachment is doing so when it is activated. The Detachment then fires as normal. However, when making a Pop-up attack, Skimmer models trace their line of sight from a position 10&quot; directly above the current position of the model; to determine line of sight, hold the model up in the air and take a model&apos;s eye view.
 
 When a Skimmer Detachment makes a Pop-up attack, they remain at their elevated position until the end of the First Fire stage, meaning enemy models can draw line of sight to the Skimmer models as if they were 10&quot; above their starting positions on the battlefield. At the end of the First Fire stage, the Skimmer models descend and line of sight must be drawn to and from them as normal.</description>
     </rule>
@@ -480,7 +480,7 @@ Models may start the battle deployed within a Transport. When deploying a Detach
 
 When being issued an Order during the Order phase, a Detachment with the Transport (X) special rule is issued an Order as normal. A Detachment that has one or more models within a Transport is issued an Order separately but can only be issued certain Orders depending on the type of Transport - unless otherwise instructed, that Detachment can only be issued an Advance Order or March Order.
 
-If part of a Detachment is Embarked upon a Transport and another part of it is not (e.g., due to the latter part&apos;s Transport being destroyed), the the non-Embarked models maintain Coherency with the Transports.
+If part of a Detachment is Embarked upon a Transport and another part of it is not (e.g., due to the latter part&apos;s Transport being destroyed), the non-Embarked models maintain Coherency with the Transports.
 
 If a Transport is destroyed while transporting Detachments, make a Save roll for each model within it, using a Save characteristic of 4+, or the model&apos;s own Save characteristic if it is better. This Save roll is not modified by the AP of the weapon that destroyed the Transport. If the Save is failed, that model suffers a Wound. The models are then placed on the battlefield within 2&quot; of the destroyed Transport&apos;s location - if a model cannot be placed (due to enemy models&apos; Engagement Zones, Impassable terrain or not enough space, etc.), that model is destroyed. The models cannot be placed in Combat.</description>
     </rule>
