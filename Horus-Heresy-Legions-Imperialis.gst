@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="14" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="15" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="eab5-2233-3200-3063" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -61,7 +61,7 @@
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="49dd-d763-6836-b4f8" hidden="true"/>
+    <forceEntry id="49dd-d763-6836-b4f8" hidden="true" name=" "/>
   </forceEntries>
   <sharedRules>
     <rule id="e368-00fb-7a9b-9eb0" name="Assault" publicationId="c1b8-2180-635c-14cd" hidden="false">
