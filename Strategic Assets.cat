@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
-    <categoryEntry id="7607-c99-6d05-3469" name="Titan" hidden="false"/>
-    <categoryEntry id="1c89-9a08-75f1-df93" name="Knight" hidden="false"/>
     <categoryEntry id="1c28-218e-42c6-1ed4" name="Titan (5)" hidden="false"/>
     <categoryEntry id="ebbc-4775-1167-b265" name="Knight (4)" hidden="false"/>
     <categoryEntry name="Strategic Assets" hidden="false" id="76ec-afbd-859f-876e"/>
@@ -11,7 +9,7 @@
     <forceEntry id="4c79-51fb-1b1a-a287" name="Knight Household Lance" hidden="false">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="9b9e-cfd3-e1e3-20e1" targetId="3779-422e-5fe9-5654"/>
-        <categoryLink id="f642-e62d-7f2a-c125" name="Knight" hidden="false" targetId="1c89-9a08-75f1-df93" primary="false">
+        <categoryLink id="f642-e62d-7f2a-c125" name="Knight" hidden="false" targetId="13e3-8701-239a-fec9" primary="false" type="category">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a5e-1d6f-67fa-7894" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85b4-6ff9-a5bc-9601" type="min"/>
@@ -22,7 +20,7 @@
     <forceEntry id="90ad-40c2-4b21-1ab3" name="Legion Support" hidden="false">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="c573-98f8-85ef-726e" targetId="3779-422e-5fe9-5654"/>
-        <categoryLink id="9765-5680-5361-8a16" name="Titan" hidden="false" targetId="7607-c99-6d05-3469" primary="false">
+        <categoryLink id="9765-5680-5361-8a16" name="Titan" hidden="false" targetId="9072-16ad-262f-a980" primary="false" type="category">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81de-d0a5-2f34-b0be" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9530-af22-365d-867b" type="min"/>
@@ -46,10 +44,10 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="884b-37b7-f40b-dcf3" name="Titan" hidden="false" targetId="7607-c99-6d05-3469" primary="true"/>
         <categoryLink id="e917-f11b-c2e5-05e9" name="New CategoryLink" hidden="false" targetId="1c28-218e-42c6-1ed4" primary="false"/>
         <categoryLink targetId="76ec-afbd-859f-876e" id="c0e-5bb4-228b-bd50" primary="false" name="Strategic Assets"/>
         <categoryLink targetId="124c-2927-143f-f513" id="5459-b07-494f-6325" primary="false" name="Allied Units"/>
+        <categoryLink targetId="9072-16ad-262f-a980" id="1bfe-399c-7b09-7c90" primary="true" name="Titan"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="ee9a-955f-ac29-16d9" name="Warhound Titans" hidden="false" collective="false" import="true" defaultSelectionEntryId="fde1-f35e-66cc-8c20">
@@ -445,9 +443,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2042-da84-0a26-6063" name="Titan (5)" hidden="false" targetId="1c28-218e-42c6-1ed4" primary="false"/>
-        <categoryLink id="7221-88d6-9560-a924" name="New CategoryLink" hidden="false" targetId="7607-c99-6d05-3469" primary="true"/>
         <categoryLink targetId="76ec-afbd-859f-876e" id="8a16-a469-bcf3-8b78" primary="false" name="Strategic Assets"/>
         <categoryLink targetId="124c-2927-143f-f513" id="67a3-228f-4814-45c2" primary="false" name="Allied Units"/>
+        <categoryLink targetId="9072-16ad-262f-a980" id="1fc4-b70e-e6ee-2cf0" primary="true" name="Titan"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="05d3-bce3-7944-5982" name="Ardex Mega-Bolters" hidden="false" collective="false" import="true" type="upgrade">
@@ -596,9 +594,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5cac-6954-952c-5375" name="Titan (5)" hidden="false" targetId="1c28-218e-42c6-1ed4" primary="false"/>
-        <categoryLink id="87e3-c7f9-bfce-7012" name="New CategoryLink" hidden="false" targetId="7607-c99-6d05-3469" primary="true"/>
         <categoryLink targetId="76ec-afbd-859f-876e" id="3e7b-e13f-e24d-36f2" primary="false" name="Strategic Assets"/>
         <categoryLink targetId="124c-2927-143f-f513" id="4102-eb6d-234-4c2f" primary="false" name="Allied Units"/>
+        <categoryLink targetId="9072-16ad-262f-a980" id="6e6b-7ca-81fe-dbb6" primary="true" name="Titan"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="dec0-cf9b-2d69-24d2" name="Main Weapons (Can take duplicates)" hidden="false" collective="false" import="true">
@@ -887,9 +885,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5d37-ea27-02b9-a79a" name="Titan (5)" hidden="false" targetId="1c28-218e-42c6-1ed4" primary="false"/>
-        <categoryLink id="dacf-2cca-4696-115c" name="New CategoryLink" hidden="false" targetId="7607-c99-6d05-3469" primary="true"/>
         <categoryLink targetId="76ec-afbd-859f-876e" id="a8ac-8ca1-928b-29d6" primary="false" name="Strategic Assets"/>
         <categoryLink targetId="124c-2927-143f-f513" id="8d90-2668-d67e-5045" primary="false" name="Allied Units"/>
+        <categoryLink targetId="9072-16ad-262f-a980" id="d3b6-ad92-35c7-a891" primary="true" name="Titan"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c7c1-6dd8-b1b0-aad3" name="Ardex-Defensor Mauler Bolt Cannon Turrets" hidden="false" collective="false" import="true" type="upgrade">
@@ -990,9 +988,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c083-ca5b-7400-6417" name="Titan (5)" hidden="false" targetId="1c28-218e-42c6-1ed4" primary="false"/>
-        <categoryLink id="d6f6-165c-fa26-07fc" name="New CategoryLink" hidden="false" targetId="7607-c99-6d05-3469" primary="true"/>
         <categoryLink targetId="76ec-afbd-859f-876e" id="5400-1a6e-e2e7-faa1" primary="false" name="Strategic Assets"/>
         <categoryLink targetId="124c-2927-143f-f513" id="f185-4d9-2215-ace" primary="false" name="Allied Units"/>
+        <categoryLink targetId="9072-16ad-262f-a980" id="c88c-28c5-7065-8023" primary="true" name="Titan"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e9b8-1d60-3e71-f5ee" name="Warlord Arm Weapons (Can take duplicates)" hidden="false" collective="false" import="true" targetId="ab7d-e85b-c936-b108" type="selectionEntryGroup">
@@ -1023,9 +1021,9 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="d78a-a7a0-52ed-fbaf" name="Knight (4)" hidden="false" targetId="ebbc-4775-1167-b265" primary="false"/>
-        <categoryLink id="b152-f2b3-ba45-8102" name="New CategoryLink" hidden="false" targetId="1c89-9a08-75f1-df93" primary="true"/>
         <categoryLink targetId="76ec-afbd-859f-876e" id="7cc9-506b-d782-7825" primary="false" name="Strategic Assets"/>
         <categoryLink targetId="124c-2927-143f-f513" id="aea1-1bdc-edc5-6b30" primary="false" name="Allied Units"/>
+        <categoryLink targetId="13e3-8701-239a-fec9" id="6ef0-df80-ec4-29c4" primary="true" name="Knight"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="63bb-a39e-af67-7fac" name="Armiger Talon" hidden="false" collective="false" import="true">
@@ -1499,9 +1497,9 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="75f9-4754-f507-c162" name="Knight (4)" hidden="false" targetId="ebbc-4775-1167-b265" primary="false"/>
-        <categoryLink id="cf61-1cf0-c6a6-3ba2" name="New CategoryLink" hidden="false" targetId="1c89-9a08-75f1-df93" primary="true"/>
         <categoryLink targetId="76ec-afbd-859f-876e" id="1ec0-ca03-b25-c19c" primary="false" name="Strategic Assets"/>
         <categoryLink targetId="124c-2927-143f-f513" id="bc57-f783-cbd4-9328" primary="false" name="Allied Units"/>
+        <categoryLink targetId="13e3-8701-239a-fec9" id="3d3f-ebca-845b-2916" primary="true" name="Knight"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="8563-730d-cc9c-bf89" name="Armiger Talon" hidden="false" collective="false" import="true">
@@ -1844,9 +1842,9 @@
     <selectionEntry id="fd4a-62cd-8326-1526" name="Acastus Knight Banner" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="5b13-16c9-5b0d-5080" name="Knight (4)" hidden="false" targetId="ebbc-4775-1167-b265" primary="false"/>
-        <categoryLink id="c1d1-124d-b90b-6282" name="New CategoryLink" hidden="false" targetId="1c89-9a08-75f1-df93" primary="true"/>
         <categoryLink targetId="76ec-afbd-859f-876e" id="802d-f62f-f119-515b" primary="false" name="Strategic Assets"/>
         <categoryLink targetId="124c-2927-143f-f513" id="56c0-fbd9-fd77-ff18" primary="false" name="Allied Units"/>
+        <categoryLink targetId="13e3-8701-239a-fec9" id="274f-9b-b62c-fece" primary="true" name="Knight"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="f14f-9ce1-9e53-2310" name="Armiger Talon" hidden="false" collective="false" import="true">
@@ -2169,9 +2167,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e4d8-444c-343c-ad6f" name="Titan (5)" hidden="false" targetId="1c28-218e-42c6-1ed4" primary="false"/>
-        <categoryLink id="74cd-d40f-6332-23a4" name="New CategoryLink" hidden="false" targetId="7607-c99-6d05-3469" primary="true"/>
         <categoryLink targetId="76ec-afbd-859f-876e" id="8dd4-e5a6-3599-d119" primary="false" name="Strategic Assets"/>
         <categoryLink targetId="124c-2927-143f-f513" id="e534-fb0-dac3-44be" primary="false" name="Allied Units"/>
+        <categoryLink targetId="9072-16ad-262f-a980" id="5a1b-9bf7-5c98-b29d" primary="true" name="Titan"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="55fa-25f8-8304-4f88" name="Death Pulse" hidden="false" collective="false" import="true" type="upgrade">
@@ -2276,9 +2274,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="66ac-c97c-3c7b-1ece" name="Titan (5)" hidden="false" targetId="1c28-218e-42c6-1ed4" primary="false"/>
-        <categoryLink id="5704-e914-23a7-d421" name="New CategoryLink" hidden="false" targetId="7607-c99-6d05-3469" primary="true"/>
         <categoryLink targetId="76ec-afbd-859f-876e" id="6932-3a82-678e-b3ae" primary="false" name="Strategic Assets"/>
         <categoryLink targetId="124c-2927-143f-f513" id="b2aa-9cbe-896-aca5" primary="false" name="Allied Units"/>
+        <categoryLink targetId="9072-16ad-262f-a980" id="24de-489-a83c-d07e" primary="true" name="Titan"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="a901-e309-2988-9afa" name="Revelator Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -2397,9 +2395,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f872-7137-d9ef-7e09" name="Titan (5)" hidden="false" targetId="1c28-218e-42c6-1ed4" primary="false"/>
-        <categoryLink id="65f6-a075-6f8f-1860" name="New CategoryLink" hidden="false" targetId="7607-c99-6d05-3469" primary="true"/>
         <categoryLink targetId="76ec-afbd-859f-876e" id="f5f3-7392-7c77-9ab4" primary="false" name="Strategic Assets"/>
         <categoryLink targetId="124c-2927-143f-f513" id="4dc3-4e12-4404-1fa0" primary="false" name="Allied Units"/>
+        <categoryLink targetId="9072-16ad-262f-a980" id="c946-f984-e41-b73d" primary="true" name="Titan"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="a989-a91d-11b9-ebb3" name="Desolator Chainsword" hidden="false" collective="false" import="true" type="upgrade">

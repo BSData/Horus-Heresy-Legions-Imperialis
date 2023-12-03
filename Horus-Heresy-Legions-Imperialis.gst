@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="16" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="17" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="eab5-2233-3200-3063" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -59,10 +59,27 @@
         <constraint field="limit::ee95-a20e-f9ff-e2c2" scope="roster" value="30" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="true" id="6530-6ad1-414a-fa00" type="max"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry id="13e3-8701-239a-fec9" name="Knight" hidden="false"/>
+    <categoryEntry id="9072-16ad-262f-a980" name="Titan" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="49dd-d763-6836-b4f8" hidden="true" name="⠀">
-      <comment>This Force option exists only to allow BattleScribe functionality.</comment>
+    <forceEntry id="49dd-d763-6836-b4f8" hidden="true" name="Unbound Formation (Open Play)">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="f7a1-9027-184e-9946" targetId="3779-422e-5fe9-5654" type="category"/>
+        <categoryLink name="HQ" hidden="false" id="163b-152c-78b9-ddb6" targetId="d950-ad23-9b2-9325"/>
+        <categoryLink name="Core" hidden="false" id="cf2b-d3a5-71a5-587e" targetId="446a-abe3-63c3-5709"/>
+        <categoryLink name="Air Support" hidden="false" id="fef5-5f7b-695-15a0" targetId="2879-da90-6a37-c897"/>
+        <categoryLink name="Artillery" hidden="false" id="b844-5df9-4d5b-f01f" targetId="98f1-ce9c-c2b2-cea5"/>
+        <categoryLink name="Bastion" hidden="false" id="e05e-b6a9-9278-234c" targetId="2005-60e5-e49d-32f2"/>
+        <categoryLink name="Battle Tank" hidden="false" id="5d9a-518a-7fd0-f80e" targetId="4e02-d7ec-4d81-d5fa"/>
+        <categoryLink name="Heavy Armour" hidden="false" id="3156-52d5-250d-95d7" targetId="1f6b-d764-352d-1e74" type="category"/>
+        <categoryLink name="Light Armour" hidden="false" id="381b-e8c0-8a9e-1a8b" targetId="3b81-6b3e-4546-ade3" type="category"/>
+        <categoryLink name="Support" hidden="false" id="e1eb-be58-1112-e7d9" targetId="be19-7658-5258-71d9" type="category"/>
+        <categoryLink name="Transport" hidden="false" id="5289-bb8f-66be-c9cb" targetId="3751-fb88-3656-b7d1" type="category"/>
+        <categoryLink name="Vanguard" hidden="false" id="beb-b6e2-8aac-f9c2" targetId="8416-456c-a6f-e059" type="category"/>
+        <categoryLink name="Knight" hidden="false" id="17c-5158-3e04-e1f6" targetId="13e3-8701-239a-fec9" type="category"/>
+        <categoryLink name="Titan" hidden="false" id="c84b-708c-d3ad-3ca7" targetId="9072-16ad-262f-a980" type="category"/>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
   <sharedRules>
@@ -586,6 +603,18 @@ During the End phase, in the Resolve End Phase Effects stage, a model with the V
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
         <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="c522-7329-8bef-9b29">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
 </gameSystem>
