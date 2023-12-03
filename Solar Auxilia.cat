@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5823-85fd-1314-b472" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
   </publications>
@@ -20,7 +20,7 @@
         </categoryLink>
         <categoryLink id="febc-8cae-d183-1912" name="Core" hidden="false" targetId="446a-abe3-63c3-5709" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="892e-5d22-997e-80e4" type="max"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="892e-5d22-997e-80e4" type="max"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef33-cbb1-8483-90a4" type="min"/>
           </constraints>
         </categoryLink>
@@ -48,7 +48,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2879-da90-6a37-c897" type="greaterThan"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4e02-d7ec-4d81-d5fa" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4e02-d7ec-4d81-d5fa" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -72,8 +72,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33b0-9f18-5fb6-ce4c" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20bf-5423-26a8-baf8" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20bf-5423-26a8-baf8" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="b989-a4a5-9111-77f7" name="Light Armour" hidden="false" targetId="3b81-6b3e-4546-ade3" primary="false">
@@ -145,7 +144,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2879-da90-6a37-c897" type="greaterThan"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4e02-d7ec-4d81-d5fa" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4e02-d7ec-4d81-d5fa" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -203,7 +202,7 @@
         </categoryLink>
         <categoryLink id="5333-42d9-ef88-cf0a" name="Air Support" hidden="false" targetId="2879-da90-6a37-c897" primary="false">
           <modifiers>
-            <modifier type="set" field="a2cd-7315-f63f-8305" value="0">
+            <modifier type="set" field="a2cd-7315-f63f-8305" value="1">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -215,7 +214,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2cd-7315-f63f-8305" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2cd-7315-f63f-8305" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="8180-146-27c6-fce2" name="Artillery" hidden="false" targetId="98f1-ce9c-c2b2-cea5" primary="false">
@@ -224,7 +223,7 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2879-da90-6a37-c897" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2879-da90-6a37-c897" type="greaterThan"/>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4e02-d7ec-4d81-d5fa" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
@@ -247,7 +246,7 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2879-da90-6a37-c897" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2879-da90-6a37-c897" type="greaterThan"/>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98f1-ce9c-c2b2-cea5" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
