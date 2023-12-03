@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -4629,9 +4629,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="World Eaters" hidden="false" id="55ed-29c7-12b4-38d9">
-              <categoryLinks>
-                <categoryLink targetId="437a-7951-c93d-1e14" id="7438-bfca-5ab1-2e6f" primary="false" name="Traitor"/>
-              </categoryLinks>
               <profiles>
                 <profile name="Incarnate Violence" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="ceb6-42c9-f0ae-4349">
                   <characteristics>
@@ -4641,9 +4638,6 @@
               </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Alpha Legion" hidden="false" id="9968-4d06-50ea-fedd">
-              <categoryLinks>
-                <categoryLink targetId="437a-7951-c93d-1e14" id="9f46-dd2d-8142-d416" primary="false" name="Traitor"/>
-              </categoryLinks>
               <profiles>
                 <profile name="Mutable Tactics" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="a3fd-4b0b-9eaa-e4f2">
                   <characteristics>
@@ -4655,9 +4649,6 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
               </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Blood Angels" hidden="false" id="a866-a36a-7b89-2f30">
-              <categoryLinks>
-                <categoryLink targetId="1b68-cce9-e11c-fde7" id="cd3e-88df-edc5-c1d3" primary="false" name="Loyalist"/>
-              </categoryLinks>
               <profiles>
                 <profile name="Encarmine Fury" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="64ae-9f10-f77f-5299">
                   <characteristics>
@@ -4684,14 +4675,8 @@ If a Formation has a Dedicated Transport, the model types gain the relevant spec
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink targetId="1b68-cce9-e11c-fde7" id="2bf7-b950-dbd1-48b4" primary="false" name="Loyalist"/>
-              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Death Guard" hidden="false" id="d955-5c5a-f357-a486">
-              <categoryLinks>
-                <categoryLink targetId="437a-7951-c93d-1e14" id="24f9-6e1d-19b5-11ef" primary="false" name="Traitor"/>
-              </categoryLinks>
               <profiles>
                 <profile name="Sons of Barbarus" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="c91a-8acc-b829-ca51">
                   <characteristics>
@@ -4714,14 +4699,8 @@ If an Army includes at least one Allied Contingent comprised entirely of Emperor
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink targetId="437a-7951-c93d-1e14" id="eb36-3f1d-288b-f73d" primary="false" name="Traitor"/>
-              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Imperial Fists" hidden="false" id="4ecd-4524-9b24-a650">
-              <categoryLinks>
-                <categoryLink targetId="1b68-cce9-e11c-fde7" id="1654-83b7-78bc-ff92" primary="false" name="Loyalist"/>
-              </categoryLinks>
               <profiles>
                 <profile name="Disciplined Fire" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="2b57-503e-1fe9-7c2">
                   <characteristics>
@@ -4739,9 +4718,6 @@ If an Army includes at least one Allied Contingent comprised entirely of Emperor
               </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Iron Hands" hidden="false" id="a8a5-268-c3e3-dbdc">
-              <categoryLinks>
-                <categoryLink targetId="1b68-cce9-e11c-fde7" id="a8bc-f018-93ad-3915" primary="false" name="Loyalist"/>
-              </categoryLinks>
               <profiles>
                 <profile name="Inviolate Armour" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="c289-530f-6a45-9f92">
                   <characteristics>
@@ -4753,9 +4729,6 @@ The First Fire Order must still be in effect (i.e., it cannot have Overwatched o
               </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Iron Warriors" hidden="false" id="5605-d0c2-9398-d7a0">
-              <categoryLinks>
-                <categoryLink targetId="437a-7951-c93d-1e14" id="6c28-cd3-11f1-3823" primary="false" name="Traitor"/>
-              </categoryLinks>
               <profiles>
                 <profile name="The Bitter End" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="6898-ea9e-b839-b17c">
                   <characteristics>
@@ -4765,9 +4738,6 @@ The First Fire Order must still be in effect (i.e., it cannot have Overwatched o
               </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Night Lords" hidden="false" id="cac-328c-b6f1-5c99">
-              <categoryLinks>
-                <categoryLink targetId="437a-7951-c93d-1e14" id="83a5-1683-ffaa-2ba8" primary="false" name="Traitor"/>
-              </categoryLinks>
               <profiles>
                 <profile name="Seeds of Dissent" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="8d23-9b05-1547-202f">
                   <characteristics>
@@ -4781,9 +4751,6 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Raven Guard" hidden="false" id="916c-e45c-a0d8-4aed">
-              <categoryLinks>
-                <categoryLink targetId="1b68-cce9-e11c-fde7" id="a342-1ee3-4176-994" primary="false" name="Loyalist"/>
-              </categoryLinks>
               <profiles>
                 <profile name="By Wing and Talon" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="d17e-e97d-804a-5327">
                   <characteristics>
@@ -4793,9 +4760,6 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Salamanders" hidden="false" id="3d05-31ed-7b9d-1adf">
-              <categoryLinks>
-                <categoryLink targetId="1b68-cce9-e11c-fde7" id="cb8b-7ed2-700e-adf0" primary="false" name="Loyalist"/>
-              </categoryLinks>
               <profiles>
                 <profile name="Strength of Will" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="5275-dedb-d171-65fb">
                   <characteristics>
@@ -4805,9 +4769,6 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Sons of Horus" hidden="false" id="de36-e76-2670-4162">
-              <categoryLinks>
-                <categoryLink targetId="437a-7951-c93d-1e14" id="f967-a3d9-9bfb-52d4" primary="false" name="Traitor"/>
-              </categoryLinks>
               <profiles>
                 <profile name="Death Dealers" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="14fb-bd81-b80c-2309">
                   <characteristics>
@@ -4817,9 +4778,6 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Space Wolves" hidden="false" id="2686-dc4a-a99f-f259">
-              <categoryLinks>
-                <categoryLink targetId="1b68-cce9-e11c-fde7" id="4a4e-1af6-e007-18a4" primary="false" name="Loyalist"/>
-              </categoryLinks>
               <profiles>
                 <profile name="Preternatural Sense" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="173e-70ca-ff-dc67">
                   <characteristics>
@@ -4829,9 +4787,6 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Thousand Sons" hidden="false" id="a63d-151a-ddaf-7270">
-              <categoryLinks>
-                <categoryLink targetId="437a-7951-c93d-1e14" id="c089-6ae6-7536-6eb1" primary="false" name="Traitor"/>
-              </categoryLinks>
               <profiles>
                 <profile name="Kine Shields" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="5390-5696-25f4-64ea">
                   <characteristics>
@@ -4841,9 +4796,6 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Ultramarines" hidden="false" id="1a45-77e8-746a-fa63">
-              <categoryLinks>
-                <categoryLink targetId="1b68-cce9-e11c-fde7" id="f7ac-1eb9-a59a-e88a" primary="false" name="Loyalist"/>
-              </categoryLinks>
               <profiles>
                 <profile name="Interlocking Tactics" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="76c1-77ab-4ca2-28df">
                   <characteristics>
@@ -4853,9 +4805,6 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="White Scars" hidden="false" id="c5da-68c7-9771-e8e2">
-              <categoryLinks>
-                <categoryLink targetId="1b68-cce9-e11c-fde7" id="f593-fa5e-f7a8-e64b" primary="false" name="Loyalist"/>
-              </categoryLinks>
               <profiles>
                 <profile name="Born in the Saddle" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="ce6a-2a6f-7215-31c0">
                   <characteristics>
@@ -4865,9 +4814,6 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Word Bearers" hidden="false" id="2201-d1c2-eb6c-cd1">
-              <categoryLinks>
-                <categoryLink targetId="437a-7951-c93d-1e14" id="b7c9-932-6243-c9b" primary="false" name="Traitor"/>
-              </categoryLinks>
               <profiles>
                 <profile name="True Believers" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="7022-2d00-a86e-e0e9">
                   <characteristics>
