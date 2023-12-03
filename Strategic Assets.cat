@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="1c28-218e-42c6-1ed4" name="Titan (5)" hidden="false"/>
     <categoryEntry id="ebbc-4775-1167-b265" name="Knight (4)" hidden="false"/>
@@ -40,6 +40,11 @@
         <modifier type="set" field="ee95-a20e-f9ff-e2c2" value="660">
           <conditions>
             <condition field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee9a-955f-ac29-16d9" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -583,6 +588,13 @@
       <costs>
         <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="385"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="523e-b9c7-d4cd-0352" name="Reaver Battle Titan" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
@@ -863,6 +875,13 @@
       <costs>
         <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="415"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="a46f-41bb-95c7-3756" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -966,6 +985,13 @@
       <costs>
         <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="525"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="67e0-199f-c9a0-141f" name="Warlord Battle Titan" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -1005,6 +1031,13 @@
       <costs>
         <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="600"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b960-5de9-0e8e-3981" name="Questoris Knight Banner" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1016,6 +1049,11 @@
         <modifier type="set" field="ee95-a20e-f9ff-e2c2" value="520">
           <conditions>
             <condition field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab3f-a989-cea4-0bba" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1492,6 +1530,11 @@
         <modifier type="set" field="ee95-a20e-f9ff-e2c2" value="215">
           <conditions>
             <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4616-c747-28d2-0d15" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2138,6 +2181,13 @@
       <costs>
         <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5d4b-8a93-a527-605d" name="Warlord Sinister Battle Titan" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -2252,6 +2302,13 @@
       <costs>
         <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="675"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="6891-afc2-8461-dd66" name="Warmaster Heavy Battle Titan" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -2373,6 +2430,13 @@
       <costs>
         <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="750"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="c6c9-51d4-a828-6428" name="Warmaster Iconoclast Titan" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -2519,6 +2583,13 @@
       <costs>
         <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="750"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
