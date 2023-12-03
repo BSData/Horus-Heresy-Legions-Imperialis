@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5823-85fd-1314-b472" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
   </publications>
@@ -301,6 +301,15 @@
           </modifiers>
         </infoLink>
         <infoLink id="3bcf-1458-5f6b-4e19" name="Commander" hidden="false" targetId="caaf-3de0-3658-9054" type="rule"/>
+        <infoLink name="Infiltrate" hidden="true" type="rule" id="22af-ea5-ec51-aea8" targetId="68b7-f6c7-7925-1567">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="30f2-027b-e06f-0ba0" name="Infantry (1)" hidden="false" targetId="68c1-de55-26b1-8ca4" primary="false"/>
@@ -392,6 +401,15 @@
           </modifiers>
         </infoLink>
         <infoLink id="8e60-1cab-446e-92f8" name="Commander" hidden="false" targetId="caaf-3de0-3658-9054" type="rule"/>
+        <infoLink name="Infiltrate" hidden="true" type="rule" id="7c4f-3fcc-20c7-d620" targetId="68b7-f6c7-7925-1567">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="daec-f9ae-e3f7-fd10" name="Infantry (1)" hidden="false" targetId="68c1-de55-26b1-8ca4" primary="false"/>
@@ -565,6 +583,17 @@
       <costs>
         <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Infiltrate" hidden="true" type="rule" id="955e-6f26-b85d-8906" targetId="68b7-f6c7-7925-1567">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="ac35-4985-5633-eaee" name="Auxilia Ogryn Charonite Section" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -636,6 +665,17 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Infiltrate" hidden="true" type="rule" id="9aec-23d9-fec8-3734" targetId="68b7-f6c7-7925-1567">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="a002-4a05-0cce-8a84" name="Auxilia Rapier Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -707,6 +747,17 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Infiltrate" hidden="true" type="rule" id="99c3-929e-280c-7245" targetId="68b7-f6c7-7925-1567">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="576c-f56c-d7cf-cfd8" name="Auxilia Tarantula Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -778,6 +829,17 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Infiltrate" hidden="true" type="rule" id="5cdd-1232-f46b-30ab" targetId="68b7-f6c7-7925-1567">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="8e73-a5ce-8c16-2f55" name="Auxilia Aethon Heavy Sentinel Patrol" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -862,6 +924,17 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Forward Deployment" hidden="true" type="rule" id="b420-9383-6c5e-ca02" targetId="54b4-67fd-a64-86d5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="a02b-456b-abbd-a894" name="Leman Russ Strike Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -946,6 +1019,17 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Forward Deployment" hidden="true" type="rule" id="eddc-9bda-cc27-8856" targetId="54b4-67fd-a64-86d5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="f6f5-66ec-1654-1c38" name="Malcador Tank Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1030,6 +1114,17 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Forward Deployment" hidden="true" type="rule" id="b7ef-bf9c-e29-752d" targetId="54b4-67fd-a64-86d5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="db83-63c6-e511-8994" name="Auxilia Super-heavy Tank Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1198,6 +1293,17 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Forward Deployment" hidden="true" type="rule" id="9146-fe2c-ea9f-bed9" targetId="54b4-67fd-a64-86d5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="7b07-1ffb-84de-6ac7" name="Auxilia Avenger Strike Fighter Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1282,6 +1388,17 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Forward Deployment" hidden="true" type="rule" id="89e1-f976-4859-b54e" targetId="54b4-67fd-a64-86d5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="df13-9e6a-069f-a958" name="Auxilia Lightning Fighter Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1366,6 +1483,17 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Forward Deployment" hidden="true" type="rule" id="7eae-fb5c-b8-759e" targetId="54b4-67fd-a64-86d5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="243f-dbf7-f57c-0a2e" name="Auxilia Marauder Bomber Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1838,6 +1966,17 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Forward Deployment" hidden="true" type="rule" id="3c93-2567-3c2e-fc7d" targetId="54b4-67fd-a64-86d5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="9795-cdc4-6dda-345d" name="Auxilia Arvus Lighter" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1921,6 +2060,9 @@
         <categoryLink id="94ea-2183-1c18-fdc4" name="New CategoryLink" hidden="false" targetId="446a-abe3-63c3-5709" primary="true"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="8278-7191-3251-f551" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Infiltrate" hidden="true" type="rule" id="e5b-fdf-39a3-e2b3" targetId="68b7-f6c7-7925-1567"/>
+      </infoLinks>
     </entryLink>
     <entryLink id="669b-7512-b711-5ca2" name="Auxilia Veletaris Storm Section" hidden="false" collective="false" import="true" targetId="1795-e738-550c-3555" type="selectionEntry">
       <categoryLinks>
@@ -1935,6 +2077,17 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Infiltrate" hidden="true" type="rule" id="d0bc-a57b-d2c2-c14c" targetId="68b7-f6c7-7925-1567">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
