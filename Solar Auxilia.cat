@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5823-85fd-1314-b472" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
   </publications>
@@ -1077,75 +1077,20 @@
         <categoryLink id="0ee6-7fb6-3a5c-cbbd" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="4794-a7be-b2d4-2ccc" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="59ad-0a12-cac8-519f" name="Core Detachments" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6233-4137-a68d-13b6" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9369-b9f0-5117-029e" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="93a0-8777-f1d9-bbd4" name="Malcador Tank" hidden="false" collective="false" import="true" targetId="557f-dcb4-8839-3d72" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd3b-d397-d4c3-8ea9" type="min"/>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d44e-fc44-8758-e8f3" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="db3d-4afd-1a96-552b" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81b7-a212-a4f4-04be" type="max"/>
+            <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adaf-9bb9-f069-b0df" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55b2-5974-72f8-fa" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="6779-7a2a-67d3-5d31" name="Increase by 2" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="7070-9498-c51e-9c83" name="Malcador Tank" hidden="false" collective="false" import="true" targetId="557f-dcb4-8839-3d72" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d954-463d-ccb8-142e" type="min"/>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="844f-f041-a9ed-d197" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="130"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1300-7128-b7d4-a1e1" name="Increase by 4" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="e8d6-368c-dc72-fd35" name="Malcador Tank" hidden="false" collective="false" import="true" targetId="557f-dcb4-8839-3d72" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6408-5801-dde8-85cc" type="min"/>
-                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f705-52ed-571a-d8d7" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="240"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2e26-befe-6a84-95d8" name="Increase by 1" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="97f6-98e2-3e69-d348" name="Malcador Tank" hidden="false" collective="false" import="true" targetId="557f-dcb4-8839-3d72" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fea-957a-1d8f-0125" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bde4-b12d-ff66-3a09" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="70"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <entryLinks>
+            <entryLink id="d523-88d0-e67f-1c70" name="Malcador Tank" hidden="false" collective="false" import="true" targetId="557f-dcb4-8839-3d72" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="165"/>
+        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -1157,6 +1102,26 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="235" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="greaterThan" value="2" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="295" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="greaterThan" value="3" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="365" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="greaterThan" value="4" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="405" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="greaterThan" value="5" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -1177,71 +1142,15 @@
         <categoryLink id="35f9-8c69-fcb0-a0a7" name="New CategoryLink" hidden="false" targetId="1f6b-d764-352d-1e74" primary="true"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="18c2-92f7-a0e5-cf7a" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="f42c-2b35-00ae-54e2" name="Core Detachments" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5a63-7303-4aaf-2b9c" name="Upgrades" hidden="false" collective="false" import="true" defaultSelectionEntryId="52cc-d3c5-9c01-b536">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95bf-6e1f-99a8-2ada" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa93-4ad7-3c54-5330" type="min"/>
+            <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2de8-5c66-ddad-e910" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c837-5f35-103e-ea05" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="874b-983f-8c49-97d7" name="Auxilia Super-heavy" hidden="false" collective="false" import="true" targetId="0c07-2f72-ce78-c19b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50c2-1565-9dc7-b4d7" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed63-d0f5-63cb-e6d5" type="max"/>
-              </constraints>
-            </entryLink>
+            <entryLink id="52cc-d3c5-9c01-b536" name="Auxilia Super-heavy" hidden="false" collective="false" import="true" targetId="0c07-2f72-ce78-c19b" type="selectionEntry"/>
           </entryLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="5a63-7303-4aaf-2b9c" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dd1-c046-9e0c-befa" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="4cca-0f0b-ae1d-173f" name="Increase by 3" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="b61f-abbc-46c3-a5da" name="Auxilia Super-heavy" hidden="false" collective="false" import="true" targetId="0c07-2f72-ce78-c19b" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7efa-d4f0-0d11-0394" type="min"/>
-                    <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d73-49bc-4dce-73a3" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="255"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ae2a-a8ea-f43d-eecb" name="Increase by 5" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="eae4-a0c4-fac4-370f" name="Auxilia Super-heavy" hidden="false" collective="false" import="true" targetId="0c07-2f72-ce78-c19b" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3208-3dcb-1af0-f68c" type="min"/>
-                    <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3745-5719-ae65-2fc2" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="390"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6d77-018a-2a52-7ccc" name="Increase by 1" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="869d-3385-e9a0-dc38" name="Auxilia Super-heavy" hidden="false" collective="false" import="true" targetId="0c07-2f72-ce78-c19b" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0183-fa57-d361-4f74" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22c8-3423-0146-f667" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="90"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -1257,6 +1166,31 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="190" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="greaterThan" value="1" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="280" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="greaterThan" value="2" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="355" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="greaterThan" value="3" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="445" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="greaterThan" value="4" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="490" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="greaterThan" value="5" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
