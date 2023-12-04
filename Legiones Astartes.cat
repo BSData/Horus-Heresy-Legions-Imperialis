@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -239,27 +239,6 @@
           <infoLinks>
             <infoLink name="Light AT" hidden="false" type="rule" id="3768-d0ba-60d7-f927" targetId="c731-70f4-ffcd-4ff7"/>
             <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="aaa6-41d9-5a49-2774" targetId="c48c-8f45-e290-9940"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Tempest rockets" hidden="false" id="e8e0-5ba-f2ee-83ee" collective="true">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68e5-f643-f67a-d72c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="860c-5674-f132-4fb5"/>
-          </constraints>
-          <profiles>
-            <profile name="Tempest rockets" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6641-a86b-baa4-1501">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">35&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">2+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Skyfire</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Skyfire" hidden="false" type="rule" id="eaa5-dfab-24a6-ff73" targetId="e93f-b83c-b1c9-d744"/>
-            <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="6cc6-8f8d-6b3c-e6dc" targetId="c48c-8f45-e290-9940"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Wing Mounted lascannon" hidden="false" id="5c1f-2480-2561-fb03" collective="true">

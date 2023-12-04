@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="17" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="18" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="eab5-2233-3200-3063" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -93,9 +93,9 @@
       <description>A weapon with the Arc (Front/Rear) trait may only target Detachments that are within the specified Arc, shown in brackets, of the firing model.</description>
     </rule>
     <rule id="7e4c-2264-79e3-9054" name="Engine Killer (X)" publicationId="c1b8-2180-635c-14cd" hidden="false">
-      <description>When a Super-heavy Vehicle, Knight or Titan suffers a Wound caused by a weapon with the Engine Killer trait, they suffer a number of additional Wounds equal to the number shown in brackets. No Save rolls of any kind can be made against these additional Wounds. Note, only the model that suffered the first Wound suffers the additional Wounds; if this Wound causes to be destroyed, the additional Wounds cannot be assigned to another model within the Detachment.
+      <description>When a Vehicle, Super-heavy Vehicle, Knight or Titan suffers a Wound caused by a weapon with the Engine Killer (X) trait, they suffer a number of additional Wounds equal to the number shown in brackets. No Save rolls of any kind can be made against these additional Wounds. Note, only the model that suffered the first Wound suffers the additional Wounds; if this Wound causes to be destroyed, the additional Wounds cannot be assigned to another model within the Detachment.
 
-If a weapon has the Engine Killer (X) trait and the Rend trait, enemy Super-heavy Vehicles, Knights and Titans suffer a number of additional Wounds equal to the number shown in brackets if they lose a Fight against the model that has that weapon.</description>
+If a weapon has the Engine Killer (X) trait and the Rend trait, enemy Vehicles, Super-heavy Vehicles, Knights and Titans suffer a number of additional Wounds equal to the number shown in brackets if they lose a Fight against the model that has that weapon.</description>
     </rule>
     <rule id="4f6f-3184-9172-ef3f" name="Light" publicationId="c1b8-2180-635c-14cd" hidden="false">
       <description>Hits scored by a weapon with the Light trait against a Vehicle, Super-heavy Vehicle, Knight or Titan model are automatically discarded, before any Save rolls are made. In other words, a weapon with this Trait cannot damage models from the listed Detachment types.
@@ -327,7 +327,7 @@ In addition, each Hit scored by a weapon with Shock Pulse that is allocated to a
       <description>A model firing a weapon with the Tracking trait at a Flyer can re-roll failed Hit rolls.</description>
     </rule>
     <rule id="55bc-d84e-fac2-db3c" name="Warp" publicationId="c1b8-2180-635c-14cd" hidden="false">
-      <description>When making an attack with a weapon with the Warp trait, roll a number of Dice equal to the number of models in the target Detachment which are visible to the firing model and within range; Titans cannot split these dice across multiple Detachments. If targeting a Knight or Titan, then the Dice roll is equal to the number of remaining Wounds the target Detachment has. Roll To Hit as normal.
+      <description>When making an attack with a weapon with the Warp trait, roll a number of Dice equal to the number of models in the target Detachment which are visible to the firing model and within range; Titans cannot split these dice across multiple Detachments. If targeting a Knight or Titan, then the Dice value of the weapon is 1. Roll To Hit as normal.
 
 In addition, Hits scored by a weapon with the Warp trait bypass the following: Armour Saves, Cover Saves, Invulnerable Saves, Ion Shields, Void Shields.</description>
     </rule>
