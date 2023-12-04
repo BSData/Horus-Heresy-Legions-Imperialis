@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5823-85fd-1314-b472" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
   </publications>
@@ -1566,45 +1566,16 @@
         <categoryLink id="2ff7-2d1a-29b9-d85e" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="b0fc-71da-5afb-778f" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="eefd-8aa8-8638-c009" name="Detachments" hidden="false" collective="false" import="true" type="upgrade">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3064-6b40-3316-c61c" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="8611-11ad-f536-5bad" value="2"/>
-                <modifier type="set" field="9dca-dbd7-37e4-6289" value="2"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecaf-99c1-1316-388e" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="8611-11ad-f536-5bad" value="3"/>
-                <modifier type="set" field="9dca-dbd7-37e4-6289" value="3"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a9c-a964-14dc-03b6" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="8611-11ad-f536-5bad" value="4"/>
-                <modifier type="set" field="9dca-dbd7-37e4-6289" value="4"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="46ab-6143-719a-bec3" name="Upgrades" hidden="false" collective="false" import="true" defaultSelectionEntryId="15b4-c14-35b1-e40">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dca-dbd7-37e4-6289" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8611-11ad-f536-5bad" type="min"/>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5425-6ca8-5a4f-9246" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="addc-4ad7-eb73-8d9a" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="352d-b61d-f626-4079" name="Marauder Bomber" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="15b4-c14-35b1-e40" name="Marauder Bomber" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="94a5-a117-2d7a-dd82" name="Marauder Bomber" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+                <profile id="b777-6733-c45a-572b" name="Marauder Bomber" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
                   <characteristics>
                     <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">24&quot;</characteristic>
                     <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
@@ -1615,21 +1586,21 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="3c00-ca85-2f03-6f0f" name="Jink (X)" hidden="false" targetId="9b11-ba2c-eeaf-2402" type="rule">
+                <infoLink id="6442-28e5-b973-4fb" name="Jink (X)" hidden="false" targetId="9b11-ba2c-eeaf-2402" type="rule">
                   <modifiers>
                     <modifier type="set" field="name" value="Jink (5+)"/>
                   </modifiers>
                 </infoLink>
-                <infoLink id="d90a-728b-6705-f424" name="Flyer" hidden="false" targetId="83bf-9c55-ebbb-83f8" type="rule"/>
+                <infoLink id="44c1-2b4-4d60-ce63" name="Flyer" hidden="false" targetId="83bf-9c55-ebbb-83f8" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="3214-df3d-1f8f-96e5" name="Marauder Heavy Bolter Turrets" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="5b00-1321-c279-d38d" name="Marauder Heavy Bolter Turrets" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d752-5a2e-51ec-24e3" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb50-1b6b-601f-84e6" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ea9-a2cc-1861-eeba" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="344f-da7f-d-12f3" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="85c8-24f2-8fa7-e8d6" name="Marauder Heavy Bolter Turrets" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                    <profile id="2987-5344-3702-6b70" name="Marauder Heavy Bolter Turrets" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
@@ -1640,26 +1611,26 @@
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink id="018d-7628-b028-d695" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                    <infoLink id="61e1-ad28-6453-f418" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
                       <modifiers>
                         <modifier type="set" field="name" value="Arc (Rear)"/>
                       </modifiers>
                     </infoLink>
-                    <infoLink id="4d34-7ce6-93d3-3ee0" name="Point Defence" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
-                    <infoLink id="20c2-e17f-5b81-9f8a" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-                    <infoLink id="105f-e54b-ca16-8bdc" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                    <infoLink id="2928-d60-8eda-8b3" name="Point Defence" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
+                    <infoLink id="70a6-bfd9-dd8a-e78b" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                    <infoLink id="f3fd-2b9f-4392-4ebe" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="72fe-de59-f218-065a" name="Nose Mounted Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="4018-a840-64d6-6b0a" name="Nose Mounted Lascannon" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be44-d537-3b12-2600" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a586-c4cd-b34c-f006" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de8-6e0a-5627-7344" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="819b-eec5-4c92-879b" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="72f8-95f1-1110-fb3b" name="Nose Mounted Lascannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                    <profile id="baa2-a2b9-aec9-55ec" name="Nose Mounted Lascannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -1670,25 +1641,25 @@
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink id="6c73-e81f-03dc-b8a8" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                    <infoLink id="9b24-db78-ebae-d0f3" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
                       <modifiers>
                         <modifier type="set" field="name" value="Arc (Front)"/>
                       </modifiers>
                     </infoLink>
-                    <infoLink id="9add-4deb-b4ce-4f36" name="Anti-tank" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
-                    <infoLink id="fb73-8b3b-715d-42bc" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                    <infoLink id="36e5-68b9-30d3-b44a" name="Anti-tank" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
+                    <infoLink id="6ed1-8514-6d7c-8f25" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="eb7d-7774-e9e7-ddaa" name="Marauder Bomb Bay" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="2933-ce3f-ed00-b481" name="Marauder Bomb Bay" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f40-943b-7761-ca45" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07f0-cfd8-9b27-b328" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52d7-b652-487e-9b77" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15e8-38cc-62f4-1cf2" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="47f8-7d36-ed70-c2c9" name="Marauder Bomb Bay" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                    <profile id="3311-bc04-c7ae-52b0" name="Marauder Bomb Bay" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
@@ -1699,12 +1670,12 @@
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink id="ee2e-3fff-e256-0594" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                    <infoLink id="aaac-18d2-dc97-4652" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
                       <modifiers>
                         <modifier type="set" field="name" value="Arc (Rear)"/>
                       </modifiers>
                     </infoLink>
-                    <infoLink id="7788-2bbe-8f48-b1e2" name="Bombing Run" hidden="false" targetId="c99-f84f-dc32-b886" type="rule"/>
+                    <infoLink id="1990-3fc0-e536-7181" name="Bombing Run" hidden="false" targetId="c99-f84f-dc32-b886" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
@@ -1712,10 +1683,10 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="c3f8-5bf1-11c8-0d71" name="Wing Weapons" hidden="false" collective="false" import="true" targetId="28c3-962c-3533-8763" type="selectionEntryGroup">
+                <entryLink id="7fa4-192d-f613-633b" name="Wing Weapons" hidden="false" collective="false" import="true" targetId="28c3-962c-3533-8763" type="selectionEntryGroup">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="428a-3e3f-ab2b-4072" type="max"/>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37ce-2f3c-9ad9-cbd2" type="min"/>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f868-be60-ed2a-bd03" type="max"/>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56f4-87af-27e0-f299" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -1723,9 +1694,9 @@
                 <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9c86-2ff1-2c65-3b9a" name="Marauder Colossus" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c8bf-eefc-f20d-55c7" name="Marauder Colossus" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="b89e-a066-f8b9-28e6" name="Marauder Bomber" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+                <profile id="c8f0-dbef-cbf5-d8a9" name="Marauder Bomber" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
                   <characteristics>
                     <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">24&quot;</characteristic>
                     <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
@@ -1736,21 +1707,21 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="845e-6708-dda5-83bb" name="Jink (X)" hidden="false" targetId="9b11-ba2c-eeaf-2402" type="rule">
+                <infoLink id="5958-f49c-2cf0-aa90" name="Jink (X)" hidden="false" targetId="9b11-ba2c-eeaf-2402" type="rule">
                   <modifiers>
                     <modifier type="set" field="name" value="Jink (5+)"/>
                   </modifiers>
                 </infoLink>
-                <infoLink id="8da5-74c0-f9d0-b1a6" name="Flyer" hidden="false" targetId="83bf-9c55-ebbb-83f8" type="rule"/>
+                <infoLink id="bede-6584-570a-26e1" name="Flyer" hidden="false" targetId="83bf-9c55-ebbb-83f8" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="b394-2685-9696-1e72" name="Colossus Bomb" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="c1e3-8b71-af9d-e5d5" name="Colossus Bomb" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7831-2a6d-32fa-bcf1" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cd2-3d6c-d190-79fc" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64f1-183e-b53f-e788" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="877-7b5d-6765-654f" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="2a97-7c5e-1297-cf7e" name="Colossus Bomb" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                    <profile id="b9fa-b632-f03b-466c" name="Colossus Bomb" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">6</characteristic>
@@ -1761,14 +1732,14 @@
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink id="6233-2cd7-b446-6fe2" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                    <infoLink id="5756-f989-82b7-8de9" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
                       <modifiers>
                         <modifier type="set" field="name" value="Arc (Rear)"/>
                       </modifiers>
                     </infoLink>
-                    <infoLink id="2940-17ba-60ab-fdfa" name="Bombing Run" hidden="false" targetId="c99-f84f-dc32-b886" type="rule"/>
-                    <infoLink id="2fc3-f31d-861c-5f34" name="Bunker Buster" hidden="false" targetId="7543-9f13-322f-a481" type="rule"/>
-                    <infoLink id="3ddd-75ef-d013-95e7" name="Limited (X)" hidden="false" targetId="769e-4f43-51b0-537f" type="rule">
+                    <infoLink id="77f8-6f83-a33a-5176" name="Bombing Run" hidden="false" targetId="c99-f84f-dc32-b886" type="rule"/>
+                    <infoLink id="d36b-7f97-7f36-12d" name="Bunker Buster" hidden="false" targetId="7543-9f13-322f-a481" type="rule"/>
+                    <infoLink id="eaf2-b5dc-2d60-ce5" name="Limited (X)" hidden="false" targetId="769e-4f43-51b0-537f" type="rule">
                       <modifiers>
                         <modifier type="set" field="name" value="Limited (1)"/>
                       </modifiers>
@@ -1780,67 +1751,22 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="2e38-cb31-042f-8b05" name="Wing Weapons" hidden="false" collective="false" import="true" targetId="28c3-962c-3533-8763" type="selectionEntryGroup">
+                <entryLink id="1302-1018-6cf6-1674" name="Wing Weapons" hidden="false" collective="false" import="true" targetId="28c3-962c-3533-8763" type="selectionEntryGroup">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6848-8b3d-7ab3-bbc1" type="min"/>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bac8-05f9-f8cd-ae27" type="max"/>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39ce-98df-9d24-b6c9" type="min"/>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad8e-e8e7-3621-cb24" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="d719-fa57-2176-9f8e" name="Rear Mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="f623-b32d-36fe-cdd7" type="selectionEntry">
+                <entryLink id="7d3a-c814-53a-c824" name="Rear Mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="f623-b32d-36fe-cdd7" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="162b-28d4-0db3-fd5c" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1452-99c6-f7c6-0472" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9ea-b821-8b9b-e34a" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce2f-8803-c4de-69e6" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="f1cd-d04a-b80f-b01e" name="Nose Mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="4140-571d-f200-923a" type="selectionEntry">
+                <entryLink id="5579-af74-3caf-a132" name="Nose Mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="4140-571d-f200-923a" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c118-94ea-29fd-7e27" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b89-7816-343d-86f3" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="39c8-ca82-c59d-bd09" name="Marauder Pathfinder" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="ce43-0280-f35a-5ad3" name="Marauder Pathfinder" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
-                  <characteristics>
-                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">22&quot;</characteristic>
-                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
-                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+0</characteristic>
-                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="6cb0-37ec-6112-fb4a" name="Auger Array" hidden="false" targetId="dc92-9e99-6a29-382" type="rule"/>
-                <infoLink id="ecdb-8455-abd1-fd0f" name="Flyer" hidden="false" targetId="83bf-9c55-ebbb-83f8" type="rule"/>
-                <infoLink id="18bb-a01f-6770-b3db" name="Jink (X)" hidden="false" targetId="9b11-ba2c-eeaf-2402" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Jink (5+)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <entryLinks>
-                <entryLink id="fdb7-dbf1-c356-e49f" name="Nose Mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="4140-571d-f200-923a" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0d5-1c7c-350a-fdfa" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54b0-47d1-788f-f8c9" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="db5e-6e8b-4380-d506" name="Rear Mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="f623-b32d-36fe-cdd7" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2021-d64e-cf20-1fc7" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24f6-8560-04c6-40ca" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="e212-ecf4-c314-63e6" name="Wing Weapons" hidden="false" collective="false" import="true" targetId="28c3-962c-3533-8763" type="selectionEntryGroup">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1391-7cb1-3897-7d33" type="max"/>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30f6-a8ed-f3ea-dfda" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfa0-bf6a-883b-8503" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73b0-660e-1d69-5cc2" type="max"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -1848,9 +1774,9 @@
                 <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="aa40-a4a6-689a-c4a4" name="Marauder Destroyer" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="73c4-7a7d-d6db-5c4b" name="Marauder Destroyer" hidden="false" collective="false" import="true" type="model">
               <profiles>
-                <profile id="c38c-af70-6dad-3831" name="Marauder Destroyer" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+                <profile id="9b6a-e0f6-3d28-bcbd" name="Marauder Destroyer" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
                   <characteristics>
                     <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">24&quot;</characteristic>
                     <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
@@ -1861,21 +1787,21 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="9a1d-60c8-a25d-495f" name="Jink (X)" hidden="false" targetId="9b11-ba2c-eeaf-2402" type="rule">
+                <infoLink id="26c8-2291-9277-8e39" name="Jink (X)" hidden="false" targetId="9b11-ba2c-eeaf-2402" type="rule">
                   <modifiers>
                     <modifier type="set" field="name" value="Jink (5+)"/>
                   </modifiers>
                 </infoLink>
-                <infoLink id="7b37-f3b6-e29d-7bf6" name="Flyer" hidden="false" targetId="83bf-9c55-ebbb-83f8" type="rule"/>
+                <infoLink id="c163-bb05-6d8c-a619" name="Flyer" hidden="false" targetId="83bf-9c55-ebbb-83f8" type="rule"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="11c6-1a66-894d-d8cf" name="Marauder Assault Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="46a7-ad6b-228e-ae" name="Marauder Assault Cannon" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="587d-2b02-f6d3-f72e" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ed5-8757-d601-3c6a" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="980e-f5fa-a17e-418e" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3bb-9ed4-b7e2-2c1e" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="3d9b-eb92-2092-5142" name="Marauder Assault Cannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                    <profile id="9097-89f8-1ae4-5984" name="Marauder Assault Cannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
@@ -1886,26 +1812,26 @@
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink id="f846-9776-2753-362a" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                    <infoLink id="d302-47b1-b4c-ac8" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
                       <modifiers>
                         <modifier type="set" field="name" value="Arc (Rear)"/>
                       </modifiers>
                     </infoLink>
-                    <infoLink id="57ce-88eb-1c83-64da" name="Rapid Fire" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
-                    <infoLink id="70d3-b4a0-ef2e-0baa" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-                    <infoLink id="3433-95cd-c9d0-9a85" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                    <infoLink id="da30-3b71-eef0-3ad9" name="Rapid Fire" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
+                    <infoLink id="c603-5707-35dc-8725" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                    <infoLink id="6923-ccd3-c83e-597d" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="5ae4-a29d-817c-0afa" name="Nose Mounted Autocannon Array" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="ac7c-bb93-2a05-9acd" name="Nose Mounted Autocannon Array" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98c8-3835-3938-c6e4" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97e7-2f99-322e-75f8" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec7b-1a98-cc74-889a" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34e2-f8fc-62f5-9aca" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="42b3-903f-ec7d-cff9" name="Nose Mounted Autocannon Array" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                    <profile id="7ba7-4f01-8121-b543" name="Nose Mounted Autocannon Array" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">6</characteristic>
@@ -1916,25 +1842,25 @@
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink id="d2a4-4e69-4894-8228" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                    <infoLink id="32c7-359d-f330-771d" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
                       <modifiers>
                         <modifier type="set" field="name" value="Arc (Front)"/>
                       </modifiers>
                     </infoLink>
-                    <infoLink id="ed1e-060c-a5c9-5098" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-                    <infoLink id="6510-8823-1b23-91d5" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                    <infoLink id="714e-4732-164d-99ed" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                    <infoLink id="e8d0-2ff4-e2c4-1e38" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="60df-735f-e2cf-8aed" name="Destroyer Bomb Bay" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="f483-c321-dbd6-5732" name="Destroyer Bomb Bay" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2387-12da-2212-c5b7" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a6b-41e9-0eb8-596b" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af03-1f10-9fed-6d25" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d83-6bbe-8b10-65ab" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="f889-03a1-7289-0863" name="Destroyer Bomb Bay" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                    <profile id="3a17-60b2-54d7-3e0e" name="Destroyer Bomb Bay" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -1945,24 +1871,24 @@
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink id="88ca-0369-0d21-b396" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                    <infoLink id="b402-84e1-f38f-7757" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
                       <modifiers>
                         <modifier type="set" field="name" value="Arc (Rear)"/>
                       </modifiers>
                     </infoLink>
-                    <infoLink id="c541-0212-df31-bf45" name="Bombing Run" hidden="false" targetId="c99-f84f-dc32-b886" type="rule"/>
+                    <infoLink id="9db1-7216-ee46-eede" name="Bombing Run" hidden="false" targetId="c99-f84f-dc32-b886" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c587-bd24-ffb4-ca7a" name="Marauder Heavy Bolter Turrets" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="840c-dd1-47ea-a270" name="Marauder Heavy Bolter Turrets" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c8c-9bf2-ee6b-5ef2" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ead6-1c53-0f2d-b6c1" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dbe-2858-ba8f-7670" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3-115e-86ff-a916" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="4741-d7d2-f181-3af3" name="Marauder Heavy Bolter Turrets" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                    <profile id="b3fb-36ae-f2bb-a1e8" name="Marauder Heavy Bolter Turrets" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
@@ -1973,14 +1899,14 @@
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink id="5a6c-0d8b-8fcb-30b4" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                    <infoLink id="ed49-365e-226a-fdb6" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
                       <modifiers>
                         <modifier type="set" field="name" value="Arc (Rear)"/>
                       </modifiers>
                     </infoLink>
-                    <infoLink id="81e5-eda7-cb8b-0b7e" name="Point Defence" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
-                    <infoLink id="5cc2-bd41-107d-d0aa" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-                    <infoLink id="0d17-1cbc-61e9-cda9" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                    <infoLink id="8c61-2cd2-779-6983" name="Point Defence" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
+                    <infoLink id="eb4c-7851-a7c-6e86" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                    <infoLink id="7290-9ec3-db2e-92e4" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
@@ -1991,31 +1917,49 @@
                 <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="46ab-6143-719a-bec3" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce10-850a-fe84-04eb" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="1a9c-a964-14dc-03b6" name="Increase by 3" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="21a3-655-2f35-3c52" name="Marauder Pathfinder" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="5a68-a25b-5cb4-667c" name="Marauder Pathfinder" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">22&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+0</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="2217-56ba-c70d-d2f4" name="Auger Array" hidden="false" targetId="dc92-9e99-6a29-382" type="rule"/>
+                <infoLink id="c77e-bb5b-9703-3c20" name="Flyer" hidden="false" targetId="83bf-9c55-ebbb-83f8" type="rule"/>
+                <infoLink id="5f71-aea6-2f48-d6db" name="Jink (X)" hidden="false" targetId="9b11-ba2c-eeaf-2402" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Jink (5+)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="a2fc-4587-6eba-51" name="Nose Mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="4140-571d-f200-923a" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e89-14e9-20fc-7842" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c27-7e99-e005-b6e2" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="c181-1711-e770-91c5" name="Rear Mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="f623-b32d-36fe-cdd7" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9c2-d364-22d6-e546" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d93-8be-a300-d2e7" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="c9df-50d6-57f9-1d28" name="Wing Weapons" hidden="false" collective="false" import="true" targetId="28c3-962c-3533-8763" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17ae-80fe-b649-e938" type="max"/>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a53-c787-6e87-b345" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="220"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ecaf-99c1-1316-388e" name="Increase by 2" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="160"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3064-6b40-3316-c61c" name="Increase by 1" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2034,6 +1978,21 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="170" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="greaterThan" value="1" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="245" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="greaterThan" value="2" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="305" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="greaterThan" value="3" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
