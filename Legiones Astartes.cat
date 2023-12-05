@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -2104,7 +2104,7 @@
       <modifiers>
         <modifier type="increment" value="30" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="greaterThan" value="4" field="selections" scope="parent" childId="95da-6eed-8cd7-91be" shared="true" includeChildSelections="true"/>
+            <condition type="greaterThan" value="4" field="selections" scope="self" childId="95da-6eed-8cd7-91be" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="35" field="ee95-a20e-f9ff-e2c2">
@@ -2112,17 +2112,17 @@
             <repeat value="2" repeats="1" field="selections" scope="parent" childId="8049-5cf-acb2-1e4" shared="true" roundUp="true" id="9ee3-cea3-6a0c-a9c2" includeChildSelections="true"/>
           </repeats>
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8049-5cf-acb2-1e4" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="8049-5cf-acb2-1e4" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="30" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="greaterThan" value="6" field="selections" scope="parent" childId="95da-6eed-8cd7-91be" shared="true" includeChildSelections="true"/>
+            <condition type="greaterThan" value="6" field="selections" scope="self" childId="95da-6eed-8cd7-91be" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="30" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="greaterThan" value="8" field="selections" scope="parent" childId="95da-6eed-8cd7-91be" shared="true" includeChildSelections="true"/>
+            <condition type="greaterThan" value="8" field="selections" scope="self" childId="95da-6eed-8cd7-91be" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
