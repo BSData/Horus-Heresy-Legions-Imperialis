@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="1c28-218e-42c6-1ed4" name="Titan (5)" hidden="false"/>
     <categoryEntry id="ebbc-4775-1167-b265" name="Knight (4)" hidden="false"/>
@@ -1424,6 +1424,14 @@
                     <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="2"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Rocket Pods" hidden="false" type="selectionEntry" id="a0e0-e1e6-4bc7-5515" targetId="e745-1397-9192-3b8e">
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a53f-3117-4e97-ebf8"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
@@ -1487,6 +1495,14 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da9d-02d9-3e62-c76d" type="min"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Rocket Pods" hidden="false" type="selectionEntry" id="ab13-e84e-d44d-7cc2" targetId="e745-1397-9192-3b8e">
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3509-31b6-b4df-b7ca"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
@@ -1524,6 +1540,14 @@
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af14-7cb6-03d5-980c" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6d7-6ef8-c987-6c1d" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Rocket Pods" hidden="false" type="selectionEntry" id="1f8a-2b84-e3ec-e73b" targetId="e745-1397-9192-3b8e">
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ac-b791-1416-82fb"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -1589,13 +1613,21 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96cb-f774-254d-9264" type="min"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Rocket Pods" hidden="false" type="selectionEntry" id="31d0-84da-18f6-4027" targetId="e745-1397-9192-3b8e">
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70cf-bf41-822d-e593"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="95bf-7f1b-a182-dea4" name="Knight Cruader" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="95bf-7f1b-a182-dea4" name="Knight Crusader" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="395a-566f-010e-ba94" type="max"/>
               </constraints>
@@ -1633,6 +1665,21 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2860-48fa-f0ab-8109" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40b0-2360-7596-00c2" type="min"/>
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="Rocket Pods" hidden="false" type="selectionEntry" id="f027-8c5f-4f3b-df07" targetId="e745-1397-9192-3b8e">
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f56c-5c54-431-ce65"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="f56c-5c54-431-ce65">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="e5fe-740d-744e-12c7" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <costs>
