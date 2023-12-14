@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5823-85fd-1314-b472" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
   </publications>
@@ -3151,35 +3151,6 @@
         </infoLink>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="c5e1-08ad-33d2-ede4" name="Quad Autocannon" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4c5-5172-ebae-d316" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c356-8719-93be-80a6" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="bd66-507a-2630-03f8" name="Quad Autocannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Skyfire</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="910a-7a7b-d43e-7695" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-            <infoLink id="0b90-74e0-08a8-ade3" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Arc (Front)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="0081-16f4-c1a4-0d2f" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="6f44-9bd4-5d4b-8525" name="Thunderbolt Twin-linked Lascannon" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38a1-f0e1-84df-e774" type="max"/>
@@ -3221,6 +3192,68 @@
       <costs>
         <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Quad autocannon" hidden="false" id="422c-f183-f526-149e" defaultSelectionEntryId="4b24-4be8-4b06-ddf4">
+          <selectionEntries>
+            <selectionEntry id="4b24-4be8-4b06-ddf4" name="Quad autocannon" hidden="false" collective="true" import="true" type="upgrade">
+              <profiles>
+                <profile id="1477-1522-5d05-661f" name="Quad autocannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Skyfire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="f317-8a09-653-afad" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                <infoLink id="d57a-48a8-9e25-8481" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Arc (Front)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="df9a-b070-f751-4daa" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="835a-776c-b78a-a888" name="Avenger bolt cannon" hidden="false" collective="true" import="true" type="upgrade">
+              <profiles>
+                <profile id="f7f6-aaee-6a0a-9466" name="Avenger bolt cannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Skyfire, Rapid Fire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="370e-51b8-9e02-4386" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                <infoLink id="a43e-ba1d-c92d-b3b" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Arc (Front)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="5e3-4eae-7cc3-690b" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                <infoLink id="2954-5a28-9490-d5da" name="Rapid Fire" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="3"/>
+                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87d2-8148-e0be-28a8"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecae-f239-4754-30c2"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="fc51-a764-75d2-c82a" name="Avenger Strike Fighter" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -3269,35 +3302,6 @@
             </infoLink>
             <infoLink id="df59-5515-5612-5f77" name="Rapid Fire" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
             <infoLink id="a862-b3ae-9ce6-d8db" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="059d-6786-e546-bd3d" name="Thunderbolt Twin-linked Lascannon" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66a3-beed-4205-495e" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75c7-f216-90d6-e612" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="7c4b-d8b3-e256-8372" name="Thunderbolt Twin-linked Lascannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front), Skyfire</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="23b6-df6d-e8fd-fd0e" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-            <infoLink id="3d15-a577-5ab2-9a72" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Arc (Front)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="556d-c493-fec1-c7d1" name="Anti-tank" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
@@ -3427,97 +3431,6 @@
           </modifiers>
         </infoLink>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="9fe0-8040-8867-3cb2" name="Avenger Bolt Cannon" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b99-4e96-c985-e613" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f40-891d-31fe-5dfe" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="8c8c-6136-5b1a-8a2f" name="Avenger Bolt Cannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Rapid Fire, Skyfire</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="2e69-b030-90ee-7ae9" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-            <infoLink id="6fc7-0086-017a-b79a" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Arc (Front)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="8706-bc80-c57a-7c0d" name="Rapid Fire" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
-            <infoLink id="60c0-c1b0-260f-fa12" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="f46c-7d02-0512-fe15" name="Thunderbolt Twin-linked Lascannon" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e283-2f64-2208-2139" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bf5-0b89-0307-f784" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="66da-0279-aa27-7ee8" name="Thunderbolt Twin-linked Lascannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front), Skyfire</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="f9d6-923e-850a-fa7f" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-            <infoLink id="dfa4-0924-6f9b-7e6b" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Arc (Front)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="d437-fbc7-6ca8-c30d" name="Anti-tank" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="bdc5-3614-49af-8b52" name="Heavy Stubber Tail Gun" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a377-0a98-9e6c-9094" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a235-68fc-0f9f-b0be" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="b3e6-b01a-f64e-1f95" name="Heavy Stubber Tail Gun" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">14&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">6+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Rear), Light AT, Point Defence, Skyfire</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="3f1b-6274-44d5-d43e" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-            <infoLink id="5261-209c-e898-f6e7" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Arc (Front)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="0800-fd2e-dd5e-f1a6" name="Point Defence" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
-            <infoLink id="8a96-0d41-857b-21f8" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="597c-36d3-ab61-478a" name="Front Gun" hidden="false" collective="false" import="true">
           <constraints>
