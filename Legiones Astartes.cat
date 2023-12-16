@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="18" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="19" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -2554,7 +2554,7 @@
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Missile launchers" hidden="false" id="5638-3d27-3108-aa05" collective="true">
                   <profiles>
-                    <profile name="Missile launchers - Profile 1" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8f68-ec0a-a041-c500">
+                    <profile name="Missile launchers - Frag" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8f68-ec0a-a041-c500">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -2563,7 +2563,7 @@
                         <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Ignores Cover, Light</characteristic>
                       </characteristics>
                     </profile>
-                    <profile name="Missile launchers - Profile 2" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8a0a-eaee-bc72-80a9">
+                    <profile name="Missile launchers - Krak" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8a0a-eaee-bc72-80a9">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
@@ -3691,7 +3691,7 @@
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Missile launchers" hidden="false" id="6fcb-97b8-bf18-76f5" collective="true">
                       <profiles>
-                        <profile name="Missile launchers - Profile 1" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="fd22-f2c3-9c32-4b39">
+                        <profile name="Missile launchers - Frag" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="fd22-f2c3-9c32-4b39">
                           <characteristics>
                             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
                             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -3700,7 +3700,7 @@
                             <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Ignores Cover, Light</characteristic>
                           </characteristics>
                         </profile>
-                        <profile name="Missile launchers - Profile 2" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="90d2-589c-f657-87ae">
+                        <profile name="Missile launchers - Krak" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="90d2-589c-f657-87ae">
                           <characteristics>
                             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
                             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
