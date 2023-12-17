@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5823-85fd-1314-b472" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
   </publications>
@@ -301,11 +301,11 @@
           </modifiers>
         </infoLink>
         <infoLink id="3bcf-1458-5f6b-4e19" name="Commander" hidden="false" targetId="caaf-3de0-3658-9054" type="rule"/>
-        <infoLink name="Infiltrate" hidden="true" type="rule" id="22af-ea5-ec51-aea8" targetId="68b7-f6c7-7925-1567">
+        <infoLink name="Infiltrate" hidden="false" type="rule" id="22af-ea5-ec51-aea8" targetId="68b7-f6c7-7925-1567">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -406,11 +406,11 @@
           </modifiers>
         </infoLink>
         <infoLink id="8e60-1cab-446e-92f8" name="Commander" hidden="false" targetId="caaf-3de0-3658-9054" type="rule"/>
-        <infoLink name="Infiltrate" hidden="true" type="rule" id="7c4f-3fcc-20c7-d620" targetId="68b7-f6c7-7925-1567">
+        <infoLink name="Infiltrate" hidden="false" type="rule" id="7c4f-3fcc-20c7-d620" targetId="68b7-f6c7-7925-1567">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -599,11 +599,11 @@
         <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
       </costs>
       <infoLinks>
-        <infoLink name="Infiltrate" hidden="true" type="rule" id="955e-6f26-b85d-8906" targetId="68b7-f6c7-7925-1567">
+        <infoLink name="Infiltrate" hidden="false" type="rule" id="955e-6f26-b85d-8906" targetId="68b7-f6c7-7925-1567">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -686,11 +686,11 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Infiltrate" hidden="true" type="rule" id="9aec-23d9-fec8-3734" targetId="68b7-f6c7-7925-1567">
+        <infoLink name="Infiltrate" hidden="false" type="rule" id="9aec-23d9-fec8-3734" targetId="68b7-f6c7-7925-1567">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -773,11 +773,11 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Infiltrate" hidden="true" type="rule" id="99c3-929e-280c-7245" targetId="68b7-f6c7-7925-1567">
+        <infoLink name="Infiltrate" hidden="false" type="rule" id="99c3-929e-280c-7245" targetId="68b7-f6c7-7925-1567">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -860,11 +860,11 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Infiltrate" hidden="true" type="rule" id="5cdd-1232-f46b-30ab" targetId="68b7-f6c7-7925-1567">
+        <infoLink name="Infiltrate" hidden="false" type="rule" id="5cdd-1232-f46b-30ab" targetId="68b7-f6c7-7925-1567">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -960,11 +960,11 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Forward Deployment" hidden="true" type="rule" id="b420-9383-6c5e-ca02" targetId="54b4-67fd-a64-86d5">
+        <infoLink name="Forward Deployment" hidden="false" type="rule" id="b420-9383-6c5e-ca02" targetId="54b4-67fd-a64-86d5">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1060,11 +1060,11 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Forward Deployment" hidden="true" type="rule" id="eddc-9bda-cc27-8856" targetId="54b4-67fd-a64-86d5">
+        <infoLink name="Forward Deployment" hidden="false" type="rule" id="eddc-9bda-cc27-8856" targetId="54b4-67fd-a64-86d5">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1125,11 +1125,11 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Forward Deployment" hidden="true" type="rule" id="b7ef-bf9c-e29-752d" targetId="54b4-67fd-a64-86d5">
+        <infoLink name="Forward Deployment" hidden="false" type="rule" id="b7ef-bf9c-e29-752d" targetId="54b4-67fd-a64-86d5">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1283,11 +1283,11 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Forward Deployment" hidden="true" type="rule" id="9146-fe2c-ea9f-bed9" targetId="54b4-67fd-a64-86d5">
+        <infoLink name="Forward Deployment" hidden="false" type="rule" id="9146-fe2c-ea9f-bed9" targetId="54b4-67fd-a64-86d5">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1383,11 +1383,11 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Forward Deployment" hidden="true" type="rule" id="89e1-f976-4859-b54e" targetId="54b4-67fd-a64-86d5">
+        <infoLink name="Forward Deployment" hidden="false" type="rule" id="89e1-f976-4859-b54e" targetId="54b4-67fd-a64-86d5">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1483,11 +1483,11 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Forward Deployment" hidden="true" type="rule" id="7eae-fb5c-b8-759e" targetId="54b4-67fd-a64-86d5">
+        <infoLink name="Forward Deployment" hidden="false" type="rule" id="7eae-fb5c-b8-759e" targetId="54b4-67fd-a64-86d5">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1930,11 +1930,11 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Forward Deployment" hidden="true" type="rule" id="3c93-2567-3c2e-fc7d" targetId="54b4-67fd-a64-86d5">
+        <infoLink name="Forward Deployment" hidden="false" type="rule" id="3c93-2567-3c2e-fc7d" targetId="54b4-67fd-a64-86d5">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2001,16 +2001,16 @@
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="d8db-14c0-936f-9e08" name="Auxilia Veletaris Storm Section" hidden="true" collective="false" import="true" targetId="1795-e738-550c-3555" type="selectionEntry">
+    <entryLink id="d8db-14c0-936f-9e08" name="Auxilia Veletaris Storm Section" hidden="false" collective="false" import="true" targetId="1795-e738-550c-3555" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="c5ac-5d8c-5eab-1caa" value="1">
           <conditions>
             <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="94f6-e9a8-aa4f-483c" type="instanceOf"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="94f6-e9a8-aa4f-483c" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="94f6-e9a8-aa4f-483c" type="notInstanceOf"/>
           </conditions>
         </modifier>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -2051,11 +2051,11 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Infiltrate" hidden="true" type="rule" id="d0bc-a57b-d2c2-c14c" targetId="68b7-f6c7-7925-1567">
+        <infoLink name="Infiltrate" hidden="false" type="rule" id="d0bc-a57b-d2c2-c14c" targetId="68b7-f6c7-7925-1567">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
