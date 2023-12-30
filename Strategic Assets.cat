@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="1c28-218e-42c6-1ed4" name="Titan (5)" hidden="false"/>
     <categoryEntry id="ebbc-4775-1167-b265" name="Knight (4)" hidden="false"/>
@@ -1411,18 +1411,12 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="447f-1fa7-858d-15c6" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="062b-498a-8ecb-1397" type="min"/>
                   </constraints>
-                  <costs>
-                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="2"/>
-                  </costs>
                 </entryLink>
                 <entryLink id="f072-830a-0a4c-7916" name="Meltagun" hidden="false" collective="false" import="true" targetId="0220-6a14-dfd9-0fcd" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9495-7800-abdf-0e1b" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e344-eac6-1c94-6669" type="min"/>
                   </constraints>
-                  <costs>
-                    <cost name="Points" typeId="ee95-a20e-f9ff-e2c2" value="2"/>
-                  </costs>
                 </entryLink>
                 <entryLink import="true" name="Rocket Pods" hidden="false" type="selectionEntry" id="a0e0-e1e6-4bc7-5515" targetId="e745-1397-9192-3b8e">
                   <costs>
@@ -3252,10 +3246,10 @@
       <profiles>
         <profile id="c036-d8b5-116c-9d64" name="Heavy Stubber" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">14&quot;</characteristic>
             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
             <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
           </characteristics>
         </profile>
