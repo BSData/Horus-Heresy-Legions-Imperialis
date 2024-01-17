@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="1c28-218e-42c6-1ed4" name="Titan (5)" hidden="false"/>
     <categoryEntry id="ebbc-4775-1167-b265" name="Knight (4)" hidden="false"/>
@@ -2515,19 +2515,18 @@
           <profiles>
             <profile id="76a1-4a2f-9492-c9a" name="Sinistramanus Tenebrae" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">40&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
                 <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Blast (5&quot;), Ignores Cover, Psi, Quake</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Heavy Beam, Psi</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="9384-5187-3d22-1fcf" name="Blast (3&quot;/5&quot;)" hidden="false" targetId="a981-166d-49aa-1064" type="rule"/>
-            <infoLink id="c8e4-79bb-ef50-5589" name="Ignores Cover" hidden="false" targetId="bff7-b88a-2145-2c63" type="rule"/>
+            <infoLink id="c8e4-79bb-ef50-5589" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule"/>
             <infoLink id="1f9f-a76e-ecb5-cbf2" name="Psi" hidden="false" targetId="5660-5016-824b-2555" type="rule"/>
-            <infoLink id="d2bf-8085-ae1-f9f0" name="Quake" hidden="false" targetId="1090-d918-d47e-1317" type="rule"/>
+            <infoLink id="d2bf-8085-ae1-f9f0" name="Heavy Beam" hidden="false" targetId="d3fe-2893-93a3-b954" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
