@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5823-85fd-1314-b472" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
   </publications>
@@ -1850,6 +1850,14 @@
               <costs>
                 <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
               </costs>
+              <entryLinks>
+                <entryLink id="376b-a6be-36dc-197" name="Wing Weapons" hidden="false" collective="false" import="true" targetId="28c3-962c-3533-8763" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bce1-fbf0-c537-eee1" type="max"/>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c39e-39cc-7ab-33a5" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry id="21a3-655-2f35-3c52" name="Marauder Pathfinder" hidden="false" collective="false" import="true" type="model">
               <profiles>
@@ -3521,6 +3529,9 @@
               <costs>
                 <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d4fd-d156-ab5d-44aa"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -3558,6 +3569,9 @@
       <costs>
         <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6c58-cf09-ee64-df2e"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="5bac-35fe-bb4a-6333" name="Hellstrike Missiles" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3582,6 +3596,9 @@
       <costs>
         <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="77f5-a5bc-b1e8-f3a5"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="4140-571d-f200-923a" name="Nose Mounted Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3697,6 +3714,9 @@
           <costs>
             <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="12f2-85a5-98a4-ffc4"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
