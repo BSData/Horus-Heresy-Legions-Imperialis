@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="23" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="24" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -1010,9 +1010,9 @@
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="34ea-7527-47af-ae61" primary="false" name="Legiones Astartes"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="2 Support Legionaries" hidden="false" id="d50a-d287-7eb5-2d84">
+        <selectionEntry type="upgrade" import="true" name="2 Assault Marines" hidden="false" id="d50a-d287-7eb5-2d84">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Support Legionaries" hidden="false" id="26df-89d8-6a61-abe8" collective="true">
+            <selectionEntry type="model" import="true" name="Assault Marines" hidden="false" id="26df-89d8-6a61-abe8" collective="true">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Legion bolt pistols" hidden="false" id="c963-8ce-8257-7d38" collective="true">
                   <profiles>
