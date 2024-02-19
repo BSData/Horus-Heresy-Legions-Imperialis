@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="19" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="20" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="eab5-2233-3200-3063" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -62,6 +62,7 @@
     </categoryEntry>
     <categoryEntry id="13e3-8701-239a-fec9" name="Knight" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
     <categoryEntry id="9072-16ad-262f-a980" name="Titan" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
+    <categoryEntry name="Cavalry (1)" hidden="false" id="4376-9c33-b1cc-bb06"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="49dd-d763-6836-b4f8" hidden="true" name="Unbound Formation (Open Play)">
@@ -527,7 +528,7 @@ During the End phase, in the Resolve End Phase Effects stage, a model with the V
     </rule>
   </sharedRules>
   <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Allegiance" hidden="false" id="f8d9-a843-d300-1a63" page="">
+    <selectionEntry type="upgrade" import="true" name="Allegiance" hidden="false" id="f8d9-a843-d300-1a63">
       <selectionEntryGroups>
         <selectionEntryGroup name="Allegiance" hidden="false" id="9516-b46f-84a7-e4aa" publicationId="c1b8-2180-635c-14cd" page="127">
           <constraints>
