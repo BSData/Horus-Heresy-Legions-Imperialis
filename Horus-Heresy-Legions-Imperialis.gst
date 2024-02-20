@@ -526,6 +526,12 @@ Hits can only be allocated to Void Shields if they were scored by a weapon with 
 
 During the End phase, in the Resolve End Phase Effects stage, a model with the Void Shields (X) special rule may attempt to reignite any collapsed Void Shields. The controlling player rolls a number of D6 equal to the difference between a model&apos;s current Void Shield level and its starting Void Shield level. For each 4+ rolled, increase that model&apos;s Void Shield level by 1.</description>
     </rule>
+    <rule name="Remote Controlled Detonation" hidden="false" id="c783-cc80-fdd9-b883">
+      <description>If a model with the Remote Controlled Detonation special rule ends its movement within 12&quot; of a friendly model with the Commander special rule, it may detonate. When a model detonates, it attacks with all of its weapons that have the Blast (3&quot;/5&quot;) trait. The central hole of the Blast template is placed over the detonating model - it does no damage to itself (i.e., don&apos;t make Hit rolls for the detonating model) and the template does not Scatter. Once the effects of the detonation have been resolved, the detonating model is destroyed.
+
+
+If a Detachment contains more than one model with this rule, the controlling player can choose which models detonate and which do not, doing so before resolving any detonation. Models that detonate are not affected by friendly models that are detonating at the same time. Any model that does not detonate is affected if it is under the Blast template as normal.</description>
+    </rule>
   </sharedRules>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Allegiance" hidden="false" id="f8d9-a843-d300-1a63">
