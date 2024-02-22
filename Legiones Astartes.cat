@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="24" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="25" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -547,6 +547,177 @@
         <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Land Speeder w/ plasma cannon" hidden="false" id="188f-89b7-aad6-9360" collective="true">
+      <profiles>
+        <profile name="Land Speeder" hidden="false" id="d998-bc73-c49-5b7b" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">10&quot;</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Plasma cannon" hidden="false" id="792e-7f6a-be7d-ebce" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23f-9e73-c6e9-5c86" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c211-fc8d-34c2-4bad" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Plasma cannon" hidden="false" id="a366-de19-8f61-1ec0" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Light AT" hidden="false" id="b4b2-70dd-6ed8-502e" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy bolter" hidden="false" id="ccdf-d664-a7d2-b8fe" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17c6-8e88-1986-21b8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91ba-120b-918e-76d9" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Heavy bolter" hidden="false" id="ee5b-641d-fd39-359f" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Light" hidden="false" id="7571-4373-3d34-1c99" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+            <infoLink name="Point Defence" hidden="false" id="7c7b-ef47-9c87-8666" type="rule" targetId="f921-10ce-33f7-19fd"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Jink (X)" hidden="false" id="739e-5778-376f-f8b" type="rule" targetId="9b11-ba2c-eeaf-2402">
+          <modifiers>
+            <modifier type="set" value="Jink (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Skimmer" hidden="false" id="1cb2-4c2d-a34f-545" type="rule" targetId="4f70-6a67-930b-d0fc"/>
+        <infoLink name="Outflank" hidden="false" type="rule" id="ece9-cd49-9502-394a" targetId="8785-676-b80f-8709">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Legion Palisade Drop Pod" hidden="false" id="9ed9-537d-30e8-8b5e" collective="false">
+      <profiles>
+        <profile name="Palisade Drop Pod" hidden="false" id="9767-898-c32f-1961" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">-</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">-8</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shield Generator (X)" hidden="false" id="693e-2091-70d7-f286" type="rule" targetId="20d1-2027-5605-3f28">
+          <modifiers>
+            <modifier type="set" value="Shield Generator (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Drop Pod" hidden="false" id="f9d6-fb06-7235-883f" type="rule" targetId="39d-d61c-ebfe-15d9"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="7d3d-a7d8-342f-ecb1" primary="false" name="Vehicle (2)"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Dreadnought Drop Pod" hidden="false" id="e19-5781-8cbe-477d">
+      <profiles>
+        <profile name="Dreadnought Drop Pod" hidden="false" id="4f82-996c-8419-f926" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">-</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">-8</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="7"/>
+        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Large Transport (X)" hidden="false" id="920e-7a71-5d62-f4d8" type="rule" targetId="d33b-3fa4-492e-6d3e">
+          <modifiers>
+            <modifier type="set" value="Large Transport (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Drop Pod" hidden="false" id="9845-3969-5670-4404" type="rule" targetId="39d-d61c-ebfe-15d9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Drop Pod" hidden="false" id="e2b4-7724-767f-63e1">
+      <profiles>
+        <profile name="Drop Pod" hidden="false" id="90f5-4bc7-be46-748b" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">-</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">-3</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="6"/>
+        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Turret Mounted twin bolter" hidden="false" id="5640-bb82-11d1-c1fe" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f198-aebf-bea6-823d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="825e-82c1-1c55-56f7" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Turret Mounted twin bolter" hidden="false" id="7710-4856-9738-918f" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Assault, Light, Point Defence</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Light" hidden="false" id="55ae-783c-2d4a-9348" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+            <infoLink name="Assault" hidden="false" id="d5d7-9ad9-7414-4225" type="rule" targetId="e368-00fb-7a9b-9eb0"/>
+            <infoLink name="Point Defence" hidden="false" id="dc35-ecb6-877c-5a6a" type="rule" targetId="f921-10ce-33f7-19fd"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Transport (X)" hidden="false" id="d786-dc9c-5ce8-1d18" type="rule" targetId="b82-1269-e912-cb88">
+          <modifiers>
+            <modifier type="set" value="Transport (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Drop Pod" hidden="false" id="7c72-ae2a-2241-2c1c" type="rule" targetId="39d-d61c-ebfe-15d9"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <forceEntries>
     <forceEntry name="Legion Demi-Company" hidden="false" id="6cda-5812-cf52-3fee">
@@ -555,6 +726,7 @@
         <categoryLink name="HQ" hidden="false" id="d4df-977-657f-ea26" targetId="d950-ad23-9b2-9325" type="category">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3440-6cb3-ae72-e9e2"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="806a-ae73-4b8d-2207" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Core" hidden="false" id="7075-9045-38d0-81dc" targetId="446a-abe3-63c3-5709">
@@ -807,6 +979,68 @@
         </rule>
       </rules>
     </forceEntry>
+    <forceEntry name="Legion Sky-hunter Phalanx" hidden="false" id="9a97-9a76-77cf-aa42">
+      <rules>
+        <rule name="Swift Assault (Legion Sky-hunter Phalanx)" hidden="false" id="3c4d-5bdb-8631-447a">
+          <description>All Legion Scimitar Jetbike Squadron, Legion Land Speeder Squadron or Legion Javelin Squadron Detachments in this Formation gain the Outflank special rule.</description>
+        </rule>
+        <rule name="Rapid Reaction Force (Legion Sky-hunter Phalanx)" hidden="false" id="1e18-f54e-eb34-be07">
+          <description>Compulsory Vanguard Detachment slots in this Formation must be filled with Legion Scimitar Jetbike Squadron, Legion Land Speeder Squadron or Legion Javelin Squadron Detachments.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="88b8-73b3-759e-e47f" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="Air Support" hidden="false" id="94f1-e4e5-cd3a-5acb" targetId="2879-da90-6a37-c897" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4bba-9950-4501-bd8e"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Light Armour" hidden="false" id="c733-dc11-4c27-1f23" targetId="3b81-6b3e-4546-ade3">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="cecd-4a19-4726-f38a"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Vanguard" hidden="false" id="6ffe-b90b-a1b5-29d" targetId="8416-456c-a6f-e059">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="force" shared="true" id="380-32-de03-b929"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="45ff-d5aa-1375-c389" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Legion Drop Pod Assault" hidden="false" id="3cfc-34c7-6d10-10f0">
+      <rules>
+        <rule name="Dedicated Transports (Legion Drop Pod Assault)" hidden="false" id="e5eb-5477-397b-3666">
+          <description>All Legiones Astartes Detachments within the Formation that contains only Infantry models (excluding models with the Deep Strike special rule) must be upgraded with Legion Drop Pods as Dedicated Transports, and all Legiones Astartes Detachments within the Formation that contains only Walker models (excluding models with the Deep Strike special rule) must be upgraded with Dreadnought Drop Pods as Dedicated Transports</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="2746-bfcf-67c8-9c5a" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="HQ" hidden="false" id="29a7-57d-e95c-50fe" targetId="d950-ad23-9b2-9325">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="d157-cf5c-5c07-4c68"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="15d8-7e14-25a9-305a" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core" hidden="false" id="f46b-997c-bd61-4e5e" targetId="446a-abe3-63c3-5709">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="c007-29f5-81d3-b302"/>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="5943-4e90-79a7-387f"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Air Support" hidden="false" id="834d-cf6f-af24-1a5" targetId="2879-da90-6a37-c897">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9770-d7e2-d80c-9764"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="f1fe-cd8f-a663-89db" targetId="be19-7658-5258-71d9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="a0d3-744a-87f0-150d"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="d622-916-97a2-ca1b"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Leviathan Dreadnoughts" hidden="false" id="1d7-e0c5-5d36-8769">
@@ -1008,6 +1242,7 @@
       <categoryLinks>
         <categoryLink targetId="be19-7658-5258-71d9" id="c380-c248-2163-5c64" primary="true" name="Support"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="34ea-7527-47af-ae61" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="68c1-de55-26b1-8ca4" id="e31a-ffbd-3608-e463" primary="false" name="Infantry (1)"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="2 Assault Marines" hidden="false" id="d50a-d287-7eb5-2d84">
@@ -1256,6 +1491,7 @@
       <categoryLinks>
         <categoryLink targetId="d950-ad23-9b2-9325" id="ad86-47e5-2870-d8a" primary="true" name="HQ"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="19d3-6035-79c3-9486" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="68c1-de55-26b1-8ca4" id="d7ed-97b0-5d5b-3780" primary="false" name="Infantry (1)"/>
       </categoryLinks>
       <costs>
         <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="25"/>
@@ -1301,7 +1537,7 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Rhinos" hidden="false" id="7728-eaee-af03-66d6">
+            <selectionEntryGroup name="Rhino" hidden="false" id="7728-eaee-af03-66d6">
               <entryLinks>
                 <entryLink import="true" name="Rhino w/ havoc launcher" hidden="false" type="selectionEntry" id="2239-c723-661d-bc30" targetId="b749-9cc7-ae95-13fa">
                   <constraints>
@@ -1344,6 +1580,33 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Drop Pod" hidden="false" id="51e4-bf24-e1f8-aa52">
+              <entryLinks>
+                <entryLink import="true" name="Drop Pod" hidden="false" type="selectionEntry" id="5eb5-51f9-32d7-c4d7" targetId="e2b4-7724-767f-63e1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe6c-5e11-b2e6-f145"/>
+                  </constraints>
+                  <costs>
+                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4f7-3d60-6c2d-9e7f"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd94-486d-f054-e664" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -1351,6 +1614,7 @@
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
                   </conditions>
                 </conditionGroup>
@@ -1361,7 +1625,15 @@
             <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="fd94-486d-f054-e664">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc44-3a5f-712d-2180"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b668-3bf-bccd-7d4d" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="b668-3bf-bccd-7d4d">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1386,6 +1658,7 @@
       <categoryLinks>
         <categoryLink targetId="2005-60e5-e49d-32f2" id="f094-b60f-c45c-d8cd" primary="true" name="Bastion"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="d2d3-a9fd-785e-b1c" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="bd7f-5868-aba9-de03" primary="false" name="Walker (1)"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Deredeo Dreadnoughts" hidden="false" id="5898-cb70-7732-c0a">
@@ -1624,6 +1897,7 @@
       <categoryLinks>
         <categoryLink targetId="2879-da90-6a37-c897" id="d266-c42f-709d-6939" primary="true" name="Air Support"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="6658-9a2c-69a7-80bc" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="c6a6-a74b-c0a4-162f" primary="false" name="Vehicle (2)"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Fire Raptor" hidden="false" id="cf3a-e390-f12b-ac8a">
@@ -1798,6 +2072,7 @@
       <categoryLinks>
         <categoryLink targetId="be19-7658-5258-71d9" id="9037-b98f-ce52-3b56" primary="true" name="Support"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="2b1e-f018-f66f-691d" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="376a-dff2-f5ac-9384" primary="false" name="Walker (1)"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Models" hidden="false" id="d7cc-885d-808e-3aa5">
@@ -2081,19 +2356,59 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Drop Pods" hidden="false" id="de32-61ec-4e10-3e8b">
+              <entryLinks>
+                <entryLink import="true" name="Dreadnought Drop Pod" hidden="false" type="selectionEntry" id="389-574-d15c-9aa9" targetId="e19-5781-8cbe-477d">
+                  <constraints>
+                    <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="cab6-d3f1-4795-3555"/>
+                  </constraints>
+                  <costs>
+                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="a13-fd31-d33e-735c" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="b6f0-91a2-1af3-8cbb" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="b6f0-91a2-1af3-8cbb">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a718-d8d7-3ebf-7e51"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5e20-a0ee-7729-9ab3" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="5e20-a0ee-7729-9ab3">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2134,6 +2449,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="-1" field="7f98-9a24-6f96-f40b">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -2223,19 +2543,59 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Drop Pods" hidden="false" id="a62b-8107-d1fd-8f09">
+              <entryLinks>
+                <entryLink import="true" name="Dreadnought Drop Pod" hidden="false" type="selectionEntry" id="3006-7984-2170-ce0f" targetId="e19-5781-8cbe-477d">
+                  <constraints>
+                    <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="a978-764c-995e-9dca"/>
+                  </constraints>
+                  <costs>
+                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="4d00-d752-3b71-156c"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="d75d-57b4-efd9-c70f" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="d75d-57b4-efd9-c70f">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ee7-43f2-5414-19d5"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="894b-3795-bb92-b3d8" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="894b-3795-bb92-b3d8">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2264,10 +2624,16 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="-1" field="d623-6e66-3297-b1d3">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="be19-7658-5258-71d9" id="c3a3-e811-920-d688" primary="true" name="Support"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="14da-c9a-95a-208b" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="9482-4144-7a17-e42b" primary="false" name="Walker (1)"/>
       </categoryLinks>
       <constraints>
         <constraint type="min" value="-7" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="d623-6e66-3297-b1d3" includeChildSelections="false"/>
@@ -2278,6 +2644,7 @@
       <categoryLinks>
         <categoryLink targetId="1f6b-d764-352d-1e74" id="b514-f390-ddf4-6f9a" primary="true" name="Heavy Armour"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="76dd-620-d6e8-6e77" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="f3fa-7c05-dfe9-6c6b" primary="false" name="Vehicle (2)"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Legion Kratos" hidden="false" id="60b3-e4d7-a265-624b">
@@ -2546,6 +2913,7 @@
       <categoryLinks>
         <categoryLink targetId="be19-7658-5258-71d9" id="f110-2a53-bc3a-f6b9" primary="true" name="Support"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="1e54-b572-a6fd-14b9" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="68c1-de55-26b1-8ca4" id="e7bb-d94f-db6e-f8eb" primary="false" name="Infantry (1)"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="2 Support Legionaries" hidden="false" id="22c4-4695-b815-3030">
@@ -2715,6 +3083,33 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Drop Pod" hidden="false" id="53d6-5cca-d559-ef35">
+              <entryLinks>
+                <entryLink import="true" name="Drop Pod" hidden="false" type="selectionEntry" id="e20-8e96-1ed4-7202" targetId="e2b4-7724-767f-63e1">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f343-5a85-ad66-b961"/>
+                  </constraints>
+                  <costs>
+                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="28ab-e01c-c74e-f3cf"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="db83-9a3-2bea-ae7e" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -2722,6 +3117,7 @@
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
                   </conditions>
                 </conditionGroup>
@@ -2732,7 +3128,15 @@
             <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="db83-9a3-2bea-ae7e">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2607-856a-db7b-e68c"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5455-d583-6744-aca1" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="5455-d583-6744-aca1">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2759,6 +3163,7 @@
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="b749-9cc7-ae95-13fa" shared="true" includeChildSelections="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="9be6-d4b8-2b8a-18be" shared="true" includeChildSelections="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="3279-c298-e2dc-8b55" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2779,6 +3184,7 @@
       <categoryLinks>
         <categoryLink targetId="be19-7658-5258-71d9" id="7f3d-92e1-1cdb-9731" primary="true" name="Support"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="791d-23b-5ef8-41a7" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="68c1-de55-26b1-8ca4" id="7f02-3def-5328-4850" primary="false" name="Infantry (1)"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="2 Support Legionaries" hidden="false" id="6941-a4d2-1f8d-fae5">
@@ -2871,6 +3277,7 @@
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="b749-9cc7-ae95-13fa" shared="true" includeChildSelections="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="9be6-d4b8-2b8a-18be" shared="true" includeChildSelections="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="3279-c298-e2dc-8b55" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2974,14 +3381,42 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Drop Pod" hidden="false" id="6f62-b007-e968-c29">
+              <entryLinks>
+                <entryLink import="true" name="Drop Pod" hidden="false" type="selectionEntry" id="e04f-60cd-e140-137b" targetId="e2b4-7724-767f-63e1">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="af1-ba6a-b63e-dcb5"/>
+                  </constraints>
+                  <costs>
+                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8219-26f6-6a0d-150a"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="c852-7443-d4d1-17a3" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2991,7 +3426,15 @@
             <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="c852-7443-d4d1-17a3">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="647c-ac21-3ba9-36a3"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="15ec-5ff2-b9e8-3cb" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="15ec-5ff2-b9e8-3cb">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3001,6 +3444,7 @@
       <categoryLinks>
         <categoryLink targetId="4e02-d7ec-4d81-d5fa" id="1480-7927-7efd-8409" primary="true" name="Battle Tank"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="f5f7-4079-9e2c-d7a6" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="a749-8fa7-1a53-d5e6" primary="false" name="Vehicle (2)"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Legion Predator" hidden="false" id="fdd2-1ff3-d0ef-e94">
@@ -3160,6 +3604,7 @@
       <categoryLinks>
         <categoryLink targetId="be19-7658-5258-71d9" id="6deb-13a-e45c-8080" primary="true" name="Support"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="de93-c269-4592-46c0" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="68c1-de55-26b1-8ca4" id="49be-97c0-283a-8a92" primary="false" name="Infantry (1)"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Legion Rapiers" hidden="false" id="ffdd-fa72-86cc-d1be" defaultSelectionEntryId="b1b0-baf6-f351-d03">
@@ -3235,6 +3680,9 @@
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <infoLinks>
+                <infoLink name="Bulky" hidden="false" id="b3a0-5bde-8560-e4d4" type="rule" targetId="e8e6-1f3a-a46-9aa0"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Legion Rapier w/ Laser destroyer array" hidden="false" id="fa5e-f67a-9c1c-778c" collective="false">
               <constraints>
@@ -3297,6 +3745,9 @@
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <infoLinks>
+                <infoLink name="Bulky" hidden="false" id="3b98-55e3-5d51-5287" type="rule" targetId="e8e6-1f3a-a46-9aa0"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -3416,9 +3867,10 @@
       <categoryLinks>
         <categoryLink targetId="3751-fb88-3656-b7d1" id="c4c3-f5d3-e860-5232" primary="true" name="Transport"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="4022-3097-8079-d849" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="4090-9b14-6ef0-3655" primary="false" name="Vehicle (2)"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Rhinos" hidden="false" id="80bf-18f0-33f-ea40" defaultSelectionEntryId="958b-cbc0-aca-125f">
+        <selectionEntryGroup name="Rhinos" hidden="false" id="80bf-18f0-33f-ea40" defaultSelectionEntryId="3a0e-7982-7189-77c1">
           <constraints>
             <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="e89c-162f-9683-d3fa"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="975b-e861-fe62-c318"/>
@@ -3459,6 +3911,7 @@
       <categoryLinks>
         <categoryLink targetId="4e02-d7ec-4d81-d5fa" id="6a78-5128-86e1-4b9f" primary="true" name="Battle Tank"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="a43-ba9a-1898-503c" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="87fe-5dc1-38b9-f9b" primary="false" name="Vehicle (2)"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Legion Sicaran" hidden="false" id="ce39-6d80-5589-e2e7">
@@ -3631,6 +4084,7 @@
       <categoryLinks>
         <categoryLink targetId="2879-da90-6a37-c897" id="ebc6-7427-3aa1-133e" primary="true" name="Air Support"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="3569-1ce-9ec3-83e9" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="2317-6464-e5ec-dd18" primary="false" name="Vehicle (2)"/>
       </categoryLinks>
       <costs>
         <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
@@ -3670,6 +4124,7 @@
       <categoryLinks>
         <categoryLink targetId="446a-abe3-63c3-5709" id="77b3-c548-ee54-8570" primary="true" name="Core"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="940e-819-28d7-522e" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="68c1-de55-26b1-8ca4" id="b9a8-1848-a8c9-f54" primary="false" name="Infantry (1)"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Models" hidden="false" id="9c60-8934-5a3e-e286" defaultSelectionEntryId="21ae-fc91-b07-2936">
@@ -4137,6 +4592,43 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Drop Pod" hidden="false" id="4ef4-fa66-6aad-fac1">
+              <entryLinks>
+                <entryLink import="true" name="Drop Pod" hidden="false" type="selectionEntry" id="8f5c-5096-4153-e640" targetId="e2b4-7724-767f-63e1">
+                  <constraints>
+                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="d096-7b0e-5719-cf65"/>
+                  </constraints>
+                  <costs>
+                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="bdf3-a809-b45c-eca4"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="d0d1-667-324f-9246" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="bdf3-a809-b45c-eca4">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="e552-7189-ccb5-1922" childId="cecc-1742-f5e6-c2b4" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="e552-7189-ccb5-1922" childId="b19e-a060-e94a-c2ef" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -4145,6 +4637,7 @@
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4154,7 +4647,15 @@
             <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="d0d1-667-324f-9246">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33f4-fddf-b168-a93c"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f6b0-89b8-26bb-e7c9" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="f6b0-89b8-26bb-e7c9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4187,6 +4688,7 @@
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="b749-9cc7-ae95-13fa" shared="true" includeChildSelections="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="9be6-d4b8-2b8a-18be" shared="true" includeChildSelections="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="3279-c298-e2dc-8b55" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4210,6 +4712,7 @@
       <categoryLinks>
         <categoryLink targetId="2005-60e5-e49d-32f2" id="4e6d-d950-2bbb-fcf2" primary="true" name="Bastion"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="1636-20b-403c-7749" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="68c1-de55-26b1-8ca4" id="7007-3f05-c0e2-8e68" primary="false" name="Infantry (1)"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Legion Tarantulas" hidden="false" id="abb5-b9c9-149f-7a12">
@@ -4352,6 +4855,7 @@
       <categoryLinks>
         <categoryLink targetId="be19-7658-5258-71d9" id="a74d-47f2-d48b-ec25" primary="true" name="Support"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="24e3-af39-26f1-3ae5" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="68c1-de55-26b1-8ca4" id="72b0-d992-6a77-3283" primary="false" name="Infantry (1)"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="2 Legion Terminators" hidden="false" id="f35d-7144-1ef9-b1d2" collective="false">
@@ -4538,6 +5042,7 @@
       <categoryLinks>
         <categoryLink targetId="2879-da90-6a37-c897" id="cbc6-abdf-ed6e-3311" primary="true" name="Air Support"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="eee6-a901-cd85-72e8" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="f6dc-61fc-5d10-c0a8" primary="false" name="Vehicle (2)"/>
       </categoryLinks>
       <costs>
         <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
@@ -4577,6 +5082,7 @@
       <categoryLinks>
         <categoryLink targetId="2879-da90-6a37-c897" id="352f-bcd-f45b-ac2b" primary="true" name="Air Support"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="8b1d-d62d-6790-473b" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="7b8a-a9e6-9aa0-ced" primary="false" name="Vehicle (2)"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Xiphon Interceptor" hidden="false" id="96ba-f01b-1e3a-b2b">
@@ -4899,6 +5405,1176 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Outrider Squadron" hidden="false" id="1f92-8eda-4011-5c3b">
+      <categoryLinks>
+        <categoryLink targetId="8416-456c-a6f-e059" id="9bc6-c2c4-33ce-244b" primary="true" name="Vanguard"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="c576-5c28-acfc-c70c" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="4376-9c33-b1cc-bb06" id="1416-cf50-6d2f-ea42" primary="false" name="Cavalry (1)"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="2 Outriders" hidden="false" id="9f14-c825-74d7-70b8">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Outrider" hidden="false" id="57d2-1605-5988-5a5" collective="true">
+              <profiles>
+                <profile name="Outrider" hidden="false" id="f841-3206-23c0-439f" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">10&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">5+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1042-d19b-17a-bd23" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="450a-2942-c4ac-1097" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Jink (X)" hidden="false" type="rule" id="24a2-44fc-397d-95a8" targetId="9b11-ba2c-eeaf-2402">
+                  <modifiers>
+                    <modifier type="set" value="Jink (6+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Twin-linked bolters" hidden="false" id="b869-ee61-5d21-24c6" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22db-979e-f7cf-a0ae" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="309e-1305-a606-2b13" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Twin-linked bolters" hidden="false" id="7e4b-27d6-f017-93ac" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Assault, Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Light" hidden="false" id="6045-5d21-b062-e83f" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Assault" hidden="false" id="e30d-7edb-a145-d8d6" type="rule" targetId="e368-00fb-7a9b-9eb0"/>
+                    <infoLink name="Point Defence" hidden="false" id="25f6-7d70-9dc1-c1e7" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Twin plasma guns" hidden="false" id="2798-2597-90e6-9fe4" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f59d-9e7b-37c7-33fa" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ae8-4c4a-b595-9d94" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Twin plasma guns" hidden="false" id="e937-3ac1-6768-b3af" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Light AT" hidden="false" id="4250-96a6-8309-fc51" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c265-b664-6953-3391" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b480-6fe2-e2e3-d9af" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
+            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Scimitar Jetbike Squadron" hidden="false" id="985f-8a87-3ad8-e797">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="3 Scimitar Jetbikes" hidden="false" id="8752-c406-27a5-6893">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b5a4-ce11-5ac9-1fd6" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6ff8-b7e1-7ced-66f" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Scimitar Jetbike" hidden="false" id="fc0-fada-8c8b-a56" collective="true">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8223-9640-9509-4503" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="78fa-8d81-a43a-7a81" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Scimitar Jetbike" hidden="false" id="d04e-6379-fdf9-55c8" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">10&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">5+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Scimitar heavy bolter" hidden="false" id="d525-5b03-1f35-eb1d" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b300-6c65-9920-b646" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26e2-d3d3-e60b-266c" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Scimitar heavy bolter" hidden="false" id="b44c-6d44-61d8-b547" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Light" hidden="false" id="a410-c7d2-b42d-ecc0" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Point Defence" hidden="false" id="bad-964d-66b8-4449" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <infoLinks>
+                <infoLink name="Skimmer" hidden="false" type="rule" id="25ee-750b-b25c-a3e5" targetId="4f70-6a67-930b-d0fc"/>
+                <infoLink name="Jink (X)" hidden="false" type="rule" id="4da8-3a1e-6a46-15d9" targetId="9b11-ba2c-eeaf-2402">
+                  <modifiers>
+                    <modifier type="set" value="Jink (6+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Outflank" hidden="false" type="rule" id="6898-809a-ca59-13aa" targetId="8785-676-b80f-8709">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="35"/>
+            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="8416-456c-a6f-e059" id="1ee7-6e22-b032-aff8" primary="true" name="Vanguard"/>
+        <categoryLink targetId="4376-9c33-b1cc-bb06" id="c1ba-1842-fb55-f5e7" primary="false" name="Cavalry (1)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="f746-6027-c075-8d42" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e373-dbc6-a0b9-e6c2" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="decrement" value="1" field="e373-dbc6-a0b9-e6c2">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="2f00-d954-247c-b0e7" shared="true" roundUp="false" id="79d5-dd80-d98b-34e4"/>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="c5ad-fc33-bff2-152b" shared="true" roundUp="false" id="6442-af73-c00c-de41"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="4" field="e373-dbc6-a0b9-e6c2">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Land Speeder Squadron" hidden="false" id="2f00-d954-247c-b0e7">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Land Speeders" hidden="false" id="7d1e-7717-d212-e0fb" defaultSelectionEntryId="7561-dcdf-3ce3-a92c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c0d-87c0-fb7b-6632" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3543-2ccd-3c0a-4a0f" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="2 Land Speeders w/ plasma cannon" hidden="false" id="7561-dcdf-3ce3-a92c">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f6e8-eec2-cb77-682e" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Land Speeder w/ plasma cannon" hidden="false" id="546d-28eb-34c1-9bda" type="selectionEntry" targetId="188f-89b7-aad6-9360">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2443-895c-2087-13d8" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e2cc-cf62-16c4-8ec2" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
+                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Land Speeder w/ plasma cannon &amp; Land Speeder w/ multi-melta" hidden="false" id="9308-b5d1-e66a-9a45">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1608-dcba-a73e-f977" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Land Speeder w/ plasma cannon" hidden="false" id="17ed-e978-f265-e18" type="selectionEntry" targetId="188f-89b7-aad6-9360">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a2b-9604-bbb-8588" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0ce-203c-ace1-9df7" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Land Speeder w/ multi-melta" hidden="false" id="c55d-2d69-dc3d-b6f" collective="true">
+                  <profiles>
+                    <profile name="Land Speeder" hidden="false" id="1c16-865b-7e95-448c" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+                      <characteristics>
+                        <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">10&quot;</characteristic>
+                        <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+                        <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
+                        <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                        <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Nose Mounted heavy flamer" hidden="false" id="6d39-6cf0-e254-23fa" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d7-221d-1d1c-b897" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebea-9018-63a1-251f" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Nose Mounted heavy flamer" hidden="false" id="32be-94dd-38b7-3b2b" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Ignores Cover</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Light" hidden="false" id="2d49-e53d-c97f-8d50" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                        <infoLink name="Arc (Front/Rear)" hidden="false" id="f83-b4dd-a970-f9f9" type="rule" targetId="c48c-8f45-e290-9940"/>
+                        <infoLink name="Ignores Cover" hidden="false" id="6e82-2a09-9c18-2876" type="rule" targetId="bff7-b88a-2145-2c63"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="c5f9-83a5-ec0b-432b" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69da-8801-857c-c7d8" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8abd-9319-9765-b783" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Multi-melta" hidden="false" id="9be4-4f26-9b0f-1b33" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Anti-tank" hidden="false" id="6580-7a58-847a-1151" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <infoLinks>
+                    <infoLink name="Jink (X)" hidden="false" id="7439-135c-a6bf-4676" type="rule" targetId="9b11-ba2c-eeaf-2402">
+                      <modifiers>
+                        <modifier type="set" value="Jink (6+)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Skimmer" hidden="false" id="c6c7-e980-9c6d-228e" type="rule" targetId="4f70-6a67-930b-d0fc"/>
+                    <infoLink name="Outflank" hidden="false" type="rule" id="f46d-a13-f110-1168" targetId="8785-676-b80f-8709">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43e4-611a-603c-71a" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="561a-7f1c-83f2-cb11" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
+                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="8416-456c-a6f-e059" id="7cd8-8792-eb7c-ac0c" primary="true" name="Vanguard"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="255e-1fbc-5352-2486" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="4376-9c33-b1cc-bb06" id="3eac-ae31-dfa8-c3f" primary="false" name="Cavalry (1)"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e825-ea96-9b5-ca4a" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="decrement" value="1" field="e825-ea96-9b5-ca4a">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="c5ad-fc33-bff2-152b" shared="true" roundUp="false" id="2fad-b25c-1adf-bb75"/>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="985f-8a87-3ad8-e797" shared="true" roundUp="false" id="a831-4b2-6534-dd89"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="4" field="e825-ea96-9b5-ca4a">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Javelin Squadron" hidden="false" id="c5ad-fc33-bff2-152b">
+      <categoryLinks>
+        <categoryLink targetId="4376-9c33-b1cc-bb06" id="8fee-7a4f-79e9-1c41" primary="false" name="Cavalry (1)"/>
+        <categoryLink targetId="8416-456c-a6f-e059" id="9d2f-a6ba-8e3c-cc89" primary="true" name="Vanguard"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="dbda-1539-26ca-17c6" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Javelins" hidden="false" id="28e7-8073-7858-e84c" defaultSelectionEntryId="3e5b-4213-da5e-2f67">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Javelin w/ lascannon" hidden="false" id="3e5b-4213-da5e-2f67" collective="false">
+              <profiles>
+                <profile name="Javelin" hidden="false" id="4f8f-91cf-717c-f883" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">10&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Nose Mounted heavy flamer" hidden="false" id="ec7-5510-6457-2cad" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69c0-2519-ea89-9e6d" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e3b-cf92-ea82-6350" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Nose Mounted heavy flamer" hidden="false" id="9cd9-19b3-22c9-3218" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Ignores Cover</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Light" hidden="false" id="abcd-9049-dc42-41f2" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="4dff-31eb-d9aa-97fc" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Ignores Cover" hidden="false" id="1c9b-38f-82a7-579a" type="rule" targetId="bff7-b88a-2145-2c63"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="4b77-4964-1a24-c961" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4164-d11e-ea1a-a5bc" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32ea-6017-c060-85fe" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Sponson Mounted lascannon" hidden="false" id="be6a-4604-a301-363d" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" hidden="false" id="45f-4e0b-c399-f9d1" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="ef99-abd3-7209-666d" type="rule" targetId="c48c-8f45-e290-9940"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="10d6-fcf1-68d2-89e6" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Jink (X)" hidden="false" id="7205-aba1-2b8a-6a2" type="rule" targetId="9b11-ba2c-eeaf-2402">
+                  <modifiers>
+                    <modifier type="set" value="Jink (6+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Skimmer" hidden="false" id="aa9-2ee8-3c2c-907a" type="rule" targetId="4f70-6a67-930b-d0fc"/>
+                <infoLink name="Outflank" hidden="false" type="rule" id="e2df-d33a-2c38-ede" targetId="8785-676-b80f-8709">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Javelin w/ cyclone missile launcher" hidden="false" id="fe53-2635-efc5-fc1c" collective="false">
+              <profiles>
+                <profile name="Javelin" hidden="false" id="556e-a5e9-9bf6-b0e5" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">10&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Nose Mounted heavy flamer" hidden="false" id="60e0-8dab-1018-f9c5" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9200-30f0-718c-2339" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c333-a5be-fe0-174d" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Nose Mounted heavy flamer" hidden="false" id="e993-db5e-2d0a-f87c" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Ignores Cover</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Light" hidden="false" id="5fb9-651d-d8e2-aa0b" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="57a2-7b86-756a-b74d" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Ignores Cover" hidden="false" id="ce80-2bfd-e361-c38c" type="rule" targetId="bff7-b88a-2145-2c63"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Cyclone missile launcher" hidden="false" id="8e8d-f2a-522a-3413" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="84d0-b2d5-f27e-965" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd95-e96d-cba3-fe16" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Cyclone missile launcher" hidden="false" id="2d35-7876-20fb-dd6d" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Ignores Cover</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Ignores Cover" hidden="false" id="237-19fd-5d26-3d37" type="rule" targetId="bff7-b88a-2145-2c63"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="59dc-9095-967c-a6e1" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Light" hidden="false" id="9471-4ec-ca8f-c974" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="2"/>
+                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="30bd-3930-e471-c765" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Skimmer" hidden="false" id="efc8-dea6-545a-d0da" type="rule" targetId="4f70-6a67-930b-d0fc"/>
+                <infoLink name="Jink (X)" hidden="false" id="cb75-b9ec-f717-c76b" type="rule" targetId="9b11-ba2c-eeaf-2402">
+                  <modifiers>
+                    <modifier type="set" value="Jink (6+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Outflank" hidden="false" type="rule" id="1628-c0d1-d8f6-a896" targetId="8785-676-b80f-8709">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ba4d-4097-6ef9-527b" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="99ca-a6ef-7536-b9e4" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="4" field="ba4d-4097-6ef9-527b">
+              <conditions>
+                <condition type="atLeast" value="3" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6" field="ba4d-4097-6ef9-527b">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="33"/>
+        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="increment" value="33" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="3" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="33" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="5" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" value="1" field="3336-7568-be4a-b6a4">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="2f00-d954-247c-b0e7" shared="true" roundUp="false" id="dffe-53e6-66e5-3420"/>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="985f-8a87-3ad8-e797" shared="true" roundUp="false" id="4841-e453-e1a2-f603"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="4" field="3336-7568-be4a-b6a4">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="3336-7568-be4a-b6a4" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Spartan Detachment" hidden="false" id="926b-67b5-cb18-b4a1">
+      <categoryLinks>
+        <categoryLink targetId="3751-fb88-3656-b7d1" id="e243-f2e6-1e7f-9343" primary="true" name="Transport"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="da50-eb18-75e2-2d95" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="c14-2576-7378-bc83" primary="false" name="Vehicle (2)"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Spartan" hidden="false" id="b4ee-24b8-e0a6-f24a" collective="false">
+          <profiles>
+            <profile name="Spartan" hidden="false" id="ce48-3ef1-c140-c21d" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="48ad-9cf6-1afb-1d64" includeChildSelections="false"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="927d-6b2-ef4d-f9f6" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Assault Transport (X)" hidden="false" id="9603-b335-470f-cbf" type="rule" targetId="7e43-609-d300-d807">
+              <modifiers>
+                <modifier type="set" value="Assault Transport (5)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Sponson Weapons" hidden="false" id="e20c-5027-80fe-b67f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a89d-a5c2-d237-8782" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4ca-dd8b-4f1d-862" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted laser destroyers" hidden="false" id="29e8-606a-3899-f304" collective="false">
+                  <profiles>
+                    <profile name="Sponson Mounted laser destroyers" hidden="false" id="2a42-d8f9-8c5c-5e7" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">15&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Arc (Front), Anti-tank</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" hidden="false" id="30a7-6a15-dcb9-16d" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="6639-b0ba-263c-5569" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Accurate" hidden="false" id="25dd-bfbe-133e-ebed" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted quad lascannon" hidden="false" id="7773-5fab-7633-ba05" collective="false">
+                  <profiles>
+                    <profile name="Sponson Mounted quad lascannon" hidden="false" id="9b3-8be1-3b11-21a9" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Arc (Front), Anti-tank</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" hidden="false" id="9142-c2bf-b0b5-9a3a" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="2f4d-ab01-fa3a-4cef" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Accurate" hidden="false" id="33d3-5642-d2bd-ac21" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Hull Mounted Weapon" hidden="false" id="904e-7336-872f-9ec1" defaultSelectionEntryId="7203-c2c8-b4aa-1ab">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6c9-cadd-d9e7-16bc" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7f0-aa61-412d-3443" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Mounted lascannon" hidden="false" id="b837-132b-afe1-7a64">
+                  <profiles>
+                    <profile name="Heavy Mounted lascannon" hidden="false" id="b8c3-e9c4-60b2-3e52" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="10a8-d030-4e47-6e0b" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Anti-tank" hidden="false" id="4c27-e29-8609-8455" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="2"/>
+                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Mounted heavy bolters" hidden="false" id="7203-c2c8-b4aa-1ab">
+                  <profiles>
+                    <profile name="Heavy Mounted heavy bolters" hidden="false" id="2bf5-f128-ac43-47a5" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="61af-8d6b-64ea-7668" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Point Defence" hidden="false" id="f838-b6da-9b29-c810" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                    <infoLink name="Light" hidden="false" id="a3f8-6976-fd8e-9369" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pintle Mounted multi-melta" hidden="false" id="ce29-6f0a-40f5-212c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34f9-90e1-980e-564e" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Pintle Mounted multi-melta" hidden="false" id="34a5-7182-5813-6f4d" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Anti-tank" hidden="false" id="a172-7280-af22-2df7" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                <infoLink name="Arc (Front/Rear)" hidden="false" id="7492-5a72-c491-8682" type="rule" targetId="c48c-8f45-e290-9940"/>
+              </infoLinks>
+              <costs>
+                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="80"/>
+            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Land Raider Detachment" hidden="false" id="c75c-61b6-fa36-cbd0">
+      <categoryLinks>
+        <categoryLink targetId="3751-fb88-3656-b7d1" id="5156-722c-82bb-57b9" primary="true" name="Transport"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="926c-3416-9def-ff8c" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="b6e4-b75d-f00e-e2c4" primary="false" name="Vehicle (2)"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Land Raiders" hidden="false" id="bcf8-1eb7-be06-5bc8" defaultSelectionEntryId="e76-de6d-a83e-f4f6">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Land Raider" hidden="false" id="e76-de6d-a83e-f4f6" collective="false">
+              <profiles>
+                <profile name="Land Raider" hidden="false" id="c8e7-4417-4c0b-5609" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">9&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted twin-linked lascannon" hidden="false" id="2b10-cecb-e05b-9e8b" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2ee-105a-bb2b-49c" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e81-492-26ee-4892" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Sponson Mounted twin-linked lascannon" hidden="false" id="371b-a920-ea3a-aae1" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Arc (Front), Anti-tank</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" hidden="false" id="ed51-b6ad-961a-99ae" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="2051-5e3c-8603-2701" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Accurate" hidden="false" id="387d-449d-2451-b1e9" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="40"/>
+                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="868b-f15c-79d4-aaba" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Assault Transport (X)" hidden="false" id="187-bcbf-b57b-3b6d" type="rule" targetId="7e43-609-d300-d807">
+                  <modifiers>
+                    <modifier type="set" value="Assault Transport (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Forward Deployment" hidden="false" id="b47c-579b-93a8-c8bc" type="rule" targetId="54b4-67fd-a64-86d5"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Land Raider w/ multi-melta" hidden="false" id="8683-33e1-1035-797b" collective="false">
+              <profiles>
+                <profile name="Land Raider" hidden="false" id="4f69-2a4f-63c9-5bde" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">9&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted twin-linked lascannon" hidden="false" id="750b-3bd3-7c00-d4d9" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb01-e717-6242-1c31" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74a7-cb4b-9dd8-c8cc" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Sponson Mounted twin-linked lascannon" hidden="false" id="226d-ab39-7d71-9cf9" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Arc (Front), Anti-tank</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" hidden="false" id="805b-8acc-64c-28dd" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="7832-6f91-7fa0-9912" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Accurate" hidden="false" id="731e-e745-cc82-f683" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted multi-melta" hidden="false" id="9d50-2a89-514d-af2f" collective="true">
+                  <profiles>
+                    <profile name="Pintle Mounted multi-melta" hidden="false" id="de93-3e96-5018-c906" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e50f-c04f-d087-580c" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14e9-a171-2ce6-d98" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" hidden="false" id="4fcb-7fd4-524e-9f67" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="13b9-98d4-1956-1a29" type="rule" targetId="c48c-8f45-e290-9940"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="45"/>
+                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="737-e259-146a-744d" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="737-e259-146a-744d">
+                  <conditions>
+                    <condition type="atLeast" value="3" field="selections" scope="c75c-61b6-fa36-cbd0" childId="model" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="737-e259-146a-744d">
+                  <conditions>
+                    <condition type="atLeast" value="6" field="selections" scope="c75c-61b6-fa36-cbd0" childId="model" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Assault Transport (X)" hidden="false" id="5ff1-c9e7-5045-f10b" type="rule" targetId="7e43-609-d300-d807">
+                  <modifiers>
+                    <modifier type="set" value="Assault Transport (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Forward Deployment" hidden="false" id="b7cb-2a72-b48c-7a8a" type="rule" targetId="54b4-67fd-a64-86d5"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73b2-8409-ed73-3029" includeChildSelections="false"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="cb18-7df0-fb7-c157" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Drop Pod Detachment" hidden="false" id="4204-8b2-1b11-e02d">
+      <categoryLinks>
+        <categoryLink targetId="3751-fb88-3656-b7d1" id="d9be-2a6f-702b-5221" primary="true" name="Transport"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="6fa6-ab85-981-1627" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="1e38-a835-21c2-b74e" primary="false" name="Vehicle (2)"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Drop Pods" hidden="false" id="37ce-4675-1936-567b" defaultSelectionEntryId="15e8-6ab2-837-c811">
+          <entryLinks>
+            <entryLink import="true" name="Palisade Drop Pod" hidden="false" id="537f-cf6e-cfcc-1032" type="selectionEntry" targetId="9ed9-537d-30e8-8b5e">
+              <constraints>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="7882-3bb3-99b-bf45" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="7882-3bb3-99b-bf45">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="4204-8b2-1b11-e02d" childId="d9db-6eb8-232a-1ac1" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="7882-3bb3-99b-bf45">
+                  <conditions>
+                    <condition type="equalTo" value="2" field="selections" scope="4204-8b2-1b11-e02d" childId="d9db-6eb8-232a-1ac1" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="3" field="7882-3bb3-99b-bf45">
+                  <conditions>
+                    <condition type="equalTo" value="3" field="selections" scope="4204-8b2-1b11-e02d" childId="d9db-6eb8-232a-1ac1" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="4" field="7882-3bb3-99b-bf45">
+                  <conditions>
+                    <condition type="equalTo" value="4" field="selections" scope="4204-8b2-1b11-e02d" childId="d9db-6eb8-232a-1ac1" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5" field="7882-3bb3-99b-bf45">
+                  <conditions>
+                    <condition type="equalTo" value="5" field="selections" scope="4204-8b2-1b11-e02d" childId="d9db-6eb8-232a-1ac1" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="6" field="7882-3bb3-99b-bf45">
+                  <conditions>
+                    <condition type="equalTo" value="6" field="selections" scope="4204-8b2-1b11-e02d" childId="d9db-6eb8-232a-1ac1" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="7" field="7882-3bb3-99b-bf45">
+                  <conditions>
+                    <condition type="equalTo" value="7" field="selections" scope="4204-8b2-1b11-e02d" childId="d9db-6eb8-232a-1ac1" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="32"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Drop Pod" hidden="false" id="d9db-6eb8-232a-1ac1" type="selectionEntry" targetId="e2b4-7724-767f-63e1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0a6-b56e-72c9-2384" includeChildSelections="false"/>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="f8f-d188-5fef-fd76" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e46-7cd-114b-dc77" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dreadnought Drop Pod Detachment" hidden="false" id="dc32-7ffd-1d3-91ec">
+      <categoryLinks>
+        <categoryLink targetId="3751-fb88-3656-b7d1" id="18b2-ce5c-9205-7f02" primary="true" name="Transport"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="f1cd-6221-70ec-3268" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="ca2b-c4e1-6f37-512a" primary="false" name="Vehicle (2)"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Drop Pods" hidden="false" id="8d3d-9cee-8eeb-6821" defaultSelectionEntryId="15e8-6ab2-837-c811">
+          <entryLinks>
+            <entryLink import="true" name="Palisade Drop Pod" hidden="false" id="92eb-8bd-9abf-2666" type="selectionEntry" targetId="9ed9-537d-30e8-8b5e">
+              <constraints>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="fe40-dcf6-6d6b-927d" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="fe40-dcf6-6d6b-927d">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="dc32-7ffd-1d3-91ec" childId="ac26-425d-e441-2881" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="fe40-dcf6-6d6b-927d">
+                  <conditions>
+                    <condition type="equalTo" value="2" field="selections" scope="dc32-7ffd-1d3-91ec" childId="ac26-425d-e441-2881" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="3" field="fe40-dcf6-6d6b-927d">
+                  <conditions>
+                    <condition type="equalTo" value="3" field="selections" scope="dc32-7ffd-1d3-91ec" childId="ac26-425d-e441-2881" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="4" field="fe40-dcf6-6d6b-927d">
+                  <conditions>
+                    <condition type="equalTo" value="4" field="selections" scope="dc32-7ffd-1d3-91ec" childId="ac26-425d-e441-2881" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5" field="fe40-dcf6-6d6b-927d">
+                  <conditions>
+                    <condition type="equalTo" value="5" field="selections" scope="dc32-7ffd-1d3-91ec" childId="ac26-425d-e441-2881" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="6" field="fe40-dcf6-6d6b-927d">
+                  <conditions>
+                    <condition type="equalTo" value="6" field="selections" scope="dc32-7ffd-1d3-91ec" childId="ac26-425d-e441-2881" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="7" field="fe40-dcf6-6d6b-927d">
+                  <conditions>
+                    <condition type="equalTo" value="7" field="selections" scope="dc32-7ffd-1d3-91ec" childId="ac26-425d-e441-2881" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="32"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Dreadnought Drop Pod" hidden="false" id="ac26-425d-e441-2881" type="selectionEntry" targetId="e19-5781-8cbe-477d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da56-c17d-7ce9-5b3c" includeChildSelections="false"/>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="6123-8fe2-a217-d988" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c170-d4b7-b5a7-6831" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Deathstorm Drop Pod Battery" hidden="false" id="b53b-f82-ce17-e8f6">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="2 Deathstorm Drop Pods" hidden="false" id="cf82-cd66-e205-1f0">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Deathstorm Drop Pod" hidden="false" id="ec66-3b3b-3912-e2d9" collective="true">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9201-5b2b-c848-b4bf" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2d6a-1a1e-3524-a486" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Deathstorm missile launcher" hidden="false" id="e79c-9cd3-1df5-2ac2" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a71-7c13-5487-91ff" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fee9-9ff6-5070-233b" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Deathstorm missile launcher" hidden="false" id="c75e-4ace-adc0-59a2" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">D3+2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">6+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT, Limited (1), Saturation Fire</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Limited (X)" hidden="false" id="e190-eb77-f1b0-62e6" type="rule" targetId="769e-4f43-51b0-537f"/>
+                    <infoLink name="Light AT" hidden="false" id="b370-355f-8916-43de" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+                    <infoLink name="Saturation Fire" hidden="false" id="4d59-5a51-3034-71d9" type="rule" targetId="a2b9-3b30-b56f-650a"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <profiles>
+                <profile name="Deathstorm Drop Pod" hidden="false" id="ab04-4f0c-1878-93f9" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">-</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">-8</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Drop Pod" hidden="false" id="41b7-cf7c-2d3d-f5e7" type="rule" targetId="39d-d61c-ebfe-15d9"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95bf-6e10-1ca2-dce0" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1a0a-775b-a8e4-f45d" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="32"/>
+            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="be19-7658-5258-71d9" id="a3ee-d3dd-6f08-62ba" primary="true" name="Support"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="a383-7466-6d7b-f0c5" primary="false" name="Vehicle (2)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="8bb6-ad64-543-f25a" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
 </catalogue>
