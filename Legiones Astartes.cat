@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="25" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="26" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -3634,7 +3634,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f40a-8745-14de-c213"/>
                   </constraints>
                   <profiles>
-                    <profile name="Quad launcher - Profile 1" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="55b1-8b2b-19e8-bc57">
+                    <profile name="Quad launcher (Thunderfire)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="55b1-8b2b-19e8-bc57">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;-30&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -3643,7 +3643,7 @@
                         <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Barrage, Light</characteristic>
                       </characteristics>
                     </profile>
-                    <profile name="Quad launcher - Profile 2" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ec5a-3dae-2a48-e97c">
+                    <profile name="Quad launcher (Shatter)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ec5a-3dae-2a48-e97c">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
@@ -3656,6 +3656,7 @@
                   <infoLinks>
                     <infoLink name="Light AT" hidden="false" type="rule" id="e587-8919-8d20-1d8a" targetId="c731-70f4-ffcd-4ff7"/>
                     <infoLink name="Demolisher" hidden="false" type="rule" id="a95e-fda0-6d30-906" targetId="788-9d12-3358-b236"/>
+                    <infoLink name="Barrage" hidden="false" type="rule" id="3310-dc7a-632e-52d7" targetId="862d-b036-2018-dbaf"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
