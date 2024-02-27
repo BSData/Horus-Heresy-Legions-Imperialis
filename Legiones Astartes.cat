@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="26" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="27" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -1654,7 +1654,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Legion Deredeo Dreadnought Detachment" hidden="false" id="679a-2a4d-7ca0-175e">
+    <selectionEntry type="unit" import="true" name="Legion Deredeo Dreadnought Detachment" hidden="false" id="679a-2a4d-7ca0-175e" publicationId="c1b8-2180-635c-14cd" page="148">
       <categoryLinks>
         <categoryLink targetId="2005-60e5-e49d-32f2" id="f094-b60f-c45c-d8cd" primary="true" name="Bastion"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="d2d3-a9fd-785e-b1c" primary="false" name="Legiones Astartes"/>
@@ -1743,7 +1743,7 @@
                 </selectionEntry>
               </selectionEntries>
               <infoLinks>
-                <infoLink name="Tracking" hidden="false" type="rule" id="9bfa-f03f-4208-9e09" targetId="eb09-d940-39cc-16f7"/>
+                <infoLink name="Tracking Array" hidden="false" type="rule" id="9bfa-f03f-4208-9e09" targetId="6bd2-1e87-bf3f-2555"/>
                 <infoLink name="Armoured" hidden="false" type="rule" id="ae3c-6168-a67d-b4c3" targetId="665b-47e2-df00-2629"/>
                 <infoLink name="Invulnerable Save (X)" hidden="false" type="rule" id="f01-202-b4da-141a" targetId="49e7-280c-c388-60ba">
                   <modifiers>
@@ -1836,7 +1836,7 @@
                 </selectionEntry>
               </selectionEntries>
               <infoLinks>
-                <infoLink name="Tracking" hidden="false" type="rule" id="a9d1-36fd-5b6e-e260" targetId="eb09-d940-39cc-16f7"/>
+                <infoLink name="Tracking Array" hidden="false" type="rule" id="a9d1-36fd-5b6e-e260" targetId="6bd2-1e87-bf3f-2555"/>
                 <infoLink name="Armoured" hidden="false" type="rule" id="6515-9317-c587-35c7" targetId="665b-47e2-df00-2629"/>
                 <infoLink name="Invulnerable Save (X)" hidden="false" type="rule" id="b557-419b-f085-cf33" targetId="49e7-280c-c388-60ba">
                   <modifiers>
