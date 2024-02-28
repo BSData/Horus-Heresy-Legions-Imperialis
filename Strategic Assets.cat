@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="1c28-218e-42c6-1ed4" name="Titan (5)" hidden="false"/>
     <categoryEntry id="ebbc-4775-1167-b265" name="Knight (4)" hidden="false"/>
@@ -2232,6 +2232,15 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink name="Blessed Auto-simulacra" hidden="false" id="d21d-2fac-ced6-f51a" type="rule" targetId="11c5-9a8b-79c2-351b"/>
+                <infoLink name="Independent" hidden="false" id="d07e-43ab-d7e0-6c13" type="rule" targetId="53f9-310a-fcae-bbd5"/>
+                <infoLink name="Ion Shield (X)" hidden="false" id="9a2d-7dad-d2b-f830" type="rule" targetId="3016-c284-15c3-6753">
+                  <modifiers>
+                    <modifier type="set" value="Ion Shield (4+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="6da8-fb94-f471-9826" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="true" type="model">
               <selectionEntries>
@@ -2401,6 +2410,15 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink name="Ion Shield (X)" hidden="false" id="9506-c35a-c9fb-7ed5" type="rule" targetId="3016-c284-15c3-6753">
+                  <modifiers>
+                    <modifier type="set" value="Ion Shield (4+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Blessed Auto-simulacra" hidden="false" id="1407-8f03-60c3-2924" type="rule" targetId="11c5-9a8b-79c2-351b"/>
+                <infoLink name="Independent" hidden="false" id="8e50-8ca8-11ea-a876" type="rule" targetId="53f9-310a-fcae-bbd5"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3112,6 +3130,7 @@
           </modifiers>
         </infoLink>
         <infoLink id="5b26-ae11-9da3-f053" name="Nimble" hidden="false" targetId="bc40-962f-5fc5-771a" type="rule"/>
+        <infoLink id="d966-eeee-a1e7-b1a9" name="Ionic Flare Shield" hidden="false" targetId="91cb-858e-5961-1931" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="d81f-53c7-18ab-b37d" name="Wargear" hidden="false" collective="false" import="true" defaultSelectionEntryId="26db-eaee-0f8a-3eb2">
