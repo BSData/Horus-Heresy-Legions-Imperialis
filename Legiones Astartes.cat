@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="28" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="29" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -5586,21 +5586,12 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="f746-6027-c075-8d42" primary="false" name="Legiones Astartes"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="4" field="selections" scope="force" shared="true" id="e373-dbc6-a0b9-e6c2" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e373-dbc6-a0b9-e6c2" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="decrement" value="1" field="e373-dbc6-a0b9-e6c2">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="2f00-d954-247c-b0e7" shared="true" roundUp="false" id="79d5-dd80-d98b-34e4"/>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="c5ad-fc33-bff2-152b" shared="true" roundUp="false" id="6442-af73-c00c-de41"/>
-          </repeats>
+        <modifier type="set" value="4" field="e373-dbc6-a0b9-e6c2">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="0" field="e373-dbc6-a0b9-e6c2">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
           </conditions>
         </modifier>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -5612,6 +5603,15 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="1" field="e373-dbc6-a0b9-e6c2">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="2f00-d954-247c-b0e7" shared="true" roundUp="false" id="79d5-dd80-d98b-34e4"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="c5ad-fc33-bff2-152b" shared="true" roundUp="false" id="6442-af73-c00c-de41"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -5746,21 +5746,12 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
         <categoryLink targetId="4376-9c33-b1cc-bb06" id="3eac-ae31-dfa8-c3f" primary="false" name="Cavalry (1)"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="4" field="selections" scope="force" shared="true" id="e825-ea96-9b5-ca4a" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e825-ea96-9b5-ca4a" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="decrement" value="1" field="e825-ea96-9b5-ca4a">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="c5ad-fc33-bff2-152b" shared="true" roundUp="false" id="2fad-b25c-1adf-bb75"/>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="985f-8a87-3ad8-e797" shared="true" roundUp="false" id="a831-4b2-6534-dd89"/>
-          </repeats>
+        <modifier type="set" value="4" field="e825-ea96-9b5-ca4a">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="0" field="e825-ea96-9b5-ca4a">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
           </conditions>
         </modifier>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -5772,6 +5763,15 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="1" field="e825-ea96-9b5-ca4a">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="c5ad-fc33-bff2-152b" shared="true" roundUp="false" id="2fad-b25c-1adf-bb75"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="985f-8a87-3ad8-e797" shared="true" roundUp="false" id="a831-4b2-6534-dd89"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -5971,26 +5971,17 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       <modifiers>
         <modifier type="set" value="66" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="atLeast" value="3" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="99" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="atLeast" value="5" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="decrement" value="1" field="3336-7568-be4a-b6a4">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="2f00-d954-247c-b0e7" shared="true" roundUp="false" id="dffe-53e6-66e5-3420"/>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="985f-8a87-3ad8-e797" shared="true" roundUp="false" id="4841-e453-e1a2-f603"/>
-          </repeats>
+        <modifier type="set" value="4" field="3336-7568-be4a-b6a4">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="0" field="3336-7568-be4a-b6a4">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
           </conditions>
         </modifier>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -6003,9 +5994,18 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="decrement" value="1" field="3336-7568-be4a-b6a4">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="2f00-d954-247c-b0e7" shared="true" roundUp="false" id="dffe-53e6-66e5-3420"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="985f-8a87-3ad8-e797" shared="true" roundUp="false" id="4841-e453-e1a2-f603"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
-        <constraint type="min" value="4" field="selections" scope="force" shared="true" id="3336-7568-be4a-b6a4" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="3336-7568-be4a-b6a4" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Spartan Detachment" hidden="false" id="926b-67b5-cb18-b4a1">
