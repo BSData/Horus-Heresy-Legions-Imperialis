@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="1c28-218e-42c6-1ed4" name="Titan (5)" hidden="false"/>
     <categoryEntry id="ebbc-4775-1167-b265" name="Knight (4)" hidden="false"/>
@@ -1788,6 +1788,9 @@
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                     <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Rend" hidden="false" id="71f1-4781-d63c-c580" type="rule" targetId="6d1b-9fcd-3541-f46e"/>
+                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry id="6d3e-fca3-dc9d-232e" name="Acheron Pattern Flame Cannon" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -1809,6 +1812,15 @@
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                     <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="7c2e-f16b-6642-7499" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Ignores Cover" hidden="false" id="b59e-8813-d1a9-a4ba" type="rule" targetId="bff7-b88a-2145-2c63"/>
+                    <infoLink name="Light AT" hidden="false" id="61b0-69f8-c551-e5d3" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry id="8f30-3694-b7d7-668a" name="Twin-linked Heavy Bolters" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -1883,6 +1895,9 @@
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                     <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Rend" hidden="false" id="c184-589e-672a-b0ab" type="rule" targetId="6d1b-9fcd-3541-f46e"/>
+                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry id="46e5-9adf-3aa4-c344" name="Castigator Pattern Bolt Cannon" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -1904,6 +1919,16 @@
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                     <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="2b5f-3baa-70e6-2490" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Light AT" hidden="false" id="a235-7ab2-d0a6-9850" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+                    <infoLink name="Rapid Fire" hidden="false" id="3331-7d86-ed4c-265b" type="rule" targetId="d56d-6332-debe-ab1a"/>
+                    <infoLink name="Shieldbane" hidden="false" id="6913-1e48-a02b-3aa4" type="rule" targetId="8208-8da0-3822-65da"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -1954,6 +1979,11 @@
                         <modifier type="set" field="name" value="Ion Shields (3+)"/>
                       </modifiers>
                     </infoLink>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="6a48-94a6-c6c5-1b69" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
@@ -1980,6 +2010,10 @@
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                     <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Reach" hidden="false" id="65ae-9614-b506-30f1" type="rule" targetId="cfe1-b50e-d70d-6959"/>
+                    <infoLink name="Rend" hidden="false" id="600c-24a2-1d80-f510" type="rule" targetId="6d1b-9fcd-3541-f46e"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -2034,6 +2068,15 @@
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                     <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="cbb-9f66-337-48ca" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Armourbane" hidden="false" id="6aba-efa8-ede6-c709" type="rule" targetId="e2f7-4ff5-3f66-fed5"/>
+                    <infoLink name="Collapsing Singularity" hidden="false" id="91d1-d01f-f0b7-2966" type="rule" targetId="e0ab-6f68-258e-2fc1"/>
+                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry id="bb87-e41a-ee5c-9951" name="Atrapos Lascutter" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -2055,6 +2098,24 @@
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                     <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="972d-e2c6-3c0a-238f" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Engine Killer (X)" hidden="false" id="7c9d-63d4-125e-2555" type="rule" targetId="7e4c-2264-79e3-9054">
+                      <modifiers>
+                        <modifier type="set" value="Engine Killer (1)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Rend" hidden="false" id="2716-2117-edd7-c1d5" type="rule" targetId="6d1b-9fcd-3541-f46e"/>
+                    <infoLink name="Wrecker (X)" hidden="false" id="e67c-bcab-a42a-b149" type="rule" targetId="e40-19fc-8c79-9a12">
+                      <modifiers>
+                        <modifier type="set" value="Wrecker (3)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
               <costs>
