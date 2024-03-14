@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="1c28-218e-42c6-1ed4" name="Titan (5)" hidden="false"/>
     <categoryEntry id="ebbc-4775-1167-b265" name="Knight (4)" hidden="false"/>
@@ -495,13 +495,13 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="e94c-1d7c-8ef0-bed6" name="Void Shields (X)" hidden="false" targetId="908c-befc-f030-f2e7" type="rule"/>
-        <infoLink id="14b3-8195-79ed-25a2" name="Agile" hidden="false" targetId="36b7-c82d-3af9-3a0" type="rule"/>
-        <infoLink id="e88d-00cf-a6fd-fdef" name="Infiltrate" hidden="false" targetId="68b7-f6c7-7925-1567" type="rule">
+        <infoLink id="e94c-1d7c-8ef0-bed6" name="Void Shields (X)" hidden="false" targetId="908c-befc-f030-f2e7" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Void Shields (2)"/>
+            <modifier type="set" value="Void Shields (2)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink id="14b3-8195-79ed-25a2" name="Agile" hidden="false" targetId="36b7-c82d-3af9-3a0" type="rule"/>
+        <infoLink id="e88d-00cf-a6fd-fdef" name="Infiltrate" hidden="false" targetId="68b7-f6c7-7925-1567" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2042-da84-0a26-6063" name="Titan (5)" hidden="false" targetId="1c28-218e-42c6-1ed4" primary="false"/>
