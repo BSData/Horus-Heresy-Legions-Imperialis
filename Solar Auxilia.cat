@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="25" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="26" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5823-85fd-1314-b472" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
   </publications>
@@ -2786,7 +2786,11 @@
                           </profiles>
                           <infoLinks>
                             <infoLink name="Demolisher" hidden="false" id="883e-fe68-11b4-a81a" type="rule" targetId="788-9d12-3358-b236"/>
-                            <infoLink name="Blast (3&quot;/5&quot;)" hidden="false" id="38f0-85e5-ff33-3e4d" type="rule" targetId="a981-166d-49aa-1064"/>
+                            <infoLink name="Blast (3&quot;/5&quot;)" hidden="false" id="38f0-85e5-ff33-3e4d" type="rule" targetId="a981-166d-49aa-1064">
+                              <modifiers>
+                                <modifier type="set" value="Blast (3&quot;)" field="name"/>
+                              </modifiers>
+                            </infoLink>
                           </infoLinks>
                         </selectionEntry>
                       </selectionEntries>
@@ -2845,7 +2849,11 @@
                           </profiles>
                           <infoLinks>
                             <infoLink name="Ignores Cover" hidden="false" id="f8f5-c6d3-7390-27a7" type="rule" targetId="bff7-b88a-2145-2c63"/>
-                            <infoLink name="Blast (3&quot;/5&quot;)" hidden="false" id="daea-227b-9c30-d222" type="rule" targetId="a981-166d-49aa-1064"/>
+                            <infoLink name="Blast (3&quot;/5&quot;)" hidden="false" id="daea-227b-9c30-d222" type="rule" targetId="a981-166d-49aa-1064">
+                              <modifiers>
+                                <modifier type="set" value="Blast (3&quot;)" field="name"/>
+                              </modifiers>
+                            </infoLink>
                             <infoLink name="Light AT" hidden="false" id="1569-d2d8-6e2f-5e16" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
                           </infoLinks>
                         </selectionEntry>
