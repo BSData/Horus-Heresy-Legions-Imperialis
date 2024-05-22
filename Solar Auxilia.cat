@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="27" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5823-85fd-1314-b472" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
   </publications>
@@ -119,7 +119,7 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="447c-25fd-ad4b-165b" targetId="3779-422e-5fe9-5654" type="category"/>
+        <categoryLink name="Configuration" hidden="false" id="447c-25fd-ad4b-165b" targetId="3779-422e-5fe9-5654"/>
         <categoryLink id="e891-24c2-7d-4f46" name="Air Support" hidden="false" targetId="2879-da90-6a37-c897" primary="false">
           <modifiers>
             <modifier type="set" field="fac2-1313-4109-bb65" value="0">
@@ -283,18 +283,18 @@
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="364f-551f-314-f47c" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Artillery" hidden="false" id="ea65-19de-2064-dbfb" targetId="98f1-ce9c-c2b2-cea5" type="category">
+        <categoryLink name="Artillery" hidden="false" id="ea65-19de-2064-dbfb" targetId="98f1-ce9c-c2b2-cea5">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="force" shared="true" id="3e23-d5a2-d04c-2d96" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="7985-222c-6251-9cf4" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Bastion" hidden="false" id="a24f-34d8-912f-3117" targetId="2005-60e5-e49d-32f2" type="category">
+        <categoryLink name="Bastion" hidden="false" id="a24f-34d8-912f-3117" targetId="2005-60e5-e49d-32f2">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="b64f-df33-1fc3-371d" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support" hidden="false" id="6baf-3683-2848-3f59" targetId="be19-7658-5258-71d9" type="category">
+        <categoryLink name="Support" hidden="false" id="6baf-3683-2848-3f59" targetId="be19-7658-5258-71d9">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="2072-11aa-1aa9-5839" includeChildSelections="false"/>
           </constraints>
@@ -350,7 +350,7 @@
       </rules>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="b452-9cc3-3003-7d0b" targetId="3779-422e-5fe9-5654"/>
-        <categoryLink name="Heavy Armour" hidden="false" id="eef5-e75-86a7-1921" targetId="1f6b-d764-352d-1e74" type="category">
+        <categoryLink name="Heavy Armour" hidden="false" id="eef5-e75-86a7-1921" targetId="1f6b-d764-352d-1e74">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="force" shared="true" id="50a2-7175-5130-53e7" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="8ede-2ff8-9e9e-797a" includeChildSelections="false"/>
@@ -363,7 +363,7 @@
     <selectionEntry id="1f7b-2c5e-5931-57e1" name="Legate Commander Detachment" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="30f2-027b-e06f-0ba0" name="Infantry (1)" hidden="false" targetId="68c1-de55-26b1-8ca4" primary="false"/>
-        <categoryLink id="af82-93f6-3d28-0e91" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
+        <categoryLink id="af82-93f6-3d28-0e91" name="HQ" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="8e0a-b96d-271c-721" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
       <selectionEntries>
@@ -564,7 +564,7 @@
     <selectionEntry id="d6a2-9c78-adb9-ab04" name="Auxilia Tactical Command Detachment" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="daec-f9ae-e3f7-fd10" name="Infantry (1)" hidden="false" targetId="68c1-de55-26b1-8ca4" primary="false"/>
-        <categoryLink id="9313-1440-dbbc-29ea" name="New CategoryLink" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
+        <categoryLink id="9313-1440-dbbc-29ea" name="HQ" hidden="false" targetId="d950-ad23-9b2-9325" primary="true"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="b924-59d7-d183-a428" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
       <costs>
@@ -744,7 +744,7 @@
       </constraints>
       <categoryLinks>
         <categoryLink id="e393-eb1c-a969-ed41" name="Infantry (1)" hidden="false" targetId="68c1-de55-26b1-8ca4" primary="false"/>
-        <categoryLink id="8b05-e284-6d2f-b593" name="New CategoryLink" hidden="false" targetId="446a-abe3-63c3-5709" primary="true"/>
+        <categoryLink id="8b05-e284-6d2f-b593" name="Core" hidden="false" targetId="446a-abe3-63c3-5709" primary="true"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="e010-8aa7-d351-c276" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -913,7 +913,7 @@
               <entryLinks>
                 <entryLink import="true" name="Dracosan w/ demolisher cannon" hidden="false" type="selectionEntry" id="52a6-54fc-f642-e24c" targetId="1edd-da3-e0ac-8fdb">
                   <constraints>
-                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="c031-a768-b885-11b5"/>
+                    <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="c031-a768-b885-11b5"/>
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
@@ -929,7 +929,7 @@
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="745f-c5d-dbe1-68a"/>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="745f-c5d-dbe1-68a"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
@@ -987,7 +987,7 @@
     </selectionEntry>
     <selectionEntry id="ac35-4985-5633-eaee" name="Auxilia Ogryn Charonite Section" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink id="5b29-7449-2de5-dd36" name="New CategoryLink" hidden="false" targetId="be19-7658-5258-71d9" primary="true"/>
+        <categoryLink id="5b29-7449-2de5-dd36" name="Support" hidden="false" targetId="be19-7658-5258-71d9" primary="true"/>
         <categoryLink id="deb1-72ba-ad92-7211" name="Infantry (1)" hidden="false" targetId="68c1-de55-26b1-8ca4" primary="false"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="6212-fe95-4dd1-7822" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
@@ -1025,7 +1025,7 @@
               <entryLinks>
                 <entryLink import="true" name="Dracosan w/ demolisher cannon" hidden="false" type="selectionEntry" id="9ccd-2c99-356b-8306" targetId="1edd-da3-e0ac-8fdb">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3890-9046-85cd-3885"/>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="3890-9046-85cd-3885"/>
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
@@ -1041,7 +1041,7 @@
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="464d-f2b9-b329-cb26"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="464d-f2b9-b329-cb26"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
@@ -1120,7 +1120,7 @@
     <selectionEntry id="a002-4a05-0cce-8a84" name="Auxilia Rapier Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="fbac-acab-13c8-b409" name="Infantry (1)" hidden="false" targetId="68c1-de55-26b1-8ca4" primary="false"/>
-        <categoryLink id="f8f9-5ab5-da07-0281" name="New CategoryLink" hidden="false" targetId="2005-60e5-e49d-32f2" primary="true"/>
+        <categoryLink id="f8f9-5ab5-da07-0281" name="Bastion" hidden="false" targetId="2005-60e5-e49d-32f2" primary="true"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="b3e2-6907-61b2-3626" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
       <selectionEntries>
@@ -1207,7 +1207,7 @@
     <selectionEntry id="576c-f56c-d7cf-cfd8" name="Auxilia Tarantula Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="43f7-69eb-905d-6b26" name="Infantry (1)" hidden="false" targetId="68c1-de55-26b1-8ca4" primary="false"/>
-        <categoryLink id="219b-40f5-a36c-8da8" name="New CategoryLink" hidden="false" targetId="2005-60e5-e49d-32f2" primary="true"/>
+        <categoryLink id="219b-40f5-a36c-8da8" name="Bastion" hidden="false" targetId="2005-60e5-e49d-32f2" primary="true"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="a39f-2413-5ac0-b7dc" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -1631,8 +1631,8 @@
     </selectionEntry>
     <selectionEntry id="db83-63c6-e511-8994" name="Auxilia Super-heavy Tank Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink id="69bc-1648-c149-e044" name="New CategoryLink" hidden="false" targetId="be9f-b973-245e-49bf" primary="false"/>
-        <categoryLink id="35f9-8c69-fcb0-a0a7" name="New CategoryLink" hidden="false" targetId="1f6b-d764-352d-1e74" primary="true"/>
+        <categoryLink id="69bc-1648-c149-e044" name="Super-heavy Vehicle (3)" hidden="false" targetId="be9f-b973-245e-49bf" primary="false"/>
+        <categoryLink id="35f9-8c69-fcb0-a0a7" name="Heavy Armour" hidden="false" targetId="1f6b-d764-352d-1e74" primary="true"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="18c2-92f7-a0e5-cf7a" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -1889,7 +1889,7 @@
     </selectionEntry>
     <selectionEntry id="79d5-a8be-5766-ccc7" name="Auxilia Thunderbolt Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink id="62b3-106d-0dcf-4f23" name="New CategoryLink" hidden="false" targetId="2879-da90-6a37-c897" primary="true"/>
+        <categoryLink id="62b3-106d-0dcf-4f23" name="Air Support" hidden="false" targetId="2879-da90-6a37-c897" primary="true"/>
         <categoryLink id="e112-18da-e58d-386f" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="893f-d10d-1dcc-204f" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
@@ -1989,7 +1989,7 @@
     </selectionEntry>
     <selectionEntry id="7b07-1ffb-84de-6ac7" name="Auxilia Avenger Strike Fighter Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink id="5bcf-45ca-2570-c12a" name="New CategoryLink" hidden="false" targetId="2879-da90-6a37-c897" primary="true"/>
+        <categoryLink id="5bcf-45ca-2570-c12a" name="Air Support" hidden="false" targetId="2879-da90-6a37-c897" primary="true"/>
         <categoryLink id="2037-fa94-5135-ad88" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="17e-33b-d98e-437d" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
@@ -2089,7 +2089,7 @@
     </selectionEntry>
     <selectionEntry id="df13-9e6a-069f-a958" name="Auxilia Lightning Fighter Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink id="eed3-120b-811f-b350" name="New CategoryLink" hidden="false" targetId="2879-da90-6a37-c897" primary="true"/>
+        <categoryLink id="eed3-120b-811f-b350" name="Air Support" hidden="false" targetId="2879-da90-6a37-c897" primary="true"/>
         <categoryLink id="2e88-b1d0-f42a-f2b6" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="678-8b0b-519b-50d3" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
@@ -2189,7 +2189,7 @@
     </selectionEntry>
     <selectionEntry id="243f-dbf7-f57c-0a2e" name="Auxilia Marauder Bomber Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink id="4dbf-97d1-3150-72fc" name="New CategoryLink" hidden="false" targetId="2879-da90-6a37-c897" primary="true"/>
+        <categoryLink id="4dbf-97d1-3150-72fc" name="Air Support" hidden="false" targetId="2879-da90-6a37-c897" primary="true"/>
         <categoryLink id="2ff7-2d1a-29b9-d85e" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="b0fc-71da-5afb-778f" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
@@ -2644,7 +2644,7 @@
     </selectionEntry>
     <selectionEntry id="9795-cdc4-6dda-345d" name="Auxilia Arvus Lighter" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink id="9116-3c69-f889-e093" name="New CategoryLink" hidden="false" targetId="3751-fb88-3656-b7d1" primary="true"/>
+        <categoryLink id="9116-3c69-f889-e093" name="Transport" hidden="false" targetId="3751-fb88-3656-b7d1" primary="true"/>
         <categoryLink id="3db9-adc2-ce63-7a64" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="53aa-1d31-cfeb-f5fc" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
@@ -3841,7 +3841,7 @@
               <entryLinks>
                 <entryLink import="true" name="Dracosan w/ demolisher cannon" hidden="false" type="selectionEntry" id="90c3-13b8-bedb-26fe" targetId="1edd-da3-e0ac-8fdb">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6f6a-4454-d86f-9a6f"/>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="6f6a-4454-d86f-9a6f"/>
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
@@ -3857,7 +3857,7 @@
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="be79-c0fe-5cb2-139e"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="be79-c0fe-5cb2-139e"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
