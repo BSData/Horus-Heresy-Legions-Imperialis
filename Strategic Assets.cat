@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="1c28-218e-42c6-1ed4" name="Titan (5)" hidden="false"/>
     <categoryEntry id="ebbc-4775-1167-b265" name="Knight (4)" hidden="false"/>
@@ -49,7 +49,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e917-f11b-c2e5-05e9" name="New CategoryLink" hidden="false" targetId="1c28-218e-42c6-1ed4" primary="false"/>
+        <categoryLink id="e917-f11b-c2e5-05e9" name="Titan (5)" hidden="false" targetId="1c28-218e-42c6-1ed4" primary="false"/>
         <categoryLink id="c0e-5bb4-228b-bd50" name="Strategic Assets" hidden="false" targetId="76ec-afbd-859f-876e" primary="false"/>
         <categoryLink id="5459-b07-494f-6325" name="Allied Units" hidden="false" targetId="124c-2927-143f-f513" primary="false"/>
         <categoryLink id="1bfe-399c-7b09-7c90" name="Titan" hidden="false" targetId="9072-16ad-262f-a980" primary="true"/>
@@ -465,6 +465,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="4"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -649,6 +650,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="385"/>
         <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="523e-b9c7-d4cd-0352" name="Reaver Battle Titan" hidden="false" collective="false" import="true" type="model">
@@ -979,6 +981,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="415"/>
         <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a46f-41bb-95c7-3756" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" type="model">
@@ -1108,6 +1111,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="525"/>
         <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="67e0-199f-c9a0-141f" name="Warlord Battle Titan" hidden="false" collective="false" import="true" type="model">
@@ -1143,7 +1147,7 @@
         <categoryLink id="c88c-28c5-7065-8023" name="Titan" hidden="false" targetId="9072-16ad-262f-a980" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="e9b8-1d60-3e71-f5ee" name="Warlord Arm Weapons (Can take duplicates)" hidden="false" collective="false" import="true" targetId="ab7d-e85b-c936-b108" type="selectionEntryGroup">
+        <entryLink id="e9b8-1d60-3e71-f5ee" name="Warlord Arm Weapons" hidden="false" collective="false" import="true" targetId="ab7d-e85b-c936-b108" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9c8-833a-3c41-df94" type="min"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f25-5fe6-f74c-2b49" type="max"/>
@@ -1156,6 +1160,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="600"/>
         <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b960-5de9-0e8e-3981" name="Questoris Knight Banner" hidden="false" collective="false" import="true" type="unit">
@@ -1274,6 +1279,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f867-5775-5e22-aaa7" name="Knight Magaera" hidden="false" collective="false" import="true" type="model">
@@ -1359,6 +1365,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7e48-5068-42d3-3100" name="Knight Warden" hidden="false" collective="false" import="true" type="model">
@@ -1430,6 +1437,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7174-1e8e-3a1f-2dde" name="Knight Paladin" hidden="false" collective="false" import="true" type="model">
@@ -1501,6 +1509,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2683-311b-5574-446f" name="Knight Gallant" hidden="false" collective="false" import="true" type="model">
@@ -1548,6 +1557,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="abee-a263-4692-6c8a" name="Knight Errant" hidden="false" collective="false" import="true" type="model">
@@ -1619,6 +1629,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="95bf-7f1b-a182-dea4" name="Knight Crusader" hidden="false" collective="false" import="true" type="model">
@@ -1679,6 +1690,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1847,6 +1859,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c65c-53ab-80ae-6658" name="Knight Castigator" hidden="false" collective="false" import="true" type="model">
@@ -1934,6 +1947,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d69a-054a-f4ad-3cc4" name="Knight Lancer" hidden="false" collective="false" import="true" type="model">
@@ -2019,6 +2033,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3333-9e29-7627-fac1" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="true" type="model">
@@ -2121,6 +2136,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="20"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2281,6 +2297,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="270"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
               <profiles>
                 <profile name="Acastus Knight" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="f57c-6c3b-a2f5-9de7">
@@ -2459,6 +2476,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="250"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
               <profiles>
                 <profile name="Acastus Knight" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="cb0d-3982-9ca8-5e35">
@@ -2614,7 +2632,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="75e6-5222-0f3c-8c97" name="Warlord Arm Weapons (Can take duplicates)" hidden="false" collective="false" import="true" targetId="ab7d-e85b-c936-b108" type="selectionEntryGroup">
+        <entryLink id="75e6-5222-0f3c-8c97" name="Warlord Arm Weapons" hidden="false" collective="false" import="true" targetId="ab7d-e85b-c936-b108" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99cf-21fe-5412-e1e4" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab5e-5e52-7082-2d61" type="max"/>
@@ -2637,6 +2655,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="675"/>
         <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6891-afc2-8461-dd66" name="Warmaster Heavy Battle Titan" hidden="false" collective="false" import="true" type="model">
@@ -2768,6 +2787,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="750"/>
         <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="7"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c6c9-51d4-a828-6428" name="Warmaster Iconoclast Titan" hidden="false" collective="false" import="true" type="model">
@@ -2952,6 +2972,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="750"/>
         <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="7"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -3271,6 +3292,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
         <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="75d1-288b-2637-de58" name="Questoris Knight Armiger Talon" hidden="false" collective="false" import="true" type="model">
@@ -3371,6 +3393,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
         <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="517e-acb7-9931-3d14" name="Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">

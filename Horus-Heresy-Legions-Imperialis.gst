@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="20" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="21" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
     <publication id="eab5-2233-3200-3063" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
     <publication name="Legions Imperialis FAQs and Errata" hidden="false" id="559c-6588-c3b1-b0e5" shortName="LIE" publisherUrl="https://www.warhammer-community.com/legions-imperialis-downloads/" publisher="Legions Imperialis Rulebook Errata" publicationDate="2023"/>
   </publications>
   <costTypes>
-    <costType id="ee95-a20e-f9ff-e2c2" name="‏‏‎‏‏‎ ‎points" defaultCostLimit="3000" hidden="false"/>
-    <costType id="54cb-1324-71d0-d324" name="‏‏‎‏‏‎ ‎Transport Usage" defaultCostLimit="-1" hidden="true"/>
+    <costType id="ee95-a20e-f9ff-e2c2" name="‏‏‎‏points" defaultCostLimit="3000" hidden="false"/>
+    <costType id="54cb-1324-71d0-d324" name="‏‏‎Transport Usage" defaultCostLimit="-1" hidden="true"/>
+    <costType name="Break Point" id="5312-855-beda-23c1" defaultCostLimit="-1" hidden="true"/>
   </costTypes>
   <profileTypes>
     <profileType id="6c4e-cc0f-8b44-d1ab" name="Detachment">
@@ -67,20 +68,20 @@
   <forceEntries>
     <forceEntry id="49dd-d763-6836-b4f8" hidden="true" name="Unbound Formation (Open Play)">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="f7a1-9027-184e-9946" targetId="3779-422e-5fe9-5654" type="category"/>
+        <categoryLink name="Configuration" hidden="false" id="f7a1-9027-184e-9946" targetId="3779-422e-5fe9-5654"/>
         <categoryLink name="HQ" hidden="false" id="163b-152c-78b9-ddb6" targetId="d950-ad23-9b2-9325"/>
         <categoryLink name="Core" hidden="false" id="cf2b-d3a5-71a5-587e" targetId="446a-abe3-63c3-5709"/>
         <categoryLink name="Air Support" hidden="false" id="fef5-5f7b-695-15a0" targetId="2879-da90-6a37-c897"/>
         <categoryLink name="Artillery" hidden="false" id="b844-5df9-4d5b-f01f" targetId="98f1-ce9c-c2b2-cea5"/>
         <categoryLink name="Bastion" hidden="false" id="e05e-b6a9-9278-234c" targetId="2005-60e5-e49d-32f2"/>
         <categoryLink name="Battle Tank" hidden="false" id="5d9a-518a-7fd0-f80e" targetId="4e02-d7ec-4d81-d5fa"/>
-        <categoryLink name="Heavy Armour" hidden="false" id="3156-52d5-250d-95d7" targetId="1f6b-d764-352d-1e74" type="category"/>
-        <categoryLink name="Light Armour" hidden="false" id="381b-e8c0-8a9e-1a8b" targetId="3b81-6b3e-4546-ade3" type="category"/>
-        <categoryLink name="Support" hidden="false" id="e1eb-be58-1112-e7d9" targetId="be19-7658-5258-71d9" type="category"/>
-        <categoryLink name="Transport" hidden="false" id="5289-bb8f-66be-c9cb" targetId="3751-fb88-3656-b7d1" type="category"/>
-        <categoryLink name="Vanguard" hidden="false" id="beb-b6e2-8aac-f9c2" targetId="8416-456c-a6f-e059" type="category"/>
-        <categoryLink name="Knight" hidden="false" id="17c-5158-3e04-e1f6" targetId="13e3-8701-239a-fec9" type="category"/>
-        <categoryLink name="Titan" hidden="false" id="c84b-708c-d3ad-3ca7" targetId="9072-16ad-262f-a980" type="category"/>
+        <categoryLink name="Heavy Armour" hidden="false" id="3156-52d5-250d-95d7" targetId="1f6b-d764-352d-1e74"/>
+        <categoryLink name="Light Armour" hidden="false" id="381b-e8c0-8a9e-1a8b" targetId="3b81-6b3e-4546-ade3"/>
+        <categoryLink name="Support" hidden="false" id="e1eb-be58-1112-e7d9" targetId="be19-7658-5258-71d9"/>
+        <categoryLink name="Transport" hidden="false" id="5289-bb8f-66be-c9cb" targetId="3751-fb88-3656-b7d1"/>
+        <categoryLink name="Vanguard" hidden="false" id="beb-b6e2-8aac-f9c2" targetId="8416-456c-a6f-e059"/>
+        <categoryLink name="Knight" hidden="false" id="17c-5158-3e04-e1f6" targetId="13e3-8701-239a-fec9"/>
+        <categoryLink name="Titan" hidden="false" id="c84b-708c-d3ad-3ca7" targetId="9072-16ad-262f-a980"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="31" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="32" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -90,6 +90,11 @@
         </infoLink>
         <infoLink name="Armoured" hidden="false" type="rule" id="38af-ea1b-b85-cf08" targetId="665b-47e2-df00-2629"/>
       </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Storm cannon" hidden="false" id="cfd1-805d-837a-a26" collective="false">
       <categoryLinks>
@@ -180,6 +185,11 @@
         </infoLink>
         <infoLink name="Armoured" hidden="false" type="rule" id="70c5-d079-48f1-d61c" targetId="665b-47e2-df00-2629"/>
       </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Storm Eagle" hidden="false" id="2e8d-9082-ab37-c4cd">
       <categoryLinks>
@@ -279,6 +289,10 @@
         </infoLink>
         <infoLink name="Transport (X)" hidden="false" type="rule" id="69cb-3ccc-baab-a371" targetId="b82-1269-e912-cb88"/>
       </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Thunderhawk Gunship" hidden="false" id="2e30-7078-712d-4c9a">
       <profiles>
@@ -396,6 +410,10 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Rhino w/ havoc launcher" hidden="false" id="b749-9cc7-ae95-13fa" collective="false">
       <profiles>
@@ -445,6 +463,7 @@
       </categoryLinks>
       <costs>
         <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="12"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Rhino w/ multi-melta" hidden="false" id="9be6-d4b8-2b8a-18be" collective="false">
@@ -494,6 +513,7 @@
       </categoryLinks>
       <costs>
         <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="14"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Rhino w/ twin-linked bolter" hidden="false" id="3279-c298-e2dc-8b55" collective="false" defaultAmount="1">
@@ -545,6 +565,7 @@
       </categoryLinks>
       <costs>
         <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Land Speeder w/ plasma cannon" hidden="false" id="188f-89b7-aad6-9360" collective="true">
@@ -619,6 +640,11 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Legion Palisade Drop Pod" hidden="false" id="9ed9-537d-30e8-8b5e" collective="false">
       <profiles>
@@ -1311,6 +1337,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1485,6 +1512,7 @@
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
             <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1754,6 +1782,11 @@
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="8a04-d90a-78af-fbb7"/>
               </constraints>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Deredeo Dreadnought w/ Anvilus autocannon battery" hidden="false" id="affe-fabb-4872-eac1">
               <categoryLinks>
@@ -1847,6 +1880,11 @@
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="8099-36be-36e0-17ff"/>
               </constraints>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -2040,6 +2078,11 @@
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -2158,7 +2201,9 @@
                     </modifier>
                   </modifiers>
                   <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                     <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Contemptor Dreadnought w/ Kheres assault cannon" hidden="false" id="c81a-4b70-d2fe-4fb0">
@@ -2240,7 +2285,9 @@
                     </modifier>
                   </modifiers>
                   <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                     <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2871,6 +2918,11 @@
           <categoryLinks>
             <categoryLink targetId="49b3-dae7-33f8-f8e" id="527-ea4a-ada5-6597" primary="false" name="Vehicle (2)"/>
           </categoryLinks>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2980,6 +3032,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3240,6 +3293,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3552,6 +3606,11 @@
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3663,6 +3722,7 @@
               <costs>
                 <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
               <modifiers>
                 <modifier type="set" value="2" field="54cb-1324-71d0-d324">
@@ -3728,6 +3788,7 @@
               <costs>
                 <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
               <modifiers>
                 <modifier type="set" value="2" field="54cb-1324-71d0-d324">
@@ -3881,16 +3942,25 @@
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="11da-6f0a-63af-3f32"/>
               </constraints>
+              <costs>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </entryLink>
             <entryLink import="true" name="Rhino w/ multi-melta" hidden="false" type="selectionEntry" id="9ca8-a975-f288-c107" targetId="9be6-d4b8-2b8a-18be">
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="9b8c-783a-7786-7bdb"/>
               </constraints>
+              <costs>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </entryLink>
             <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" type="selectionEntry" id="3a0e-7982-7189-77c1" targetId="3279-c298-e2dc-8b55">
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="1b89-bd4f-eee6-8cbe"/>
               </constraints>
+              <costs>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -4043,6 +4113,11 @@
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3e51-c887-4b28-e517"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="9968-6f80-2745-e3f0"/>
           </constraints>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -4118,6 +4193,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1019-afe5-1910-234d"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="cf08-f716-93bf-2a83"/>
           </constraints>
+          <costs>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -4201,11 +4279,14 @@
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                     <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2 Plasma Tactical Support Legionaries" hidden="false" id="1b6d-62ae-b64f-1034">
@@ -4264,6 +4345,7 @@
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                     <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -4329,6 +4411,7 @@
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                     <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -4401,6 +4484,7 @@
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                     <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -4420,6 +4504,8 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2 Assault Marines" hidden="false" id="cecc-1742-f5e6-c2b4" collective="false">
@@ -4485,6 +4571,7 @@
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                     <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -4497,6 +4584,8 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="12"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4924,6 +5013,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5076,6 +5166,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="19f3-86e2-68c0-5c6b"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d60c-ab0a-abd7-46fc"/>
           </constraints>
+          <costs>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -5161,6 +5254,11 @@
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -5483,6 +5581,11 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -5572,6 +5675,11 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -5730,6 +5838,11 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43e4-611a-603c-71a" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="561a-7f1c-83f2-cb11" includeChildSelections="false"/>
                   </constraints>
+                  <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                    <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -5861,6 +5974,11 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Javelin w/ cyclone missile launcher" hidden="false" id="fe53-2635-efc5-fc1c" collective="false">
               <profiles>
@@ -5923,6 +6041,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="2"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
               <constraints>
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="30bd-3930-e471-c765" includeChildSelections="false"/>
@@ -6160,6 +6279,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="80"/>
             <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6224,6 +6344,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="40"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="868b-f15c-79d4-aaba" includeChildSelections="false"/>
@@ -6297,6 +6418,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="45"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="737-e259-146a-744d" includeChildSelections="false"/>

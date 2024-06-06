@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5823-85fd-1314-b472" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
   </publications>
@@ -458,7 +458,9 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
             <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
           </costs>
           <modifiers>
             <modifier type="set" value="1" field="54cb-1324-71d0-d324">
@@ -626,7 +628,9 @@
             </entryLink>
           </entryLinks>
           <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
             <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
           </costs>
           <modifiers>
             <modifier type="set" value="1" field="54cb-1324-71d0-d324">
@@ -758,7 +762,7 @@
                 <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55a6-bbc3-8f49-a405" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="ce6f-491f-4975-1ed5" name="Auxiliaries with Flamers" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="ce6f-491f-4975-1ed5" name="Auxiliaries with Flamers" hidden="false" collective="true" import="true" type="model">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fb6-bc14-e017-7fb3" type="min"/>
                     <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7a6-0649-7d93-5e04" type="max"/>
@@ -788,6 +792,8 @@
                   </entryLinks>
                   <costs>
                     <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                    <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                   <modifiers>
                     <modifier type="set" value="1" field="54cb-1324-71d0-d324">
@@ -800,6 +806,7 @@
               </selectionEntries>
               <costs>
                 <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="12"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="32d9-1da2-c238-ed2e" name="2 Auxiliaries" hidden="false" collective="false" import="true" type="upgrade">
@@ -837,6 +844,8 @@
                   </entryLinks>
                   <costs>
                     <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                    <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                   <constraints>
                     <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a4c-9291-4ca5-4cb8" type="min"/>
@@ -876,6 +885,7 @@
               </entryLinks>
               <costs>
                 <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5f59-c023-1861-6668" name="2 Veletarii" hidden="false" collective="false" import="true" type="upgrade">
@@ -899,6 +909,9 @@
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <costs>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -1573,12 +1586,232 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="db3d-4afd-1a96-552b" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adaf-9bb9-f069-b0df" type="max"/>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55b2-5974-72f8-fa" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adaf-9bb9-f069-b0df" type="min"/>
+            <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55b2-5974-72f8-fa" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="d523-88d0-e67f-1c70" name="Malcador Tank" hidden="false" collective="false" import="true" targetId="557f-dcb4-8839-3d72" type="selectionEntry"/>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Malcador Tank" hidden="false" id="557f-dcb4-8839-3d72" collective="false">
+              <profiles>
+                <profile name="Malcador Tank" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="353b-3065-3340-3dd3">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">9&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="3+" field="8485-4ee2-6feb-d93c">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="e83a-fe85-27de-abd7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Chain of Command" id="760c-8906-efeb-ebf1" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
+                <infoLink name="Explorator Adaption" id="c182-ed1e-c7fa-f7cf" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Turret Weapon" id="77ff-b81f-9590-4c38" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12b8-a91b-17df-fa05" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77c0-d4a5-3da1-300f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Malcador Battlecannon" hidden="false" id="606f-d930-dd68-b2f6" collective="false">
+                      <profiles>
+                        <profile name="Malcador Battlecannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f514-9a1e-7f17-dd77">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">25&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Arc (Front/Rear)" id="993d-1d99-c117-272c" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
+                      <costs>
+                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Malcador Vanquisher Battlecannon" hidden="false" id="238b-5624-8139-23ff" collective="false">
+                      <profiles>
+                        <profile name="Malcador Vanquisher Battlecannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="92ce-57c6-8d4e-7391">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">32&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front), Armourbane</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Anti-tank" id="6abd-8320-bf94-5027" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
+                        <infoLink name="Armourbane" id="1716-38c6-2d3a-08a8" hidden="false" targetId="e2f7-4ff5-3f66-fed5" type="rule"/>
+                        <infoLink name="Arc (Front/Rear)" id="6de3-d678-1684-13d8" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
+                      <costs>
+                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Malcador Lascannon Turret" hidden="false" id="1847-7832-2f7b-e211" collective="false">
+                      <profiles>
+                        <profile name="Malcador Lascannon Turret" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f630-d4f2-b0da-88fe">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front)</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Arc (Front/Rear)" id="cf36-6e2f-d2cd-a861" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Anti-tank" id="0d34-516c-5b8c-4394" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Pintle Weapon" id="3d12-12c4-2050-99f0" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6e1-e4c1-c664-4def" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d6e-b394-86e6-db5b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Hull Mounted Demolisher Cannon" hidden="false" id="a97a-70e2-5c60-ccca" collective="false" targetId="40a4-f793-62c7-99f1" type="selectionEntry"/>
+                    <entryLink import="true" name="Hull Mounted Lascannon" hidden="false" id="97d7-a57b-806a-7e89" collective="false" targetId="6ba5-d691-3a7d-e31e" type="selectionEntry"/>
+                    <entryLink import="true" name="Hull Mounted Heavy Bolter" hidden="false" id="1fe7-db90-1d7b-809e" collective="false" targetId="ab94-459f-d7e5-7a04" type="selectionEntry"/>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Hull Mounted Autocannon" hidden="false" id="9802-c13c-4440-46ff" collective="false">
+                      <profiles>
+                        <profile name="Hull Mounted Autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0772-58af-6b76-50b6">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Light AT" id="1ce3-446c-8d23-7bbb" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                        <infoLink name="Arc (Front/Rear)" id="6340-087f-e5cc-b102" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
+                      <costs>
+                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Sponson Weapons" id="f297-e1b3-913b-1a35" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7dc-04cb-42f5-bf79" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8555-66d8-e5fd-7c70" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Malcador Heavy Bolter Sponsons" hidden="false" id="af50-cfa1-2a63-19e4" collective="false">
+                      <profiles>
+                        <profile name="Malcador Heavy Bolter Sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="da93-1804-ee90-838d">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Light" id="ec91-fc88-b367-22da" hidden="false" targetId="4f6f-3184-9172-ef3f" type="rule"/>
+                        <infoLink name="Point Defence" id="f9b0-cdac-5f45-2e72" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Malcador Lascannon Sponsons" hidden="false" id="9645-987c-7ee7-8d09" collective="false">
+                      <profiles>
+                        <profile name="Malcador Lascannon Sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0471-96ad-0bbf-c139">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Anti-tank" id="d3ef-4622-a17a-cd09" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Malcador Autocannon Sponsons" hidden="false" id="aa48-f32a-5f8f-6a1d" collective="false">
+                      <profiles>
+                        <profile name="Malcador Autocannon Sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1762-0959-0932-9ded">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Light AT" id="1e52-9fd1-01d5-6ebe" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Tank Commander" hidden="false" id="db72-b3d6-c6ae-12bf" collective="false" targetId="e83a-fe85-27de-abd7" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7c5-d7ba-a5f6-ee20" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -1841,6 +2074,8 @@
               </entryLinks>
               <costs>
                 <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1893,71 +2128,142 @@
         <categoryLink id="e112-18da-e58d-386f" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="893f-d10d-1dcc-204f" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="baba-2a7c-b2be-5ff9" name="Core Detachments" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b14-ee3f-bc54-a88c" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d10c-a1fd-406c-151d" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="b260-beef-18b8-796d" name="Thunderbolt Fighter" hidden="false" collective="false" import="true" targetId="b241-dffc-4117-2497" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a97-b7f1-024c-abfe" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a1d-a201-8be2-a84b" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1234-5e43-233f-6187" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abdb-2a83-435f-2fdd" type="max"/>
-          </constraints>
+        <selectionEntryGroup name="Upgrades" id="2da5-7d8a-1184-9484" hidden="false">
           <selectionEntries>
-            <selectionEntry id="f623-f3a0-3e5a-9b92" name="Increase by 3" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="0227-fabe-ba2e-d7a1" name="Thunderbolt Fighter" hidden="false" collective="false" import="true" targetId="b241-dffc-4117-2497" type="selectionEntry">
+            <selectionEntry type="model" import="true" name="Thunderbolt Fighter" hidden="false" id="b241-dffc-4117-2497" collective="false">
+              <profiles>
+                <profile name="Thunderbolt Fighter" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="511b-0fda-dcdf-f2a4">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">25&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+0</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Flyer" id="e920-c2b0-eae2-46d8" hidden="false" targetId="83bf-9c55-ebbb-83f8" type="rule"/>
+                <infoLink name="Interceptor" id="4f46-0b21-f0e8-8c4e" hidden="false" targetId="c5cb-479b-fa6b-d376" type="rule"/>
+                <infoLink name="Jink (X)" id="e8f4-3736-b96f-27cb" hidden="false" targetId="9b11-ba2c-eeaf-2402" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Jink (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Thunderbolt Twin-linked Lascannon" hidden="false" id="6f44-9bd4-5d4b-8525" collective="true">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84be-47ef-3676-2f3c" type="min"/>
-                    <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2176-fa57-059e-50f9" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38a1-f0e1-84df-e774" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3878-4dee-4911-02ae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Thunderbolt Twin-linked Lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="3f72-35d5-b81a-3220">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front), Skyfire</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Skyfire" id="be98-b70c-1e61-6348" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                    <infoLink name="Arc (Front/Rear)" id="94ff-e5b5-003f-a35e" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Anti-tank" id="a9db-5b8f-52dd-7b9b" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Wing Weapons" hidden="false" id="1376-b4e0-3a59-af29" collective="false" targetId="28c3-962c-3533-8763" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="779a-6dfa-2beb-b0f2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="97ac-d0b1-2437-5205" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="210"/>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
-            </selectionEntry>
-            <selectionEntry id="0cc6-03aa-358f-f5b8" name="Increase by 2" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="75cd-0343-4d8a-3ab0" name="Thunderbolt Fighter" hidden="false" collective="false" import="true" targetId="b241-dffc-4117-2497" type="selectionEntry">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Quad autocannon" id="422c-f183-f526-149e" hidden="false" defaultSelectionEntryId="4b24-4be8-4b06-ddf4">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Quad autocannon" hidden="false" id="4b24-4be8-4b06-ddf4" collective="true">
+                      <profiles>
+                        <profile name="Quad autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1477-1522-5d05-661f">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Skyfire</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Skyfire" id="f317-8a09-653-afad" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                        <infoLink name="Arc (Front/Rear)" id="d57a-48a8-9e25-8481" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Light AT" id="df9a-b070-f751-4daa" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Avenger bolt cannon" hidden="false" id="835a-776c-b78a-a888" collective="true">
+                      <profiles>
+                        <profile name="Avenger bolt cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f7f6-aaee-6a0a-9466">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Skyfire, Rapid Fire</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Skyfire" id="370e-51b8-9e02-4386" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                        <infoLink name="Arc (Front/Rear)" id="a43e-ba1d-c92d-b3b" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Light AT" id="5e3-4eae-7cc3-690b" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                        <infoLink name="Rapid Fire" id="2954-5a28-9490-d5da" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="3"/>
+                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fb7-480c-57f1-e3f7" type="min"/>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d11d-0899-eaac-0135" type="max"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87d2-8148-e0be-28a8"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecae-f239-4754-30c2"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="49f3-6a3d-3e84-5f8c" name="Increase by 1" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="2fcb-4a98-90e0-3c47" name="Thunderbolt Fighter" hidden="false" collective="false" import="true" targetId="b241-dffc-4117-2497" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71a8-fffd-22b3-99aa" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19ec-837a-fe8b-dcda" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="80"/>
-              </costs>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b14-ee3f-bc54-a88c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="d10c-a1fd-406c-151d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -1973,6 +2279,21 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="160" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="230" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="290" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -1993,71 +2314,171 @@
         <categoryLink id="2037-fa94-5135-ad88" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="17e-33b-d98e-437d" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="0931-e1e3-f9a9-045d" name="Core Detachments" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="843b-9394-0d60-ae39" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7f0-e1e5-7231-5b5d" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="c48e-0f2f-c517-38e4" name="Avenger Strike Fighter" hidden="false" collective="false" import="true" targetId="fc51-a764-75d2-c82a" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e60b-eeb8-67c7-94c6" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc35-0d2d-465e-53f4" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0efd-77df-2098-be8f" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3660-994a-b90d-f7c1" type="max"/>
-          </constraints>
+        <selectionEntryGroup name="Upgrades" id="80b4-605e-7716-86e5" hidden="false">
           <selectionEntries>
-            <selectionEntry id="07e9-76b5-0528-2397" name="Increase by 3" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="ac98-b98c-b147-d331" name="Avenger Strike Fighter" hidden="false" collective="false" import="true" targetId="fc51-a764-75d2-c82a" type="selectionEntry">
+            <selectionEntry type="model" import="true" name="Avenger Strike Fighter" hidden="false" id="fc51-a764-75d2-c82a" collective="false">
+              <profiles>
+                <profile name="Avenger Strike Fighter" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="de40-a425-0df1-7913">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">28&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+0</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Flyer" id="5683-1b4e-4c2f-ebc0" hidden="false" targetId="83bf-9c55-ebbb-83f8" type="rule"/>
+                <infoLink name="Interceptor" id="181e-8439-8aa9-37b6" hidden="false" targetId="c5cb-479b-fa6b-d376" type="rule"/>
+                <infoLink name="Jink (X)" id="22a1-a2d1-d56b-70de" hidden="false" targetId="9b11-ba2c-eeaf-2402" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Jink (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Avenger Bolt Cannon" hidden="false" id="4fb5-b5f5-dcee-4fc9" collective="true">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a41-aff6-18b3-8184" type="min"/>
-                    <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0c8-6f63-38ba-4e7b" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d080-76af-80f6-8f9a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98a1-07fc-7e59-9355" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Avenger Bolt Cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="5c4d-9da5-1ef7-65f4">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Rapid Fire, Skyfire</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Skyfire" id="8b3b-cf9e-0638-019a" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                    <infoLink name="Arc (Front/Rear)" id="83ef-7e08-c902-8cd4" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Rapid Fire" id="df59-5515-5612-5f77" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
+                    <infoLink name="Light AT" id="a862-b3ae-9ce6-d8db" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Stubber Tail Gun" hidden="false" id="42db-420b-f5aa-f64c" collective="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e2d-c5a3-075f-c2e6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="62fe-b538-1fdd-dbe7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Heavy Stubber Tail Gun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="7ac5-ebc2-c62b-c493">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">14&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">6+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Rear), Light AT, Point Defence, Skyfire</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Skyfire" id="ab84-af07-cb68-f8e6" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                    <infoLink name="Arc (Front/Rear)" id="4ee8-2b83-8d7e-d6ff" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Point Defence" id="ffdd-4e35-1747-245b" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
+                    <infoLink name="Light AT" id="71a5-c855-7b24-4031" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Front Gun" id="9f0b-a5f3-7036-04df" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2229-93b7-e52f-fc7c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25c0-f6d9-8338-b9e8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Avenger Lascannon" hidden="false" id="a912-06c5-0afe-da74" collective="false">
+                      <profiles>
+                        <profile name="Avenger Lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="5c2d-0d52-83f4-0bdc">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front), Skyfire</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Skyfire" id="2f18-a785-3ece-bdf9" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                        <infoLink name="Arc (Front/Rear)" id="8223-ca80-6344-0f1c" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Anti-tank" id="968d-7273-601c-69ea" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Avenger Autocannon" hidden="false" id="0f78-cca4-ff07-d9b1" collective="false">
+                      <profiles>
+                        <profile name="Avenger Autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8a26-a197-03bc-a6c0">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Skyfire</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Arc (Front/Rear)" id="19a1-aaaf-9de3-970c" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Light AT" id="f4ba-7cbb-3a83-1ced" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                        <infoLink name="Skyfire" id="a0a0-3197-0417-b0a9" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Wing Weapons" hidden="false" id="7fef-8abe-2aed-be8d" collective="false" targetId="28c3-962c-3533-8763" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcb6-2152-bb04-d425" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9490-04e2-0c4e-1f54" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="220"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="46de-a180-6364-7616" name="Increase by 2" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="507d-2462-39a0-5b4c" name="Avenger Strike Fighter" hidden="false" collective="false" import="true" targetId="fc51-a764-75d2-c82a" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc8e-7242-2017-255c" type="min"/>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="743c-e7de-4dd4-87cd" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="160"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="167b-2ac1-4a84-245e" name="Increase by 1" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="dac4-96da-3388-3849" name="Avenger Strike Fighter" hidden="false" collective="false" import="true" targetId="fc51-a764-75d2-c82a" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e802-34b3-1e0f-c625" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f58d-03f0-105c-e185" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="843b-9394-0d60-ae39" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="b7f0-e1e5-7231-5b5d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -2073,6 +2494,21 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="170" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="245" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="305" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -2093,68 +2529,139 @@
         <categoryLink id="2e88-b1d0-f42a-f2b6" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="678-8b0b-519b-50d3" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="452e-eb39-81a8-961e" name="Core Detachments" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36bd-24c4-0186-d0d6" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91c9-935c-a576-aa80" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="7ba4-01b3-1b02-9655" name="Lightning Fighter" hidden="false" collective="false" import="true" targetId="74da-a098-3090-0348" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15f0-1cea-9eae-323d" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="227a-4fa1-1d3b-799b" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b121-ada9-0b67-080d" name="Upgrades" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Upgrades" id="5baf-7329-e3f3-53ce" hidden="false" defaultSelectionEntryId="7ba4-01b3-1b02-9655">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbf2-9ab9-dfa7-e389" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36bd-24c4-0186-d0d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="91c9-935c-a576-aa80" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="a938-de56-1fb8-f598" name="Increase by 3" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="d73f-b28d-3c9d-8f35" name="Lightning Fighter" hidden="false" collective="false" import="true" targetId="74da-a098-3090-0348" type="selectionEntry">
+            <selectionEntry type="model" import="true" name="Lightning Fighter" hidden="false" id="74da-a098-3090-0348" collective="false">
+              <profiles>
+                <profile name="Lightning Fighter" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="08fb-792e-3aea-9bf4">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">30&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+0</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Flyer" id="b59a-f848-17ce-5652" hidden="false" targetId="83bf-9c55-ebbb-83f8" type="rule"/>
+                <infoLink name="Interceptor" id="c7f5-7a19-7a0d-6e5f" hidden="false" targetId="c5cb-479b-fa6b-d376" type="rule"/>
+                <infoLink name="Jink (X)" id="f201-75e2-f394-11b3" hidden="false" targetId="9b11-ba2c-eeaf-2402" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Jink (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Front Gun" id="597c-36d3-ab61-478a" hidden="false" collective="false" import="true">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4afe-02ca-3650-5c40" type="min"/>
-                    <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df30-bfb1-5baa-40a1" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dadf-a15d-54d9-5fcf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b1f1-cb2a-79d7-f62a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="220"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7dd9-a56c-cee9-14c4" name="Increase by 2" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="efdf-96ac-922f-d6c1" name="Lightning Fighter" hidden="false" collective="false" import="true" targetId="74da-a098-3090-0348" type="selectionEntry">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Lightning Twin Lascannon" hidden="false" id="36f4-5ced-e722-44d6" collective="false">
+                      <profiles>
+                        <profile name="Lightning Twin Lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6e37-2448-73e6-2d0a">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front), Skyfire</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Skyfire" id="dff6-aa29-0738-cbaf" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                        <infoLink name="Arc (Front/Rear)" id="3e47-2ae5-3b88-a57f" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Anti-tank" id="2d75-1854-30b2-578e" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Lightning Twin Multi-laser" hidden="false" id="2f4b-1228-fd68-d2ef" collective="false">
+                      <profiles>
+                        <profile name="Lightning Twin Multi-laser" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6088-7a42-4d06-38e3">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">14&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Skyfire</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Arc (Front/Rear)" id="b9a2-927a-e329-e384" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Light AT" id="ff1e-c34c-c159-5b54" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                        <infoLink name="Skyfire" id="baba-272c-806e-6696" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Wing Weapons" id="9ff4-b255-d319-506c" hidden="false" collective="false" import="true">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26c4-4909-4544-0c21" type="min"/>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8a7-3a6c-e59e-034b" type="max"/>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2b2b-5c5b-3f11-77c0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="de09-7b08-5ab2-c2a0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Phosphex Bomb Clusters" hidden="false" id="63ea-fbb1-9c07-7199" collective="false">
+                      <profiles>
+                        <profile name="Phosphex Bomb Clusters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="a871-e469-5243-b87f">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Rear), Bombing Run, Light AT, Ignores Cover</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Arc (Front/Rear)" id="feea-14b5-217b-4ef8" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Rear)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Ignores Cover" id="bf96-a8a2-0d37-4c9a" hidden="false" targetId="bff7-b88a-2145-2c63" type="rule"/>
+                        <infoLink name="Bombing Run" id="53ec-e4ad-1fae-fa1a" hidden="false" targetId="c99-f84f-dc32-b886" type="rule"/>
+                        <infoLink name="Light AT" id="ba18-46fa-2dde-0c0c" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d4fd-d156-ab5d-44aa"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Skystrike Missiles" hidden="false" id="7d45-5431-062e-9139" collective="false" targetId="d435-679f-43a6-06f0" type="selectionEntry"/>
+                    <entryLink import="true" name="Hellstrike Missiles" hidden="false" id="80eb-72b6-a002-f471" collective="false" targetId="5bac-35fe-bb4a-6333" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="160"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="dfe6-1463-76aa-ce64" name="Increase by 1" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="fb63-d4ad-99dd-0111" name="Lightning Fighter" hidden="false" collective="false" import="true" targetId="74da-a098-3090-0348" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b63-6301-9f04-e230" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f29-0710-3d97-37ee" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2173,6 +2680,21 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="170" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="245" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="305" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -2649,7 +3171,7 @@
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="53aa-1d31-cfeb-f5fc" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="7b21-41a1-4aca-a6d4" name="Arvus Lighter" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7b21-41a1-4aca-a6d4" name="Arvus Lighter" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4822-0aba-42d0-01e1" type="min"/>
             <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a51-ac01-2db0-60dc" type="max"/>
@@ -2681,6 +3203,8 @@
           </infoLinks>
           <costs>
             <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="12"/>
+            <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2702,17 +3226,23 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Auxilia Dracosan Detachment" hidden="false" id="12d2-3bf9-e551-2090">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Dracosans" hidden="false" id="79-9935-5b60-6aca" defaultSelectionEntryId="222-4e6-dc4c-e877">
+        <selectionEntryGroup name="Upgrades" hidden="false" id="79-9935-5b60-6aca" defaultSelectionEntryId="222-4e6-dc4c-e877">
           <entryLinks>
             <entryLink import="true" name="Dracosan w/ twin lascannon" hidden="false" id="222-4e6-dc4c-e877" type="selectionEntry" targetId="cc26-409d-a289-38e8">
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="b275-d9a6-5ac5-3f78" includeChildSelections="false"/>
               </constraints>
+              <costs>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </entryLink>
             <entryLink import="true" name="Dracosan w/ demolisher cannon" hidden="false" id="af8e-9790-d903-8e39" type="selectionEntry" targetId="1edd-da3-e0ac-8fdb">
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="7870-79b0-1f7a-66a2" includeChildSelections="false"/>
               </constraints>
+              <costs>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -2794,6 +3324,11 @@
                           </infoLinks>
                         </selectionEntry>
                       </selectionEntries>
+                      <costs>
+                        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
@@ -2858,6 +3393,11 @@
                           </infoLinks>
                         </selectionEntry>
                       </selectionEntries>
+                      <costs>
+                        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
@@ -2922,6 +3462,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="70"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
               <profiles>
                 <profile name="Malcador Infernus" hidden="false" id="4d6a-d000-8bac-5c81" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
@@ -2990,6 +3531,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="70"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
               <profiles>
                 <profile name="Malcador Infernus" hidden="false" id="c6ab-2fbb-1854-24d1" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
@@ -3090,12 +3632,13 @@
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="e4bd-dd3c-abb-63d7" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Valdors" hidden="false" id="aca9-2747-7005-c0c8">
+        <selectionEntryGroup name="Upgrades" hidden="false" id="aca9-2747-7005-c0c8">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Valdor w/ autocannons" hidden="false" id="7af5-4e93-5ebe-aa85">
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="70"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
               <profiles>
                 <profile name="Valdor" hidden="false" id="cc8-db28-1523-d122" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
@@ -3163,6 +3706,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="70"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
               <profiles>
                 <profile name="Valdor" hidden="false" id="af05-2e5b-7e59-da49" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
@@ -3387,6 +3931,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="104"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Stormhammer w/ multi-lasers" hidden="false" id="bda7-4384-f19e-3825">
@@ -3518,6 +4063,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3605,6 +4151,11 @@
                 <infoLink name="Explorator Adaption" hidden="false" id="4505-79d2-21fa-be60" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
                 <infoLink name="Chain of Command" hidden="false" id="a1aa-d5eb-496a-1515" type="rule" targetId="edea-7a2c-4b66-4ba4"/>
               </infoLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -3682,6 +4233,11 @@
                 <infoLink name="Explorator Adaption" hidden="false" id="6f69-ca9d-ee68-8059" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
                 <infoLink name="Chain of Command" hidden="false" id="4fe2-fc9a-2b46-8d14" type="rule" targetId="edea-7a2c-4b66-4ba4"/>
               </infoLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -3723,6 +4279,9 @@
               <infoLinks>
                 <infoLink name="Steadfast" hidden="false" id="1eec-ac97-aa2e-134b" type="rule" targetId="b98c-611f-b469-44a5"/>
               </infoLinks>
+              <costs>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </entryLink>
           </entryLinks>
           <costs>
@@ -3789,6 +4348,9 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <costs>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </entryLink>
           </entryLinks>
           <costs>
@@ -3981,6 +4543,8 @@
       </selectionEntries>
       <costs>
         <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0ec3-59d5-e88d-9d35" name="Veletarii" hidden="false" collective="true" import="true" type="model">
@@ -4144,6 +4708,8 @@
       </selectionEntryGroups>
       <costs>
         <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="05ee-18c7-f14a-079f" name="Aethon Heavy Sentinel" hidden="false" collective="false" import="true" type="model">
@@ -4222,6 +4788,8 @@
       </selectionEntries>
       <costs>
         <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9504-8a88-68dd-edf5" name="Leman Russ Tank" hidden="false" collective="false" import="true" type="model">
@@ -4312,6 +4880,8 @@
       </entryLinks>
       <costs>
         <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6ba5-d691-3a7d-e31e" name="Hull Mounted Lascannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -4333,30 +4903,6 @@
           </modifiers>
         </infoLink>
         <infoLink id="e624-610d-aed1-200e" name="Anti-tank" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9802-c13c-4440-46ff" name="Hull Mounted Autocannon" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="0772-58af-6b76-50b6" name="Hull Mounted Autocannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="1ce3-446c-8d23-7bbb" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-        <infoLink id="6340-087f-e5cc-b102" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Arc (Front)"/>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <costs>
         <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
@@ -4408,607 +4954,6 @@
           </modifiers>
         </infoLink>
       </infoLinks>
-      <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="557f-dcb4-8839-3d72" name="Malcador Tank" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="353b-3065-3340-3dd3" name="Malcador Tank" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
-          <modifiers>
-            <modifier type="set" field="8485-4ee2-6feb-d93c" value="3+">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e83a-fe85-27de-abd7" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">9&quot;</characteristic>
-            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
-            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="760c-8906-efeb-ebf1" name="Chain of Command" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
-        <infoLink id="c182-ed1e-c7fa-f7cf" name="Explorator Adaption" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
-      </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="77ff-b81f-9590-4c38" name="Turret Weapon" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12b8-a91b-17df-fa05" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77c0-d4a5-3da1-300f" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="606f-d930-dd68-b2f6" name="Malcador Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="f514-9a1e-7f17-dd77" name="Malcador Battlecannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">25&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="993d-1d99-c117-272c" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Arc (Front)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="238b-5624-8139-23ff" name="Malcador Vanquisher Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="92ce-57c6-8d4e-7391" name="Malcador Vanquisher Battlecannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">32&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front), Armourbane</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="6abd-8320-bf94-5027" name="Anti-tank" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
-                <infoLink id="1716-38c6-2d3a-08a8" name="Armourbane" hidden="false" targetId="e2f7-4ff5-3f66-fed5" type="rule"/>
-                <infoLink id="6de3-d678-1684-13d8" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Arc (Front)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1847-7832-2f7b-e211" name="Malcador Lascannon Turret" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="f630-d4f2-b0da-88fe" name="Malcador Lascannon Turret" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="cf36-6e2f-d2cd-a861" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Arc (Front)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="0d34-516c-5b8c-4394" name="Anti-tank" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="3d12-12c4-2050-99f0" name="Pintle Weapon" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6e1-e4c1-c664-4def" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d6e-b394-86e6-db5b" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="a97a-70e2-5c60-ccca" name="Hull Mounted Demolisher Cannon" hidden="false" collective="false" import="true" targetId="40a4-f793-62c7-99f1" type="selectionEntry"/>
-            <entryLink id="97d7-a57b-806a-7e89" name="Hull Mounted Lascannon" hidden="false" collective="false" import="true" targetId="6ba5-d691-3a7d-e31e" type="selectionEntry"/>
-            <entryLink id="fb4c-a706-61a7-c091" name="Hull Mounted Autocannon" hidden="false" collective="false" import="true" targetId="9802-c13c-4440-46ff" type="selectionEntry"/>
-            <entryLink id="1fe7-db90-1d7b-809e" name="Hull Mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="ab94-459f-d7e5-7a04" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="f297-e1b3-913b-1a35" name="Sponson Weapons" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7dc-04cb-42f5-bf79" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8555-66d8-e5fd-7c70" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="af50-cfa1-2a63-19e4" name="Malcador Heavy Bolter Sponsons" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="da93-1804-ee90-838d" name="Malcador Heavy Bolter Sponsons" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="ec91-fc88-b367-22da" name="Light" hidden="false" targetId="4f6f-3184-9172-ef3f" type="rule"/>
-                <infoLink id="f9b0-cdac-5f45-2e72" name="Point Defence" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9645-987c-7ee7-8d09" name="Malcador Lascannon Sponsons" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="0471-96ad-0bbf-c139" name="Malcador Lascannon Sponsons" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="d3ef-4622-a17a-cd09" name="Anti-tank" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="aa48-f32a-5f8f-6a1d" name="Malcador Autocannon Sponsons" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="1762-0959-0932-9ded" name="Malcador Autocannon Sponsons" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="1e52-9fd1-01d5-6ebe" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="db72-b3d6-c6ae-12bf" name="Tank Commander" hidden="false" collective="false" import="true" targetId="e83a-fe85-27de-abd7" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7c5-d7ba-a5f6-ee20" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b241-dffc-4117-2497" name="Thunderbolt Fighter" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="511b-0fda-dcdf-f2a4" name="Thunderbolt Fighter" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
-          <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">25&quot;</characteristic>
-            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
-            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+0</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="e920-c2b0-eae2-46d8" name="Flyer" hidden="false" targetId="83bf-9c55-ebbb-83f8" type="rule"/>
-        <infoLink id="4f46-0b21-f0e8-8c4e" name="Interceptor" hidden="false" targetId="c5cb-479b-fa6b-d376" type="rule"/>
-        <infoLink id="e8f4-3736-b96f-27cb" name="Jink (X)" hidden="false" targetId="9b11-ba2c-eeaf-2402" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Jink (5+)"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="6f44-9bd4-5d4b-8525" name="Thunderbolt Twin-linked Lascannon" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38a1-f0e1-84df-e774" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3878-4dee-4911-02ae" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="3f72-35d5-b81a-3220" name="Thunderbolt Twin-linked Lascannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front), Skyfire</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="be98-b70c-1e61-6348" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-            <infoLink id="94ff-e5b5-003f-a35e" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Arc (Front)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="a9db-5b8f-52dd-7b9b" name="Anti-tank" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="1376-b4e0-3a59-af29" name="Wing Weapons" hidden="false" collective="false" import="true" targetId="28c3-962c-3533-8763" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="779a-6dfa-2beb-b0f2" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97ac-d0b1-2437-5205" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-      </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Quad autocannon" hidden="false" id="422c-f183-f526-149e" defaultSelectionEntryId="4b24-4be8-4b06-ddf4">
-          <selectionEntries>
-            <selectionEntry id="4b24-4be8-4b06-ddf4" name="Quad autocannon" hidden="false" collective="true" import="true" type="upgrade">
-              <profiles>
-                <profile id="1477-1522-5d05-661f" name="Quad autocannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Skyfire</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="f317-8a09-653-afad" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-                <infoLink id="d57a-48a8-9e25-8481" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Arc (Front)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="df9a-b070-f751-4daa" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="835a-776c-b78a-a888" name="Avenger bolt cannon" hidden="false" collective="true" import="true" type="upgrade">
-              <profiles>
-                <profile id="f7f6-aaee-6a0a-9466" name="Avenger bolt cannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Skyfire, Rapid Fire</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="370e-51b8-9e02-4386" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-                <infoLink id="a43e-ba1d-c92d-b3b" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Arc (Front)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="5e3-4eae-7cc3-690b" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-                <infoLink id="2954-5a28-9490-d5da" name="Rapid Fire" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="3"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87d2-8148-e0be-28a8"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecae-f239-4754-30c2"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry id="fc51-a764-75d2-c82a" name="Avenger Strike Fighter" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="de40-a425-0df1-7913" name="Avenger Strike Fighter" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
-          <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">28&quot;</characteristic>
-            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
-            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+0</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="5683-1b4e-4c2f-ebc0" name="Flyer" hidden="false" targetId="83bf-9c55-ebbb-83f8" type="rule"/>
-        <infoLink id="181e-8439-8aa9-37b6" name="Interceptor" hidden="false" targetId="c5cb-479b-fa6b-d376" type="rule"/>
-        <infoLink id="22a1-a2d1-d56b-70de" name="Jink (X)" hidden="false" targetId="9b11-ba2c-eeaf-2402" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Jink (5+)"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="4fb5-b5f5-dcee-4fc9" name="Avenger Bolt Cannon" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d080-76af-80f6-8f9a" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98a1-07fc-7e59-9355" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="5c4d-9da5-1ef7-65f4" name="Avenger Bolt Cannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Rapid Fire, Skyfire</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="8b3b-cf9e-0638-019a" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-            <infoLink id="83ef-7e08-c902-8cd4" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Arc (Front)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="df59-5515-5612-5f77" name="Rapid Fire" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
-            <infoLink id="a862-b3ae-9ce6-d8db" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="42db-420b-f5aa-f64c" name="Heavy Stubber Tail Gun" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e2d-c5a3-075f-c2e6" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62fe-b538-1fdd-dbe7" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="7ac5-ebc2-c62b-c493" name="Heavy Stubber Tail Gun" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">14&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">6+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Rear), Light AT, Point Defence, Skyfire</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="ab84-af07-cb68-f8e6" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-            <infoLink id="4ee8-2b83-8d7e-d6ff" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Arc (Front)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="ffdd-4e35-1747-245b" name="Point Defence" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
-            <infoLink id="71a5-c855-7b24-4031" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="9f0b-a5f3-7036-04df" name="Front Gun" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2229-93b7-e52f-fc7c" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25c0-f6d9-8338-b9e8" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="a912-06c5-0afe-da74" name="Avenger Lascannon" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="5c2d-0d52-83f4-0bdc" name="Avenger Lascannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front), Skyfire</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="2f18-a785-3ece-bdf9" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-                <infoLink id="8223-ca80-6344-0f1c" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Arc (Front)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="968d-7273-601c-69ea" name="Anti-tank" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0f78-cca4-ff07-d9b1" name="Avenger Autocannon" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="8a26-a197-03bc-a6c0" name="Avenger Autocannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Skyfire</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="19a1-aaaf-9de3-970c" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Arc (Front)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="f4ba-7cbb-3a83-1ced" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-                <infoLink id="a0a0-3197-0417-b0a9" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="7fef-8abe-2aed-be8d" name="Wing Weapons" hidden="false" collective="false" import="true" targetId="28c3-962c-3533-8763" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcb6-2152-bb04-d425" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9490-04e2-0c4e-1f54" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="74da-a098-3090-0348" name="Lightning Fighter" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="08fb-792e-3aea-9bf4" name="Lightning Fighter" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
-          <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">30&quot;</characteristic>
-            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
-            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+0</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="b59a-f848-17ce-5652" name="Flyer" hidden="false" targetId="83bf-9c55-ebbb-83f8" type="rule"/>
-        <infoLink id="c7f5-7a19-7a0d-6e5f" name="Interceptor" hidden="false" targetId="c5cb-479b-fa6b-d376" type="rule"/>
-        <infoLink id="f201-75e2-f394-11b3" name="Jink (X)" hidden="false" targetId="9b11-ba2c-eeaf-2402" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Jink (5+)"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="597c-36d3-ab61-478a" name="Front Gun" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dadf-a15d-54d9-5fcf" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1f1-cb2a-79d7-f62a" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="36f4-5ced-e722-44d6" name="Lightning Twin Lascannon" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="6e37-2448-73e6-2d0a" name="Lightning Twin Lascannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front), Skyfire</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="dff6-aa29-0738-cbaf" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-                <infoLink id="3e47-2ae5-3b88-a57f" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Arc (Front)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="2d75-1854-30b2-578e" name="Anti-tank" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2f4b-1228-fd68-d2ef" name="Lightning Twin Multi-laser" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="6088-7a42-4d06-38e3" name="Lightning Twin Multi-laser" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">14&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Skyfire</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="b9a2-927a-e329-e384" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Arc (Front)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="ff1e-c34c-c159-5b54" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-                <infoLink id="baba-272c-806e-6696" name="Skyfire" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="9ff4-b255-d319-506c" name="Wing Weapons" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b2b-5c5b-3f11-77c0" type="min"/>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de09-7b08-5ab2-c2a0" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="63ea-fbb1-9c07-7199" name="Phosphex Bomb Clusters" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="a871-e469-5243-b87f" name="Phosphex Bomb Clusters" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Rear), Bombing Run, Light AT, Ignores Cover</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="feea-14b5-217b-4ef8" name="Arc (Front/Rear)" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Arc (Rear)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="bf96-a8a2-0d37-4c9a" name="Ignores Cover" hidden="false" targetId="bff7-b88a-2145-2c63" type="rule"/>
-                <infoLink id="53ec-e4ad-1fae-fa1a" name="Bombing Run" hidden="false" targetId="c99-f84f-dc32-b886" type="rule"/>
-                <infoLink id="ba18-46fa-2dde-0c0c" name="Light AT" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d4fd-d156-ab5d-44aa"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="7d45-5431-062e-9139" name="Skystrike Missiles" hidden="false" collective="false" import="true" targetId="d435-679f-43a6-06f0" type="selectionEntry"/>
-            <entryLink id="80eb-72b6-a002-f471" name="Hellstrike Missiles" hidden="false" collective="false" import="true" targetId="5bac-35fe-bb4a-6333" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
       </costs>
