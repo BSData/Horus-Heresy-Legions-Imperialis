@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="30" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="31" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -722,8 +722,8 @@
   <forceEntries>
     <forceEntry name="Legion Demi-Company" hidden="false" id="6cda-5812-cf52-3fee">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="234b-b389-7176-97f2" targetId="3779-422e-5fe9-5654" type="category"/>
-        <categoryLink name="HQ" hidden="false" id="d4df-977-657f-ea26" targetId="d950-ad23-9b2-9325" type="category">
+        <categoryLink name="Configuration" hidden="false" id="234b-b389-7176-97f2" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="HQ" hidden="false" id="d4df-977-657f-ea26" targetId="d950-ad23-9b2-9325">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3440-6cb3-ae72-e9e2"/>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="806a-ae73-4b8d-2207" includeChildSelections="false"/>
@@ -990,7 +990,7 @@
       </rules>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="88b8-73b3-759e-e47f" targetId="3779-422e-5fe9-5654"/>
-        <categoryLink name="Air Support" hidden="false" id="94f1-e4e5-cd3a-5acb" targetId="2879-da90-6a37-c897" type="category">
+        <categoryLink name="Air Support" hidden="false" id="94f1-e4e5-cd3a-5acb" targetId="2879-da90-6a37-c897">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4bba-9950-4501-bd8e"/>
           </constraints>
@@ -6140,7 +6140,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                 <profile name="Pintle Mounted multi-melta" hidden="false" id="34a5-7182-5813-6f4d" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
                     <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
                     <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
                     <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank</characteristic>
@@ -6351,7 +6351,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       <selectionEntryGroups>
         <selectionEntryGroup name="Drop Pods" hidden="false" id="37ce-4675-1936-567b" defaultSelectionEntryId="15e8-6ab2-837-c811">
           <entryLinks>
-            <entryLink import="true" name="Palisade Drop Pod" hidden="false" id="537f-cf6e-cfcc-1032" type="selectionEntry" targetId="9ed9-537d-30e8-8b5e">
+            <entryLink import="true" name="Legion Palisade Drop Pod" hidden="false" id="537f-cf6e-cfcc-1032" type="selectionEntry" targetId="9ed9-537d-30e8-8b5e">
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="7882-3bb3-99b-bf45" includeChildSelections="false"/>
               </constraints>
@@ -6430,7 +6430,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       <selectionEntryGroups>
         <selectionEntryGroup name="Drop Pods" hidden="false" id="8d3d-9cee-8eeb-6821" defaultSelectionEntryId="15e8-6ab2-837-c811">
           <entryLinks>
-            <entryLink import="true" name="Palisade Drop Pod" hidden="false" id="92eb-8bd-9abf-2666" type="selectionEntry" targetId="9ed9-537d-30e8-8b5e">
+            <entryLink import="true" name="Legion Palisade Drop Pod" hidden="false" id="92eb-8bd-9abf-2666" type="selectionEntry" targetId="9ed9-537d-30e8-8b5e">
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="fe40-dcf6-6d6b-927d" includeChildSelections="false"/>
               </constraints>
