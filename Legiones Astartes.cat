@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="32" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="33" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -1163,6 +1163,11 @@
           <constraints>
             <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="266b-9fa0-134-84b4"/>
           </constraints>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Storm cannon" hidden="false" id="5423-ea48-cd8a-efb7" collective="false">
           <categoryLinks>
@@ -1256,6 +1261,11 @@
           <constraints>
             <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="bed2-303e-b72f-b331"/>
           </constraints>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
