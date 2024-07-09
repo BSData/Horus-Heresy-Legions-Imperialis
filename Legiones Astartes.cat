@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="34" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="35" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -3888,19 +3888,59 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Drop Pod" id="8be8-5139-d9eb-2f40" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Drop Pod" hidden="false" id="e1c7-e1ea-1ac8-6996" type="selectionEntry" targetId="e2b4-7724-767f-63e1">
+                  <constraints>
+                    <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="f00a-6f2f-1a33-99ce"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="4d68-327a-e5ce-e989"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="b863-1614-587-5f21" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="b863-1614-587-5f21">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee68-4fce-2d1a-cf48"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a4dd-a22f-9b79-24c1" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="a4dd-a22f-9b79-24c1">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3932,6 +3972,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="dc5d-1c33-4f00-ea9d">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="e2b4-7724-767f-63e1" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
