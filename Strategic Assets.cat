@@ -115,7 +115,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="6b4a-8e25-23c7-fcc5" name="Turbo-laser Destructor" hidden="false" collective="false" import="true" type="upgrade">
@@ -143,7 +143,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="8955-235b-20e0-1a78" name="Plasma Blastgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -170,7 +170,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="0430-5823-8fa9-8a67" name="Incisor Pattern Melta Lance" hidden="false" collective="false" import="true" type="upgrade">
@@ -214,7 +214,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="9dd4-c832-484f-2431" name="Volkite Eradicator" hidden="false" collective="false" import="true" type="upgrade">
@@ -245,7 +245,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="e7d6-0275-5577-4453" name="Warhound Shudder Missiles" hidden="false" collective="false" import="true" type="upgrade">
@@ -274,7 +274,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="812f-87d2-2dd9-7673" name="Warhound Swarmer Missiles" hidden="false" collective="false" import="true" type="upgrade">
@@ -304,7 +304,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="f3b0-3286-ea65-f6dd" name="Ursus Claw" hidden="false" collective="false" import="true" type="upgrade">
@@ -327,7 +327,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="232e-3308-023f-a09f" name="Vulcan Mega-bolter" hidden="false" collective="false" import="true" type="upgrade">
@@ -357,7 +357,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="17d7-3b27-a267-1572" name="Natrix Shock Lance" hidden="false" collective="false" import="true" type="upgrade">
@@ -381,7 +381,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="ac5d-b010-6c3c-c930" name="Graviton Eradicator" hidden="false" collective="false" import="true" type="upgrade">
@@ -410,7 +410,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="924a-f018-f96d-66e7" name="Conversion Beam Dissolutor" hidden="false" collective="false" import="true" type="upgrade">
@@ -456,7 +456,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -464,7 +464,7 @@
               </selectionEntryGroups>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="4"/>
               </costs>
             </selectionEntry>
@@ -473,7 +473,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="330"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7378-411c-0df7-63e8" name="Dire Wolf Heavy Scout Titan" hidden="false" collective="false" import="true" type="model">
@@ -535,7 +535,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -568,7 +568,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e497-5cfa-9c47-7587" name="Volcano Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -597,7 +597,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="019d-e9bc-5bc5-b885" name="Conversion Beam Dissipator" hidden="false" collective="false" import="true" type="upgrade">
@@ -641,7 +641,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -649,7 +649,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="385"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="4"/>
       </costs>
     </selectionEntry>
@@ -726,7 +726,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6317-85a3-8644-76e9" name="Reaver Power Fist" hidden="false" collective="false" import="true" type="upgrade">
@@ -763,7 +763,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -831,7 +831,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e2d6-76de-2ec0-fbb6" name="Reaver Vulcan Mega-bolter" hidden="false" collective="false" import="true" type="upgrade">
@@ -853,7 +853,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b260-0566-d1c0-095e" name="Reaver Titan Warp Missile" hidden="false" collective="false" import="true" type="upgrade">
@@ -888,7 +888,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="69a6-eefc-797a-90eb" name="Reaver Turbo-laser Destructor" hidden="false" collective="false" import="true" type="upgrade">
@@ -908,7 +908,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3755-1512-22b4-9607" name="Reaver Apocalypse Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -928,7 +928,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8dac-be72-28b4-9e57" name="Reaver Volkite Eradicator" hidden="false" collective="false" import="true" type="upgrade">
@@ -951,7 +951,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2057-7e20-dc4f-6596" name="Reaver Graviton Eradicator" hidden="false" collective="false" import="true" type="upgrade">
@@ -972,7 +972,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -980,7 +980,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="415"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="5"/>
       </costs>
     </selectionEntry>
@@ -1039,7 +1039,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2f76-ae74-b77c-0163" name="Anvillus Pattern Defence Batteries" hidden="false" collective="false" import="true" type="upgrade">
@@ -1064,7 +1064,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1110,7 +1110,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="525"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="5"/>
       </costs>
     </selectionEntry>
@@ -1159,7 +1159,7 @@
       </entryLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="600"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="6"/>
       </costs>
     </selectionEntry>
@@ -1238,7 +1238,7 @@
                   </profiles>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="b403-37ff-44fc-c800" name="Hekaton Siege Claw" hidden="false" collective="true" import="true" type="upgrade">
@@ -1255,7 +1255,7 @@
                   </profiles>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="dd84-e4cd-7d1e-61ac" name="Graviton Gun" hidden="false" collective="true" import="true" type="upgrade">
@@ -1272,13 +1272,13 @@
                   </profiles>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
@@ -1316,7 +1316,7 @@
                   </profiles>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="40f7-4c42-6d68-c62d" name="Phased Plasma-Fusil" hidden="false" collective="true" import="true" type="upgrade">
@@ -1337,7 +1337,7 @@
                   </profiles>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="5dcd-94ef-23ff-14e4" name="Lightning Cannon" hidden="false" collective="true" import="true" type="upgrade">
@@ -1358,13 +1358,13 @@
                   </profiles>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
@@ -1436,7 +1436,7 @@
               </entryLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
@@ -1508,7 +1508,7 @@
               </entryLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
@@ -1556,7 +1556,7 @@
               </entryLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
@@ -1628,7 +1628,7 @@
               </entryLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
@@ -1689,7 +1689,7 @@
               </entryLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
@@ -1698,7 +1698,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7758-9686-1c73-b447" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" type="unit">
@@ -1798,7 +1798,7 @@
                   </profiles>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                   <infoLinks>
                     <infoLink name="Rend" hidden="false" id="71f1-4781-d63c-c580" type="rule" targetId="6d1b-9fcd-3541-f46e"/>
@@ -1822,7 +1822,7 @@
                   </profiles>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                   <infoLinks>
                     <infoLink name="Arc (Front/Rear)" hidden="false" id="7c2e-f16b-6642-7499" type="rule" targetId="c48c-8f45-e290-9940">
@@ -1852,13 +1852,13 @@
                   </profiles>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
@@ -1906,7 +1906,7 @@
                   </profiles>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                   <infoLinks>
                     <infoLink name="Rend" hidden="false" id="c184-589e-672a-b0ab" type="rule" targetId="6d1b-9fcd-3541-f46e"/>
@@ -1930,7 +1930,7 @@
                   </profiles>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                   <infoLinks>
                     <infoLink name="Arc (Front/Rear)" hidden="false" id="2b5f-3baa-70e6-2490" type="rule" targetId="c48c-8f45-e290-9940">
@@ -1946,7 +1946,7 @@
               </selectionEntries>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
@@ -2001,7 +2001,7 @@
                   </infoLinks>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="5401-c3c4-3cee-e9f5" name="Shock Lance" hidden="false" collective="true" import="true" type="upgrade">
@@ -2022,7 +2022,7 @@
                   </profiles>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                   <infoLinks>
                     <infoLink name="Reach" hidden="false" id="65ae-9614-b506-30f1" type="rule" targetId="cfe1-b50e-d70d-6959"/>
@@ -2032,7 +2032,7 @@
               </selectionEntries>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
@@ -2081,7 +2081,7 @@
                   </profiles>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                   <infoLinks>
                     <infoLink name="Arc (Front/Rear)" hidden="false" id="cbb-9f66-337-48ca" type="rule" targetId="c48c-8f45-e290-9940">
@@ -2111,7 +2111,7 @@
                   </profiles>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                   <infoLinks>
                     <infoLink name="Arc (Front/Rear)" hidden="false" id="972d-e2c6-3c0a-238f" type="rule" targetId="c48c-8f45-e290-9940">
@@ -2135,7 +2135,7 @@
               </selectionEntries>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="20"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
             </selectionEntry>
@@ -2144,7 +2144,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="215"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fd4a-62cd-8326-1526" name="Acastus Knight Banner" hidden="false" collective="false" import="true" type="unit">
@@ -2231,7 +2231,7 @@
                   </infoLinks>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="ff8d-177b-6fe9-0cf3" name="Volkite Culverin" hidden="false" collective="true" import="true" type="upgrade">
@@ -2260,7 +2260,7 @@
                   </infoLinks>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="3bad-3ad4-b37d-6438" name="Karacnos Mortar Battery" hidden="false" collective="true" import="true" type="upgrade">
@@ -2290,13 +2290,13 @@
                   </infoLinks>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="270"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
               <profiles>
@@ -2349,7 +2349,7 @@
                   </infoLinks>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2384,7 +2384,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="9a0f-f873-0a84-d460" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" type="upgrade">
@@ -2409,7 +2409,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -2442,7 +2442,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="19bd-a1f2-a399-57e8" name="Acastus Lascannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2467,7 +2467,7 @@
                       </infoLinks>
                       <costs>
                         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -2475,7 +2475,7 @@
               </selectionEntryGroups>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="250"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
               </costs>
               <profiles>
@@ -2504,7 +2504,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5d4b-8a93-a527-605d" name="Warlord Sinister Battle Titan" hidden="false" collective="false" import="true" type="model">
@@ -2570,7 +2570,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9a28-5d4e-a0eb-730e" name="Antipathic Tempest" hidden="false" collective="false" import="true" type="upgrade">
@@ -2601,7 +2601,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3e55-e09c-55d8-e500" name="Sinistramanus Tenebrae" hidden="false" collective="false" import="true" type="upgrade">
@@ -2627,7 +2627,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2654,7 +2654,7 @@
       </entryLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="675"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="6"/>
       </costs>
     </selectionEntry>
@@ -2721,7 +2721,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0f8d-2f15-ca8f-1875" name="Suzerain Class Plasma Destructors" hidden="false" collective="false" import="true" type="upgrade">
@@ -2764,7 +2764,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2786,7 +2786,7 @@
       </entryLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="750"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="7"/>
       </costs>
     </selectionEntry>
@@ -2850,7 +2850,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a0ad-5b56-e83c-bb0a" name="Cruciator gatling array" hidden="false" collective="false" import="true" type="upgrade">
@@ -2877,7 +2877,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2910,7 +2910,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a2d0-c5d7-a1a0-3c4f" name="Kirus Grav Imploder" hidden="false" collective="false" import="true" type="upgrade">
@@ -2947,7 +2947,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2971,7 +2971,7 @@
       </entryLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="750"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="7"/>
       </costs>
     </selectionEntry>
@@ -2998,7 +2998,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="599d-2339-5682-1ff2" name="Reaver Laser Blaster" hidden="false" collective="false" import="true" type="upgrade">
@@ -3022,7 +3022,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e174-2236-eba6-d112" name="Reaver Melta Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3062,7 +3062,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3011-1570-a767-79c4" name="Reaver Volcano Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3091,7 +3091,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dbe7-85f0-1eae-898f" name="Thermal Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3131,7 +3131,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f39d-d40f-8d60-bb65" name="Mori Quake Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3161,7 +3161,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2ba2-661b-16c3-dc52" name="Belicosa Volcano Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3190,7 +3190,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b7be-c889-4256-5520" name="Mechanicum Knight Moirax Talon" hidden="false" collective="false" import="true" type="model">
@@ -3259,7 +3259,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="26db-eaee-0f8a-3eb2" name="Armiger Lightning Locks" hidden="false" collective="false" import="true" type="upgrade">
@@ -3283,7 +3283,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3291,7 +3291,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="2"/>
       </costs>
     </selectionEntry>
@@ -3359,7 +3359,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="de48-53d5-1a29-418d" name="Armiger autocannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3384,7 +3384,7 @@
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3392,7 +3392,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="2"/>
       </costs>
     </selectionEntry>
@@ -3419,7 +3419,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0220-6a14-dfd9-0fcd" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
@@ -3444,7 +3444,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6874-b51d-d7e7-223c" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" type="upgrade">
@@ -3469,7 +3469,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e745-1397-9192-3b8e" name="Rocket Pods" hidden="false" collective="false" import="true" type="upgrade">
@@ -3494,7 +3494,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="02fd-e37f-0301-063c" name="Reaper Chainsword" hidden="false" collective="false" import="true" type="upgrade">
@@ -3514,7 +3514,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="db2f-eae1-02ed-b5d9" name="Questoris Avenger Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3540,7 +3540,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e5fe-740d-744e-12c7" name="Rapid-fire Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3565,7 +3565,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7308-2c6e-0b84-3103" name="Ardex-defensor Mauler Bolt Cannon Turrets" hidden="false" collective="false" import="true" type="upgrade">
@@ -3590,7 +3590,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2b28-180a-8846-dfff" name="Ardex-defensor Lascannon turrets" hidden="false" collective="false" import="true" type="upgrade">
@@ -3620,7 +3620,7 @@
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -3655,7 +3655,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e7e3-52e3-b6ab-3fc4" name="Paired Gatling Blasters" hidden="false" collective="false" import="true" type="upgrade">
@@ -3679,7 +3679,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7f25-42de-2943-65e6" name="Paired Turbo-laser Destructors" hidden="false" collective="false" import="true" type="upgrade">
@@ -3704,7 +3704,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5793-4435-54de-fb92" name="Paired Laser Blasters" hidden="false" collective="false" import="true" type="upgrade">
@@ -3728,7 +3728,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c5a2-c7f6-3202-0ca7" name="Apocalypse Missile Launchers" hidden="false" collective="false" import="true" type="upgrade">
@@ -3753,7 +3753,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3784,7 +3784,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6c19-1e94-0d94-375d" name="Volkite Destructor" hidden="false" collective="false" import="true" type="upgrade">
@@ -3815,7 +3815,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2c89-159d-317c-3b78" name="Macro-gatling Blaster" hidden="false" collective="false" import="true" type="upgrade">
@@ -3843,7 +3843,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="688d-7619-14e5-2ad2" name="Warlord Graviton Ruinator" hidden="false" collective="false" import="true" type="upgrade">
@@ -3872,7 +3872,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="cbbe-8e96-59eb-94c4" name="Conversion Beam Extripator" hidden="false" collective="false" import="true" type="upgrade">
@@ -3918,7 +3918,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8fd2-bade-9538-b6dc" name="Arioch Power Claw" hidden="false" collective="false" import="true" type="upgrade">
@@ -3968,7 +3968,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4018,7 +4018,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="73ff-ed7f-1e37-4f70" name="Apocalypse Missile Array" hidden="false" collective="false" import="true" type="upgrade">
@@ -4046,7 +4046,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="64a0-18e7-9793-8174" name="Turbo-laser Destructor" hidden="false" collective="false" import="true" type="upgrade">
@@ -4074,7 +4074,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="19d1-6582-a1dd-5f8d" name="Melta Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -4117,7 +4117,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a413-3213-37e9-209e" name="Plasma Blastgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -4144,7 +4144,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c79f-0ddc-51e8-3838" name="Inferno Gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -4174,7 +4174,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4203,7 +4203,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2b46-0139-158d-dfa2" name="Ardes-defensor Bombard Turrets" hidden="false" collective="false" import="true" type="upgrade">
@@ -4225,7 +4225,7 @@
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

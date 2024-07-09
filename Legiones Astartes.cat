@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="33" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="34" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -684,7 +684,7 @@
       </profiles>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="7"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="Large Transport (X)" hidden="false" id="920e-7a71-5d62-f4d8" type="rule" targetId="d33b-3fa4-492e-6d3e">
@@ -709,7 +709,7 @@
       </profiles>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="6"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Turret Mounted twin bolter" hidden="false" id="5640-bb82-11d1-c1fe" collective="true">
@@ -1328,12 +1328,12 @@
                 <infoLink name="Jump Packs" hidden="false" type="rule" id="e562-cc43-c5e8-9969" targetId="130c-4ba7-dab7-34b3"/>
               </infoLinks>
               <modifiers>
-                <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="54f9-7ac-7b98-a2c6" childId="701d-2b43-5516-d12e" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
@@ -1346,7 +1346,7 @@
               </modifiers>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
             </selectionEntry>
@@ -1374,7 +1374,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="8"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Storm Eagle" hidden="false" type="selectionEntry" id="b5a1-3006-e2e5-9d67" targetId="2e8d-9082-ab37-c4cd">
@@ -1383,7 +1383,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-5"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="5"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -1426,11 +1426,11 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="min" value="-5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="dfad-8a32-6dfd-ef46" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="df86-97c6-ecfe-c31e" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="dfad-8a32-6dfd-ef46" includeChildSelections="false"/>
+        <constraint type="max" value="5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="df86-97c6-ecfe-c31e" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="-7" field="dfad-8a32-6dfd-ef46">
+        <modifier type="set" value="7" field="df86-97c6-ecfe-c31e">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -1513,7 +1513,7 @@
             <categoryLink targetId="68c1-de55-26b1-8ca4" id="1cf2-2262-1f66-95e8" primary="false" name="Infantry (1)"/>
           </categoryLinks>
           <modifiers>
-            <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+            <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="dd6a-192e-8b05-b402" childId="fd94-486d-f054-e664" shared="true" includeChildSelections="true"/>
               </conditions>
@@ -1521,7 +1521,7 @@
           </modifiers>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
           </costs>
         </selectionEntry>
@@ -1533,7 +1533,7 @@
       </categoryLinks>
       <costs>
         <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="25"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Dedicated Transports" hidden="false" id="5a55-8f28-ba89-29a8">
@@ -1546,7 +1546,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="8"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Storm Eagle" hidden="false" type="selectionEntry" id="4ef9-a406-56fd-b222" targetId="2e8d-9082-ab37-c4cd">
@@ -1555,7 +1555,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-5"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="5"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -1582,7 +1582,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7be-3388-25e1-aa1d"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Rhino w/ multi-melta" hidden="false" type="selectionEntry" id="c526-94fd-5-e454" targetId="9be6-d4b8-2b8a-18be">
@@ -1590,7 +1590,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7f-83fa-978-25bb"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" type="selectionEntry" id="ac30-5d66-68c-516b" targetId="3279-c298-e2dc-8b55">
@@ -1598,7 +1598,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61e7-942c-ca5c-60e2"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -1625,7 +1625,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe6c-5e11-b2e6-f145"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -1677,7 +1677,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="5842-9a1a-8e74-4e09" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="5842-9a1a-8e74-4e09" includeChildSelections="false"/>
       </constraints>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -2060,7 +2060,7 @@
                   </infoLinks>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Quad heavy bolter batteries" hidden="false" id="58ae-6063-f946-a9a8" collective="false">
@@ -2204,7 +2204,7 @@
                     <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="fcf4-fec0-ba2a-5d41"/>
                   </constraints>
                   <modifiers>
-                    <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="54ab-4c5e-2a18-3b49" childId="b6f0-91a2-1af3-8cbb" shared="true" includeChildSelections="true"/>
                       </conditions>
@@ -2212,7 +2212,7 @@
                   </modifiers>
                   <costs>
                     <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                     <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                 </selectionEntry>
@@ -2288,7 +2288,7 @@
                     <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="fa8-a299-648-f9c1"/>
                   </constraints>
                   <modifiers>
-                    <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="54ab-4c5e-2a18-3b49" childId="b6f0-91a2-1af3-8cbb" shared="true" includeChildSelections="true"/>
                       </conditions>
@@ -2296,7 +2296,7 @@
                   </modifiers>
                   <costs>
                     <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                     <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                 </selectionEntry>
@@ -2350,14 +2350,14 @@
                     <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="1a55-414d-6256-31e3"/>
                   </constraints>
                   <modifiers>
-                    <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="54ab-4c5e-2a18-3b49" childId="b6f0-91a2-1af3-8cbb" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Leviathan Dreadnought w/ Storm cannon" hidden="false" type="selectionEntry" id="f759-c951-f39-44a5" targetId="cfd1-805d-837a-a26">
@@ -2365,14 +2365,14 @@
                     <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5051-8b3f-2cdd-8e0a"/>
                   </constraints>
                   <modifiers>
-                    <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="54ab-4c5e-2a18-3b49" childId="b6f0-91a2-1af3-8cbb" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -2393,7 +2393,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="8"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -2420,7 +2420,7 @@
                     <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="cab6-d3f1-4795-3555"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -2507,15 +2507,15 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="-1" field="7f98-9a24-6f96-f40b">
+        <modifier type="set" value="1" field="16d0-2858-a979-12ba">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="min" value="-7" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="7f98-9a24-6f96-f40b" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="16d0-2858-a979-12ba" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="7f98-9a24-6f96-f40b" includeChildSelections="false"/>
+        <constraint type="max" value="7" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="16d0-2858-a979-12ba" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Leviathan Siege Dreadnought Detachment" hidden="false" id="2e62-aab4-b35b-75dc">
@@ -2527,14 +2527,14 @@
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="6a4d-f912-b1a0-6883"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="2e62-aab4-b35b-75dc" childId="d75d-57b4-efd9-c70f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Leviathan Dreadnought w/ Storm cannon" hidden="false" type="selectionEntry" id="832f-265e-b2be-1dca" targetId="cfd1-805d-837a-a26">
@@ -2542,14 +2542,14 @@
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="c057-1ce3-52a3-a625"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="2e62-aab4-b35b-75dc" childId="d75d-57b4-efd9-c70f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -2580,7 +2580,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="8"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -2607,7 +2607,7 @@
                     <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="a978-764c-995e-9dca"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -2681,7 +2681,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="-1" field="d623-6e66-3297-b1d3">
+        <modifier type="set" value="1" field="4d24-4461-2821-e205">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
           </conditions>
@@ -2693,8 +2693,8 @@
         <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="9482-4144-7a17-e42b" primary="false" name="Walker (1)"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="-7" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="d623-6e66-3297-b1d3" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="4d24-4461-2821-e205" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="d623-6e66-3297-b1d3" includeChildSelections="false"/>
+        <constraint type="max" value="7" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="4d24-4461-2821-e205" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Kratos Squadron" hidden="false" id="dee9-6ead-d2cd-8877" publicationId="c1b8-2180-635c-14cd">
@@ -3033,7 +3033,7 @@
                 <categoryLink targetId="68c1-de55-26b1-8ca4" id="6f02-7ae-2c46-b451" primary="false" name="Infantry (1)"/>
               </categoryLinks>
               <modifiers>
-                <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="3b49-8984-4980-b530" childId="db83-9a3-2bea-ae7e" shared="true" includeChildSelections="true"/>
                   </conditions>
@@ -3041,7 +3041,7 @@
               </modifiers>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
             </selectionEntry>
@@ -3069,7 +3069,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="8"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Storm Eagle" hidden="false" type="selectionEntry" id="88f4-2a32-faa1-fe70" targetId="2e8d-9082-ab37-c4cd">
@@ -3078,7 +3078,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-5"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="5"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -3110,7 +3110,7 @@
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="84ea-f739-705-da61"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Rhino w/ multi-melta" hidden="false" type="selectionEntry" id="e5ab-23ea-94f0-6dd8" targetId="9be6-d4b8-2b8a-18be">
@@ -3118,7 +3118,7 @@
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="cb19-51c4-c919-37e0"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" type="selectionEntry" id="b046-a691-f1e7-f4f0" targetId="3279-c298-e2dc-8b55">
@@ -3126,7 +3126,7 @@
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4a69-9ddd-bde7-5c92"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -3153,7 +3153,7 @@
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f343-5a85-ad66-b961"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -3205,11 +3205,11 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="min" value="-5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="3569-2660-b74b-4176" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="119-6d3b-fdec-e4af" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="3569-2660-b74b-4176" includeChildSelections="false"/>
+        <constraint type="max" value="5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="119-6d3b-fdec-e4af" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="-7" field="3569-2660-b74b-4176">
+        <modifier type="set" value="7" field="119-6d3b-fdec-e4af">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -3219,7 +3219,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="-1" field="3569-2660-b74b-4176">
+        <modifier type="set" value="1" field="119-6d3b-fdec-e4af">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -3294,7 +3294,7 @@
                 <categoryLink targetId="68c1-de55-26b1-8ca4" id="ffc8-7b68-4665-61ef" primary="false" name="Infantry (1)"/>
               </categoryLinks>
               <modifiers>
-                <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="d1a3-392a-d335-6aa4" childId="c852-7443-d4d1-17a3" shared="true" includeChildSelections="true"/>
                   </conditions>
@@ -3302,7 +3302,7 @@
               </modifiers>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
             </selectionEntry>
@@ -3320,11 +3320,11 @@
         <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
       </costs>
       <constraints>
-        <constraint type="min" value="-5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="40d3-d929-60e9-c224" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="637b-d6ed-504b-c203" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="40d3-d929-60e9-c224" includeChildSelections="false"/>
+        <constraint type="max" value="5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="637b-d6ed-504b-c203" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="-7" field="40d3-d929-60e9-c224">
+        <modifier type="set" value="7" field="637b-d6ed-504b-c203">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -3334,7 +3334,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="-1" field="40d3-d929-60e9-c224">
+        <modifier type="set" value="7" field="637b-d6ed-504b-c203">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -3368,7 +3368,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="8"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Storm Eagle" hidden="false" type="selectionEntry" id="686a-1eca-c2ec-4645" targetId="2e8d-9082-ab37-c4cd">
@@ -3377,7 +3377,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-5"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="5"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -3409,7 +3409,7 @@
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5a06-fb47-8b14-bc38"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Rhino w/ multi-melta" hidden="false" type="selectionEntry" id="eb18-d376-fa4f-35b5" targetId="9be6-d4b8-2b8a-18be">
@@ -3417,7 +3417,7 @@
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="dd6d-91fb-9500-abe"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" type="selectionEntry" id="5aa4-1700-22c5-9a85" targetId="3279-c298-e2dc-8b55">
@@ -3425,7 +3425,7 @@
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="465f-2854-b34a-82e2"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -3452,7 +3452,7 @@
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="af1-ba6a-b63e-dcb5"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -3731,16 +3731,16 @@
               </selectionEntries>
               <costs>
                 <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
               <modifiers>
-                <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="2f76-7819-c75c-926c" childId="b863-1614-587-5f21" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
@@ -3797,16 +3797,16 @@
               </selectionEntries>
               <costs>
                 <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
               <modifiers>
-                <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="2f76-7819-c75c-926c" childId="b863-1614-587-5f21" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
@@ -3854,7 +3854,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="8"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Storm Eagle" hidden="false" type="selectionEntry" id="9a95-8a49-5050-c13a" targetId="2e8d-9082-ab37-c4cd">
@@ -3863,7 +3863,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-5"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="5"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -3909,11 +3909,11 @@
         <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
       </costs>
       <constraints>
-        <constraint type="min" value="-5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="4799-16d-49ee-8e2a" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="dc5d-1c33-4f00-ea9d" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="4799-16d-49ee-8e2a" includeChildSelections="false"/>
+        <constraint type="max" value="5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="dc5d-1c33-4f00-ea9d" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="-7" field="4799-16d-49ee-8e2a">
+        <modifier type="set" value="7" field="dc5d-1c33-4f00-ea9d">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -4280,7 +4280,7 @@
                     <categoryLink targetId="68c1-de55-26b1-8ca4" id="f9ef-2200-2b4-8fb" primary="false" name="Infantry (1)"/>
                   </categoryLinks>
                   <modifiers>
-                    <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="e552-7189-ccb5-1922" childId="d0d1-667-324f-9246" shared="true" includeChildSelections="true"/>
                       </conditions>
@@ -4288,7 +4288,7 @@
                   </modifiers>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                     <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                 </selectionEntry>
@@ -4346,7 +4346,7 @@
                     <categoryLink targetId="68c1-de55-26b1-8ca4" id="8858-e5a9-4a1a-2171" primary="false" name="Infantry (1)"/>
                   </categoryLinks>
                   <modifiers>
-                    <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="e552-7189-ccb5-1922" childId="d0d1-667-324f-9246" shared="true" includeChildSelections="true"/>
                       </conditions>
@@ -4354,7 +4354,7 @@
                   </modifiers>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                     <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                 </selectionEntry>
@@ -4412,7 +4412,7 @@
                     <categoryLink targetId="68c1-de55-26b1-8ca4" id="bf31-8b07-23c-7060" primary="false" name="Infantry (1)"/>
                   </categoryLinks>
                   <modifiers>
-                    <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="e552-7189-ccb5-1922" childId="d0d1-667-324f-9246" shared="true" includeChildSelections="true"/>
                       </conditions>
@@ -4420,7 +4420,7 @@
                   </modifiers>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                     <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                 </selectionEntry>
@@ -4475,7 +4475,7 @@
                     <categoryLink targetId="68c1-de55-26b1-8ca4" id="5546-b19e-ab94-de6d" primary="false" name="Infantry (1)"/>
                   </categoryLinks>
                   <modifiers>
-                    <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
@@ -4485,7 +4485,7 @@
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
-                    <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="e552-7189-ccb5-1922" childId="d0d1-667-324f-9246" shared="true" includeChildSelections="true"/>
                       </conditions>
@@ -4493,7 +4493,7 @@
                   </modifiers>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                     <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                 </selectionEntry>
@@ -4562,12 +4562,12 @@
                     <categoryLink targetId="68c1-de55-26b1-8ca4" id="add6-cbb-d669-53db" primary="false" name="Infantry (1)"/>
                   </categoryLinks>
                   <modifiers>
-                    <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="e552-7189-ccb5-1922" childId="d0d1-667-324f-9246" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
@@ -4580,7 +4580,7 @@
                   </modifiers>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                     <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
                 </selectionEntry>
@@ -4610,7 +4610,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="8"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Storm Eagle" hidden="false" type="selectionEntry" id="52c2-852b-29d0-a01e" targetId="2e8d-9082-ab37-c4cd">
@@ -4619,7 +4619,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-5"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="5"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -4646,7 +4646,7 @@
                     <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="26c-7592-6eda-a356"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Rhino w/ multi-melta" hidden="false" type="selectionEntry" id="dfad-ce09-c460-5bad" targetId="9be6-d4b8-2b8a-18be">
@@ -4654,7 +4654,7 @@
                     <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="92de-2374-f8dc-40b7"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" type="selectionEntry" id="475-3881-7921-c2cd" targetId="3279-c298-e2dc-8b55">
@@ -4662,7 +4662,7 @@
                     <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="c8b1-24ef-9e5d-7c61"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -4699,7 +4699,7 @@
                     <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="d096-7b0e-5719-cf65"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -4762,8 +4762,8 @@
       </selectionEntryGroups>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="7474-9634-5f2b-d049"/>
-        <constraint type="min" value="-4" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="8deb-99-552c-e04c" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="b3a8-94c1-9149-839a" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="8deb-99-552c-e04c" includeChildSelections="false"/>
+        <constraint type="max" value="4" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="b3a8-94c1-9149-839a" includeChildSelections="false"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="2" field="7474-9634-5f2b-d049">
@@ -4771,7 +4771,7 @@
             <condition type="instanceOf" value="1" field="forces" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="-7" field="8deb-99-552c-e04c">
+        <modifier type="set" value="7" field="b3a8-94c1-9149-839a">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -4781,7 +4781,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="-1" field="8deb-99-552c-e04c">
+        <modifier type="set" value="1" field="b3a8-94c1-9149-839a">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -5004,12 +5004,12 @@
                 <categoryLink targetId="68c1-de55-26b1-8ca4" id="aa72-11c3-c355-6297" primary="false" name="Infantry (1)"/>
               </categoryLinks>
               <modifiers>
-                <modifier type="set" value="2" field="54cb-1324-71d0-d324">
+                <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="b616-3ee9-825e-2b17" childId="31be-3103-5470-7765" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="1" field="54cb-1324-71d0-d324">
+                <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
@@ -5022,7 +5022,7 @@
               </modifiers>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
             </selectionEntry>
@@ -5061,7 +5061,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-8"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="8"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Storm Eagle" hidden="false" type="selectionEntry" id="bdd6-6b3e-3df1-41a0" targetId="2e8d-9082-ab37-c4cd">
@@ -5070,7 +5070,7 @@
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
-                    <cost name="‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="-5"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="5"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -5113,11 +5113,11 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="min" value="-5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="19a-f7f-1fd6-67ca" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="1adb-e919-2705-153a" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="19a-f7f-1fd6-67ca" includeChildSelections="false"/>
+        <constraint type="max" value="5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="1adb-e919-2705-153a" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="-7" field="19a-f7f-1fd6-67ca">
+        <modifier type="set" value="7" field="1adb-e919-2705-153a">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -5604,7 +5604,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
           </constraints>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5694,7 +5694,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
           </selectionEntries>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="35"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5755,7 +5755,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </entryLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Land Speeder w/ plasma cannon &amp; Land Speeder w/ multi-melta" hidden="false" id="9308-b5d1-e66a-9a45">
@@ -5857,7 +5857,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </selectionEntries>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6050,7 +6050,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </selectionEntries>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="2"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
               <constraints>
@@ -6095,7 +6095,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       </selectionEntryGroups>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="33"/>
-        <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="66" field="ee95-a20e-f9ff-e2c2">
@@ -6236,7 +6236,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                   </infoLinks>
                   <costs>
                     <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="2"/>
-                    <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Heavy Mounted heavy bolters" hidden="false" id="7203-c2c8-b4aa-1ab">
@@ -6282,13 +6282,13 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </infoLinks>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="80"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
           </costs>
         </selectionEntry>
@@ -6353,7 +6353,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </selectionEntries>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="40"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
               <constraints>
@@ -6427,7 +6427,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </selectionEntries>
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="45"/>
-                <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
               <constraints>
@@ -6687,7 +6687,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
           </constraints>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="32"/>
-            <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
