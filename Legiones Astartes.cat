@@ -1072,10 +1072,10 @@
     <forceEntry name="Legion Heavy Assault Spearhead" id="3ff3-f65b-01af-e00e" hidden="false" publicationId="e4cc-404e-be5e-2101" page="100">
       <rules>
         <rule name="Heavy Assault" id="d2dd-f002-9070-6b99" hidden="false" publicationId="e4cc-404e-be5e-2101" page="100">
-          <description>Support detachments can only be filled with Legion Terminator, Legion Dreadnaught or Leviathan Siege Dreadnaught detachments</description>
+          <description>Support detachment slots in this formation can only be filled with Legion Terminator, Legion Dreadnaught or Leviathan Siege Dreadnaught detachments.</description>
         </rule>
         <rule name="Dedicated Transports (Legion Heavy Assault Spearhead)" id="f200-2452-9abe-a388" hidden="false" publicationId="e4cc-404e-be5e-2101" page="100">
-          <description>All Legiones Astartes Detachments within the Formation that contains only Infantry or Walker models must be upgraded with Legion Spartans or Legion Land Raiders as Dedicated Transports.</description>
+          <description>All Legiones Astartes Detachments within thid Formation that contain only Infantry models must be upgraded with Legion Spartans or Legion Land Raiders as Dedicated Transports.</description>
         </rule>
       </rules>
       <categoryLinks>
