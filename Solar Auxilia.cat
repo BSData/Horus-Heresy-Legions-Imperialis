@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="31" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="32" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5823-85fd-1314-b472" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
   </publications>
@@ -354,6 +354,59 @@
           <constraints>
             <constraint type="min" value="3" field="selections" scope="force" shared="true" id="50a2-7175-5130-53e7" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="8ede-2ff8-9e9e-797a" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="1373-7e54-9700-9fe2" name="Solar Auxilia Titan Hunter Company" hidden="false">
+      <rules>
+        <rule id="fbce-1baa-8ad1-48a2" name="Tank Commander" hidden="false">
+          <description>One Vehicle model from a Compulsory Detachment must be upgraded to a Tank Commander for +10 points.</description>
+        </rule>
+        <rule id="56f7-e489-1096-3e5f" name="Titan Hunters" hidden="false">
+          <description>If an Auxilia Shadowsword Detachment from this Formation that is issued with a First Fire Order is firing at a Titan Detachment, volcano cannon that models in the Auxilia Shadowsword Detachment are equipped with are treated as having the Accurate weapon trait.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="34c3-aa2a-3072-08f6" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink id="4b5c-b3e9-8e5b-d454" name="Heavy Armour" hidden="false" targetId="1f6b-d764-352d-1e74" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56d9-c637-f71b-e972" type="min"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="82fa-21cd-3ebd-b77e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="7995-3bf3-c59d-3b2c" name="Solar Auxilia Leman Russ Spearhead" hidden="false">
+      <rules>
+        <rule id="601d-36a5-9f63-bb82" name="Armoured Company" hidden="false">
+          <description>Leman Russ slots in this Formation must be filled with Leman Russ Strike Squadrons, Leman Russ Executioner Squadrons, Leman Russ Demolisher Squadrons, Leman Russ Annihilator Squadrons or Leman Russ Exterminator Squadrons.</description>
+        </rule>
+        <rule id="8e77-556f-d281-09b5" name="Tank Commander" hidden="false">
+          <description>One Vehicle model from a Compulsory Detachment must be upgraded to a Tank Commander for +10 points.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="ffda-3a40-3bbf-61e0" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink id="c1ed-fd8f-5237-36b2" name="Air Support" hidden="false" targetId="2879-da90-6a37-c897" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c3d-d213-d6d0-73eb" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="52c2-5443-4a06-b050" name="Battle Tank" hidden="false" targetId="4e02-d7ec-4d81-d5fa" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="982f-3d7c-902a-d448" type="min"/>
+            <constraint field="selections" scope="force" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e25f-4ca0-1f60-ba24" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b094-7306-de0d-7d1b" name="Heavy Armour" hidden="false" targetId="1f6b-d764-352d-1e74" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d21-e4fa-6a2f-b77d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="cdc3-9285-e89c-e6c6" name="Light Armour" hidden="false" targetId="3b81-6b3e-4546-ade3" primary="false" type="category">
+          <constraints>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0481-f3a0-3e8e-f344" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -1145,25 +1198,6 @@
         <categoryLink id="f8f9-5ab5-da07-0281" name="Bastion" hidden="false" targetId="2005-60e5-e49d-32f2" primary="true"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="b3e2-6907-61b2-3626" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="8f94-99e9-4bb8-22ef" name="Core Detachments" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="322f-0372-5c0f-757c" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eda-62e3-fcda-f265" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="448c-c354-a74b-36ea" name="Auxilia Rapier" hidden="false" collective="false" import="true" targetId="9131-e170-3b31-c767" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdca-91da-008d-0ae0" type="min"/>
-                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c82-1d4f-f9a1-5c28" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="31c3-a91a-b5a8-11f3" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
@@ -1225,6 +1259,14 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Auxilia Rapier" hidden="false" id="448c-c354-a74b-36ea" collective="false" targetId="9131-e170-3b31-c767" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="fdca-91da-008d-0ae0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5c82-1d4f-f9a1-5c28" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="576c-f56c-d7cf-cfd8" name="Auxilia Tarantula Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1392,25 +1434,6 @@
         <categoryLink id="1d33-c005-7fb7-3d91" name="Walker (1)" hidden="false" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="4518-38cd-9c91-832f" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="828e-3dc3-d5ac-74fa" name="Core Detachments" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd6f-aefa-aa53-a88e" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="637f-de9a-2cec-a788" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="ff28-b79a-0f36-4da8" name="Aethon Heavy Sentinel" hidden="false" collective="false" import="true" targetId="05ee-18c7-f14a-079f" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bb5-5f4c-7940-2029" type="min"/>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc89-3ed1-707e-2c2a" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="c0ae-8b88-a2ca-7a48" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
@@ -1485,6 +1508,14 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Aethon Heavy Sentinel" hidden="false" id="ff28-b79a-0f36-4da8" collective="false" targetId="05ee-18c7-f14a-079f" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9bb5-5f4c-7940-2029" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fc89-3ed1-707e-2c2a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="a02b-456b-abbd-a894" name="Leman Russ Strike Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1492,25 +1523,6 @@
         <categoryLink id="de55-4974-a61b-824c" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="8a75-263c-7f4e-7df1" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="9d87-da36-bd33-48b2" name="Core Detachments" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea6b-a063-0176-4307" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3861-4b04-28c5-a8a6" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="24d1-6370-214f-8fed" name="Leman Russ Tank" hidden="false" collective="false" import="true" targetId="9504-8a88-68dd-edf5" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="454a-8e36-8834-38d0" type="min"/>
-                <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6803-d58f-0ac8-b729" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="2a80-91f5-f640-6c61" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
@@ -1573,6 +1585,22 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="3" field="71ef-f41b-60a4-c980">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="7995-3bf3-c59d-3b2c" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" value="1" field="71ef-f41b-60a4-c980">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="7995-3bf3-c59d-3b2c" shared="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="35a3-e0e3-d57d-db7c" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="8734-e199-4fd7-84a9" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="58ae-3a27-ec39-c699" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="7fde-d02d-7313-b04b" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Forward Deployment" hidden="false" type="rule" id="eddc-9bda-cc27-8856" targetId="54b4-67fd-a64-86d5">
@@ -1585,6 +1613,17 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Leman Russ Tank" hidden="false" id="24d1-6370-214f-8fed" collective="false" targetId="9504-8a88-68dd-edf5" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="454a-8e36-8834-38d0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="6803-d58f-0ac8-b729" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="71ef-f41b-60a4-c980" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="f6f5-66ec-1654-1c38" name="Malcador Tank Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1594,10 +1633,6 @@
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="db3d-4afd-1a96-552b" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adaf-9bb9-f069-b0df" type="min"/>
-            <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55b2-5974-72f8-fa" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Malcador Tank" hidden="false" id="557f-dcb4-8839-3d72" collective="false">
               <profiles>
@@ -1819,6 +1854,10 @@
                 <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="adaf-9bb9-f069-b0df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="55b2-5974-72f8-fa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3822,6 +3861,13 @@
                     <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
                     <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="3+" field="8485-4ee2-6feb-d93c">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="e83a-fe85-27de-abd7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <selectionEntries>
@@ -3942,6 +3988,13 @@
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Tank Commander" hidden="false" id="a21a-a53a-97af-d754" type="selectionEntry" targetId="e83a-fe85-27de-abd7">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b77-0dca-bb53-3088" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Stormhammer w/ multi-lasers" hidden="false" id="bda7-4384-f19e-3825">
               <profiles>
@@ -3953,6 +4006,13 @@
                     <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
                     <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="3+" field="8485-4ee2-6feb-d93c">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="e83a-fe85-27de-abd7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <selectionEntries>
@@ -4074,6 +4134,13 @@
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Tank Commander" hidden="false" id="3cac-fd13-4026-2cd2" type="selectionEntry" targetId="e83a-fe85-27de-abd7">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="874-b7db-29e3-43d" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -4099,13 +4166,6 @@
           </conditionGroups>
         </modifier>
       </modifiers>
-      <entryLinks>
-        <entryLink import="true" name="Tank Commander" hidden="false" id="3cac-fd13-4026-2cd2" type="selectionEntry" targetId="e83a-fe85-27de-abd7">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="874-b7db-29e3-43d" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Auxilia Medusa Battery" hidden="false" id="79fa-45ec-cd1a-67a6">
       <categoryLinks>
@@ -4468,6 +4528,932 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Auxilia Shadowsword Squadron" hidden="false" id="b5e2-3aa4-7813-114f">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Shadowsword" hidden="false" id="c2f9-c883-e4f6-83a3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82ca-7021-36ca-1e6d" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e0bf-659a-b136-f80d" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Shadowsword" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="44e8-929d-bd9e-790d" publicationId="e4cc-404e-be5e-2101" page="113">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">6&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="3+" field="8485-4ee2-6feb-d93c">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="e83a-fe85-27de-abd7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Volcano cannon" hidden="false" id="6545-5326-d1c9-fd77" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec07-9444-337e-4d7c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d62-5b23-4ad2-d971" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Volcano cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="b7dc-8d1d-8ab5-f1ba">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">70&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Engine Killer (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Engine Killer (X)" id="53e4-7b87-7a1a-52d0" hidden="false" type="rule" targetId="7e4c-2264-79e3-9054"/>
+                <infoLink name="Arc (Front/Rear)" id="1a9c-df1e-d7d9-43a2" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shadowsword heavy bolter sponsons" hidden="false" id="d40a-646f-11e7-22df" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="21ea-c2d3-2baf-f4f6" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c50e-a9c2-20f9-6d66" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Shadowsword heavy bolter sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="fab4-ac9c-bc38-bac4">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Point Defence" id="ffbe-df5f-9561-4f0a" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                <infoLink name="Light" id="432a-ebd8-4105-b652" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lascannon sponson turrets" hidden="false" id="3382-efd5-aecc-1b78" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b65-b273-746c-4a30" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18fd-ed2a-7d14-890a" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Lascannon sponson turrets" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d288-258e-26c8-f1d6">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Anti-tank" id="edc1-f7a6-ac66-f83b" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter turret" hidden="false" id="3d71-e783-aeb7-c3a2" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="adf6-71f2-9e50-7694" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff38-1eff-e271-b3d6" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hull Mounted heavy bolter turret" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="855b-897a-9d5d-722c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Point Defence" id="b354-079f-ade2-92a1" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                <infoLink name="Arc (Front/Rear)" id="659b-e415-129d-7c8f" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                <infoLink name="Light" id="a399-21e4-719f-6ef7" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Explorator Adaption" id="5ed9-fa65-2e43-5bb1" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
+            <infoLink name="Chain of Command" id="cf86-e530-75de-9b9a" hidden="false" type="rule" targetId="edea-7a2c-4b66-4ba4"/>
+          </infoLinks>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Tank Commander" hidden="false" id="6543-6e85-40d5-5ba5" type="selectionEntry" targetId="e83a-fe85-27de-abd7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="004c-1bb2-d8f1-4793" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Super-heavy Vehicle (3)" hidden="false" id="d2db-5a64-8250-602a" targetId="be9f-b973-245e-49bf" primary="false"/>
+        <categoryLink name="Solar Auxilia" hidden="false" id="d2be-5724-53eb-6f52" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+        <categoryLink name="Heavy Armour" hidden="false" id="4485-3eaf-31a3-e6d7" targetId="1f6b-d764-352d-1e74" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="270" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="400" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="3" field="e56d-8280-2069-5633">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="1373-7e54-9700-9fe2" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="140"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e56d-8280-2069-5633" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Auxilia Stormsword Squadron" hidden="false" id="6f90-2243-f239-1a35">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Stormsword" hidden="false" id="cd24-34ca-0b7b-2645">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9527-c6e5-433f-4ce9" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="eb85-ba2c-af31-5d6a" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Stormsword" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="b201-c449-4928-b107" publicationId="e4cc-404e-be5e-2101" page="113">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">6&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="3+" field="8485-4ee2-6feb-d93c">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="e83a-fe85-27de-abd7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Stormsword siege cannon" hidden="false" id="2614-8086-b807-445f" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="386f-7f75-93a8-d0b2" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51e7-1d80-1357-ef1a" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Stormsword siege cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="acb2-a2e7-c722-3adf">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">30&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher, Ignores Cover</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Ignores Cover" id="596d-7ee6-2816-7ab2" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+                <infoLink name="Arc (Front/Rear)" id="05e5-9c73-ad7c-0299" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                <infoLink name="Demolisher" id="7922-62bb-108d-9cd5" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Stormsword heavy bolter sponsons" hidden="false" id="e31b-759d-a53d-175a" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03a3-3397-35f7-1e07" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a052-e933-7b3d-7a0c" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Stormsword heavy bolter sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="587e-be01-f7ce-eebc">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Point Defence" id="4c03-61e0-aeff-2614" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                <infoLink name="Light" id="2114-e806-1bd6-2562" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lascannon sponson turrets" hidden="false" id="a95c-9af2-282a-0e85" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8cda-e3a6-ba32-3b8c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a72a-8bfd-0b67-0a16" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Lascannon sponson turrets" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c87a-6c41-67f5-0b75">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Anti-tank" id="cc3e-8f8a-a518-73bd" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter turret" hidden="false" id="87b8-db09-58e5-65f1" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b16d-7e54-8d58-116a" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="426e-53dc-ef3e-d44b" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hull Mounted heavy bolter turret" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="a1ee-dddc-4045-78a9">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Point Defence" id="19b1-a783-6fa2-76e7" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                <infoLink name="Arc (Front/Rear)" id="e815-3197-6da3-cec7" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                <infoLink name="Light" id="3362-e1d2-0891-519a" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Explorator Adaption" id="75b4-1cb0-18da-2041" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
+            <infoLink name="Chain of Command" id="a8bf-b95f-4412-f787" hidden="false" type="rule" targetId="edea-7a2c-4b66-4ba4"/>
+          </infoLinks>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Tank Commander" hidden="false" id="18b1-02c1-161f-29c0" type="selectionEntry" targetId="e83a-fe85-27de-abd7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e82-9f82-158b-6688" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Super-heavy Vehicle (3)" hidden="false" id="ce5d-b000-7e4d-80d0" targetId="be9f-b973-245e-49bf" primary="false"/>
+        <categoryLink name="Solar Auxilia" hidden="false" id="f288-0f63-236d-acf0" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+        <categoryLink name="Heavy Armour" hidden="false" id="1044-31e6-a604-fbc7" targetId="1f6b-d764-352d-1e74" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="190" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="280" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Auxilia Stormblade Squadron" hidden="false" id="0d7f-ada1-77e3-6232">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Stormblade" hidden="false" id="d817-3049-299d-e06d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ca6-4aae-22b4-8e46" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3738-7f04-c40e-c833" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Stormblade" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="84bb-fd9d-d066-878b" publicationId="e4cc-404e-be5e-2101" page="113">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">6&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="3+" field="8485-4ee2-6feb-d93c">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="e83a-fe85-27de-abd7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Plasma blastgun" hidden="false" id="245f-477d-e097-735a" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f99-d3e3-0151-984d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c09a-30ae-16b3-8163" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Plasma blastgun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f210-9b31-fa98-31d2">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Arc (Front/Rear)" id="60c6-9050-6dbb-5491" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Stormblade heavy bolter sponsons" hidden="false" id="4ad0-ef52-dcec-7617" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ff4-1dfa-7702-02e3" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68a0-3648-85f7-1b2a" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Stormblade heavy bolter sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="b39e-f810-7d82-14cb">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Point Defence" id="53af-d442-e2a4-ecb7" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                <infoLink name="Light" id="c491-0643-ae1a-e449" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lascannon sponson turrets" hidden="false" id="e44b-8e2b-0440-b05d" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e24-d432-e824-d818" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b23-9906-89f0-7283" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Lascannon sponson turrets" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e360-afef-cc77-b4ca">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Anti-tank" id="eb3b-e45a-ed66-2fe7" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter turret" hidden="false" id="eb74-8f15-1a87-7dce" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5505-e189-ebac-3ba6" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ada9-86c1-9cd5-c36d" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hull Mounted heavy bolter turret" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="3151-57be-09a3-834b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Point Defence" id="182f-5802-2e2b-657d" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                <infoLink name="Arc (Front/Rear)" id="d697-f389-8a1b-5f33" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                <infoLink name="Light" id="6b14-979d-d976-34a1" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Explorator Adaption" id="d6b4-d44f-d4d0-e44b" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
+            <infoLink name="Chain of Command" id="8052-2a46-4f24-1ee1" hidden="false" type="rule" targetId="edea-7a2c-4b66-4ba4"/>
+          </infoLinks>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Tank Commander" hidden="false" id="8a03-e4dc-464b-2e40" type="selectionEntry" targetId="e83a-fe85-27de-abd7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e063-d6e2-dde1-4fe7" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Super-heavy Vehicle (3)" hidden="false" id="7390-022a-8a62-50a0" targetId="be9f-b973-245e-49bf" primary="false"/>
+        <categoryLink name="Solar Auxilia" hidden="false" id="c47c-81f0-0183-c3bd" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+        <categoryLink name="Heavy Armour" hidden="false" id="26eb-5ecc-71fe-56ff" targetId="1f6b-d764-352d-1e74" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="230" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="340" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="120"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8734-e199-4fd7-84a9" name="Leman Russ Executioner Squadron" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="b278-02cc-2e72-c13f" name="Battle Tank" hidden="false" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
+        <categoryLink id="a97d-54b4-0d78-67c1" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+        <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="330b-4bd2-14a9-1f83" primary="false" name="Solar Auxilia"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3258-6391-c026-eca2" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f81b-e0d2-c93c-e32c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d9d2-03d4-5425-99d3" name="Increase by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="4153-fa97-f385-61b7" name="Leman Russ Executioner" hidden="false" collective="false" import="true" targetId="44b2-26e2-86d7-5553" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6495-9b87-b377-a948" type="min"/>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="641c-0ae3-ce41-1a71" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8ea7-1d39-eda1-ce1a" name="Increase by 4" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="c649-a4f4-884b-2209" name="Leman Russ Executioner" hidden="false" collective="false" import="true" targetId="44b2-26e2-86d7-5553" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5c1-b846-4d09-9423" type="min"/>
+                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42a4-d950-d57f-9600" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="160"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5b9c-8d32-3f6d-0443" name="Increase by 6" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="11e1-7798-93e9-9b27" name="Leman Russ Executioner" hidden="false" collective="false" import="true" targetId="44b2-26e2-86d7-5553" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="298b-7fb3-00c2-44aa" type="min"/>
+                    <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3de8-6d80-3214-9a5a" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="220"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="175"/>
+      </costs>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="3" field="6514-997d-fdb1-b223">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="7995-3bf3-c59d-3b2c" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" value="1" field="6514-997d-fdb1-b223">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="7995-3bf3-c59d-3b2c" shared="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="a02b-456b-abbd-a894" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="35a3-e0e3-d57d-db7c" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="58ae-3a27-ec39-c699" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="7fde-d02d-7313-b04b" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Forward Deployment" hidden="false" type="rule" id="4df0-6d09-5ec3-6c87" targetId="54b4-67fd-a64-86d5">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Leman Russ Executioner" hidden="false" id="8a69-5713-29b7-d253" collective="false" targetId="44b2-26e2-86d7-5553" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="7b9b-5535-9627-5ace" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="b9f2-4e50-d468-4f72" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="6514-997d-fdb1-b223" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry id="58ae-3a27-ec39-c699" name="Leman Russ Demolisher Squadron" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="fa8f-d72d-eb81-315b" name="Battle Tank" hidden="false" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
+        <categoryLink id="efc5-4b6f-6395-2ce5" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+        <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="2d2b-1abd-9027-9496" primary="false" name="Solar Auxilia"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8bb6-eb14-f9ca-e42a" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="062b-1cda-f844-3458" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="de04-662c-89e7-e1cd" name="Increase by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="0e0f-6ba2-0cbb-6eaa" name="Leman Russ Demolisher" hidden="false" collective="false" import="true" targetId="b157-a288-7e3b-9da9" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95ad-5c76-4533-af8d" type="min"/>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb73-ed3e-f053-3b86" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d45d-0cab-666e-cf99" name="Increase by 4" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="f37d-1f80-885b-cacd" name="Leman Russ Demolisher" hidden="false" collective="false" import="true" targetId="b157-a288-7e3b-9da9" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d98-9455-f8f7-c916" type="min"/>
+                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ace9-9e2c-7985-ee64" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="160"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a189-fc4d-c723-448c" name="Increase by 6" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="a281-ead7-b1b8-7b13" name="Leman Russ Demolisher" hidden="false" collective="false" import="true" targetId="b157-a288-7e3b-9da9" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="606e-20a4-3795-eb41" type="min"/>
+                    <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eaf-358f-aae7-bbeb" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="220"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="175"/>
+      </costs>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="3" field="ffc0-966c-168f-3c4a">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="7995-3bf3-c59d-3b2c" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" value="1" field="ffc0-966c-168f-3c4a">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="7995-3bf3-c59d-3b2c" shared="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="a02b-456b-abbd-a894" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="8734-e199-4fd7-84a9" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="35a3-e0e3-d57d-db7c" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="7fde-d02d-7313-b04b" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Forward Deployment" hidden="false" type="rule" id="0654-3965-84df-c75f" targetId="54b4-67fd-a64-86d5">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Leman Russ Demolisher" hidden="false" id="828d-1b69-b454-45d0" collective="false" targetId="b157-a288-7e3b-9da9" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="677e-307d-ee22-f960" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9e38-e0dc-a9cb-b2fd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="ffc0-966c-168f-3c4a" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry id="7fde-d02d-7313-b04b" name="Leman Russ Exterminator Squadron" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="62c5-99fb-d7fa-1a6e" name="Battle Tank" hidden="false" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
+        <categoryLink id="10ce-e228-c97c-ba9e" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+        <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="283c-b8fc-6594-efdd" primary="false" name="Solar Auxilia"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="730e-4d2f-a53d-7fda" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0c0-3d86-e2fa-716f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="557d-72f6-0b51-1f55" name="Increase by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="a1ad-21b2-fc87-08cd" name="Leman Russ Exterminator" hidden="false" collective="false" import="true" targetId="9952-6b7a-59c3-95af" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e89a-6af9-0654-1b7c" type="min"/>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ebd-75d2-318f-a88d" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c40a-0c7a-044c-7104" name="Increase by 4" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="466e-e346-e9ed-12d5" name="Leman Russ Exterminator" hidden="false" collective="false" import="true" targetId="9952-6b7a-59c3-95af" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5c1-524c-b24d-8c1f" type="min"/>
+                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfef-01af-56cf-c7f5" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="160"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="626f-ff75-42d7-67ee" name="Increase by 6" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="46cb-1650-80a0-e89a" name="Leman Russ Exterminator" hidden="false" collective="false" import="true" targetId="9952-6b7a-59c3-95af" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f735-fbe6-a256-3027" type="min"/>
+                    <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="891d-60e7-e4c7-47f9" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="220"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="175"/>
+      </costs>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="3" field="14ed-0367-282a-8638">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="7995-3bf3-c59d-3b2c" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" value="1" field="14ed-0367-282a-8638">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="7995-3bf3-c59d-3b2c" shared="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="a02b-456b-abbd-a894" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="8734-e199-4fd7-84a9" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="58ae-3a27-ec39-c699" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="35a3-e0e3-d57d-db7c" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Forward Deployment" hidden="false" type="rule" id="3a69-c07b-dba3-bad3" targetId="54b4-67fd-a64-86d5">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Leman Russ Exterminator" hidden="false" id="65af-921d-1821-5573" collective="false" targetId="9952-6b7a-59c3-95af" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="5d62-9fff-957a-3abb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="d791-39b4-c9c8-2c13" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="14ed-0367-282a-8638" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry id="35a3-e0e3-d57d-db7c" name="Leman Russ Annihilator Squadron" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="da34-221d-1389-2f5f" name="Battle Tank" hidden="false" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
+        <categoryLink id="b5e2-9f03-e229-0756" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+        <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="9633-2242-93e0-fd83" primary="false" name="Solar Auxilia"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="20e8-5e3c-f14d-d15a" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc54-dd39-16c6-4ccf" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1b86-59a1-ff21-37fe" name="Increase by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="4b3a-8ae0-b2b0-5c28" name="Leman Russ Annihilator" hidden="false" collective="false" import="true" targetId="5e9e-314f-4885-15f4" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ad9-a12f-56a0-8ae1" type="min"/>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdf9-afe6-a29a-38e4" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="affc-edf2-9088-0361" name="Increase by 4" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="af92-0a53-dcad-ee94" name="Leman Russ Annihilator" hidden="false" collective="false" import="true" targetId="5e9e-314f-4885-15f4" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6593-fc3d-0c02-187e" type="min"/>
+                    <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b841-f0e9-ba3c-1962" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="160"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0bd9-fa45-d7e4-483d" name="Increase by 6" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="455d-fc70-6fc0-03d0" name="Leman Russ Annihilator" hidden="false" collective="false" import="true" targetId="5e9e-314f-4885-15f4" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f67c-bc43-e540-cdfd" type="min"/>
+                    <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35c5-662b-e7cb-6f4a" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="220"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="175"/>
+      </costs>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="3" field="67ce-9a4e-1d3f-1473">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="7995-3bf3-c59d-3b2c" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" value="1" field="67ce-9a4e-1d3f-1473">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="7995-3bf3-c59d-3b2c" shared="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="a02b-456b-abbd-a894" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="8734-e199-4fd7-84a9" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="58ae-3a27-ec39-c699" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="7fde-d02d-7313-b04b" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Forward Deployment" hidden="false" type="rule" id="30b6-4e3f-8722-ea25" targetId="54b4-67fd-a64-86d5">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="94f6-e9a8-aa4f-483c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Leman Russ Annihilator" hidden="false" id="ec25-3d63-e276-d790" collective="false" targetId="5e9e-314f-4885-15f4" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="9e56-7886-ddbb-bd1f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9069-4b12-5a47-8fcb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="67ce-9a4e-1d3f-1473" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -4893,9 +5879,9 @@
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6ba5-d691-3a7d-e31e" name="Hull Mounted Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6ba5-d691-3a7d-e31e" name="Hull Mounted lascannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="12de-b95a-f7be-9018" name="Hull Mounted Lascannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+        <profile id="12de-b95a-f7be-9018" name="Hull Mounted lascannon" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
@@ -4917,9 +5903,9 @@
         <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ab94-459f-d7e5-7a04" name="Hull Mounted Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ab94-459f-d7e5-7a04" name="Hull Mounted heavy bolter" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="8140-b7ab-7cef-264e" name="Hull Mounted Heavy Bolter" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+        <profile id="8140-b7ab-7cef-264e" name="Hull Mounted heavy bolter" hidden="false" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -5084,6 +6070,30 @@
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6790-d477-e63c-79ea" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1740-727f-e6f6-3a96" type="instanceOf"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="1373-7e54-9700-9fe2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b5e2-3aa4-7813-114f" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="7995-3bf3-c59d-3b2c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a02b-456b-abbd-a894" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8734-e199-4fd7-84a9" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="58ae-3a27-ec39-c699" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7fde-d02d-7313-b04b" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="35a3-e0e3-d57d-db7c" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -5093,6 +6103,8 @@
               <conditions>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6790-d477-e63c-79ea" type="notInstanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1740-727f-e6f6-3a96" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1373-7e54-9700-9fe2" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7995-3bf3-c59d-3b2c" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5217,6 +6229,300 @@
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="42"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="44b2-26e2-86d7-5553" name="Leman Russ Executioner" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="fcd8-091e-0368-ca70" name="Leman Russ Executioner" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+          <modifiers>
+            <modifier type="set" field="8485-4ee2-6feb-d93c" value="3+">
+              <conditions>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e83a-fe85-27de-abd7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="dfdd-dadb-3839-382e" name="Chain of Command" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
+        <infoLink id="faa4-fd35-30ee-5edf" name="Explorator Adaption" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5883-1edb-b0a0-4f6b" name="Sponson Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f675-4a39-aaa3-3d12" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7391-b65b-2056-928c" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2bb7-d242-0cf2-6229" name="Hull Mounted heavy bolter" hidden="false" collective="false" import="true" targetId="ab94-459f-d7e5-7a04" type="selectionEntry"/>
+            <entryLink id="3d90-5615-1390-9199" name="Hull Mounted lascannon" hidden="false" collective="false" import="true" targetId="6ba5-d691-3a7d-e31e" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="baa0-122b-4cbf-4747" name="Tank Commander" hidden="false" collective="false" import="true" targetId="e83a-fe85-27de-abd7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07ff-e402-32ed-c330" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Executioner plasma cannon" hidden="false" id="3619-f5bc-cee2-ffdf" collective="false">
+          <profiles>
+            <profile name="Executioner plasma cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="121f-0ba6-bbc5-6a4a">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68a2-61b7-eb19-237a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0ed-aff9-5010-33d0" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Light AT" id="0200-493b-c1af-0831" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="b157-a288-7e3b-9da9" name="Leman Russ Demolisher" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8077-98fc-9d5a-71a7" name="Leman Russ Demolisher" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+          <modifiers>
+            <modifier type="set" field="8485-4ee2-6feb-d93c" value="3+">
+              <conditions>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e83a-fe85-27de-abd7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="15f3-9b76-6564-39b4" name="Chain of Command" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
+        <infoLink id="813e-0f05-8cb3-e1a3" name="Explorator Adaption" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bd5e-7cc2-12cc-6127" name="Sponson Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce88-67bd-6ac5-b535" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9866-6d1b-d052-5228" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f7bc-e95c-0814-d91d" name="Hull Mounted heavy bolter" hidden="false" collective="false" import="true" targetId="ab94-459f-d7e5-7a04" type="selectionEntry"/>
+            <entryLink id="965a-f51c-d7ff-f81d" name="Hull Mounted lascannon" hidden="false" collective="false" import="true" targetId="6ba5-d691-3a7d-e31e" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4ae0-be81-9941-2fa6" name="Tank Commander" hidden="false" collective="false" import="true" targetId="e83a-fe85-27de-abd7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ecd-7e4a-dd8e-a2f9" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Demolisher cannon" hidden="false" id="aa73-e6af-1156-ec35" collective="false">
+          <profiles>
+            <profile name="Demolisher cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="b436-fbc9-9fb8-b7f7">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Demolisher, Ignores Cover</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4b5-d7ed-7568-dc5b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="372c-6f77-9d94-5475" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ignores Cover" id="bb2b-6bb4-d230-32a1" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+            <infoLink name="Demolisher" id="f4b4-7d3c-d189-49e5" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="5e9e-314f-4885-15f4" name="Leman Russ Annihilator" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="4558-8396-eccb-70cb" name="Leman Russ Annihilator" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+          <modifiers>
+            <modifier type="set" field="8485-4ee2-6feb-d93c" value="3+">
+              <conditions>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e83a-fe85-27de-abd7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="25dd-0e44-70a1-a0b3" name="Chain of Command" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
+        <infoLink id="b201-35a3-3ce9-9623" name="Explorator Adaption" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2294-bd7c-3dad-7f77" name="Sponson Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ced-5844-3ba1-c8bf" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bba-8c03-aedd-01d3" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4976-84be-ca81-0287" name="Hull Mounted heavy bolter" hidden="false" collective="false" import="true" targetId="ab94-459f-d7e5-7a04" type="selectionEntry"/>
+            <entryLink id="46a5-f577-2638-f062" name="Hull Mounted lascannon" hidden="false" collective="false" import="true" targetId="6ba5-d691-3a7d-e31e" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="88de-d73d-1bd4-1ae0" name="Tank Commander" hidden="false" collective="false" import="true" targetId="e83a-fe85-27de-abd7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d30-764e-928a-800e" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Annihilator twin lascannon" hidden="false" id="2254-07f3-dcff-440c" collective="false">
+          <profiles>
+            <profile name="Annihilator twin lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="5c34-c30c-2425-4ba4">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Anti-tank</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="669d-67b6-9dbc-4b96" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2fa-3a09-172e-d14b" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Anti-tank" id="c819-0f5f-4f7c-4e7f" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+            <infoLink name="Accurate" id="0dc6-ce67-9826-6799" hidden="false" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="9952-6b7a-59c3-95af" name="Leman Russ Exterminator" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="09ac-c203-7ef3-2437" name="Leman Russ Exterminator" hidden="false" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
+          <modifiers>
+            <modifier type="set" field="8485-4ee2-6feb-d93c" value="3+">
+              <conditions>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e83a-fe85-27de-abd7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c65c-1569-f470-cbdf" name="Chain of Command" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
+        <infoLink id="f7d4-5bfb-fd8e-4e99" name="Explorator Adaption" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="369b-4620-a9a8-2730" name="Sponson Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72ad-8f72-952f-3e9a" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab07-7d0b-608d-d1be" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e7bc-ebad-89f3-ea43" name="Hull Mounted heavy bolter" hidden="false" collective="false" import="true" targetId="ab94-459f-d7e5-7a04" type="selectionEntry"/>
+            <entryLink id="d9aa-fa7c-20f1-b63a" name="Hull Mounted lascannon" hidden="false" collective="false" import="true" targetId="6ba5-d691-3a7d-e31e" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1147-586c-985b-291f" name="Tank Commander" hidden="false" collective="false" import="true" targetId="e83a-fe85-27de-abd7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d28a-d719-698c-7029" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Exterminator autocannon" hidden="false" id="ad2e-8b95-11df-3598" collective="false">
+          <profiles>
+            <profile name="Exterminator autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f3fc-277f-883e-e3ea">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b5b-c0e2-c4dc-f785" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4029-4014-9e78-fb00" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Light AT" id="f253-b3f8-69cb-ddaf" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
