@@ -5860,11 +5860,592 @@
       <comment>Expanded</comment>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="803b-0e51-9aac-6d5d" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="437a-7951-c93d-1e14" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Ambush Tercio" id="5b7a-bfe4-2f45-7eab" hidden="false">
+          <description>Detachments from this Formation have the Forward Deployment and Scout special rules.</description>
+        </rule>
+        <rule name="Defenders of Tallarn" id="c2cc-4fc5-63ae-7172" hidden="false">
+          <description>This Formation can only be included in an Army with the Loyalist Allegiance.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Galibed Oathsword Theyreos Siege Breaker Company" hidden="false" id="5d4a-aa06-42a0-f8b7" subType="unit-group">
+      <comment>Standard</comment>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="550"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3fb8-beab-e757-a142" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="803b-0e51-9aac-6d5d" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1b68-cce9-e11c-fde7" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <rules>
+        <rule name="Despoilers of Tallarn" id="afb0-c0b5-534b-4935" hidden="false">
+          <description>This Formation can only be included in an Army with the Traitor Allegiance.</description>
+        </rule>
+        <rule name="Thyreos Doctrine" id="b75c-8010-43a3-e899" hidden="false">
+          <description>While an Auxilia Medusa Battery or Auxilia Basilisk Battery Detachment from this Formation is within 2&quot; of an Auxilia Stormsword Squadron from this Formation, each time a hit is scored against that Auxilia Medusa Battery or Auilia Basilisk Battery Detachment, unless that hit was from a weapon with the Barrage or Heavy Barrage trait, you can allocate that hit to a Stormsword model from this Formation that is also visible to the firing Detachment.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Auxilia Stormsword Squadron" hidden="false" id="a676-fe1b-9519-4d21" publicationId="e4cc-404e-be5e-2101" page="14">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Stormsword" hidden="false" id="2063-bea7-2bc0-1274">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="c346-a485-1723-7524" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0b5c-9314-8e78-625b" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Stormsword" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="31de-3e04-41da-020e" publicationId="e4cc-404e-be5e-2101" page="113">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">6&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="3+" field="8485-4ee2-6feb-d93c">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="e83a-fe85-27de-abd7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Stormsword siege cannon" hidden="false" id="aceb-c8fd-fa85-90ce" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b41d-7e06-a1b3-3e43" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ca6-875f-87de-d9a3" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Stormsword siege cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0226-77df-0978-51c3">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">30&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher, Ignores Cover</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Ignores Cover" id="bd63-1f82-198b-1331" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+                    <infoLink name="Arc (Front/Rear)" id="5e66-385e-9f03-f951" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Demolisher" id="e4e8-eec2-6269-3590" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Stormsword heavy bolter sponsons" hidden="false" id="4666-5027-0136-702e" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e30-6d07-e86c-388f" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41a0-daea-f464-da6a" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Stormsword heavy bolter sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2339-f9d1-000f-1d0e">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Point Defence" id="4a08-feae-5f7d-2ad1" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                    <infoLink name="Light" id="2efa-bf81-8be3-c526" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lascannon sponson turrets" hidden="false" id="1717-bd0d-812e-db86" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a92c-2c78-fa5b-2a9d" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="363a-efb2-4816-b277" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Lascannon sponson turrets" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="53b5-82cd-4405-a08e">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" id="f576-b9ea-6453-33fc" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter turret" hidden="false" id="5361-460e-03b2-f0dc" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a98-683d-70b1-f6ab" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b65-5d33-4169-967b" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Hull Mounted heavy bolter turret" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1cb4-29f8-92d2-c9a2">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Point Defence" id="9c16-66ae-54cd-911c" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                    <infoLink name="Arc (Front/Rear)" id="c39b-02a8-76d5-ab35" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Light" id="b3d7-955b-9553-816e" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <infoLinks>
+                <infoLink name="Explorator Adaption" id="ba60-087b-42f4-0e8a" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
+                <infoLink name="Chain of Command" id="b0ad-df36-2f81-f37d" hidden="false" type="rule" targetId="edea-7a2c-4b66-4ba4"/>
+              </infoLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Super-heavy Vehicle (3)" hidden="false" id="ae27-1c5e-01db-76ae" targetId="be9f-b973-245e-49bf" primary="false"/>
+            <categoryLink name="Solar Auxilia" hidden="false" id="e4d1-04be-e4eb-3036" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+            <categoryLink name="Heavy Armour" hidden="false" id="46e8-470b-5774-79e4" targetId="1f6b-d764-352d-1e74" primary="true"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="124c-2927-143f-f513" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Auxilia Basilisk Battery" hidden="false" id="2498-ded5-9ce0-b6e2">
+          <categoryLinks>
+            <categoryLink name="Vehicle (2)" hidden="false" id="ce63-b510-d589-89f7" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+            <categoryLink name="Solar Auxilia" hidden="false" id="8ddf-e7bf-ce0c-b00c" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+            <categoryLink name="Artillery" hidden="false" id="c29a-64f5-8aa5-7427" targetId="98f1-ce9c-c2b2-cea5" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Basilisk" hidden="false" id="2318-813a-bf6b-9119" collective="true">
+              <profiles>
+                <profile name="Basilisk" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="e939-3b64-711d-ac9e">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">6&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+0</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="60c3-bcf8-eb12-d708" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="59c5-e6bd-84ef-ac49" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Earthshaker cannon" hidden="false" id="70c1-beff-fe15-36e2" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1498-50e2-efdf-7a9e" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7213-527a-e817-ea3d" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Earthshaker cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9fe8-e8ff-434e-f622">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;-90&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Barrage</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Barrage" id="9d27-348d-a05e-c2cc" hidden="false" type="rule" targetId="862d-b036-2018-dbaf"/>
+                    <infoLink name="Arc (Front/Rear)" id="0d04-13d3-aa7b-d730" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <infoLinks>
+                <infoLink name="Explorator Adaption" id="919f-c035-9f18-02d1" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
+                <infoLink name="Chain of Command" id="eb73-697e-bf21-5f8d" hidden="false" type="rule" targetId="edea-7a2c-4b66-4ba4"/>
+              </infoLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="add" value="124c-2927-143f-f513" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Auxilia Medusa Battery" hidden="false" id="4039-569e-3982-6173">
+          <categoryLinks>
+            <categoryLink name="Vehicle (2)" hidden="false" id="226f-95cc-d2e4-16b9" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+            <categoryLink name="Solar Auxilia" hidden="false" id="daac-57a6-0ba2-883a" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+            <categoryLink name="Artillery" hidden="false" id="3af0-4a6c-11bd-e1a0" targetId="98f1-ce9c-c2b2-cea5" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Medusa" hidden="false" id="6d9f-3282-4717-6c0f" collective="true">
+              <profiles>
+                <profile name="Medusa" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="2454-970b-f837-c61f">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">6&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+0</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="32c7-a1f4-f7e1-ad7e" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="7f88-a2fc-7541-06d0" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Medusa siege gun" hidden="false" id="a0e8-9675-21eb-9b33" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f228-2d41-81f3-1e85" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39f2-bdf4-ade4-6972" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Medusa siege gun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="bab8-3dca-5df3-0e0e">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher, Barrage</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="5e22-3445-11e4-9eb5" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Demolisher" id="56b2-be9c-d301-d3e7" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
+                    <infoLink name="Barrage" id="53f4-16da-d453-8415" hidden="false" type="rule" targetId="862d-b036-2018-dbaf"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <infoLinks>
+                <infoLink name="Explorator Adaption" id="6596-7bcd-6bb6-9c91" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
+                <infoLink name="Chain of Command" id="158f-f551-2925-6ff3" hidden="false" type="rule" targetId="edea-7a2c-4b66-4ba4"/>
+              </infoLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="add" value="124c-2927-143f-f513" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Standard Detachments" hidden="false" id="0df3-a4cb-61e7-b8b3" targetId="e1e0-9c0e-7cab-b244" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Galibed Oathsword Theyreos Siege Breaker Company" hidden="false" id="63ec-8250-6ca0-e22a" subType="unit-group">
+      <comment>Expanded</comment>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="400"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d12d-3bb6-2bd7-d7ea" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="5d4a-aa06-42a0-f8b7" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1b68-cce9-e11c-fde7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Despoilers of Tallarn" id="639c-9cf8-9abe-4e05" hidden="false">
+          <description>This Formation can only be included in an Army with the Traitor Allegiance.</description>
+        </rule>
+        <rule name="Thyreos Doctrine" id="22a9-0450-88f1-8c21" hidden="false">
+          <description>While an Auxilia Medusa Battery or Auxilia Basilisk Battery Detachment from this Formation is within 2&quot; of an Auxilia Stormsword Squadron from this Formation, each time a hit is scored against that Auxilia Medusa Battery or Auilia Basilisk Battery Detachment, unless that hit was from a weapon with the Barrage or Heavy Barrage trait, you can allocate that hit to a Stormsword model from this Formation that is also visible to the firing Detachment.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Auxilia Stormsword Squadron" hidden="false" id="b927-182a-f62a-0b5b" publicationId="e4cc-404e-be5e-2101" page="14">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Stormsword" hidden="false" id="3a34-d133-607c-66e9">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="ceef-718f-efcc-7282" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1d5e-bd75-bc64-2922" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Stormsword" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="90d6-89a6-9398-a45d" publicationId="e4cc-404e-be5e-2101" page="113">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">6&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="3+" field="8485-4ee2-6feb-d93c">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="e83a-fe85-27de-abd7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Stormsword siege cannon" hidden="false" id="5093-80c0-c90f-6116" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="efc0-7fd0-2291-27a1" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6720-acbe-a1e0-2e9b" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Stormsword siege cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="dd2f-f75c-9fe7-0599">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">30&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher, Ignores Cover</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Ignores Cover" id="0e0c-670f-a31c-3343" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+                    <infoLink name="Arc (Front/Rear)" id="f032-de6f-ac2e-8a9f" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Demolisher" id="3150-5992-eb0d-9c9e" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Stormsword heavy bolter sponsons" hidden="false" id="52b5-6001-21f2-bc0f" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85b0-64da-e6a1-d58c" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd61-d83f-abec-3ebf" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Stormsword heavy bolter sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f76c-b6f2-7ea8-a4ef">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Point Defence" id="96cb-16da-0f1d-1ddd" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                    <infoLink name="Light" id="9cd3-99bb-c467-4f24" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lascannon sponson turrets" hidden="false" id="0356-74f4-ce1d-cfa5" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e79e-ebd5-2d98-391f" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c90-39aa-b0aa-c6c8" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Lascannon sponson turrets" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9e0f-89ae-0abf-c6bc">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" id="2369-2078-acf8-9e92" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter turret" hidden="false" id="04f5-7d93-19e3-b653" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e926-a710-b9e5-e861" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e7c-323c-e9b6-8061" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Hull Mounted heavy bolter turret" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="16f3-7e42-d501-e7cc">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Point Defence" id="35fa-0198-8118-bffc" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                    <infoLink name="Arc (Front/Rear)" id="8aa1-20fe-45ab-ac7b" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Light" id="4f16-6ee3-bad8-47a3" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <infoLinks>
+                <infoLink name="Explorator Adaption" id="2025-0fd2-a58b-69d9" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
+                <infoLink name="Chain of Command" id="65dd-2d06-d105-923c" hidden="false" type="rule" targetId="edea-7a2c-4b66-4ba4"/>
+              </infoLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Super-heavy Vehicle (3)" hidden="false" id="7abb-bfb3-0c36-3419" targetId="be9f-b973-245e-49bf" primary="false"/>
+            <categoryLink name="Solar Auxilia" hidden="false" id="1c94-3979-3e5e-b37a" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+            <categoryLink name="Heavy Armour" hidden="false" id="0d8c-d79b-b6bc-5ef8" targetId="1f6b-d764-352d-1e74" primary="true"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="124c-2927-143f-f513" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Auxilia Basilisk Battery" hidden="false" id="47fe-298c-28d7-f0d9">
+          <categoryLinks>
+            <categoryLink name="Vehicle (2)" hidden="false" id="a583-6122-60b7-4f8c" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+            <categoryLink name="Solar Auxilia" hidden="false" id="e673-b441-3b22-1dbe" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+            <categoryLink name="Artillery" hidden="false" id="3bc5-f3aa-589d-8bf1" targetId="98f1-ce9c-c2b2-cea5" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Basilisk" hidden="false" id="9a61-5715-55b4-d9ca" collective="true">
+              <profiles>
+                <profile name="Basilisk" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="8c71-23a7-edc2-8d01">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">6&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+0</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="97c3-0f25-f753-c385" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="df79-933d-450f-3dc1" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Earthshaker cannon" hidden="false" id="b9b2-8a4d-c524-a9c0" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ef5-cf09-8047-3545" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9eef-e4b0-bf31-694e" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Earthshaker cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1551-6307-0a3e-5db2">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;-90&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Barrage</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Barrage" id="848c-7106-1245-bd4d" hidden="false" type="rule" targetId="862d-b036-2018-dbaf"/>
+                    <infoLink name="Arc (Front/Rear)" id="eb1c-2b66-dea5-b234" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <infoLinks>
+                <infoLink name="Explorator Adaption" id="d500-3f3e-ada0-d529" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
+                <infoLink name="Chain of Command" id="61e8-6c78-b5af-9afe" hidden="false" type="rule" targetId="edea-7a2c-4b66-4ba4"/>
+              </infoLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="add" value="124c-2927-143f-f513" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Expanded Detachments" hidden="false" id="e235-6ab8-8c85-6d35" targetId="b2ba-773c-1cc5-56bc" primary="true"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
