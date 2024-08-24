@@ -5911,8 +5911,8 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Stormsword" hidden="false" id="2063-bea7-2bc0-1274">
               <constraints>
-                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="c346-a485-1723-7524" includeChildSelections="false"/>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0b5c-9314-8e78-625b" includeChildSelections="false"/>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="c346-a485-1723-7524-min" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c346-a485-1723-7524-max" includeChildSelections="false"/>
               </constraints>
               <profiles>
                 <profile name="Stormsword" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="31de-3e04-41da-020e" publicationId="e4cc-404e-be5e-2101" page="113">
@@ -6051,6 +6051,10 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8f6-f503-74e3-49a4-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8f6-f503-74e3-49a4-max"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Auxilia Basilisk Battery" hidden="false" id="2498-ded5-9ce0-b6e2">
           <categoryLinks>
@@ -6072,8 +6076,8 @@
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="60c3-bcf8-eb12-d708" includeChildSelections="false"/>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="59c5-e6bd-84ef-ac49" includeChildSelections="false"/>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="60c3-bcf8-eb12-d708-min" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="60c3-bcf8-eb12-d708-max" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Earthshaker cannon" hidden="false" id="70c1-beff-fe15-36e2" collective="true">
@@ -6121,6 +6125,10 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="49ed-f997-1a76-0171-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49ed-f997-1a76-0171-max"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Auxilia Medusa Battery" hidden="false" id="4039-569e-3982-6173">
           <categoryLinks>
@@ -6142,8 +6150,8 @@
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="32c7-a1f4-f7e1-ad7e" includeChildSelections="false"/>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="7f88-a2fc-7541-06d0" includeChildSelections="false"/>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="32c7-a1f4-f7e1-ad7e-min" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="32c7-a1f4-f7e1-ad7e-max" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Medusa siege gun" hidden="false" id="a0e8-9675-21eb-9b33" collective="true">
@@ -6192,6 +6200,10 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="efc9-cc7a-ea06-de76-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efc9-cc7a-ea06-de76-max"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -6374,6 +6386,10 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc33-3220-016d-f5cf-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc33-3220-016d-f5cf-max"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Auxilia Basilisk Battery" hidden="false" id="47fe-298c-28d7-f0d9">
           <categoryLinks>
@@ -6395,8 +6411,8 @@
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="97c3-0f25-f753-c385" includeChildSelections="false"/>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="df79-933d-450f-3dc1" includeChildSelections="false"/>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="97c3-0f25-f753-c385-min" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="97c3-0f25-f753-c385-max" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Earthshaker cannon" hidden="false" id="b9b2-8a4d-c524-a9c0" collective="true">
@@ -6444,6 +6460,10 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a393-d2f0-8606-04c6-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a393-d2f0-8606-04c6-max"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
