@@ -5455,7 +5455,7 @@
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="67ce-9a4e-1d3f-1473" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Tallarn Reborn Carmine Ambush Tercio" hidden="false" id="803b-0e51-9aac-6d5d" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Tallarn Reborn Carmine Ambush Tercio" hidden="false" id="803b-0e51-9aac-6d5d" subType="unit-group" publicationId="e4cc-404e-be5e-2101" page="96">
       <costs>
         <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="515"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
@@ -5881,7 +5881,7 @@
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Galibed Oathsword Theyreos Siege Breaker Company" hidden="false" id="5d4a-aa06-42a0-f8b7" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Galibed Oathsword Theyreos Siege Breaker Company" hidden="false" id="5d4a-aa06-42a0-f8b7" subType="unit-group" publicationId="e4cc-404e-be5e-2101" page="96">
       <comment>Standard</comment>
       <costs>
         <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="550"/>
@@ -6196,9 +6196,10 @@
       </selectionEntries>
       <categoryLinks>
         <categoryLink name="Standard Detachments" hidden="false" id="0df3-a4cb-61e7-b8b3" targetId="e1e0-9c0e-7cab-b244" primary="true"/>
+        <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="d776-837d-d7cd-b501" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Galibed Oathsword Theyreos Siege Breaker Company" hidden="false" id="63ec-8250-6ca0-e22a" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Galibed Oathsword Theyreos Siege Breaker Company" hidden="false" id="63ec-8250-6ca0-e22a" subType="unit-group" publicationId="e4cc-404e-be5e-2101" page="96">
       <comment>Expanded</comment>
       <costs>
         <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="400"/>
@@ -6447,6 +6448,7 @@
       </selectionEntries>
       <categoryLinks>
         <categoryLink name="Expanded Detachments" hidden="false" id="e235-6ab8-8c85-6d35" targetId="b2ba-773c-1cc5-56bc" primary="true"/>
+        <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="d183-05cc-7403-948e" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
     </selectionEntry>
   </selectionEntries>
