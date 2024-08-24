@@ -358,12 +358,12 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="1373-7e54-9700-9fe2" name="Solar Auxilia Titan Hunter Company" hidden="false">
+    <forceEntry id="1373-7e54-9700-9fe2" name="Solar Auxilia Titan Hunter Company" hidden="false" publicationId="e4cc-404e-be5e-2101" page="108">
       <rules>
-        <rule id="fbce-1baa-8ad1-48a2" name="Tank Commander" hidden="false">
+        <rule id="fbce-1baa-8ad1-48a2" name="Tank Commander" hidden="false" publicationId="e4cc-404e-be5e-2101" page="108">
           <description>One Vehicle model from a Compulsory Detachment must be upgraded to a Tank Commander for +10 points.</description>
         </rule>
-        <rule id="56f7-e489-1096-3e5f" name="Titan Hunters" hidden="false">
+        <rule id="56f7-e489-1096-3e5f" name="Titan Hunters" hidden="false" publicationId="e4cc-404e-be5e-2101" page="108">
           <description>If an Auxilia Shadowsword Detachment from this Formation that is issued with a First Fire Order is firing at a Titan Detachment, volcano cannon that models in the Auxilia Shadowsword Detachment are equipped with are treated as having the Accurate weapon trait.</description>
         </rule>
       </rules>
@@ -377,12 +377,12 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="7995-3bf3-c59d-3b2c" name="Solar Auxilia Leman Russ Spearhead" hidden="false">
+    <forceEntry id="7995-3bf3-c59d-3b2c" name="Solar Auxilia Leman Russ Spearhead" hidden="false" publicationId="e4cc-404e-be5e-2101" page="110">
       <rules>
-        <rule id="601d-36a5-9f63-bb82" name="Armoured Company" hidden="false">
+        <rule id="601d-36a5-9f63-bb82" name="Armoured Company" hidden="false" publicationId="e4cc-404e-be5e-2101" page="110">
           <description>Leman Russ slots in this Formation must be filled with Leman Russ Strike Squadrons, Leman Russ Executioner Squadrons, Leman Russ Demolisher Squadrons, Leman Russ Annihilator Squadrons or Leman Russ Exterminator Squadrons.</description>
         </rule>
-        <rule id="8e77-556f-d281-09b5" name="Tank Commander" hidden="false">
+        <rule id="8e77-556f-d281-09b5" name="Tank Commander" hidden="false" publicationId="e4cc-404e-be5e-2101" page="110">
           <description>One Vehicle model from a Compulsory Detachment must be upgraded to a Tank Commander for +10 points.</description>
         </rule>
       </rules>
@@ -404,7 +404,7 @@
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d21-e4fa-6a2f-b77d" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="cdc3-9285-e89c-e6c6" name="Light Armour" hidden="false" targetId="3b81-6b3e-4546-ade3" primary="false" type="category">
+        <categoryLink id="cdc3-9285-e89c-e6c6" name="Light Armour" hidden="false" targetId="3b81-6b3e-4546-ade3" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0481-f3a0-3e8e-f344" type="max"/>
           </constraints>
@@ -1745,8 +1745,8 @@
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Hull Mounted Demolisher Cannon" hidden="false" id="a97a-70e2-5c60-ccca" collective="false" targetId="40a4-f793-62c7-99f1" type="selectionEntry"/>
-                    <entryLink import="true" name="Hull Mounted Lascannon" hidden="false" id="97d7-a57b-806a-7e89" collective="false" targetId="6ba5-d691-3a7d-e31e" type="selectionEntry"/>
-                    <entryLink import="true" name="Hull Mounted Heavy Bolter" hidden="false" id="1fe7-db90-1d7b-809e" collective="false" targetId="ab94-459f-d7e5-7a04" type="selectionEntry"/>
+                    <entryLink import="true" name="Hull Mounted lascannon" hidden="false" id="97d7-a57b-806a-7e89" collective="false" targetId="6ba5-d691-3a7d-e31e" type="selectionEntry"/>
+                    <entryLink import="true" name="Hull Mounted heavy bolter" hidden="false" id="1fe7-db90-1d7b-809e" collective="false" targetId="ab94-459f-d7e5-7a04" type="selectionEntry"/>
                   </entryLinks>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Hull Mounted Autocannon" hidden="false" id="9802-c13c-4440-46ff" collective="false">
@@ -2108,7 +2108,7 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d631-8a9a-bf10-df3a" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="bd48-d1b0-c03f-e674" name="Hull Mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="ab94-459f-d7e5-7a04" type="selectionEntry">
+                <entryLink id="bd48-d1b0-c03f-e674" name="Hull Mounted heavy bolter" hidden="false" collective="false" import="true" targetId="ab94-459f-d7e5-7a04" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5a4-f38e-572e-6fd7" type="min"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fd2-d1a6-32b9-6525" type="max"/>
@@ -4529,7 +4529,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Auxilia Shadowsword Squadron" hidden="false" id="b5e2-3aa4-7813-114f">
+    <selectionEntry type="unit" import="true" name="Auxilia Shadowsword Squadron" hidden="false" id="b5e2-3aa4-7813-114f" publicationId="e4cc-404e-be5e-2101" page="113">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Shadowsword" hidden="false" id="c2f9-c883-e4f6-83a3">
           <constraints>
@@ -4699,7 +4699,7 @@
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e56d-8280-2069-5633" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Auxilia Stormsword Squadron" hidden="false" id="6f90-2243-f239-1a35">
+    <selectionEntry type="unit" import="true" name="Auxilia Stormsword Squadron" hidden="false" id="6f90-2243-f239-1a35" publicationId="e4cc-404e-be5e-2101" page="14">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Stormsword" hidden="false" id="cd24-34ca-0b7b-2645">
           <constraints>
@@ -4862,7 +4862,7 @@
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Auxilia Stormblade Squadron" hidden="false" id="0d7f-ada1-77e3-6232">
+    <selectionEntry type="unit" import="true" name="Auxilia Stormblade Squadron" hidden="false" id="0d7f-ada1-77e3-6232" publicationId="e4cc-404e-be5e-2101" page="115">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Stormblade" hidden="false" id="d817-3049-299d-e06d">
           <constraints>
@@ -5023,7 +5023,7 @@
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8734-e199-4fd7-84a9" name="Leman Russ Executioner Squadron" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="8734-e199-4fd7-84a9" name="Leman Russ Executioner Squadron" hidden="false" collective="false" import="true" type="unit" publicationId="e4cc-404e-be5e-2101" page="116">
       <categoryLinks>
         <categoryLink id="b278-02cc-2e72-c13f" name="Battle Tank" hidden="false" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
         <categoryLink id="a97d-54b4-0d78-67c1" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
@@ -5131,7 +5131,7 @@
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="6514-997d-fdb1-b223" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry id="58ae-3a27-ec39-c699" name="Leman Russ Demolisher Squadron" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="58ae-3a27-ec39-c699" name="Leman Russ Demolisher Squadron" hidden="false" collective="false" import="true" type="unit" publicationId="e4cc-404e-be5e-2101" page="117">
       <categoryLinks>
         <categoryLink id="fa8f-d72d-eb81-315b" name="Battle Tank" hidden="false" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
         <categoryLink id="efc5-4b6f-6395-2ce5" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
@@ -5239,7 +5239,7 @@
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="ffc0-966c-168f-3c4a" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry id="7fde-d02d-7313-b04b" name="Leman Russ Exterminator Squadron" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7fde-d02d-7313-b04b" name="Leman Russ Exterminator Squadron" hidden="false" collective="false" import="true" type="unit" publicationId="e4cc-404e-be5e-2101" page="119">
       <categoryLinks>
         <categoryLink id="62c5-99fb-d7fa-1a6e" name="Battle Tank" hidden="false" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
         <categoryLink id="10ce-e228-c97c-ba9e" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
@@ -5347,7 +5347,7 @@
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="14ed-0367-282a-8638" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry id="35a3-e0e3-d57d-db7c" name="Leman Russ Annihilator Squadron" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="35a3-e0e3-d57d-db7c" name="Leman Russ Annihilator Squadron" hidden="false" collective="false" import="true" type="unit" publicationId="e4cc-404e-be5e-2101" page="118">
       <categoryLinks>
         <categoryLink id="da34-221d-1389-2f5f" name="Battle Tank" hidden="false" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
         <categoryLink id="b5e2-9f03-e229-0756" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
@@ -5861,8 +5861,8 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70eb-ea3d-4ade-bab6" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="6aa4-0390-2e4b-18fa" name="Hull Mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="ab94-459f-d7e5-7a04" type="selectionEntry"/>
-            <entryLink id="5b89-92b8-e5be-4960" name="Hull Mounted Lascannon" hidden="false" collective="false" import="true" targetId="6ba5-d691-3a7d-e31e" type="selectionEntry"/>
+            <entryLink id="6aa4-0390-2e4b-18fa" name="Hull Mounted heavy bolter" hidden="false" collective="false" import="true" targetId="ab94-459f-d7e5-7a04" type="selectionEntry"/>
+            <entryLink id="5b89-92b8-e5be-4960" name="Hull Mounted lascannon" hidden="false" collective="false" import="true" targetId="6ba5-d691-3a7d-e31e" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
