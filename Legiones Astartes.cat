@@ -1131,7 +1131,7 @@
           <description>Support detachment slots in this formation can only be filled with Legion Terminator, Legion Dreadnaught or Leviathan Siege Dreadnaught detachments.</description>
         </rule>
         <rule name="Dedicated Transports (Legion Heavy Assault Spearhead)" id="f200-2452-9abe-a388" hidden="false" publicationId="e4cc-404e-be5e-2101" page="100">
-          <description>All Legiones Astartes Detachments within thid Formation that contain only Infantry models must be upgraded with Legion Spartans or Legion Land Raiders as Dedicated Transports.</description>
+          <description>All Legiones Astartes Detachments within this Formation that contain only Infantry models must be upgraded with Legion Spartans or Legion Land Raiders as Dedicated Transports.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -3369,7 +3369,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd94-486d-f054-e664" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="db83-9a3-2bea-ae7e" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3694,7 +3694,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd94-486d-f054-e664" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="c852-7443-d4d1-17a3" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5027,7 +5027,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd94-486d-f054-e664" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="d0d1-667-324f-9246" shared="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="0" field="efbe-59a5-0b19-1569">
@@ -5039,6 +5039,7 @@
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                  <comment>Can&apos;t fit into Termites</comment>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -5418,7 +5419,7 @@
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3ff3-f65b-01af-e00e" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5445,17 +5446,31 @@
                     <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3ff3-f65b-01af-e00e" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="0" field="9e9b-e1a1-8036-3fc2">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="7f36-1247-21a5-bc49" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="7dfe-9e6c-b3ee-4c3c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <comment>Mutually exclusive</comment>
+                </modifier>
               </modifiers>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="false" id="9e9b-e1a1-8036-3fc2"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="19a-f7f-1fd6-67ca" includeChildSelections="false"/>
         <constraint type="max" value="5" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="1adb-e919-2705-153a" includeChildSelections="false"/>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="a5de-6915-6a71-989d">
           <comment>Optional by default</comment>
         </constraint>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="19a-f7f-1fd6-67ca" includeChildSelections="false"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="7" field="1adb-e919-2705-153a">
@@ -5495,6 +5510,23 @@
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="3ff3-f65b-01af-e00e" shared="true"/>
               </conditions>
               <comment>where both</comment>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="3" field="1adb-e919-2705-153a">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="bdd6-6b3e-3df1-41a0" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="b0e8-c7a3-8f57-230a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7dfe-9e6c-b3ee-4c3c" shared="true" includeChildSelections="true"/>
+              </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
