@@ -1631,237 +1631,6 @@
         <categoryLink id="0ee6-7fb6-3a5c-cbbd" name="Vehicle (2)" hidden="false" targetId="49b3-dae7-33f8-f8e" primary="false"/>
         <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="4794-a7be-b2d4-2ccc" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="db3d-4afd-1a96-552b" name="Upgrades" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Malcador Tank" hidden="false" id="557f-dcb4-8839-3d72" collective="false">
-              <profiles>
-                <profile name="Malcador Tank" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="353b-3065-3340-3dd3">
-                  <characteristics>
-                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">9&quot;</characteristic>
-                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
-                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
-                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
-                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="set" value="3+" field="8485-4ee2-6feb-d93c">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="e83a-fe85-27de-abd7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Chain of Command" id="760c-8906-efeb-ebf1" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
-                <infoLink name="Explorator Adaption" id="c182-ed1e-c7fa-f7cf" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Turret Weapon" id="77ff-b81f-9590-4c38" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12b8-a91b-17df-fa05" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77c0-d4a5-3da1-300f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Malcador Battlecannon" hidden="false" id="606f-d930-dd68-b2f6" collective="false">
-                      <profiles>
-                        <profile name="Malcador Battlecannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f514-9a1e-7f17-dd77">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">25&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="993d-1d99-c117-272c" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <costs>
-                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Malcador Vanquisher Battlecannon" hidden="false" id="238b-5624-8139-23ff" collective="false">
-                      <profiles>
-                        <profile name="Malcador Vanquisher Battlecannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="92ce-57c6-8d4e-7391">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">32&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front), Armourbane</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Anti-tank" id="6abd-8320-bf94-5027" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
-                        <infoLink name="Armourbane" id="1716-38c6-2d3a-08a8" hidden="false" targetId="e2f7-4ff5-3f66-fed5" type="rule"/>
-                        <infoLink name="Arc (Front/Rear)" id="6de3-d678-1684-13d8" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <costs>
-                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Malcador Lascannon Turret" hidden="false" id="1847-7832-2f7b-e211" collective="false">
-                      <profiles>
-                        <profile name="Malcador Lascannon Turret" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f630-d4f2-b0da-88fe">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front)</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="cf36-6e2f-d2cd-a861" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                        <infoLink name="Anti-tank" id="0d34-516c-5b8c-4394" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Pintle Weapon" id="3d12-12c4-2050-99f0" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6e1-e4c1-c664-4def" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d6e-b394-86e6-db5b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Hull Mounted Demolisher Cannon" hidden="false" id="a97a-70e2-5c60-ccca" collective="false" targetId="40a4-f793-62c7-99f1" type="selectionEntry"/>
-                    <entryLink import="true" name="Hull Mounted lascannon" hidden="false" id="97d7-a57b-806a-7e89" collective="false" targetId="6ba5-d691-3a7d-e31e" type="selectionEntry"/>
-                    <entryLink import="true" name="Hull Mounted heavy bolter" hidden="false" id="1fe7-db90-1d7b-809e" collective="false" targetId="ab94-459f-d7e5-7a04" type="selectionEntry"/>
-                  </entryLinks>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Hull Mounted Autocannon" hidden="false" id="9802-c13c-4440-46ff" collective="false">
-                      <profiles>
-                        <profile name="Hull Mounted Autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0772-58af-6b76-50b6">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Light AT" id="1ce3-446c-8d23-7bbb" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-                        <infoLink name="Arc (Front/Rear)" id="6340-087f-e5cc-b102" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <costs>
-                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Sponson Weapons" id="f297-e1b3-913b-1a35" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7dc-04cb-42f5-bf79" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8555-66d8-e5fd-7c70" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Malcador Heavy Bolter Sponsons" hidden="false" id="af50-cfa1-2a63-19e4" collective="false">
-                      <profiles>
-                        <profile name="Malcador Heavy Bolter Sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="da93-1804-ee90-838d">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Light" id="ec91-fc88-b367-22da" hidden="false" targetId="4f6f-3184-9172-ef3f" type="rule"/>
-                        <infoLink name="Point Defence" id="f9b0-cdac-5f45-2e72" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Malcador Lascannon Sponsons" hidden="false" id="9645-987c-7ee7-8d09" collective="false">
-                      <profiles>
-                        <profile name="Malcador Lascannon Sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0471-96ad-0bbf-c139">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Anti-tank" id="d3ef-4622-a17a-cd09" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Malcador Autocannon Sponsons" hidden="false" id="aa48-f32a-5f8f-6a1d" collective="false">
-                      <profiles>
-                        <profile name="Malcador Autocannon Sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1762-0959-0932-9ded">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Light AT" id="1e52-9fd1-01d5-6ebe" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink import="true" name="Tank Commander" hidden="false" id="db72-b3d6-c6ae-12bf" collective="false" targetId="e83a-fe85-27de-abd7" type="selectionEntry">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7c5-d7ba-a5f6-ee20" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
-              </costs>
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="adaf-9bb9-f069-b0df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="55b2-5974-72f8-fa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="165"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
@@ -1909,6 +1678,233 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Malcador Tank" hidden="false" id="557f-dcb4-8839-3d72" collective="false" defaultAmount="1,1">
+          <profiles>
+            <profile name="Malcador Tank" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="353b-3065-3340-3dd3">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">9&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">4+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="3+" field="8485-4ee2-6feb-d93c">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="e83a-fe85-27de-abd7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Chain of Command" id="760c-8906-efeb-ebf1" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
+            <infoLink name="Explorator Adaption" id="c182-ed1e-c7fa-f7cf" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Turret Weapon" id="77ff-b81f-9590-4c38" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12b8-a91b-17df-fa05" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77c0-d4a5-3da1-300f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Malcador Battlecannon" hidden="false" id="606f-d930-dd68-b2f6" collective="false">
+                  <profiles>
+                    <profile name="Malcador Battlecannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f514-9a1e-7f17-dd77">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">25&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="993d-1d99-c117-272c" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <costs>
+                    <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Malcador Vanquisher Battlecannon" hidden="false" id="238b-5624-8139-23ff" collective="false">
+                  <profiles>
+                    <profile name="Malcador Vanquisher Battlecannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="92ce-57c6-8d4e-7391">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">32&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front), Armourbane</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" id="6abd-8320-bf94-5027" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
+                    <infoLink name="Armourbane" id="1716-38c6-2d3a-08a8" hidden="false" targetId="e2f7-4ff5-3f66-fed5" type="rule"/>
+                    <infoLink name="Arc (Front/Rear)" id="6de3-d678-1684-13d8" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <costs>
+                    <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Malcador Lascannon Turret" hidden="false" id="1847-7832-2f7b-e211" collective="false">
+                  <profiles>
+                    <profile name="Malcador Lascannon Turret" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f630-d4f2-b0da-88fe">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="cf36-6e2f-d2cd-a861" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Anti-tank" id="0d34-516c-5b8c-4394" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Pintle Weapon" id="3d12-12c4-2050-99f0" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6e1-e4c1-c664-4def" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d6e-b394-86e6-db5b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Hull Mounted Demolisher Cannon" hidden="false" id="a97a-70e2-5c60-ccca" collective="false" targetId="40a4-f793-62c7-99f1" type="selectionEntry"/>
+                <entryLink import="true" name="Hull Mounted lascannon" hidden="false" id="97d7-a57b-806a-7e89" collective="false" targetId="6ba5-d691-3a7d-e31e" type="selectionEntry"/>
+                <entryLink import="true" name="Hull Mounted heavy bolter" hidden="false" id="1fe7-db90-1d7b-809e" collective="false" targetId="ab94-459f-d7e5-7a04" type="selectionEntry"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hull Mounted Autocannon" hidden="false" id="9802-c13c-4440-46ff" collective="false">
+                  <profiles>
+                    <profile name="Hull Mounted Autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0772-58af-6b76-50b6">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Light AT" id="1ce3-446c-8d23-7bbb" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                    <infoLink name="Arc (Front/Rear)" id="6340-087f-e5cc-b102" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <costs>
+                    <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Sponson Weapons" id="f297-e1b3-913b-1a35" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7dc-04cb-42f5-bf79" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8555-66d8-e5fd-7c70" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Malcador Heavy Bolter Sponsons" hidden="false" id="af50-cfa1-2a63-19e4" collective="false">
+                  <profiles>
+                    <profile name="Malcador Heavy Bolter Sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="da93-1804-ee90-838d">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Light" id="ec91-fc88-b367-22da" hidden="false" targetId="4f6f-3184-9172-ef3f" type="rule"/>
+                    <infoLink name="Point Defence" id="f9b0-cdac-5f45-2e72" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Malcador Lascannon Sponsons" hidden="false" id="9645-987c-7ee7-8d09" collective="false">
+                  <profiles>
+                    <profile name="Malcador Lascannon Sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0471-96ad-0bbf-c139">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" id="d3ef-4622-a17a-cd09" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Malcador Autocannon Sponsons" hidden="false" id="aa48-f32a-5f8f-6a1d" collective="false">
+                  <profiles>
+                    <profile name="Malcador Autocannon Sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1762-0959-0932-9ded">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Light AT" id="1e52-9fd1-01d5-6ebe" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Tank Commander" hidden="false" id="db72-b3d6-c6ae-12bf" collective="false" targetId="e83a-fe85-27de-abd7" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7c5-d7ba-a5f6-ee20" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="adaf-9bb9-f069-b0df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="55b2-5974-72f8-fa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="db83-63c6-e511-8994" name="Auxilia Super-heavy Tank Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
