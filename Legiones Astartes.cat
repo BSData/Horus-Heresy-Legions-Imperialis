@@ -2687,11 +2687,6 @@
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <constraints>
         <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="7f98-9a24-6f96-f40b" includeChildSelections="false"/>
@@ -2870,11 +2865,6 @@
         <modifier type="set" value="1" field="4d24-4461-2821-e205">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
       </modifiers>
