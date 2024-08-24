@@ -621,7 +621,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="6882-c058-9ae3-d0c0" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="6882-c058-9ae3-d0c0" includeChildSelections="false"/>
         <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="2ff2-4479-7710-ceaf" negative="false"/>
       </constraints>
     </selectionEntry>
@@ -708,7 +708,7 @@
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="80f3-def4-b786-1d11" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="80f3-def4-b786-1d11" includeChildSelections="false"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup name="Dedicated Transports" hidden="false" id="3613-1888-eefa-12d1">
@@ -805,8 +805,8 @@
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cf9-e75e-d1ab-b5d2" type="min"/>
-        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="3d9d-ae99-d6e7-68" includeChildSelections="false"/>
-        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="a2de-c406-74bb-300b" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="3d9d-ae99-d6e7-68" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="a2de-c406-74bb-300b" includeChildSelections="false"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="e393-eb1c-a969-ed41" name="Infantry (1)" hidden="false" targetId="68c1-de55-26b1-8ca4" primary="false"/>
@@ -1188,8 +1188,8 @@
         </infoLink>
       </infoLinks>
       <constraints>
-        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="133e-3add-3bd9-8159" includeChildSelections="false"/>
-        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="71ab-1833-a8cf-a54c" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="133e-3add-3bd9-8159" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="71ab-1833-a8cf-a54c" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry id="a002-4a05-0cce-8a84" name="Auxilia Rapier Battery" hidden="false" collective="false" import="true" type="unit">
@@ -4445,8 +4445,8 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="821b-1c9c-a159-da79" includeChildSelections="false"/>
-        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="7c0c-a2df-b812-e17b" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="821b-1c9c-a159-da79" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="7c0c-a2df-b812-e17b" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
         <infoLink name="Infiltrate" hidden="false" type="rule" id="52df-a82a-930d-4b0d" targetId="68b7-f6c7-7925-1567">
