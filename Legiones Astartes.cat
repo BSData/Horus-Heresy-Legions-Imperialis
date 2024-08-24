@@ -746,6 +746,62 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Spartan" hidden="false" id="7dfe-9e6c-b3ee-4c3c"/>
     <selectionEntry type="model" import="true" name="Land Raider Proteus" hidden="false" id="7f36-1247-21a5-bc49"/>
+    <selectionEntry type="model" import="true" name="Termite" hidden="false" id="43ab-28c5-6d87-8c81" publicationId="e4cc-404e-be5e-2101" page="107">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="18"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="2"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Termite twin-linked bolters" hidden="false" id="dfe2-3df9-872c-f7e0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d9e-4096-3904-9300-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d9e-4096-3904-9300-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Termite twin-linked bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="004b-0c9e-9617-3b37">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Assault, Light, Point Defence</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Arc (Front/Rear)" id="8a0e-912a-7486-180f" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+              <modifiers>
+                <modifier type="set" value="Arc (Front)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Assault" id="2f4d-5294-f2bc-f3db" hidden="false" type="rule" targetId="e368-00fb-7a9b-9eb0"/>
+            <infoLink name="Light" id="a713-8402-ffe2-7eb2" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+            <infoLink name="Point Defence" id="7045-8dee-8be4-bd0a" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Termite" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="675b-86ab-df2f-7707">
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">5&quot;</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="3f40-a0ae-7192-5b1a" hidden="false" type="rule" targetId="0462-6759-307e-3004"/>
+        <infoLink name="Transport (X)" id="438b-ea4f-6dc0-d714" hidden="false" type="rule" targetId="b82-1269-e912-cb88">
+          <modifiers>
+            <modifier type="set" value="Transport (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <comment>For dedicated transport use</comment>
+    </selectionEntry>
   </sharedSelectionEntries>
   <forceEntries>
     <forceEntry name="Legion Demi-Company" hidden="false" id="6cda-5812-cf52-3fee">
@@ -1533,6 +1589,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Command" hidden="false" id="dd6a-192e-8b05-b402">
@@ -1648,7 +1709,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
@@ -1691,7 +1752,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
@@ -1718,7 +1779,27 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd94-486d-f054-e664" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Termite" id="6fec-7263-5fc0-e49a" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Termite" hidden="false" id="78cb-8b4f-9e45-65d8" type="selectionEntry" targetId="43ab-28c5-6d87-8c81"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfe7-29b2-b0a3-014d"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
@@ -1734,9 +1815,10 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1750,9 +1832,14 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="1" field="b668-3bf-bccd-7d4d">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -2600,6 +2687,11 @@
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="parent" shared="true" id="7f98-9a24-6f96-f40b" includeChildSelections="false"/>
@@ -2778,6 +2870,11 @@
         <modifier type="set" value="1" field="4d24-4461-2821-e205">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3267,15 +3364,36 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Termite" id="1b98-5799-7d29-5a41" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Termite" hidden="false" id="3f86-bd46-db53-73e9" type="selectionEntry" targetId="43ab-28c5-6d87-8c81"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="c459-c1be-4fc2-d155"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd94-486d-f054-e664" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3289,9 +3407,14 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="1" field="5455-d583-6744-aca1">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -3566,15 +3689,36 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Termite" id="85fc-ec21-32db-91f9" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Termite" hidden="false" id="a933-9214-4c7c-c931" type="selectionEntry" targetId="43ab-28c5-6d87-8c81"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8f3c-bab9-af4a-5f65"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd94-486d-f054-e664" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3588,9 +3732,14 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="1" field="15ec-5ff2-b9e8-3cb">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -4072,6 +4221,11 @@
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="e2b4-7724-767f-63e1" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Rhino Detachment" hidden="false" id="33c2-d97e-da81-b743">
@@ -4150,7 +4304,7 @@
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Turrent weapon" hidden="false" id="ae44-6620-81c-2719">
+            <selectionEntryGroup name="Turret weapon" hidden="false" id="ae44-6620-81c-2719">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b30-1d83-301b-d006"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2619-620b-ccc2-ccd9"/>
@@ -4868,15 +5022,46 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Termite" id="ccaf-6748-8a7d-48e2" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Termite" hidden="false" id="9bbf-b00b-73e8-d339" type="selectionEntry" targetId="43ab-28c5-6d87-8c81"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="efbe-59a5-0b19-1569"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd94-486d-f054-e664" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="efbe-59a5-0b19-1569">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="e552-7189-ccb5-1922" childId="cecc-1742-f5e6-c2b4" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="e552-7189-ccb5-1922" childId="b19e-a060-e94a-c2ef" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4890,9 +5075,14 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="1" field="f6b0-89b8-26bb-e7c9">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -6893,69 +7083,557 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
     <selectionEntry type="unit" import="true" name="Legion Termite Detachment" hidden="false" id="f0f5-007f-4aec-78cb" publicationId="e4cc-404e-be5e-2101" page="107">
       <categoryLinks>
         <categoryLink targetId="3751-fb88-3656-b7d1" id="81d8-a038-69e6-2fa2" primary="true" name="Transport"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="6961-4e3c-339e-3d99" primary="false" name="Vehicle (2)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="9b1d-6a13-206c-8b8f" primary="false" name="Legiones Astartes"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Termite" hidden="false" id="6d6e-ea50-7f4f-c761" type="selectionEntry" targetId="43ab-28c5-6d87-8c81">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b6b3-8248-a05f-1270"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="5be5-cf02-190c-da67"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0.5" field="5312-855-beda-23c1"/>
+            <modifier type="set" value="0" field="54cb-1324-71d0-d324"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Sabre Squadron" hidden="false" id="ba21-54d3-e780-11ad" publicationId="e4cc-404e-be5e-2101" page="106">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="120"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Termite" hidden="false" id="723f-53a7-e706-4c66" publicationId="e4cc-404e-be5e-2101" page="107">
+        <selectionEntry type="model" import="true" name="Legion Sabre" hidden="false" id="1e04-1f23-0d4b-0df0">
           <costs>
-            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="18"/>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
           </costs>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ae68-3cfd-c264-3832"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="c87d-e641-f941-e773"/>
+          </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Termite twin-linked bolters" hidden="false" id="b181-df7a-a642-c44f">
+            <selectionEntry type="upgrade" import="true" name="Sabre Missiles" hidden="false" id="9a5e-b8be-29fd-3dab">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9ac-58e3-01e1-8203-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9ac-58e3-01e1-8203-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b4c-d8ef-348c-34fb-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b4c-d8ef-348c-34fb-max"/>
               </constraints>
-              <profiles>
-                <profile name="Termite twin-linked bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="bbcb-e327-ca91-3f6a">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Assault, Light, Point Defence</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
-                <infoLink name="Arc (Front/Rear)" id="b233-87c2-894a-5abc" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                <infoLink name="Arc (Front/Rear)" id="c5ec-0677-324f-4361" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
                   <modifiers>
                     <modifier type="set" value="Arc (Front)" field="name"/>
                   </modifiers>
                 </infoLink>
-                <infoLink name="Assault" id="17c4-a9e1-b842-08a4" hidden="false" type="rule" targetId="e368-00fb-7a9b-9eb0"/>
-                <infoLink name="Light" id="6b65-ea45-c420-a100" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-                <infoLink name="Point Defence" id="4e79-2ba4-073f-0dc9" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                <infoLink name="Light AT" id="575b-0f17-dff9-9623" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
               </infoLinks>
+              <profiles>
+                <profile name="Sabre Missiles" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ca7a-08bf-28bb-9f23">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Primary Weapons" id="72e6-4359-e6b4-8a0d" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hull Mounted Neutron Blaster" hidden="false" id="eb51-f977-fbfd-480d">
+                  <profiles>
+                    <profile name="Hull Mounted Neutron Blaster" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6948-fb41-4fb2-96ce">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank, Shock Pulse</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="fe40-7848-c4ac-bbbf" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Anti-tank" id="c8be-8640-8a1a-1680" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                    <infoLink name="Shock Pulse" id="0170-aecb-7664-8254" hidden="false" type="rule" targetId="495a-71fc-de48-96a"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hull Mounted Anvilus Autocannon" hidden="false" id="51a4-0b7c-3bc2-7597">
+                  <profiles>
+                    <profile name="Hull Mounted Anvilus Autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="671c-172c-f448-f4b1">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="9d94-1632-e3ae-34bb" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Light AT" id="7c6c-e425-19f8-ba7e" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ddc-c922-d9e9-7f70-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ddc-c922-d9e9-7f70-max"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Secondary Weapons" id="3f88-a1ea-0f9f-4927" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="796a-f6e6-e061-f3d0-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="796a-f6e6-e061-f3d0-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter" hidden="false" id="f680-d9e6-7c50-7a49">
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="d3e6-5a19-bb01-04d3" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Light" id="6879-b851-2d2f-ed2c" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Point Defence" id="288b-cd73-a2b7-24d5" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Hull Mounted heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1ba5-c489-b140-8dfe">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hull Mounted multi-melta" hidden="false" id="6273-dbf3-4715-3951">
+                  <profiles>
+                    <profile name="Hull Mounted multi-melta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0a90-0bea-07ac-273f">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="824a-4341-15d0-3870" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Anti-tank" id="6317-4f8d-5451-6625" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <profiles>
-            <profile name="Termite" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="166b-31f5-d94c-36a1">
+            <profile name="Legion Sabre" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="69e9-e800-2ade-4bf3">
               <characteristics>
-                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">5&quot;</characteristic>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">11&quot;</characteristic>
                 <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
-                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
                 <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
                 <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Deep Strike" id="7eb1-4907-af5d-a50a" hidden="false" type="rule" targetId="0462-6759-307e-3004"/>
-            <infoLink name="Transport (X)" id="3ca8-21e2-cb21-a8e0" hidden="false" type="rule" targetId="b82-1269-e912-cb88">
-              <modifiers>
-                <modifier type="set" value="Transport (2)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Nimble" id="28d3-73c4-6b6c-60c4" hidden="false" type="rule" targetId="bc40-962f-5fc5-771a"/>
           </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2790-1940-b9c9-ca0e"/>
-            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="8eb0-0b55-5a0b-4963"/>
-          </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="ae68-3cfd-c264-3832">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="parent" childId="1e04-1f23-0d4b-0df0" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="8" field="ae68-3cfd-c264-3832">
+              <conditions>
+                <condition type="atLeast" value="7" field="selections" scope="parent" childId="1e04-1f23-0d4b-0df0" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
+        <modifier type="increment" value="55" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="5" field="selections" scope="self" childId="1e04-1f23-0d4b-0df0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="110" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="1e04-1f23-0d4b-0df0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="3b81-6b3e-4546-ade3" id="a601-5c47-3e88-883e" primary="true" name="Light Armour"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="e509-71da-4c95-525c" primary="false" name="Vehicle (2)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="21e4-bac3-98bc-fef6" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Sicaran Arcus Squadron" hidden="false" id="f496-f180-3810-9838" publicationId="e4cc-404e-be5e-2101" page="105">
+      <categoryLinks>
+        <categoryLink name="Battle Tank" hidden="false" id="8490-8726-5916-bb31" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
+        <categoryLink name="Legiones Astartes" hidden="false" id="a866-fcdc-4c4d-dc39" targetId="7d0c-e5ec-a086-98a4" primary="false"/>
+        <categoryLink name="Vehicle (2)" hidden="false" id="91c9-5216-df64-9aaf" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Legion Sicaran Arcus" hidden="false" id="2433-4d8e-aad3-2ab4">
+          <categoryLinks>
+            <categoryLink name="Vehicle (2)" hidden="false" id="fc48-8a06-8406-1d20" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Legion Sicaran" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="7e82-860e-e601-9681">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">10&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Turret weapon" id="9f6b-e6a1-11d9-1e47" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8afb-e02b-8cab-dc5e-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8afb-e02b-8cab-dc5e-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Arcus missile launcher" hidden="false" id="4791-3777-b6f0-9e0a">
+                  <profiles>
+                    <profile name="Arcus missile launcher - Arcus" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="449f-40d3-d32e-bba7">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Ripple Fire</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Arcus missile launcher - Skyspear" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d883-11f0-d5d4-ab51">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Skyfire, Tracking</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" id="b261-4b31-5481-d56c" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                    <infoLink name="Ripple Fire" id="80c4-d96d-4a8b-407d" hidden="false" type="rule" targetId="2f7e-bfb0-5a40-cd0f"/>
+                    <infoLink name="Skyfire" id="42e1-7208-ae1e-72c5" hidden="false" type="rule" targetId="e93f-b83c-b1c9-d744"/>
+                    <infoLink name="Tracking" id="e911-85f9-4389-900f" hidden="false" type="rule" targetId="eb09-d940-39cc-16f7"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Sponson weapons" id="1276-078e-33be-4f04" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="b38b-654a-4728-3f64">
+                  <profiles>
+                    <profile name="Sponson Mounted lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1e81-654a-87ef-a182">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="3223-58cf-c4dc-d9d3" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Anti-tank" id="9897-c75f-f7ae-481f" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted heavy bolters" hidden="false" id="9147-8d49-b1dd-d573">
+                  <profiles>
+                    <profile name="Sponson Mounted heavy bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="bd75-93fa-6ae2-0643">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Point Defence" id="9c2c-0bce-9132-6e4b" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                    <infoLink name="Light" id="75c3-1791-9119-91d0" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Arc (Front/Rear)" id="2305-66fe-4a7c-5fe2" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2663-b851-7ec6-77d1-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2663-b851-7ec6-77d1-max"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter" hidden="false" id="a4fc-9249-8341-e8cd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1320-f758-2091-13d1-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1320-f758-2091-13d1-max"/>
+              </constraints>
+              <profiles>
+                <profile name="Hull Mounted heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="29ec-57d6-ffb7-f1b4">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Light" id="c505-1200-2a72-5d72" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                <infoLink name="Arc (Front/Rear)" id="b623-50ed-5972-577d" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                <infoLink name="Point Defence" id="5884-1102-15ed-93de" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8476-9ddd-bed9-5025"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="dceb-7c90-41db-7b1f"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="115"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="175" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="225" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="285" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="335" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Sicaran Punisher Squadron" hidden="false" id="a271-0c0f-67cd-1d25" publicationId="e4cc-404e-be5e-2101" page="104">
+      <categoryLinks>
+        <categoryLink name="Battle Tank" hidden="false" id="0ede-68ff-bc64-b3a2" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
+        <categoryLink name="Legiones Astartes" hidden="false" id="67eb-1ac8-52ff-3512" targetId="7d0c-e5ec-a086-98a4" primary="false"/>
+        <categoryLink name="Vehicle (2)" hidden="false" id="419f-daab-ba23-7951" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Legion Sicaran Punisher" hidden="false" id="f67a-31a6-4925-89d6">
+          <categoryLinks>
+            <categoryLink name="Vehicle (2)" hidden="false" id="8c07-5bec-3202-9ba6" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Legion Sicaran" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="88fb-e5ec-75f6-5af3">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">10&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Turret weapon" id="0e02-c947-191f-99cc" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80e5-9ee7-a78d-9f58-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80e5-9ee7-a78d-9f58-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Punisher rotary cannon" hidden="false" id="a5f2-e7eb-2ce5-ce06">
+                  <profiles>
+                    <profile name="Punisher rotary cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="5f21-80fb-18ce-f110">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT, Rapid Fire</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Light AT" id="66c1-0aee-902e-7c6e" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+                    <infoLink name="Rapid Fire" id="0952-eee7-cd00-4894" hidden="false" type="rule" targetId="d56d-6332-debe-ab1a"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Sponson weapons" id="4883-ba37-9871-5d02" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="6d81-69fb-5e5b-d974">
+                  <profiles>
+                    <profile name="Sponson Mounted lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2e2f-b70e-bea1-af78">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="90b5-94ed-1fde-2bae" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Anti-tank" id="9959-7c3b-58d1-569b" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted heavy bolters" hidden="false" id="45d5-76da-f23e-ca26">
+                  <profiles>
+                    <profile name="Sponson Mounted heavy bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="5e4d-e976-9164-87c5">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Point Defence" id="527b-5055-6292-15c4" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                    <infoLink name="Light" id="b48d-6795-2ccb-3749" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Arc (Front/Rear)" id="de4a-a796-8c9f-7eba" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9bf-c754-b72d-6720-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9bf-c754-b72d-6720-max"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter" hidden="false" id="f86d-a576-321e-a7a3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68b7-3fc0-7364-f0a3-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68b7-3fc0-7364-f0a3-max"/>
+              </constraints>
+              <profiles>
+                <profile name="Hull Mounted heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="47a2-94e5-7dba-e81f">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Light" id="4d4e-e001-7a9f-7a63" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                <infoLink name="Arc (Front/Rear)" id="021e-69ae-236c-60f2" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                <infoLink name="Point Defence" id="f7c9-56f3-52d9-9833" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3116-0b02-ec7e-b995"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="dec7-b4c8-d818-1f61"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="110"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="160" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="210" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="260" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="310" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
           <conditionGroups>
             <conditionGroup type="and">
