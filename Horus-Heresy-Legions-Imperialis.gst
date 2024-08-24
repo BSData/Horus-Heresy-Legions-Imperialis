@@ -74,6 +74,8 @@
     <categoryEntry id="13e3-8701-239a-fec9" name="Knight" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
     <categoryEntry id="9072-16ad-262f-a980" name="Titan" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
     <categoryEntry name="Cavalry (1)" hidden="false" id="4376-9c33-b1cc-bb06"/>
+    <categoryEntry name="Standard Detachments" id="e1e0-9c0e-7cab-b244" hidden="false"/>
+    <categoryEntry name="Expanded Detachments" id="b2ba-773c-1cc5-56bc" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="49dd-d763-6836-b4f8" hidden="true" name="Unbound Formation (Open Play)">
@@ -92,6 +94,21 @@
         <categoryLink name="Vanguard" hidden="false" id="beb-b6e2-8aac-f9c2" targetId="8416-456c-a6f-e059"/>
         <categoryLink name="Knight" hidden="false" id="17c-5158-3e04-e1f6" targetId="13e3-8701-239a-fec9"/>
         <categoryLink name="Titan" hidden="false" id="c84b-708c-d3ad-3ca7" targetId="9072-16ad-262f-a980"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Formations of Legend" id="1e4a-3c76-f375-bc07" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="ba86-e610-c6c4-9f21" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="Standard Detachments" hidden="false" id="86c6-a699-531e-6266" targetId="e1e0-9c0e-7cab-b244" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="dd17-e58c-2a4c-2085" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Expanded Detachments" hidden="false" id="6378-d46d-cb71-7bea" targetId="b2ba-773c-1cc5-56bc" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2895-f405-6073-1b4f" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -564,6 +581,9 @@ If a Detachment contains more than one model with this rule, the controlling pla
                   </conditions>
                 </modifier>
               </modifiers>
+              <categoryLinks>
+                <categoryLink name="Loyalist" hidden="false" id="0f27-b89d-3a46-43fd" targetId="1b68-cce9-e11c-fde7" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Traitor" hidden="false" id="f6b1-7e35-fd6f-2b8d">
               <modifiers>
@@ -576,6 +596,9 @@ If a Detachment contains more than one model with this rule, the controlling pla
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c97-c0a1-79aa-c9b4"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Traitor" hidden="false" id="f288-2c14-b288-590f" targetId="437a-7951-c93d-1e14" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
