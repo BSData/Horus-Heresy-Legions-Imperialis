@@ -5786,7 +5786,8 @@
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink name="Formations of Legend" hidden="false" id="2bff-0f50-71aa-0403" targetId="e1e0-9c0e-7cab-b244" primary="true"/>
+        <categoryLink name="Standard Detachments" hidden="false" id="2bff-0f50-71aa-0403" targetId="e1e0-9c0e-7cab-b244" primary="true"/>
+        <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="19b9-c3f8-0d71-d8b1" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
       <comment>Standard</comment>
       <rules>
@@ -5856,6 +5857,7 @@
       </selectionEntries>
       <categoryLinks>
         <categoryLink name="Expanded Detachments" hidden="false" id="1922-ad4a-2227-c353" targetId="b2ba-773c-1cc5-56bc" primary="true"/>
+        <categoryLink targetId="1cf6-bb4c-e11f-3da9" id="d7fa-1f94-756b-3e37" primary="false" name="Solar Auxilia"/>
       </categoryLinks>
       <comment>Expanded</comment>
       <modifiers>
