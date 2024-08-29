@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="36" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="37" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -3044,7 +3044,7 @@
         </modifier>
         <modifier type="increment" value="35" field="ee95-a20e-f9ff-e2c2">
           <repeats>
-            <repeat value="2" repeats="1" field="selections" scope="parent" childId="8049-5cf-acb2-1e4" shared="true" roundUp="true" id="9ee3-cea3-6a0c-a9c2" includeChildSelections="true"/>
+            <repeat value="2" repeats="1" field="selections" scope="self" childId="8049-5cf-acb2-1e4" shared="true" roundUp="true" id="9ee3-cea3-6a0c-a9c2" includeChildSelections="true"/>
           </repeats>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="self" childId="8049-5cf-acb2-1e4" shared="true" includeChildSelections="true"/>
@@ -8708,7 +8708,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bad4-0abf-10c8-2ba9" includeChildSelections="false"/>
                           </constraints>
                           <selectionEntries>
-                            <selectionEntry type="upgrade" import="true" name="Sponson Mounted quad lascannon" hidden="false" id="6c6b-1c80-afef-1aec" collective="false" defaultAmount="">
+                            <selectionEntry type="upgrade" import="true" name="Sponson Mounted quad lascannon" hidden="false" id="6c6b-1c80-afef-1aec" collective="false">
                               <profiles>
                                 <profile name="Sponson Mounted quad lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2d3e-d03e-aaba-217c">
                                   <characteristics>
@@ -8734,7 +8734,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2744-f162-4a8e-0df9-max"/>
                           </constraints>
                           <selectionEntries>
-                            <selectionEntry type="upgrade" import="true" name="Hull Mounted lascannon" hidden="false" id="2437-4a15-9d0d-dc88" defaultAmount="">
+                            <selectionEntry type="upgrade" import="true" name="Hull Mounted lascannon" hidden="false" id="2437-4a15-9d0d-dc88">
                               <profiles>
                                 <profile name="Hull Mounted lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0814-f055-e6ae-ffb3">
                                   <characteristics>
@@ -8930,7 +8930,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c68b-e815-2ff8-6e27" includeChildSelections="false"/>
                           </constraints>
                           <selectionEntries>
-                            <selectionEntry type="upgrade" import="true" name="Sponson Mounted quad lascannon" hidden="false" id="8f03-b4ca-144d-74f3" collective="false" defaultAmount="">
+                            <selectionEntry type="upgrade" import="true" name="Sponson Mounted quad lascannon" hidden="false" id="8f03-b4ca-144d-74f3" collective="false">
                               <profiles>
                                 <profile name="Sponson Mounted quad lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f7f9-7d2f-c544-72f2">
                                   <characteristics>
@@ -8956,7 +8956,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3a7-5b4c-ef07-cc57-max"/>
                           </constraints>
                           <selectionEntries>
-                            <selectionEntry type="upgrade" import="true" name="Hull Mounted lascannon" hidden="false" id="36cc-122a-b118-4ab9" defaultAmount="">
+                            <selectionEntry type="upgrade" import="true" name="Hull Mounted lascannon" hidden="false" id="36cc-122a-b118-4ab9">
                               <profiles>
                                 <profile name="Hull Mounted lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c3e2-38d4-2e37-3790">
                                   <characteristics>
@@ -9210,7 +9210,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5677-f6a3-0969-a11e" includeChildSelections="false"/>
                           </constraints>
                           <selectionEntries>
-                            <selectionEntry type="upgrade" import="true" name="Sponson Mounted quad lascannon" hidden="false" id="f489-1a50-634f-3a08" collective="false" defaultAmount="">
+                            <selectionEntry type="upgrade" import="true" name="Sponson Mounted quad lascannon" hidden="false" id="f489-1a50-634f-3a08" collective="false">
                               <profiles>
                                 <profile name="Sponson Mounted quad lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e8dd-67df-ba37-0761">
                                   <characteristics>
@@ -9236,7 +9236,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65b1-4ff5-e8e1-29a8-max"/>
                           </constraints>
                           <selectionEntries>
-                            <selectionEntry type="upgrade" import="true" name="Hull Mounted lascannon" hidden="false" id="09c4-43c0-75e6-0dd1" defaultAmount="">
+                            <selectionEntry type="upgrade" import="true" name="Hull Mounted lascannon" hidden="false" id="09c4-43c0-75e6-0dd1">
                               <profiles>
                                 <profile name="Hull Mounted lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c65d-5837-cf38-e8fa">
                                   <characteristics>
