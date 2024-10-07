@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="38" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="39" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -1398,12 +1398,6 @@
       </rules>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="bfb2-7edd-cb99-33a7" targetId="3779-422e-5fe9-5654"/>
-        <categoryLink name="Support" hidden="false" id="503e-0b93-e30b-2b15" targetId="be19-7658-5258-71d9">
-          <constraints>
-            <constraint type="min" value="4" field="selections" scope="force" shared="true" id="b5b7-2cb0-f818-51cf-min"/>
-            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="b5b7-2cb0-f818-51cf-max"/>
-          </constraints>
-        </categoryLink>
         <categoryLink name="Air Support" hidden="false" id="9c01-2f1c-48f3-854f" targetId="2879-da90-6a37-c897">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c802-fe81-c9c6-3a07" includeChildSelections="false"/>
@@ -1417,6 +1411,12 @@
         <categoryLink name="Heavy Armour" hidden="false" id="9523-0947-ce0f-6542" targetId="1f6b-d764-352d-1e74">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="3139-bd8b-5db8-1aaa" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="503e-0b93-e30b-2b15" targetId="be19-7658-5258-71d9">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="force" shared="true" id="b5b7-2cb0-f818-51cf-min"/>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="b5b7-2cb0-f818-51cf-max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -5912,7 +5912,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="4" field="a5de-6915-6a71-989d">
+        <modifier type="set" value="2" field="a5de-6915-6a71-989d">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="3ff3-f65b-01af-e00e" shared="true"/>
           </conditions>
