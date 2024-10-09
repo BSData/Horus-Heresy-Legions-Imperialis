@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="32" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="dbdb-7b07-1fe-66bd" name="Solar Auxilia" revision="33" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5823-85fd-1314-b472" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://thehorusheresy.com/legions-imperialis"/>
   </publications>
@@ -561,7 +561,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f55a-463f-810b-691a"/>
                   </constraints>
                   <costs>
-                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="-2"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Dracosan w/ twin lascannon" hidden="false" type="selectionEntry" id="8c40-5ba9-4dba-e871" targetId="cc26-409d-a289-38e8">
@@ -569,7 +569,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6164-e1cc-ebda-a181"/>
                   </constraints>
                   <costs>
-                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="-4"/>
+                    <cost name="Transport" typeId="54cb-1324-71d0-d324" value="4"/>
                   </costs>
                 </entryLink>
               </entryLinks>
