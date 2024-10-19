@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="25" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="26" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://www.warhammer.com/en-GB/shop/legions-imperialis-rulebook-hb-eng-2023"/>
     <publication id="eab5-2233-3200-3063" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
     <publication name="Legions Imperialis FAQs and Errata" hidden="false" id="559c-6588-c3b1-b0e5" shortName="LIE" publisherUrl="https://www.warhammer-community.com/legions-imperialis-downloads/" publisher="Legions Imperialis Rulebook Errata" publicationDate="2023"/>
     <publication name="The Great Slaughter" id="06b7-24c3-e0d0-3e98" hidden="false" shortName="GS" publicationDate="2024" publisherUrl="https://www.warhammer.com/en-GB/shop/legions-imperialis-the-great-slaughter-2024"/>
     <publication name="The Devastation of Tallarn" id="e4cc-404e-be5e-2101" hidden="false" shortName="DOT" publicationDate="2024" publisherUrl="https://www.warhammer.com/en-GB/shop/legions-imperialis-devastation-of-tallarn-2024-eng"/>
+    <publication name="Rise of the Dark Mechanicum" id="89ae-8b6d-da44-733f" hidden="false" shortName="RDM" publicationDate="2024"/>
   </publications>
   <costTypes>
     <costType id="ee95-a20e-f9ff-e2c2" name="‏‏‎‏points" defaultCostLimit="3000" hidden="false"/>
@@ -99,12 +100,12 @@
     <forceEntry name="Formations of Legend" id="1e4a-3c76-f375-bc07" hidden="false">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="ba86-e610-c6c4-9f21" targetId="3779-422e-5fe9-5654"/>
-        <categoryLink name="Standard Detachments" hidden="false" id="86c6-a699-531e-6266" targetId="e1e0-9c0e-7cab-b244" type="category">
+        <categoryLink name="Standard Detachments" hidden="false" id="86c6-a699-531e-6266" targetId="e1e0-9c0e-7cab-b244">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="dd17-e58c-2a4c-2085" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Expanded Detachments" hidden="false" id="6378-d46d-cb71-7bea" targetId="b2ba-773c-1cc5-56bc" type="category">
+        <categoryLink name="Expanded Detachments" hidden="false" id="6378-d46d-cb71-7bea" targetId="b2ba-773c-1cc5-56bc">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2895-f405-6073-1b4f" includeChildSelections="false"/>
           </constraints>
@@ -626,18 +627,22 @@ If a Detachment contains more than one model with this rule, the controlling pla
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38fe-949a-ffca-f477" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="71ba-48d2-4bac-7b28" name="Solar Auxilia" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="71ba-48d2-4bac-7b28" name="Solar Auxilia" hidden="false" collective="false" import="true" type="upgrade" publicationId="c1b8-2180-635c-14cd">
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="288d-7913-984c-5d0" name="Legiones Astartes" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="288d-7913-984c-5d0" name="Legiones Astartes" hidden="false" collective="false" import="true" type="upgrade" publicationId="c1b8-2180-635c-14cd">
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Collegia Titanica" hidden="false" id="6ce5-83db-2122-c90b" publicationId="89ae-8b6d-da44-733f"/>
+            <selectionEntry type="upgrade" import="true" name="Mechanicum Taghmata" hidden="false" id="f444-dd74-3457-560e" publicationId="89ae-8b6d-da44-733f"/>
+            <selectionEntry type="upgrade" import="true" name="Questoris Familia" hidden="false" id="20e0-b3b6-a24e-ebe6" publicationId="89ae-8b6d-da44-733f"/>
+            <selectionEntry type="upgrade" import="true" name="Dark Mechanicum" hidden="false" id="db41-ab79-2993-9b2a" publicationId="89ae-8b6d-da44-733f"/>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
