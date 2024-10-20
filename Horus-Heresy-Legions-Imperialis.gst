@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="26" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="27" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://www.warhammer.com/en-GB/shop/legions-imperialis-rulebook-hb-eng-2023"/>
     <publication id="eab5-2233-3200-3063" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -47,23 +47,43 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="d950-ad23-9b2-9325" name="HQ" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
-    <categoryEntry id="be19-7658-5258-71d9" name="Support" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
+    <categoryEntry id="d950-ad23-9b2-9325" name="HQ" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128">
+      <comment>Detachment type</comment>
+    </categoryEntry>
+    <categoryEntry id="be19-7658-5258-71d9" name="Support" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128">
+      <comment>Detachment type</comment>
+    </categoryEntry>
     <categoryEntry id="446a-abe3-63c3-5709" name="Core" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
-    <categoryEntry id="2005-60e5-e49d-32f2" name="Bastion" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
-    <categoryEntry id="3751-fb88-3656-b7d1" name="Transport" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
-    <categoryEntry id="8416-456c-a6f-e059" name="Vanguard" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
-    <categoryEntry id="3b81-6b3e-4546-ade3" name="Light Armour" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
-    <categoryEntry id="1f6b-d764-352d-1e74" name="Heavy Armour" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
-    <categoryEntry id="98f1-ce9c-c2b2-cea5" name="Artillery" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
-    <categoryEntry id="2879-da90-6a37-c897" name="Air Support" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
+    <categoryEntry id="2005-60e5-e49d-32f2" name="Bastion" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128">
+      <comment>Detachment type</comment>
+    </categoryEntry>
+    <categoryEntry id="3751-fb88-3656-b7d1" name="Transport" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128">
+      <comment>Detachment type</comment>
+    </categoryEntry>
+    <categoryEntry id="8416-456c-a6f-e059" name="Vanguard" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128">
+      <comment>Detachment type</comment>
+    </categoryEntry>
+    <categoryEntry id="3b81-6b3e-4546-ade3" name="Light Armour" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128">
+      <comment>Detachment type</comment>
+    </categoryEntry>
+    <categoryEntry id="1f6b-d764-352d-1e74" name="Heavy Armour" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128">
+      <comment>Detachment type</comment>
+    </categoryEntry>
+    <categoryEntry id="98f1-ce9c-c2b2-cea5" name="Artillery" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128">
+      <comment>Detachment type</comment>
+    </categoryEntry>
+    <categoryEntry id="2879-da90-6a37-c897" name="Air Support" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128">
+      <comment>Detachment type</comment>
+    </categoryEntry>
     <categoryEntry id="b1cc-138-d83e-2228" name="Compulsory" hidden="false"/>
     <categoryEntry id="15d9-8b7c-0b8e-3632" name="Allegiance" hidden="false" publicationId="c1b8-2180-635c-14cd" page="127"/>
     <categoryEntry id="68c1-de55-26b1-8ca4" name="Infantry (1)" hidden="false"/>
     <categoryEntry id="3779-422e-5fe9-5654" name="Configuration" hidden="false"/>
     <categoryEntry id="1b68-cce9-e11c-fde7" name="Loyalist" hidden="false"/>
     <categoryEntry id="437a-7951-c93d-1e14" name="Traitor" hidden="false"/>
-    <categoryEntry id="4e02-d7ec-4d81-d5fa" name="Battle Tank" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
+    <categoryEntry id="4e02-d7ec-4d81-d5fa" name="Battle Tank" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128">
+      <comment>Detachment type</comment>
+    </categoryEntry>
     <categoryEntry id="49b3-dae7-33f8-f8e" name="Vehicle (2)" hidden="false"/>
     <categoryEntry id="1a2a-6f7d-dff8-8be1" name="Walker (1)" hidden="false"/>
     <categoryEntry id="be9f-b973-245e-49bf" name="Super-heavy Vehicle (3)" hidden="false"/>
@@ -72,11 +92,17 @@
         <constraint field="limit::ee95-a20e-f9ff-e2c2" scope="roster" value="30" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="true" id="6530-6ad1-414a-fa00" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="13e3-8701-239a-fec9" name="Knight" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
-    <categoryEntry id="9072-16ad-262f-a980" name="Titan" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
+    <categoryEntry id="13e3-8701-239a-fec9" name="Knight (4)" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
+    <categoryEntry id="9072-16ad-262f-a980" name="Titan (5)" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
     <categoryEntry name="Cavalry (1)" hidden="false" id="4376-9c33-b1cc-bb06"/>
     <categoryEntry name="Standard Detachments" id="e1e0-9c0e-7cab-b244" hidden="false"/>
     <categoryEntry name="Expanded Detachments" id="b2ba-773c-1cc5-56bc" hidden="false"/>
+    <categoryEntry name="Knight" id="adde-db57-b7d8-2daa" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128">
+      <comment>Detachment type</comment>
+    </categoryEntry>
+    <categoryEntry name="Titan" id="1302-0157-2be4-3d34" hidden="false" publicationId="c1b8-2180-635c-14cd">
+      <comment>Detachment type</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="49dd-d763-6836-b4f8" hidden="true" name="Unbound Formation (Open Play)">
