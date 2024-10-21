@@ -17,7 +17,7 @@ jobs:
       # Create, pin, label, and assign release issue
       - name: create-issue
         id: issue
-        uses: imjohnbo/issue-bot@v3.4.0
+        uses: imjohnbo/issue-bot@v3.4.4
         with:
           pinned: true
           close-previous: true
