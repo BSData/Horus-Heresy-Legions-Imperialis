@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="40" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9674-a6b9-85b-97f5" name="Legiones Astartes" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="1" revision="41" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" id="9262-b11e-8b2c-1422" collective="false">
       <categoryLinks>
@@ -1947,7 +1947,19 @@
             <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="701d-2b43-5516-d12e">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6595-4402-40ac-9dfd"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="eeda-8d62-3abd-1ca8" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="eeda-8d62-3abd-1ca8">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2225,6 +2237,7 @@
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3790,6 +3803,7 @@
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4115,6 +4129,7 @@
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4559,6 +4574,7 @@
                 <modifier type="set" value="1" field="a4dd-a22f-9b79-24c1">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5459,6 +5475,7 @@
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5862,9 +5879,14 @@
           </selectionEntryGroups>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3ff3-f65b-01af-e00e" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3ff3-f65b-01af-e00e" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <selectionEntries>
@@ -5875,9 +5897,14 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="1" field="7afc-a58a-d78a-e8dd">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3ff3-f65b-01af-e00e" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3ff3-f65b-01af-e00e" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntry>
