@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="0fdc-12aa-6f3d-aa58" name="Collegia Titanica" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="27" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="Collegia Titanica" id="d965-f291-a87b-657f" hidden="false"/>
+    <categoryEntry name="Warhound" id="8cc0-dc3a-0dd0-a375" hidden="false">
+      <comment>Detachment Type</comment>
+    </categoryEntry>
+    <categoryEntry name="Dire Wolf" id="f8e1-555f-68bb-6744" hidden="false">
+      <comment>Detachment Type</comment>
+    </categoryEntry>
+    <categoryEntry name="Warlord" id="7524-919b-1bbd-3a00" hidden="false">
+      <comment>Detachment Type</comment>
+    </categoryEntry>
+    <categoryEntry name="Warbringer Nemesis" id="6203-da0b-b61a-fa17" hidden="false">
+      <comment>Detachment Type</comment>
+    </categoryEntry>
+    <categoryEntry name="Warmaster" id="41d1-121f-2255-f1df" hidden="false">
+      <comment>Detachment Type</comment>
+    </categoryEntry>
+    <categoryEntry name="Reaver" id="5609-1005-053e-b8b8" hidden="false">
+      <comment>Detachment Type</comment>
+    </categoryEntry>
+  </categoryEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Titans - Library" id="3e45-aa15-13b4-70a7" targetId="87f1-3ef8-7e7b-e34c"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Dire Wolf Heavy Scout Titan" hidden="false" id="6532-3f60-2f62-1b5c" type="selectionEntry" targetId="2705-7537-ed22-4f71">
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
+        <modifier type="add" value="d965-f291-a87b-657f" field="category"/>
+        <modifier type="add" value="f8e1-555f-68bb-6744" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Reaver Battle Titan" hidden="false" id="e5fe-23ea-99ef-5b45" type="selectionEntry" targetId="7372-9394-4311-6fe8">
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
+        <modifier type="add" value="d965-f291-a87b-657f" field="category"/>
+        <modifier type="add" value="5609-1005-053e-b8b8" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Warbringer Nemesis Titan" hidden="false" id="b98f-5a3a-c118-1625" type="selectionEntry" targetId="c0dd-9489-2ecf-d365">
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
+        <modifier type="add" value="d965-f291-a87b-657f" field="category"/>
+        <modifier type="add" value="6203-da0b-b61a-fa17" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Warlord Battle Titan" hidden="false" id="84e8-eee5-0370-a8d8" type="selectionEntry" targetId="be3b-2664-afdb-9482">
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
+        <modifier type="add" value="d965-f291-a87b-657f" field="category"/>
+        <modifier type="add" value="7524-919b-1bbd-3a00" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Warmaster Heavy Battle Titan" hidden="false" id="a246-9bed-5b81-30ad" type="selectionEntry" targetId="a2ce-f13c-9a98-9edc">
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
+        <modifier type="add" value="d965-f291-a87b-657f" field="category"/>
+        <modifier type="add" value="41d1-121f-2255-f1df" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Warmaster Iconoclast Titan" hidden="false" id="d3dc-d2b8-1bc8-c5da" type="selectionEntry" targetId="f165-14f9-5315-70a2">
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
+        <modifier type="add" value="d965-f291-a87b-657f" field="category"/>
+        <modifier type="add" value="41d1-121f-2255-f1df" field="category"/>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <forceEntries>
+    <forceEntry name="Axiom Battleline Maniple" id="fa2a-ae12-7ed8-6178" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <infoLinks>
+        <infoLink name="Configuration" id="0259-d482-4a85-f18e" hidden="false" targetId="3779-422e-5fe9-5654" type="category"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Warlord" hidden="false" id="20a2-67eb-3184-2d34" targetId="7524-919b-1bbd-3a00" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="4d20-e7a8-bfb6-eeef-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4d20-e7a8-bfb6-eeef-max" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Reaver" hidden="false" id="95b6-a7a7-56f6-04c4" targetId="5609-1005-053e-b8b8" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="528f-563d-0431-e99c" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="9e6c-02d2-5125-ec29" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Lupercal Light Maniple" id="666d-9045-0a44-9bb3" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <infoLinks>
+        <infoLink name="Configuration" id="c378-a7c4-0940-536b" hidden="false" targetId="3779-422e-5fe9-5654"/>
+      </infoLinks>
+    </forceEntry>
+    <forceEntry name="Purgigatus Heavy Maniple" id="8c0d-140b-4232-9e59" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <infoLinks>
+        <infoLink name="Configuration" id="f06f-2de3-c7c2-1639" hidden="false" targetId="3779-422e-5fe9-5654"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Warmaster" hidden="false" id="71c4-c5c9-a514-32f5" targetId="41d1-121f-2255-f1df" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8d60-23b7-7090-2d0d" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="fbc7-691b-4560-fa0e" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Warbringer Nemesis" hidden="false" id="2d7a-41a4-2f10-f6ef" targetId="6203-da0b-b61a-fa17" type="category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="4ca5-d137-7b0d-d383" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Ruptura Battleline Maniple" id="3830-733f-37e7-8731" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <infoLinks>
+        <infoLink name="Configuration" id="76b7-4b92-d40a-6645" hidden="false" targetId="3779-422e-5fe9-5654"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Warbringer Nemesis" hidden="false" id="3546-6a31-c57e-a65a" targetId="6203-da0b-b61a-fa17">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="5d9e-e1a1-f6aa-af31-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="5d9e-e1a1-f6aa-af31-max" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Reaver" hidden="false" id="863f-e32e-7e71-f496" targetId="5609-1005-053e-b8b8" type="category">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="a564-1314-a1ce-f43c" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Ferrox Light Maniple" id="5a37-d39f-e079-f251" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <infoLinks>
+        <infoLink name="Configuration" id="96cd-9315-563f-8072" hidden="false" targetId="3779-422e-5fe9-5654"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Reaver" hidden="false" id="6289-a90c-1887-f565" targetId="5609-1005-053e-b8b8">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="c4fd-ee48-4ac0-6b95" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="bdf5-b3e1-919d-613a" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Corsair Battleline Maniple" id="c82f-752d-6da0-4687" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <infoLinks>
+        <infoLink name="Configuration" id="ac7c-cb3e-b9d4-f3b2" hidden="false" targetId="3779-422e-5fe9-5654"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Reaver" hidden="false" id="f273-d3fd-b1c3-24b9" targetId="5609-1005-053e-b8b8">
+          <constraints>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="535d-6e01-bf29-cffe" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="b344-2794-68d2-a6d2" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+</catalogue>
