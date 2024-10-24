@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="27" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="28" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://www.warhammer.com/en-GB/shop/legions-imperialis-rulebook-hb-eng-2023"/>
     <publication id="eab5-2233-3200-3063" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
@@ -119,8 +119,8 @@
         <categoryLink name="Support" hidden="false" id="e1eb-be58-1112-e7d9" targetId="be19-7658-5258-71d9"/>
         <categoryLink name="Transport" hidden="false" id="5289-bb8f-66be-c9cb" targetId="3751-fb88-3656-b7d1"/>
         <categoryLink name="Vanguard" hidden="false" id="beb-b6e2-8aac-f9c2" targetId="8416-456c-a6f-e059"/>
-        <categoryLink name="Knight" hidden="false" id="17c-5158-3e04-e1f6" targetId="13e3-8701-239a-fec9"/>
-        <categoryLink name="Titan" hidden="false" id="c84b-708c-d3ad-3ca7" targetId="9072-16ad-262f-a980"/>
+        <categoryLink name="Knight (4)" hidden="false" id="17c-5158-3e04-e1f6" targetId="13e3-8701-239a-fec9"/>
+        <categoryLink name="Titan (5)" hidden="false" id="c84b-708c-d3ad-3ca7" targetId="9072-16ad-262f-a980"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Formations of Legend" id="1e4a-3c76-f375-bc07" hidden="false">
@@ -658,17 +658,27 @@ If a Detachment contains more than one model with this rule, the controlling pla
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
+              <comment>primary army</comment>
             </selectionEntry>
             <selectionEntry id="288d-7913-984c-5d0" name="Legiones Astartes" hidden="false" collective="false" import="true" type="upgrade" publicationId="c1b8-2180-635c-14cd">
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
+              <comment>primary army</comment>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Collegia Titanica" hidden="false" id="6ce5-83db-2122-c90b" publicationId="89ae-8b6d-da44-733f"/>
-            <selectionEntry type="upgrade" import="true" name="Mechanicum Taghmata" hidden="false" id="f444-dd74-3457-560e" publicationId="89ae-8b6d-da44-733f"/>
-            <selectionEntry type="upgrade" import="true" name="Questoris Familia" hidden="false" id="20e0-b3b6-a24e-ebe6" publicationId="89ae-8b6d-da44-733f"/>
-            <selectionEntry type="upgrade" import="true" name="Dark Mechanicum" hidden="false" id="db41-ab79-2993-9b2a" publicationId="89ae-8b6d-da44-733f"/>
+            <selectionEntry type="upgrade" import="true" name="Collegia Titanica" hidden="false" id="6ce5-83db-2122-c90b" publicationId="89ae-8b6d-da44-733f">
+              <comment>primary army</comment>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mechanicum Taghmata" hidden="false" id="f444-dd74-3457-560e" publicationId="89ae-8b6d-da44-733f">
+              <comment>primary army</comment>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Questoris Familia" hidden="false" id="20e0-b3b6-a24e-ebe6" publicationId="89ae-8b6d-da44-733f">
+              <comment>primary army</comment>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dark Mechanicum" hidden="false" id="db41-ab79-2993-9b2a" publicationId="89ae-8b6d-da44-733f">
+              <comment>primary army</comment>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>

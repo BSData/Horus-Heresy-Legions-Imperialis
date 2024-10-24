@@ -23,6 +23,7 @@
   </categoryEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Titans - Library" id="3e45-aa15-13b4-70a7" targetId="87f1-3ef8-7e7b-e34c"/>
+    <catalogueLink type="catalogue" name="Knights - Library" id="4251-598f-f305-a61a" targetId="f3a4-9e88-df35-47b9"/>
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Dire Wolf Heavy Scout Titan" hidden="false" id="6532-3f60-2f62-1b5c" type="selectionEntry" targetId="2705-7537-ed22-4f71">
@@ -67,45 +68,106 @@
         <modifier type="add" value="41d1-121f-2255-f1df" field="category"/>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Warhound Hunting Pack" hidden="false" id="d30d-1d93-1e35-e357" type="selectionEntry" targetId="1e0f-2bf5-af80-8846">
+      <modifiers>
+        <modifier type="add" value="d965-f291-a87b-657f" field="category"/>
+        <modifier type="add" value="8cc0-dc3a-0dd0-a375" field="category"/>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <forceEntries>
     <forceEntry name="Axiom Battleline Maniple" id="fa2a-ae12-7ed8-6178" hidden="false" publicationId="89ae-8b6d-da44-733f">
       <categoryLinks>
-        <categoryLink name="Configuration" id="0259-d482-4a85-f18e" hidden="false" targetId="3779-422e-5fe9-5654" type="category"/>
-        <categoryLink name="Warlord" hidden="false" id="20a2-67eb-3184-2d34" targetId="7524-919b-1bbd-3a00" type="category">
+        <categoryLink name="Configuration" id="0259-d482-4a85-f18e" hidden="false" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="Warlord" hidden="false" id="20a2-67eb-3184-2d34" targetId="7524-919b-1bbd-3a00">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="4d20-e7a8-bfb6-eeef-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4d20-e7a8-bfb6-eeef-max" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Reaver" hidden="false" id="95b6-a7a7-56f6-04c4" targetId="5609-1005-053e-b8b8" type="category">
+        <categoryLink name="Reaver" hidden="false" id="95b6-a7a7-56f6-04c4" targetId="5609-1005-053e-b8b8">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="528f-563d-0431-e99c" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="9e6c-02d2-5125-ec29" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Warhound" hidden="false" id="b454-d187-d6c9-5f93" targetId="8cc0-dc3a-0dd0-a375" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="5e3c-624b-7b50-6908-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5e3c-624b-7b50-6908-max" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true"/>
+              </conditions>
+              <comment>only allowed if primary army</comment>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry name="Lupercal Light Maniple" id="666d-9045-0a44-9bb3" hidden="false" publicationId="89ae-8b6d-da44-733f">
-      <infoLinks>
-        <categoryLink name="Configuration" id="c378-a7c4-0940-536b" hidden="false" targetId="3779-422e-5fe9-5654"/>
-      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true"/>
+              </conditions>
+              <comment>only allowed if primary army</comment>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="8627-9634-1a0b-4673" targetId="3779-422e-5fe9-5654"/>
+      </categoryLinks>
     </forceEntry>
     <forceEntry name="Purgigatus Heavy Maniple" id="8c0d-140b-4232-9e59" hidden="false" publicationId="89ae-8b6d-da44-733f">
       <categoryLinks>
         <categoryLink name="Configuration" id="f06f-2de3-c7c2-1639" hidden="false" targetId="3779-422e-5fe9-5654"/>
-        <categoryLink name="Warmaster" hidden="false" id="71c4-c5c9-a514-32f5" targetId="41d1-121f-2255-f1df" type="category">
+        <categoryLink name="Warmaster" hidden="false" id="71c4-c5c9-a514-32f5" targetId="41d1-121f-2255-f1df">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8d60-23b7-7090-2d0d" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="fbc7-691b-4560-fa0e" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Warbringer Nemesis" hidden="false" id="2d7a-41a4-2f10-f6ef" targetId="6203-da0b-b61a-fa17" type="category">
+        <categoryLink name="Warbringer Nemesis" hidden="false" id="2d7a-41a4-2f10-f6ef" targetId="6203-da0b-b61a-fa17">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="4ca5-d137-7b0d-d383" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true"/>
+              </conditions>
+              <comment>only allowed if primary army</comment>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry name="Ruptura Battleline Maniple" id="3830-733f-37e7-8731" hidden="false" publicationId="89ae-8b6d-da44-733f">
       <categoryLinks>
@@ -116,12 +178,28 @@
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="5d9e-e1a1-f6aa-af31-max" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Reaver" hidden="false" id="863f-e32e-7e71-f496" targetId="5609-1005-053e-b8b8" type="category">
+        <categoryLink name="Reaver" hidden="false" id="863f-e32e-7e71-f496" targetId="5609-1005-053e-b8b8">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="a564-1314-a1ce-f43c" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true"/>
+              </conditions>
+              <comment>only allowed if primary army</comment>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry name="Ferrox Light Maniple" id="5a37-d39f-e079-f251" hidden="false" publicationId="89ae-8b6d-da44-733f">
       <categoryLinks>
@@ -133,6 +211,22 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true"/>
+              </conditions>
+              <comment>only allowed if primary army</comment>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry name="Corsair Battleline Maniple" id="c82f-752d-6da0-4687" hidden="false" publicationId="89ae-8b6d-da44-733f">
       <categoryLinks>
@@ -144,6 +238,22 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true"/>
+              </conditions>
+              <comment>only allowed if primary army</comment>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
 </catalogue>
