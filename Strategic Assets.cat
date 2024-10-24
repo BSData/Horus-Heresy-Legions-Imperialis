@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="76ec-afbd-859f-876e" name="Strategic Assets" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="4c79-51fb-1b1a-a287" name="Knight Household Lance" hidden="false">
       <categoryLinks>
-        <categoryLink name="Knight" hidden="false" id="eb48-b7fa-4470-186f" targetId="adde-db57-b7d8-2daa" type="category">
+        <categoryLink name="Knight" hidden="false" id="eb48-b7fa-4470-186f" targetId="adde-db57-b7d8-2daa">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b491-3302-6423-3143-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b491-3302-6423-3143-max"/>
@@ -72,6 +72,11 @@
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Warmaster Iconoclast Titan" hidden="false" id="f30b-9d6f-c9f4-4c34" type="selectionEntry" targetId="f165-14f9-5315-70a2">
+      <modifiers>
+        <modifier type="add" value="76ec-afbd-859f-876e" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Warhound Hunting Pack" hidden="false" id="81ba-90a7-a52e-64cc" type="selectionEntry" targetId="1e0f-2bf5-af80-8846">
       <modifiers>
         <modifier type="add" value="76ec-afbd-859f-876e" field="category"/>
       </modifiers>
