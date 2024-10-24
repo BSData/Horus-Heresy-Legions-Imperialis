@@ -98,6 +98,11 @@
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5e3c-624b-7b50-6908-max" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Knight" hidden="false" id="c51c-c12e-5cbf-c802" targetId="adde-db57-b7d8-2daa" type="category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="8be2-ab69-bc1d-78f1" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -135,6 +140,17 @@
       </modifiers>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="8627-9634-1a0b-4673" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="Warhound" hidden="false" id="c34d-b883-618c-d301" targetId="8cc0-dc3a-0dd0-a375" type="category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="fa3a-6daf-b2f5-c39a" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="2d5f-f0e9-4213-0a1f" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Dire Wolf" hidden="false" id="d4bb-ab40-282f-a6f8" targetId="f8e1-555f-68bb-6744" type="category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="d09a-7054-f0bb-8056" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Purgigatus Heavy Maniple" id="8c0d-140b-4232-9e59" hidden="false" publicationId="89ae-8b6d-da44-733f">
@@ -143,12 +159,17 @@
         <categoryLink name="Warmaster" hidden="false" id="71c4-c5c9-a514-32f5" targetId="41d1-121f-2255-f1df">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8d60-23b7-7090-2d0d" includeChildSelections="false"/>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="fbc7-691b-4560-fa0e" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="fbc7-691b-4560-fa0e" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Warbringer Nemesis" hidden="false" id="2d7a-41a4-2f10-f6ef" targetId="6203-da0b-b61a-fa17">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="4ca5-d137-7b0d-d383" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Warlord" hidden="false" id="5ec2-7f10-c88a-ed6c" targetId="7524-919b-1bbd-3a00" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5e6d-2607-91ef-0043" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -183,6 +204,11 @@
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="a564-1314-a1ce-f43c" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Knight" hidden="false" id="8e51-bf97-8411-0562" targetId="adde-db57-b7d8-2daa">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="84d5-4a10-8edf-19ed" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -210,6 +236,22 @@
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="bdf5-b3e1-919d-613a" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Warhound" hidden="false" id="54f3-3e22-d33b-4aca" targetId="8cc0-dc3a-0dd0-a375" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d8a7-0d52-4b77-9605" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="6948-5771-9815-6a68" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Dire Wolf" hidden="false" id="fa60-38f1-4333-05df" targetId="f8e1-555f-68bb-6744" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4ca8-e498-bb9e-3e4f" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Knight" hidden="false" id="9e4b-1e80-ea51-c974" targetId="adde-db57-b7d8-2daa">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bbc3-6be2-b185-59a4" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -235,6 +277,11 @@
           <constraints>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="535d-6e01-bf29-cffe" includeChildSelections="false"/>
             <constraint type="min" value="2" field="selections" scope="force" shared="true" id="b344-2794-68d2-a6d2" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Knight" hidden="false" id="e9e9-71cb-2dd7-1acb" targetId="adde-db57-b7d8-2daa">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1443-3bfc-710d-1512" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
