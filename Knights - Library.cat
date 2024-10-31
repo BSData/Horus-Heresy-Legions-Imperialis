@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f3a4-9e88-df35-47b9" name="Knights - Library" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="27" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="f3a4-9e88-df35-47b9" name="Knights - Library" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="27" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Heavy Stubber" hidden="false" id="f8d4-5957-94bc-651b" collective="false">
       <profiles>
@@ -128,6 +128,9 @@
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="2"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="13e3-8701-239a-fec9" id="67ee-d744-0b45-bb15" primary="false" name="Knight (4)"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="fac6-f726-43ac-1e45" collective="false">
       <profiles>
@@ -280,6 +283,9 @@
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="2"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="13e3-8701-239a-fec9" id="0bdd-d6cc-5405-0aff" primary="false" name="Knight (4)"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rapid-fire Battlecannon" hidden="false" id="1b05-5562-161f-7647" collective="false">
       <profiles>
@@ -448,6 +454,18 @@
               </costs>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="dc16-10f4-edf3-e945">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true" includeChildForces="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true" includeChildForces="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Acastus Knights" id="cb00-f21c-6bef-17ba" hidden="false" collective="false" import="true" defaultSelectionEntryId="6da8-fb94-f471-9826">
           <constraints>
@@ -822,6 +840,18 @@
               </costs>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="5d84-198c-fd46-0ddf" scope="parent">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true" includeChildForces="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true" includeChildForces="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Cerastus Knights" id="d909-f258-0c3a-a435" hidden="false" collective="false" import="true">
           <constraints>
@@ -1262,6 +1292,18 @@
               </costs>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="9296-8b15-0833-b162">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true" includeChildForces="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true" includeChildForces="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Questoris Knights" id="b340-8d29-2e25-bc2c" hidden="false" collective="false" import="true" defaultSelectionEntryId="7174-1e8e-3a1f-2dde">
           <constraints>

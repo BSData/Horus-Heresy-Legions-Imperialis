@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="e123-f142-1cb1-55ac" name="Knight Household" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Knights - Library" id="4036-0c45-edb2-6d21" targetId="f3a4-9e88-df35-47b9"/>
+  </catalogueLinks>
+  <forceEntries>
+    <forceEntry name="Barony Guard Lance" id="4ddc-ea92-f616-6a27" hidden="false" publicationId="89ae-8b6d-da44-733f" page="90">
+      <rules>
+        <rule name="Senechal" id="8973-3cec-3104-08b1" hidden="false" publicationId="89ae-8b6d-da44-733f" page="90">
+          <description>After this formation is deployed, or after all deployment is finished if the Formation is deployed in Reserves, choose one model that is part of a Compulsory Detachment to be upgraded to a Baron for free. A model upgraded in this way increases its CAF by +2 and its Wounds characteristic by 1.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Questoris Knight Banner" hidden="false" id="879f-a8bd-3701-ebad" targetId="b2bb-ab05-f014-3b33" type="category">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="040b-1d8f-09b6-8262"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0222-9625-be71-553b" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Cerastus Knight Banner" hidden="false" id="4244-1fd3-d780-4930" targetId="7e81-3342-b50d-b304" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e69-8ba8-f1d7-5e0d" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a59a-1925-c34b-66a5" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Armiger Knight Banner" hidden="false" id="ff04-20d4-93db-b5a0" targetId="fe26-cfac-c306-cfd8" type="category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="40af-66d6-edb9-6532" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Configuration" hidden="false" id="322c-5cff-5660-ad49" targetId="3779-422e-5fe9-5654" type="category"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true"/>
+              </conditions>
+              <comment>only allowed if primary army</comment>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </forceEntry>
+    <forceEntry name="Vanguard Lance" id="78e8-f8ec-281a-c21a" hidden="false" publicationId="89ae-8b6d-da44-733f" page="90">
+      <rules>
+        <rule name="Household Spear" id="07e9-63bb-b2fd-2ae0" hidden="false" publicationId="89ae-8b6d-da44-733f" page="90">
+          <description>Detachments in this Formation gain the Forward Deployment special rule</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Cerastus Knight Banner" hidden="false" id="42fd-480d-5327-5910" targetId="7e81-3342-b50d-b304">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7a1d-d3cd-d284-2142" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="04ed-9722-4d2d-28c1" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Forward Deployment" id="0d3b-3c9c-7c7f-f33a" hidden="false" type="rule" targetId="54b4-67fd-a64-86d5"/>
+          </infoLinks>
+        </categoryLink>
+        <categoryLink name="Armiger Knight Banner" hidden="false" id="d777-7ecf-3a6e-0fc8" targetId="fe26-cfac-c306-cfd8">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="cb1f-25a9-2a55-e94b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1140-d82d-745f-70a7" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Forward Deployment" id="22cc-f3b4-95d9-4425" hidden="false" type="rule" targetId="54b4-67fd-a64-86d5"/>
+          </infoLinks>
+        </categoryLink>
+        <categoryLink name="Configuration" hidden="false" id="85ed-bea4-bb64-5c4c" targetId="3779-422e-5fe9-5654"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true"/>
+              </conditions>
+              <comment>only allowed if primary army</comment>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </forceEntry>
+    <forceEntry name="Bastion Lance" id="9173-518b-df10-c672" hidden="false" publicationId="89ae-8b6d-da44-733f" page="91">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="6597-bc21-e131-96d1" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="Acastus Knight Banner" hidden="false" id="7b47-fb12-9074-62bc" targetId="0d15-eaf4-cef8-8841" type="category">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3d41-9bec-2ae2-7ea1" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5d09-e37a-8a71-069f" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Questoris Knight Banner" hidden="false" id="7fa6-0211-4aa5-58dc" targetId="b2bb-ab05-f014-3b33" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="19d0-0b4e-0163-bce3" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bab9-195e-89bb-8040" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Armiger Knight Banner" hidden="false" id="3c97-d6e1-9a37-e325" targetId="fe26-cfac-c306-cfd8">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="84ca-3d2d-4f40-b0b1" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true"/>
+              </conditions>
+              <comment>only allowed if primary army</comment>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </forceEntry>
+    <forceEntry name="Bonded Household Lance" id="0624-634d-f547-038c" hidden="false" publicationId="89ae-8b6d-da44-733f" page="91">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="f427-6aaa-bccf-3a33" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="Questoris Knight Banner" hidden="false" id="9f8e-5715-0069-9b55" targetId="b2bb-ab05-f014-3b33">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2c22-4fc6-6507-e4aa" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7769-185d-7cc4-ecbe" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Acastus Knight Banner" hidden="false" id="dc34-3b96-7feb-558b" targetId="0d15-eaf4-cef8-8841">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10c1-4d5f-42c7-2366" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Cerastus Knight Banner" hidden="false" id="81fc-f70c-f028-e0e8" targetId="7e81-3342-b50d-b304">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffae-0466-1d0b-903b" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Armiger Knight Banner" hidden="false" id="7544-9e99-783d-ce60" targetId="fe26-cfac-c306-cfd8">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c150-4346-4b49-8ba7" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+      <rules>
+        <rule name="Favoured by the Omnissiah" id="0e17-7e64-d15a-685a" hidden="false" publicationId="89ae-8b6d-da44-733f" page="91">
+          <description>All Questoris Knights in this Formation must have the Knight Styrix or Knight Magaera weapon loadout. All Armiger slots must be filled with Mechanicum Knight Moirax Talons.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true"/>
+              </conditions>
+              <comment>only allowed if primary army</comment>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </forceEntry>
+  </forceEntries>
+  <categoryEntries>
+    <categoryEntry name="Questoris Knight Banner" id="b2bb-ab05-f014-3b33" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <comment>detachment role</comment>
+    </categoryEntry>
+    <categoryEntry name="Acastus Knight Banner" id="0d15-eaf4-cef8-8841" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <comment>detachment role</comment>
+    </categoryEntry>
+    <categoryEntry name="Cerastus Knight Banner" id="7e81-3342-b50d-b304" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <comment>detachment role</comment>
+    </categoryEntry>
+    <categoryEntry name="Armiger Knight Banner" id="fe26-cfac-c306-cfd8" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <comment>detachment role</comment>
+    </categoryEntry>
+  </categoryEntries>
+  <sharedRules>
+    <rule name="Knight Retainers" id="b436-dcf6-8ab0-8ed5" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <description>Knight Armiger and Knight Moirax models within a Knight Household Formation have a Tactical Strength of 3 instead of 1</description>
+    </rule>
+  </sharedRules>
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Questoris Knight Armiger Talon" hidden="false" id="6464-f38a-80ec-ad09" publicationId="89ae-8b6d-da44-733f">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="fe26-cfac-c306-cfd8" id="a06d-57c4-2568-5334" primary="true" name="Armiger Knight Banner"/>
+        <categoryLink targetId="adde-db57-b7d8-2daa" id="53e4-0371-282a-d984" primary="false" name="Knight"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Questoris Knight Armiger Talon" hidden="false" id="b617-fe56-85e3-a029" type="selectionEntry" targetId="de00-e514-4eba-7180" defaultAmount="3">
+          <infoLinks>
+            <infoLink name="Knight Retainers" id="5036-3dd8-77b3-8efb" hidden="false" type="rule" targetId="b436-dcf6-8ab0-8ed5"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0a37-d92c-16e6-f91b"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="e756-33a5-4549-a2d9"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="13e3-8701-239a-fec9" id="3834-a83f-27a6-fac7" primary="false" name="Knight (4)"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="340" field="ee95-a20e-f9ff-e2c2" scope="parent">
+              <conditions>
+                <condition type="atLeast" value="4" field="selections" scope="parent" childId="any" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="500" field="ee95-a20e-f9ff-e2c2" scope="parent">
+              <conditions>
+                <condition type="atLeast" value="7" field="selections" scope="parent" childId="any" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6" field="0a37-d92c-16e6-f91b" scope="parent">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="4" field="selections" scope="parent" childId="any" shared="true"/>
+                    <condition type="lessThan" value="6" field="selections" scope="parent" childId="any" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="9" field="0a37-d92c-16e6-f91b" scope="parent">
+              <conditions>
+                <condition type="atLeast" value="7" field="selections" scope="parent" childId="any" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="58e0-0a2e-d3d1-ba8a" publicationId="89ae-8b6d-da44-733f">
+      <categoryLinks>
+        <categoryLink targetId="fe26-cfac-c306-cfd8" id="5004-43b5-0053-2d57" primary="true" name="Armiger Knight Banner"/>
+        <categoryLink targetId="adde-db57-b7d8-2daa" id="0082-fd4e-1399-2a3c" primary="false" name="Knight"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="200"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="a64e-4417-b784-1f85" type="selectionEntry" targetId="d17f-b74a-2a3f-96a0" defaultAmount="3">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5272-8c0f-a5e2-3be7"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="8d68-661a-7384-7649"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="380" field="ee95-a20e-f9ff-e2c2" scope="parent">
+              <conditions>
+                <condition type="atLeast" value="4" field="selections" scope="parent" childId="any" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="560" field="ee95-a20e-f9ff-e2c2" scope="parent">
+              <conditions>
+                <condition type="atLeast" value="7" field="selections" scope="parent" childId="any" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6" field="5272-8c0f-a5e2-3be7" scope="parent">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="4" field="selections" scope="parent" childId="any" shared="true"/>
+                    <condition type="lessThan" value="6" field="selections" scope="parent" childId="any" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="9" field="5272-8c0f-a5e2-3be7" scope="parent">
+              <conditions>
+                <condition type="atLeast" value="7" field="selections" scope="parent" childId="any" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Knight Retainers" id="2c56-e17a-9ed5-0dd3" hidden="false" type="rule" targetId="b436-dcf6-8ab0-8ed5"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="13e3-8701-239a-fec9" id="9166-5172-527d-6af8" primary="false" name="Knight (4)"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
+      </modifiers>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Acastus Knight Banner" hidden="false" id="16e1-c6c8-5dbe-587e" type="selectionEntry" targetId="5086-f7e3-be56-2722">
+      <categoryLinks>
+        <categoryLink targetId="0d15-eaf4-cef8-8841" id="8bb5-1507-4801-3d0d" primary="true" name="Acastus Knight Banner"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Cerastus Knight Banner" hidden="false" id="e2b4-9aa0-4d4d-6248" type="selectionEntry" targetId="fe2f-03c8-9187-8b2e">
+      <categoryLinks>
+        <categoryLink targetId="7e81-3342-b50d-b304" id="fa69-b7bf-629b-c7f1" primary="true" name="Cerastus Knight Banner"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Questoris Knight Banner" hidden="false" id="fe92-4eb2-08e9-596e" type="selectionEntry" targetId="f90d-f5dd-52b7-1442">
+      <categoryLinks>
+        <categoryLink targetId="b2bb-ab05-f014-3b33" id="4a92-8234-f00f-3232" primary="true" name="Questoris Knight Banner"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+</catalogue>
