@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3f82-29c5-dcbe-7b9e" name="Mechanicum Taghmata" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3f82-29c5-dcbe-7b9e" name="Mechanicum Taghmata" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Knights - Library" id="de79-4290-1daa-5aa1" targetId="f3a4-9e88-df35-47b9"/>
     <catalogueLink type="catalogue" name="Titans - Library" id="18dc-bb9f-46d1-aaee" targetId="87f1-3ef8-7e7b-e34c"/>
@@ -9,32 +9,32 @@
     <forceEntry name="Autokratorii Regiment" id="7ea4-70ef-6360-b1a5" hidden="false" publicationId="89ae-8b6d-da44-733f">
       <rules>
         <rule name="Cortex Controller" id="1a4c-dac5-3f4f-13ac" hidden="false" publicationId="89ae-8b6d-da44-733f">
-          <comment>One Vehicle model from a Compulsory Detachment may be upgraded with the Cortex Controller special rule for +10 points.</comment>
+          <description>One Vehicle model from a Compulsory Detachment may be upgraded with the Cortex Controller special rule for +10 points.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink name="Battle Tank" hidden="false" id="97c8-a67c-036a-1f47" targetId="4e02-d7ec-4d81-d5fa" type="category">
+        <categoryLink name="Battle Tank" hidden="false" id="97c8-a67c-036a-1f47" targetId="4e02-d7ec-4d81-d5fa">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="force" shared="true" id="70d6-40e6-8e6c-33f9" includeChildSelections="false"/>
             <constraint type="max" value="4" field="selections" scope="force" shared="true" id="120a-3364-2591-894c" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="HQ" hidden="false" id="2c16-8c2f-70b1-75d8" targetId="d950-ad23-9b2-9325" type="category">
+        <categoryLink name="HQ" hidden="false" id="2c16-8c2f-70b1-75d8" targetId="d950-ad23-9b2-9325">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4d50-7ec2-944f-8791" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support" hidden="false" id="a84d-86c4-113e-4c2e" targetId="be19-7658-5258-71d9" type="category">
+        <categoryLink name="Support" hidden="false" id="a84d-86c4-113e-4c2e" targetId="be19-7658-5258-71d9">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="7642-38bf-ab7d-0b45" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Transport" hidden="false" id="a2f8-c16a-eef4-3f79" targetId="3751-fb88-3656-b7d1" type="category">
+        <categoryLink name="Transport" hidden="false" id="a2f8-c16a-eef4-3f79" targetId="3751-fb88-3656-b7d1">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="a238-0662-36b9-2c83" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Titan" hidden="false" id="b9b6-2274-35c1-a05a" targetId="1302-0157-2be4-3d34" type="category">
+        <categoryLink name="Titan" hidden="false" id="b9b6-2274-35c1-a05a" targetId="1302-0157-2be4-3d34">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9036-a285-876b-5a62" includeChildSelections="false"/>
           </constraints>
@@ -46,7 +46,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Knight" hidden="false" id="9f85-15c5-4a47-3f71" targetId="adde-db57-b7d8-2daa" type="category">
+        <categoryLink name="Knight" hidden="false" id="9f85-15c5-4a47-3f71" targetId="adde-db57-b7d8-2daa">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="d983-9660-bf14-c7ac" includeChildSelections="false"/>
           </constraints>
@@ -58,8 +58,55 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Configuration" hidden="false" id="482f-0ea3-7cd6-4074" targetId="3779-422e-5fe9-5654" type="category"/>
+        <categoryLink name="Configuration" hidden="false" id="482f-0ea3-7cd6-4074" targetId="3779-422e-5fe9-5654"/>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="Legio Cybernetica Cohort TODO" id="94a5-a718-28c1-4053" hidden="false"/>
+    <forceEntry name="Taghmata Sub-covenant TODO" id="431c-12c3-ba14-3f08" hidden="false"/>
+    <forceEntry name="Ordo Reductor Subdivision TODO" id="5e65-d97a-8c71-91f8" hidden="false"/>
   </forceEntries>
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Krios Venator Squadron TODO" hidden="false" id="6821-4151-cacf-2e3a" publicationId="89ae-8b6d-da44-733f">
+      <categoryLinks>
+        <categoryLink targetId="4e02-d7ec-4d81-d5fa" id="3e00-203d-eb08-bded" primary="true" name="Battle Tank"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="d26b-dcdf-f8a2-f68e" primary="false" name="Vehicle (2)"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Castellax Battle-Automata Maniple TODO" hidden="false" id="0ced-f4d5-23e1-904e" publicationId="89ae-8b6d-da44-733f">
+      <categoryLinks>
+        <categoryLink targetId="be19-7658-5258-71d9" id="ed2d-9afc-b946-e9da" primary="true" name="Support"/>
+        <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="4cde-980d-beb1-b75a" primary="false" name="Walker (1)"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Domitar Battle-Automata Maniple TODO" hidden="false" id="fd80-a4c7-499e-8f62" publicationId="89ae-8b6d-da44-733f">
+      <categoryLinks>
+        <categoryLink targetId="be19-7658-5258-71d9" id="eff4-a828-b55b-d33e" primary="true" name="Support"/>
+        <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="3d0d-8a52-118e-1e96" primary="false" name="Walker (1)"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vorax Battle-Automata Maniple TODO" hidden="false" id="a52e-6d86-77e8-eb2b" publicationId="89ae-8b6d-da44-733f">
+      <categoryLinks>
+        <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="aadb-9bdf-8435-b808" primary="false" name="Walker (1)"/>
+        <categoryLink targetId="8416-456c-a6f-e059" id="14ac-eb2d-f9e5-d5b4" primary="true" name="Vanguard"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vulturax Strator-Automata Squadron TODO" hidden="false" id="73f1-bdac-a4dc-3d08" publicationId="89ae-8b6d-da44-733f">
+      <categoryLinks>
+        <categoryLink targetId="8416-456c-a6f-e059" id="2a55-271a-6897-8a8e" primary="true" name="Vanguard"/>
+        <categoryLink targetId="4376-9c33-b1cc-bb06" id="ccdc-d327-9014-3408" primary="false" name="Cavalry (1)"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Thanatar Siege-Automata Maniple TODO" hidden="false" id="631b-6adf-85cd-e61a" publicationId="89ae-8b6d-da44-733f">
+      <categoryLinks>
+        <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="a096-831e-b360-b902" primary="false" name="Walker (1)"/>
+        <categoryLink targetId="2005-60e5-e49d-32f2" id="cdf8-a4df-92ad-ec0d" primary="true" name="Bastion"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Artalax Battle-Automata Maniple TODO" hidden="false" id="f4e1-f08d-1708-5a17" publicationId="89ae-8b6d-da44-733f">
+      <categoryLinks>
+        <categoryLink targetId="be19-7658-5258-71d9" id="abef-a769-9b49-5ab8" primary="true" name="Support"/>
+        <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="b6d7-23fb-33ca-2c09" primary="false" name="Walker (1)"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
