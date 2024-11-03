@@ -11,24 +11,24 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink name="Questoris Knight Banner" hidden="false" id="879f-a8bd-3701-ebad" targetId="b2bb-ab05-f014-3b33" type="category">
+        <categoryLink name="Questoris Knight Banner" hidden="false" id="879f-a8bd-3701-ebad" targetId="b2bb-ab05-f014-3b33">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="040b-1d8f-09b6-8262"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0222-9625-be71-553b" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Cerastus Knight Banner" hidden="false" id="4244-1fd3-d780-4930" targetId="7e81-3342-b50d-b304" type="category">
+        <categoryLink name="Cerastus Knight Banner" hidden="false" id="4244-1fd3-d780-4930" targetId="7e81-3342-b50d-b304">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e69-8ba8-f1d7-5e0d" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a59a-1925-c34b-66a5" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Armiger Knight Banner" hidden="false" id="ff04-20d4-93db-b5a0" targetId="fe26-cfac-c306-cfd8" type="category">
+        <categoryLink name="Armiger Knight Banner" hidden="false" id="ff04-20d4-93db-b5a0" targetId="fe26-cfac-c306-cfd8">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="40af-66d6-edb9-6532" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Configuration" hidden="false" id="322c-5cff-5660-ad49" targetId="3779-422e-5fe9-5654" type="category"/>
+        <categoryLink name="Configuration" hidden="false" id="322c-5cff-5660-ad49" targetId="3779-422e-5fe9-5654"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -94,13 +94,13 @@
     <forceEntry name="Bastion Lance" id="9173-518b-df10-c672" hidden="false" publicationId="89ae-8b6d-da44-733f" page="91">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="6597-bc21-e131-96d1" targetId="3779-422e-5fe9-5654"/>
-        <categoryLink name="Acastus Knight Banner" hidden="false" id="7b47-fb12-9074-62bc" targetId="0d15-eaf4-cef8-8841" type="category">
+        <categoryLink name="Acastus Knight Banner" hidden="false" id="7b47-fb12-9074-62bc" targetId="0d15-eaf4-cef8-8841">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3d41-9bec-2ae2-7ea1" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5d09-e37a-8a71-069f" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Questoris Knight Banner" hidden="false" id="7fa6-0211-4aa5-58dc" targetId="b2bb-ab05-f014-3b33" type="category">
+        <categoryLink name="Questoris Knight Banner" hidden="false" id="7fa6-0211-4aa5-58dc" targetId="b2bb-ab05-f014-3b33">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="19d0-0b4e-0163-bce3" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bab9-195e-89bb-8040" includeChildSelections="false"/>
@@ -212,39 +212,12 @@
             <infoLink name="Knight Retainers" id="5036-3dd8-77b3-8efb" hidden="false" type="rule" targetId="b436-dcf6-8ab0-8ed5"/>
           </infoLinks>
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0a37-d92c-16e6-f91b"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="e756-33a5-4549-a2d9"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0a37-d92c-16e6-f91b-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0a37-d92c-16e6-f91b-max"/>
           </constraints>
           <categoryLinks>
             <categoryLink targetId="13e3-8701-239a-fec9" id="3834-a83f-27a6-fac7" primary="false" name="Knight (4)"/>
           </categoryLinks>
-          <modifiers>
-            <modifier type="set" value="340" field="ee95-a20e-f9ff-e2c2" scope="parent">
-              <conditions>
-                <condition type="atLeast" value="4" field="selections" scope="parent" childId="any" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="500" field="ee95-a20e-f9ff-e2c2" scope="parent">
-              <conditions>
-                <condition type="atLeast" value="7" field="selections" scope="parent" childId="any" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="6" field="0a37-d92c-16e6-f91b" scope="parent">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="4" field="selections" scope="parent" childId="any" shared="true"/>
-                    <condition type="lessThan" value="6" field="selections" scope="parent" childId="any" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="9" field="0a37-d92c-16e6-f91b" scope="parent">
-              <conditions>
-                <condition type="atLeast" value="7" field="selections" scope="parent" childId="any" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <costs>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
           </costs>
@@ -253,6 +226,57 @@
       <modifiers>
         <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="2075-08d3-6498-0b1d" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Add 3 Knights" hidden="false" id="75ac-b16a-bc3f-67c3">
+              <entryLinks>
+                <entryLink import="true" name="Questoris Knight Armiger Talon" hidden="false" id="8b27-7075-e51b-ef0a" type="selectionEntry" targetId="de00-e514-4eba-7180" defaultAmount="3">
+                  <costs>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Knight Retainers" id="2cc3-7b02-658a-94b4" hidden="false" type="rule" targetId="b436-dcf6-8ab0-8ed5"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="3a56-d5e7-1e40-44f6-min"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3a56-d5e7-1e40-44f6-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="160"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Add 6 Knights" hidden="false" id="e27a-4f0a-6e0c-f97e">
+              <entryLinks>
+                <entryLink import="true" name="Questoris Knight Armiger Talon" hidden="false" id="fe86-5bfd-bb23-7d9f" type="selectionEntry" targetId="de00-e514-4eba-7180" defaultAmount="3">
+                  <costs>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Knight Retainers" id="661d-22f2-b112-9d30" hidden="false" type="rule" targetId="b436-dcf6-8ab0-8ed5"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="85ac-1b45-f3e4-d417-min"/>
+                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="85ac-1b45-f3e4-d417-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="320"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3bb-9cd0-49b4-45d7"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="58e0-0a2e-d3d1-ba8a" publicationId="89ae-8b6d-da44-733f">
       <categoryLinks>
@@ -266,36 +290,9 @@
       <entryLinks>
         <entryLink import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="a64e-4417-b784-1f85" type="selectionEntry" targetId="d17f-b74a-2a3f-96a0" defaultAmount="3">
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5272-8c0f-a5e2-3be7"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="8d68-661a-7384-7649"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="a33f-decd-93ac-ac0d-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a33f-decd-93ac-ac0d-max"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="380" field="ee95-a20e-f9ff-e2c2" scope="parent">
-              <conditions>
-                <condition type="atLeast" value="4" field="selections" scope="parent" childId="any" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="560" field="ee95-a20e-f9ff-e2c2" scope="parent">
-              <conditions>
-                <condition type="atLeast" value="7" field="selections" scope="parent" childId="any" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="6" field="5272-8c0f-a5e2-3be7" scope="parent">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="4" field="selections" scope="parent" childId="any" shared="true"/>
-                    <condition type="lessThan" value="6" field="selections" scope="parent" childId="any" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="9" field="5272-8c0f-a5e2-3be7" scope="parent">
-              <conditions>
-                <condition type="atLeast" value="7" field="selections" scope="parent" childId="any" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <infoLinks>
             <infoLink name="Knight Retainers" id="2c56-e17a-9ed5-0dd3" hidden="false" type="rule" targetId="b436-dcf6-8ab0-8ed5"/>
           </infoLinks>
@@ -305,6 +302,57 @@
           <costs>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Upgrades" id="e87f-5014-6e73-3428" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Add 3 knights" hidden="false" id="f1f3-7ec7-1c51-95b4">
+                  <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="f2b5-8a0e-ee86-db5e" type="selectionEntry" targetId="d17f-b74a-2a3f-96a0">
+                      <constraints>
+                        <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4a62-769b-954a-7bfc-min"/>
+                        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4a62-769b-954a-7bfc-max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Knight Retainers" id="eb33-f36f-6922-1999" hidden="false" type="rule" targetId="b436-dcf6-8ab0-8ed5"/>
+                      </infoLinks>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Add 6 knights" hidden="false" id="1839-fb39-9d8a-27dd">
+                  <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="360"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="8b9a-e7d1-3eda-d838" type="selectionEntry" targetId="d17f-b74a-2a3f-96a0">
+                      <constraints>
+                        <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="5f18-147e-826c-a9dd-min"/>
+                        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5f18-147e-826c-a9dd-max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Knight Retainers" id="84ca-f128-abac-056b" hidden="false" type="rule" targetId="b436-dcf6-8ab0-8ed5"/>
+                      </infoLinks>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0657-ce8b-60e2-0741"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </entryLink>
       </entryLinks>
       <modifiers>
