@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="3f82-29c5-dcbe-7b9e" name="Mechanicum Taghmata" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Knights - Library" id="de79-4290-1daa-5aa1" targetId="f3a4-9e88-df35-47b9"/>
+    <catalogueLink type="catalogue" name="Titans - Library" id="18dc-bb9f-46d1-aaee" targetId="87f1-3ef8-7e7b-e34c"/>
+    <catalogueLink type="catalogue" name="Mechanicum - Library" id="0230-81dc-7eef-c18f" targetId="5943-3ab9-e00f-e458" importRootEntries="true"/>
+  </catalogueLinks>
+  <forceEntries>
+    <forceEntry name="Autokratorii Regiment" id="7ea4-70ef-6360-b1a5" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <rules>
+        <rule name="Cortex Controller" id="1a4c-dac5-3f4f-13ac" hidden="false" publicationId="89ae-8b6d-da44-733f">
+          <comment>One Vehicle model from a Compulsory Detachment may be upgraded with the Cortex Controller special rule for +10 points.</comment>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Battle Tank" hidden="false" id="97c8-a67c-036a-1f47" targetId="4e02-d7ec-4d81-d5fa" type="category">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="force" shared="true" id="70d6-40e6-8e6c-33f9" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="120a-3364-2591-894c" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="HQ" hidden="false" id="2c16-8c2f-70b1-75d8" targetId="d950-ad23-9b2-9325" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4d50-7ec2-944f-8791" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="a84d-86c4-113e-4c2e" targetId="be19-7658-5258-71d9" type="category">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="7642-38bf-ab7d-0b45" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Transport" hidden="false" id="a2f8-c16a-eef4-3f79" targetId="3751-fb88-3656-b7d1" type="category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="a238-0662-36b9-2c83" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Titan" hidden="false" id="b9b6-2274-35c1-a05a" targetId="1302-0157-2be4-3d34" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9036-a285-876b-5a62" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="9036-a285-876b-5a62">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="adde-db57-b7d8-2daa" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Knight" hidden="false" id="9f85-15c5-4a47-3f71" targetId="adde-db57-b7d8-2daa" type="category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="d983-9660-bf14-c7ac" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="d983-9660-bf14-c7ac">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1302-0157-2be4-3d34" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Configuration" hidden="false" id="482f-0ea3-7cd6-4074" targetId="3779-422e-5fe9-5654" type="category"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+</catalogue>

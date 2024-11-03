@@ -4,7 +4,6 @@
     <rule name="Cybernetica Cortex (X) " id="2fba-6797-7384-c296" hidden="false" publicationId="89ae-8b6d-da44-733f">
       <alias>Cybernetica Cortex</alias>
       <description>Detachments with the Cybernetica Cortex (X) special rule can only be issued an Order shown in brackets unless instructed otherwise. If a Detachment is not eligible to be issued any of the Orders listed - for example it is within a Transport and cannot be issued with anything other than the Advance Order - then this rule is temporarily ignored.</description>
-      <comment>TODO MOVE TO TAGHMATA?</comment>
     </rule>
     <rule name="Cortex Controller" id="3579-8e16-d3b1-e319" hidden="false" publicationId="89ae-8b6d-da44-733f">
       <description>If a detachment with the Cybernetica Cortex (X) special rule has at least one model wholly within 8&quot; of a friendly model with the Cortex Controller special rule, the former Detachment can be issued with any Order it would be eligible to be issued, instead of just those listed in brackets.
@@ -16,7 +15,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
     </rule>
   </sharedRules>
   <selectionEntries>
-    <selectionEntry type="unit" import="true" name="Archmagos Prime" hidden="false" id="dc74-79d1-30fa-ce56" publicationId="89ae-8b6d-da44-733f" defaultAmount="1">
+    <selectionEntry type="unit" import="true" name="Archmagos Prime" hidden="false" id="dc74-79d1-30fa-ce56" publicationId="89ae-8b6d-da44-733f" defaultAmount="">
       <categoryLinks>
         <categoryLink targetId="d950-ad23-9b2-9325" id="202a-ce3c-4e56-f10d" primary="true" name="HQ"/>
         <categoryLink targetId="68c1-de55-26b1-8ca4" id="a146-fadc-85a8-44b6" primary="false" name="Infantry (1)"/>
@@ -688,7 +687,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <categoryLink targetId="49b3-dae7-33f8-f8e" id="fd1f-6137-85bb-edd4" primary="false" name="Vehicle (2)"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Archmagos Prime on Abeyant" hidden="false" id="e361-b4b9-c5e0-fa5a" publicationId="89ae-8b6d-da44-733f" defaultAmount="1">
+    <selectionEntry type="unit" import="true" name="Archmagos Prime on Abeyant" hidden="false" id="e361-b4b9-c5e0-fa5a" publicationId="89ae-8b6d-da44-733f" defaultAmount="">
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="59d6-b8b7-dd7f-f9ae" targetId="d950-ad23-9b2-9325" primary="true"/>
         <categoryLink name="Infantry (1)" hidden="false" id="6ea1-43f1-197f-05bb" targetId="68c1-de55-26b1-8ca4" primary="false"/>
@@ -1040,7 +1039,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Turret Weapons" id="74a6-be02-b438-021e" hidden="false">
+        <selectionEntryGroup name="Turret Weapons" id="74a6-be02-b438-021e" hidden="false" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Krios lightning cannon" hidden="false" id="2c42-5b80-531c-578d" sortIndex="1">
               <profiles>
@@ -1092,7 +1091,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Volkite caliver sponsons" hidden="false" id="0f1a-da19-4c29-9936">
+        <selectionEntry type="upgrade" import="true" name="Volkite caliver sponsons" hidden="false" id="0f1a-da19-4c29-9936" sortIndex="2">
           <profiles>
             <profile name="Volkite caliver sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c5f7-a005-5a5f-a13d">
               <characteristics>
@@ -1114,6 +1113,26 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             <infoLink name="Light" id="e045-0227-728c-2bd9" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
             <infoLink name="Point Defence" id="db3d-1466-3967-e0c5" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
           </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cortex Controller" hidden="false" id="fb2a-2e67-763a-6372" sortIndex="3">
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Cortex Controller" id="52d8-2dde-34ca-339c" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="38f9-690c-f87e-2128"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="7ea4-70ef-6360-b1a5" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1156,7 +1175,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             <infoLink name="Point Defence" id="f739-b724-1e9a-50ca" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Karacnos mortar battery" hidden="false" id="dbe7-9433-c9a6-8988">
+        <selectionEntry type="upgrade" import="true" name="Karacnos mortar battery" hidden="false" id="dbe7-9433-c9a6-8988" sortIndex="2">
           <profiles>
             <profile name="Karacnos mortar battery" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e58f-785d-350a-2d1c">
               <characteristics>
@@ -1178,7 +1197,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             <infoLink name="Ignores Cover" id="1051-1d49-a414-b7e7" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Shock ram" hidden="false" id="b40d-5770-6111-03b4">
+        <selectionEntry type="upgrade" import="true" name="Shock ram" hidden="false" id="b40d-5770-6111-03b4" sortIndex="3">
           <profiles>
             <profile name="Shock ram" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c55d-7de9-9bcf-4187">
               <characteristics>
@@ -1198,6 +1217,26 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             </infoLink>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cortex Controller" hidden="false" id="fb2a-2e67-763a-6372" sortIndex="4">
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Cortex Controller" id="52d8-2dde-34ca-339c" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="38f9-690c-f87e-2128"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="7ea4-70ef-6360-b1a5" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1215,4 +1254,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
       </characteristics>
     </profile>
   </sharedProfiles>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="New Catalogue (link)" id="1fc0-7878-dd51-17bd" targetId="3f82-29c5-dcbe-7b9e"/>
+  </catalogueLinks>
 </catalogue>
