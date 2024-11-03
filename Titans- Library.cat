@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="87f1-3ef8-7e7b-e34c" name="Titans - Library" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="26" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="87f1-3ef8-7e7b-e34c" name="Titans - Library" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="26" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Dire Wolf Heavy Scout Titan" hidden="false" id="2705-7537-ed22-4f71" collective="false">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Dire Wolf titan" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="6f2d-a717-bde4-685b">
           <characteristics>
@@ -32,7 +25,6 @@
       <categoryLinks>
         <categoryLink targetId="9072-16ad-262f-a980" id="b5ea-9c28-f657-44e0" primary="false" name="Titan (5)"/>
         <categoryLink targetId="1302-0157-2be4-3d34" id="e6a5-2264-f81b-951e" primary="true" name="Titan"/>
-        <categoryLink targetId="124c-2927-143f-f513" id="9461-260e-2c16-d796" primary="false" name="Allied Units"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Ardex Mega-Bolters" hidden="false" id="3fb9-6e5d-3079-5213" collective="false">
@@ -178,13 +170,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Reaver Battle Titan" hidden="false" id="7372-9394-4311-6fe8" collective="false">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Reaver Battle Titan" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="7781-f686-c0be-e07f">
           <characteristics>
@@ -204,7 +189,6 @@
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink name="Allied Units" hidden="false" id="b550-04f0-41be-22f0" targetId="124c-2927-143f-f513" primary="false"/>
         <categoryLink name="Titan (5)" hidden="false" id="4a56-27c0-adba-dccd" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink targetId="1302-0157-2be4-3d34" id="32db-0264-1e0e-b463" primary="true" name="Titan"/>
       </categoryLinks>
@@ -508,13 +492,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warbringer Nemesis Titan" hidden="false" id="c0dd-9489-2ecf-d365" collective="false">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Warbringer Nemesis Titan" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="0fe4-0b6b-abc4-f181">
           <characteristics>
@@ -534,7 +511,6 @@
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink name="Allied Units" hidden="false" id="ae69-55fa-814f-6310" targetId="124c-2927-143f-f513" primary="false"/>
         <categoryLink name="Titan (5)" hidden="false" id="81fc-ac70-e976-1b50" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink targetId="1302-0157-2be4-3d34" id="ce79-484c-736d-c76a" primary="true" name="Titan"/>
       </categoryLinks>
@@ -637,13 +613,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warlord Battle Titan" hidden="false" id="be3b-2664-afdb-9482" collective="false">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Warlord Battle Titan" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="0d96-d708-75dd-3cc2">
           <characteristics>
@@ -685,13 +654,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warlord Sinister Battle Titan" hidden="false" id="b015-24ce-9473-148b" collective="false">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Warlord Sinister" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="cd41-6002-7cc2-2ca1">
           <characteristics>
@@ -718,7 +680,6 @@
         <infoLink name="Loyalist" id="7391-0996-d10b-d9fc" hidden="false" targetId="50ac-e9b6-c4c0-788a" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink name="Allied Units" hidden="false" id="4b4b-0c47-cf77-9ab0" targetId="124c-2927-143f-f513" primary="false"/>
         <categoryLink name="Titan (5)" hidden="false" id="9313-45b3-73ac-6cae" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Loyalist" hidden="false" id="7924-76e9-d1b5-e45f" targetId="1b68-cce9-e11c-fde7" primary="false"/>
         <categoryLink targetId="1302-0157-2be4-3d34" id="f09e-5a40-fa7e-b8bb" primary="true" name="Titan"/>
@@ -835,13 +796,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warmaster Heavy Battle Titan" hidden="false" id="a2ce-f13c-9a98-9edc" collective="false">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Warmaster Titan" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="fd7d-a3a9-edf0-b311">
           <characteristics>
@@ -861,7 +815,6 @@
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink name="Allied Units" hidden="false" id="f853-da94-d3cc-bd2b" targetId="124c-2927-143f-f513" primary="false"/>
         <categoryLink name="Titan (5)" hidden="false" id="359a-9445-4208-8418" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink targetId="1302-0157-2be4-3d34" id="9ad1-ea51-caa8-e18b" primary="true" name="Titan"/>
       </categoryLinks>
@@ -966,13 +919,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warmaster Iconoclast Titan" hidden="false" id="f165-14f9-5315-70a2" collective="false">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="Warmaster Iconoclast" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="b1c7-3cfe-d5c3-4ded">
           <characteristics>
@@ -992,7 +938,6 @@
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink name="Allied Units" hidden="false" id="5a23-f1f3-c57d-b2d6" targetId="124c-2927-143f-f513" primary="false"/>
         <categoryLink targetId="9072-16ad-262f-a980" id="b83e-8822-0af0-fa12" primary="false" name="Titan (5)"/>
         <categoryLink targetId="1302-0157-2be4-3d34" id="a96a-bfd3-0320-da77" primary="true" name="Titan"/>
       </categoryLinks>
@@ -1161,14 +1106,8 @@
             <condition type="equalTo" value="2" field="selections" scope="parent" childId="44d2-9574-31fc-97bf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Allied Units" hidden="false" id="509e-8b82-08cd-8bdf" targetId="124c-2927-143f-f513" primary="false"/>
         <categoryLink name="Titan (5)" hidden="false" id="f33e-d726-d242-f7e7" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink targetId="1302-0157-2be4-3d34" id="3883-a2e6-184e-a275" primary="true" name="Titan"/>
       </categoryLinks>

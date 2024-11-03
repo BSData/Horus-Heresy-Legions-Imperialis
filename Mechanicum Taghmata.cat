@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3f82-29c5-dcbe-7b9e" name="Mechanicum Taghmata" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3f82-29c5-dcbe-7b9e" name="Mechanicum Taghmata" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Knights - Library" id="de79-4290-1daa-5aa1" targetId="f3a4-9e88-df35-47b9"/>
     <catalogueLink type="catalogue" name="Titans - Library" id="18dc-bb9f-46d1-aaee" targetId="87f1-3ef8-7e7b-e34c"/>
@@ -62,7 +62,57 @@
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Legio Cybernetica Cohort TODO" id="94a5-a718-28c1-4053" hidden="false"/>
-    <forceEntry name="Taghmata Sub-covenant TODO" id="431c-12c3-ba14-3f08" hidden="false"/>
+    <forceEntry name="Taghmata Sub-covenant" id="431c-12c3-ba14-3f08" hidden="false">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="c5f8-aa7c-245f-fe7c" targetId="d950-ad23-9b2-9325" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="29a9-f3e9-4451-0734"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="d8ac-1503-22b0-9fd2" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Bastion" hidden="false" id="7b5b-0061-4fa1-990e" targetId="2005-60e5-e49d-32f2" type="category">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="1b29-d38e-c94a-fd3f" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="617d-4a47-f741-001b" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="1520-b076-1458-4d01" targetId="be19-7658-5258-71d9" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="e456-d3ba-2f90-235d" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="c20d-b2f0-dc90-413d" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Battle Tank" hidden="false" id="643c-cdc0-d452-79e9" targetId="4e02-d7ec-4d81-d5fa" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2ef2-7e98-4118-e361" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Titan" hidden="false" id="e2ac-9f3e-e7ba-70a3" targetId="1302-0157-2be4-3d34" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="cde1-9433-10ee-8381" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="cde1-9433-10ee-8381">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c761-64b3-7023-0a00" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Acastus" hidden="false" id="593d-0068-c03d-5c59" targetId="c761-64b3-7023-0a00" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="cdfe-8dc3-6ef3-d245" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="cdfe-8dc3-6ef3-d245">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1302-0157-2be4-3d34" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
     <forceEntry name="Ordo Reductor Subdivision TODO" id="5e65-d97a-8c71-91f8" hidden="false"/>
   </forceEntries>
   <selectionEntries>
@@ -109,4 +159,77 @@
       </categoryLinks>
     </selectionEntry>
   </selectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Dire Wolf Heavy Scout Titan" hidden="false" id="d895-d9e2-1a25-e945" type="selectionEntry" targetId="2705-7537-ed22-4f71">
+      <categoryLinks>
+        <categoryLink targetId="1302-0157-2be4-3d34" id="2b6d-c6cb-d772-f6ac" primary="true" name="Titan"/>
+        <categoryLink targetId="9072-16ad-262f-a980" id="5d38-7ebd-e4f0-edb9" primary="false" name="Titan (5)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Reaver Battle Titan" hidden="false" id="e8b2-3bd1-2e1d-d967" type="selectionEntry" targetId="7372-9394-4311-6fe8">
+      <categoryLinks>
+        <categoryLink targetId="1302-0157-2be4-3d34" id="0679-f086-6af7-2357" primary="true" name="Titan"/>
+        <categoryLink targetId="9072-16ad-262f-a980" id="7a2e-60eb-d42b-4c3b" primary="false" name="Titan (5)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Warbringer Nemesis Titan" hidden="false" id="13b8-1191-37ad-8084" type="selectionEntry" targetId="c0dd-9489-2ecf-d365">
+      <categoryLinks>
+        <categoryLink targetId="1302-0157-2be4-3d34" id="fa97-6532-ceac-ddc1" primary="true" name="Titan"/>
+        <categoryLink targetId="9072-16ad-262f-a980" id="3435-5a50-f6b5-beb7" primary="false" name="Titan (5)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Warhound Hunting Pack" hidden="false" id="ab57-01ca-181b-e15f" type="selectionEntry" targetId="1e0f-2bf5-af80-8846">
+      <categoryLinks>
+        <categoryLink targetId="9072-16ad-262f-a980" id="3877-17d5-810c-1ce6" primary="false" name="Titan (5)"/>
+        <categoryLink targetId="1302-0157-2be4-3d34" id="2f04-444d-af24-e0e1" primary="true" name="Titan"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Warlord Battle Titan" hidden="false" id="6e19-e3ad-b45f-f7ad" type="selectionEntry" targetId="be3b-2664-afdb-9482">
+      <categoryLinks>
+        <categoryLink targetId="9072-16ad-262f-a980" id="87af-01c8-e5fe-b382" primary="false" name="Titan (5)"/>
+        <categoryLink targetId="1302-0157-2be4-3d34" id="8148-1d8d-87bd-5c1a" primary="true" name="Titan"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Warlord Sinister Battle Titan" hidden="false" id="6420-7759-c492-6d01" type="selectionEntry" targetId="b015-24ce-9473-148b">
+      <categoryLinks>
+        <categoryLink targetId="1302-0157-2be4-3d34" id="e729-d3a6-22c3-4700" primary="true" name="Titan"/>
+        <categoryLink targetId="9072-16ad-262f-a980" id="7920-0e63-84e2-e382" primary="false" name="Titan (5)"/>
+        <categoryLink targetId="1b68-cce9-e11c-fde7" id="5b17-45c2-5a3d-e3e0" primary="false" name="Loyalist"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Warmaster Heavy Battle Titan" hidden="false" id="f323-9596-5fd6-9c83" type="selectionEntry" targetId="a2ce-f13c-9a98-9edc">
+      <categoryLinks>
+        <categoryLink targetId="1302-0157-2be4-3d34" id="495b-cd7a-1ef5-4751" primary="true" name="Titan"/>
+        <categoryLink targetId="9072-16ad-262f-a980" id="e60a-5648-2301-b627" primary="false" name="Titan (5)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Warmaster Iconoclast Titan" hidden="false" id="8784-e869-9f2a-9acb" type="selectionEntry" targetId="f165-14f9-5315-70a2">
+      <categoryLinks>
+        <categoryLink targetId="1302-0157-2be4-3d34" id="278f-aedd-7835-1ee5" primary="true" name="Titan"/>
+        <categoryLink targetId="9072-16ad-262f-a980" id="af6a-925b-83f9-8557" primary="false" name="Titan (5)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Acastus Knight Banner" hidden="false" id="79fc-03ba-6e09-4e5a" type="selectionEntry" targetId="5086-f7e3-be56-2722">
+      <categoryLinks>
+        <categoryLink targetId="adde-db57-b7d8-2daa" id="e7a2-7c6d-c028-fafe" primary="true" name="Knight"/>
+        <categoryLink targetId="13e3-8701-239a-fec9" id="f6a4-426c-3376-4232" primary="false" name="Knight (4)"/>
+        <categoryLink targetId="c761-64b3-7023-0a00" id="a332-d317-b3b1-7a3d" primary="false" name="Acastus"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Cerastus Knight Banner" hidden="false" id="30ce-ece3-6a83-e174" type="selectionEntry" targetId="fe2f-03c8-9187-8b2e">
+      <categoryLinks>
+        <categoryLink targetId="adde-db57-b7d8-2daa" id="e14e-fe68-ddb0-d68c" primary="true" name="Knight"/>
+        <categoryLink targetId="13e3-8701-239a-fec9" id="4dae-66a0-23a4-9e0e" primary="false" name="Knight (4)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Questoris Knight Banner" hidden="false" id="8da7-8bfe-8800-f9da" type="selectionEntry" targetId="f90d-f5dd-52b7-1442">
+      <categoryLinks>
+        <categoryLink targetId="adde-db57-b7d8-2daa" id="543f-2fe8-576c-8ef9" primary="true" name="Knight"/>
+        <categoryLink targetId="13e3-8701-239a-fec9" id="d0b6-b7a6-6ad7-2295" primary="false" name="Knight (4)"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <categoryEntries>
+    <categoryEntry name="Acastus Knight" id="c761-64b3-7023-0a00" hidden="true"/>
+  </categoryEntries>
 </catalogue>

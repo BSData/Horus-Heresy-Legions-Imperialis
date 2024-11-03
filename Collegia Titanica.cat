@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0fdc-12aa-6f3d-aa58" name="Collegia Titanica" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0fdc-12aa-6f3d-aa58" name="Collegia Titanica" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Collegia Titanica" id="d965-f291-a87b-657f" hidden="false"/>
     <categoryEntry name="Warhound" id="8cc0-dc3a-0dd0-a375" hidden="true">
@@ -27,9 +27,6 @@
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Dire Wolf Heavy Scout Titan" hidden="false" id="6532-3f60-2f62-1b5c" type="selectionEntry" targetId="2705-7537-ed22-4f71">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="9072-16ad-262f-a980" id="851d-b5d4-e016-ce96" primary="false" name="Titan (5)"/>
         <categoryLink targetId="1302-0157-2be4-3d34" id="a6e6-70bb-85d8-c86a" primary="false" name="Titan"/>
@@ -38,9 +35,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Reaver Battle Titan" hidden="false" id="e5fe-23ea-99ef-5b45" type="selectionEntry" targetId="7372-9394-4311-6fe8">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="9072-16ad-262f-a980" id="06e3-a054-6367-198a" primary="false" name="Titan (5)"/>
         <categoryLink targetId="1302-0157-2be4-3d34" id="4678-0abe-5fb4-2590" primary="false" name="Titan"/>
@@ -49,9 +43,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Warbringer Nemesis Titan" hidden="false" id="b98f-5a3a-c118-1625" type="selectionEntry" targetId="c0dd-9489-2ecf-d365">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="6203-da0b-b61a-fa17" id="66f9-64d6-5b1c-a95b" primary="true" name="Warbringer Nemesis"/>
         <categoryLink targetId="d965-f291-a87b-657f" id="4a97-44df-4b62-d527" primary="false" name="Collegia Titanica"/>
@@ -60,9 +51,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Warlord Battle Titan" hidden="false" id="84e8-eee5-0370-a8d8" type="selectionEntry" targetId="be3b-2664-afdb-9482">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7524-919b-1bbd-3a00" id="f209-8db4-5fcc-5812" primary="true" name="Warlord"/>
         <categoryLink targetId="d965-f291-a87b-657f" id="30ad-7f45-984f-51ba" primary="false" name="Collegia Titanica"/>
@@ -71,9 +59,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Warmaster Heavy Battle Titan" hidden="false" id="a246-9bed-5b81-30ad" type="selectionEntry" targetId="a2ce-f13c-9a98-9edc">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="41d1-121f-2255-f1df" id="52de-85e6-9041-11f1" primary="true" name="Warmaster"/>
         <categoryLink targetId="1302-0157-2be4-3d34" id="52dd-6645-77ea-11b3" primary="false" name="Titan"/>
@@ -82,9 +67,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Warmaster Iconoclast Titan" hidden="false" id="d3dc-d2b8-1bc8-c5da" type="selectionEntry" targetId="f165-14f9-5315-70a2">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="41d1-121f-2255-f1df" id="6d31-758d-eaac-737c" primary="true" name="Warmaster"/>
         <categoryLink targetId="d965-f291-a87b-657f" id="c781-e67f-b66b-9c1a" primary="false" name="Collegia Titanica"/>
@@ -93,9 +75,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Warhound Hunting Pack" hidden="false" id="d30d-1d93-1e35-e357" type="selectionEntry" targetId="1e0f-2bf5-af80-8846">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="8cc0-dc3a-0dd0-a375" id="fdec-1493-98ec-402e" primary="true" name="Warhound"/>
         <categoryLink targetId="d965-f291-a87b-657f" id="f035-4ee6-0e35-cbb6" primary="false" name="Collegia Titanica"/>
@@ -108,14 +87,8 @@
         <categoryLink targetId="adde-db57-b7d8-2daa" id="b083-1ec9-e05c-a322" primary="false" name="Knight"/>
         <categoryLink targetId="13e3-8701-239a-fec9" id="509e-bff5-5c63-4870" primary="false" name="Knight (4)"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Cerastus Knight Banner" hidden="false" id="2a78-6ee5-87ed-3260" type="selectionEntry" targetId="fe2f-03c8-9187-8b2e">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="13e3-8701-239a-fec9" id="620b-dcac-c07e-4ab2" primary="false" name="Knight (4)"/>
         <categoryLink targetId="adde-db57-b7d8-2daa" id="5b7d-687a-a2f6-4f7f" primary="true" name="Knight"/>
@@ -123,9 +96,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Questoris Knight Banner" hidden="false" id="e6eb-ed8b-8f62-659e" type="selectionEntry" targetId="f90d-f5dd-52b7-1442">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category"/>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="13e3-8701-239a-fec9" id="9ad1-0f3c-5fd2-9ae6" primary="false" name="Knight (4)"/>
         <categoryLink targetId="adde-db57-b7d8-2daa" id="9f01-1888-e162-5d28" primary="true" name="Knight"/>

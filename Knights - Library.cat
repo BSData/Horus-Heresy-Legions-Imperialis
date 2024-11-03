@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f3a4-9e88-df35-47b9" name="Knights - Library" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="27" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="f3a4-9e88-df35-47b9" name="Knights - Library" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="27" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Heavy Stubber" hidden="false" id="f8d4-5957-94bc-651b" collective="false">
       <profiles>
@@ -425,15 +425,7 @@
   </sharedSelectionEntries>
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Acastus Knight Banner" hidden="false" id="5086-f7e3-be56-2722" collective="false">
-      <modifiers>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
-        <categoryLink name="Allied Units" hidden="false" id="c482-2d61-fbf2-bdcc" targetId="124c-2927-143f-f513" primary="false"/>
         <categoryLink name="Knight (4)" hidden="false" id="8304-a2ba-7b81-c331" targetId="13e3-8701-239a-fec9" primary="false"/>
         <categoryLink name="Knight" hidden="false" id="e79c-6cf5-a65e-a221" targetId="adde-db57-b7d8-2daa" primary="true"/>
       </categoryLinks>
@@ -812,14 +804,8 @@
             <condition type="equalTo" value="1" field="selections" scope="parent" childId="d909-f258-0c3a-a435" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Allied Units" hidden="false" id="e065-c273-bbe6-1c3c" targetId="124c-2927-143f-f513" primary="false"/>
         <categoryLink name="Knight (4)" hidden="false" id="d93b-54d9-d7a0-7712" targetId="13e3-8701-239a-fec9" primary="false"/>
         <categoryLink name="Knight" hidden="false" id="75ec-4d31-d83a-0f58" targetId="adde-db57-b7d8-2daa" primary="true"/>
       </categoryLinks>
@@ -1264,14 +1250,8 @@
             <condition type="greaterThan" value="2" field="selections" scope="parent" childId="b340-8d29-2e25-bc2c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
-        <modifier type="remove" value="124c-2927-143f-f513" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Allied Units" hidden="false" id="4825-1b63-157d-7e8e" targetId="124c-2927-143f-f513" primary="false"/>
         <categoryLink name="Knight (4)" hidden="false" id="61f8-bfbd-64c4-dee4" targetId="13e3-8701-239a-fec9" primary="false"/>
         <categoryLink name="Knight" hidden="false" id="fc3e-10a9-d8d6-3cb0" targetId="adde-db57-b7d8-2daa" primary="true"/>
       </categoryLinks>
