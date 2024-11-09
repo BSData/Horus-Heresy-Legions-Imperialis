@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3f82-29c5-dcbe-7b9e" name="Mechanicum Taghmata" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3f82-29c5-dcbe-7b9e" name="Mechanicum Taghmata" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Knights - Library" id="de79-4290-1daa-5aa1" targetId="f3a4-9e88-df35-47b9"/>
     <catalogueLink type="catalogue" name="Titans - Library" id="18dc-bb9f-46d1-aaee" targetId="87f1-3ef8-7e7b-e34c"/>
@@ -64,30 +64,30 @@
     <forceEntry name="Legio Cybernetica Cohort TODO" id="94a5-a718-28c1-4053" hidden="false"/>
     <forceEntry name="Taghmata Sub-covenant" id="431c-12c3-ba14-3f08" hidden="false">
       <categoryLinks>
-        <categoryLink name="HQ" hidden="false" id="c5f8-aa7c-245f-fe7c" targetId="d950-ad23-9b2-9325" type="category">
+        <categoryLink name="HQ" hidden="false" id="c5f8-aa7c-245f-fe7c" targetId="d950-ad23-9b2-9325">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="29a9-f3e9-4451-0734"/>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="d8ac-1503-22b0-9fd2" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Bastion" hidden="false" id="7b5b-0061-4fa1-990e" targetId="2005-60e5-e49d-32f2" type="category">
+        <categoryLink name="Bastion" hidden="false" id="7b5b-0061-4fa1-990e" targetId="2005-60e5-e49d-32f2">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="force" shared="true" id="1b29-d38e-c94a-fd3f" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="617d-4a47-f741-001b" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support" hidden="false" id="1520-b076-1458-4d01" targetId="be19-7658-5258-71d9" type="category">
+        <categoryLink name="Support" hidden="false" id="1520-b076-1458-4d01" targetId="be19-7658-5258-71d9">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="e456-d3ba-2f90-235d" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="c20d-b2f0-dc90-413d" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Battle Tank" hidden="false" id="643c-cdc0-d452-79e9" targetId="4e02-d7ec-4d81-d5fa" type="category">
+        <categoryLink name="Battle Tank" hidden="false" id="643c-cdc0-d452-79e9" targetId="4e02-d7ec-4d81-d5fa">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2ef2-7e98-4118-e361" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Titan" hidden="false" id="e2ac-9f3e-e7ba-70a3" targetId="1302-0157-2be4-3d34" type="category">
+        <categoryLink name="Titan" hidden="false" id="e2ac-9f3e-e7ba-70a3" targetId="1302-0157-2be4-3d34">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="cde1-9433-10ee-8381" includeChildSelections="false"/>
           </constraints>
@@ -99,7 +99,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Acastus" hidden="false" id="593d-0068-c03d-5c59" targetId="c761-64b3-7023-0a00" type="category">
+        <categoryLink name="Acastus Knight" hidden="false" id="593d-0068-c03d-5c59" targetId="c761-64b3-7023-0a00">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="cdfe-8dc3-6ef3-d245" includeChildSelections="false"/>
           </constraints>
@@ -116,11 +116,73 @@
     <forceEntry name="Ordo Reductor Subdivision TODO" id="5e65-d97a-8c71-91f8" hidden="false"/>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry type="unit" import="true" name="Krios Venator Squadron TODO" hidden="false" id="6821-4151-cacf-2e3a" publicationId="89ae-8b6d-da44-733f">
+    <selectionEntry type="unit" import="true" name="Krios Venator Squadron" hidden="false" id="6821-4151-cacf-2e3a" publicationId="89ae-8b6d-da44-733f">
       <categoryLinks>
         <categoryLink targetId="4e02-d7ec-4d81-d5fa" id="3e00-203d-eb08-bded" primary="true" name="Battle Tank"/>
         <categoryLink targetId="49b3-dae7-33f8-f8e" id="d26b-dcdf-f8a2-f68e" primary="false" name="Vehicle (2)"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="dc19-0124-4c5f-c0d9" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5580-4523-151a-3de6" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Increase size by 2" hidden="false" id="d938-0cf9-a040-8de9">
+              <entryLinks>
+                <entryLink import="true" name="Krios Venator" hidden="false" id="1a82-c8d2-6008-83bb" type="selectionEntry" targetId="89bb-e3b8-4a92-eec3">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="eca7-aff8-de11-13fd-min"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="eca7-aff8-de11-13fd-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="60"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Increase size by 4" hidden="false" id="f532-9dc5-669e-5079">
+              <entryLinks>
+                <entryLink import="true" name="Krios Venator" hidden="false" id="fc3e-3629-8113-afc6" type="selectionEntry" targetId="89bb-e3b8-4a92-eec3">
+                  <constraints>
+                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f885-93c8-080b-9f13-min"/>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f885-93c8-080b-9f13-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="110"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Increase size by 6" hidden="false" id="33f2-ae6b-0b38-d53f">
+              <entryLinks>
+                <entryLink import="true" name="Krios Venator" hidden="false" id="87e4-e56e-de80-10e1" type="selectionEntry" targetId="89bb-e3b8-4a92-eec3">
+                  <constraints>
+                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="ef25-4d2a-fdc0-a592-min"/>
+                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ef25-4d2a-fdc0-a592-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="160"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="60"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Krios Venator" hidden="false" id="5178-a3b7-8101-e88e" type="selectionEntry" targetId="89bb-e3b8-4a92-eec3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Castellax Battle-Automata Maniple TODO" hidden="false" id="0ced-f4d5-23e1-904e" publicationId="89ae-8b6d-da44-733f">
       <categoryLinks>
@@ -213,7 +275,7 @@
       <categoryLinks>
         <categoryLink targetId="adde-db57-b7d8-2daa" id="e7a2-7c6d-c028-fafe" primary="true" name="Knight"/>
         <categoryLink targetId="13e3-8701-239a-fec9" id="f6a4-426c-3376-4232" primary="false" name="Knight (4)"/>
-        <categoryLink targetId="c761-64b3-7023-0a00" id="a332-d317-b3b1-7a3d" primary="false" name="Acastus"/>
+        <categoryLink targetId="c761-64b3-7023-0a00" id="a332-d317-b3b1-7a3d" primary="false" name="Acastus Knight"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Cerastus Knight Banner" hidden="false" id="30ce-ece3-6a83-e174" type="selectionEntry" targetId="fe2f-03c8-9187-8b2e">
@@ -232,4 +294,70 @@
   <categoryEntries>
     <categoryEntry name="Acastus Knight" id="c761-64b3-7023-0a00" hidden="true"/>
   </categoryEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Krios Venator" hidden="false" id="89bb-e3b8-4a92-eec3">
+      <infoLinks>
+        <infoLink name="Krios" id="7c3b-20e3-861e-cf1a" hidden="false" type="profile" targetId="3cb5-a447-0168-09fc"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Volkite caliver sponsons" hidden="false" id="b282-56aa-d2d6-75e1">
+          <profiles>
+            <profile name="Volkite caliver sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="de35-55a4-525e-4d6c">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Deflagrate, Light, Point Defence</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6007-1bdd-9d87-f18d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e8d-2227-53cf-c7de"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Accurate" id="bfce-1dd5-7d22-890f" hidden="false" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
+            <infoLink name="Deflagrate" id="2413-17a1-eb52-d19d" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
+            <infoLink name="Light" id="e5b1-e4ed-20dc-7bfc" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+            <infoLink name="Point Defence" id="bd59-aa1b-8214-60e2" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pulsar-fusil" hidden="false" id="1209-9cb3-1892-e5ac">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a74b-268c-de14-d0b9-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a74b-268c-de14-d0b9-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Pulsar-fusil" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d164-3f41-5e44-598f">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Anti-tank" id="54f7-25f6-2fe3-51b2" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+            <infoLink name="Arc (Front/Rear)" id="740b-85dd-fca6-c565" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+              <modifiers>
+                <modifier type="set" value="Arc (Front)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4e2c-fd7f-7f62-5584-min" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4e2c-fd7f-7f62-5584-max" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </catalogue>
