@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3f82-29c5-dcbe-7b9e" name="Mechanicum Taghmata" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3f82-29c5-dcbe-7b9e" name="Mechanicum Taghmata" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Knights - Library" id="de79-4290-1daa-5aa1" targetId="f3a4-9e88-df35-47b9"/>
     <catalogueLink type="catalogue" name="Titans - Library" id="18dc-bb9f-46d1-aaee" targetId="87f1-3ef8-7e7b-e34c"/>
@@ -113,7 +113,57 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Ordo Reductor Subdivision TODO" id="5e65-d97a-8c71-91f8" hidden="false"/>
+    <forceEntry name="Ordo Reductor Subdivision" id="5e65-d97a-8c71-91f8" hidden="false">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="9047-4a79-aea7-09f7" targetId="d950-ad23-9b2-9325" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8c60-4487-8da2-b964" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="5f1a-bd9a-3327-19bf" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="3f46-cdad-10f0-0c79" targetId="be19-7658-5258-71d9" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="71c1-0e11-6c57-b076" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="28db-ef95-0571-b614" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Bastion" hidden="false" id="7d3c-00d9-776a-1f61" targetId="2005-60e5-e49d-32f2" type="category">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="e6cd-6ad0-70a0-c066" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1c12-c03a-22ba-7078" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Battle Tank" hidden="false" id="b7b4-0c73-3deb-705c" targetId="4e02-d7ec-4d81-d5fa" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="595b-0aaa-6115-f6c8" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Titan" hidden="false" id="8162-6c8a-b216-5056" targetId="1302-0157-2be4-3d34" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="557f-95b3-a214-0c44" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="557f-95b3-a214-0c44">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c761-64b3-7023-0a00" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Acastus Knight" hidden="false" id="27fb-af67-a36f-f49b" targetId="c761-64b3-7023-0a00" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8d29-d671-1d4d-d8b4" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="8d29-d671-1d4d-d8b4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1302-0157-2be4-3d34" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Krios Venator Squadron" hidden="false" id="6821-4151-cacf-2e3a" publicationId="89ae-8b6d-da44-733f">
