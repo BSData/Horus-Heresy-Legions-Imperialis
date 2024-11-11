@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="5943-3ab9-e00f-e458" name="Mechanicum - Library" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="1" battleScribeVersion="2.03" publicationId="89ae-8b6d-da44-733f" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue catalogueLinks="" library="true" id="5943-3ab9-e00f-e458" name="Mechanicum - Library" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="2" battleScribeVersion="2.03" publicationId="89ae-8b6d-da44-733f" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
-    <rule name="Cybernetica Cortex (X) " id="2fba-6797-7384-c296" hidden="false" publicationId="89ae-8b6d-da44-733f">
-      <alias>Cybernetica Cortex</alias>
-      <description>Detachments with the Cybernetica Cortex (X) special rule can only be issued an Order shown in brackets unless instructed otherwise. If a Detachment is not eligible to be issued any of the Orders listed - for example it is within a Transport and cannot be issued with anything other than the Advance Order - then this rule is temporarily ignored.</description>
-    </rule>
     <rule name="Cortex Controller" id="3579-8e16-d3b1-e319" hidden="false" publicationId="89ae-8b6d-da44-733f">
       <description>If a detachment with the Cybernetica Cortex (X) special rule has at least one model wholly within 8&quot; of a friendly model with the Cortex Controller special rule, the former Detachment can be issued with any Order it would be eligible to be issued, instead of just those listed in brackets.
 
@@ -1254,6 +1250,4 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
       </characteristics>
     </profile>
   </sharedProfiles>
-  <catalogueLinks>
-  </catalogueLinks>
 </catalogue>

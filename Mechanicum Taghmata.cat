@@ -4,6 +4,7 @@
     <catalogueLink type="catalogue" name="Knights - Library" id="de79-4290-1daa-5aa1" targetId="f3a4-9e88-df35-47b9"/>
     <catalogueLink type="catalogue" name="Titans - Library" id="18dc-bb9f-46d1-aaee" targetId="87f1-3ef8-7e7b-e34c"/>
     <catalogueLink type="catalogue" name="Mechanicum - Library" id="0230-81dc-7eef-c18f" targetId="5943-3ab9-e00f-e458" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Cybernetica - Library" id="31cb-be67-bf22-babd" targetId="d5fd-dd78-736b-6cea" importRootEntries="true"/>
   </catalogueLinks>
   <forceEntries>
     <forceEntry name="Autokratorii Regiment" id="7ea4-70ef-6360-b1a5" hidden="false" publicationId="89ae-8b6d-da44-733f">
@@ -115,30 +116,30 @@
     </forceEntry>
     <forceEntry name="Ordo Reductor Subdivision" id="5e65-d97a-8c71-91f8" hidden="false">
       <categoryLinks>
-        <categoryLink name="HQ" hidden="false" id="9047-4a79-aea7-09f7" targetId="d950-ad23-9b2-9325" type="category">
+        <categoryLink name="HQ" hidden="false" id="9047-4a79-aea7-09f7" targetId="d950-ad23-9b2-9325">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8c60-4487-8da2-b964" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="5f1a-bd9a-3327-19bf" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support" hidden="false" id="3f46-cdad-10f0-0c79" targetId="be19-7658-5258-71d9" type="category">
+        <categoryLink name="Support" hidden="false" id="3f46-cdad-10f0-0c79" targetId="be19-7658-5258-71d9">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="71c1-0e11-6c57-b076" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="28db-ef95-0571-b614" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Bastion" hidden="false" id="7d3c-00d9-776a-1f61" targetId="2005-60e5-e49d-32f2" type="category">
+        <categoryLink name="Bastion" hidden="false" id="7d3c-00d9-776a-1f61" targetId="2005-60e5-e49d-32f2">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="force" shared="true" id="e6cd-6ad0-70a0-c066" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1c12-c03a-22ba-7078" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Battle Tank" hidden="false" id="b7b4-0c73-3deb-705c" targetId="4e02-d7ec-4d81-d5fa" type="category">
+        <categoryLink name="Battle Tank" hidden="false" id="b7b4-0c73-3deb-705c" targetId="4e02-d7ec-4d81-d5fa">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="595b-0aaa-6115-f6c8" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Titan" hidden="false" id="8162-6c8a-b216-5056" targetId="1302-0157-2be4-3d34" type="category">
+        <categoryLink name="Titan" hidden="false" id="8162-6c8a-b216-5056" targetId="1302-0157-2be4-3d34">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="557f-95b3-a214-0c44" includeChildSelections="false"/>
           </constraints>
@@ -150,7 +151,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Acastus Knight" hidden="false" id="27fb-af67-a36f-f49b" targetId="c761-64b3-7023-0a00" type="category">
+        <categoryLink name="Acastus Knight" hidden="false" id="27fb-af67-a36f-f49b" targetId="c761-64b3-7023-0a00">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8d29-d671-1d4d-d8b4" includeChildSelections="false"/>
           </constraints>
@@ -233,42 +234,6 @@
       <entryLinks>
         <entryLink import="true" name="Krios Venator" hidden="false" id="5178-a3b7-8101-e88e" type="selectionEntry" targetId="89bb-e3b8-4a92-eec3"/>
       </entryLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Castellax Battle-Automata Maniple TODO" hidden="false" id="0ced-f4d5-23e1-904e" publicationId="89ae-8b6d-da44-733f">
-      <categoryLinks>
-        <categoryLink targetId="be19-7658-5258-71d9" id="ed2d-9afc-b946-e9da" primary="true" name="Support"/>
-        <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="4cde-980d-beb1-b75a" primary="false" name="Walker (1)"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Domitar Battle-Automata Maniple TODO" hidden="false" id="fd80-a4c7-499e-8f62" publicationId="89ae-8b6d-da44-733f">
-      <categoryLinks>
-        <categoryLink targetId="be19-7658-5258-71d9" id="eff4-a828-b55b-d33e" primary="true" name="Support"/>
-        <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="3d0d-8a52-118e-1e96" primary="false" name="Walker (1)"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Vorax Battle-Automata Maniple TODO" hidden="false" id="a52e-6d86-77e8-eb2b" publicationId="89ae-8b6d-da44-733f">
-      <categoryLinks>
-        <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="aadb-9bdf-8435-b808" primary="false" name="Walker (1)"/>
-        <categoryLink targetId="8416-456c-a6f-e059" id="14ac-eb2d-f9e5-d5b4" primary="true" name="Vanguard"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Vulturax Strator-Automata Squadron TODO" hidden="false" id="73f1-bdac-a4dc-3d08" publicationId="89ae-8b6d-da44-733f">
-      <categoryLinks>
-        <categoryLink targetId="8416-456c-a6f-e059" id="2a55-271a-6897-8a8e" primary="true" name="Vanguard"/>
-        <categoryLink targetId="4376-9c33-b1cc-bb06" id="ccdc-d327-9014-3408" primary="false" name="Cavalry (1)"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Thanatar Siege-Automata Maniple TODO" hidden="false" id="631b-6adf-85cd-e61a" publicationId="89ae-8b6d-da44-733f">
-      <categoryLinks>
-        <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="a096-831e-b360-b902" primary="false" name="Walker (1)"/>
-        <categoryLink targetId="2005-60e5-e49d-32f2" id="cdf8-a4df-92ad-ec0d" primary="true" name="Bastion"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Artalax Battle-Automata Maniple TODO" hidden="false" id="f4e1-f08d-1708-5a17" publicationId="89ae-8b6d-da44-733f">
-      <categoryLinks>
-        <categoryLink targetId="be19-7658-5258-71d9" id="abef-a769-9b49-5ab8" primary="true" name="Support"/>
-        <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="b6d7-23fb-33ca-2c09" primary="false" name="Walker (1)"/>
-      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
