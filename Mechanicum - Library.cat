@@ -22,53 +22,57 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Volkite Serpenta" hidden="false" id="ea44-4dc8-f59d-6202">
+        <selectionEntry type="model" import="true" name="Archmagos Prime" hidden="false" id="2b20-cf16-a9be-2c48">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Volkite Serpenta" hidden="false" id="9be3-2aad-3942-cd9f">
+              <profiles>
+                <profile name="Volkite Serpenta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="63a2-4dc0-b67d-324f">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Deflagrate, Light</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Deflagrate" id="557d-e041-ed07-25bd" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
+                <infoLink name="Light" id="c40e-b85a-0987-0581" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="593b-f064-ebf9-ed4c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8c6-66bc-6936-e1ef"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
           <profiles>
-            <profile name="Volkite Serpenta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="7ee5-b009-310e-d216">
+            <profile name="Archmagos Prime" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="57bc-1b8b-68eb-f745">
               <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Deflagrate, Light</characteristic>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">5&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+3</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">2+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Deflagrate" id="eced-398f-b7f8-6e96" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
-            <infoLink name="Light" id="87bb-bbc6-57ee-6162" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+            <infoLink name="Battlesmith" id="c0b5-e014-49b4-0ee0" hidden="false" type="rule" targetId="bc6e-78fc-8fde-226d"/>
+            <infoLink name="Invulnerable Save (X)" id="8396-c810-41df-6708" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
+              <modifiers>
+                <modifier type="set" value="Invulnerable Save (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Commander" id="5d26-9dd7-489d-848c" hidden="false" type="rule" targetId="caaf-3de0-3658-9054"/>
+            <infoLink name="Cortex Controller" id="d287-cf42-a6f4-d216" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319"/>
           </infoLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b012-0a34-e141-83c0-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b012-0a34-e141-83c0-max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="13cf-25b0-e47f-5bcc-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13cf-25b0-e47f-5bcc-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d243-e473-d91f-8d38-min"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d243-e473-d91f-8d38-max"/>
-      </constraints>
-      <profiles>
-        <profile name="Archmagos Prime" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="57bc-1b8b-68eb-f745">
-          <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">5&quot;</characteristic>
-            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
-            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+3</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">2+</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Battlesmith" id="c0b5-e014-49b4-0ee0" hidden="false" type="rule" targetId="bc6e-78fc-8fde-226d"/>
-        <infoLink name="Commander" id="5d26-9dd7-489d-848c" hidden="false" type="rule" targetId="caaf-3de0-3658-9054"/>
-        <infoLink name="Cortex Controller" id="d287-cf42-a6f4-d216" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319"/>
-        <infoLink name="Invulnerable Save (X)" id="8396-c810-41df-6708" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
-          <modifiers>
-            <modifier type="set" value="Invulnerable Save (5+)" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Krios Battle Tank Squadron" hidden="false" id="cc8e-6ce4-71bb-aa7e" publicationId="89ae-8b6d-da44-733f">
       <categoryLinks>
@@ -694,73 +698,73 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Volkite Serpenta" hidden="false" id="c395-c2ee-e2a8-2d46" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Archmagos Prime on Abeyant" hidden="false" id="ff0a-0fe0-8ab3-d716">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Volkite Serpenta" hidden="false" id="c395-c2ee-e2a8-2d46" sortIndex="1">
+              <profiles>
+                <profile name="Volkite Serpenta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0218-fc85-d738-a29f">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Deflagrate, Light</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Deflagrate" id="1a4c-e814-022a-b4d0" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
+                <infoLink name="Light" id="dee0-1015-581e-8aa2" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1693-67f0-f56a-a926-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1693-67f0-f56a-a926-max"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="7552-55a5-e7d1-6080">
+              <profiles>
+                <profile name="Meltagun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8c57-5516-d151-83ed">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Anti-tank" id="352c-ca05-cf65-e9af" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea1a-e0df-1384-e948-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea1a-e0df-1384-e948-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
           <profiles>
-            <profile name="Volkite Serpenta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0218-fc85-d738-a29f">
+            <profile name="Archmagos Prime on Abeyant" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="46f5-1ddb-e977-08df">
               <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Deflagrate, Light</characteristic>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">6&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+4</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">2+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Deflagrate" id="1a4c-e814-022a-b4d0" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
-            <infoLink name="Light" id="dee0-1015-581e-8aa2" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+            <infoLink name="Battlesmith" id="9efd-bcbd-a1e5-52e9" hidden="false" type="rule" targetId="bc6e-78fc-8fde-226d"/>
+            <infoLink name="Commander" id="dc7f-bf8c-e17c-8b02" hidden="false" type="rule" targetId="caaf-3de0-3658-9054"/>
+            <infoLink name="Cortex Controller" id="a9a1-8f71-74b1-ff31" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319"/>
+            <infoLink name="Invulnerable Save (X)" id="32ef-2402-2f6a-7214" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
+              <modifiers>
+                <modifier type="set" value="Invulnerable Save (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1693-67f0-f56a-a926-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1693-67f0-f56a-a926-max"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="7552-55a5-e7d1-6080">
-          <profiles>
-            <profile name="Meltagun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8c57-5516-d151-83ed">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Anti-tank" id="352c-ca05-cf65-e9af" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea1a-e0df-1384-e948-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea1a-e0df-1384-e948-max"/>
-          </constraints>
         </selectionEntry>
       </selectionEntries>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="562e-e595-d392-848c-min"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="562e-e595-d392-848c-max"/>
-      </constraints>
-      <profiles>
-        <profile name="Archmagos Prime on Abeyant" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="46f5-1ddb-e977-08df">
-          <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">6&quot;</characteristic>
-            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
-            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+4</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">2+</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Battlesmith" id="9efd-bcbd-a1e5-52e9" hidden="false" type="rule" targetId="bc6e-78fc-8fde-226d"/>
-        <infoLink name="Commander" id="dc7f-bf8c-e17c-8b02" hidden="false" type="rule" targetId="caaf-3de0-3658-9054"/>
-        <infoLink name="Cortex Controller" id="a9a1-8f71-74b1-ff31" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319"/>
-        <infoLink name="Invulnerable Save (X)" id="32ef-2402-2f6a-7214" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
-          <modifiers>
-            <modifier type="set" value="Invulnerable Save (5+)" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>

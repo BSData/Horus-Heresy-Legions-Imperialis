@@ -59,7 +59,12 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Configuration" hidden="false" id="482f-0ea3-7cd6-4074" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="Configuration" hidden="false" id="482f-0ea3-7cd6-4074" targetId="3779-422e-5fe9-5654">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="11a8-37c4-cb02-c0dd-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="11a8-37c4-cb02-c0dd-max" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Legio Cybernetica Cohort" id="94a5-a718-28c1-4053" hidden="false">
@@ -70,19 +75,19 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink name="HQ" hidden="false" id="2c86-1826-fdf4-b42e" targetId="d950-ad23-9b2-9325" type="category">
+        <categoryLink name="HQWithCortex" hidden="false" id="2c86-1826-fdf4-b42e" targetId="9a5a-339d-f8ce-8432" type="category">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3d06-9409-d9e3-28d8" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f3de-6885-0482-6f4e" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Core" hidden="false" id="f5ed-b04b-af6b-2127" targetId="446a-abe3-63c3-5709" type="category">
+        <categoryLink name="Core" hidden="false" id="f5ed-b04b-af6b-2127" targetId="446a-abe3-63c3-5709">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="ee20-a44e-8d0f-56eb" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="eb42-54e5-011a-fd25" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support" hidden="false" id="730f-6326-f6f0-4e31" targetId="be19-7658-5258-71d9" type="category">
+        <categoryLink name="SupportWithCortex" hidden="false" id="730f-6326-f6f0-4e31" targetId="8ac3-687b-b94f-3057" type="category">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="force" shared="true" id="2eb6-b2bd-a631-35f8" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="baad-6121-5abf-3854" includeChildSelections="false"/>
@@ -95,7 +100,7 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Vanguard" hidden="false" id="7a46-b4bc-3d81-db5e" targetId="8416-456c-a6f-e059" type="category">
+        <categoryLink name="VanguardWithCortex" hidden="false" id="7a46-b4bc-3d81-db5e" targetId="3f06-5c2d-f89b-b53e" type="category">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f113-cf2e-f71a-f94b" includeChildSelections="false"/>
           </constraints>
@@ -107,14 +112,20 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Transport" hidden="false" id="31db-3c1c-9d54-3705" targetId="3751-fb88-3656-b7d1" type="category">
+        <categoryLink name="Transport" hidden="false" id="31db-3c1c-9d54-3705" targetId="3751-fb88-3656-b7d1">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="ca9b-2e5a-0721-efb3" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Titan" hidden="false" id="0401-bdae-af49-691b" targetId="1302-0157-2be4-3d34" type="category">
+        <categoryLink name="Titan" hidden="false" id="0401-bdae-af49-691b" targetId="1302-0157-2be4-3d34">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1621-84ac-c235-490e" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Configuration" hidden="false" id="d937-e623-b55e-2166" targetId="3779-422e-5fe9-5654">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="a0d2-e5bc-7504-08f7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a0d2-e5bc-7504-08f7-max" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -129,13 +140,12 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
         </categoryLink>
         <categoryLink name="Bastion" hidden="false" id="7b5b-0061-4fa1-990e" targetId="2005-60e5-e49d-32f2">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="1b29-d38e-c94a-fd3f" includeChildSelections="false"/>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="617d-4a47-f741-001b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="617d-4a47-f741-001b" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Support" hidden="false" id="1520-b076-1458-4d01" targetId="be19-7658-5258-71d9">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="e456-d3ba-2f90-235d" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="e456-d3ba-2f90-235d" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="c20d-b2f0-dc90-413d" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
@@ -167,6 +177,32 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
               </conditions>
             </modifier>
           </modifiers>
+        </categoryLink>
+        <categoryLink name="Transport" hidden="false" id="3aac-48a9-e3eb-f45b" targetId="3751-fb88-3656-b7d1" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9673-1bb7-d6b4-d75d" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Vanguard" hidden="false" id="954b-fbe1-4290-181e" targetId="8416-456c-a6f-e059" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fa2c-3dcb-c128-3a0e" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core" hidden="false" id="8bc5-6cd6-2a63-a1ec" targetId="446a-abe3-63c3-5709" type="category">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="a5d5-21f6-452d-2609" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Adsecularis Tech-thrall Covenant" hidden="false" id="ccc8-d7d1-5d09-5ca6" targetId="b391-d880-0662-2ef9" type="category">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="4e68-9991-3c60-99c5" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Configuration" hidden="false" id="3433-1c14-72d6-8718" targetId="3779-422e-5fe9-5654">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="56f4-4500-1985-9e8b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="56f4-4500-1985-9e8b-max" includeChildSelections="false"/>
+          </constraints>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
@@ -513,6 +549,7 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
       <categoryLinks>
         <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="e6b8-70cd-852c-b966" primary="false" name="Walker (1)"/>
         <categoryLink targetId="be19-7658-5258-71d9" id="66d2-c577-ccc7-701e" primary="true" name="Support"/>
+        <categoryLink targetId="8ac3-687b-b94f-3057" id="e0e9-e3be-384c-9eb2" primary="false" name="SupportWithCortex"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -531,6 +568,7 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
       <categoryLinks>
         <categoryLink targetId="be19-7658-5258-71d9" id="d341-1c73-1b93-d6cc" primary="true" name="Support"/>
         <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="85ab-8a4f-fda2-0067" primary="false" name="Walker (1)"/>
+        <categoryLink targetId="8ac3-687b-b94f-3057" id="e46c-4221-a241-fa32" primary="false" name="SupportWithCortex"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -549,6 +587,7 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
       <categoryLinks>
         <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="a346-5511-27de-1491" primary="false" name="Walker (1)"/>
         <categoryLink targetId="be19-7658-5258-71d9" id="cd8c-296a-1827-1f94" primary="true" name="Support"/>
+        <categoryLink targetId="8ac3-687b-b94f-3057" id="577d-fbd0-78b8-f9d8" primary="false" name="SupportWithCortex"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -585,6 +624,7 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
       <categoryLinks>
         <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="7770-400c-a766-aa0e" primary="false" name="Walker (1)"/>
         <categoryLink targetId="8416-456c-a6f-e059" id="12cf-b30a-bf17-e6b6" primary="true" name="Vanguard"/>
+        <categoryLink targetId="3f06-5c2d-f89b-b53e" id="e8d6-b294-6c3a-3d49" primary="false" name="VanguardWithCortex"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -603,6 +643,7 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
       <categoryLinks>
         <categoryLink targetId="4376-9c33-b1cc-bb06" id="d512-38de-0bbc-4168" primary="false" name="Cavalry (1)"/>
         <categoryLink targetId="8416-456c-a6f-e059" id="1e2a-8e1f-4065-00ec" primary="true" name="Vanguard"/>
+        <categoryLink targetId="3f06-5c2d-f89b-b53e" id="544b-5f81-1fff-2f4c" primary="false" name="VanguardWithCortex"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -621,6 +662,7 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
       <categoryLinks>
         <categoryLink targetId="446a-abe3-63c3-5709" id="e130-886d-29bb-bcf5" primary="true" name="Core"/>
         <categoryLink targetId="68c1-de55-26b1-8ca4" id="ca17-f0b5-a520-6749" primary="false" name="Infantry (1)"/>
+        <categoryLink targetId="b391-d880-0662-2ef9" id="866e-82e6-1813-5f63" primary="false" name="Adsecularis Tech-thrall Covenant"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -639,6 +681,7 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
       <categoryLinks>
         <categoryLink targetId="d950-ad23-9b2-9325" id="a1d9-d00b-5ef2-b30a" primary="true" name="HQ"/>
         <categoryLink targetId="68c1-de55-26b1-8ca4" id="37d4-273f-8d12-fb61" primary="false" name="Infantry (1)"/>
+        <categoryLink targetId="9a5a-339d-f8ce-8432" id="4f2c-8164-1b8a-aec9" primary="false" name="HQWithCortex"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -657,6 +700,7 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
       <categoryLinks>
         <categoryLink targetId="d950-ad23-9b2-9325" id="f97e-3dbd-be26-b6d9" primary="true" name="HQ"/>
         <categoryLink targetId="68c1-de55-26b1-8ca4" id="547f-0791-5483-626a" primary="false" name="Infantry (1)"/>
+        <categoryLink targetId="9a5a-339d-f8ce-8432" id="fd37-16e5-556c-b937" primary="false" name="HQWithCortex"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -753,6 +797,7 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
       <categoryLinks>
         <categoryLink targetId="be19-7658-5258-71d9" id="045b-9de2-67d6-dc92" primary="true" name="Support"/>
         <categoryLink targetId="68c1-de55-26b1-8ca4" id="40b8-2f4f-32a7-f6c6" primary="false" name="Infantry (1)"/>
+        <categoryLink targetId="8ac3-687b-b94f-3057" id="277a-34ca-087d-5178" primary="false" name="SupportWithCortex"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -824,6 +869,16 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Acastus Knight" id="c761-64b3-7023-0a00" hidden="true"/>
+    <categoryEntry name="HQWithCortex" id="9a5a-339d-f8ce-8432" hidden="true">
+      <comment>unioned detachment type</comment>
+    </categoryEntry>
+    <categoryEntry name="SupportWithCortex" id="8ac3-687b-b94f-3057" hidden="true">
+      <comment>unioned detachment type</comment>
+    </categoryEntry>
+    <categoryEntry name="VanguardWithCortex" id="3f06-5c2d-f89b-b53e" hidden="true">
+      <comment>unioned detachment type</comment>
+    </categoryEntry>
+    <categoryEntry name="Adsecularis Tech-thrall Covenant" id="b391-d880-0662-2ef9" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Krios Venator" hidden="false" id="89bb-e3b8-4a92-eec3">
