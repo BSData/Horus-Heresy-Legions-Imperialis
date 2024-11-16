@@ -564,12 +564,13 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="Tech-thralls" hidden="false" id="75cd-2616-bf86-b21d" type="selectionEntry" targetId="a5c2-be99-e3c2-d171"/>
+                <entryLink import="true" name="Tech-thralls" hidden="false" id="75cd-2616-bf86-b21d" type="selectionEntry" targetId="a5c2-be99-e3c2-d171">
+                  <constraints>
+                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="0043-b3a2-fe7c-757d-min" includeChildSelections="false"/>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0043-b3a2-fe7c-757d-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="100c-04cc-d5c6-25f3-min"/>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="100c-04cc-d5c6-25f3-max"/>
-              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Increase size by 6" hidden="false" id="1900-87ef-14d0-a690">
               <costs>
