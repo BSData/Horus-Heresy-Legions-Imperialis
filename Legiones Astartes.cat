@@ -1310,11 +1310,6 @@
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="854e-b169-ea71-7be7"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Vanguard" hidden="false" id="1715-46bc-5fab-6236" targetId="8416-456c-a6f-e059">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ee2d-5c8f-3929-fb5"/>
-          </constraints>
-        </categoryLink>
       </categoryLinks>
       <rules>
         <rule name="Dedicated Transports (Legion Aerial Assault)" hidden="false" id="9929-f1ba-da9b-323e">
@@ -1454,25 +1449,25 @@
     </forceEntry>
     <forceEntry name="Brethren of Iron" id="6e9c-260f-abd6-7f8e" hidden="false">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="6c26-302b-f659-bae9" targetId="3779-422e-5fe9-5654" type="category"/>
-        <categoryLink name="HQ" hidden="false" id="659b-121e-fec0-10d2" targetId="d950-ad23-9b2-9325" type="category">
+        <categoryLink name="Configuration" hidden="false" id="6c26-302b-f659-bae9" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="HQ" hidden="false" id="659b-121e-fec0-10d2" targetId="d950-ad23-9b2-9325">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="926b-0605-1586-1e53" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8989-214f-a1f8-949e" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Core" hidden="false" id="350c-7315-8758-bb6a" targetId="446a-abe3-63c3-5709" type="category">
+        <categoryLink name="Core" hidden="false" id="350c-7315-8758-bb6a" targetId="446a-abe3-63c3-5709">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="force" shared="true" id="7291-7a5a-9f64-c851" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="015c-f44b-bc4d-14bc" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Bastion" hidden="false" id="a88b-62cf-1474-b0f7" targetId="2005-60e5-e49d-32f2" type="category">
+        <categoryLink name="Bastion" hidden="false" id="a88b-62cf-1474-b0f7" targetId="2005-60e5-e49d-32f2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="17d2-3923-6690-137a" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support" hidden="false" id="65cf-83f1-d999-b8d3" targetId="be19-7658-5258-71d9" type="category">
+        <categoryLink name="Support" hidden="false" id="65cf-83f1-d999-b8d3" targetId="be19-7658-5258-71d9">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1958-fff3-d1a4-2a09" includeChildSelections="false"/>
           </constraints>
@@ -1484,7 +1479,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Vanguard" hidden="false" id="b814-bfc1-bb11-0898" targetId="8416-456c-a6f-e059" type="category">
+        <categoryLink name="Vanguard" hidden="false" id="b814-bfc1-bb11-0898" targetId="8416-456c-a6f-e059">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="38be-6c6d-f200-69db" includeChildSelections="false"/>
           </constraints>
