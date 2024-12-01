@@ -1452,6 +1452,80 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="Brethren of Iron" id="6e9c-260f-abd6-7f8e" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="6c26-302b-f659-bae9" targetId="3779-422e-5fe9-5654" type="category"/>
+        <categoryLink name="HQ" hidden="false" id="659b-121e-fec0-10d2" targetId="d950-ad23-9b2-9325" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="926b-0605-1586-1e53" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8989-214f-a1f8-949e" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core" hidden="false" id="350c-7315-8758-bb6a" targetId="446a-abe3-63c3-5709" type="category">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="7291-7a5a-9f64-c851" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="015c-f44b-bc4d-14bc" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Bastion" hidden="false" id="a88b-62cf-1474-b0f7" targetId="2005-60e5-e49d-32f2" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="17d2-3923-6690-137a" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="65cf-83f1-d999-b8d3" targetId="be19-7658-5258-71d9" type="category">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1958-fff3-d1a4-2a09" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="1958-fff3-d1a4-2a09">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8416-456c-a6f-e059" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Vanguard" hidden="false" id="b814-bfc1-bb11-0898" targetId="8416-456c-a6f-e059" type="category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="38be-6c6d-f200-69db" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="38be-6c6d-f200-69db">
+              <conditions>
+                <condition type="atLeast" value="3" field="selections" scope="force" childId="be19-7658-5258-71d9" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+      <rules>
+        <rule name="Forge Lord" id="c8b1-07da-4326-95cf" hidden="false">
+          <description>HQ Detachment slots in this Support Formation must be filled by HQ Detachments chosen from the Legions Astartes Army List.
+
+Support, Vanguard and Bastion Detachment slots in this Support Formation must be filled with Detachments from the Mechanicum Taghmata Army List. Detachments taken from the Mechanicum Taghmata Army List in this way must have the Cybernetica Cortex (X) special rule.
+
+Core Detachment slots in this Support Formation may be filled by Core Detachments chosen from the Legiones Astartes Army List or with Thallax Cohort Detachments chosen from the Mechanicum Taghmata Army List. HQ and Core Detachments chosen from the Legions Astartes Army List in this Support Formation gain the Cortex Controller special rule.
+
+Detachments from the Mechanicum Taghmata Army List in this Support Formation do not gain the Legiones Astartes special rule selected for this Support Formation, but instead gain the Line special rule while that Detachment is within 8&quot; of a Legions Astartes Detachment from the same Support Formation.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="d7e9-3f57-6664-e7b4" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="d7e9-3f57-6664-e7b4">
+          <repeats>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="dde7-b850-8e13-b7ff" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="2597-c58-f21-eb13" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="6cda-5812-cf52-3fee" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="3cfc-34c7-6d10-10f0" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="27c3-962c-f101-ec45" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="3ff3-f65b-01af-e00e" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="620f-8488-c57a-b870" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="9a97-9a76-77cf-aa42" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </forceEntry>
   </forceEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Leviathan Dreadnoughts" hidden="false" id="1d7-e0c5-5d36-8769">
@@ -1990,9 +2064,14 @@
           </conditionGroups>
         </modifier>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true" includeChildSelections="false"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true" includeChildSelections="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -2262,6 +2341,17 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Cortex Controller" id="cc20-8bdc-d793-56fd" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Deredeo Dreadnought Detachment" hidden="false" id="679a-2a4d-7ca0-175e" publicationId="c1b8-2180-635c-14cd" page="148">
       <categoryLinks>
@@ -2509,6 +2599,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -3088,6 +3183,11 @@
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="7f98-9a24-6f96-f40b" includeChildSelections="false"/>
@@ -3266,6 +3366,11 @@
         <modifier type="set" value="1" field="4d24-4461-2821-e205">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3850,6 +3955,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Plasma Gun Support Detachment" hidden="false" id="d1a3-392a-d335-6aa4">
@@ -3964,6 +4074,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <selectionEntryGroups>
@@ -4616,9 +4731,14 @@
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true" includeChildSelections="false"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true" includeChildSelections="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -5532,6 +5652,17 @@
       <costs>
         <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="11"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Cortex Controller" id="aa1a-d2b7-2c8e-1982" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Tarantula Battery" hidden="false" id="a067-454b-abd1-746a">
       <categoryLinks>
@@ -5764,6 +5895,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -6084,6 +6220,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -6567,6 +6708,11 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Scimitar Jetbike Squadron" hidden="false" id="985f-8a87-3ad8-e797">
@@ -6677,6 +6823,11 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
           </repeats>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6842,6 +6993,11 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
           </repeats>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7078,6 +7234,11 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
           </repeats>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7395,6 +7556,11 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -10559,4 +10725,93 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       </selectionEntries>
     </selectionEntry>
   </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Mechanicum - Library" id="8649-6a4f-f162-f3f0" targetId="5943-3ab9-e00f-e458"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Artalax Battle-Automata Maniple" hidden="false" id="c23b-4cb8-1436-bd8d" type="selectionEntry" targetId="e1db-1b55-f141-5eff">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Line" id="7007-0a16-70ed-7824" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="d2a7-6421-5200-f713" type="selectionEntry" targetId="0e15-d028-584f-3685">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Line" id="34a4-5868-5458-fca0" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="eccc-d128-f55d-9a8e" type="selectionEntry" targetId="22a2-1b3d-28a9-de58">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Line" id="b005-7ece-ea02-3f98" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="9f1c-f40f-e74f-5b81" type="selectionEntry" targetId="d0a5-ec4a-7b1a-f5ab">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Line" id="4b98-32e0-2462-8bcd" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Vultarax Stratos-Automata Squadron" hidden="false" id="e85e-09e3-9be2-00a9" type="selectionEntry" targetId="3aa7-977a-ffc6-e08c">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Line" id="988f-e19e-9da4-5fda" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="90f5-2221-b1e1-708e" type="selectionEntry" targetId="84c0-0968-cc49-82fc">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Line" id="3d04-628f-1206-131f" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Thallax Cohort" hidden="false" id="f0c6-1e08-ce20-2163" type="selectionEntry" targetId="4faa-4503-048b-8302">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Line" id="0c45-d06a-af89-c154" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
+      </infoLinks>
+    </entryLink>
+  </entryLinks>
 </catalogue>

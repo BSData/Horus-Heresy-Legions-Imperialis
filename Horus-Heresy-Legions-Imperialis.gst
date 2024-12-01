@@ -106,7 +106,7 @@
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="49dd-d763-6836-b4f8" hidden="true" name="Unbound Formation (Open Play)">
+    <forceEntry id="49dd-d763-6836-b4f8" hidden="false" name="Unbound Formation (Open Play)">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="f7a1-9027-184e-9946" targetId="3779-422e-5fe9-5654"/>
         <categoryLink name="HQ" hidden="false" id="163b-152c-78b9-ddb6" targetId="d950-ad23-9b2-9325"/>
@@ -120,8 +120,8 @@
         <categoryLink name="Support" hidden="false" id="e1eb-be58-1112-e7d9" targetId="be19-7658-5258-71d9"/>
         <categoryLink name="Transport" hidden="false" id="5289-bb8f-66be-c9cb" targetId="3751-fb88-3656-b7d1"/>
         <categoryLink name="Vanguard" hidden="false" id="beb-b6e2-8aac-f9c2" targetId="8416-456c-a6f-e059"/>
-        <categoryLink name="Knight (4)" hidden="false" id="17c-5158-3e04-e1f6" targetId="13e3-8701-239a-fec9"/>
-        <categoryLink name="Titan (5)" hidden="false" id="c84b-708c-d3ad-3ca7" targetId="9072-16ad-262f-a980"/>
+        <categoryLink name="Knight" hidden="false" id="17c-5158-3e04-e1f6" targetId="adde-db57-b7d8-2daa" type="category"/>
+        <categoryLink name="Titan" hidden="false" id="c84b-708c-d3ad-3ca7" targetId="1302-0157-2be4-3d34" type="category"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Formations of Legend" id="1e4a-3c76-f375-bc07" hidden="false">
@@ -612,6 +612,12 @@ If a Detachment contains more than one model with this rule, the controlling pla
               <categoryLinks>
                 <categoryLink name="Loyalist" hidden="false" id="0f27-b89d-3a46-43fd" targetId="1b68-cce9-e11c-fde7" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                <cost name="Traitor" typeId="a76f-c373-858a-f8b0" value="0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Traitor" hidden="false" id="f6b1-7e35-fd6f-2b8d">
               <modifiers>
@@ -627,6 +633,12 @@ If a Detachment contains more than one model with this rule, the controlling pla
               <categoryLinks>
                 <categoryLink name="Traitor" hidden="false" id="f288-2c14-b288-590f" targetId="437a-7951-c93d-1e14" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                <cost name="Loyalist" typeId="a903-27a9-0810-c526" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -701,4 +713,7 @@ If a Detachment contains more than one model with this rule, the controlling pla
       </modifiers>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="ed30-34c3-cddd-7a9f"/>
+  </sharedSelectionEntries>
 </gameSystem>
