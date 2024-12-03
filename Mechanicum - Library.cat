@@ -2053,6 +2053,108 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <categoryLink name="Infantry (1)" hidden="false" id="5ce3-34e6-ca3e-9d42" targetId="68c1-de55-26b1-8ca4" primary="false"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Adsecularis Tech-thrall Covenant" hidden="false" id="c0b1-535e-3eac-4816">
+      <categoryLinks>
+        <categoryLink name="Core" hidden="false" id="4c73-e515-5237-c372" targetId="446a-abe3-63c3-5709" primary="true"/>
+        <categoryLink name="Infantry (1)" hidden="false" id="5fac-f43d-88e1-e011" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Tech-thralls" hidden="false" id="eecb-ed01-c4e1-9aaa" type="selectionEntry" targetId="a5c2-be99-e3c2-d171" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="20e3-1f23-f951-8b29"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5404-fc17-af01-0ddf"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="c4aa-6b5e-c874-47ca" hidden="false" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b18e-ed6d-ac21-f66d"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Increase size by 2" hidden="false" id="7ed9-cf67-e4d0-0c16">
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="12"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Tech-thralls" hidden="false" id="2047-fe00-0c6f-0fbb" type="selectionEntry" targetId="a5c2-be99-e3c2-d171">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3aaa-199a-ab48-cb30"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c4e0-a8d7-4d74-9eff"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Increase size by 4" hidden="false" id="4976-bf99-c86b-2c2a">
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="22"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Tech-thralls" hidden="false" id="223b-0032-8ac9-dee1" type="selectionEntry" targetId="a5c2-be99-e3c2-d171">
+                  <constraints>
+                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e164-7b42-3cab-83ba" includeChildSelections="false"/>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="b845-b4fe-9beb-8958" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Increase size by 6" hidden="false" id="dd16-09fb-dfa1-d59f">
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Tech-thralls" hidden="false" id="5e6d-f79c-2ca7-a8d2" type="selectionEntry" targetId="a5c2-be99-e3c2-d171">
+                  <constraints>
+                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="dbb7-fee3-6b94-5cd4"/>
+                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="9261-aa6e-6dac-8378"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <comment>For use in Support Detachments</comment>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Mechanicum" id="d331-a05e-f676-b8a6" hidden="false"/>

@@ -2,6 +2,7 @@
 <catalogue library="false" id="e123-f142-1cb1-55ac" name="Knight Household" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Knights - Library" id="4036-0c45-edb2-6d21" targetId="f3a4-9e88-df35-47b9"/>
+    <catalogueLink type="catalogue" name="Mechanicum - Library" id="3062-79f0-ad5b-37f7" targetId="5943-3ab9-e00f-e458"/>
   </catalogueLinks>
   <forceEntries>
     <forceEntry name="Barony Guard Lance" id="4ddc-ea92-f616-6a27" hidden="false" publicationId="89ae-8b6d-da44-733f" page="90">
@@ -30,6 +31,16 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="forces" scope="roster" shared="true" id="fc90-ebbf-fa74-7704" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="fc90-ebbf-fa74-7704">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="24db-5384-cb9f-157f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry name="Vanguard Lance" id="78e8-f8ec-281a-c21a" hidden="false" publicationId="89ae-8b6d-da44-733f" page="90">
       <rules>
@@ -52,17 +63,27 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="9b06-589a-0adc-a85d">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="24db-5384-cb9f-157f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="forces" scope="roster" shared="true" id="9b06-589a-0adc-a85d" includeChildSelections="true"/>
+      </constraints>
     </forceEntry>
     <forceEntry name="Bastion Lance" id="9173-518b-df10-c672" hidden="false" publicationId="89ae-8b6d-da44-733f" page="91">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="6597-bc21-e131-96d1" targetId="3779-422e-5fe9-5654"/>
-        <categoryLink name="Acastus Knight Banner" hidden="false" id="7b47-fb12-9074-62bc" targetId="0d15-eaf4-cef8-8841">
+        <categoryLink name="Acastus" hidden="false" id="7b47-fb12-9074-62bc" targetId="0d15-eaf4-cef8-8841">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="force" shared="true" id="3d41-9bec-2ae2-7ea1" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="5d09-e37a-8a71-069f" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Armiger Knight Banner" hidden="false" id="3c97-d6e1-9a37-e325" targetId="fe26-cfac-c306-cfd8">
+        <categoryLink name="Armiger" hidden="false" id="3c97-d6e1-9a37-e325" targetId="fe26-cfac-c306-cfd8">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="84ca-3d2d-4f40-b0b1" includeChildSelections="false"/>
           </constraints>
@@ -74,16 +95,26 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="3114-61eb-666b-6f07">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="24db-5384-cb9f-157f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="forces" scope="roster" shared="true" id="3114-61eb-666b-6f07" includeChildSelections="true"/>
+      </constraints>
     </forceEntry>
     <forceEntry name="Bonded Household Lance" id="0624-634d-f547-038c" hidden="false" publicationId="89ae-8b6d-da44-733f" page="91">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="f427-6aaa-bccf-3a33" targetId="3779-422e-5fe9-5654"/>
-        <categoryLink name="Acastus Knight Banner" hidden="false" id="dc34-3b96-7feb-558b" targetId="0d15-eaf4-cef8-8841">
+        <categoryLink name="Acastus" hidden="false" id="dc34-3b96-7feb-558b" targetId="0d15-eaf4-cef8-8841">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="10c1-4d5f-42c7-2366" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Armiger Knight Banner" hidden="false" id="7544-9e99-783d-ce60" targetId="fe26-cfac-c306-cfd8">
+        <categoryLink name="Armiger" hidden="false" id="7544-9e99-783d-ce60" targetId="fe26-cfac-c306-cfd8">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="c150-4346-4b49-8ba7" includeChildSelections="false"/>
           </constraints>
@@ -93,7 +124,7 @@
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ffae-0466-1d0b-903b" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Questoris" hidden="false" id="0dbf-157f-5019-2093" targetId="b2bb-ab05-f014-3b33" type="category">
+        <categoryLink name="Questoris" hidden="false" id="0dbf-157f-5019-2093" targetId="b2bb-ab05-f014-3b33">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="force" shared="true" id="9343-7f6b-e65f-5b2e" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9c50-3963-ad1d-fc3e" includeChildSelections="false"/>
@@ -105,6 +136,63 @@
           <description>All Questoris Knights in this Formation must have the Knight Styrix or Knight Magaera weapon loadout. All Armiger slots must be filled with Mechanicum Knight Moirax Talons.</description>
         </rule>
       </rules>
+      <modifiers>
+        <modifier type="set" value="0" field="178b-5c3a-830a-b8f6">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="24db-5384-cb9f-157f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="forces" scope="roster" shared="true" id="178b-5c3a-830a-b8f6" includeChildSelections="true"/>
+      </constraints>
+    </forceEntry>
+    <forceEntry name="Knight Household Retainer Cohorts" id="5713-e733-198b-3bb1" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="95ec-4a08-1d17-a64d" targetId="3779-422e-5fe9-5654" type="category"/>
+        <categoryLink name="Armiger" hidden="false" id="d4c5-c74c-f204-b1e5" targetId="fe26-cfac-c306-cfd8" type="category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="487e-7aa8-ecec-2a07" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Knight" hidden="false" id="5a44-dccd-6556-b961" targetId="adde-db57-b7d8-2daa" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="512a-8bb0-3788-c81a" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="29af-4095-f8d2-a06d" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Vanguard" hidden="false" id="f8f9-50fc-782b-4f34" targetId="8416-456c-a6f-e059" type="category">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="cba3-ae22-6fc3-a0ac" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="9739-f553-79fb-52a4" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Cerastus" hidden="false" id="1270-3949-c9e3-c508" targetId="7e81-3342-b50d-b304" type="category"/>
+        <categoryLink name="Questoris" hidden="false" id="8661-32e8-bad0-cceb" targetId="b2bb-ab05-f014-3b33" type="category"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="forces" scope="roster" shared="true" id="674f-f6ad-c6da-c721" includeChildSelections="true"/>
+      </constraints>
+      <rules>
+        <rule name="Household Vanguard" id="83e1-aa71-72a5-2928" hidden="false" page="">
+          <description>All Vanguard Detachment slots within this Support Formation must be filled by Detachments taken from the Mechanicum Taghmata Army List. Detachments taken from the Mechanicum Taghmata Army List must have the Cybernetica Cortex (X) special rule.
+
+Knight Detachments in this Support Formation gain special rules depending on the Compulsory Detachments chosen:
+- If all Compulsory Vanguard Detachment slots are filled with Vorax Battle-automata Maniple Detachments, then all Knight Detachments in this Support Formation gain the Forward Deployment special rule.
+- If all Compulsory Vanguard Detachment slots are filled with Vultarax Stratos-automata Squadron Detachments, then all Knight Detachments in this Support Formation gain the Outflank special rule.
+
+Questoris Knight Armiger Talons and Mechanicum Knight Moirax Talons cannot be taken as Detachment Upgrades for Detachments taken in Knight Detachment slots, they may only be selected to fill Armiger Knight Banner slots.
+
+All Questoris Knight Banner and Cerastus Knight Banner Detachments within this Support Formation gain the Cortex Controller special rule.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="0" field="674f-f6ad-c6da-c721">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="24db-5384-cb9f-157f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <categoryEntries>
@@ -133,7 +221,7 @@
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="fe26-cfac-c306-cfd8" id="a06d-57c4-2568-5334" primary="true" name="Armiger Knight Banner"/>
+        <categoryLink targetId="fe26-cfac-c306-cfd8" id="a06d-57c4-2568-5334" primary="true" name="Armiger"/>
         <categoryLink targetId="adde-db57-b7d8-2daa" id="53e4-0371-282a-d984" primary="false" name="Knight"/>
       </categoryLinks>
       <entryLinks>
@@ -225,7 +313,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="58e0-0a2e-d3d1-ba8a" publicationId="89ae-8b6d-da44-733f">
       <categoryLinks>
-        <categoryLink targetId="fe26-cfac-c306-cfd8" id="5004-43b5-0053-2d57" primary="true" name="Armiger Knight Banner"/>
+        <categoryLink targetId="fe26-cfac-c306-cfd8" id="5004-43b5-0053-2d57" primary="true" name="Armiger"/>
         <categoryLink targetId="adde-db57-b7d8-2daa" id="0082-fd4e-1399-2a3c" primary="false" name="Knight"/>
       </categoryLinks>
       <costs>
@@ -419,6 +507,11 @@
             <condition type="greaterThan" value="2" field="selections" scope="parent" childId="498a-6c03-47b2-d5c5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
+        <modifier type="set-primary" value="adde-db57-b7d8-2daa" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Baron Upgrade" hidden="false" id="2399-4a0f-38ab-3927" type="selectionEntry" targetId="fa7e-ead2-c740-64b5">
@@ -449,6 +542,45 @@
           </modifiers>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Cortex Controller" id="5e32-dd3b-1c17-da42" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="a405-902d-7015-1470" hidden="true" type="rule" targetId="8785-676-b80f-8709">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1184-9a4c-b4ca-dc03" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Forward Deployment" id="28b7-6447-be5b-ece9" hidden="true" type="rule" targetId="54b4-67fd-a64-86d5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8554-df2e-bb2e-8a91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Cerastus Knight Banner" hidden="false" id="dddd-23e8-3ccc-a68c">
       <categoryLinks>
@@ -502,6 +634,11 @@
             <condition type="equalTo" value="1" field="selections" scope="parent" childId="91f5-5f9e-c102-cb69" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
+        <modifier type="set-primary" value="adde-db57-b7d8-2daa" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Baron Upgrade" hidden="false" id="0994-671b-26c7-f9db" type="selectionEntry" targetId="fa7e-ead2-c740-64b5">
@@ -538,12 +675,47 @@
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Forward Deployment" id="339c-b6cc-f187-4223" hidden="false" type="rule" targetId="54b4-67fd-a64-86d5">
+        <infoLink name="Cortex Controller" id="bc7e-97d7-9b97-4d23" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="78e8-f8ec-281a-c21a" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
               </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="b9f7-feb0-6445-f575" hidden="true" type="rule" targetId="8785-676-b80f-8709">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1184-9a4c-b4ca-dc03" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Forward Deployment" id="24c3-7857-4d59-d5bf" hidden="true" type="rule" targetId="54b4-67fd-a64-86d5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="78e8-f8ec-281a-c21a" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="8554-df2e-bb2e-8a91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -568,6 +740,59 @@
         <categoryLink name="Knight" hidden="false" id="ed86-6979-3697-8635" targetId="adde-db57-b7d8-2daa" primary="false"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Compulsory Detachments" hidden="false" id="b7d4-21c5-37b0-2237">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="1eaa-505d-d483-8ef4" targetId="3779-422e-5fe9-5654" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Compulsory Detachments" id="095f-1786-1afe-84c1" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Vorax Battle-automata Maniple Detachments" hidden="false" id="8554-df2e-bb2e-8a91">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9f57-7dcc-f4ad-931e" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="9f57-7dcc-f4ad-931e">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="force" childId="d0a5-ec4a-7b1a-f5ab" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Vultarax Stratos-automata Squadron Detachments" hidden="false" id="1184-9a4c-b4ca-dc03">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="991e-281e-4af0-a523" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="991e-281e-4af0-a523">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="force" childId="3aa7-977a-ffc6-e08c" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="662d-8bd7-446f-3d66" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="79aa-3ced-7851-7108">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="79aa-3ced-7851-7108" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Baron Upgrade" hidden="false" id="fa7e-ead2-c740-64b5">
@@ -583,4 +808,8 @@
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Vultarax Stratos-Automata Squadron" hidden="false" id="ca60-549a-4771-77eb" type="selectionEntry" targetId="3aa7-977a-ffc6-e08c"/>
+    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="954c-db28-b539-ea69" type="selectionEntry" targetId="d0a5-ec4a-7b1a-f5ab"/>
+  </entryLinks>
 </catalogue>

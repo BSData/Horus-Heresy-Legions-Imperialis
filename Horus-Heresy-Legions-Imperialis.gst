@@ -120,8 +120,8 @@
         <categoryLink name="Support" hidden="false" id="e1eb-be58-1112-e7d9" targetId="be19-7658-5258-71d9"/>
         <categoryLink name="Transport" hidden="false" id="5289-bb8f-66be-c9cb" targetId="3751-fb88-3656-b7d1"/>
         <categoryLink name="Vanguard" hidden="false" id="beb-b6e2-8aac-f9c2" targetId="8416-456c-a6f-e059"/>
-        <categoryLink name="Knight" hidden="false" id="17c-5158-3e04-e1f6" targetId="adde-db57-b7d8-2daa" type="category"/>
-        <categoryLink name="Titan" hidden="false" id="c84b-708c-d3ad-3ca7" targetId="1302-0157-2be4-3d34" type="category"/>
+        <categoryLink name="Knight" hidden="false" id="17c-5158-3e04-e1f6" targetId="adde-db57-b7d8-2daa"/>
+        <categoryLink name="Titan" hidden="false" id="c84b-708c-d3ad-3ca7" targetId="1302-0157-2be4-3d34"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Formations of Legend" id="1e4a-3c76-f375-bc07" hidden="false">
@@ -692,6 +692,7 @@ If a Detachment contains more than one model with this rule, the controlling pla
             <selectionEntry type="upgrade" import="true" name="Dark Mechanicum" hidden="false" id="db41-ab79-2993-9b2a" publicationId="89ae-8b6d-da44-733f">
               <comment>primary army</comment>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Knight Household" hidden="false" id="24db-5384-cb9f-157f"/>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
