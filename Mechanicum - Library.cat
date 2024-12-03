@@ -932,7 +932,26 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <infoLink name="Jump Packs" id="380d-aa83-d6e6-89ae" hidden="false" type="rule" targetId="130c-4ba7-dab7-34b3"/>
         <infoLink name="Cybernetica Cortex (X) " id="686d-ebad-40d1-e0a3" hidden="false" type="rule" targetId="3df1-39f0-9014-cf63">
           <modifiers>
-            <modifier type="set" value="Cybernetica Cortex (Advance, Charge)" field="name"/>
+            <modifier type="set" value="Cybernetica Cortex (Advance, Charge)" field="name">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Cybernetica Cortex (March, Charge)" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Dread Aura (X)" id="2922-75f5-08b5-26e2" hidden="false" type="rule" targetId="2624-3dd4-d87c-5af8">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Dread Aura (3&quot;)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -966,7 +985,26 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </infoLink>
         <infoLink name="Cybernetica Cortex (X) " id="07b5-1682-2eef-aa8b" hidden="false" type="rule" targetId="3df1-39f0-9014-cf63">
           <modifiers>
-            <modifier type="set" value="Cybernetica Cortex (Advance, March)" field="name"/>
+            <modifier type="set" value="Cybernetica Cortex (Advance, March)" field="name">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Cybernetica Cortex (March, Charge)" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Dread Aura (X)" id="ec15-16f3-00f9-3948" hidden="false" type="rule" targetId="2624-3dd4-d87c-5af8">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Dread Aura (3&quot;)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1009,7 +1047,16 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
       <infoLinks>
         <infoLink name="Cybernetica Cortex (X) " id="9f5c-95ca-ab50-04eb" hidden="false" type="rule" targetId="3df1-39f0-9014-cf63">
           <modifiers>
-            <modifier type="set" value="Cybernetica Cortex (Advance, March)" field="name"/>
+            <modifier type="set" value="Cybernetica Cortex (Advance, March)" field="name">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Cybernetica Cortex (March, Charge)" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Invulnerable Save (X)" id="d9ff-a1fa-b88b-ef07" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
@@ -1018,6 +1065,16 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
           </modifiers>
         </infoLink>
         <infoLink name="Armoured" id="f09c-8c05-f4f7-5baa" hidden="false" type="rule" targetId="665b-47e2-df00-2629"/>
+        <infoLink name="Dread Aura (X)" id="3175-9422-1cd9-a0c7" hidden="false" type="rule" targetId="2624-3dd4-d87c-5af8">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Dread Aura (3&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Domitar" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="4003-377a-9990-897b">
@@ -1131,12 +1188,31 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <infoLink name="Armoured" id="714e-2c89-fa5b-0f81" hidden="false" type="rule" targetId="665b-47e2-df00-2629"/>
         <infoLink name="Cybernetica Cortex (X) " id="18c3-8c0c-fbf7-b626" hidden="false" type="rule" targetId="3df1-39f0-9014-cf63">
           <modifiers>
-            <modifier type="set" value="Cybernetica Cortex (Advance, First Fire)" field="name"/>
+            <modifier type="set" value="Cybernetica Cortex (Advance, First Fire)" field="name">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Cybernetica Cortex (March, Charge)" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Invulnerable Save (X)" id="e6de-5c9e-3e1f-3401" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
           <modifiers>
             <modifier type="set" value="Invulnerable Save (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Dread Aura (X)" id="7da8-ae32-3fff-1711" hidden="false" type="rule" targetId="2624-3dd4-d87c-5af8">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Dread Aura (3&quot;)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1264,7 +1340,26 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </infoLink>
         <infoLink name="Cybernetica Cortex (X) " id="794b-21c1-5bfc-0f2a" hidden="false" type="rule" targetId="3df1-39f0-9014-cf63">
           <modifiers>
-            <modifier type="set" value="Cybernetica Cortex (Charge, March)" field="name"/>
+            <modifier type="set" value="Cybernetica Cortex (Charge, March)" field="name">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Cybernetica Cortex (March, Charge)" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Dread Aura (X)" id="e4dc-c254-7767-90f5" hidden="false" type="rule" targetId="2624-3dd4-d87c-5af8">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Dread Aura (3&quot;)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1356,7 +1451,16 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <infoLink name="Armoured" id="16a1-169f-16aa-1e65" hidden="false" type="rule" targetId="665b-47e2-df00-2629"/>
         <infoLink name="Cybernetica Cortex (X) " id="697e-7487-bb6f-226d" hidden="false" type="rule" targetId="3df1-39f0-9014-cf63">
           <modifiers>
-            <modifier type="set" value="Cybernetica Cortex (Advance, March)" field="name"/>
+            <modifier type="set" value="Cybernetica Cortex (Advance, March)" field="name">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Cybernetica Cortex (March, Charge)" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Invulnerable Save (X)" id="61eb-5aab-56eb-4116" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
@@ -1366,6 +1470,16 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </infoLink>
         <infoLink name="Outflank" id="a164-cdc5-e4c5-6673" hidden="false" type="rule" targetId="8785-676-b80f-8709"/>
         <infoLink name="Skimmer" id="0b33-e3c1-6c19-58c8" hidden="false" type="rule" targetId="4f70-6a67-930b-d0fc"/>
+        <infoLink name="Dread Aura (X)" id="5356-5743-d96b-b8dc" hidden="false" type="rule" targetId="2624-3dd4-d87c-5af8">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Dread Aura (3&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Arc blasters" hidden="false" id="8ef6-be78-4df7-6104">
@@ -2153,6 +2267,28 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
+      <comment>For use in Support Detachments</comment>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tech-Priest Auxilia" hidden="false" id="676c-2349-6a2b-2bf4">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="df64-f83f-1b0b-016a" targetId="be19-7658-5258-71d9" primary="true"/>
+        <categoryLink name="Infantry (1)" hidden="false" id="dc6e-cb5e-8b24-d097" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Tech-Priest" hidden="false" id="ca23-7512-7752-be70" type="selectionEntry" targetId="c96f-9492-7e30-43f4" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22ff-cc93-9f36-aa9d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad41-2c29-581f-ecb3" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
       <comment>For use in Support Detachments</comment>
     </selectionEntry>
   </sharedSelectionEntries>

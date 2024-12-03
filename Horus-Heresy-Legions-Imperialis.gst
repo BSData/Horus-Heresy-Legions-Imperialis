@@ -686,9 +686,6 @@ If a Detachment contains more than one model with this rule, the controlling pla
             <selectionEntry type="upgrade" import="true" name="Mechanicum Taghmata" hidden="false" id="f444-dd74-3457-560e" publicationId="89ae-8b6d-da44-733f">
               <comment>primary army</comment>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Questoris Familia" hidden="false" id="20e0-b3b6-a24e-ebe6" publicationId="89ae-8b6d-da44-733f">
-              <comment>primary army</comment>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Dark Mechanicum" hidden="false" id="db41-ab79-2993-9b2a" publicationId="89ae-8b6d-da44-733f">
               <comment>primary army</comment>
             </selectionEntry>

@@ -209,6 +209,60 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Artalax Battle-Automata Maniple" hidden="false" id="43a4-e1f4-1dc9-ed45" type="selectionEntry" targetId="e1db-1b55-f141-5eff">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d6d9-2d0b-2a02-577d" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="0323-d0f8-da6f-db03" type="selectionEntry" targetId="0e15-d028-584f-3685">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d6d9-2d0b-2a02-577d" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="b11e-7536-5ba2-2ea7" type="selectionEntry" targetId="22a2-1b3d-28a9-de58">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d6d9-2d0b-2a02-577d" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="cd36-a38e-a318-1124" type="selectionEntry" targetId="84c0-0968-cc49-82fc">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d6d9-2d0b-2a02-577d" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="8a3a-458b-8591-45fa" type="selectionEntry" targetId="d0a5-ec4a-7b1a-f5ab">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d6d9-2d0b-2a02-577d" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Vultarax Stratos-Automata Squadron" hidden="false" id="e09b-7af9-071d-105e" type="selectionEntry" targetId="3aa7-977a-ffc6-e08c">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d6d9-2d0b-2a02-577d" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedRules>
     <rule name="Construct Shields (X)" id="dc39-0d92-7a72-8fa2" hidden="false">
@@ -365,6 +419,11 @@ When one of more Hits are scored against a Detachment which contains one or more
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d6d9-2d0b-2a02-577d" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -713,6 +772,11 @@ When one of more Hits are scored against a Detachment which contains one or more
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d6d9-2d0b-2a02-577d" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -1546,6 +1610,11 @@ When one of more Hits are scored against a Detachment which contains one or more
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d6d9-2d0b-2a02-577d" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Myrmidon Secutor Host" hidden="false" id="7609-2da4-4262-2907">
@@ -1698,6 +1767,11 @@ When one of more Hits are scored against a Detachment which contains one or more
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d6d9-2d0b-2a02-577d" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -2096,6 +2170,11 @@ When one of more Hits are scored against a Detachment which contains one or more
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d6d9-2d0b-2a02-577d" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
   </selectionEntries>
@@ -2343,6 +2422,54 @@ Note: This is only to determine if the enemy Detachment is Engaged and Pinned - 
           <description>Any Dark Mechanicum Detachment within the Formation that contains only Infantry or Walker models may be upgraded with Triaros Armoured Conveyors as Dedicated Transports.</description>
         </rule>
       </rules>
+    </forceEntry>
+    <forceEntry name="Ironbound Ruinhost" id="d6d9-2d0b-2a02-577d" hidden="false">
+      <rules>
+        <rule name="Automata Malefica" id="7c86-8fbd-6510-0819" hidden="false">
+          <description>All slots within this Support Formation must be filled by Detachments taken from the Mechanicum Taghmata Army List. Detachments taken from the Mechanicum Taghmata Army List must have the Cybernetica Cortex (X) special rule or the Cortex Controller special rule.
+
+All Detachments included in this Support Formation with the Cybernetica Cortex (X) special rule replace the variant they have with Cybernetica Cortex (March, Charge) and have the Dread Aura (3&quot;) special rule.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="757c-d985-dc70-2971" targetId="3779-422e-5fe9-5654" type="category"/>
+        <categoryLink name="HQ" hidden="false" id="816c-da20-5b57-6067" targetId="d950-ad23-9b2-9325" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="fdf7-de61-24bd-4cb4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="242b-ba1d-a78d-501d" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Bastion" hidden="false" id="0efb-a4ab-b164-1934" targetId="2005-60e5-e49d-32f2" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="94ca-b438-4257-8f1d" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="155d-3db9-c861-75e8" targetId="be19-7658-5258-71d9" type="category">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="68d4-1885-15a4-f7e5" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="force" shared="true" id="3d44-af64-41c8-6650" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="4" field="3d44-af64-41c8-6650">
+              <conditions>
+                <condition type="atLeast" value="2" field="selections" scope="force" childId="8416-456c-a6f-e059" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Vanguard" hidden="false" id="2630-308a-4f1b-f1da" targetId="8416-456c-a6f-e059" type="category">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="96ff-eab9-89ce-971f" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="96ff-eab9-89ce-971f">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="force" childId="be19-7658-5258-71d9" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
 </catalogue>

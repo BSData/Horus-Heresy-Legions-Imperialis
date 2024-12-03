@@ -444,18 +444,6 @@
               </costs>
             </entryLink>
           </entryLinks>
-          <modifiers>
-            <modifier type="set" value="0" field="15f7-f4f1-02f0-0268">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true" includeChildForces="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true" includeChildForces="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Acastus Knights" id="553c-609c-3163-7d94" hidden="false" collective="false" import="true" defaultSelectionEntryId="6da8-fb94-f471-9826">
           <constraints>
@@ -512,18 +500,6 @@
               </costs>
             </entryLink>
           </entryLinks>
-          <modifiers>
-            <modifier type="set" value="0" field="45e5-7316-bd3e-f9e1" scope="parent">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true" includeChildForces="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true" includeChildForces="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Cerastus Knights" id="7c80-2724-c134-fc5e" hidden="false" collective="false" import="true">
           <constraints>
@@ -593,18 +569,6 @@
               </costs>
             </entryLink>
           </entryLinks>
-          <modifiers>
-            <modifier type="set" value="0" field="d75c-6de7-4c3a-6585">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true" includeChildForces="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20e0-b3b6-a24e-ebe6" shared="true" includeChildForces="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Questoris Knights" id="2640-4427-a1a4-321c" hidden="false" collective="false" import="true" defaultSelectionEntryId="7174-1e8e-3a1f-2dde">
           <constraints>

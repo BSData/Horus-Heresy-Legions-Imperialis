@@ -167,8 +167,9 @@
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="9739-f553-79fb-52a4" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Cerastus" hidden="false" id="1270-3949-c9e3-c508" targetId="7e81-3342-b50d-b304" type="category"/>
-        <categoryLink name="Questoris" hidden="false" id="8661-32e8-bad0-cceb" targetId="b2bb-ab05-f014-3b33" type="category"/>
+        <categoryLink name="Acastus" hidden="false" id="1270-3949-c9e3-c508" targetId="0d15-eaf4-cef8-8841" type="category"/>
+        <categoryLink name="Cerastus" hidden="false" id="8661-32e8-bad0-cceb" targetId="7e81-3342-b50d-b304" type="category"/>
+        <categoryLink name="Questoris" hidden="false" id="9c5c-76bb-1f8a-0cde" targetId="b2bb-ab05-f014-3b33"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="forces" scope="roster" shared="true" id="674f-f6ad-c6da-c721" includeChildSelections="true"/>
@@ -193,6 +194,48 @@ All Questoris Knight Banner and Cerastus Knight Banner Detachments within this S
           </conditions>
         </modifier>
       </modifiers>
+    </forceEntry>
+    <forceEntry name="Knight Household Aegis Cohorts" id="38da-d338-a14b-cd10" hidden="false">
+      <constraints>
+        <constraint type="max" value="-1" field="forces" scope="roster" shared="true" id="073f-9c42-a622-2ba8" includeChildSelections="true"/>
+      </constraints>
+      <rules>
+        <rule name="Inducted Automata" id="74ce-fb11-1af1-fcc6" hidden="false" page="">
+          <description>All slots within this Support Formation, apart from Knight Detachment slots, must be filled by Detachments taken from the Mechanicum Taghmata Army List. Detachments taken from the Mechanicum Taghmata Army List must have the Cybernetica Cortex (X) special rule.
+
+All Knight Detachments within this Support Formation gain the Cortex Controller special rule. Questoris Knight Armiger Talons and Mechanicum Knight Moirax Talons cannot be taken as Detachment Upgrades for Detachments taken in Knight Detachment slots.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="0" field="073f-9c42-a622-2ba8">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="24db-5384-cb9f-157f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="bc42-f28d-bbe8-a801" targetId="3779-422e-5fe9-5654" type="category"/>
+        <categoryLink name="Bastion" hidden="false" id="2ab3-8b89-5290-cc20" targetId="2005-60e5-e49d-32f2" type="category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="1184-9fc6-45ad-d5d7" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Knight" hidden="false" id="b0d2-8d42-c9b5-b6a0" targetId="adde-db57-b7d8-2daa" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="0e5e-83c7-56c7-59de" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="b2f5-aa22-1f4f-a4fd" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="a16d-4b82-141c-91e0" targetId="be19-7658-5258-71d9" type="category">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="1c3c-0c7e-b245-d27d" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="8875-def5-b607-d621" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Acastus" hidden="false" id="b83a-4f15-0e9c-c903" targetId="0d15-eaf4-cef8-8841" type="category"/>
+        <categoryLink name="Cerastus" hidden="false" id="2df1-11a9-046f-439b" targetId="7e81-3342-b50d-b304" type="category"/>
+        <categoryLink name="Questoris" hidden="false" id="73d6-7b7d-cd42-503e" targetId="b2bb-ab05-f014-3b33" type="category"/>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
   <categoryEntries>
@@ -508,9 +551,14 @@ All Questoris Knight Banner and Cerastus Knight Banner Detachments within this S
           </conditions>
         </modifier>
         <modifier type="set-primary" value="adde-db57-b7d8-2daa" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="38da-d338-a14b-cd10" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <entryLinks>
@@ -543,12 +591,17 @@ All Questoris Knight Banner and Cerastus Knight Banner Detachments within this S
         </entryLink>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Cortex Controller" id="5e32-dd3b-1c17-da42" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319">
+        <infoLink name="Cortex Controller" id="5e32-dd3b-1c17-da42" hidden="true" type="rule" targetId="3579-8e16-d3b1-e319">
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="38da-d338-a14b-cd10" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -635,9 +688,14 @@ All Questoris Knight Banner and Cerastus Knight Banner Detachments within this S
           </conditions>
         </modifier>
         <modifier type="set-primary" value="adde-db57-b7d8-2daa" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="38da-d338-a14b-cd10" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <entryLinks>
@@ -675,15 +733,6 @@ All Questoris Knight Banner and Cerastus Knight Banner Detachments within this S
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Cortex Controller" id="bc7e-97d7-9b97-4d23" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink name="Outflank" id="b9f7-feb0-6445-f575" hidden="true" type="rule" targetId="8785-676-b80f-8709">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -719,6 +768,20 @@ All Questoris Knight Banner and Cerastus Knight Banner Detachments within this S
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Cortex Controller" id="f3ea-2e18-4d76-6c46" hidden="true" type="rule" targetId="3579-8e16-d3b1-e319">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="38da-d338-a14b-cd10" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Acastus Knight Banner" hidden="false" id="9d1c-6921-555d-b854">
@@ -739,6 +802,34 @@ All Questoris Knight Banner and Cerastus Knight Banner Detachments within this S
         <categoryLink name="Knight (4)" hidden="false" id="907b-c321-c044-4545" targetId="13e3-8701-239a-fec9" primary="false"/>
         <categoryLink name="Knight" hidden="false" id="ed86-6979-3697-8635" targetId="adde-db57-b7d8-2daa" primary="false"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="adde-db57-b7d8-2daa" field="category">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="38da-d338-a14b-cd10" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Cortex Controller" id="865f-c378-5ab9-b185" hidden="true" type="rule" targetId="3579-8e16-d3b1-e319">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="38da-d338-a14b-cd10" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Compulsory Detachments" hidden="false" id="b7d4-21c5-37b0-2237">
       <categoryLinks>
@@ -810,6 +901,10 @@ All Questoris Knight Banner and Cerastus Knight Banner Detachments within this S
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Vultarax Stratos-Automata Squadron" hidden="false" id="ca60-549a-4771-77eb" type="selectionEntry" targetId="3aa7-977a-ffc6-e08c"/>
-    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="954c-db28-b539-ea69" type="selectionEntry" targetId="d0a5-ec4a-7b1a-f5ab"/>
+    <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="954c-db28-b539-ea69" type="selectionEntry" targetId="84c0-0968-cc49-82fc"/>
+    <entryLink import="true" name="Artalax Battle-Automata Maniple" hidden="false" id="24bb-1c3d-3ac9-9d4f" type="selectionEntry" targetId="e1db-1b55-f141-5eff"/>
+    <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="6525-878c-3c69-d189" type="selectionEntry" targetId="0e15-d028-584f-3685"/>
+    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="ea0f-ab98-a9e6-562a" type="selectionEntry" targetId="d0a5-ec4a-7b1a-f5ab"/>
+    <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="be32-2334-12e7-2173" type="selectionEntry" targetId="22a2-1b3d-28a9-de58"/>
   </entryLinks>
 </catalogue>
