@@ -1938,7 +1938,7 @@
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">35&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
                 <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
                 <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Rapid Fire</characteristic>
               </characteristics>
             </profile>
