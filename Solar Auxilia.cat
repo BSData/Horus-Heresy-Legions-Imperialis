@@ -411,6 +411,62 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="Iron Cohort" id="8bd4-e86c-1cf5-e6d1" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="d129-d8cd-9725-415c" targetId="3779-422e-5fe9-5654" type="category"/>
+        <categoryLink name="HQ" hidden="false" id="c628-2bb6-093a-43b4" targetId="d950-ad23-9b2-9325" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="b5ce-ade7-6d6f-fc89" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="123f-24bd-0f07-e8e2" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core" hidden="false" id="5bde-0f07-1c5a-f5a7" targetId="446a-abe3-63c3-5709" type="category">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="b399-69c4-abc3-2a00" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="3eef-a763-0f3b-52e0" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Bastion" hidden="false" id="7ec4-63f3-3600-0160" targetId="2005-60e5-e49d-32f2" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ac07-55f3-bea1-af7d" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="ca34-73e4-03a7-3eb7" targetId="be19-7658-5258-71d9" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3888-2bea-a0fb-bdd0" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="2eb1-9285-07d3-5e89" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="2eb1-9285-07d3-5e89">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8416-456c-a6f-e059" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Vanguard" hidden="false" id="cbbc-b404-0ee2-006f" targetId="8416-456c-a6f-e059" type="category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="a606-a824-2a36-a7b8" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="a606-a824-2a36-a7b8">
+              <conditions>
+                <condition type="atLeast" value="3" field="selections" scope="force" childId="be19-7658-5258-71d9" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+      <rules>
+        <rule name="Master of Automata" id="970c-e9eb-95fd-ace3" hidden="false">
+          <description>HQ Detachment slots in this Support Formation must be filled by HQ Detachments chosen from the Solar Auxilia Army List. HQ Detachments chosen from the Solar Auxilia Army List in this Support Formation gain the Cortex Controller special rule.
+
+Optional Support, Vanguard and Bastion Detachment slots in this Support Formation must be filled with Detachments from the Mechanicum Taghmata Army List. Detachments taken from the Mechanicum Taghmata Army List in this way must have the Cybernetica Cortex (X) special rule.
+
+Core Detachment slots in this Support formation may be filled by Core Detachments chosen from the Solar Auxilia Army List or with Thallax Cohort Detachments chosen from the Mechanicum Taghmata Army List.</description>
+        </rule>
+      </rules>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="1f7b-2c5e-5931-57e1" name="Legate Commander Detachment" hidden="false" collective="false" import="true" type="unit">
@@ -624,6 +680,17 @@
         <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="6882-c058-9ae3-d0c0" includeChildSelections="false"/>
         <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="2ff2-4479-7710-ceaf" negative="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Cortex Controller" id="f5f5-6170-4d8f-7d20" hidden="true" type="rule" targetId="3579-8e16-d3b1-e319">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="d6a2-9c78-adb9-ab04" name="Auxilia Tactical Command Detachment" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -779,6 +846,17 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Cortex Controller" id="5e4b-73ca-8e24-6e82" hidden="true" type="rule" targetId="3579-8e16-d3b1-e319">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="5e8d-b46b-963e-cc41" name="Auxilia Lasrifle Tercio" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1175,6 +1253,11 @@
             <condition type="atLeast" value="1" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Infiltrate" hidden="false" type="rule" id="9aec-23d9-fec8-3734" targetId="68b7-f6c7-7925-1567">
@@ -1246,6 +1329,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -1415,6 +1503,11 @@
             <condition type="atLeast" value="7" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Infiltrate" hidden="false" type="rule" id="5cdd-1232-f46b-30ab" targetId="68b7-f6c7-7925-1567">
@@ -1495,6 +1588,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -3483,6 +3581,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Auxilia Malcador Infernus Squadron" hidden="false" id="c936-afc5-dc20-1d2e">
@@ -4430,6 +4533,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -7582,4 +7690,89 @@
       <description>A Solar Auxilia Infantry model increases its CAF by 1 while in base to base contact with one or more friendly Solar Auxilia Infantry models. If a Detachment is Garrisoned within a Structure, it is presumed to be in base contact with at least one other model from that Detachment.</description>
     </rule>
   </rules>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Mechanicum - Library" id="63f8-d006-66ab-7448" targetId="5943-3ab9-e00f-e458"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Artalax Battle-Automata Maniple" hidden="false" id="84bf-9bbb-3d8c-2dcd" type="selectionEntry" targetId="e1db-1b55-f141-5eff">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="846a-7ed8-16b8-f69c" type="selectionEntry" targetId="0e15-d028-584f-3685">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Tech-Priest Auxilia" hidden="false" id="4ed7-1af2-1662-6bdc" type="selectionEntry" targetId="676c-2349-6a2b-2bf4">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="2cd4-8850-a30e-88f3">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="2cd4-8850-a30e-88f3" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="917b-b391-40c2-80cd" type="selectionEntry" targetId="22a2-1b3d-28a9-de58">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="0985-1a9d-8f60-fe4c" type="selectionEntry" targetId="d0a5-ec4a-7b1a-f5ab">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Vultarax Stratos-Automata Squadron" hidden="false" id="ccce-adf5-bd30-fc83" type="selectionEntry" targetId="3aa7-977a-ffc6-e08c">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="137c-693d-2fc9-55d9" type="selectionEntry" targetId="84c0-0968-cc49-82fc">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Thallax Cohort" hidden="false" id="49b5-beec-4e88-df81" type="selectionEntry" targetId="4faa-4503-048b-8302">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
 </catalogue>

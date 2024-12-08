@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4af6-b876-ccef-e4ad" name="Strategic Assets" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="76ec-afbd-859f-876e" name="Strategic Assets" hidden="false"/>
   </categoryEntries>
@@ -26,60 +26,157 @@
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink import="true" name="Questoris Knight Banner" hidden="false" id="8429-9948-fc7f-15aa" type="selectionEntry" targetId="f90d-f5dd-52b7-1442">
+    <entryLink import="true" name="Questoris Knight Banner" hidden="false" id="8429-9948-fc7f-15aa" type="selectionEntry" targetId="5dbb-aa60-1fae-c471">
       <modifiers>
         <modifier type="add" value="76ec-afbd-859f-876e" field="category"/>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="76ec-afbd-859f-876e" id="25f6-df18-63c0-54a6" primary="false" name="Strategic Assets"/>
+        <categoryLink targetId="124c-2927-143f-f513" id="aea2-f677-39ec-7035" primary="false" name="Allied Units"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Cerastus Knight Banner" hidden="false" id="1aa2-3364-90f2-ab5f" type="selectionEntry" targetId="fe2f-03c8-9187-8b2e">
+    <entryLink import="true" name="Cerastus Knight Banner" hidden="false" id="1aa2-3364-90f2-ab5f" type="selectionEntry" targetId="57b8-770b-ddfc-a0dc">
       <modifiers>
         <modifier type="add" value="76ec-afbd-859f-876e" field="category"/>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="76ec-afbd-859f-876e" id="46f2-f419-a5d9-2596" primary="false" name="Strategic Assets"/>
+        <categoryLink targetId="124c-2927-143f-f513" id="99dd-53a0-2c43-aac8" primary="false" name="Allied Units"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Acastus Knight Banner" hidden="false" id="208d-6163-3281-6958" type="selectionEntry" targetId="5086-f7e3-be56-2722">
+    <entryLink import="true" name="Acastus Knight Banner" hidden="false" id="208d-6163-3281-6958" type="selectionEntry" targetId="a677-233e-8405-bc8e">
       <modifiers>
         <modifier type="add" value="76ec-afbd-859f-876e" field="category"/>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="76ec-afbd-859f-876e" id="38ac-8eb0-17ed-0763" primary="false" name="Strategic Assets"/>
+        <categoryLink targetId="124c-2927-143f-f513" id="b5e4-42aa-1c77-8e0e" primary="false" name="Allied Units"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Dire Wolf Heavy Scout Titan" hidden="false" id="f34d-917c-77ce-c2e0" type="selectionEntry" targetId="2705-7537-ed22-4f71">
+    <entryLink import="true" name="Dire Wolf Heavy Scout Titan" hidden="false" id="f34d-917c-77ce-c2e0" type="selectionEntry" targetId="4fc7-0e55-4f96-2ee3">
       <modifiers>
         <modifier type="add" value="76ec-afbd-859f-876e" field="category"/>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="76ec-afbd-859f-876e" id="98b2-2c79-a592-4a72" primary="false" name="Strategic Assets"/>
+        <categoryLink targetId="124c-2927-143f-f513" id="26bd-668d-c4b2-522c" primary="false" name="Allied Units"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Reaver Battle Titan" hidden="false" id="9aba-fe6c-a39e-a4e3" type="selectionEntry" targetId="7372-9394-4311-6fe8">
+    <entryLink import="true" name="Reaver Battle Titan" hidden="false" id="9aba-fe6c-a39e-a4e3" type="selectionEntry" targetId="fb7f-81d1-03ab-e53e">
       <modifiers>
         <modifier type="add" value="76ec-afbd-859f-876e" field="category"/>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="76ec-afbd-859f-876e" id="3f9d-b15b-bbbf-7348" primary="false" name="Strategic Assets"/>
+        <categoryLink targetId="124c-2927-143f-f513" id="3e11-69ec-9eba-191c" primary="false" name="Allied Units"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Warbringer Nemesis Titan" hidden="false" id="90bb-8994-f568-3e51" type="selectionEntry" targetId="c0dd-9489-2ecf-d365">
+    <entryLink import="true" name="Warbringer Nemesis Titan" hidden="false" id="90bb-8994-f568-3e51" type="selectionEntry" targetId="a9a3-dedc-f21a-a560">
       <modifiers>
         <modifier type="add" value="76ec-afbd-859f-876e" field="category"/>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="124c-2927-143f-f513" id="8e4b-d2c1-5a48-d502" primary="false" name="Allied Units"/>
+        <categoryLink targetId="76ec-afbd-859f-876e" id="49bc-4ef2-9729-5732" primary="false" name="Strategic Assets"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Warlord Battle Titan" hidden="false" id="e0f6-46fd-2d25-655c" type="selectionEntry" targetId="be3b-2664-afdb-9482">
+    <entryLink import="true" name="Warlord Battle Titan" hidden="false" id="e0f6-46fd-2d25-655c" type="selectionEntry" targetId="2792-f2e2-a19c-cd7d">
       <modifiers>
         <modifier type="add" value="76ec-afbd-859f-876e" field="category"/>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="124c-2927-143f-f513" id="390d-3697-9537-ad87" primary="false" name="Allied Units"/>
+        <categoryLink targetId="76ec-afbd-859f-876e" id="5a5f-6b0e-e9c6-1898" primary="false" name="Strategic Assets"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Warlord Sinister Battle Titan" hidden="false" id="a8b3-e7fe-f06f-fd67" type="selectionEntry" targetId="b015-24ce-9473-148b">
+    <entryLink import="true" name="Warlord Sinister Battle Titan" hidden="false" id="a8b3-e7fe-f06f-fd67" type="selectionEntry" targetId="064d-d7bb-373a-a756">
       <modifiers>
         <modifier type="add" value="76ec-afbd-859f-876e" field="category"/>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="124c-2927-143f-f513" id="2c5f-ca36-905a-6764" primary="false" name="Allied Units"/>
+        <categoryLink targetId="76ec-afbd-859f-876e" id="8ca8-5775-3c76-af5e" primary="false" name="Strategic Assets"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Warmaster Heavy Battle Titan" hidden="false" id="4f2c-b6a4-f33d-de92" type="selectionEntry" targetId="a2ce-f13c-9a98-9edc">
+    <entryLink import="true" name="Warmaster Heavy Battle Titan" hidden="false" id="4f2c-b6a4-f33d-de92" type="selectionEntry" targetId="e996-6591-4240-9420">
       <modifiers>
-        <modifier type="add" value="76ec-afbd-859f-876e" field="category"/>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="76ec-afbd-859f-876e" id="43b9-d15a-2eeb-6642" primary="false" name="Strategic Assets"/>
+        <categoryLink targetId="124c-2927-143f-f513" id="86aa-e53d-8aac-db31" primary="false" name="Allied Units"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Warmaster Iconoclast Titan" hidden="false" id="f30b-9d6f-c9f4-4c34" type="selectionEntry" targetId="f165-14f9-5315-70a2">
+    <entryLink import="true" name="Warmaster Iconoclast Titan" hidden="false" id="f30b-9d6f-c9f4-4c34" type="selectionEntry" targetId="3219-a349-dcbb-a398">
       <modifiers>
-        <modifier type="add" value="76ec-afbd-859f-876e" field="category"/>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="124c-2927-143f-f513" id="8624-9fac-1d60-4018" primary="false" name="Allied Units"/>
+        <categoryLink targetId="76ec-afbd-859f-876e" id="9336-ae64-d544-976d" primary="false" name="Strategic Assets"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Warhound Hunting Pack" hidden="false" id="81ba-90a7-a52e-64cc" type="selectionEntry" targetId="1e0f-2bf5-af80-8846">
+    <entryLink import="true" name="Warhound Hunting Pack" hidden="false" id="81ba-90a7-a52e-64cc" type="selectionEntry" targetId="82a6-d3d2-d7b6-aae5">
       <modifiers>
         <modifier type="add" value="76ec-afbd-859f-876e" field="category"/>
+        <modifier type="remove" value="124c-2927-143f-f513" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="76ec-afbd-859f-876e" id="293f-5e61-4241-141c" primary="false" name="Strategic Assets"/>
+        <categoryLink targetId="124c-2927-143f-f513" id="1561-b564-4efd-41dc" primary="false" name="Allied Units"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <catalogueLinks>

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="27" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="sys-9498-516a-178a-3f4f" name="Horus Heresy: Legions Imperialis" revision="29" battleScribeVersion="2.03" authorName="BSData Team" authorContact="https://www.bsdata.net/discord" authorUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
+    <publication id="eab5-2233-3200-3063" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis/"/>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://www.warhammer.com/en-GB/shop/legions-imperialis-rulebook-hb-eng-2023"/>
-    <publication id="eab5-2233-3200-3063" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis"/>
     <publication name="Legions Imperialis FAQs and Errata" hidden="false" id="559c-6588-c3b1-b0e5" shortName="LIE" publisherUrl="https://www.warhammer-community.com/legions-imperialis-downloads/" publisher="Legions Imperialis Rulebook Errata" publicationDate="2023"/>
     <publication name="The Great Slaughter" id="06b7-24c3-e0d0-3e98" hidden="false" shortName="GS" publicationDate="2024" publisherUrl="https://www.warhammer.com/en-GB/shop/legions-imperialis-the-great-slaughter-2024"/>
     <publication name="The Devastation of Tallarn" id="e4cc-404e-be5e-2101" hidden="false" shortName="DOT" publicationDate="2024" publisherUrl="https://www.warhammer.com/en-GB/shop/legions-imperialis-devastation-of-tallarn-2024-eng"/>
     <publication name="Rise of the Dark Mechanicum" id="89ae-8b6d-da44-733f" hidden="false" shortName="RDM" publicationDate="2024"/>
+    <publication name="Bonded Cybernetica Support Formations" id="3a86-b962-115c-2239" hidden="false" publisherUrl="https://assets.warhammer-community.com/legions_imperialis_expandedcyberneticaformations_eng_07-mdsmqowyoy-tu5prvasqe.pdf" shortName="BC" publicationDate="2024"/>
   </publications>
   <costTypes>
     <costType id="ee95-a20e-f9ff-e2c2" name="‏‏‎‏points" defaultCostLimit="3000" hidden="false"/>
@@ -105,7 +106,7 @@
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="49dd-d763-6836-b4f8" hidden="true" name="Unbound Formation (Open Play)">
+    <forceEntry id="49dd-d763-6836-b4f8" hidden="false" name="Unbound Formation (Open Play)">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="f7a1-9027-184e-9946" targetId="3779-422e-5fe9-5654"/>
         <categoryLink name="HQ" hidden="false" id="163b-152c-78b9-ddb6" targetId="d950-ad23-9b2-9325"/>
@@ -119,8 +120,8 @@
         <categoryLink name="Support" hidden="false" id="e1eb-be58-1112-e7d9" targetId="be19-7658-5258-71d9"/>
         <categoryLink name="Transport" hidden="false" id="5289-bb8f-66be-c9cb" targetId="3751-fb88-3656-b7d1"/>
         <categoryLink name="Vanguard" hidden="false" id="beb-b6e2-8aac-f9c2" targetId="8416-456c-a6f-e059"/>
-        <categoryLink name="Knight" hidden="false" id="17c-5158-3e04-e1f6" targetId="13e3-8701-239a-fec9"/>
-        <categoryLink name="Titan" hidden="false" id="c84b-708c-d3ad-3ca7" targetId="9072-16ad-262f-a980"/>
+        <categoryLink name="Knight" hidden="false" id="17c-5158-3e04-e1f6" targetId="adde-db57-b7d8-2daa"/>
+        <categoryLink name="Titan" hidden="false" id="c84b-708c-d3ad-3ca7" targetId="1302-0157-2be4-3d34"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Formations of Legend" id="1e4a-3c76-f375-bc07" hidden="false">
@@ -611,6 +612,12 @@ If a Detachment contains more than one model with this rule, the controlling pla
               <categoryLinks>
                 <categoryLink name="Loyalist" hidden="false" id="0f27-b89d-3a46-43fd" targetId="1b68-cce9-e11c-fde7" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                <cost name="Traitor" typeId="a76f-c373-858a-f8b0" value="0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Traitor" hidden="false" id="f6b1-7e35-fd6f-2b8d">
               <modifiers>
@@ -626,6 +633,12 @@ If a Detachment contains more than one model with this rule, the controlling pla
               <categoryLinks>
                 <categoryLink name="Traitor" hidden="false" id="f288-2c14-b288-590f" targetId="437a-7951-c93d-1e14" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                <cost name="Loyalist" typeId="a903-27a9-0810-c526" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -658,17 +671,25 @@ If a Detachment contains more than one model with this rule, the controlling pla
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
+              <comment>primary army</comment>
             </selectionEntry>
             <selectionEntry id="288d-7913-984c-5d0" name="Legiones Astartes" hidden="false" collective="false" import="true" type="upgrade" publicationId="c1b8-2180-635c-14cd">
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
+              <comment>primary army</comment>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Collegia Titanica" hidden="false" id="6ce5-83db-2122-c90b" publicationId="89ae-8b6d-da44-733f"/>
-            <selectionEntry type="upgrade" import="true" name="Mechanicum Taghmata" hidden="false" id="f444-dd74-3457-560e" publicationId="89ae-8b6d-da44-733f"/>
-            <selectionEntry type="upgrade" import="true" name="Questoris Familia" hidden="false" id="20e0-b3b6-a24e-ebe6" publicationId="89ae-8b6d-da44-733f"/>
-            <selectionEntry type="upgrade" import="true" name="Dark Mechanicum" hidden="false" id="db41-ab79-2993-9b2a" publicationId="89ae-8b6d-da44-733f"/>
+            <selectionEntry type="upgrade" import="true" name="Collegia Titanica" hidden="false" id="6ce5-83db-2122-c90b" publicationId="89ae-8b6d-da44-733f">
+              <comment>primary army</comment>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mechanicum Taghmata" hidden="false" id="f444-dd74-3457-560e" publicationId="89ae-8b6d-da44-733f">
+              <comment>primary army</comment>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dark Mechanicum" hidden="false" id="db41-ab79-2993-9b2a" publicationId="89ae-8b6d-da44-733f">
+              <comment>primary army</comment>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Knight Household" hidden="false" id="24db-5384-cb9f-157f"/>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -690,4 +711,7 @@ If a Detachment contains more than one model with this rule, the controlling pla
       </modifiers>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="ed30-34c3-cddd-7a9f"/>
+  </sharedSelectionEntries>
 </gameSystem>
