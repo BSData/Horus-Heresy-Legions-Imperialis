@@ -705,7 +705,7 @@ If a Detachment contains more than one model with this rule, the controlling pla
         </modifier>
         <modifier type="set" value="0" field="c522-7329-8bef-9b29">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="49dd-d763-6836-b4f8" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
