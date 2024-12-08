@@ -371,6 +371,11 @@ When one of more Hits are scored against a Detachment which contains one or more
             <infoLink name="Noosphere Controller" id="6632-7eb4-6649-4de4" hidden="false" type="rule" targetId="1f49-7cd8-709a-2550"/>
             <infoLink name="Traitor" id="9c8c-8125-73da-3c71" hidden="false" type="rule" targetId="1ba2-160d-833a-2522"/>
           </infoLinks>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -521,6 +526,11 @@ When one of more Hits are scored against a Detachment which contains one or more
             <infoLink name="Networked Anima" id="89a6-afbd-b3d8-317a" hidden="false" type="rule" targetId="0686-4de6-fc69-0deb"/>
             <infoLink name="Nimble" id="17d9-d473-471e-d414" hidden="false" type="rule" targetId="bc40-962f-5fc5-771a"/>
           </infoLinks>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -896,6 +906,11 @@ When one of more Hits are scored against a Detachment which contains one or more
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09e1-18eb-dfae-33b3" includeChildSelections="false"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="1f8e-20cb-50c8-f501" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1077,6 +1092,11 @@ When one of more Hits are scored against a Detachment which contains one or more
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da12-fcc2-5355-d3d1" includeChildSelections="false"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="f4a4-2796-b5ea-da28" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2240,6 +2260,11 @@ When one of more Hits are scored against a Detachment which contains one or more
         <infoLink name="Jump Packs" id="8534-0bed-8a0c-6a0c" hidden="false" type="rule" targetId="130c-4ba7-dab7-34b3"/>
         <infoLink name="Networked Anima" id="3a78-7f10-3a73-335e" hidden="false" type="rule" targetId="0686-4de6-fc69-0deb"/>
       </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <forceEntries>
@@ -2432,19 +2457,19 @@ All Detachments included in this Support Formation with the Cybernetica Cortex (
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="757c-d985-dc70-2971" targetId="3779-422e-5fe9-5654" type="category"/>
-        <categoryLink name="HQ" hidden="false" id="816c-da20-5b57-6067" targetId="d950-ad23-9b2-9325" type="category">
+        <categoryLink name="Configuration" hidden="false" id="757c-d985-dc70-2971" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="HQ" hidden="false" id="816c-da20-5b57-6067" targetId="d950-ad23-9b2-9325">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="fdf7-de61-24bd-4cb4" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="242b-ba1d-a78d-501d" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Bastion" hidden="false" id="0efb-a4ab-b164-1934" targetId="2005-60e5-e49d-32f2" type="category">
+        <categoryLink name="Bastion" hidden="false" id="0efb-a4ab-b164-1934" targetId="2005-60e5-e49d-32f2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="94ca-b438-4257-8f1d" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support" hidden="false" id="155d-3db9-c861-75e8" targetId="be19-7658-5258-71d9" type="category">
+        <categoryLink name="Support" hidden="false" id="155d-3db9-c861-75e8" targetId="be19-7658-5258-71d9">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="force" shared="true" id="68d4-1885-15a4-f7e5" includeChildSelections="false"/>
             <constraint type="max" value="6" field="selections" scope="force" shared="true" id="3d44-af64-41c8-6650" includeChildSelections="false"/>
@@ -2457,7 +2482,7 @@ All Detachments included in this Support Formation with the Cybernetica Cortex (
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Vanguard" hidden="false" id="2630-308a-4f1b-f1da" targetId="8416-456c-a6f-e059" type="category">
+        <categoryLink name="Vanguard" hidden="false" id="2630-308a-4f1b-f1da" targetId="8416-456c-a6f-e059">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="96ff-eab9-89ce-971f" includeChildSelections="false"/>
           </constraints>
