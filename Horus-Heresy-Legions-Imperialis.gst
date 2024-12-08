@@ -90,7 +90,7 @@
     <categoryEntry id="be9f-b973-245e-49bf" name="Super-heavy Vehicle (3)" hidden="false"/>
     <categoryEntry id="124c-2927-143f-f513" name="Allied Units" hidden="false" publicationId="c1b8-2180-635c-14cd" page="129">
       <constraints>
-        <constraint field="limit::ee95-a20e-f9ff-e2c2" scope="roster" value="30" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="true" id="6530-6ad1-414a-fa00" type="max"/>
+        <constraint field="limit::ee95-a20e-f9ff-e2c2" scope="roster" value="30" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="6530-6ad1-414a-fa00" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="13e3-8701-239a-fec9" name="Knight (4)" hidden="false" publicationId="c1b8-2180-635c-14cd" page="128"/>
