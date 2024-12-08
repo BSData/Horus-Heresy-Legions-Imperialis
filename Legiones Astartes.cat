@@ -4818,7 +4818,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
         <categoryLink targetId="49b3-dae7-33f8-f8e" id="a749-8fa7-1a53-d5e6" primary="false" name="Vehicle (2)"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Legion Predator" hidden="false" id="fdd2-1ff3-d0ef-e94">
+        <selectionEntry type="model" import="true" name="Legion Predator" hidden="false" id="fdd2-1ff3-d0ef-e94" defaultAmount="1,1,1">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="759d-7f12-84b7-890c"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="ec8f-db31-2672-833b"/>
