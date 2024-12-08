@@ -1064,6 +1064,567 @@
         <infoLink name="Forward Deployment" id="c91d-57d4-da7a-dea6" hidden="false" type="rule" targetId="54b4-67fd-a64-86d5"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Predator Commander" hidden="false" id="7195-e990-7a20-16f4">
+      <categoryLinks>
+        <categoryLink name="Vehicle (2)" hidden="false" id="1a1c-3f95-65a3-e9c8" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+        <categoryLink name="Battle Tank" hidden="false" id="bbaa-bef6-8fc5-9ba5" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Predator Commander" hidden="false" id="1a78-2eaf-23bf-7e66">
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d335-d755-e98a-2253" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b41e-33b3-498d-e471" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Predator Commander" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="ad1d-d61e-f01d-da7c">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">9&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+3</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">2+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="ea9c-9656-34b2-f589" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Sponsons" id="0f81-984f-ee68-a0d8" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Sponson Mounted heavy bolters" hidden="false" id="e19a-9fe3-2574-161c">
+                      <profiles>
+                        <profile name="Sponson Mounted heavy bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9126-051b-8e77-5061">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Point Defence" id="7d71-9d0c-e584-ddab" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                        <infoLink name="Arc (Front/Rear)" id="46e3-7443-c428-c9d4" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                        <infoLink name="Light" id="de5f-4cbe-638c-1332" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="fcb2-98cd-b27a-655a">
+                      <profiles>
+                        <profile name="Sponson Mounted lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9fc2-64c0-db39-0afc">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Arc (Front/Rear)" id="56f7-026b-a642-0d67" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                        <infoLink name="Anti-tank" id="cde1-4766-2d91-1e8a" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc6f-7c81-e97e-4389" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d94e-d885-23a4-c9fb" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Turret" id="236e-42d8-e1d9-1077" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Predator cannon" hidden="false" id="d05d-94c7-c548-51d8">
+                      <profiles>
+                        <profile name="Predator cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="fa5f-b865-1132-e290">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Light AT" id="7b40-e366-3ce4-b8ac" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Predator lascannon" hidden="false" id="c285-7ddb-882b-b043">
+                      <profiles>
+                        <profile name="Predator lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="761d-5045-2ada-bbc4">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Anti-tank</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Anti-tank" id="eae6-fd4e-4ecb-4d9b" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                        <infoLink name="Accurate" id="629e-36cb-f037-cbff" hidden="false" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a80-d0c0-1035-c58f" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb8f-cc7b-ca35-81ce" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="60"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Master Tactician" id="8f8d-399f-f362-d9da" hidden="false" type="rule" targetId="db05-2ad8-6256-20e9"/>
+        <infoLink name="Inspire (X)" id="ccfb-4702-ccbc-5d5f" hidden="false" type="rule" targetId="941e-dc74-2689-bf1f">
+          <modifiers>
+            <modifier type="set" value="Inspire (8&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Invulnerable Save (X)" id="a28c-8254-4e34-1766" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
+          <modifiers>
+            <modifier type="set" value="Invulnerable Save (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Commander" id="8223-7fc7-2bd3-101c" hidden="false" type="rule" targetId="caaf-3de0-3658-9054"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Sicaran Commander" hidden="false" id="128a-f1de-0a00-d903">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Sicaran Commander" hidden="false" id="51e7-263f-4d80-94f8">
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5025-991f-f12a-004f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2eee-d98c-e890-523c" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Sicaran Commander" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="3591-e95e-9c00-7698">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">10&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+3</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">2+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="3257-f487-0095-59b7" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Sponsons" id="e2c1-040a-1816-06b7" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Sponson Mounted heavy bolters" hidden="false" id="8877-1760-8c19-25b9">
+                      <profiles>
+                        <profile name="Sponson Mounted heavy bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="3ee6-0468-1208-10db">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Point Defence" id="198f-8cfd-2a5b-7be0" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                        <infoLink name="Arc (Front/Rear)" id="df1c-8ef9-2b37-d140" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                        <infoLink name="Light" id="2003-c3cf-0cc8-c2fa" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="f6eb-c481-756c-1f8b">
+                      <profiles>
+                        <profile name="Sponson Mounted lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ea34-90f3-f4fe-986a">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Arc (Front/Rear)" id="2416-47f1-df0b-496a" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                        <infoLink name="Anti-tank" id="6b16-ceab-a7ba-7235" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c589-8aca-f8b1-0f02" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5585-b026-e3c4-50bd" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Turret" id="78c4-c89e-3496-0a80" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Twin-linked accelerator autocannon" hidden="false" id="e91f-8aa6-7841-ab55">
+                      <profiles>
+                        <profile name="Twin-linked accelerator autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6437-53d2-313a-c32b">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Tracking</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Tracking" id="97ac-a4c7-0201-d2f3" hidden="false" type="rule" targetId="eb09-d940-39cc-16f7"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Omega plasma array" hidden="false" id="10fd-1095-1749-c0fd">
+                      <profiles>
+                        <profile name="Omega plasma array" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="897e-050a-0809-d0ea">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Accurate" id="9c10-8874-b251-2ebb" hidden="false" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Punisher rotary cannon" hidden="false" id="e7af-113f-3474-70a5">
+                      <profiles>
+                        <profile name="Punisher rotary cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e391-87f5-17b7-b6ee">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT, Rapid Fire</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Rapid Fire" id="cbe5-4ffc-634b-9328" hidden="false" type="rule" targetId="d56d-6332-debe-ab1a"/>
+                        <infoLink name="Light AT" id="cd8f-059a-75ef-44e5" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8580-2235-661f-cabf" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f1a-5b62-7701-ed31" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter" hidden="false" id="b732-71ec-6dc7-45e5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eff2-11d6-2b19-b570" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1789-1cc8-2aa2-c4fa" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Hull Mounted heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0d31-ebf2-d7bf-821c">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Point Defence" id="a2e9-7ff9-9aeb-ec40" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                    <infoLink name="Light" id="1fd9-d1e7-4228-2294" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Arc (Front/Rear)" id="6732-5bc8-36e7-6240" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="70"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Commander" id="b751-ee24-37bf-9dfb" hidden="false" type="rule" targetId="caaf-3de0-3658-9054"/>
+        <infoLink name="Inspire (X)" id="ab73-07e0-68e1-3887" hidden="false" type="rule" targetId="941e-dc74-2689-bf1f">
+          <modifiers>
+            <modifier type="set" value="Inspire (8&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Invulnerable Save (X)" id="df0c-4432-0515-87d5" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
+          <modifiers>
+            <modifier type="set" value="Invulnerable Save (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Master Tactician" id="c12e-c4c7-0b97-6d91" hidden="false" type="rule" targetId="db05-2ad8-6256-20e9"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Battle Tank" hidden="false" id="be1b-708f-a974-5288" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
+        <categoryLink name="Vehicle (2)" hidden="false" id="a1ba-495e-167f-3fd0" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Kratos Commander" hidden="false" id="15fe-6700-ee50-d6f8">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Vehicle (2)" hidden="false" id="030b-613e-d566-d95b" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+        <categoryLink name="Heavy Armour" hidden="false" id="460f-baac-6aca-e15b" targetId="1f6b-d764-352d-1e74" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Kratos Commander" hidden="false" id="9fbb-7d8a-fd20-314f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9bb1-f18c-279a-67db" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b12a-7d3c-0903-4e6a" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="9d0f-610e-da66-c14d" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Hull Mounted" id="ff2b-7c67-9d56-a4b9" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Two Hull Mounted heavy bolters" hidden="false" id="e258-96e1-7bab-d2c8">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolters" hidden="false" id="e4c1-c8ba-4a87-6681">
+                          <profiles>
+                            <profile name="Hull Mounted heavy bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1f35-93e0-df85-0f58">
+                              <characteristics>
+                                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <infoLinks>
+                            <infoLink name="Point Defence" id="0f6f-61c3-3226-6e4a" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                            <infoLink name="Arc (Front/Rear)" id="cbdf-0578-66f3-b37b" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                            <infoLink name="Light" id="e496-d4da-fd37-93a2" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7c60-7ed4-08f5-a2c5" includeChildSelections="false"/>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="37b4-4ff5-656d-ed5d" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Two Kratos lascannon" hidden="false" id="df33-a7e7-528c-42c9">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Kratos lascannon" hidden="false" id="4a2e-8074-d554-105b">
+                          <profiles>
+                            <profile name="Kratos lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1b71-1f4c-9013-8b00">
+                              <characteristics>
+                                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Accurate, Anti-tank</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <infoLinks>
+                            <infoLink name="Accurate" id="8a17-bcf3-e378-e1c3" hidden="false" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
+                            <infoLink name="Anti-tank" id="b5f9-db08-053d-e8d4" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                            <infoLink name="Arc (Front/Rear)" id="1bc9-f6cc-868c-abdf" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1fc3-3994-2b6f-c494" includeChildSelections="false"/>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="65ce-b73d-dc4c-6667" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Two Kratos autocannon" hidden="false" id="e637-1ff2-59db-ffea">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Kratos autocannon" hidden="false" id="37ad-1ddf-d07c-a3c1">
+                          <profiles>
+                            <profile name="Kratos autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="19f9-3f6d-39c3-3b62">
+                              <characteristics>
+                                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Accurate, Light AT</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <infoLinks>
+                            <infoLink name="Accurate" id="12d1-3948-b166-daa3" hidden="false" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
+                            <infoLink name="Light AT" id="3e5c-02b4-ecf9-1e73" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+                            <infoLink name="Arc (Front/Rear)" id="984f-4d44-b190-f3e5" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="540b-f7cc-8036-b140" includeChildSelections="false"/>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d760-ec09-a729-0e2c" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5dea-1dfd-bea4-6e1b" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="220c-7cd5-0e72-27c3" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Turret" id="f698-27c9-9d92-c5c7" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Kratos battlecannon" hidden="false" id="d171-a3ee-1b9b-0b21">
+                      <profiles>
+                        <profile name="Kratos battlecannon - 1" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f205-2a59-31ad-5d39">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">-</characteristic>
+                          </characteristics>
+                        </profile>
+                        <profile name="Kratos battlecannon - 2" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="333b-605e-9f26-a762">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Armourbane</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Armourbane" id="5072-bbed-9594-41fb" hidden="false" type="rule" targetId="e2f7-4ff5-3f66-fed5"/>
+                        <infoLink name="Anti-tank" id="7c5a-d947-7c4d-913c" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melta blastgun" hidden="false" id="7a1e-7a8d-c6dc-4180">
+                      <profiles>
+                        <profile name="Melta blastgun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f3d5-ad8a-60c8-caad">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Armourbane, Bunker Buster</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Bunker Buster" id="5038-94ab-b3c7-f110" hidden="false" type="rule" targetId="7543-9f13-322f-a481"/>
+                        <infoLink name="Anti-tank" id="699c-ea8c-f328-fabc" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                        <infoLink name="Armourbane" id="e14a-a5d0-956b-6db0" hidden="false" type="rule" targetId="e2f7-4ff5-3f66-fed5"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b35b-d93e-18b7-ce2c" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23af-7ac2-1052-9681" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Sponsons" id="ce17-7895-2d31-f8ff" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Sponson Mounted heavy bolters" hidden="false" id="1874-71bc-5092-5388">
+                      <profiles>
+                        <profile name="Sponson Mounted heavy bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="b505-e25a-5bbd-5578">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Point Defence" id="be03-2137-307d-2681" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                        <infoLink name="Arc (Front/Rear)" id="7200-ec21-3f9a-56cc" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                        <infoLink name="Light" id="2314-b631-fbf8-34ea" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="e14f-5a03-8512-3c40">
+                      <profiles>
+                        <profile name="Sponson Mounted lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="94d6-d5a3-f3f8-9e25">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Arc (Front/Rear)" id="0cd2-48a7-e631-cb43" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                        <infoLink name="Anti-tank" id="578c-9ad7-e6b2-7459" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c3b7-e0a1-8a75-ab41" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f01-7c08-e2d2-acf2" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Co-axial autocannon" hidden="false" id="e722-3ddb-58af-4703">
+                  <profiles>
+                    <profile name="Co-axial autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6779-6871-593f-9ac2">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Co-axial, Light AT</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Light AT" id="747f-296b-b555-c065" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+                    <infoLink name="Co-axial" id="4a56-dfa7-22cd-5fa6" hidden="false" type="rule" targetId="3be1-fdf0-05dc-4c02"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10ad-4e34-bb35-41fb" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb18-b918-0888-046b" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Commander" id="e504-75c1-7cdb-4cb8" hidden="false" type="rule" targetId="caaf-3de0-3658-9054"/>
+        <infoLink name="Inspire (X)" id="1e1c-e3a0-dc96-2387" hidden="false" type="rule" targetId="941e-dc74-2689-bf1f">
+          <modifiers>
+            <modifier type="set" value="Inspire (8&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Invulnerable Save (X)" id="e8fc-8560-25b7-06f5" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
+          <modifiers>
+            <modifier type="set" value="Invulnerable Save (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Master Tactician" id="8a6d-7a98-8e6b-5c84" hidden="false" type="rule" targetId="db05-2ad8-6256-20e9"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <forceEntries>
     <forceEntry name="Legion Demi-Company" hidden="false" id="6cda-5812-cf52-3fee">
@@ -10808,5 +11369,23 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
         <infoLink name="Line" id="0c45-d06a-af89-c154" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
       </infoLinks>
     </entryLink>
+    <entryLink import="true" name="Legion Predator Commander" hidden="false" id="d93b-9a9b-3b92-21b8" type="selectionEntry" targetId="7195-e990-7a20-16f4"/>
+    <entryLink import="true" name="Legion Predator Commander" hidden="false" id="9712-c70f-b1be-6072" type="selectionEntry" targetId="7195-e990-7a20-16f4">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="fbcf-0147-5b38-a0b3" targetId="d950-ad23-9b2-9325" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Legion Sicaran Commander" hidden="false" id="17ae-3d38-fb8b-e32e" type="selectionEntry" targetId="128a-f1de-0a00-d903">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="c05b-b69b-2076-e590" targetId="d950-ad23-9b2-9325" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Legion Sicaran Commander" hidden="false" id="bc16-a920-3276-92d6" type="selectionEntry" targetId="128a-f1de-0a00-d903"/>
+    <entryLink import="true" name="Legion Kratos Commander" hidden="false" id="51d3-6082-68e6-95ae" type="selectionEntry" targetId="15fe-6700-ee50-d6f8">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="9f12-9296-4026-ed21" targetId="d950-ad23-9b2-9325" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Legion Kratos Commander" hidden="false" id="eade-cd19-787e-67dd" type="selectionEntry" targetId="15fe-6700-ee50-d6f8"/>
   </entryLinks>
 </catalogue>
