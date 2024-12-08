@@ -2579,17 +2579,6 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6595-4402-40ac-9dfd"/>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="eeda-8d62-3abd-1ca8" includeChildSelections="false"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="1" field="eeda-8d62-3abd-1ca8">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2872,7 +2861,6 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3683,14 +3671,9 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
               </constraints>
               <modifiers>
                 <modifier type="set" value="1" field="5e20-a0ee-7729-9ab3">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -3885,7 +3868,6 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="3ff3-f65b-01af-e00e" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4464,7 +4446,6 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4800,7 +4781,6 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5245,7 +5225,6 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                 <modifier type="set" value="1" field="a4dd-a22f-9b79-24c1">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6151,7 +6130,6 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -6684,14 +6662,9 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
               </constraints>
               <modifiers>
                 <modifier type="set" value="1" field="7afc-a58a-d78a-e8dd">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="dde7-b850-8e13-b7ff" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3ff3-f65b-01af-e00e" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3ff3-f65b-01af-e00e" shared="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
