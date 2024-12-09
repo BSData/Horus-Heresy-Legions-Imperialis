@@ -149,26 +149,26 @@
     </forceEntry>
     <forceEntry name="Knight Household Retainer Cohorts" id="5713-e733-198b-3bb1" hidden="false">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="95ec-4a08-1d17-a64d" targetId="3779-422e-5fe9-5654" type="category"/>
-        <categoryLink name="Armiger" hidden="false" id="d4c5-c74c-f204-b1e5" targetId="fe26-cfac-c306-cfd8" type="category">
+        <categoryLink name="Configuration" hidden="false" id="95ec-4a08-1d17-a64d" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="Armiger" hidden="false" id="d4c5-c74c-f204-b1e5" targetId="fe26-cfac-c306-cfd8">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="487e-7aa8-ecec-2a07" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Knight" hidden="false" id="5a44-dccd-6556-b961" targetId="adde-db57-b7d8-2daa" type="category">
+        <categoryLink name="Knight" hidden="false" id="5a44-dccd-6556-b961" targetId="adde-db57-b7d8-2daa">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="512a-8bb0-3788-c81a" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="29af-4095-f8d2-a06d" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Vanguard" hidden="false" id="f8f9-50fc-782b-4f34" targetId="8416-456c-a6f-e059" type="category">
+        <categoryLink name="Vanguard" hidden="false" id="f8f9-50fc-782b-4f34" targetId="8416-456c-a6f-e059">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="force" shared="true" id="cba3-ae22-6fc3-a0ac" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="9739-f553-79fb-52a4" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Acastus" hidden="false" id="1270-3949-c9e3-c508" targetId="0d15-eaf4-cef8-8841" type="category"/>
-        <categoryLink name="Cerastus" hidden="false" id="8661-32e8-bad0-cceb" targetId="7e81-3342-b50d-b304" type="category"/>
+        <categoryLink name="Acastus" hidden="false" id="1270-3949-c9e3-c508" targetId="0d15-eaf4-cef8-8841"/>
+        <categoryLink name="Cerastus" hidden="false" id="8661-32e8-bad0-cceb" targetId="7e81-3342-b50d-b304"/>
         <categoryLink name="Questoris" hidden="false" id="9c5c-76bb-1f8a-0cde" targetId="b2bb-ab05-f014-3b33"/>
       </categoryLinks>
       <constraints>
@@ -214,27 +214,27 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="bc42-f28d-bbe8-a801" targetId="3779-422e-5fe9-5654" type="category"/>
-        <categoryLink name="Bastion" hidden="false" id="2ab3-8b89-5290-cc20" targetId="2005-60e5-e49d-32f2" type="category">
+        <categoryLink name="Configuration" hidden="false" id="bc42-f28d-bbe8-a801" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="Bastion" hidden="false" id="2ab3-8b89-5290-cc20" targetId="2005-60e5-e49d-32f2">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="1184-9fc6-45ad-d5d7" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Knight" hidden="false" id="b0d2-8d42-c9b5-b6a0" targetId="adde-db57-b7d8-2daa" type="category">
+        <categoryLink name="Knight" hidden="false" id="b0d2-8d42-c9b5-b6a0" targetId="adde-db57-b7d8-2daa">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="0e5e-83c7-56c7-59de" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="b2f5-aa22-1f4f-a4fd" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support" hidden="false" id="a16d-4b82-141c-91e0" targetId="be19-7658-5258-71d9" type="category">
+        <categoryLink name="Support" hidden="false" id="a16d-4b82-141c-91e0" targetId="be19-7658-5258-71d9">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="force" shared="true" id="1c3c-0c7e-b245-d27d" includeChildSelections="false"/>
             <constraint type="max" value="4" field="selections" scope="force" shared="true" id="8875-def5-b607-d621" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Acastus" hidden="false" id="b83a-4f15-0e9c-c903" targetId="0d15-eaf4-cef8-8841" type="category"/>
-        <categoryLink name="Cerastus" hidden="false" id="2df1-11a9-046f-439b" targetId="7e81-3342-b50d-b304" type="category"/>
-        <categoryLink name="Questoris" hidden="false" id="73d6-7b7d-cd42-503e" targetId="b2bb-ab05-f014-3b33" type="category"/>
+        <categoryLink name="Acastus" hidden="false" id="b83a-4f15-0e9c-c903" targetId="0d15-eaf4-cef8-8841"/>
+        <categoryLink name="Cerastus" hidden="false" id="2df1-11a9-046f-439b" targetId="7e81-3342-b50d-b304"/>
+        <categoryLink name="Questoris" hidden="false" id="73d6-7b7d-cd42-503e" targetId="b2bb-ab05-f014-3b33"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -542,12 +542,12 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
       <modifiers>
         <modifier type="set" value="360" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="equalTo" value="2" field="selections" scope="parent" childId="498a-6c03-47b2-d5c5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="498a-6c03-47b2-d5c5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="520" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="greaterThan" value="2" field="selections" scope="parent" childId="498a-6c03-47b2-d5c5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="greaterThan" value="2" field="selections" scope="self" childId="498a-6c03-47b2-d5c5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set-primary" value="adde-db57-b7d8-2daa" field="category">
@@ -674,17 +674,17 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
       <modifiers>
         <modifier type="set" value="605" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="greaterThan" value="2" field="selections" scope="parent" childId="91f5-5f9e-c102-cb69" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="greaterThan" value="2" field="selections" scope="self" childId="91f5-5f9e-c102-cb69" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="415" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="equalTo" value="2" field="selections" scope="parent" childId="91f5-5f9e-c102-cb69" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="91f5-5f9e-c102-cb69" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="215" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="parent" childId="91f5-5f9e-c102-cb69" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="91f5-5f9e-c102-cb69" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set-primary" value="adde-db57-b7d8-2daa" field="category">
