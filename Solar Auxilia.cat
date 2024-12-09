@@ -413,25 +413,25 @@
     </forceEntry>
     <forceEntry name="Iron Cohort" id="8bd4-e86c-1cf5-e6d1" hidden="false">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="d129-d8cd-9725-415c" targetId="3779-422e-5fe9-5654" type="category"/>
-        <categoryLink name="HQ" hidden="false" id="c628-2bb6-093a-43b4" targetId="d950-ad23-9b2-9325" type="category">
+        <categoryLink name="Configuration" hidden="false" id="d129-d8cd-9725-415c" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="HQ" hidden="false" id="c628-2bb6-093a-43b4" targetId="d950-ad23-9b2-9325">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="b5ce-ade7-6d6f-fc89" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="123f-24bd-0f07-e8e2" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Core" hidden="false" id="5bde-0f07-1c5a-f5a7" targetId="446a-abe3-63c3-5709" type="category">
+        <categoryLink name="Core" hidden="false" id="5bde-0f07-1c5a-f5a7" targetId="446a-abe3-63c3-5709">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="force" shared="true" id="b399-69c4-abc3-2a00" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="3eef-a763-0f3b-52e0" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Bastion" hidden="false" id="7ec4-63f3-3600-0160" targetId="2005-60e5-e49d-32f2" type="category">
+        <categoryLink name="Bastion" hidden="false" id="7ec4-63f3-3600-0160" targetId="2005-60e5-e49d-32f2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ac07-55f3-bea1-af7d" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support" hidden="false" id="ca34-73e4-03a7-3eb7" targetId="be19-7658-5258-71d9" type="category">
+        <categoryLink name="Support" hidden="false" id="ca34-73e4-03a7-3eb7" targetId="be19-7658-5258-71d9">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3888-2bea-a0fb-bdd0" includeChildSelections="false"/>
             <constraint type="max" value="4" field="selections" scope="force" shared="true" id="2eb1-9285-07d3-5e89" includeChildSelections="false"/>
@@ -444,7 +444,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Vanguard" hidden="false" id="cbbc-b404-0ee2-006f" targetId="8416-456c-a6f-e059" type="category">
+        <categoryLink name="Vanguard" hidden="false" id="cbbc-b404-0ee2-006f" targetId="8416-456c-a6f-e059">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="a606-a824-2a36-a7b8" includeChildSelections="false"/>
           </constraints>
@@ -466,6 +466,16 @@ Optional Support, Vanguard and Bastion Detachment slots in this Support Formatio
 Core Detachment slots in this Support formation may be filled by Core Detachments chosen from the Solar Auxilia Army List or with Thallax Cohort Detachments chosen from the Mechanicum Taghmata Army List.</description>
         </rule>
       </rules>
+      <constraints>
+        <constraint type="max" value="-1" field="forces" scope="roster" shared="true" id="40a5-1d74-db94-fd91" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="40a5-1d74-db94-fd91">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <selectionEntries>

@@ -2495,6 +2495,16 @@ All Detachments included in this Support Formation with the Cybernetica Cortex (
           </modifiers>
         </categoryLink>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="forces" scope="roster" shared="true" id="e0ac-ab1a-2440-cd18" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="e0ac-ab1a-2440-cd18">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
 </catalogue>
