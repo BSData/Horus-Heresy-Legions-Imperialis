@@ -1896,7 +1896,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <entryLink import="true" name="Thanatar" hidden="false" id="1439-a6db-bbf7-0442" type="selectionEntry" targetId="cd2f-fcf0-bf9c-73c2" sortIndex="1">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9533-6a16-5321-791e" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d36b-ee63-1743-3a5e" includeChildSelections="false"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="d36b-ee63-1743-3a5e" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1976,6 +1976,38 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </selectionEntryGroup>
       </selectionEntryGroups>
       <comment>For use in Support Detachments</comment>
+      <modifiers>
+        <modifier type="set" value="165" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="210" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="265" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="295" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="350" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="7" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="395" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="8" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="d0a5-ec4a-7b1a-f5ab">
       <categoryLinks>

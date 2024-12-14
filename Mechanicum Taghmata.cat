@@ -291,8 +291,8 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
     </forceEntry>
     <forceEntry name="Itinerant Cybernetica Cohort" id="080a-85bb-c07f-6df7" hidden="false">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="6587-4a7d-3270-6446" targetId="3779-422e-5fe9-5654" type="category"/>
-        <categoryLink name="Support" hidden="false" id="b951-bc62-8d94-8870" targetId="be19-7658-5258-71d9" type="category">
+        <categoryLink name="Configuration" hidden="false" id="6587-4a7d-3270-6446" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="Support" hidden="false" id="b951-bc62-8d94-8870" targetId="be19-7658-5258-71d9">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="force" shared="true" id="d884-fd95-fbc5-0bda" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="0af3-0a21-55c3-ad84" includeChildSelections="false"/>
@@ -310,7 +310,7 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Vanguard" hidden="false" id="c3e7-2bf6-502e-f681" targetId="8416-456c-a6f-e059" type="category">
+        <categoryLink name="Vanguard" hidden="false" id="c3e7-2bf6-502e-f681" targetId="8416-456c-a6f-e059">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="force" shared="true" id="b445-5e90-c534-bcab" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="1254-0514-94a8-c3cd" includeChildSelections="false"/>
@@ -1831,7 +1831,7 @@ All Detachments included in this Support Formation must have the Cybernetica Cor
         <entryLink import="true" name="Thanatar" hidden="false" id="d44f-d8e6-7d5b-a4a0" type="selectionEntry" targetId="cd2f-fcf0-bf9c-73c2">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="340b-b588-9af0-5cb4" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d60a-c940-859f-bf24" includeChildSelections="false"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="d60a-c940-859f-bf24" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
@@ -1844,79 +1844,6 @@ All Detachments included in this Support Formation must have the Cybernetica Cor
         <entryLink import="true" name="Automata Detachments" hidden="false" id="a7c2-dc04-fd79-a7d1" type="selectionEntryGroup" targetId="987a-4ceb-7157-3934"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Upgrades" id="1c36-286a-4d42-9598" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 1" hidden="false" id="1493-b083-f050-2c03">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="55"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Thanatar" hidden="false" id="a647-ceed-1c78-59bf" type="selectionEntry" targetId="cd2f-fcf0-bf9c-73c2">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4caf-204b-3b06-0d9c" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c09-0ee2-4509-373e" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 2" hidden="false" id="a71e-4c34-3d93-ad84">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Thanatar" hidden="false" id="dd8b-8f8a-b8d5-36e8" type="selectionEntry" targetId="cd2f-fcf0-bf9c-73c2">
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9174-be13-98e4-f16b" includeChildSelections="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="288d-4db7-886b-fd51" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 4" hidden="false" id="55d8-13ae-aec9-14b9">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="185"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Thanatar" hidden="false" id="8024-af11-2155-d883" type="selectionEntry" targetId="cd2f-fcf0-bf9c-73c2">
-                  <constraints>
-                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="b344-11f5-0d6d-a9c1" includeChildSelections="false"/>
-                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="6823-552d-b473-7b5a" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31a5-0945-b6bf-109f" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Dedicated Transports" id="2af3-3a2b-132b-ca6d" hidden="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="Triaros Armoured Conveyors" id="9f9c-2f4f-7af4-49ab" hidden="false" sortIndex="2">
@@ -1968,6 +1895,36 @@ All Detachments included in this Support Formation must have the Cybernetica Cor
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="165" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="210" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="265" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="295" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="350" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="7" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="395" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="8" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
