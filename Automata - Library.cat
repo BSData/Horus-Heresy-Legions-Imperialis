@@ -263,12 +263,13 @@
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="Thanatar" hidden="false" id="f67d-da51-de26-46ba" type="selectionEntry" targetId="6dbb-dbba-2907-f7cf"/>
+                <entryLink import="true" name="Thanatar" hidden="false" id="f67d-da51-de26-46ba" type="selectionEntry" targetId="6dbb-dbba-2907-f7cf">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1b21-2222-4fd5-f735" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e9b9-0d60-8943-c456" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f450-3e47-8c5b-fbc8-min" includeChildSelections="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f450-3e47-8c5b-fbc8-max" includeChildSelections="false"/>
-              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Increase size by 4" hidden="false" id="3b60-f723-544d-4f2f">
               <costs>
