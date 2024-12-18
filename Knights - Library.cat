@@ -1090,18 +1090,6 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d938-699d-3b4a-2928" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Reaper Chainsword" hidden="false" id="991e-ccf7-b9dc-ecc1" collective="true" targetId="6b73-916f-8950-e447" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b19-830c-8f72-9ecf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6eeb-ac99-a2bf-4c40" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Thunderstrike Gauntlet" hidden="false" id="0648-a413-9b32-0abe" collective="true" targetId="8aed-7256-7506-e3ab" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff4a-c628-dcc3-dd40" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce9e-6de2-1fef-6ec1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Rocket Pods" hidden="false" id="b978-4e6e-d543-33ab" collective="false" targetId="4855-e498-4055-0668" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67a7-0d27-3e84-1cd5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1116,6 +1104,34 @@
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Weapons" id="641e-3389-0940-6e7e" hidden="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f218-17aa-2b65-cf71" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dfae-e88b-9e0b-f1a3" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Thunderstrike Gauntlet" hidden="false" id="0648-a413-9b32-0abe" collective="true" targetId="8aed-7256-7506-e3ab" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0190-260c-3b8f-3a90" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ae5d-da14-02d5-a777" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="ee95-a20e-f9ff-e2c2">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="parent" childId="0648-a413-9b32-0abe" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Reaper Chainsword" hidden="false" id="991e-ccf7-b9dc-ecc1" collective="true" targetId="6b73-916f-8950-e447" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8e0-b294-9087-2658" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Knight Magaera" hidden="false" id="8d8b-b035-89b2-aacd" collective="false">
       <infoLinks>
