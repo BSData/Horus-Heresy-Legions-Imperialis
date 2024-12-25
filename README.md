@@ -1,6 +1,7 @@
 Horus Heresy: Legions Imperialis
 ==================
 
+[![dependabot active](https://img.shields.io/badge/dependabot-active-brightgreen?style=flat-square&logo=dependabot)](https://docs.github.com/en/code-security/dependabot)
 [![Latest release](https://img.shields.io/github/release/BSData/Horus-Heresy-Legions-Imperialis.svg?style=flat-square)](https://github.com/BSData/Horus-Heresy-Legions-Imperialis/releases/latest)
 [![Commits (since latest release)](https://img.shields.io/github/commits-since/BSData/Horus-Heresy-Legions-Imperialis/latest.svg?style=flat-square)](https://github.com/BSData/Horus-Heresy-Legions-Imperialis/releases)
 [![Open bugs](https://img.shields.io/github/issues/BSData/Horus-Heresy-Legions-Imperialis/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/Horus-Heresy-Legions-Imperialis/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
