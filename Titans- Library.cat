@@ -338,12 +338,12 @@
       <modifiers>
         <modifier type="set" value="970" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="greaterThan" value="2" field="selections" scope="parent" childId="e709-feb2-89b8-4cac" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="greaterThan" value="2" field="selections" scope="self" childId="e709-feb2-89b8-4cac" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="660" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="equalTo" value="2" field="selections" scope="parent" childId="e709-feb2-89b8-4cac" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="e709-feb2-89b8-4cac" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
