@@ -263,6 +263,20 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Questoris Knight Banner" hidden="false" id="f280-ca25-d63d-669b" type="selectionEntry" targetId="5dbb-aa60-1fae-c471">
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedRules>
     <rule name="Construct Shields (X)" id="dc39-0d92-7a72-8fa2" hidden="false">
