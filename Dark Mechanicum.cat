@@ -1089,7 +1089,7 @@ When one of more Hits are scored against a Detachment which contains one or more
             <infoLink name="Nimble" id="af55-6b6a-b171-04e5" hidden="false" type="rule" targetId="bc40-962f-5fc5-771a"/>
           </infoLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da12-fcc2-5355-d3d1" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="da12-fcc2-5355-d3d1" includeChildSelections="false"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="f4a4-2796-b5ea-da28" includeChildSelections="false"/>
           </constraints>
           <costs>
@@ -1108,25 +1108,20 @@ When one of more Hits are scored against a Detachment which contains one or more
       <modifiers>
         <modifier type="set" value="260" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="325" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="405" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="490" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
             <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="555" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="475" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -2271,25 +2266,25 @@ When one of more Hits are scored against a Detachment which contains one or more
     <forceEntry name="Terror Protocol Cohort" id="732c-17f9-8345-775c" hidden="false">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="ad52-d259-5519-7ade" targetId="3779-422e-5fe9-5654"/>
-        <categoryLink name="HQ" hidden="false" id="1e11-0b79-60de-1c67" targetId="d950-ad23-9b2-9325" type="category">
+        <categoryLink name="HQ" hidden="false" id="1e11-0b79-60de-1c67" targetId="d950-ad23-9b2-9325">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="4be3-c18f-220e-78bb" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2821-3bb4-6246-79c7" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Core" hidden="false" id="61fb-67cf-d4ee-8919" targetId="446a-abe3-63c3-5709" type="category">
+        <categoryLink name="Core" hidden="false" id="61fb-67cf-d4ee-8919" targetId="446a-abe3-63c3-5709">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="force" shared="true" id="d959-8c3a-838d-94f5" includeChildSelections="false"/>
             <constraint type="max" value="4" field="selections" scope="force" shared="true" id="9d1d-57a0-a3aa-a3c1" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Vanguard" hidden="false" id="700e-210d-eb67-de12" targetId="8416-456c-a6f-e059" type="category">
+        <categoryLink name="Vanguard" hidden="false" id="700e-210d-eb67-de12" targetId="8416-456c-a6f-e059">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="51e7-4ed8-097d-38bc" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="bbc8-1b6b-8421-505d" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Knight" hidden="false" id="1a06-4a1a-63c5-7765" targetId="adde-db57-b7d8-2daa" type="category">
+        <categoryLink name="Knight" hidden="false" id="1a06-4a1a-63c5-7765" targetId="adde-db57-b7d8-2daa">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fcdd-e013-da03-2850" includeChildSelections="false"/>
           </constraints>
@@ -2301,7 +2296,7 @@ When one of more Hits are scored against a Detachment which contains one or more
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Titan" hidden="false" id="992f-d0ce-2372-a93c" targetId="1302-0157-2be4-3d34" type="category">
+        <categoryLink name="Titan" hidden="false" id="992f-d0ce-2372-a93c" targetId="1302-0157-2be4-3d34">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="186b-704e-6173-98ad" includeChildSelections="false"/>
           </constraints>
