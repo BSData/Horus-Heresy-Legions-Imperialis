@@ -11347,17 +11347,26 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="fbcf-0147-5b38-a0b3" targetId="d950-ad23-9b2-9325" primary="true"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="remove" value="4e02-d7ec-4d81-d5fa" field="category"/>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Legion Sicaran Commander" hidden="false" id="17ae-3d38-fb8b-e32e" type="selectionEntry" targetId="128a-f1de-0a00-d903">
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="c05b-b69b-2076-e590" targetId="d950-ad23-9b2-9325" primary="true"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="remove" value="4e02-d7ec-4d81-d5fa" field="category"/>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Legion Sicaran Commander" hidden="false" id="bc16-a920-3276-92d6" type="selectionEntry" targetId="128a-f1de-0a00-d903"/>
     <entryLink import="true" name="Legion Kratos Commander" hidden="false" id="51d3-6082-68e6-95ae" type="selectionEntry" targetId="15fe-6700-ee50-d6f8">
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="9f12-9296-4026-ed21" targetId="d950-ad23-9b2-9325" primary="true"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="remove" value="1f6b-d764-352d-1e74" field="category"/>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Legion Kratos Commander" hidden="false" id="eade-cd19-787e-67dd" type="selectionEntry" targetId="15fe-6700-ee50-d6f8"/>
   </entryLinks>
