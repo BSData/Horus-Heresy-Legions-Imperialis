@@ -1606,91 +1606,43 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <entryLink import="true" name="Artalax" hidden="false" id="4a68-80e9-09f7-50fa" type="selectionEntry" targetId="e33a-1d7f-90a6-39d9" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a394-554a-9ebe-b898" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8587-0f60-1a31-95d9" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8587-0f60-1a31-95d9" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Upgrades" id="1109-1359-bfc1-8c64" hidden="false" sortIndex="2">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 1" hidden="false" id="59a9-6150-6029-a808">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="35"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Artalax" hidden="false" id="b280-903f-837e-1100" type="selectionEntry" targetId="e33a-1d7f-90a6-39d9">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce35-0575-8d47-2825"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca01-2b26-87b6-63b4"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 2" hidden="false" id="b350-fa6c-18c5-a6fd">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="65"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Artalax" hidden="false" id="11dc-cae9-5019-d479" type="selectionEntry" targetId="e33a-1d7f-90a6-39d9">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3df2-40a8-29ca-3ec6"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="53cb-3e8a-cf80-47e2"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 4" hidden="false" id="dd24-6565-0d67-a61d">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="110"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Artalax" hidden="false" id="019d-4371-f419-4a1a" type="selectionEntry" targetId="e33a-1d7f-90a6-39d9">
-                  <constraints>
-                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e0d8-c44b-56d9-bcbd"/>
-                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="86c5-cdd1-d68b-3a69"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="904e-fa1b-76df-24af" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="40"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <comment>For use in Support Detachments</comment>
+      <modifiers>
+        <modifier type="set" value="65" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="90" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="120" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="140" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="170" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="22a2-1b3d-28a9-de58">
       <categoryLinks>
@@ -1801,86 +1753,38 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <entryLink import="true" name="Domitar" hidden="false" id="cbc4-f5b0-800d-ffd4" type="selectionEntry" targetId="153b-00ee-9c7c-113c" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c65-e9c9-322c-ca70" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1d9-a509-4dcf-bf86" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="a1d9-a509-4dcf-bf86" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Upgrades" id="5bb3-7942-c597-6fa3" hidden="false" sortIndex="2">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 1" hidden="false" id="8cc0-475f-507e-179b">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Domitar" hidden="false" id="021e-d313-d808-f101" type="selectionEntry" targetId="153b-00ee-9c7c-113c">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59db-086d-1677-1bc0" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7061-3417-60c6-0cec" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 2" hidden="false" id="9b6b-a140-a4dd-06b9">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="55"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Domitar" hidden="false" id="90cf-8d8c-6589-92af" type="selectionEntry" targetId="153b-00ee-9c7c-113c">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2c24-3db5-4008-3df4" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8610-d156-806d-2365" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 4" hidden="false" id="9903-4d00-35b4-f988">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="105"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Domitar" hidden="false" id="1911-54e2-b556-df67" type="selectionEntry" targetId="153b-00ee-9c7c-113c">
-                  <constraints>
-                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="cb80-bde7-13ce-6715" includeChildSelections="false"/>
-                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="086c-c16c-69b7-ada7" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3154-a5eb-73de-14b0" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <comment>For use in Support Detachments</comment>
+      <modifiers>
+        <modifier type="set" value="75" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="105" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="140" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="150" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="185" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="84c0-0968-cc49-82fc">
       <categoryLinks>
