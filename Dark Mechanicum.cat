@@ -763,7 +763,8 @@ When one of more Hits are scored against a Detachment which contains one or more
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
           <constraints>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="6639-9640-4570-98e7" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="6639-9640-4570-98e7" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="640c-0a35-2155-2636" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Noosphere Controller" id="6dcb-f2c0-9265-0bca" hidden="false" type="rule" targetId="1f49-7cd8-709a-2550"/>
