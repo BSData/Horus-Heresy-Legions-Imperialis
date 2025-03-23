@@ -104,6 +104,18 @@
     <categoryEntry name="Titan" id="1302-0157-2be4-3d34" hidden="false" publicationId="c1b8-2180-635c-14cd">
       <comment>Detachment type</comment>
     </categoryEntry>
+    <categoryEntry name="Acastus" id="0d15-eaf4-cef8-8841" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <comment>detachment role</comment>
+    </categoryEntry>
+    <categoryEntry name="Armiger" id="fe26-cfac-c306-cfd8" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <comment>detachment role</comment>
+    </categoryEntry>
+    <categoryEntry name="Cerastus" id="7e81-3342-b50d-b304" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <comment>detachment role</comment>
+    </categoryEntry>
+    <categoryEntry name="Questoris" id="b2bb-ab05-f014-3b33" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <comment>detachment role</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="49dd-d763-6836-b4f8" hidden="false" name="Unbound Formation (Open Play)">
@@ -122,6 +134,10 @@
         <categoryLink name="Vanguard" hidden="false" id="beb-b6e2-8aac-f9c2" targetId="8416-456c-a6f-e059"/>
         <categoryLink name="Knight" hidden="false" id="17c-5158-3e04-e1f6" targetId="adde-db57-b7d8-2daa"/>
         <categoryLink name="Titan" hidden="false" id="c84b-708c-d3ad-3ca7" targetId="1302-0157-2be4-3d34"/>
+        <categoryLink name="Armiger" hidden="false" id="9802-d256-6470-564f" targetId="fe26-cfac-c306-cfd8" type="categoryEntry"/>
+        <categoryLink name="Acastus" hidden="false" id="2cf3-46a7-ec1c-5655" targetId="0d15-eaf4-cef8-8841" type="categoryEntry"/>
+        <categoryLink name="Cerastus" hidden="false" id="9bc8-dc0e-46a3-d632" targetId="7e81-3342-b50d-b304" type="categoryEntry"/>
+        <categoryLink name="Questoris" hidden="false" id="93b2-1850-48c5-8ab1" targetId="b2bb-ab05-f014-3b33" type="categoryEntry"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Formations of Legend" id="1e4a-3c76-f375-bc07" hidden="false">

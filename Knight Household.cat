@@ -175,7 +175,7 @@
         <constraint type="max" value="-1" field="forces" scope="roster" shared="true" id="674f-f6ad-c6da-c721" includeChildSelections="true"/>
       </constraints>
       <rules>
-        <rule name="Household Vanguard" id="83e1-aa71-72a5-2928" hidden="false" page="">
+        <rule name="Household Vanguard" id="83e1-aa71-72a5-2928" hidden="false">
           <description>All Vanguard Detachment slots within this Support Formation must be filled by Detachments taken from the Mechanicum Taghmata Army List. Detachments taken from the Mechanicum Taghmata Army List must have the Cybernetica Cortex (X) special rule.
 
 Knight Detachments in this Support Formation gain special rules depending on the Compulsory Detachments chosen:
@@ -200,7 +200,7 @@ All Questoris Knight Banner and Cerastus Knight Banner Detachments within this S
         <constraint type="max" value="-1" field="forces" scope="roster" shared="true" id="073f-9c42-a622-2ba8" includeChildSelections="true"/>
       </constraints>
       <rules>
-        <rule name="Inducted Automata" id="74ce-fb11-1af1-fcc6" hidden="false" page="">
+        <rule name="Inducted Automata" id="74ce-fb11-1af1-fcc6" hidden="false">
           <description>All slots within this Support Formation, apart from Knight Detachment slots, must be filled by Detachments taken from the Mechanicum Taghmata Army List. Detachments taken from the Mechanicum Taghmata Army List must have the Cybernetica Cortex (X) special rule.
 
 All Knight Detachments within this Support Formation gain the Cortex Controller special rule. Questoris Knight Armiger Talons and Mechanicum Knight Moirax Talons cannot be taken as Detachment Upgrades for Detachments taken in Knight Detachment slots.</description>
@@ -238,20 +238,6 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
       </categoryLinks>
     </forceEntry>
   </forceEntries>
-  <categoryEntries>
-    <categoryEntry name="Questoris" id="b2bb-ab05-f014-3b33" hidden="false" publicationId="89ae-8b6d-da44-733f">
-      <comment>detachment role</comment>
-    </categoryEntry>
-    <categoryEntry name="Acastus" id="0d15-eaf4-cef8-8841" hidden="false" publicationId="89ae-8b6d-da44-733f">
-      <comment>detachment role</comment>
-    </categoryEntry>
-    <categoryEntry name="Cerastus" id="7e81-3342-b50d-b304" hidden="false" publicationId="89ae-8b6d-da44-733f">
-      <comment>detachment role</comment>
-    </categoryEntry>
-    <categoryEntry name="Armiger" id="fe26-cfac-c306-cfd8" hidden="false" publicationId="89ae-8b6d-da44-733f">
-      <comment>detachment role</comment>
-    </categoryEntry>
-  </categoryEntries>
   <sharedRules>
     <rule name="Knight Retainers" id="b436-dcf6-8ab0-8ed5" hidden="false" publicationId="89ae-8b6d-da44-733f">
       <description>Knight Armiger and Knight Moirax models within a Knight Household Formation have a Tactical Strength of 3 instead of 1</description>
@@ -317,7 +303,7 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Add 6 Knights" hidden="false" id="e27a-4f0a-6e0c-f97e">
               <entryLinks>
-                <entryLink import="true" name="Questoris Knight Armiger Talon" hidden="false" id="fe86-5bfd-bb23-7d9f" type="selectionEntry" targetId="de00-e514-4eba-7180" defaultAmount="3">
+                <entryLink import="true" name="Questoris Knight Armiger Talon" hidden="false" id="fe86-5bfd-bb23-7d9f" type="selectionEntry" targetId="de00-e514-4eba-7180" defaultAmount="6">
                   <costs>
                     <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
                   </costs>
@@ -900,11 +886,59 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Vultarax Stratos-Automata Squadron" hidden="false" id="ca60-549a-4771-77eb" type="selectionEntry" targetId="3aa7-977a-ffc6-e08c"/>
-    <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="954c-db28-b539-ea69" type="selectionEntry" targetId="84c0-0968-cc49-82fc"/>
-    <entryLink import="true" name="Artalax Battle-Automata Maniple" hidden="false" id="24bb-1c3d-3ac9-9d4f" type="selectionEntry" targetId="e1db-1b55-f141-5eff"/>
-    <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="6525-878c-3c69-d189" type="selectionEntry" targetId="0e15-d028-584f-3685"/>
-    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="ea0f-ab98-a9e6-562a" type="selectionEntry" targetId="d0a5-ec4a-7b1a-f5ab"/>
-    <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="be32-2334-12e7-2173" type="selectionEntry" targetId="22a2-1b3d-28a9-de58"/>
+    <entryLink import="true" name="Vultarax Stratos-Automata Squadron" hidden="false" id="ca60-549a-4771-77eb" type="selectionEntry" targetId="3aa7-977a-ffc6-e08c">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="954c-db28-b539-ea69" type="selectionEntry" targetId="84c0-0968-cc49-82fc">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="38da-d338-a14b-cd10" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Artalax Battle-Automata Maniple" hidden="false" id="24bb-1c3d-3ac9-9d4f" type="selectionEntry" targetId="e1db-1b55-f141-5eff">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="38da-d338-a14b-cd10" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="6525-878c-3c69-d189" type="selectionEntry" targetId="0e15-d028-584f-3685">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="38da-d338-a14b-cd10" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="ea0f-ab98-a9e6-562a" type="selectionEntry" targetId="d0a5-ec4a-7b1a-f5ab">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="be32-2334-12e7-2173" type="selectionEntry" targetId="22a2-1b3d-28a9-de58">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="38da-d338-a14b-cd10" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
 </catalogue>

@@ -51,8 +51,8 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="e290-d8e7-e825-383c" hidden="false" collective="false" import="true" defaultSelectionEntryId="26db-eaee-0f8a-3eb2">
           <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="9e5b-c508-9290-8ba8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="65b8-5df9-d0a8-bad5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0e2-7ac8-fdf7-ab52" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6340-a696-db0b-bb4f" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Volkite Veuglair and Gyges Siege Claw" hidden="false" id="ab5d-76c6-1748-12b6" collective="false">
@@ -206,8 +206,8 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="4033-f02e-a8c9-e058" hidden="false" collective="false" import="true" defaultSelectionEntryId="de48-53d5-1a29-418d">
           <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c271-cad9-f8bf-6426" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="e19a-2416-5c22-51f3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dac0-d397-fdc0-8671" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d086-0775-51cc-ba26" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Thermal Spear and Reaper Chain-Cleaver" hidden="false" id="8a64-d34e-8fdb-337f" collective="false">
@@ -428,24 +428,7 @@
         <categoryLink name="Knight" hidden="false" id="041e-6c99-016d-dce5" targetId="adde-db57-b7d8-2daa" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Armiger Talon" id="3799-359b-4375-e35a" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15f7-f4f1-02f0-0268" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="3ac9-d4bd-b0d5-1c95" collective="false" targetId="d17f-b74a-2a3f-96a0" type="selectionEntry">
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="200"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Questoris Knight Armiger Talon" hidden="false" id="9a88-425e-c2c5-f25e" collective="false" targetId="de00-e514-4eba-7180" type="selectionEntry">
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Acastus Knights" id="553c-609c-3163-7d94" hidden="false" collective="false" import="true" defaultSelectionEntryId="6da8-fb94-f471-9826">
+        <selectionEntryGroup name="Acastus Knights" id="553c-609c-3163-7d94" hidden="false" collective="false" import="true" defaultSelectionEntryId="6da8-fb94-f471-9826" sortIndex="1">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4f89-87d1-8d17-bcc7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0bc8-bbf5-7b69-03dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -454,6 +437,39 @@
             <entryLink import="true" name="Acastus Knight Porphyrion" hidden="false" id="dbd9-51e6-8b68-7602" type="selectionEntry" targetId="645c-5c35-9d9c-ca17"/>
             <entryLink import="true" name="Acastus Knight Asterius" hidden="false" id="b343-3fb8-72ff-a983" type="selectionEntry" targetId="cb33-0142-ce64-49c8"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armiger Talon" id="0b0d-7efb-f887-1ce1" hidden="false" collective="false" import="true" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a31-4ffd-e21d-b3c7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="043b-0508-4417-08fd">
+              <entryLinks>
+                <entryLink import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="86b3-6c20-270c-96db" collective="false" targetId="d17f-b74a-2a3f-96a0" type="selectionEntry" defaultAmount="1,1,1">
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="200"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="9b4c-b4da-d1c7-e445" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="2a9f-d7a5-7416-c039" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Questoris Knight Armiger Talon" hidden="false" id="82a0-d2bf-3bf3-7fd3">
+              <entryLinks>
+                <entryLink import="true" name="Questoris Knight Armiger Talon" hidden="false" id="b859-6ae7-b124-b146" collective="false" targetId="de00-e514-4eba-7180" type="selectionEntry" defaultAmount="1,1,1">
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="54d1-b9de-4344-aae9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4a6a-ae06-ff59-6353" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -484,24 +500,40 @@
         <categoryLink name="Knight" hidden="false" id="0778-196d-942d-ae28" targetId="adde-db57-b7d8-2daa" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Armiger Talon" id="ba5e-f380-98de-89c7" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Armiger Talon" id="ba5e-f380-98de-89c7" hidden="false" collective="false" import="true" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45e5-7316-bd3e-f9e1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="54a4-a79d-5e23-0f6f" collective="false" targetId="d17f-b74a-2a3f-96a0" type="selectionEntry">
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="200"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Questoris Knight Armiger Talon" hidden="false" id="e7bc-01a0-ae51-cb1d" collective="false" targetId="de00-e514-4eba-7180" type="selectionEntry">
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="f92e-4d0a-3b67-17a8">
+              <entryLinks>
+                <entryLink import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="54a4-a79d-5e23-0f6f" collective="false" targetId="d17f-b74a-2a3f-96a0" type="selectionEntry" defaultAmount="1,1,1">
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="200"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c762-bb72-08de-30c7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="c7d4-6d20-6e3f-baeb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Questoris Knight Armiger Talon" hidden="false" id="b8a9-1dcd-d958-9bb4">
+              <entryLinks>
+                <entryLink import="true" name="Questoris Knight Armiger Talon" hidden="false" id="e7bc-01a0-ae51-cb1d" collective="false" targetId="de00-e514-4eba-7180" type="selectionEntry" defaultAmount="1,1,1">
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="99c3-63bd-eaf0-414d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="01df-d4f9-be6b-6bc1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Cerastus Knights" id="7c80-2724-c134-fc5e" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Cerastus Knights" id="7c80-2724-c134-fc5e" hidden="false" collective="false" import="true" sortIndex="1">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b38e-e70a-4b08-daa5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0883-f330-ed8d-93ed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -553,24 +585,7 @@
         <categoryLink name="Knight" hidden="false" id="bd43-1d90-e98e-ba65" targetId="adde-db57-b7d8-2daa" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Armiger Talon" id="3d80-7b29-c93a-3c59" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d75c-6de7-4c3a-6585" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Questoris Knight Armiger Talon" hidden="false" id="0c84-39ba-edb1-8551" collective="false" targetId="de00-e514-4eba-7180" type="selectionEntry">
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="9b1b-06aa-6ad0-0d7d" collective="false" targetId="d17f-b74a-2a3f-96a0" type="selectionEntry">
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="200"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Questoris Knights" id="2640-4427-a1a4-321c" hidden="false" collective="false" import="true" defaultSelectionEntryId="7174-1e8e-3a1f-2dde">
+        <selectionEntryGroup name="Questoris Knights" id="2640-4427-a1a4-321c" hidden="false" collective="false" import="true" defaultSelectionEntryId="7174-1e8e-3a1f-2dde" sortIndex="1">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="cb4f-4d4e-175e-aa00" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c68-9a5e-cedd-192c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -612,6 +627,39 @@
               </constraints>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armiger Talon" id="0725-4931-2b09-df1f" hidden="false" collective="false" import="true" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f46-86b7-8e8f-8ca5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="002e-3274-ac4c-d0bb">
+              <entryLinks>
+                <entryLink import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="adb6-35bf-80b9-9f52" collective="false" targetId="d17f-b74a-2a3f-96a0" type="selectionEntry" defaultAmount="1,1,1">
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="200"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4fcb-bf1d-ba88-daaa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="3099-165a-5fd5-8023" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Questoris Knight Armiger Talon" hidden="false" id="eea7-45e2-ca62-08fd">
+              <entryLinks>
+                <entryLink import="true" name="Questoris Knight Armiger Talon" hidden="false" id="9403-46d0-41f9-442a" collective="false" targetId="de00-e514-4eba-7180" type="selectionEntry" defaultAmount="1,1,1">
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4227-7748-e93a-d957" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b775-2357-e571-2856" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
