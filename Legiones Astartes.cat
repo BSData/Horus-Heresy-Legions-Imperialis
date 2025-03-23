@@ -6935,7 +6935,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="473a-965a-6f7b-d929"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="World Eaters" hidden="false" id="55ed-29c7-12b4-38d9" sortIndex="10">
+            <selectionEntry type="upgrade" import="true" name="XII - World Eaters" hidden="false" id="55ed-29c7-12b4-38d9" sortIndex="10">
               <profiles>
                 <profile name="Incarnate Violence" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="ceb6-42c9-f0ae-4349">
                   <characteristics>
@@ -6944,7 +6944,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Alpha Legion" hidden="false" id="9968-4d06-50ea-fedd">
+            <selectionEntry type="upgrade" import="true" name="XX - Alpha Legion" hidden="false" id="9968-4d06-50ea-fedd" sortIndex="18">
               <profiles>
                 <profile name="Mutable Tactics" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="a3fd-4b0b-9eaa-e4f2">
                   <characteristics>
@@ -6955,7 +6955,7 @@ A Detachment chosen to be affected by Mutable Tactics gains a special rule depen
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Blood Angels" hidden="false" id="a866-a36a-7b89-2f30" sortIndex="8">
+            <selectionEntry type="upgrade" import="true" name="IX - Blood Angels" hidden="false" id="a866-a36a-7b89-2f30" sortIndex="8">
               <profiles>
                 <profile name="Encarmine Fury" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="64ae-9f10-f77f-5299">
                   <characteristics>
@@ -6966,7 +6966,7 @@ If a Detachment Engages an enemy Detachment in this way that is in a Combat but 
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Dark Angels" hidden="false" id="9033-8506-402c-9ce3" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="I - Dark Angels" hidden="false" id="9033-8506-402c-9ce3" sortIndex="1">
               <profiles>
                 <profile name="Formations of the Hexagrammaton" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="f08b-9b86-26e6-2f97">
                   <characteristics>
@@ -6983,7 +6983,7 @@ If a Formation has a Dedicated Transport, the model types gain the relevant spec
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Death Guard" hidden="false" id="d955-5c5a-f357-a486" sortIndex="12">
+            <selectionEntry type="upgrade" import="true" name="XIV - Death Guard" hidden="false" id="d955-5c5a-f357-a486" sortIndex="12">
               <profiles>
                 <profile name="Sons of Barbarus" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="c91a-8acc-b829-ca51">
                   <characteristics>
@@ -6996,7 +6996,7 @@ Two Structures can be selected in place of a single area of terrain. Each time a
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Emperor&apos;s Children" hidden="false" id="ad8d-a9d6-a146-5570" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="III - Emperor&apos;s Children" hidden="false" id="ad8d-a9d6-a146-5570" sortIndex="2">
               <profiles>
                 <profile name="Exemplars of War" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="5897-32c2-edf4-a5ee">
                   <characteristics>
@@ -7007,7 +7007,7 @@ If an Army includes at least one Allied Contingent comprised entirely of Emperor
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Imperial Fists" hidden="false" id="4ecd-4524-9b24-a650" sortIndex="6">
+            <selectionEntry type="upgrade" import="true" name="VII - Imperial Fists" hidden="false" id="4ecd-4524-9b24-a650" sortIndex="6">
               <profiles>
                 <profile name="Disciplined Fire" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="2b57-503e-1fe9-7c2">
                   <characteristics>
@@ -7024,7 +7024,7 @@ If an Army includes at least one Allied Contingent comprised entirely of Emperor
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Iron Hands" hidden="false" id="a8a5-268-c3e3-dbdc" sortIndex="9">
+            <selectionEntry type="upgrade" import="true" name="X - Iron Hands" hidden="false" id="a8a5-268-c3e3-dbdc" sortIndex="9">
               <profiles>
                 <profile name="Inviolate Armour" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="c289-530f-6a45-9f92">
                   <characteristics>
@@ -7035,7 +7035,7 @@ The First Fire Order must still be in effect (i.e., it cannot have Overwatched o
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Iron Warriors" hidden="false" id="5605-d0c2-9398-d7a0" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="IV - Iron Warriors" hidden="false" id="5605-d0c2-9398-d7a0" sortIndex="3">
               <profiles>
                 <profile name="The Bitter End" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="6898-ea9e-b839-b17c">
                   <characteristics>
@@ -7044,7 +7044,7 @@ The First Fire Order must still be in effect (i.e., it cannot have Overwatched o
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Night Lords" hidden="false" id="cac-328c-b6f1-5c99" sortIndex="7">
+            <selectionEntry type="upgrade" import="true" name="VIII - Night Lords" hidden="false" id="cac-328c-b6f1-5c99" sortIndex="7">
               <profiles>
                 <profile name="Seeds of Dissent" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="8d23-9b05-1547-202f">
                   <characteristics>
@@ -7057,7 +7057,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Raven Guard" hidden="false" id="916c-e45c-a0d8-4aed" sortIndex="17">
+            <selectionEntry type="upgrade" import="true" name="XIX - Raven Guard" hidden="false" id="916c-e45c-a0d8-4aed" sortIndex="17">
               <profiles>
                 <profile name="By Wing and Talon" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="d17e-e97d-804a-5327">
                   <characteristics>
@@ -7066,7 +7066,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Salamanders" hidden="false" id="3d05-31ed-7b9d-1adf" sortIndex="16">
+            <selectionEntry type="upgrade" import="true" name="XVIII - Salamanders" hidden="false" id="3d05-31ed-7b9d-1adf" sortIndex="16">
               <profiles>
                 <profile name="Strength of Will" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="5275-dedb-d171-65fb">
                   <characteristics>
@@ -7075,7 +7075,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Sons of Horus" hidden="false" id="de36-e76-2670-4162" sortIndex="14">
+            <selectionEntry type="upgrade" import="true" name="XVI - Sons of Horus" hidden="false" id="de36-e76-2670-4162" sortIndex="14">
               <profiles>
                 <profile name="Death Dealers" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="14fb-bd81-b80c-2309">
                   <characteristics>
@@ -7084,7 +7084,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Space Wolves" hidden="false" id="2686-dc4a-a99f-f259" sortIndex="5">
+            <selectionEntry type="upgrade" import="true" name="VI - Space Wolves" hidden="false" id="2686-dc4a-a99f-f259" sortIndex="5">
               <profiles>
                 <profile name="Preternatural Sense" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="173e-70ca-ff-dc67">
                   <characteristics>
@@ -7093,7 +7093,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Thousand Sons" hidden="false" id="a63d-151a-ddaf-7270" sortIndex="13">
+            <selectionEntry type="upgrade" import="true" name="XV - Thousand Sons" hidden="false" id="a63d-151a-ddaf-7270" sortIndex="13">
               <profiles>
                 <profile name="Kine Shields" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="5390-5696-25f4-64ea">
                   <characteristics>
@@ -7102,7 +7102,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Ultramarines" hidden="false" id="1a45-77e8-746a-fa63" sortIndex="11">
+            <selectionEntry type="upgrade" import="true" name="XIII - Ultramarines" hidden="false" id="1a45-77e8-746a-fa63" sortIndex="11">
               <profiles>
                 <profile name="Interlocking Tactics" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="76c1-77ab-4ca2-28df">
                   <characteristics>
@@ -7111,7 +7111,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="White Scars" hidden="false" id="c5da-68c7-9771-e8e2" sortIndex="4">
+            <selectionEntry type="upgrade" import="true" name="V - White Scars" hidden="false" id="c5da-68c7-9771-e8e2" sortIndex="4">
               <profiles>
                 <profile name="Born in the Saddle" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="ce6a-2a6f-7215-31c0">
                   <characteristics>
@@ -7120,7 +7120,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Word Bearers" hidden="false" id="2201-d1c2-eb6c-cd1" sortIndex="15">
+            <selectionEntry type="upgrade" import="true" name="XVII - Word Bearers" hidden="false" id="2201-d1c2-eb6c-cd1" sortIndex="15">
               <profiles>
                 <profile name="True Believers" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="7022-2d00-a86e-e0e9">
                   <characteristics>
