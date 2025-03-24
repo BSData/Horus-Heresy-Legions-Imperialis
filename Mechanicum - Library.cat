@@ -401,7 +401,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Lightning locks" hidden="false" id="6b49-e80d-b5f0-3208" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Lightning locks" hidden="false" id="6b49-e80d-b5f0-3208" sortIndex="1" collective="true">
           <profiles>
             <profile name="Lightning locks" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6de4-ec80-2ceb-f368">
               <characteristics>
@@ -421,8 +421,12 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             </infoLink>
             <infoLink name="Point Defence" id="f739-b724-1e9a-50ca" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4050-5841-dc85-45f1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1ba-5b38-b3bf-aada" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Karacnos mortar battery" hidden="false" id="dbe7-9433-c9a6-8988" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Karacnos mortar battery" hidden="false" id="dbe7-9433-c9a6-8988" sortIndex="2" collective="true">
           <profiles>
             <profile name="Karacnos mortar battery" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e58f-785d-350a-2d1c">
               <characteristics>
@@ -443,8 +447,12 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             <infoLink name="Barrage" id="a0d5-a6bc-0c46-bd31" hidden="false" type="rule" targetId="862d-b036-2018-dbaf"/>
             <infoLink name="Ignores Cover" id="1051-1d49-a414-b7e7" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc68-8097-d928-bfbb" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6866-5b2d-e668-e76b" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Shock ram" hidden="false" id="b40d-5770-6111-03b4" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="Shock ram" hidden="false" id="b40d-5770-6111-03b4" sortIndex="3" collective="true">
           <profiles>
             <profile name="Shock ram" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c55d-7de9-9bcf-4187">
               <characteristics>
@@ -463,6 +471,10 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
               </modifiers>
             </infoLink>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d09-976b-ed00-19e2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc5f-39a6-f5a4-7344" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Cortex Controller" hidden="false" id="fb2a-2e67-763a-6372" sortIndex="4">
           <costs>
