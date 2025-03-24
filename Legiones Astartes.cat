@@ -8311,6 +8311,16 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
             <condition type="atLeast" value="7" field="selections" scope="self" childId="1e04-1f23-0d4b-0df0" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="3b81-6b3e-4546-ade3" id="a601-5c47-3e88-883e" primary="true" name="Light Armour"/>
@@ -11342,13 +11352,36 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
         <infoLink name="Line" id="0c45-d06a-af89-c154" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Legion Predator Commander" hidden="false" id="d93b-9a9b-3b92-21b8" type="selectionEntry" targetId="7195-e990-7a20-16f4"/>
+    <entryLink import="true" name="Legion Predator Commander" hidden="false" id="d93b-9a9b-3b92-21b8" type="selectionEntry" targetId="7195-e990-7a20-16f4">
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
     <entryLink import="true" name="Legion Predator Commander" hidden="false" id="9712-c70f-b1be-6072" type="selectionEntry" targetId="7195-e990-7a20-16f4">
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="fbcf-0147-5b38-a0b3" targetId="d950-ad23-9b2-9325" primary="true"/>
       </categoryLinks>
       <modifiers>
         <modifier type="remove" value="4e02-d7ec-4d81-d5fa" field="category"/>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Legion Sicaran Commander" hidden="false" id="17ae-3d38-fb8b-e32e" type="selectionEntry" targetId="128a-f1de-0a00-d903">
@@ -11357,17 +11390,63 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       </categoryLinks>
       <modifiers>
         <modifier type="remove" value="4e02-d7ec-4d81-d5fa" field="category"/>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Legion Sicaran Commander" hidden="false" id="bc16-a920-3276-92d6" type="selectionEntry" targetId="128a-f1de-0a00-d903"/>
+    <entryLink import="true" name="Legion Sicaran Commander" hidden="false" id="bc16-a920-3276-92d6" type="selectionEntry" targetId="128a-f1de-0a00-d903">
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
     <entryLink import="true" name="Legion Kratos Commander" hidden="false" id="51d3-6082-68e6-95ae" type="selectionEntry" targetId="15fe-6700-ee50-d6f8">
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="9f12-9296-4026-ed21" targetId="d950-ad23-9b2-9325" primary="true"/>
       </categoryLinks>
       <modifiers>
         <modifier type="remove" value="1f6b-d764-352d-1e74" field="category"/>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Legion Kratos Commander" hidden="false" id="eade-cd19-787e-67dd" type="selectionEntry" targetId="15fe-6700-ee50-d6f8"/>
+    <entryLink import="true" name="Legion Kratos Commander" hidden="false" id="eade-cd19-787e-67dd" type="selectionEntry" targetId="15fe-6700-ee50-d6f8">
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
 </catalogue>
