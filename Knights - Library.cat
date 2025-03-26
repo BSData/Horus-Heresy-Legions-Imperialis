@@ -446,28 +446,32 @@
             <selectionEntry type="upgrade" import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="043b-0508-4417-08fd">
               <entryLinks>
                 <entryLink import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="86b3-6c20-270c-96db" collective="false" targetId="d17f-b74a-2a3f-96a0" type="selectionEntry" defaultAmount="1,1,1">
-                  <costs>
-                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="200"/>
-                  </costs>
                   <constraints>
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="9b4c-b4da-d1c7-e445" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="2a9f-d7a5-7416-c039" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="200"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Questoris Knight Armiger Talon" hidden="false" id="82a0-d2bf-3bf3-7fd3">
               <entryLinks>
                 <entryLink import="true" name="Questoris Knight Armiger Talon" hidden="false" id="b859-6ae7-b124-b146" collective="false" targetId="de00-e514-4eba-7180" type="selectionEntry" defaultAmount="1,1,1">
-                  <costs>
-                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
-                  </costs>
                   <constraints>
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="54d1-b9de-4344-aae9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4a6a-ae06-ff59-6353" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -508,28 +512,32 @@
             <selectionEntry type="upgrade" import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="f92e-4d0a-3b67-17a8">
               <entryLinks>
                 <entryLink import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="54a4-a79d-5e23-0f6f" collective="false" targetId="d17f-b74a-2a3f-96a0" type="selectionEntry" defaultAmount="1,1,1">
-                  <costs>
-                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="200"/>
-                  </costs>
                   <constraints>
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c762-bb72-08de-30c7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="c7d4-6d20-6e3f-baeb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="200"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Questoris Knight Armiger Talon" hidden="false" id="b8a9-1dcd-d958-9bb4">
               <entryLinks>
                 <entryLink import="true" name="Questoris Knight Armiger Talon" hidden="false" id="e7bc-01a0-ae51-cb1d" collective="false" targetId="de00-e514-4eba-7180" type="selectionEntry" defaultAmount="1,1,1">
-                  <costs>
-                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
-                  </costs>
                   <constraints>
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="99c3-63bd-eaf0-414d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="01df-d4f9-be6b-6bc1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -636,28 +644,32 @@
             <selectionEntry type="upgrade" import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="002e-3274-ac4c-d0bb">
               <entryLinks>
                 <entryLink import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="adb6-35bf-80b9-9f52" collective="false" targetId="d17f-b74a-2a3f-96a0" type="selectionEntry" defaultAmount="1,1,1">
-                  <costs>
-                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="200"/>
-                  </costs>
                   <constraints>
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4fcb-bf1d-ba88-daaa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="3099-165a-5fd5-8023" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="200"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Questoris Knight Armiger Talon" hidden="false" id="eea7-45e2-ca62-08fd">
               <entryLinks>
                 <entryLink import="true" name="Questoris Knight Armiger Talon" hidden="false" id="9403-46d0-41f9-442a" collective="false" targetId="de00-e514-4eba-7180" type="selectionEntry" defaultAmount="1,1,1">
-                  <costs>
-                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
-                  </costs>
                   <constraints>
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4227-7748-e93a-d957" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b775-2357-e571-2856" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
