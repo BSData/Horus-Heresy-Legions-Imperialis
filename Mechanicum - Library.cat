@@ -96,20 +96,20 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="478a-2c92-19bb-cc27-max"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Thallax plasma-fusil" hidden="false" id="b37f-5f5f-0a80-7d77">
+        <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="b37f-5f5f-0a80-7d77">
           <profiles>
-            <profile name="Thallax plasma-fusil" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="5469-e299-ae66-84d4">
+            <profile name="Multi-melta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="5469-e299-ae66-84d4">
               <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
                 <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Light AT" id="b16b-b4d2-87e7-3567" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+            <infoLink name="Anti-tank" id="b16b-b4d2-87e7-3567" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="837d-a8a0-a670-3cf1-min"/>
@@ -166,6 +166,26 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             <infoLink name="Light" id="c0fa-acda-f8a6-5a68" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Myrmidon Plasma-fusil" hidden="false" id="f34e-0b64-e59f-85c2" publicationId="559c-6588-c3b1-b0e5">
+          <profiles>
+            <profile name="Myrmidon Plasma-fusil" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2134-804d-1066-fc44">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e826-f4c5-d936-aa5c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8303-5dd9-55c0-58bb"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Light AT" id="2ffd-d70c-4098-0483" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Myrmidon Destructors" hidden="false" id="d17a-fd59-ab4c-7770" publicationId="89ae-8b6d-da44-733f" page="101">
@@ -206,6 +226,10 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba69-1e1f-9909-f37f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba69-1e1f-9909-f37f-max" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Myrmidon volkites" hidden="false" id="7316-50e3-22d8-dae1">
               <profiles>
@@ -223,12 +247,12 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
                 <infoLink name="Deflagrate" id="8e22-0fe8-85fd-abe2" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
                 <infoLink name="Light" id="473d-fd2d-fb9c-1067" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
               </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0793-6ab1-0bb0-694c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0793-6ab1-0bb0-694c-max" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74d5-e288-1318-73b6-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74d5-e288-1318-73b6-max"/>
-          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -683,9 +707,9 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <categoryLink name="Vehicle (2)" hidden="false" id="a770-e882-f893-58d1" targetId="49b3-dae7-33f8-f8e" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Large Transport (X)" id="f7f0-ac5c-582a-5c28" hidden="false" type="rule" targetId="d33b-3fa4-492e-6d3e">
+        <infoLink name="Transport (X)" id="c908-6073-ca5c-5e00" hidden="false" type="rule" targetId="b82-1269-e912-cb88" publicationId="559c-6588-c3b1-b0e5">
           <modifiers>
-            <modifier type="set" value="Large Transport (4)" field="name"/>
+            <modifier type="set" value="Transport (4)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>

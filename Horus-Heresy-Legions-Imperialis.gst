@@ -3,7 +3,7 @@
   <publications>
     <publication id="eab5-2233-3200-3063" name="GitHub" shortName="BSData/Horus-Heresy-Legions-Imperialis" publisherUrl="https://github.com/BSData/Horus-Heresy-Legions-Imperialis/"/>
     <publication id="c1b8-2180-635c-14cd" name="Legions Imperialis Rulebook" shortName="LI" publicationDate="2023" publisherUrl="https://www.warhammer.com/en-GB/shop/legions-imperialis-rulebook-hb-eng-2023"/>
-    <publication name="Legions Imperialis FAQs and Errata" hidden="false" id="559c-6588-c3b1-b0e5" shortName="LIE" publisherUrl="https://www.warhammer-community.com/legions-imperialis-downloads/" publisher="Legions Imperialis Rulebook Errata" publicationDate="2023"/>
+    <publication name="Legions Imperialis FAQs and Errata" hidden="false" id="559c-6588-c3b1-b0e5" shortName="LIE" publisherUrl="https://www.warhammer-community.com/en-gb/downloads/legions-imperialis/" publisher="Legions Imperialis Rulebook Errata" publicationDate="2023"/>
     <publication name="The Great Slaughter" id="06b7-24c3-e0d0-3e98" hidden="false" shortName="GS" publicationDate="2024" publisherUrl="https://www.warhammer.com/en-GB/shop/legions-imperialis-the-great-slaughter-2024"/>
     <publication name="The Devastation of Tallarn" id="e4cc-404e-be5e-2101" hidden="false" shortName="DOT" publicationDate="2024" publisherUrl="https://www.warhammer.com/en-GB/shop/legions-imperialis-devastation-of-tallarn-2024-eng"/>
     <publication name="Rise of the Dark Mechanicum" id="89ae-8b6d-da44-733f" hidden="false" shortName="RDM" publicationDate="2024"/>
@@ -134,10 +134,10 @@
         <categoryLink name="Vanguard" hidden="false" id="beb-b6e2-8aac-f9c2" targetId="8416-456c-a6f-e059"/>
         <categoryLink name="Knight" hidden="false" id="17c-5158-3e04-e1f6" targetId="adde-db57-b7d8-2daa"/>
         <categoryLink name="Titan" hidden="false" id="c84b-708c-d3ad-3ca7" targetId="1302-0157-2be4-3d34"/>
-        <categoryLink name="Armiger" hidden="false" id="9802-d256-6470-564f" targetId="fe26-cfac-c306-cfd8" type="categoryEntry"/>
-        <categoryLink name="Acastus" hidden="false" id="2cf3-46a7-ec1c-5655" targetId="0d15-eaf4-cef8-8841" type="categoryEntry"/>
-        <categoryLink name="Cerastus" hidden="false" id="9bc8-dc0e-46a3-d632" targetId="7e81-3342-b50d-b304" type="categoryEntry"/>
-        <categoryLink name="Questoris" hidden="false" id="93b2-1850-48c5-8ab1" targetId="b2bb-ab05-f014-3b33" type="categoryEntry"/>
+        <categoryLink name="Armiger" hidden="false" id="9802-d256-6470-564f" targetId="fe26-cfac-c306-cfd8"/>
+        <categoryLink name="Acastus" hidden="false" id="2cf3-46a7-ec1c-5655" targetId="0d15-eaf4-cef8-8841"/>
+        <categoryLink name="Cerastus" hidden="false" id="9bc8-dc0e-46a3-d632" targetId="7e81-3342-b50d-b304"/>
+        <categoryLink name="Questoris" hidden="false" id="93b2-1850-48c5-8ab1" targetId="b2bb-ab05-f014-3b33"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Formations of Legend" id="1e4a-3c76-f375-bc07" hidden="false">
