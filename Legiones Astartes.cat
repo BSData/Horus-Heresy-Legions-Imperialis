@@ -8057,6 +8057,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               </profiles>
               <infoLinks>
                 <infoLink name="Drop Pod" hidden="false" id="41b7-cf7c-2d3d-f5e7" type="rule" targetId="39d-d61c-ebfe-15d9"/>
+                <infoLink name="Orbital Assault" id="31aa-21fb-da37-4aad" hidden="false" type="rule" targetId="4da1-709e-475f-5eca" publicationId="559c-6588-c3b1-b0e5"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
