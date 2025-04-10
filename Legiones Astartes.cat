@@ -6946,9 +6946,14 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="XX - Alpha Legion" hidden="false" id="9968-4d06-50ea-fedd" sortIndex="18">
               <profiles>
-                <profile name="Mutable Tactics" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="a3fd-4b0b-9eaa-e4f2">
+                <profile name="Mutable Tactics" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="a3fd-4b0b-9eaa-e4f2" publicationId="559c-6588-c3b1-b0e5" page="3">
                   <characteristics>
-                    <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">For each Formation in an Army made up entirely of Alpha Legion Detachments (ignoring Allied Contingents) the controlling player may select up to 3 Alpha Legion Detachments in the Army to be affected by Mutable Tactics. For each Allied Contingent in an Army made up entirely of Alpha Legion Detachments, the controlling player may select up to 1 Alpha Legion Detachment to be affected by Mutable Tactics. Detachments with the Flyer special rule cannot be chosen.
+                    <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">At the start of the battle, before any Detachments are
+deployed, for each Formation in an Army made up
+entirely of Alpha Legion Detachments (ignoring Allied
+Contingents), the controlling player may select up to 3
+Alpha Legion Detachments in the Army to be affected by
+Mutable Tactics. For each Allied Contingent in an Army made up entirely of Alpha Legion Detachments, the controlling player may select up to 1 Alpha Legion Detachment to be affected by Mutable Tactics. Detachments with the Flyer special rule cannot be chosen.
 
 A Detachment chosen to be affected by Mutable Tactics gains a special rule dependent on the Detachment Type. If a selected Detachment is made up of Infantry, Cavalry, Walker or Vehicle models, all models within it gain either the Infiltrate, Outflank or Forward Deployment special rule - this is chosen by the controlling player and different Detachments can choose different rules. If the selected Detachment is of another type, it gains the Forward Deployment rule.</characteristic>
                   </characteristics>
@@ -7104,9 +7109,13 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="XIII - Ultramarines" hidden="false" id="1a45-77e8-746a-fa63" sortIndex="11">
               <profiles>
-                <profile name="Interlocking Tactics" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="76c1-77ab-4ca2-28df">
+                <profile name="Interlocking Tactics" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="76c1-77ab-4ca2-28df" publicationId="559c-6588-c3b1-b0e5" page="3">
                   <characteristics>
-                    <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">An Ultramarines model may re-roll any Hits rolls of a 1 when firing upon an enemy Detachment that has already had one or more Hits scored against this round by an Ultramarines model from the same Formation as the firing model.</characteristic>
+                    <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">An Ultramarines model may re-roll any Hit rolls of a 1
+when firing upon an enemy Detachment that has already
+had one or more Hits scored against it this round by an
+Ultramarines model from a different Detachment in the
+same Formation as the firing model.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7122,9 +7131,12 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="XVII - Word Bearers" hidden="false" id="2201-d1c2-eb6c-cd1" sortIndex="15">
               <profiles>
-                <profile name="True Believers" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="7022-2d00-a86e-e0e9">
+                <profile name="True Believers" typeId="fe63-c171-b59c-9d89" typeName="Special Rules" hidden="false" id="7022-2d00-a86e-e0e9" publicationId="559c-6588-c3b1-b0e5" page="3">
                   <characteristics>
-                    <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Detachments within a Word Bearers Formation never count as Broken for the purposes of being issued an Order, i.e., they can be issued any Order they normally could instead of just the Advance Order or March Order. In addition, all Word Bearers Detachments ignore the effects of the Dread Aura (X) special rule.</characteristic>
+                    <characteristic name="Description" typeId="ec59-2e55-c763-6e6a">Detachments within a Word Bearers Formation never
+count as Broken for the purposes of being issued an
+Order, i.e., they can be issued any Order they normally
+could instead of just the Advance Order or Charge Order. In addition, all Word Bearers Detachments ignore the effects of the Dread Aura (X) special rule.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
