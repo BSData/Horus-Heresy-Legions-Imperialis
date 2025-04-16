@@ -535,8 +535,8 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
       <entryLinks>
         <entryLink import="true" name="Karacnos" hidden="false" id="c3d6-0989-f45f-8385" type="selectionEntry" targetId="94c4-fc51-2e1b-296d">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="25a7-9acd-bb09-6eae-min"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="25a7-9acd-bb09-6eae-max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25a7-9acd-bb09-6eae-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25a7-9acd-bb09-6eae-max"/>
           </constraints>
         </entryLink>
       </entryLinks>
