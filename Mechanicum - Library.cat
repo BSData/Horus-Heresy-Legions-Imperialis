@@ -692,14 +692,12 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbe0-aae6-0922-acdc"/>
             <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="1635-99d2-64ef-9caf"/>
           </constraints>
-          <costs>
-            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
-          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Triaros" hidden="false" id="ef70-4e36-852e-fd7d" defaultAmount="1">
       <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
