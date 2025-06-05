@@ -50,11 +50,6 @@
     </entryLink>
     <entryLink import="true" name="Warhound Hunting Pack" hidden="false" id="bd0b-fd78-0e43-e1b7" type="selectionEntry" targetId="82a6-d3d2-d7b6-aae5">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="732c-17f9-8345-775c" shared="true"/>
-          </conditions>
-        </modifier>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
           <conditionGroups>
             <conditionGroup type="and">
