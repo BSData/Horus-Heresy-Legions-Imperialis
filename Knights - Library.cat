@@ -485,17 +485,17 @@
       <modifiers>
         <modifier type="set" value="605" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="greaterThan" value="2" field="selections" scope="parent" childId="7c80-2724-c134-fc5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="greaterThan" value="2" field="selections" scope="self" childId="7c80-2724-c134-fc5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="415" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="equalTo" value="2" field="selections" scope="parent" childId="7c80-2724-c134-fc5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="7c80-2724-c134-fc5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="215" field="ee95-a20e-f9ff-e2c2">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="parent" childId="7c80-2724-c134-fc5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="7c80-2724-c134-fc5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
