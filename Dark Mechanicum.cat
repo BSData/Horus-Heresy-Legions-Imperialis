@@ -559,12 +559,12 @@ When one of more Hits are scored against a Detachment which contains one or more
             <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="155" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="160" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="200" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="205" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
