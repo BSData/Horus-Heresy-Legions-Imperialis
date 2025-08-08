@@ -480,10 +480,10 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
           <profiles>
             <profile name="Shock ram" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c55d-7de9-9bcf-4187">
               <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b"/>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21"/>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c"/>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7"/>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
                 <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Wrecker (2)</characteristic>
               </characteristics>
             </profile>
