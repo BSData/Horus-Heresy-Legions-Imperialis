@@ -272,6 +272,25 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Warbringer Nemesis Titan" hidden="false" id="86c9-569d-6435-8c9e" type="selectionEntry" targetId="a9a3-dedc-f21a-a560">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="732c-17f9-8345-775c" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedRules>
     <rule name="Construct Shields (X)" id="dc39-0d92-7a72-8fa2" hidden="false">
