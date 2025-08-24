@@ -8,6 +8,7 @@
     <publication name="The Devastation of Tallarn" id="e4cc-404e-be5e-2101" hidden="false" shortName="DOT" publicationDate="2024" publisherUrl="https://www.warhammer.com/en-GB/shop/legions-imperialis-devastation-of-tallarn-2024-eng"/>
     <publication name="Rise of the Dark Mechanicum" id="89ae-8b6d-da44-733f" hidden="false" shortName="RDM" publicationDate="2024"/>
     <publication name="Bonded Cybernetica Support Formations" id="3a86-b962-115c-2239" hidden="false" publisherUrl="https://assets.warhammer-community.com/legions_imperialis_expandedcyberneticaformations_eng_07-mdsmqowyoy-tu5prvasqe.pdf" shortName="BC" publicationDate="2024"/>
+    <publication name="Liber Strategica" id="5364-464c-3309-a620" hidden="false" shortName="LS" publisher="" publicationDate="2025"/>
   </publications>
   <costTypes>
     <costType id="ee95-a20e-f9ff-e2c2" name="‏‏‎‏points" defaultCostLimit="3000" hidden="false"/>
