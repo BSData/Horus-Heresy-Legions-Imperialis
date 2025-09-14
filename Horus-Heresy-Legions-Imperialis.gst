@@ -8,7 +8,7 @@
     <publication name="The Devastation of Tallarn" id="e4cc-404e-be5e-2101" hidden="false" shortName="DOT" publicationDate="2024" publisherUrl="https://www.warhammer.com/en-GB/shop/legions-imperialis-devastation-of-tallarn-2024-eng"/>
     <publication name="Rise of the Dark Mechanicum" id="89ae-8b6d-da44-733f" hidden="false" shortName="RDM" publicationDate="2024"/>
     <publication name="Bonded Cybernetica Support Formations" id="3a86-b962-115c-2239" hidden="false" publisherUrl="https://assets.warhammer-community.com/legions_imperialis_expandedcyberneticaformations_eng_07-mdsmqowyoy-tu5prvasqe.pdf" shortName="BC" publicationDate="2024"/>
-    <publication name="Liber Strategica" id="5364-464c-3309-a620" hidden="false" shortName="LS" publisher="" publicationDate="2025"/>
+    <publication name="Liber Strategica" id="5364-464c-3309-a620" hidden="false" shortName="LS" publicationDate="2025"/>
   </publications>
   <costTypes>
     <costType id="ee95-a20e-f9ff-e2c2" name="‏‏‎‏points" defaultCostLimit="3000" hidden="false"/>
@@ -141,7 +141,7 @@
         <categoryLink name="Questoris" hidden="false" id="93b2-1850-48c5-8ab1" targetId="b2bb-ab05-f014-3b33"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Formations of Legend" id="1e4a-3c76-f375-bc07" hidden="false">
+    <forceEntry name="Iconic Formations..." id="1e4a-3c76-f375-bc07" hidden="false">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="ba86-e610-c6c4-9f21" targetId="3779-422e-5fe9-5654"/>
         <categoryLink name="Standard Detachments" hidden="false" id="86c6-a699-531e-6266" targetId="e1e0-9c0e-7cab-b244">

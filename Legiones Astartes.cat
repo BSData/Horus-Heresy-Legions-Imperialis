@@ -1403,7 +1403,7 @@
               <selectionEntryGroups>
                 <selectionEntryGroup name="Hull Mounted" id="ff2b-7c67-9d56-a4b9" hidden="false">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Two Hull Mounted heavy bolters" hidden="false" id="e258-96e1-7bab-d2c8">
+                    <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolters" hidden="false" id="e258-96e1-7bab-d2c8">
                       <selectionEntries>
                         <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolters" hidden="false" id="e4c1-c8ba-4a87-6681">
                           <profiles>
@@ -1419,17 +1419,21 @@
                           </profiles>
                           <infoLinks>
                             <infoLink name="Point Defence" id="0f6f-61c3-3226-6e4a" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
-                            <infoLink name="Arc (Front/Rear)" id="cbdf-0578-66f3-b37b" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                            <infoLink name="Arc (Front/Rear)" id="cbdf-0578-66f3-b37b" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                              <modifiers>
+                                <modifier type="set" value="Arc (Front)" field="name"/>
+                              </modifiers>
+                            </infoLink>
                             <infoLink name="Light" id="e496-d4da-fd37-93a2" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
                           </infoLinks>
                           <constraints>
-                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7c60-7ed4-08f5-a2c5" includeChildSelections="false"/>
-                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="37b4-4ff5-656d-ed5d" includeChildSelections="false"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c60-7ed4-08f5-a2c5" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37b4-4ff5-656d-ed5d" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
                       </selectionEntries>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Two Kratos lascannon" hidden="false" id="df33-a7e7-528c-42c9">
+                    <selectionEntry type="upgrade" import="true" name="Kratos lascannon" hidden="false" id="df33-a7e7-528c-42c9">
                       <selectionEntries>
                         <selectionEntry type="upgrade" import="true" name="Kratos lascannon" hidden="false" id="4a2e-8074-d554-105b">
                           <profiles>
@@ -1439,23 +1443,26 @@
                                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
                                 <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
                                 <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Accurate, Anti-tank</characteristic>
+                                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank</characteristic>
                               </characteristics>
                             </profile>
                           </profiles>
                           <infoLinks>
-                            <infoLink name="Accurate" id="8a17-bcf3-e378-e1c3" hidden="false" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
                             <infoLink name="Anti-tank" id="b5f9-db08-053d-e8d4" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
-                            <infoLink name="Arc (Front/Rear)" id="1bc9-f6cc-868c-abdf" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                            <infoLink name="Arc (Front/Rear)" id="1bc9-f6cc-868c-abdf" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                              <modifiers>
+                                <modifier type="set" value="Arc (Front)" field="name"/>
+                              </modifiers>
+                            </infoLink>
                           </infoLinks>
                           <constraints>
-                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1fc3-3994-2b6f-c494" includeChildSelections="false"/>
-                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="65ce-b73d-dc4c-6667" includeChildSelections="false"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fc3-3994-2b6f-c494" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65ce-b73d-dc4c-6667" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
                       </selectionEntries>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Two Kratos autocannon" hidden="false" id="e637-1ff2-59db-ffea">
+                    <selectionEntry type="upgrade" import="true" name="Kratos autocannon" hidden="false" id="e637-1ff2-59db-ffea">
                       <selectionEntries>
                         <selectionEntry type="upgrade" import="true" name="Kratos autocannon" hidden="false" id="37ad-1ddf-d07c-a3c1">
                           <profiles>
@@ -1465,18 +1472,21 @@
                                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
                                 <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
                                 <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Accurate, Light AT</characteristic>
+                                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT</characteristic>
                               </characteristics>
                             </profile>
                           </profiles>
                           <infoLinks>
-                            <infoLink name="Accurate" id="12d1-3948-b166-daa3" hidden="false" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
                             <infoLink name="Light AT" id="3e5c-02b4-ecf9-1e73" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
-                            <infoLink name="Arc (Front/Rear)" id="984f-4d44-b190-f3e5" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                            <infoLink name="Arc (Front/Rear)" id="984f-4d44-b190-f3e5" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                              <modifiers>
+                                <modifier type="set" value="Arc (Front)" field="name"/>
+                              </modifiers>
+                            </infoLink>
                           </infoLinks>
                           <constraints>
-                            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="540b-f7cc-8036-b140" includeChildSelections="false"/>
-                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d760-ec09-a729-0e2c" includeChildSelections="false"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="540b-f7cc-8036-b140" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d760-ec09-a729-0e2c" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
                       </selectionEntries>
@@ -1555,7 +1565,11 @@
                       </profiles>
                       <infoLinks>
                         <infoLink name="Point Defence" id="be03-2137-307d-2681" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
-                        <infoLink name="Arc (Front/Rear)" id="7200-ec21-3f9a-56cc" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                        <infoLink name="Arc (Front/Rear)" id="7200-ec21-3f9a-56cc" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
                         <infoLink name="Light" id="2314-b631-fbf8-34ea" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
                       </infoLinks>
                     </selectionEntry>
@@ -1572,7 +1586,11 @@
                         </profile>
                       </profiles>
                       <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="0cd2-48a7-e631-cb43" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                        <infoLink name="Arc (Front/Rear)" id="0cd2-48a7-e631-cb43" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
                         <infoLink name="Anti-tank" id="578c-9ad7-e6b2-7459" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
                       </infoLinks>
                     </selectionEntry>
@@ -1604,6 +1622,31 @@
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10ad-4e34-bb35-41fb" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb18-b918-0888-046b" includeChildSelections="false"/>
                   </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted heavy bolter" hidden="false" id="370c-9709-9006-875e">
+                  <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3aae-4aa1-eae2-e224"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Light" id="c7ea-a879-acd9-ea0e" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Point Defence" id="e115-821c-dc7a-d4ce" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Pintle Mounted heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="60d1-6137-3af6-8bfa" publicationId="5364-464c-3309-a620">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1805,7 +1848,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Legion Armoured Company" hidden="false" id="2597-c58-f21-eb13">
+    <forceEntry name="Legion Armoured Company" hidden="false" id="2597-c58-f21-eb13" publicationId="5364-464c-3309-a620">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="48df-504-1c06-1f4f" targetId="3779-422e-5fe9-5654"/>
         <categoryLink name="Air Support" hidden="false" id="e6a4-da2b-dd39-cfcc" targetId="2879-da90-6a37-c897">
@@ -1842,6 +1885,12 @@
         <categoryLink name="Light Armour" hidden="false" id="e34e-7d17-2e58-8837" targetId="3b81-6b3e-4546-ade3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2195-c3e3-f4d5-426c"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="HQ" hidden="false" id="0441-2ece-0051-1365" targetId="d950-ad23-9b2-9325">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="58a8-ecce-aa92-82b1-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="58a8-ecce-aa92-82b1-max" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -2722,7 +2771,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="240a-c147-f684-a923"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+                    <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
                     <cost name="Transport" typeId="54cb-1324-71d0-d324" value="5"/>
                   </costs>
                 </entryLink>
@@ -2799,17 +2848,28 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4f7-3d60-6c2d-9e7f"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cda8-cdce-8bcf-a817"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd94-486d-f054-e664" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd94-486d-f054-e664" shared="true"/>
-                  </conditions>
+                <modifier type="set" value="1" field="cda8-cdce-8bcf-a817">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c639-bd73-1b75-4b07" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d876-0dd4-0315-dc6f" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -2861,6 +2921,8 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c639-bd73-1b75-4b07" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d876-0dd4-0315-dc6f" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2872,6 +2934,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
       </selectionEntryGroups>
       <constraints>
         <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="5842-9a1a-8e74-4e09" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="72df-3a27-fbf0-b2c2" includeChildSelections="true"/>
       </constraints>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -2883,6 +2946,16 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="0" field="72df-3a27-fbf0-b2c2">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2597-c58-f21-eb13" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2597-c58-f21-eb13" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -4302,7 +4375,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="78f9-870-cb51-887a"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+                    <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
                     <cost name="Transport" typeId="54cb-1324-71d0-d324" value="5"/>
                   </costs>
                 </entryLink>
@@ -4637,7 +4710,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="91a9-7ef0-8a2a-f2de"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+                    <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
                     <cost name="Transport" typeId="54cb-1324-71d0-d324" value="5"/>
                   </costs>
                 </entryLink>
@@ -5149,7 +5222,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="eda2-40f9-2c64-bd84"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+                    <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
                     <cost name="Transport" typeId="54cb-1324-71d0-d324" value="5"/>
                   </costs>
                 </entryLink>
@@ -5960,7 +6033,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ceac-e9c8-aa23-d079"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+                    <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
                     <cost name="Transport" typeId="54cb-1324-71d0-d324" value="5"/>
                   </costs>
                 </entryLink>
@@ -6559,7 +6632,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="a3bc-130-6ff-bf97"/>
                   </constraints>
                   <costs>
-                    <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
+                    <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
                     <cost name="Transport" typeId="54cb-1324-71d0-d324" value="5"/>
                   </costs>
                 </entryLink>
@@ -8684,7 +8757,9 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Iron Hands Seeker-Killer Clave Ultor" hidden="false" id="c167-e95a-1a5c-87de" subType="unit-group" publicationId="e4cc-404e-be5e-2101" page="91">
       <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="450"/>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="410"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="e1e0-9c0e-7cab-b244" id="3a95-4653-19ec-64d9" primary="true" name="Standard Detachments"/>
@@ -8692,9 +8767,6 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
       </categoryLinks>
       <comment>standard</comment>
       <rules>
-        <rule name="Seeker-killers" id="159c-916f-ff00-e987" hidden="false" publicationId="e4cc-404e-be5e-2101" page="91">
-          <description>Detachments from this Formation have the Macro-extinction Targeting Protocols special rule.</description>
-        </rule>
         <rule name="Sons of Ferrus Manus" id="86aa-9c1c-daf2-c399" hidden="false" publicationId="e4cc-404e-be5e-2101" page="91">
           <description>This Formation must be from the Iron Hands legion and can only be included in an Army with the Loyalist Allegiance.</description>
         </rule>
@@ -9109,24 +9181,22 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
           </conditionGroups>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Seeker-killers" id="4d55-3d23-507b-837a" hidden="false" type="rule" targetId="3c8d-5f15-e652-02cb"/>
+        <infoLink name="Macro-extinction Targeting Protocols" id="b8de-309e-c359-8cd4" hidden="false" type="rule" targetId="8cdb-dfd7-fffc-9359"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Iron Hands Seeker-Killer Clave Ultor" hidden="false" id="88a4-c57e-b3c9-644f" subType="unit-group" publicationId="e4cc-404e-be5e-2101" page="91">
       <comment>expanded</comment>
       <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="270"/>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="260"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="b2ba-773c-1cc5-56bc" id="ab7c-4d47-4c04-4e86" primary="true" name="Expanded Detachments"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="daaa-88f7-57c6-d9f8" primary="false" name="Legiones Astartes"/>
       </categoryLinks>
-      <rules>
-        <rule name="Seeker-killers" id="e52b-37d3-a01e-e4c1" hidden="false" publicationId="e4cc-404e-be5e-2101" page="91">
-          <description>Detachments from this Formation have the Macro-extinction Targeting Protocols special rule.</description>
-        </rule>
-        <rule name="Sons of Ferrus Manus" id="411a-2858-1c12-828c" hidden="false" publicationId="e4cc-404e-be5e-2101" page="91">
-          <description>This Formation must be from the Iron Hands legion and can only be included in an Army with the Loyalist Allegiance.</description>
-        </rule>
-      </rules>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6605-8362-e01e-bfe7" includeChildSelections="true"/>
       </constraints>
@@ -9405,11 +9475,17 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
           <comment>3</comment>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="Seeker-killers" id="11ee-c6be-39da-b40b" hidden="false" type="rule" targetId="3c8d-5f15-e652-02cb"/>
+        <infoLink name="Macro-extinction Targeting Protocols" id="b342-8a00-c143-e277" hidden="false" type="rule" targetId="8cdb-dfd7-fffc-9359"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Iron Warriors Proioxis Macro-Assault Wing" hidden="false" id="c38a-fc80-1b2c-ab47" subType="unit-group" publicationId="e4cc-404e-be5e-2101" page="92">
       <comment>standard</comment>
       <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="400"/>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="340"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="33fe-5afb-2927-9f4c" primary="false" name="Legiones Astartes"/>
@@ -9880,15 +9956,17 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
         <rule name="Sons of Perturabo" id="910b-863f-ed62-d214" hidden="false" publicationId="e4cc-404e-be5e-2101" page="92">
           <description>This Formation must be from the Iron Warriors Legion and can only be included in an Army with the Traitor Allegiance.</description>
         </rule>
-        <rule name="Hammerblow Assault" id="7e6e-92db-925c-d562" hidden="false" publicationId="e4cc-404e-be5e-2101" page="92">
-          <description>Legion Terminator models from this Formation increase their CAF by 2 during and round in which they Disembarked from a Spartan model from this Formation</description>
-        </rule>
       </rules>
+      <infoLinks>
+        <infoLink name="Hammerblow Assault" id="b479-64c9-944e-7fbe" hidden="false" type="rule" targetId="f691-4a6f-d887-ebfd"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Iron Warriors Proioxis Macro-Assault Wing" hidden="false" id="f3b7-a5d5-0b56-2ccd" subType="unit-group" publicationId="e4cc-404e-be5e-2101" page="92">
       <comment>expanded</comment>
       <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="400"/>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="410"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink name="Legiones Astartes" hidden="false" id="4632-d1b8-b8c7-1f5d" targetId="7d0c-e5ec-a086-98a4" primary="false"/>
@@ -9909,14 +9987,6 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
           </conditionGroups>
         </modifier>
       </modifiers>
-      <rules>
-        <rule name="Sons of Perturabo" id="cdcf-5dcc-e1bd-e935" hidden="false" publicationId="e4cc-404e-be5e-2101" page="92">
-          <description>This Formation must be from the Iron Warriors Legion and can only be included in an Army with the Traitor Allegiance.</description>
-        </rule>
-        <rule name="Hammerblow Assault" id="cda5-5f38-345f-842a" hidden="false" publicationId="e4cc-404e-be5e-2101" page="92">
-          <description>Legion Terminator models from this Formation increase their CAF by 2 during and round in which they Disembarked from a Spartan model from this Formation</description>
-        </rule>
-      </rules>
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="Legion Terminator Detachment" hidden="false" id="8c6a-64ed-c8b2-9e68">
           <categoryLinks>
@@ -10301,11 +10371,16 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="Hammerblow Assault" id="0d6c-0111-bda1-b954" hidden="false" type="rule" targetId="f691-4a6f-d887-ebfd"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Alpha Legion Harrow Group Arcadus" hidden="false" id="1857-ae3e-b42f-1140" subType="unit-group" publicationId="e4cc-404e-be5e-2101" page="94">
       <comment>standard</comment>
       <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="630"/>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="495"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="e1e0-9c0e-7cab-b244" id="3517-c2e2-2cf1-db88" primary="true" name="Standard Detachments"/>
@@ -10313,10 +10388,7 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
       </categoryLinks>
       <rules>
         <rule name="Protean Instrument" id="2f96-a23c-bc83-7707" hidden="false" publicationId="e4cc-404e-be5e-2101" page="94">
-          <description>This Formation must be from the Alpha Legion</description>
-        </rule>
-        <rule name="Obfuscation Protocols" id="eeca-cc49-d1ae-e9d0" hidden="false" publicationId="e4cc-404e-be5e-2101" page="94">
-          <description>Detachments from this Formation have the Outflank and Scout special rules.</description>
+          <description>This Formation must be from the Alpha Legion. In addition, an Army can only include one Alpha Legion Harrow Group Arcadus Formation.</description>
         </rule>
       </rules>
       <constraints>
@@ -10861,6 +10933,11 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
           </conditionGroups>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Obfuscation Protocols" id="62f9-0f83-043e-3297" hidden="false" type="rule" targetId="1bde-353a-1d16-b564"/>
+        <infoLink name="Outflank" id="de44-6b38-5f2c-015f" hidden="false" type="rule" targetId="8785-676-b80f-8709"/>
+        <infoLink name="Scout" id="7447-59da-4582-08c4" hidden="false" type="rule" targetId="ea1-6996-9b3e-1dc1"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Alpha Legion Harrow Group Arcadus" hidden="false" id="5450-b9b4-4c1e-7eb4" subType="unit-group" publicationId="e4cc-404e-be5e-2101" page="94">
       <comment>expanded</comment>
@@ -11275,6 +11352,272 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="Obfuscation Protocols" id="b5c2-03e4-daea-12ae" hidden="false" type="rule" targetId="1bde-353a-1d16-b564"/>
+        <infoLink name="Scout" id="6a0f-5219-21cf-fc3a" hidden="false" type="rule" targetId="ea1-6996-9b3e-1dc1"/>
+        <infoLink name="Outflank" id="8458-819f-1feb-14a4" hidden="false" type="rule" targetId="8785-676-b80f-8709"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Stonebreaker Siege Force" hidden="false" id="0439-4c6a-b23e-7db2" subType="unit-group" publicationId="5364-464c-3309-a620">
+      <comment>standard</comment>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="370"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="e1e0-9c0e-7cab-b244" id="f408-4873-8886-abc2" primary="true" name="Standard Detachments"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="704f-218d-e328-20e1" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Shattering Barrage" id="3cb0-9f36-cbe3-5cce" hidden="false" type="rule" targetId="86ba-16dc-57a7-a35e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Stonebreaker Siege Force" hidden="false" id="a80a-8340-4dca-c776" subType="unit-group" publicationId="5364-464c-3309-a620">
+      <comment>expanded</comment>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="520"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="7ef6-3064-f0ef-a9f0" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="b2ba-773c-1cc5-56bc" id="bb5f-86d1-8a0b-ed4f" primary="true" name="Expanded Detachments"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="e0ce-b498-d5aa-76ce">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="0439-4c6a-b23e-7db2" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="false" id="e0ce-b498-d5aa-76ce" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Shattering Barrage" id="9eb0-5f56-3e2f-3098" hidden="false" type="rule" targetId="86ba-16dc-57a7-a35e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Speartip Assault" hidden="false" id="c639-bd73-1b75-4b07" subType="unit-group" publicationId="5364-464c-3309-a620">
+      <comment>standard</comment>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="230"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="e1e0-9c0e-7cab-b244" id="da0a-a79d-9db5-4f63" primary="true" name="Standard Detachments"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="5ade-92a4-769b-9180" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Tip of the Spear" id="145a-475e-2c86-8cd0" hidden="false" type="rule" targetId="ce22-3d93-c8d3-621e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Speartip Assault" hidden="false" id="d876-0dd4-0315-dc6f" subType="unit-group" publicationId="5364-464c-3309-a620">
+      <comment>expanded</comment>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="205"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="294a-6ae1-18ce-6bbe" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="b2ba-773c-1cc5-56bc" id="b024-c899-392b-fd47" primary="true" name="Expanded Detachments"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Tip of the Spear" id="190f-ede0-3c9e-5abd" hidden="false" type="rule" targetId="ce22-3d93-c8d3-621e"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="false" id="4e2c-9f61-2427-5ce9" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="4e2c-9f61-2427-5ce9">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="c639-bd73-1b75-4b07" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Tactical Strike Force" hidden="false" id="97e1-11d4-b310-e512" subType="unit-group" publicationId="5364-464c-3309-a620">
+      <comment>standard</comment>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="230"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="e1e0-9c0e-7cab-b244" id="ddf7-4d88-c661-e342" primary="true" name="Standard Detachments"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="fc39-1eea-315a-6f3a" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Officer of the Line" id="917d-011b-0205-827b" hidden="false" type="rule" targetId="28d6-e2bf-dadf-298c"/>
+        <infoLink name="Backbone of the Legion" id="801a-96af-9d49-c2c3" hidden="false" type="rule" targetId="1ec9-dfb9-b3df-4ed3"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Tactical Strike Force" hidden="false" id="3e60-ff62-9318-c23b" subType="unit-group" publicationId="5364-464c-3309-a620">
+      <comment>expanded</comment>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="140"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="dd8f-6ad6-ca29-dcab" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="b2ba-773c-1cc5-56bc" id="f538-42e6-31bd-189b" primary="true" name="Expanded Detachments"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Officer of the Line" id="810d-c5bc-7103-fa71" hidden="false" type="rule" targetId="28d6-e2bf-dadf-298c"/>
+        <infoLink name="Backbone of the Legion" id="2875-8ea1-70ad-d4f5" hidden="false" type="rule" targetId="1ec9-dfb9-b3df-4ed3"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="false" id="2e79-6904-1772-a276" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="2e79-6904-1772-a276">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="97e1-11d4-b310-e512" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Death Guard Reaping Host" hidden="false" id="4922-9498-70cc-bb6a" subType="unit-group" publicationId="5364-464c-3309-a620">
+      <comment>standard</comment>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="285"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="e1e0-9c0e-7cab-b244" id="d56a-afed-e76d-8300" primary="true" name="Standard Detachments"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="0204-a221-22cb-a053" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d955-5c5a-f357-a486" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Sons of the Pale King" id="de0d-33de-5009-b027" hidden="false" publicationId="5364-464c-3309-a620">
+          <description>This formation must be from the Death Guard Legion.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Shattering Volleys" id="7716-b6c8-6420-fb85" hidden="false" type="rule" targetId="abfb-c7ed-709d-5015"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Death Guard Reaping Host" hidden="false" id="e1d2-21ea-7f74-b761" subType="unit-group" publicationId="5364-464c-3309-a620">
+      <comment>expanded</comment>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="350"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="2fdb-077c-a5a2-3bfa" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="b2ba-773c-1cc5-56bc" id="b55f-2de2-d18d-ae25" primary="true" name="Expanded Detachments"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="4922-9498-70cc-bb6a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" value="1" field="8d9b-a82c-06e9-7f27">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="4922-9498-70cc-bb6a" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d955-5c5a-f357-a486" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Shattering Volleys" id="4b6f-c43b-4358-160b" hidden="false" type="rule" targetId="abfb-c7ed-709d-5015"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="false" id="8d9b-a82c-06e9-7f27" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="White Scars Chogorian Warband" hidden="false" id="4f0a-9683-ef77-d0be" subType="unit-group">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="305"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="35ee-b54a-88be-79d9" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="e1e0-9c0e-7cab-b244" id="ea03-49ae-3495-d266" primary="true" name="Standard Detachments"/>
+      </categoryLinks>
+      <comment>standard</comment>
+      <rules>
+        <rule name="Sons of the Khan" id="afb4-0dde-a123-3c6a" hidden="false" publicationId="5364-464c-3309-a620">
+          <description>This Formation must be from the White Scars Legion.</description>
+        </rule>
+        <rule name="Ride the Wind" id="9082-797b-0395-7c9c" hidden="false" publicationId="5364-464c-3309-a620">
+          <description>Standard Detachments in this formation gain the Forward Deployment special rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Forward Deployment" id="920c-cc6c-a269-5258" hidden="false" type="rule" targetId="54b4-67fd-a64-86d5"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="c5da-68c7-9771-e8e2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="White Scars Chogorian Warband" hidden="false" id="5196-060a-8739-fbff" subType="unit-group">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="265"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="f381-099b-d344-b7d5" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="b2ba-773c-1cc5-56bc" id="1f5c-71c3-48af-6618" primary="true" name="Expanded Detachments"/>
+      </categoryLinks>
+      <comment>expanded</comment>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="false" id="f8e3-a0b2-b893-f497" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="f8e3-a0b2-b893-f497">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="4f0a-9683-ef77-d0be" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="c5da-68c7-9771-e8e2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
@@ -11462,4 +11805,30 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
       </modifiers>
     </entryLink>
   </entryLinks>
+  <sharedRules>
+    <rule name="Officer of the Line" id="28d6-e2bf-dadf-298c" hidden="false" publicationId="5364-464c-3309-a620">
+      <description>The Command Squad in this Formation can use the Master Tactician special rule twice when it is activated, but if it does, both Detachments selected to have their Order replaced must be from this Formation.</description>
+    </rule>
+    <rule name="Backbone of the Legion" id="1ec9-dfb9-b3df-4ed3" hidden="false" publicationId="5364-464c-3309-a620">
+      <description>Legion Tactical Detachments from this Formation have the Line special rule.</description>
+    </rule>
+    <rule name="Shattering Barrage" id="86ba-16dc-57a7-a35e" hidden="false" publicationId="5364-464c-3309-a620">
+      <description>When making a Fight roll for an enemy model that is Garrisoned within a Structure that is in a Fight against an Infantry model from this Formation, the controlling player does not gain the Structure Bonus to that model&apos;s CAF if that Structure has lost any wounds.</description>
+    </rule>
+    <rule name="Tip of the Spear" id="ce22-3d93-c8d3-621e" hidden="false" publicationId="5364-464c-3309-a620">
+      <description>All Detachments in this Formation must start the battle deployed within their Dedicated Transports. When a Detachment from this Formation Deep Strikes, after placing the first model, that model does not Scatter.</description>
+    </rule>
+    <rule name="Obfuscation Protocols" id="1bde-353a-1d16-b564" hidden="false" publicationId="5364-464c-3309-a620">
+      <description>Detachments from this Formation have the Outflank and Scout special rules.</description>
+    </rule>
+    <rule name="Hammerblow Assault" id="f691-4a6f-d887-ebfd" hidden="false" publicationId="e4cc-404e-be5e-2101" page="92">
+      <description>Legion Terminator models from this Formation increase their CAF by 2 during and round in which they Disembarked from a Spartan model from this Formation.</description>
+    </rule>
+    <rule name="Seeker-killers" id="3c8d-5f15-e652-02cb" hidden="false" publicationId="e4cc-404e-be5e-2101" page="91">
+      <description>Detachments from this Formation have the Macro-extinction Targeting Protocols special rule.</description>
+    </rule>
+    <rule name="Shattering Volleys" id="abfb-c7ed-709d-5015" hidden="false" publicationId="5364-464c-3309-a620">
+      <description>Missile Launchers models in this Formation gain the Demolisher special rule while their Detachment is not Garrisoned within a Structure.</description>
+    </rule>
+  </sharedRules>
 </catalogue>
