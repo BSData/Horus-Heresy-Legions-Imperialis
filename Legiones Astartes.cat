@@ -1094,7 +1094,7 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="ea9c-9656-34b2-f589" hidden="false">
               <selectionEntryGroups>
-                <selectionEntryGroup name="Sponsons" id="0f81-984f-ee68-a0d8" hidden="false">
+                <selectionEntryGroup name="Sponsons" id="0f81-984f-ee68-a0d8" hidden="false" sortIndex="2">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Sponson Mounted heavy bolters" hidden="false" id="e19a-9fe3-2574-161c">
                       <profiles>
@@ -1110,7 +1110,11 @@
                       </profiles>
                       <infoLinks>
                         <infoLink name="Point Defence" id="7d71-9d0c-e584-ddab" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
-                        <infoLink name="Arc (Front/Rear)" id="46e3-7443-c428-c9d4" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                        <infoLink name="Arc (Front/Rear)" id="46e3-7443-c428-c9d4" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
                         <infoLink name="Light" id="de5f-4cbe-638c-1332" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
                       </infoLinks>
                     </selectionEntry>
@@ -1127,7 +1131,11 @@
                         </profile>
                       </profiles>
                       <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="56f7-026b-a642-0d67" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                        <infoLink name="Arc (Front/Rear)" id="56f7-026b-a642-0d67" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
                         <infoLink name="Anti-tank" id="cde1-4766-2d91-1e8a" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
                       </infoLinks>
                     </selectionEntry>
@@ -1137,15 +1145,15 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d94e-d885-23a4-c9fb" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Turret" id="236e-42d8-e1d9-1077" hidden="false">
+                <selectionEntryGroup name="Turret" id="236e-42d8-e1d9-1077" hidden="false" sortIndex="1">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Predator cannon" hidden="false" id="d05d-94c7-c548-51d8">
                       <profiles>
-                        <profile name="Predator cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="fa5f-b865-1132-e290">
+                        <profile name="Predator cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="fa5f-b865-1132-e290" publicationId="5364-464c-3309-a620">
                           <characteristics>
                             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot;</characteristic>
                             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
                             <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
                             <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
                           </characteristics>
@@ -1179,6 +1187,33 @@
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted heavy bolter" hidden="false" id="f6f7-8d8c-3fd1-eec0">
+                  <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf82-a42d-f455-92b3"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Light" id="eedf-f04f-c1fd-1dd7" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Point Defence" id="f9ba-45f2-ada7-f8b4" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Pintle Mounted heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d784-67e5-11f8-9aa3" publicationId="5364-464c-3309-a620">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
@@ -1229,7 +1264,7 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="3257-f487-0095-59b7" hidden="false">
               <selectionEntryGroups>
-                <selectionEntryGroup name="Sponsons" id="e2c1-040a-1816-06b7" hidden="false">
+                <selectionEntryGroup name="Sponsons" id="e2c1-040a-1816-06b7" hidden="false" sortIndex="3">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Sponson Mounted heavy bolters" hidden="false" id="8877-1760-8c19-25b9">
                       <profiles>
@@ -1245,7 +1280,11 @@
                       </profiles>
                       <infoLinks>
                         <infoLink name="Point Defence" id="198f-8cfd-2a5b-7be0" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
-                        <infoLink name="Arc (Front/Rear)" id="df1c-8ef9-2b37-d140" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                        <infoLink name="Arc (Front/Rear)" id="df1c-8ef9-2b37-d140" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
                         <infoLink name="Light" id="2003-c3cf-0cc8-c2fa" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
                       </infoLinks>
                     </selectionEntry>
@@ -1262,7 +1301,11 @@
                         </profile>
                       </profiles>
                       <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="2416-47f1-df0b-496a" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                        <infoLink name="Arc (Front/Rear)" id="2416-47f1-df0b-496a" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
                         <infoLink name="Anti-tank" id="6b16-ceab-a7ba-7235" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
                       </infoLinks>
                     </selectionEntry>
@@ -1272,7 +1315,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5585-b026-e3c4-50bd" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Turret" id="78c4-c89e-3496-0a80" hidden="false">
+                <selectionEntryGroup name="Turret" id="78c4-c89e-3496-0a80" hidden="false" sortIndex="1">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Twin-linked accelerator autocannon" hidden="false" id="e91f-8aa6-7841-ab55">
                       <profiles>
@@ -1331,7 +1374,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter" hidden="false" id="b732-71ec-6dc7-45e5">
+                <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter" hidden="false" id="b732-71ec-6dc7-45e5" sortIndex="2">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eff2-11d6-2b19-b570" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1789-1cc8-2aa2-c4fa" includeChildSelections="false"/>
@@ -1350,8 +1393,37 @@
                   <infoLinks>
                     <infoLink name="Point Defence" id="a2e9-7ff9-9aeb-ec40" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
                     <infoLink name="Light" id="1fd9-d1e7-4228-2294" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-                    <infoLink name="Arc (Front/Rear)" id="6732-5bc8-36e7-6240" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Arc (Front/Rear)" id="6732-5bc8-36e7-6240" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted heavy bolter" hidden="false" id="fc74-5715-df97-0141">
+                  <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f68-8c51-cf84-0406"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Light" id="886c-636b-1e8d-37d0" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Point Defence" id="1738-f4f7-03d5-0b21" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Pintle Mounted heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e14c-ed91-55b9-98ce" publicationId="5364-464c-3309-a620">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -2684,15 +2756,15 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Legion combi-bolters" hidden="false" id="5769-c113-8160-31e7">
+            <selectionEntry type="upgrade" import="true" name="Legion bolters" hidden="false" id="5769-c113-8160-31e7">
               <profiles>
-                <profile name="Legion combi-bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1405-9ac7-7ac7-fd3a">
+                <profile name="Legion bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1405-9ac7-7ac7-fd3a">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
                     <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
                     <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Assault, Light</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Assault, Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2703,8 +2775,28 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
               <infoLinks>
                 <infoLink name="Assault" hidden="false" type="rule" id="ab54-11c9-a80c-4346" targetId="e368-00fb-7a9b-9eb0"/>
                 <infoLink name="Light" hidden="false" type="rule" id="4976-b2a0-3adc-9814" targetId="4f6f-3184-9172-ef3f"/>
-                <infoLink name="Accurate" hidden="false" type="rule" id="79ec-da4f-b9c4-cc67" targetId="dc55-9f84-39e1-1e1e"/>
               </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Volkite Chargers" hidden="false" id="d807-669d-c451-96ce">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e03-8326-79e9-f9da-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e03-8326-79e9-f9da-max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Deflagrate" id="ba08-9f75-9915-ebf8" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
+                <infoLink name="Light" id="48f3-43cc-63df-c221" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Volkite Chargers" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f823-e769-5e2d-4764" publicationId="5364-464c-3309-a620">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Deflagrate, Light</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
           <infoLinks>
