@@ -572,7 +572,7 @@
       <profiles>
         <profile name="Land Speeder" hidden="false" id="d998-bc73-c49-5b7b" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
           <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">10&quot;</characteristic>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">11&quot;</characteristic>
             <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
             <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
             <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
@@ -683,8 +683,9 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="7"/>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="12"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="Large Transport (X)" hidden="false" id="920e-7a71-5d62-f4d8" type="rule" targetId="d33b-3fa4-492e-6d3e">
@@ -708,8 +709,9 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="6"/>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Turret Mounted twin bolter" hidden="false" id="5640-bb82-11d1-c1fe" collective="true">
@@ -4024,7 +4026,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
         <constraint type="max" value="7" field="54cb-1324-71d0-d324" scope="self" shared="true" id="4d24-4461-2821-e205" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Legion Kratos Squadron" hidden="false" id="dee9-6ead-d2cd-8877" publicationId="c1b8-2180-635c-14cd">
+    <selectionEntry type="unit" import="true" name="Legion Kratos Squadron" hidden="false" id="dee9-6ead-d2cd-8877" publicationId="5364-464c-3309-a620">
       <categoryLinks>
         <categoryLink targetId="1f6b-d764-352d-1e74" id="b514-f390-ddf4-6f9a" primary="true" name="Heavy Armour"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="76dd-620-d6e8-6e77" primary="false" name="Legiones Astartes"/>
@@ -4048,7 +4050,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="87d2-152c-818c-ecaf"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Sponson weapons" hidden="false" id="1007-b7db-6d9c-c8e6">
+            <selectionEntryGroup name="Sponson weapons" hidden="false" id="1007-b7db-6d9c-c8e6" sortIndex="3">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="c34f-1c99-e1b-6606">
                   <profiles>
@@ -4063,7 +4065,11 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="e03d-3c0e-61d-e24d" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="e03d-3c0e-61d-e24d" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                     <infoLink name="Anti-tank" hidden="false" type="rule" id="900b-ca62-2543-4edc" targetId="5656-4a72-5de3-87ce"/>
                   </infoLinks>
                 </selectionEntry>
@@ -4082,7 +4088,11 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                   <infoLinks>
                     <infoLink name="Point Defence" hidden="false" type="rule" id="5c84-24f9-4065-3cff" targetId="f921-10ce-33f7-19fd"/>
                     <infoLink name="Light" hidden="false" type="rule" id="f0d3-3019-6afa-5a33" targetId="4f6f-3184-9172-ef3f"/>
-                    <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="fc1f-6b70-fb0c-6043" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="fc1f-6b70-fb0c-6043" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -4091,18 +4101,18 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7900-1a54-f318-aeb"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hull weapons" hidden="false" id="cf7a-4c3e-f2b8-2a6f">
+            <selectionEntryGroup name="Hull weapons" hidden="false" id="cf7a-4c3e-f2b8-2a6f" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7cd8-e370-9a1-621b"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df8a-5aa5-e356-51ba"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Hull Mounted heavy bolters" hidden="false" id="7b23-68ee-cf60-ce20">
+                <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolters" hidden="false" id="7b23-68ee-cf60-ce20">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolters" hidden="false" id="2510-be88-3837-2533">
                       <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d4f3-c8b0-ae0a-e632"/>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a9b7-3f5f-1004-8e8a"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4f3-c8b0-ae0a-e632"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9b7-3f5f-1004-8e8a"/>
                       </constraints>
                       <profiles>
                         <profile name="Hull Mounted heavy bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c699-db62-bba8-aba7">
@@ -4118,22 +4128,29 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                       <infoLinks>
                         <infoLink name="Light" hidden="false" type="rule" id="41eb-b2ca-e504-1b2" targetId="4f6f-3184-9172-ef3f"/>
                         <infoLink name="Point Defence" hidden="false" type="rule" id="9798-b2d3-c625-7551" targetId="f921-10ce-33f7-19fd"/>
-                        <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="28b2-333d-8b8d-95d0" targetId="c48c-8f45-e290-9940"/>
+                        <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="28b2-333d-8b8d-95d0" targetId="c48c-8f45-e290-9940">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
                       </infoLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two Kratos autocannon" hidden="false" id="8596-affd-d17d-d38d">
+                <selectionEntry type="upgrade" import="true" name="Kratos autocannon" hidden="false" id="8596-affd-d17d-d38d">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Kratos autocannon" hidden="false" id="f6b-6228-11fb-4508">
                       <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2948-e5a5-df01-6a9"/>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="db80-7398-63db-f0a6"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2948-e5a5-df01-6a9"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db80-7398-63db-f0a6"/>
                       </constraints>
                       <infoLinks>
                         <infoLink name="Light AT" hidden="false" type="rule" id="9c4b-228e-3aaa-1968" targetId="c731-70f4-ffcd-4ff7"/>
-                        <infoLink name="Accurate" hidden="false" type="rule" id="1879-2e19-b92a-9411" targetId="dc55-9f84-39e1-1e1e"/>
-                        <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="d44-fe62-fce5-1e5e" targetId="c48c-8f45-e290-9940"/>
+                        <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="d44-fe62-fce5-1e5e" targetId="c48c-8f45-e290-9940">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
                       </infoLinks>
                       <profiles>
                         <profile name="Kratos autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d55c-6f61-74c2-76dd">
@@ -4142,23 +4159,26 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
                             <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
                             <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Arc (Front), Light AT</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two Kratos lascannon" hidden="false" id="bc82-87e2-af89-7fab">
+                <selectionEntry type="upgrade" import="true" name="Kratos lascannon" hidden="false" id="bc82-87e2-af89-7fab">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Kratos lascannon" hidden="false" id="d81e-efc0-f374-b5f8">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6a05-82b8-a34c-b5db"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8ec3-448a-b8cf-ae3d"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a05-82b8-a34c-b5db"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ec3-448a-b8cf-ae3d"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="18c2-9a29-c16a-7f4a" targetId="c48c-8f45-e290-9940"/>
-                        <infoLink name="Accurate" hidden="false" type="rule" id="f68d-1dba-2c96-220e" targetId="dc55-9f84-39e1-1e1e"/>
+                        <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="18c2-9a29-c16a-7f4a" targetId="c48c-8f45-e290-9940">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
                         <infoLink name="Anti-tank" hidden="false" type="rule" id="79eb-d984-605b-85f0" targetId="5656-4a72-5de3-87ce"/>
                       </infoLinks>
                       <profiles>
@@ -4168,7 +4188,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
                             <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
                             <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Arc (Front), Anti-tank</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -4177,7 +4197,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Turret weapon" hidden="false" id="7d33-1e47-bd5a-5eef">
+            <selectionEntryGroup name="Turret weapon" hidden="false" id="7d33-1e47-bd5a-5eef" sortIndex="1">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Kratos battlecannon with co-axial autocannon" hidden="false" id="79f0-2be9-57fb-b349">
                   <profiles>
@@ -4186,7 +4206,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
                         <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
                         <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Armourbane</characteristic>
                       </characteristics>
                     </profile>
@@ -4260,28 +4280,57 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
           </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pintle Mounted heavy bolter" hidden="false" id="738e-dbd9-9a69-60b0" publicationId="5364-464c-3309-a620" sortIndex="4">
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84eb-1b3f-7599-99d3"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Light" id="b096-a356-2fa7-5a89" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                <infoLink name="Point Defence" id="fb5c-ff01-1163-bd51" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Pintle Mounted heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ccd2-255e-8e34-4ca5" publicationId="5364-464c-3309-a620">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
+        <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="140"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="210" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="205" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="260" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="270" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="320" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="335" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="350" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="390" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
@@ -4923,7 +4972,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Turret weapons" hidden="false" id="caf1-3ae6-9910-b50">
+            <selectionEntryGroup name="Turret weapons" hidden="false" id="caf1-3ae6-9910-b50" sortIndex="1">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Predator lascannon" hidden="false" id="9e3f-9ead-c520-5b8e">
                   <profiles>
@@ -4948,7 +4997,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
                         <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
                         <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
                       </characteristics>
@@ -4964,7 +5013,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55f9-47bb-9100-7fb9"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Sponson weapons" hidden="false" id="715c-d6b4-147c-9b5a">
+            <selectionEntryGroup name="Sponson weapons" hidden="false" id="715c-d6b4-147c-9b5a" sortIndex="2">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="b0a0-11a9-8509-4185">
                   <profiles>
@@ -4979,7 +5028,11 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="847f-f2ec-2c9-1229" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="847f-f2ec-2c9-1229" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                     <infoLink name="Anti-tank" hidden="false" type="rule" id="f26d-c414-a5bb-d819" targetId="5656-4a72-5de3-87ce"/>
                   </infoLinks>
                 </selectionEntry>
@@ -4998,7 +5051,11 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                   <infoLinks>
                     <infoLink name="Point Defence" hidden="false" type="rule" id="8fb1-e4ee-c6cd-a3ce" targetId="f921-10ce-33f7-19fd"/>
                     <infoLink name="Light" hidden="false" type="rule" id="a5e9-26ef-33f0-3767" targetId="4f6f-3184-9172-ef3f"/>
-                    <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="3be1-ace1-522c-492f" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="3be1-ace1-522c-492f" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -5013,6 +5070,33 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
           </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pintle Mounted heavy bolter" hidden="false" id="9632-3bca-2028-6428" sortIndex="3" publicationId="5364-464c-3309-a620">
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a17c-14b9-93fc-b55c"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Light" id="1232-7827-61ff-79de" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                <infoLink name="Point Defence" id="861f-8010-7e9d-c19d" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Pintle Mounted heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1625-9f9f-37b7-92a8" publicationId="5364-464c-3309-a620">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -5458,28 +5542,12 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Turret weapon" hidden="false" id="ae44-6620-81c-2719">
+            <selectionEntryGroup name="Turret weapon" hidden="false" id="ae44-6620-81c-2719" sortIndex="2" defaultSelectionEntryId="9369-d90e-ad26-bbb3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b30-1d83-301b-d006"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2619-620b-ccc2-ccd9"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Omega plasma array" hidden="false" id="93c4-4a7e-cfe3-435">
-                  <profiles>
-                    <profile name="Omega plasma array" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="eda5-867d-bd06-a348">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Accurate" hidden="false" type="rule" id="ef23-6ce4-7909-1591" targetId="dc55-9f84-39e1-1e1e"/>
-                  </infoLinks>
-                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Twin-linked accelerator autocannon" hidden="false" id="9369-d90e-ad26-bbb3">
                   <profiles>
                     <profile name="Twin-linked accelerator autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="4099-c59a-2bc9-d6e9">
@@ -5498,7 +5566,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Sponson weapons" hidden="false" id="35b3-4efe-8239-99d0">
+            <selectionEntryGroup name="Sponson weapons" hidden="false" id="35b3-4efe-8239-99d0" sortIndex="3">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="52fa-211f-b42f-a505">
                   <profiles>
@@ -5513,7 +5581,11 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="2eaf-5d2f-9dfe-46a6" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="2eaf-5d2f-9dfe-46a6" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                     <infoLink name="Anti-tank" hidden="false" type="rule" id="3aa-2652-dcb0-fdd9" targetId="5656-4a72-5de3-87ce"/>
                   </infoLinks>
                 </selectionEntry>
@@ -5532,7 +5604,11 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                   <infoLinks>
                     <infoLink name="Point Defence" hidden="false" type="rule" id="365d-82ef-55de-c77b" targetId="f921-10ce-33f7-19fd"/>
                     <infoLink name="Light" hidden="false" type="rule" id="dc39-6060-b775-d5ab" targetId="4f6f-3184-9172-ef3f"/>
-                    <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="e99c-ba13-c692-4ba3" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="e99c-ba13-c692-4ba3" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -5543,7 +5619,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter" hidden="false" id="cf6f-c953-4539-59bc">
+            <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter" hidden="false" id="cf6f-c953-4539-59bc" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="765d-5e3a-c8bb-11a1"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fdb-1eab-5986-10bb"/>
@@ -5561,9 +5637,38 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
               </profiles>
               <infoLinks>
                 <infoLink name="Light" hidden="false" type="rule" id="1de0-46d3-b884-929e" targetId="4f6f-3184-9172-ef3f"/>
-                <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="709a-a050-4ea9-4686" targetId="c48c-8f45-e290-9940"/>
+                <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="709a-a050-4ea9-4686" targetId="c48c-8f45-e290-9940">
+                  <modifiers>
+                    <modifier type="set" value="Arc (Front)" field="name"/>
+                  </modifiers>
+                </infoLink>
                 <infoLink name="Point Defence" hidden="false" type="rule" id="de17-a28-2216-ebe7" targetId="f921-10ce-33f7-19fd"/>
               </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pintle Mounted heavy bolter" hidden="false" id="8539-ebf5-db2f-4dcd" sortIndex="4">
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="507e-8386-3dff-acd7"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Light" id="f3b3-7407-b310-adf6" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                <infoLink name="Point Defence" id="cbb8-566a-fb5c-3b0d" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Pintle Mounted heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="260a-38ea-726a-dad8" publicationId="5364-464c-3309-a620">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -5578,25 +5683,27 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="105"/>
+        <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="90"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="145" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="130" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="175" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="170" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="215" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="210" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="245" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="240" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
@@ -6405,10 +6512,10 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                     <profile name="Tarantula lascannon battery" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="be3e-c65a-314a-1da">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
                         <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
                         <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Anti-tank</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -6418,6 +6525,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                   </constraints>
                   <infoLinks>
                     <infoLink name="Anti-tank" hidden="false" type="rule" id="94c-da57-cc4c-854d" targetId="5656-4a72-5de3-87ce"/>
+                    <infoLink name="Accurate" id="336d-1624-1a7f-98fb" hidden="false" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -7341,16 +7449,17 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
                   <profiles>
                     <profile name="Twin plasma guns" hidden="false" id="e937-3ac1-6768-b3af" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
                       <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
                         <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
                         <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Assault, Light AT</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <infoLinks>
                     <infoLink name="Light AT" hidden="false" id="4250-96a6-8309-fc51" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+                    <infoLink name="Assault" id="a031-fdde-4355-855f" hidden="false" type="rule" targetId="e368-00fb-7a9b-9eb0"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -7366,8 +7475,9 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b480-6fe2-e2e3-d9af" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="20"/>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7388,6 +7498,11 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Scimitar Jetbike Squadron" hidden="false" id="985f-8a87-3ad8-e797">
       <selectionEntries>
@@ -7405,7 +7520,7 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
               <profiles>
                 <profile name="Scimitar Jetbike" hidden="false" id="d04e-6379-fdf9-55c8" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
                   <characteristics>
-                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">10&quot;</characteristic>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">12&quot;</characteristic>
                     <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">5+</characteristic>
                     <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
                     <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
@@ -7461,8 +7576,9 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="35"/>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7505,137 +7621,13 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Land Speeder Squadron" hidden="false" id="2f00-d954-247c-b0e7">
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Land Speeders" hidden="false" id="7d1e-7717-d212-e0fb" defaultSelectionEntryId="7561-dcdf-3ce3-a92c">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c0d-87c0-fb7b-6632" includeChildSelections="false"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3543-2ccd-3c0a-4a0f" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="2 Land Speeders w/ plasma cannon" hidden="false" id="7561-dcdf-3ce3-a92c">
-              <constraints>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f6e8-eec2-cb77-682e" includeChildSelections="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Land Speeder w/ plasma cannon" hidden="false" id="546d-28eb-34c1-9bda" type="selectionEntry" targetId="188f-89b7-aad6-9360">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2443-895c-2087-13d8" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e2cc-cf62-16c4-8ec2" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Land Speeder w/ plasma cannon &amp; Land Speeder w/ multi-melta" hidden="false" id="9308-b5d1-e66a-9a45">
-              <constraints>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1608-dcba-a73e-f977" includeChildSelections="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Land Speeder w/ plasma cannon" hidden="false" id="17ed-e978-f265-e18" type="selectionEntry" targetId="188f-89b7-aad6-9360">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a2b-9604-bbb-8588" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0ce-203c-ace1-9df7" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <selectionEntries>
-                <selectionEntry type="model" import="true" name="Land Speeder w/ multi-melta" hidden="false" id="c55d-2d69-dc3d-b6f" collective="true">
-                  <profiles>
-                    <profile name="Land Speeder" hidden="false" id="1c16-865b-7e95-448c" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
-                      <characteristics>
-                        <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">10&quot;</characteristic>
-                        <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
-                        <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
-                        <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
-                        <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Nose Mounted heavy flamer" hidden="false" id="6d39-6cf0-e254-23fa" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d7-221d-1d1c-b897" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebea-9018-63a1-251f" includeChildSelections="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Nose Mounted heavy flamer" hidden="false" id="32be-94dd-38b7-3b2b" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Ignores Cover</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Light" hidden="false" id="2d49-e53d-c97f-8d50" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-                        <infoLink name="Arc (Front/Rear)" hidden="false" id="f83-b4dd-a970-f9f9" type="rule" targetId="c48c-8f45-e290-9940"/>
-                        <infoLink name="Ignores Cover" hidden="false" id="6e82-2a09-9c18-2876" type="rule" targetId="bff7-b88a-2145-2c63"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="c5f9-83a5-ec0b-432b" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69da-8801-857c-c7d8" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8abd-9319-9765-b783" includeChildSelections="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Multi-melta" hidden="false" id="9be4-4f26-9b0f-1b33" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Anti-tank" hidden="false" id="6580-7a58-847a-1151" type="rule" targetId="5656-4a72-5de3-87ce"/>
-                      </infoLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <infoLinks>
-                    <infoLink name="Jink (X)" hidden="false" id="7439-135c-a6bf-4676" type="rule" targetId="9b11-ba2c-eeaf-2402">
-                      <modifiers>
-                        <modifier type="set" value="Jink (6+)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink name="Skimmer" hidden="false" id="c6c7-e980-9c6d-228e" type="rule" targetId="4f70-6a67-930b-d0fc"/>
-                    <infoLink name="Outflank" hidden="false" type="rule" id="f46d-a13-f110-1168" targetId="8785-676-b80f-8709">
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43e4-611a-603c-71a" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="561a-7f1c-83f2-cb11" includeChildSelections="false"/>
-                  </constraints>
-                  <costs>
-                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                    <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
-                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="8416-456c-a6f-e059" id="7cd8-8792-eb7c-ac0c" primary="true" name="Vanguard"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="255e-1fbc-5352-2486" primary="false" name="Legiones Astartes"/>
@@ -7675,6 +7667,121 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Land Speeders" hidden="false" id="0fef-fad9-3706-cb62" subType="unit-group">
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="25"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Land Speeder w/ multi-melta" hidden="false" id="1cf8-2308-00b8-35d6" collective="true">
+              <profiles>
+                <profile name="Land Speeder" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="fc12-3994-c345-4a23">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">11&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Nose Mounted heavy flamer" hidden="false" id="aa09-0e56-fcc9-e67e" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c29-77b3-7dfe-9347" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8653-d9ed-8f2a-746c" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Nose Mounted heavy flamer" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e37f-4c0d-a279-47d8">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Ignores Cover</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Light" id="0090-789c-fe59-4aff" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Arc (Front/Rear)" id="dd44-ce21-521f-ef96" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Ignores Cover" id="2bb6-2044-f741-dd3d" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="494f-53b2-17c7-425e" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67d2-c48d-0491-38c7" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd74-6219-2bc0-5829" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Multi-melta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9ea1-8bed-361b-79ac">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" id="69a7-0126-a81c-054c" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <infoLinks>
+                <infoLink name="Jink (X)" id="a02d-a104-017f-7683" hidden="false" type="rule" targetId="9b11-ba2c-eeaf-2402">
+                  <modifiers>
+                    <modifier type="set" value="Jink (6+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Skimmer" id="bfc9-bc05-4fb7-9e38" hidden="false" type="rule" targetId="4f70-6a67-930b-d0fc"/>
+                <infoLink name="Outflank" id="2e5f-3a38-a584-ab29" hidden="false" type="rule" targetId="8785-676-b80f-8709">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a08-bb99-4f92-cf2f" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f26-726e-15dd-1231" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Land Speeder w/ plasma cannon" hidden="false" id="8ea1-00fb-d428-8044" type="selectionEntry" targetId="188f-89b7-aad6-9360">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="199b-e23a-2e96-b21f" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fb3-e7ce-e74f-e188" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="496d-9da5-61d0-b626-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="496d-9da5-61d0-b626-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Javelin Squadron" hidden="false" id="c5ad-fc33-bff2-152b">
       <categoryLinks>
@@ -7689,7 +7796,7 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
               <profiles>
                 <profile name="Javelin" hidden="false" id="4f8f-91cf-717c-f883" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
                   <characteristics>
-                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">10&quot;</characteristic>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">11&quot;</characteristic>
                     <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
                     <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
                     <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
@@ -7716,7 +7823,11 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
                   </profiles>
                   <infoLinks>
                     <infoLink name="Light" hidden="false" id="abcd-9049-dc42-41f2" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-                    <infoLink name="Arc (Front/Rear)" hidden="false" id="4dff-31eb-d9aa-97fc" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="4dff-31eb-d9aa-97fc" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                     <infoLink name="Ignores Cover" hidden="false" id="1c9b-38f-82a7-579a" type="rule" targetId="bff7-b88a-2145-2c63"/>
                   </infoLinks>
                 </selectionEntry>
@@ -7738,7 +7849,11 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
                   </profiles>
                   <infoLinks>
                     <infoLink name="Anti-tank" hidden="false" id="45f-4e0b-c399-f9d1" type="rule" targetId="5656-4a72-5de3-87ce"/>
-                    <infoLink name="Arc (Front/Rear)" hidden="false" id="ef99-abd3-7209-666d" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="ef99-abd3-7209-666d" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -7772,7 +7887,7 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
               <profiles>
                 <profile name="Javelin" hidden="false" id="556e-a5e9-9bf6-b0e5" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment">
                   <characteristics>
-                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">10&quot;</characteristic>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">11&quot;</characteristic>
                     <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
                     <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
                     <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
@@ -7799,7 +7914,11 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
                   </profiles>
                   <infoLinks>
                     <infoLink name="Light" hidden="false" id="5fb9-651d-d8e2-aa0b" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-                    <infoLink name="Arc (Front/Rear)" hidden="false" id="57a2-7b86-756a-b74d" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="57a2-7b86-756a-b74d" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                     <infoLink name="Ignores Cover" hidden="false" id="ce80-2bfd-e361-c38c" type="rule" targetId="bff7-b88a-2145-2c63"/>
                   </infoLinks>
                 </selectionEntry>
@@ -7821,13 +7940,16 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
                   </profiles>
                   <infoLinks>
                     <infoLink name="Ignores Cover" hidden="false" id="237-19fd-5d26-3d37" type="rule" targetId="bff7-b88a-2145-2c63"/>
-                    <infoLink name="Arc (Front/Rear)" hidden="false" id="59dc-9095-967c-a6e1" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" id="59dc-9095-967c-a6e1" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                     <infoLink name="Light" hidden="false" id="9471-4ec-ca8f-c974" type="rule" targetId="4f6f-3184-9172-ef3f"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="2"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
@@ -7872,16 +7994,17 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="33"/>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="35"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="66" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="65" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="99" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="95" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="atLeast" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -8076,6 +8199,11 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
           </conditionGroups>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="25"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dreadnought Drop Pod Detachment" hidden="false" id="dc32-7ffd-1d3-91ec">
       <categoryLinks>
@@ -8086,51 +8214,6 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
       <selectionEntryGroups>
         <selectionEntryGroup name="Drop Pods" hidden="false" id="8d3d-9cee-8eeb-6821" defaultSelectionEntryId="15e8-6ab2-837-c811">
           <entryLinks>
-            <entryLink import="true" name="Legion Palisade Drop Pod" hidden="false" id="92eb-8bd-9abf-2666" type="selectionEntry" targetId="9ed9-537d-30e8-8b5e">
-              <constraints>
-                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="fe40-dcf6-6d6b-927d" includeChildSelections="false"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="1" field="fe40-dcf6-6d6b-927d">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="dc32-7ffd-1d3-91ec" childId="ac26-425d-e441-2881" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="fe40-dcf6-6d6b-927d">
-                  <conditions>
-                    <condition type="equalTo" value="2" field="selections" scope="dc32-7ffd-1d3-91ec" childId="ac26-425d-e441-2881" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="3" field="fe40-dcf6-6d6b-927d">
-                  <conditions>
-                    <condition type="equalTo" value="3" field="selections" scope="dc32-7ffd-1d3-91ec" childId="ac26-425d-e441-2881" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="4" field="fe40-dcf6-6d6b-927d">
-                  <conditions>
-                    <condition type="equalTo" value="4" field="selections" scope="dc32-7ffd-1d3-91ec" childId="ac26-425d-e441-2881" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="5" field="fe40-dcf6-6d6b-927d">
-                  <conditions>
-                    <condition type="equalTo" value="5" field="selections" scope="dc32-7ffd-1d3-91ec" childId="ac26-425d-e441-2881" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="6" field="fe40-dcf6-6d6b-927d">
-                  <conditions>
-                    <condition type="equalTo" value="6" field="selections" scope="dc32-7ffd-1d3-91ec" childId="ac26-425d-e441-2881" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="7" field="fe40-dcf6-6d6b-927d">
-                  <conditions>
-                    <condition type="equalTo" value="7" field="selections" scope="dc32-7ffd-1d3-91ec" childId="ac26-425d-e441-2881" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="32"/>
-              </costs>
-            </entryLink>
             <entryLink import="true" name="Dreadnought Drop Pod" hidden="false" id="ac26-425d-e441-2881" type="selectionEntry" targetId="e19-5781-8cbe-477d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da56-c17d-7ce9-5b3c" includeChildSelections="false"/>
@@ -8172,18 +8255,22 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fee9-9ff6-5070-233b" includeChildSelections="false"/>
                   </constraints>
                   <profiles>
-                    <profile name="Deathstorm missile launcher" hidden="false" id="c75e-4ace-adc0-59a2" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon">
+                    <profile name="Deathstorm missile launcher" hidden="false" id="c75e-4ace-adc0-59a2" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" publicationId="5364-464c-3309-a620">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">D3+2</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">6+</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
                         <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
                         <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT, Limited (1), Saturation Fire</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink name="Limited (X)" hidden="false" id="e190-eb77-f1b0-62e6" type="rule" targetId="769e-4f43-51b0-537f"/>
+                    <infoLink name="Limited (X)" hidden="false" id="e190-eb77-f1b0-62e6" type="rule" targetId="769e-4f43-51b0-537f">
+                      <modifiers>
+                        <modifier type="set" value="Limited (1)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                     <infoLink name="Light AT" hidden="false" id="b370-355f-8916-43de" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
                     <infoLink name="Saturation Fire" hidden="false" id="4d59-5a51-3034-71d9" type="rule" targetId="a2b9-3b30-b56f-650a"/>
                   </infoLinks>
@@ -8211,8 +8298,9 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1a0a-775b-a8e4-f45d" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="32"/>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="35"/>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8238,6 +8326,11 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Termite Detachment" hidden="false" id="f0f5-007f-4aec-78cb" publicationId="e4cc-404e-be5e-2101" page="107">
       <categoryLinks>
@@ -8288,7 +8381,7 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
             <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="c87d-e641-f941-e773"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Sabre Missiles" hidden="false" id="9a5e-b8be-29fd-3dab">
+            <selectionEntry type="upgrade" import="true" name="Sabre Missiles" hidden="false" id="9a5e-b8be-29fd-3dab" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b4c-d8ef-348c-34fb-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b4c-d8ef-348c-34fb-max"/>
@@ -8315,7 +8408,7 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Primary Weapons" id="72e6-4359-e6b4-8a0d" hidden="false">
+            <selectionEntryGroup name="Primary Weapons" id="72e6-4359-e6b4-8a0d" hidden="false" sortIndex="1">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Hull Mounted Neutron Blaster" hidden="false" id="eb51-f977-fbfd-480d">
                   <profiles>
@@ -8366,7 +8459,7 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ddc-c922-d9e9-7f70-max"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Secondary Weapons" id="3f88-a1ea-0f9f-4927" hidden="false">
+            <selectionEntryGroup name="Secondary Weapons" id="3f88-a1ea-0f9f-4927" hidden="false" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="796a-f6e6-e061-f3d0-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="796a-f6e6-e061-f3d0-max"/>
@@ -8497,7 +8590,7 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Turret weapon" id="9f6b-e6a1-11d9-1e47" hidden="false">
+            <selectionEntryGroup name="Turret weapon" id="9f6b-e6a1-11d9-1e47" hidden="false" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8afb-e02b-8cab-dc5e-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8afb-e02b-8cab-dc5e-max"/>
@@ -8533,7 +8626,7 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Sponson weapons" id="1276-078e-33be-4f04" hidden="false">
+            <selectionEntryGroup name="Sponson weapons" id="1276-078e-33be-4f04" hidden="false" sortIndex="3">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="b38b-654a-4728-3f64">
                   <profiles>
@@ -8548,7 +8641,11 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink name="Arc (Front/Rear)" id="3223-58cf-c4dc-d9d3" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Arc (Front/Rear)" id="3223-58cf-c4dc-d9d3" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                     <infoLink name="Anti-tank" id="9897-c75f-f7ae-481f" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
                   </infoLinks>
                 </selectionEntry>
@@ -8567,7 +8664,11 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
                   <infoLinks>
                     <infoLink name="Point Defence" id="9c2c-0bce-9132-6e4b" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
                     <infoLink name="Light" id="75c3-1791-9119-91d0" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-                    <infoLink name="Arc (Front/Rear)" id="2305-66fe-4a7c-5fe2" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Arc (Front/Rear)" id="2305-66fe-4a7c-5fe2" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -8578,7 +8679,7 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
             </selectionEntryGroup>
           </selectionEntryGroups>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter" hidden="false" id="a4fc-9249-8341-e8cd">
+            <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter" hidden="false" id="a4fc-9249-8341-e8cd" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1320-f758-2091-13d1-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1320-f758-2091-13d1-max"/>
@@ -8596,7 +8697,11 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
               </profiles>
               <infoLinks>
                 <infoLink name="Light" id="c505-1200-2a72-5d72" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-                <infoLink name="Arc (Front/Rear)" id="b623-50ed-5972-577d" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                <infoLink name="Arc (Front/Rear)" id="b623-50ed-5972-577d" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                  <modifiers>
+                    <modifier type="set" value="Arc (Front)" field="name"/>
+                  </modifiers>
+                </infoLink>
                 <infoLink name="Point Defence" id="5884-1102-15ed-93de" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
               </infoLinks>
             </selectionEntry>
@@ -8613,27 +8718,27 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="115"/>
+        <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="95"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="175" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="140" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="225" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="185" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="285" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="230" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="335" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="265" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
@@ -8673,7 +8778,7 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Turret weapon" id="0e02-c947-191f-99cc" hidden="false">
+            <selectionEntryGroup name="Turret weapon" id="0e02-c947-191f-99cc" hidden="false" sortIndex="2" defaultSelectionEntryId="a5f2-e7eb-2ce5-ce06">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80e5-9ee7-a78d-9f58-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80e5-9ee7-a78d-9f58-max"/>
@@ -8698,7 +8803,7 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Sponson weapons" id="4883-ba37-9871-5d02" hidden="false">
+            <selectionEntryGroup name="Sponson weapons" id="4883-ba37-9871-5d02" hidden="false" sortIndex="3">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="6d81-69fb-5e5b-d974">
                   <profiles>
@@ -8713,7 +8818,11 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink name="Arc (Front/Rear)" id="90b5-94ed-1fde-2bae" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Arc (Front/Rear)" id="90b5-94ed-1fde-2bae" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                     <infoLink name="Anti-tank" id="9959-7c3b-58d1-569b" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
                   </infoLinks>
                 </selectionEntry>
@@ -8732,7 +8841,11 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
                   <infoLinks>
                     <infoLink name="Point Defence" id="527b-5055-6292-15c4" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
                     <infoLink name="Light" id="b48d-6795-2ccb-3749" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-                    <infoLink name="Arc (Front/Rear)" id="de4a-a796-8c9f-7eba" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                    <infoLink name="Arc (Front/Rear)" id="de4a-a796-8c9f-7eba" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -8743,7 +8856,7 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
             </selectionEntryGroup>
           </selectionEntryGroups>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter" hidden="false" id="f86d-a576-321e-a7a3">
+            <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter" hidden="false" id="f86d-a576-321e-a7a3" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68b7-3fc0-7364-f0a3-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68b7-3fc0-7364-f0a3-max"/>
@@ -8761,9 +8874,38 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
               </profiles>
               <infoLinks>
                 <infoLink name="Light" id="4d4e-e001-7a9f-7a63" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-                <infoLink name="Arc (Front/Rear)" id="021e-69ae-236c-60f2" hidden="false" type="rule" targetId="c48c-8f45-e290-9940"/>
+                <infoLink name="Arc (Front/Rear)" id="021e-69ae-236c-60f2" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                  <modifiers>
+                    <modifier type="set" value="Arc (Front)" field="name"/>
+                  </modifiers>
+                </infoLink>
                 <infoLink name="Point Defence" id="f7c9-56f3-52d9-9833" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
               </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pintle Mounted heavy bolter" hidden="false" id="8475-2eb2-1422-e797" sortIndex="4">
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="105b-fee2-8cd7-e10f"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Light" id="5b15-4e58-ed64-3e24" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                <infoLink name="Point Defence" id="269e-f305-8dae-c7f4" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Pintle Mounted heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="a3bc-4d46-282c-2dea" publicationId="5364-464c-3309-a620">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -8778,27 +8920,27 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="110"/>
+        <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="90"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="160" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="130" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="210" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="170" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="260" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="210" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="310" field="ee95-a20e-f9ff-e2c2">
+        <modifier type="set" value="240" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
           </conditions>
@@ -11676,6 +11818,942 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Palisade Drop Pod" hidden="false" id="9908-405c-ddb6-6198">
+      <categoryLinks>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="c0a8-6339-cdf4-5ddc" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="0042-705b-caca-8a2a" primary="false" name="Vehicle (2)"/>
+        <categoryLink targetId="be19-7658-5258-71d9" id="9bbd-cef3-7955-5573" primary="true" name="Support"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Drop Pods" hidden="false" id="d339-8ac9-dafd-d423" defaultSelectionEntryId="15e8-6ab2-837-c811">
+          <entryLinks>
+            <entryLink import="true" name="Legion Palisade Drop Pod" hidden="false" id="f279-2cba-9925-20a8" type="selectionEntry" targetId="9ed9-537d-30e8-8b5e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e8f3-8c94-23c7-35b8-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8f3-8c94-23c7-35b8-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d5a2-1ca9-f060-a617-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5a2-1ca9-f060-a617-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="25"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Sicaran Omega Squadron" hidden="false" id="43ca-15fc-6ee3-55a4" publicationId="5364-464c-3309-a620">
+      <categoryLinks>
+        <categoryLink targetId="4e02-d7ec-4d81-d5fa" id="10f6-93f6-c32c-58b6" primary="true" name="Battle Tank"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="c574-bff5-d299-ef10" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="28ff-60ed-f0cb-a90e" primary="false" name="Vehicle (2)"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Legion Sicaran" hidden="false" id="5387-5524-ffda-bf46">
+          <categoryLinks>
+            <categoryLink targetId="49b3-dae7-33f8-f8e" id="bb24-4741-0cf2-557d" primary="false" name="Vehicle (2)"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Sicaran Omega" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="62d3-5fc6-53cf-5190">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">10&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Turret weapon" hidden="false" id="044f-5438-0ff6-1abd" sortIndex="2" defaultSelectionEntryId="78d9-8a9c-cfee-ceb6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c19-10b2-98bc-3e2c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ced6-65f7-be7d-4d9d"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Omega plasma array" hidden="false" id="78d9-8a9c-cfee-ceb6">
+                  <profiles>
+                    <profile name="Omega plasma array" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8445-2cd2-f893-eab6">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Accurate" hidden="false" type="rule" id="54a8-1581-b42c-4b7d" targetId="dc55-9f84-39e1-1e1e"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Sponson weapons" hidden="false" id="462a-26ae-2cd9-4a5c" sortIndex="3">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="36f7-ca57-b7ff-cea4">
+                  <profiles>
+                    <profile name="Sponson Mounted lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="98f5-76bf-e529-83a8">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="a284-8e33-653a-cc0a" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Anti-tank" hidden="false" type="rule" id="6dd0-53c5-e5bd-ce91" targetId="5656-4a72-5de3-87ce"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted heavy bolters" hidden="false" id="6c58-9eea-47f7-990b">
+                  <profiles>
+                    <profile name="Sponson Mounted heavy bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="cca1-7f9d-d879-67cd">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Point Defence" hidden="false" type="rule" id="8dc6-5fad-0535-112d" targetId="f921-10ce-33f7-19fd"/>
+                    <infoLink name="Light" hidden="false" type="rule" id="72c8-d8a5-adb0-27f9" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="d3c3-b66c-9cd1-4233" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f38-e6f5-6b37-b2e6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c35-e360-dc7b-62d7"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolter" hidden="false" id="b59d-2631-3b55-4253" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="21e6-12ab-19c3-db1d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1a1-9e8a-4509-e138"/>
+              </constraints>
+              <profiles>
+                <profile name="Hull Mounted heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="b29c-8c9b-1f61-b420">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Light" hidden="false" type="rule" id="f3e8-ccf8-0bb5-5fb7" targetId="4f6f-3184-9172-ef3f"/>
+                <infoLink name="Arc (Front/Rear)" hidden="false" type="rule" id="5e9f-1ec4-5da3-387c" targetId="c48c-8f45-e290-9940">
+                  <modifiers>
+                    <modifier type="set" value="Arc (Front)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Point Defence" hidden="false" type="rule" id="643e-1ba8-3ff0-0289" targetId="f921-10ce-33f7-19fd"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pintle Mounted heavy bolter" hidden="false" id="0bf8-962e-0104-4d7a" sortIndex="4">
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d12-b12e-4bad-bca5"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Light" id="3204-89d5-a631-021e" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                <infoLink name="Point Defence" id="c744-cf04-494c-75e2" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Pintle Mounted heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="3249-d51d-93da-f1cf" publicationId="5364-464c-3309-a620">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4360-8deb-18c6-154e"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="b64a-4987-57d6-3b5f"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="90"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="130" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="170" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="210" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="240" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Vindicator Squadron" hidden="false" id="d4e2-43a2-c9d0-f742" publicationId="5364-464c-3309-a620" page="">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="140"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Legion Vindicator" hidden="false" id="88a0-c678-56e2-b388">
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="a888-f1ce-79d0-cbd6"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="acbc-7591-773f-6f7f"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Primary Weapons" id="6892-a79b-6d09-efb3" hidden="false" sortIndex="1" defaultSelectionEntryId="17a5-4e29-3536-4c6d">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hull Mounted Demolisher cannon" hidden="false" id="17a5-4e29-3536-4c6d">
+                  <profiles>
+                    <profile name="Hull Mounted Demolisher cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="b696-b07d-4030-dd2b">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher, Ignores Cover</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="ba8b-9f8d-a2d0-bcfe" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Demolisher" id="0193-25fc-fc4f-7920" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
+                    <infoLink name="Ignores Cover" id="c7f4-aaea-25f0-890f" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f113-aeda-26c5-1ebe"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8771-773c-3af7-c935"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Secondary Weapons" id="e9eb-56cb-9686-cdf3" hidden="false" sortIndex="2" defaultSelectionEntryId="73d6-d27d-b4c7-7cc0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="add3-081a-5e10-a389"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d4b-ea56-1472-b27d"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted twin-linked bolter" hidden="false" id="73d6-d27d-b4c7-7cc0">
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="94db-25ed-380c-af50" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Light" id="d209-35d1-6d66-23ae" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Point Defence" id="5dd4-22dd-8277-2bde" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                    <infoLink name="Assault" id="3c92-7648-6748-f5fe" hidden="false" type="rule" targetId="e368-00fb-7a9b-9eb0"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Pintle Mounted twin-linked bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0ee5-cc61-22e0-da09">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Assault, Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <profiles>
+            <profile name="Legion Vindicator" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="5ead-7c53-50ae-fb65">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+0</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="6" field="a888-f1ce-79d0-cbd6">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="parent" childId="88a0-c678-56e2-b388" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="8" field="a888-f1ce-79d0-cbd6">
+              <conditions>
+                <condition type="atLeast" value="7" field="selections" scope="parent" childId="88a0-c678-56e2-b388" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="10" field="a888-f1ce-79d0-cbd6">
+              <conditions>
+                <condition type="atLeast" value="9" field="selections" scope="parent" childId="88a0-c678-56e2-b388" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="increment" value="65" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="5" field="selections" scope="self" childId="88a0-c678-56e2-b388" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="65" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="88a0-c678-56e2-b388" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" value="50" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="9" field="selections" scope="self" childId="88a0-c678-56e2-b388" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="4bab-46d5-b29e-688a" primary="false" name="Vehicle (2)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="4d3b-7de5-0fbf-19c4" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="4e02-d7ec-4d81-d5fa" id="afa4-1076-9316-8bb4" primary="true" name="Battle Tank"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Cerberus Squadron" hidden="false" id="278a-9576-d538-aa69" publicationId="5364-464c-3309-a620">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1f6b-d764-352d-1e74" id="831a-dcaa-2ed4-479d" primary="true" name="Heavy Armour"/>
+        <categoryLink targetId="be9f-b973-245e-49bf" id="00b7-0767-c20c-8b6e" primary="false" name="Super-heavy Vehicle (3)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="bd49-cdf9-671c-8d04" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Cerberus" hidden="false" id="20bb-2b00-5f97-392c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee3e-2dd5-06da-e9fb"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="3c82-c4c5-a023-c090"/>
+          </constraints>
+          <profiles>
+            <profile name="Cerberus" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="8989-f151-3dd5-46b6">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+3</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull Weapon" id="581a-ca79-d465-aa0d" hidden="false" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a3d-e007-6113-a124-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a3d-e007-6113-a124-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hull Mounted neutron laser battery" hidden="false" id="2887-358e-809a-c41b">
+                  <profiles>
+                    <profile name="Hull Mounted neutron laser battery" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="4197-326c-3ac6-b3b6">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">24&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Shock Pulse</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="ced5-631c-8463-7cda" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Shock Pulse" id="4d88-4f04-60f3-2120" hidden="false" type="rule" targetId="495a-71fc-de48-96a"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Sponson weapons" id="f34b-6272-5569-d853" hidden="false" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4358-602c-29ab-f734-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4358-602c-29ab-f734-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted heavy bolters" hidden="false" id="96bd-fd4d-3425-0ced">
+                  <profiles>
+                    <profile name="Sponson Mounted heavy bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="729a-0fc9-ab59-923f">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Point Defence" id="2ab0-26e1-6d2c-43a1" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                    <infoLink name="Light" id="ea27-ceca-69f2-6964" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Arc (Front/Rear)" id="79b1-4677-f775-8562" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="cf2c-8822-a8e7-d1be">
+                  <profiles>
+                    <profile name="Sponson Mounted lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="38b7-68d5-aee6-bceb">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="b5a0-17db-7c9e-ce59" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Anti-tank" id="6d34-bfe0-353e-27e2" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Pintle Weapons" id="ffd1-eee2-6828-abd9" hidden="false" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf05-7f8f-94a6-7fd2"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted heavy bolter" hidden="false" id="fda2-5b72-245a-2359" publicationId="5364-464c-3309-a620">
+                  <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Light" id="058d-339a-947f-3079" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Point Defence" id="96bc-2460-a3bb-e406" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Pintle Mounted heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="7bbb-6078-67c0-a76c" publicationId="5364-464c-3309-a620">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted multi-melta" hidden="false" id="e8ca-49f4-6846-5156" publicationId="5364-464c-3309-a620">
+                  <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" id="bcab-9e26-d569-2afe" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Pintle Mounted multi-melta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8284-c2cc-fca7-0747" publicationId="5364-464c-3309-a620">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">anti-tank</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="increment" value="80" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="70" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="60" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Typhon Squadron" hidden="false" id="d749-6978-7c7b-e074" publicationId="5364-464c-3309-a620">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="80"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1f6b-d764-352d-1e74" id="db5f-a9a5-6bed-5a5b" primary="true" name="Heavy Armour"/>
+        <categoryLink targetId="be9f-b973-245e-49bf" id="1b56-39a1-f80b-1010" primary="false" name="Super-heavy Vehicle (3)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="359f-ba4f-31b2-5dfb" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Typhon" hidden="false" id="62ce-5cdb-1454-6313">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc25-6d6c-e9d0-9b94"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="73a6-40a8-c23d-24d8"/>
+          </constraints>
+          <profiles>
+            <profile name="Typhon" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="b952-5f6a-88da-093b">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+3</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull Weapon" id="0b61-ebbf-e570-0ce1" hidden="false" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22d6-0163-e7c2-b6b5-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22d6-0163-e7c2-b6b5-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hull Mounted dreadhammer siege cannon" hidden="false" id="0d36-c1b9-82cd-667c">
+                  <profiles>
+                    <profile name="Hull Mounted dreadhammer siege cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2dc0-228f-970e-2de6">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher, Ignores Cover</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="a1e1-2f87-e0a4-dd55" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Demolisher" id="5253-9b6d-cb77-6b4d" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
+                    <infoLink name="Ignores Cover" id="b1c5-ce84-4628-5c82" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Sponson weapons" id="4fdf-b3cc-6a10-7b6f" hidden="false" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="135c-d618-2b50-4e06-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="135c-d618-2b50-4e06-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted heavy bolters" hidden="false" id="f40e-b37b-8311-057a">
+                  <profiles>
+                    <profile name="Sponson Mounted heavy bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e548-b13f-d898-1f2f">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Point Defence" id="8202-18c9-0ebb-70ea" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                    <infoLink name="Light" id="d5ff-7469-17b0-2d3b" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Arc (Front/Rear)" id="6e2b-3a37-b100-825f" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="d6ea-d3bf-13ab-2570">
+                  <profiles>
+                    <profile name="Sponson Mounted lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9371-23b0-fefb-308c">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="cd3b-ce8d-3aa8-9d04" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Anti-tank" id="195d-ca65-70fc-8c52" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Pintle Weapons" id="1403-5b52-2ee2-89a3" hidden="false" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="192f-f560-7858-c1e5"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted heavy bolter" hidden="false" id="ec08-a15a-2ad0-fef8" publicationId="5364-464c-3309-a620">
+                  <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Light" id="914f-5afe-2acf-d0bd" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Point Defence" id="6285-9b36-5326-252e" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Pintle Mounted heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="14a7-557a-a4f9-f7bf" publicationId="5364-464c-3309-a620">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted multi-melta" hidden="false" id="b909-4970-be6d-3431" publicationId="5364-464c-3309-a620">
+                  <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" id="31d6-765e-626b-7f6d" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Pintle Mounted multi-melta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2342-75af-324b-a73c" publicationId="5364-464c-3309-a620">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">anti-tank</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="increment" value="75" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="65" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="60" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Mastodon Squadron" hidden="false" id="77e3-9cd7-5877-0198" publicationId="5364-464c-3309-a620">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="130"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1f6b-d764-352d-1e74" id="15ed-5687-2c46-26c4" primary="true" name="Heavy Armour"/>
+        <categoryLink targetId="be9f-b973-245e-49bf" id="b1fa-be66-a498-dd82" primary="false" name="Super-heavy Vehicle (3)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="7896-0c2d-aabf-4544" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Mastodon" hidden="false" id="521d-a9ee-b407-b457">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9c0-0c57-6767-43b0"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8502-c855-0088-77ee"/>
+          </constraints>
+          <profiles>
+            <profile name="Mastodon" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="973c-d432-ef54-d4ef">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+4</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Sponson weapons" id="a9fb-9b8b-05ae-40e0" hidden="false" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="115b-7e12-a39c-fa8b-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="115b-7e12-a39c-fa8b-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted heavy bolters" hidden="false" id="2a37-953d-9a86-6f96" sortIndex="1">
+                  <profiles>
+                    <profile name="Sponson Mounted heavy bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="5003-c620-ddf5-39a8">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Point Defence" id="75e0-2264-d7c1-634a" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                    <infoLink name="Light" id="9734-b7ef-3a17-5fab" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Arc (Front/Rear)" id="182c-3424-5a00-a771" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="1d3e-e97a-9fe2-d354" sortIndex="3">
+                  <profiles>
+                    <profile name="Sponson Mounted lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6184-9539-9622-6795">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="b097-7eea-c38f-431a" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Anti-tank" id="e599-135b-5cde-4a0c" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Sponson Mounted heavy flamers" hidden="false" id="68da-99b4-b447-ba12" sortIndex="2">
+                  <profiles>
+                    <profile name="Sponson Mounted heavy flamers" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="67e8-34ed-509b-8195">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Ignores Cover, Point Defence</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Point Defence" id="9800-55d9-525b-f3bf" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+                    <infoLink name="Light" id="bfde-670d-e422-164d" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Arc (Front/Rear)" id="85a8-f8e1-f987-f099" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Ignores Cover" id="3fb8-9c82-a4dc-a513" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <infoLinks>
+            <infoLink name="Large Assault Transport (X)" id="441a-e843-b52a-3952" hidden="false" type="rule" targetId="c101-1585-cef0-d31b">
+              <modifiers>
+                <modifier type="set" value="Large Assault Transport (8)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Void Shields (X)" id="8c6b-be58-97aa-1d0a" hidden="false" type="rule" targetId="908c-befc-f030-f2e7">
+              <modifiers>
+                <modifier type="set" value="Void Shields (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Siege melta array" hidden="false" id="af17-adec-33bd-a5fa" sortIndex="1">
+              <profiles>
+                <profile name="Siege melta array" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="67d7-ff2c-af82-e610">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank, Demolisher, Engine Killer (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Arc (Front/Rear)" id="7d64-bcda-2918-d1f7" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                  <modifiers>
+                    <modifier type="set" value="Arc (Front)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Demolisher" id="90ae-6a3d-3d05-e969" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
+                <infoLink name="Anti-tank" id="1027-289b-8660-021c" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                <infoLink name="Engine Killer (X)" id="fc58-d92d-c784-9aed" hidden="false" type="rule" targetId="7e4c-2264-79e3-9054">
+                  <modifiers>
+                    <modifier type="set" value="Engine Killer (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c8b-1119-d726-eacd-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c8b-1119-d726-eacd-max"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Skyreaper battery" hidden="false" id="f6a2-9421-72a7-684f" sortIndex="2">
+              <profiles>
+                <profile name="Skyreaper battery" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c402-b297-900e-54fe">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT, Skyfire, Tracking</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Light AT" id="dfc8-e708-7a0a-f174" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+                <infoLink name="Tracking" id="cd54-b1bf-0d47-a981" hidden="false" type="rule" targetId="eb09-d940-39cc-16f7"/>
+                <infoLink name="Skyfire" id="2650-c4a8-e961-3a19" hidden="false" type="rule" targetId="e93f-b83c-b1c9-d744"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96e2-acff-9032-d397-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96e2-acff-9032-d397-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="increment" value="120" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="120" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="110" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
