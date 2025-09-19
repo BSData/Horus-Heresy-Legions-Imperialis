@@ -165,7 +165,7 @@
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
                 <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
                 <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT, Rapid Fire</characteristic>
               </characteristics>
@@ -3496,7 +3496,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
         <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Legion Dreadnought Talon" hidden="false" id="54ab-4c5e-2a18-3b49">
+    <selectionEntry type="unit" import="true" name="Legion Contemptor Dreadnought Talon" hidden="false" id="54ab-4c5e-2a18-3b49" publicationId="5364-464c-3309-a620">
       <categoryLinks>
         <categoryLink targetId="be19-7658-5258-71d9" id="9037-b98f-ce52-3b56" primary="true" name="Support"/>
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="2b1e-f018-f66f-691d" primary="false" name="Legiones Astartes"/>
@@ -3613,7 +3613,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                         <profile name="Kheres assault cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8ed0-292e-b5cd-5edb">
                           <characteristics>
                             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
                             <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
                             <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
                             <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT, Rapid Fire</characteristic>
@@ -3696,61 +3696,6 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                   </conditions>
                 </modifier>
               </modifiers>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Leviathan Dreadnoughts" hidden="false" id="8049-5cf-acb2-1e4">
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="32aa-86a2-feb2-919b"/>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8889-80ee-4ecb-5c67"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="2" field="32aa-86a2-feb2-919b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8049-5cf-acb2-1e4" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="4" field="32aa-86a2-feb2-919b">
-                  <conditions>
-                    <condition type="atLeast" value="3" field="selections" scope="parent" childId="8049-5cf-acb2-1e4" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="6" field="32aa-86a2-feb2-919b">
-                  <conditions>
-                    <condition type="atLeast" value="5" field="selections" scope="parent" childId="8049-5cf-acb2-1e4" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <entryLinks>
-                <entryLink import="true" name="Leviathan Dreadnought w/ Cyclonic melta lance" hidden="false" type="selectionEntry" id="857-b7cb-e0fe-9d56" targetId="9262-b11e-8b2c-1422">
-                  <constraints>
-                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="1a55-414d-6256-31e3"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="54ab-4c5e-2a18-3b49" childId="b6f0-91a2-1af3-8cbb" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <costs>
-                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Leviathan Dreadnought w/ Storm cannon" hidden="false" type="selectionEntry" id="f759-c951-f39-44a5" targetId="cfd1-805d-837a-a26">
-                  <constraints>
-                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5051-8b3f-2cdd-8e0a"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="54ab-4c5e-2a18-3b49" childId="b6f0-91a2-1af3-8cbb" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <costs>
-                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
@@ -3852,14 +3797,6 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
         <modifier type="increment" value="30" field="ee95-a20e-f9ff-e2c2">
           <conditions>
             <condition type="greaterThan" value="4" field="selections" scope="self" childId="95da-6eed-8cd7-91be" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="35" field="ee95-a20e-f9ff-e2c2">
-          <repeats>
-            <repeat value="2" repeats="1" field="selections" scope="self" childId="8049-5cf-acb2-1e4" shared="true" roundUp="true" id="9ee3-cea3-6a0c-a9c2" includeChildSelections="true"/>
-          </repeats>
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="self" childId="8049-5cf-acb2-1e4" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="30" field="ee95-a20e-f9ff-e2c2">
