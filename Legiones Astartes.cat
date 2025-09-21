@@ -1118,7 +1118,7 @@
     <selectionEntry type="unit" import="true" name="Legion Predator Commander" hidden="false" id="7195-e990-7a20-16f4">
       <categoryLinks>
         <categoryLink name="Vehicle (2)" hidden="false" id="1a1c-3f95-65a3-e9c8" targetId="49b3-dae7-33f8-f8e" primary="false"/>
-        <categoryLink name="Battle Tank" hidden="false" id="bbaa-bef6-8fc5-9ba5" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
+        <categoryLink targetId="d950-ad23-9b2-9325" id="99e5-54f0-2641-c723" primary="true" name="HQ"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Predator Commander" hidden="false" id="1a78-2eaf-23bf-7e66">
@@ -1501,8 +1501,8 @@
         <infoLink name="Master Tactician" id="c12e-c4c7-0b97-6d91" hidden="false" type="rule" targetId="db05-2ad8-6256-20e9"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink name="Battle Tank" hidden="false" id="be1b-708f-a974-5288" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
         <categoryLink name="Vehicle (2)" hidden="false" id="a1ba-495e-167f-3fd0" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+        <categoryLink targetId="d950-ad23-9b2-9325" id="608e-b775-d026-b7b3" primary="true" name="HQ"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Kratos Commander" hidden="false" id="15fe-6700-ee50-d6f8">
@@ -1513,7 +1513,7 @@
       </costs>
       <categoryLinks>
         <categoryLink name="Vehicle (2)" hidden="false" id="030b-613e-d566-d95b" targetId="49b3-dae7-33f8-f8e" primary="false"/>
-        <categoryLink name="Heavy Armour" hidden="false" id="460f-baac-6aca-e15b" targetId="1f6b-d764-352d-1e74" primary="true"/>
+        <categoryLink targetId="d950-ad23-9b2-9325" id="e830-9533-2f94-8769" primary="true" name="HQ"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Kratos Commander" hidden="false" id="9fbb-7d8a-fd20-314f">
@@ -2937,7 +2937,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             </selectionEntryGroup>
             <selectionEntryGroup name="Rhino" hidden="false" id="7728-eaee-af03-66d6">
               <entryLinks>
-                <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" type="selectionEntry" id="ac30-5d66-68c-516b" targetId="3279-c298-e2dc-8b55">
+                <entryLink import="true" name="Rhino" hidden="false" type="selectionEntry" id="ac30-5d66-68c-516b" targetId="3279-c298-e2dc-8b55">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61e7-942c-ca5c-60e2"/>
                   </constraints>
@@ -4524,7 +4524,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             </selectionEntryGroup>
             <selectionEntryGroup name="Rhinos" hidden="false" id="a428-24d0-d646-367b">
               <entryLinks>
-                <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" type="selectionEntry" id="b046-a691-f1e7-f4f0" targetId="3279-c298-e2dc-8b55">
+                <entryLink import="true" name="Rhino" hidden="false" type="selectionEntry" id="b046-a691-f1e7-f4f0" targetId="3279-c298-e2dc-8b55">
                   <constraints>
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4a69-9ddd-bde7-5c92"/>
                   </constraints>
@@ -4840,7 +4840,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             </selectionEntryGroup>
             <selectionEntryGroup name="Rhinos" hidden="false" id="cd5-343b-a824-9b11">
               <entryLinks>
-                <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" type="selectionEntry" id="5aa4-1700-22c5-9a85" targetId="3279-c298-e2dc-8b55">
+                <entryLink import="true" name="Rhino" hidden="false" type="selectionEntry" id="5aa4-1700-22c5-9a85" targetId="3279-c298-e2dc-8b55">
                   <constraints>
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="465f-2854-b34a-82e2"/>
                   </constraints>
@@ -5484,7 +5484,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="975b-e861-fe62-c318"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" type="selectionEntry" id="3a0e-7982-7189-77c1" targetId="3279-c298-e2dc-8b55">
+            <entryLink import="true" name="Rhino" hidden="false" type="selectionEntry" id="3a0e-7982-7189-77c1" targetId="3279-c298-e2dc-8b55">
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="1b89-bd4f-eee6-8cbe"/>
               </constraints>
@@ -6187,7 +6187,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             </selectionEntryGroup>
             <selectionEntryGroup name="Rhinos" hidden="false" id="29ca-eb2c-f6eb-29f1" defaultSelectionEntryId="475-3881-7921-c2cd">
               <entryLinks>
-                <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" type="selectionEntry" id="475-3881-7921-c2cd" targetId="3279-c298-e2dc-8b55">
+                <entryLink import="true" name="Rhino" hidden="false" type="selectionEntry" id="475-3881-7921-c2cd" targetId="3279-c298-e2dc-8b55">
                   <constraints>
                     <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="c8b1-24ef-9e5d-7c61"/>
                   </constraints>
@@ -6549,7 +6549,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
           <selectionEntryGroups>
             <selectionEntryGroup name="Rhinos" id="8018-1db7-40ab-cb52" hidden="false" defaultSelectionEntryId="2556-8b9c-dc9b-9fc9">
               <entryLinks>
-                <entryLink import="true" name="Rhino w/ twin-linked bolter" hidden="false" id="2556-8b9c-dc9b-9fc9" type="selectionEntry" targetId="3279-c298-e2dc-8b55">
+                <entryLink import="true" name="Rhino" hidden="false" id="2556-8b9c-dc9b-9fc9" type="selectionEntry" targetId="3279-c298-e2dc-8b55">
                   <constraints>
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="915e-cd3f-6f5e-4d6a"/>
                   </constraints>
@@ -12993,26 +12993,11 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
         <infoLink name="Line" id="0c45-d06a-af89-c154" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Legion Predator Commander" hidden="false" id="d93b-9a9b-3b92-21b8" type="selectionEntry" targetId="7195-e990-7a20-16f4">
-      <modifiers>
-        <modifier type="add" value="124c-2927-143f-f513" field="category">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </entryLink>
     <entryLink import="true" name="Legion Predator Commander" hidden="false" id="9712-c70f-b1be-6072" type="selectionEntry" targetId="7195-e990-7a20-16f4">
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="fbcf-0147-5b38-a0b3" targetId="d950-ad23-9b2-9325" primary="true"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="remove" value="4e02-d7ec-4d81-d5fa" field="category"/>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
           <conditionGroups>
             <conditionGroup type="and">
@@ -13030,21 +13015,6 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
         <categoryLink name="HQ" hidden="false" id="c05b-b69b-2076-e590" targetId="d950-ad23-9b2-9325" primary="true"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="remove" value="4e02-d7ec-4d81-d5fa" field="category"/>
-        <modifier type="add" value="124c-2927-143f-f513" field="category">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink import="true" name="Legion Sicaran Commander" hidden="false" id="bc16-a920-3276-92d6" type="selectionEntry" targetId="128a-f1de-0a00-d903">
-      <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
           <conditionGroups>
             <conditionGroup type="and">
@@ -13061,21 +13031,6 @@ could instead of just the Advance Order or Charge Order. In addition, all Word B
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="9f12-9296-4026-ed21" targetId="d950-ad23-9b2-9325" primary="true"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="remove" value="1f6b-d764-352d-1e74" field="category"/>
-        <modifier type="add" value="124c-2927-143f-f513" field="category">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink import="true" name="Legion Kratos Commander" hidden="false" id="eade-cd19-787e-67dd" type="selectionEntry" targetId="15fe-6700-ee50-d6f8">
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
           <conditionGroups>
