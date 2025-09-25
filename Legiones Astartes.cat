@@ -1524,7 +1524,7 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="9d0f-610e-da66-c14d" hidden="false">
               <selectionEntryGroups>
-                <selectionEntryGroup name="Hull Mounted" id="ff2b-7c67-9d56-a4b9" hidden="false">
+                <selectionEntryGroup name="Hull Mounted" id="ff2b-7c67-9d56-a4b9" hidden="false" sortIndex="3">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Hull Mounted heavy bolters" hidden="false" id="e258-96e1-7bab-d2c8">
                       <selectionEntries>
@@ -1620,7 +1620,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="220c-7cd5-0e72-27c3" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Turret" id="f698-27c9-9d92-c5c7" hidden="false">
+                <selectionEntryGroup name="Turret" id="f698-27c9-9d92-c5c7" hidden="false" sortIndex="1">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Kratos battlecannon" hidden="false" id="d171-a3ee-1b9b-0b21">
                       <profiles>
@@ -1672,7 +1672,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23af-7ac2-1052-9681" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Sponsons" id="ce17-7895-2d31-f8ff" hidden="false">
+                <selectionEntryGroup name="Sponsons" id="ce17-7895-2d31-f8ff" hidden="false" sortIndex="4">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Sponson Mounted heavy bolters" hidden="false" id="1874-71bc-5092-5388">
                       <profiles>
@@ -1725,7 +1725,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Co-axial autocannon" hidden="false" id="e722-3ddb-58af-4703">
+                <selectionEntry type="upgrade" import="true" name="Co-axial autocannon" hidden="false" id="e722-3ddb-58af-4703" sortIndex="2">
                   <profiles>
                     <profile name="Co-axial autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6779-6871-593f-9ac2">
                       <characteristics>
@@ -1746,7 +1746,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb18-b918-0888-046b" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Pintle Mounted heavy bolter" hidden="false" id="370c-9709-9006-875e">
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted heavy bolter" hidden="false" id="370c-9709-9006-875e" sortIndex="5">
                   <costs>
                     <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
                     <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
@@ -4091,7 +4091,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="87d2-152c-818c-ecaf"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Sponson weapons" hidden="false" id="1007-b7db-6d9c-c8e6" sortIndex="3">
+            <selectionEntryGroup name="Sponson weapons" hidden="false" id="1007-b7db-6d9c-c8e6" sortIndex="4">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="c34f-1c99-e1b-6606">
                   <profiles>
@@ -4142,7 +4142,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7900-1a54-f318-aeb"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hull weapons" hidden="false" id="cf7a-4c3e-f2b8-2a6f" sortIndex="2">
+            <selectionEntryGroup name="Hull weapons" hidden="false" id="cf7a-4c3e-f2b8-2a6f" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7cd8-e370-9a1-621b"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df8a-5aa5-e356-51ba"/>
@@ -4240,9 +4240,9 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             </selectionEntryGroup>
             <selectionEntryGroup name="Turret weapon" hidden="false" id="7d33-1e47-bd5a-5eef" sortIndex="1">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Kratos battlecannon with co-axial autocannon" hidden="false" id="79f0-2be9-57fb-b349">
+                <selectionEntry type="upgrade" import="true" name="Kratos battlecannon" hidden="false" id="79f0-2be9-57fb-b349">
                   <profiles>
-                    <profile name="Kratos battlecannon - Armour Piercing" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="df1-13d8-c195-422">
+                    <profile name="Kratos battlecannon - 2" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="df1-13d8-c195-422">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
@@ -4251,7 +4251,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                         <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Armourbane</characteristic>
                       </characteristics>
                     </profile>
-                    <profile name="Kratos battlecannon - High Explosive" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f1fd-86cd-ebca-a278">
+                    <profile name="Kratos battlecannon - 1" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f1fd-86cd-ebca-a278">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -4260,41 +4260,19 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                         <characteristic name="Traits" typeId="d0f2-61ea-138a-81af"/>
                       </characteristics>
                     </profile>
-                    <profile name="Co-axial autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ecc7-184c-cdc2-f10e">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Co-axial, Light AT</characteristic>
-                      </characteristics>
-                    </profile>
                   </profiles>
                   <infoLinks>
                     <infoLink name="Armourbane" hidden="false" type="rule" id="e04c-d54b-5eac-9775" targetId="e2f7-4ff5-3f66-fed5"/>
                     <infoLink name="Anti-tank" hidden="false" type="rule" id="77c-367a-6899-f569" targetId="5656-4a72-5de3-87ce"/>
-                    <infoLink name="Co-axial" hidden="false" type="rule" id="32bd-761-1a3-2d84" targetId="3be1-fdf0-05dc-4c02"/>
-                    <infoLink name="Light AT" hidden="false" type="rule" id="5e95-3abc-8978-890" targetId="c731-70f4-ffcd-4ff7"/>
                   </infoLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Melta blastgun with co-axial autocannon" hidden="false" id="f3fe-bdad-76ca-193a">
+                <selectionEntry type="upgrade" import="true" name="Melta blastgun" hidden="false" id="f3fe-bdad-76ca-193a">
                   <infoLinks>
-                    <infoLink name="Light AT" hidden="false" type="rule" id="8a6d-70c8-511a-7119" targetId="c731-70f4-ffcd-4ff7"/>
-                    <infoLink name="Co-axial" hidden="false" type="rule" id="e1cf-6903-6d6a-f750" targetId="3be1-fdf0-05dc-4c02"/>
                     <infoLink name="Anti-tank" hidden="false" type="rule" id="e997-ca57-6396-721d" targetId="5656-4a72-5de3-87ce"/>
                     <infoLink name="Bunker Buster" hidden="false" type="rule" id="20f-9f9-51da-a1c2" targetId="7543-9f13-322f-a481"/>
                     <infoLink name="Armourbane" hidden="false" type="rule" id="b34e-321e-9bac-7c96" targetId="e2f7-4ff5-3f66-fed5"/>
                   </infoLinks>
                   <profiles>
-                    <profile name="Co-axial autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="fef5-13fe-36ec-e624">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Co-axial, Light AT</characteristic>
-                      </characteristics>
-                    </profile>
                     <profile name="Melta blastgun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="38db-bae2-556b-742a">
                       <characteristics>
                         <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
@@ -4322,7 +4300,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
           </costs>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Pintle Mounted heavy bolter" hidden="false" id="738e-dbd9-9a69-60b0" publicationId="5364-464c-3309-a620" sortIndex="4">
+            <selectionEntry type="upgrade" import="true" name="Pintle Mounted heavy bolter" hidden="false" id="738e-dbd9-9a69-60b0" publicationId="5364-464c-3309-a620" sortIndex="5">
               <costs>
                 <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
@@ -4346,6 +4324,27 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
                   </characteristics>
                 </profile>
               </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Co-axial autocannon" hidden="false" id="5346-aa4c-e235-7116" sortIndex="2">
+              <profiles>
+                <profile name="Co-axial autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f2d1-ba18-e303-c3b8">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Co-axial, Light AT</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Light AT" id="eece-d593-2ebd-b4f7" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+                <infoLink name="Co-axial" id="3898-49d4-16b9-fa25" hidden="false" type="rule" targetId="3be1-fdf0-05dc-4c02"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e33f-45e0-c2c4-49a2" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="547b-60a8-1838-e425" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
