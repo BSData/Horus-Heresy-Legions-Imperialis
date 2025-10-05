@@ -204,7 +204,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Artalax Battle-Automata Maniple" hidden="false" id="43a4-e1f4-1dc9-ed45" type="selectionEntry" targetId="e1db-1b55-f141-5eff">
+    <entryLink import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="43a4-e1f4-1dc9-ed45" type="selectionEntry" targetId="e1db-1b55-f141-5eff">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -291,10 +291,19 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Harpax &apos;Swarmer&apos; Scout Host" hidden="false" id="e90d-6269-d696-e00c" type="selectionEntry" targetId="27ea-a0a5-69e2-ce46">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d6d9-2d0b-2a02-577d" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedRules>
     <rule name="Construct Shields (X)" id="dc39-0d92-7a72-8fa2" hidden="false">
-      <description>Construct Shields count as Void Shields, following the rules presented on page 97 of the Legions Imperialis Rulebook. Unlike Void Shields, Construct Shields cannot be reignited and are not rolled for in the End Phase - when the level is reduced, it cannot be increased unless instructed otherwise.
+      <description>Construct Shields count as Void Shields, following the rules presented on page 97 of the *Legions Imperialis Rulebook*. Unlike Void Shields, Construct Shields cannot be reignited and are not rolled for in the End Phase - when the level is reduced, it cannot be increased unless instructed otherwise.
 
 When one of more Hits are scored against a Detachment which contains one or more models with active Construct Shields, Hits are first allocated to the Construct Shields. Each time a Hit is allocated, reduce the Construct Shield level of an eligible model in that Detachment by 1 then discard the hit. Once a Construct Shield level has reached 0, that model&apos;s shields collapse and are no longer active. Any remaining Hits are allocated to other eligible target models with active Construct Shields. Unlike Void Shields, Hits with an AP of 0 can be assigned to Construct Shields if the weapon that caused the Hits has the Light AT or Anti-tank Trait. If no models in the Detachment have active Construct Shields, then Hits are allocated to models and resolved as normal.</description>
     </rule>
@@ -302,7 +311,7 @@ When one of more Hits are scored against a Detachment which contains one or more
       <description>Detachments with the Networked Anima special rule may gain additional benefits when within 8&quot; of a model with the Noosphere Controller special rule that is part of the same Formation. These rules can be found in the respective Formation.</description>
     </rule>
     <rule name="Noosphere Controller" id="1f49-7cd8-709a-2550" hidden="false">
-      <description>The Noosphere Controller is a special rule that triggers other effects, most often in the case of Formation special rules - it does not have a specific effect itself.</description>
+      <description>Noosphere Controller is a special rule that triggers other effects, most often in the case of Formation special rules - it does not have a specific effect itself.</description>
     </rule>
   </sharedRules>
   <selectionEntries>
@@ -627,197 +636,6 @@ When one of more Hits are scored against a Detachment which contains one or more
       <constraints>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="26ea-d204-5406-9a5d" includeChildSelections="false"/>
       </constraints>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Harpax &apos;Swarmer&apos; Scout Host" hidden="false" id="27ea-a0a5-69e2-ce46">
-      <categoryLinks>
-        <categoryLink name="Vanguard" hidden="false" id="9021-04f2-aca8-9045" targetId="8416-456c-a6f-e059" primary="true"/>
-        <categoryLink name="Infantry (1)" hidden="false" id="115e-f0a0-0853-66c3" targetId="68c1-de55-26b1-8ca4" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Harpax" hidden="false" id="fa1c-a227-ecc4-3ba4" type="selectionEntry" targetId="7cf5-33df-837e-0cfc" sortIndex="3">
-          <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="6bfd-e017-2ab2-de9b" includeChildSelections="false"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0d8c-b949-ac60-a406" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4d15-0816-d19d-7a3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Upgrades" id="3b79-9ddd-e0e9-693d" hidden="false" sortIndex="4">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Increase by 2" hidden="false" id="8d57-ef9f-b459-f216">
-              <entryLinks>
-                <entryLink import="true" name="Harpax" hidden="false" id="6acd-2dc3-cc89-4a4d" type="selectionEntry" targetId="7cf5-33df-837e-0cfc">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="429a-a1e6-9a96-ebda" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d32f-68bb-25ed-a003" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="4d15-0816-d19d-7a3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase by 4" hidden="false" id="fa3d-8e73-6392-49bb">
-              <entryLinks>
-                <entryLink import="true" name="Harpax" hidden="false" id="c733-9d0f-6d41-f0a0" type="selectionEntry" targetId="7cf5-33df-837e-0cfc">
-                  <constraints>
-                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="cea8-d2d4-83ad-5248" includeChildSelections="false"/>
-                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9c92-a368-b1c8-f3ff" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="4d15-0816-d19d-7a3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="25"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase by 6" hidden="false" id="ddc1-e264-41c1-5b0f">
-              <entryLinks>
-                <entryLink import="true" name="Harpax" hidden="false" id="d897-2c50-3e63-e465" type="selectionEntry" targetId="7cf5-33df-837e-0cfc">
-                  <constraints>
-                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="6b99-6b5f-7820-362d" includeChildSelections="false"/>
-                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="dd8f-5df8-69dd-a012" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="4d15-0816-d19d-7a3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="35"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b730-cbe1-c6e0-1948" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Dedicated Transports" id="807b-2268-11f9-e26f" hidden="false" sortIndex="1">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Triaros Armoured Conveyors" id="0654-ccc1-6121-4e40" hidden="false" sortIndex="2">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="4d15-0816-d19d-7a3d" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <entryLinks>
-                <entryLink import="true" name="Triaros" hidden="false" id="9691-6eb4-141d-ad0d" type="selectionEntry" targetId="ef70-4e36-852e-fd7d">
-                  <costs>
-                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="4"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4bfa-c1be-7aee-387e" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6747-49d1-c9ec-7c5f" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="4d15-0816-d19d-7a3d" sortIndex="1">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0a9-9b6a-0139-2f1c"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d895-d0b5-9bcf-10af" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-        <cost name="Loyalist" typeId="a903-27a9-0810-c526" value="0"/>
-      </costs>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Controller Host Upgrade" hidden="false" id="7cfe-d61e-e64b-c355" sortIndex="2">
-          <costs>
-            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
-            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="6639-9640-4570-98e7" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="640c-0a35-2155-2636" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Noosphere Controller" id="6dcb-f2c0-9265-0bca" hidden="false" type="rule" targetId="1f49-7cd8-709a-2550"/>
-            <infoLink name="Invulnerable Save (X)" id="f950-4dde-0a20-60e6" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
-              <modifiers>
-                <modifier type="set" value="Invulnerable Save (6+)" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d0ee-0f8c-7748-3f1e" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
-      <constraints>
-        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="3c72-671f-4149-ec3c" includeChildSelections="false"/>
-        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="6cfa-dc1c-b882-f876" includeChildSelections="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="add" value="124c-2927-143f-f513" field="category">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d6d9-2d0b-2a02-577d" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tenebrax &apos;Archer&apos; Battle Stalker Cohort" hidden="false" id="81a8-091d-c9cc-5c40">
       <categoryLinks>
@@ -2290,6 +2108,198 @@ When one of more Hits are scored against a Detachment which contains one or more
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Harpax &apos;Swarmer&apos; Scout Host" hidden="false" id="27ea-a0a5-69e2-ce46">
+      <categoryLinks>
+        <categoryLink name="Vanguard" hidden="false" id="9021-04f2-aca8-9045" targetId="8416-456c-a6f-e059" primary="true"/>
+        <categoryLink name="Infantry (1)" hidden="false" id="115e-f0a0-0853-66c3" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Harpax" hidden="false" id="fa1c-a227-ecc4-3ba4" type="selectionEntry" targetId="7cf5-33df-837e-0cfc" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="6bfd-e017-2ab2-de9b" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0d8c-b949-ac60-a406" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4d15-0816-d19d-7a3d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="3b79-9ddd-e0e9-693d" hidden="false" sortIndex="4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Increase by 2" hidden="false" id="8d57-ef9f-b459-f216">
+              <entryLinks>
+                <entryLink import="true" name="Harpax" hidden="false" id="6acd-2dc3-cc89-4a4d" type="selectionEntry" targetId="7cf5-33df-837e-0cfc">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="429a-a1e6-9a96-ebda" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d32f-68bb-25ed-a003" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="4d15-0816-d19d-7a3d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Increase by 4" hidden="false" id="fa3d-8e73-6392-49bb">
+              <entryLinks>
+                <entryLink import="true" name="Harpax" hidden="false" id="c733-9d0f-6d41-f0a0" type="selectionEntry" targetId="7cf5-33df-837e-0cfc">
+                  <constraints>
+                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="cea8-d2d4-83ad-5248" includeChildSelections="false"/>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9c92-a368-b1c8-f3ff" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="4d15-0816-d19d-7a3d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="25"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Increase by 6" hidden="false" id="ddc1-e264-41c1-5b0f">
+              <entryLinks>
+                <entryLink import="true" name="Harpax" hidden="false" id="d897-2c50-3e63-e465" type="selectionEntry" targetId="7cf5-33df-837e-0cfc">
+                  <constraints>
+                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="6b99-6b5f-7820-362d" includeChildSelections="false"/>
+                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="dd8f-5df8-69dd-a012" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="4d15-0816-d19d-7a3d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="35"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b730-cbe1-c6e0-1948" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Dedicated Transports" id="807b-2268-11f9-e26f" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Triaros Armoured Conveyors" id="0654-ccc1-6121-4e40" hidden="false" sortIndex="2">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="4d15-0816-d19d-7a3d" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="Triaros" hidden="false" id="9691-6eb4-141d-ad0d" type="selectionEntry" targetId="ef70-4e36-852e-fd7d">
+                  <costs>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="4"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4bfa-c1be-7aee-387e" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6747-49d1-c9ec-7c5f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dedicated Transports" hidden="false" id="4d15-0816-d19d-7a3d" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0a9-9b6a-0139-2f1c"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d895-d0b5-9bcf-10af" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+        <cost name="Loyalist" typeId="a903-27a9-0810-c526" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Controller Host Upgrade" hidden="false" id="7cfe-d61e-e64b-c355" sortIndex="2">
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="6639-9640-4570-98e7" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="640c-0a35-2155-2636" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Noosphere Controller" id="6dcb-f2c0-9265-0bca" hidden="false" type="rule" targetId="1f49-7cd8-709a-2550"/>
+            <infoLink name="Invulnerable Save (X)" id="f950-4dde-0a20-60e6" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
+              <modifiers>
+                <modifier type="set" value="Invulnerable Save (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d0ee-0f8c-7748-3f1e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="3c72-671f-4149-ec3c" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="6cfa-dc1c-b882-f876" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="261a-4b2d-fba2-4920" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="3" field="261a-4b2d-fba2-4920">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d0ee-0f8c-7748-3f1e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <forceEntries>
     <forceEntry name="Terror Protocol Cohort" id="732c-17f9-8345-775c" hidden="false">
@@ -2340,7 +2350,10 @@ When one of more Hits are scored against a Detachment which contains one or more
       </categoryLinks>
       <rules>
         <rule name="Command - Urgency" id="41d8-0593-a7bd-956f" hidden="false">
-          <description>When a Detachment with the Networked Anima special rule is activated during the Movement phase, all models within it increase their Movement characteristic by 2&quot; if the Detachment is within 6&quot; of a model with the Noosphere Controller special rule. This effect lasts until the end of the round.</description>
+          <description>When a Detachment in this Formation with the Networked Anima special rule is activated during the Movement phase, all models within it increase their Movement characteristic by 2&quot; if the Detachment is within 6&quot; of a model with the Noosphere Controller special rule. This effect lasts until the end of the round.</description>
+        </rule>
+        <rule name="Terror Protocol" id="3a05-0f33-2a39-2c38" hidden="false">
+          <description>Compulsory Core Detachment slots in this Formation must be filled with Errax &apos;Butcher&apos; Assault Stalker Cohort Detachments.</description>
         </rule>
       </rules>
     </forceEntry>
@@ -2419,7 +2432,10 @@ When one of more Hits are scored against a Detachment which contains one or more
         <rule name="Command - Overwhelm" id="a033-5dd0-870a-2764" hidden="false">
           <description>Harpax &apos;Swarmer&apos; Scout Host Detachments within this Formation gain the Infiltrate special rule. All Detachments from this Formation with the Networked Anima special rule count their Scale as 1 higher for the purposes of determining if enemy Detachments are Engaged and Pinned while within 8&quot; of a model from this Formation with the Noosphere Controller special rule.
 
-Note: This is only to determine if the enemy Detachment is Engaged and Pinned - the Harpax Swarms are still Engaged and Pinned by enemy Detachments of Scale (1).</description>
+*Note: This is only to determine if the enemy Detachment is Engaged and Pinned - the Harpax Swarms are still Engaged and Pinned by enemy Detachments of Scale (1).*</description>
+        </rule>
+        <rule name="Swarm Protocol" id="c849-2192-df78-1505" hidden="false">
+          <description>Compulsory Vanguard Detachment slots in this Formation must be filled with Harpax &apos;Swarmer&apos; Scout Host Detachments.</description>
         </rule>
       </rules>
     </forceEntry>
@@ -2511,6 +2527,9 @@ Note: This is only to determine if the enemy Detachment is Engaged and Pinned - 
       <rules>
         <rule name="Dedicated Transport" id="b137-16b6-4e56-7d19" hidden="false">
           <description>Any Dark Mechanicum Detachment within the Formation that contains only Infantry or Walker models may be upgraded with Triaros Armoured Conveyors as Dedicated Transports.</description>
+        </rule>
+        <rule name="Augmented Thralls" id="3964-6d90-9dce-3aa9" hidden="false">
+          <description>Compulsory Core Detachment slots in this Formation must be filled with Adsecularis Tech-thrall Covenant Detachments</description>
         </rule>
       </rules>
     </forceEntry>
