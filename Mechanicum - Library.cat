@@ -2,12 +2,9 @@
 <catalogue library="true" id="5943-3ab9-e00f-e458" name="Mechanicum - Library" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="2" battleScribeVersion="2.03" publicationId="89ae-8b6d-da44-733f" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Cortex Controller" id="3579-8e16-d3b1-e319" hidden="false" publicationId="89ae-8b6d-da44-733f">
-      <description>If a detachment with the Cybernetica Cortex (X) special rule has at least one model wholly within 8&quot; of a friendly model with the Cortex Controller special rule, the former Detachment can be issued with any Order it would be eligible to be issued, instead of just those listed in brackets.
+      <description>If a Detachment with the Cybernetica Cortex (X) special rule has at least one model wholly within 8&quot; of a friendly model with the Cortex Controller special rule, the former Detachment can be issued with any Order it would be eligible to be issued, instead of just those listed in brackets.
 
-Note: The Cortex Controller does not need to be part of the same Formation, merely the same Army.</description>
-    </rule>
-    <rule name="Automata Detachments" id="7207-325d-62f0-302b" hidden="false" publicationId="89ae-8b6d-da44-733f">
-      <description>Archmagus Prime, Archmagus Prime on Abeyant and Tech-Priest Auxilia models may be attached to  any friendly Infantry, Walker, Cavalry or Vehicle Detachment within the same formation that has the Cybernetica Cortex (X) special rule. This overrides normal restrictions about joining Detachments of different types.</description>
+*Note: The Cortex Controller does not need to be part of the same Formation, merely the same Army.*</description>
     </rule>
     <rule name="Cybernetica Cortex (X) " id="3df1-39f0-9014-cf63" hidden="false" publicationId="89ae-8b6d-da44-733f">
       <alias>Cybernetica Cortex</alias>
@@ -33,7 +30,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Las-locks" hidden="false" id="b1ce-fc9e-52d3-1b31">
+        <selectionEntry type="upgrade" import="true" name="Las-locks" hidden="false" id="b1ce-fc9e-52d3-1b31" collective="true">
           <profiles>
             <profile name="Las-locks" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2d5d-48eb-5c77-5cb0">
               <characteristics>
@@ -76,27 +73,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Lightning guns" hidden="false" id="a8eb-b162-9511-b20c">
-          <profiles>
-            <profile name="Lightning guns" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="82f2-f14d-b894-a6d4">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Light AT" id="9813-c9dd-6b21-40a1" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="478a-2c92-19bb-cc27-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="478a-2c92-19bb-cc27-max"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="b37f-5f5f-0a80-7d77">
+        <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="b37f-5f5f-0a80-7d77" collective="true">
           <profiles>
             <profile name="Multi-melta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="5469-e299-ae66-84d4">
               <characteristics>
@@ -120,6 +97,14 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
       <infoLinks>
         <infoLink name="Jump Packs" id="7d9e-67c8-878a-ed4c" hidden="false" type="rule" targetId="130c-4ba7-dab7-34b3"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Lightning guns" hidden="false" id="0955-3dc4-3e56-6348" type="selectionEntry" targetId="a8eb-b162-9511-b20c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="478a-2c92-19bb-cc27-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="478a-2c92-19bb-cc27-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Myrmidon Secutors" hidden="false" id="da42-ba05-1a7e-c6b5" publicationId="89ae-8b6d-da44-733f" page="100">
       <costs>
@@ -145,9 +130,9 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <infoLink name="Implacable" id="c124-1393-ea05-c9ee" hidden="false" type="rule" targetId="d6b1-1b69-a07c-3ddd"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Maxima Bolters" hidden="false" id="a2c4-4ffb-dddc-c625">
+        <selectionEntry type="upgrade" import="true" name="Maxima bolters" hidden="false" id="a2c4-4ffb-dddc-c625" collective="true">
           <profiles>
-            <profile name="Maxima Bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="130b-1fd8-de99-ce13">
+            <profile name="Maxima bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="130b-1fd8-de99-ce13">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -166,9 +151,9 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             <infoLink name="Light" id="c0fa-acda-f8a6-5a68" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Myrmidon Plasma-fusil" hidden="false" id="f34e-0b64-e59f-85c2" publicationId="559c-6588-c3b1-b0e5">
+        <selectionEntry type="upgrade" import="true" name="Myrmidon plasma-fusil" hidden="false" id="f34e-0b64-e59f-85c2" publicationId="559c-6588-c3b1-b0e5" collective="true">
           <profiles>
-            <profile name="Myrmidon Plasma-fusil" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2134-804d-1066-fc44">
+            <profile name="Myrmidon plasma-fusil" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2134-804d-1066-fc44">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
@@ -211,50 +196,46 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
       <infoLinks>
         <infoLink name="Implacable" id="0445-d388-385b-a82a" hidden="false" type="rule" targetId="d6b1-1b69-a07c-3ddd"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="de2a-5ec0-82de-4ccd" hidden="false" defaultSelectionEntryId="f248-1dca-0508-6d92">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Conversion beamers" hidden="false" id="f248-1dca-0508-6d92">
-              <profiles>
-                <profile name="Conversion beamers" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9b24-5d13-5e23-09bc">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">4-22&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba69-1e1f-9909-f37f-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba69-1e1f-9909-f37f-max" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Myrmidon volkites" hidden="false" id="7316-50e3-22d8-dae1">
-              <profiles>
-                <profile name="Myrmidon volkites" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="00b5-ba25-ad2f-b8ec">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Deflagrate, Light</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Deflagrate" id="8e22-0fe8-85fd-abe2" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
-                <infoLink name="Light" id="473d-fd2d-fb9c-1067" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0793-6ab1-0bb0-694c-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0793-6ab1-0bb0-694c-max" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Conversion beamers" hidden="false" id="f248-1dca-0508-6d92">
+          <profiles>
+            <profile name="Conversion beamers" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9b24-5d13-5e23-09bc">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">4-22&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba69-1e1f-9909-f37f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba69-1e1f-9909-f37f-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Myrmidon volkites" hidden="false" id="7316-50e3-22d8-dae1">
+          <profiles>
+            <profile name="Myrmidon volkites" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="00b5-ba25-ad2f-b8ec">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Deflagrate, Light</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Deflagrate" id="8e22-0fe8-85fd-abe2" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
+            <infoLink name="Light" id="473d-fd2d-fb9c-1067" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0793-6ab1-0bb0-694c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0793-6ab1-0bb0-694c-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ursarax" hidden="false" id="38a8-c364-ebe3-fa7d">
       <costs>
@@ -277,7 +258,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <infoLink name="Jump Packs" id="b6ec-1ca5-b0b9-e5c5" hidden="false" type="rule" targetId="130c-4ba7-dab7-34b3"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Volkite incinerators" hidden="false" id="996a-4ac4-f3b9-8aa0">
+        <selectionEntry type="upgrade" import="true" name="Volkite incinerators" hidden="false" id="996a-4ac4-f3b9-8aa0" collective="true">
           <profiles>
             <profile name="Volkite incinerators" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f173-cfe0-f232-2223">
               <characteristics>
@@ -298,6 +279,26 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eafc-037b-3069-d5e9-max"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ursarax claws" hidden="false" id="088e-a9c1-443a-01a2" collective="true">
+          <profiles>
+            <profile name="Ursarax claws" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="7d0c-2c3e-d68a-2d74">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Rend</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rend" id="b65d-c0f1-173b-b00c" hidden="false" type="rule" targetId="6d1b-9fcd-3541-f46e"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f68-83e5-bb47-9382"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb9b-8bfc-c8d1-ad47"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Krios Battle Tank" hidden="false" id="5f26-55f1-f9ce-a2b4">
@@ -310,9 +311,9 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Turret Weapons" id="74a6-be02-b438-021e" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Turret Weapon" id="74a6-be02-b438-021e" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Krios lightning cannon" hidden="false" id="2c42-5b80-531c-578d" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Krios lightning cannon" hidden="false" id="2c42-5b80-531c-578d">
               <profiles>
                 <profile name="Krios lightning cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="7451-ac3c-ff87-9146">
                   <characteristics>
@@ -332,9 +333,9 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
                 </infoLink>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Irad Scourer" hidden="false" id="736c-61ec-4eb4-c69c">
+            <selectionEntry type="upgrade" import="true" name="Irad scourer" hidden="false" id="736c-61ec-4eb4-c69c">
               <profiles>
-                <profile name="Irad Scourer" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="cc7f-d209-8c49-1eb0">
+                <profile name="Irad scourer" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="cc7f-d209-8c49-1eb0">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -362,30 +363,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Volkite caliver sponsons" hidden="false" id="0f1a-da19-4c29-9936" sortIndex="2">
-          <profiles>
-            <profile name="Volkite caliver sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c5f7-a005-5a5f-a13d">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Deflagrate, Light, Point Defence</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="383f-8fc3-596e-6eb5-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="383f-8fc3-596e-6eb5-max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Accurate" id="88a8-a08b-159e-eddb" hidden="false" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
-            <infoLink name="Deflagrate" id="d77e-b936-96b1-d563" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
-            <infoLink name="Light" id="e045-0227-728c-2bd9" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-            <infoLink name="Point Defence" id="db3d-1466-3967-e0c5" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Cortex Controller" hidden="false" id="fb2a-2e67-763a-6372" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="Cortex Controller" hidden="false" id="fb2a-2e67-763a-6372">
           <costs>
             <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
@@ -406,6 +384,14 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
           </modifiers>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Volkite caliver sponsons" hidden="false" id="1dea-a9e3-6ca9-f9f6" type="selectionEntry" targetId="0f1a-da19-4c29-9936">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="383f-8fc3-596e-6eb5-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="383f-8fc3-596e-6eb5-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Karacnos" hidden="false" id="94c4-fc51-2e1b-296d">
       <costs>
@@ -425,7 +411,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Lightning locks" hidden="false" id="6b49-e80d-b5f0-3208" sortIndex="1" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Lightning locks" hidden="false" id="6b49-e80d-b5f0-3208" collective="true">
           <profiles>
             <profile name="Lightning locks" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6de4-ec80-2ceb-f368">
               <characteristics>
@@ -433,7 +419,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
                 <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
                 <characteristic name="AP" typeId="3932-ca12-de16-c1b7">1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (front), Point Defence</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Point Defence</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -450,7 +436,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1ba-5b38-b3bf-aada" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Karacnos mortar battery" hidden="false" id="dbe7-9433-c9a6-8988" sortIndex="2" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Karacnos mortar battery" hidden="false" id="dbe7-9433-c9a6-8988" collective="true">
           <profiles>
             <profile name="Karacnos mortar battery" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e58f-785d-350a-2d1c">
               <characteristics>
@@ -476,31 +462,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6866-5b2d-e668-e76b" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Shock ram" hidden="false" id="b40d-5770-6111-03b4" sortIndex="3" collective="true">
-          <profiles>
-            <profile name="Shock ram" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c55d-7de9-9bcf-4187">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Wrecker (2)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Wrecker (X)" id="381b-c99b-6f30-f44e" hidden="false" type="rule" targetId="e40-19fc-8c79-9a12">
-              <modifiers>
-                <modifier type="set" value="Wrecker (2)" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d09-976b-ed00-19e2" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc5f-39a6-f5a4-7344" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Cortex Controller" hidden="false" id="fb2a-2e67-763a-6372" sortIndex="4">
+        <selectionEntry type="upgrade" import="true" name="Cortex Controller" hidden="false" id="fb2a-2e67-763a-6372">
           <costs>
             <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
@@ -521,6 +483,14 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
           </modifiers>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Shock ram" hidden="false" id="c668-622d-1cd4-e657" type="selectionEntry" targetId="b40d-5770-6111-03b4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d09-976b-ed00-19e2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc5f-39a6-f5a4-7344" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Karacnos Assault Tank Squadron" hidden="false" id="29ba-2b50-94bd-d82c" publicationId="89ae-8b6d-da44-733f">
       <costs>
@@ -536,64 +506,27 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <entryLink import="true" name="Karacnos" hidden="false" id="c3d6-0989-f45f-8385" type="selectionEntry" targetId="94c4-fc51-2e1b-296d">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25a7-9acd-bb09-6eae-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25a7-9acd-bb09-6eae-max"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="25a7-9acd-bb09-6eae-max"/>
           </constraints>
         </entryLink>
       </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Upgrades" id="3917-6ea4-0905-9ce1" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 1" hidden="false" id="d2fa-8991-426e-d73d">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="40"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Karacnos" hidden="false" id="d6e8-ed6f-88eb-eb6d" type="selectionEntry" targetId="94c4-fc51-2e1b-296d">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27a6-4815-621f-04bf-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27a6-4815-621f-04bf-max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 3" hidden="false" id="19f3-f18b-c35f-4ab7">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Karacnos" hidden="false" id="e7f5-141c-a96b-64c6" type="selectionEntry" targetId="94c4-fc51-2e1b-296d">
-                  <constraints>
-                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="28a7-b6b7-c775-cf64-min"/>
-                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="28a7-b6b7-c775-cf64-max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 2" hidden="false" id="957c-c367-4613-4564">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="70"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Karacnos" hidden="false" id="80cc-dac9-bbe4-f1b3" type="selectionEntry" targetId="94c4-fc51-2e1b-296d">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d053-db66-9893-a551-min"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d053-db66-9893-a551-max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b902-0b76-c0f8-50c7"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="increment" value="35" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="35" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="30" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Krios Battle Tank Squadron" hidden="false" id="cc8e-6ce4-71bb-aa7e" publicationId="89ae-8b6d-da44-733f">
       <categoryLinks>
@@ -605,57 +538,38 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
-      <entryLinks>
-        <entryLink import="true" name="Krios Battle Tank" hidden="false" id="7273-3c64-e485-4744" type="selectionEntry" targetId="5f26-55f1-f9ce-a2b4">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="3 Krios Battle Tank Detachments" hidden="false" id="6bdb-a397-0971-6289">
+          <entryLinks>
+            <entryLink import="true" name="Krios Battle Tank" hidden="false" id="7273-3c64-e485-4744" type="selectionEntry" targetId="5f26-55f1-f9ce-a2b4">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="cd64-0072-f612-a079-min"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="cd64-0072-f612-a079-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="cd64-0072-f612-a079-min"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="cd64-0072-f612-a079-max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b000-e6b4-0204-b8cb" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6c82-3439-a4bf-d944" includeChildSelections="false"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Upgrades" id="4e47-a35e-3df8-2841" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 3" hidden="false" id="4aba-1983-e55b-25e0">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="90"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Krios Battle Tank" hidden="false" id="dec8-b1ab-4c69-552d" type="selectionEntry" targetId="5f26-55f1-f9ce-a2b4">
-                  <constraints>
-                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="c20a-3d8e-1dfc-831f-min"/>
-                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c20a-3d8e-1dfc-831f-max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 6" hidden="false" id="6eae-9c60-88b9-576a">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="170"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Krios Battle Tank" hidden="false" id="1260-1fe2-733c-3b1c" type="selectionEntry" targetId="5f26-55f1-f9ce-a2b4">
-                  <constraints>
-                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="4196-c473-da58-6f97-min"/>
-                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="4196-c473-da58-6f97-max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbc0-ff9f-b4ac-ca50"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="increment" value="90" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="80" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tech-Priest" hidden="false" id="c96f-9492-7e30-43f4">
       <profiles>
-        <profile name="Tech-Priest Auxilia" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="4727-dc25-bf0c-36dd">
+        <profile name="Tech-Priest" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="4727-dc25-bf0c-36dd">
           <characteristics>
             <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">5&quot;</characteristic>
             <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">5+</characteristic>
@@ -697,7 +611,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Triaros" hidden="false" id="ef70-4e36-852e-fd7d" defaultAmount="1">
       <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="22"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
@@ -717,13 +631,13 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
             <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
             <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">0</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
             <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Twin-linked volkite calivers" hidden="false" id="b7f4-0b4f-7ffe-28bf" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Twin-linked volkite calivers" hidden="false" id="b7f4-0b4f-7ffe-28bf">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c459-ce1f-1bb2-f13a"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7674-924c-b731-ab42"/>
@@ -771,31 +685,16 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Shock ram" hidden="false" id="16a6-7f73-addc-3d8f" type="selectionEntry" targetId="b40d-5770-6111-03b4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="009a-b584-c085-335c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0dcb-0526-9d0a-9ffc" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Archmagos Prime" hidden="false" id="da96-d297-7d75-5e5b">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Volkite Serpenta" hidden="false" id="da51-54f8-c76b-7e14">
-          <profiles>
-            <profile name="Volkite Serpenta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="dea3-bf5b-5381-6435">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Deflagrate, Light</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Deflagrate" id="95f5-2792-63a3-ff58" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
-            <infoLink name="Light" id="3a2e-c447-23ec-6b2e" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d241-f714-8365-77c2"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82e3-e6ab-f7bb-eefa"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <profiles>
         <profile name="Archmagos Prime" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="d4a0-5078-3a83-e5c4">
           <characteristics>
@@ -822,30 +721,17 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Volkite serpenta" hidden="false" id="3650-b9b4-dd08-1642" type="selectionEntry" targetId="da51-54f8-c76b-7e14">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d241-f714-8365-77c2"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82e3-e6ab-f7bb-eefa"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Archmagos Prime on Abeyant" hidden="false" id="83d3-6267-00c8-93c3">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Volkite Serpenta" hidden="false" id="a1ba-4333-e179-276d" sortIndex="1">
-          <profiles>
-            <profile name="Volkite Serpenta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d3ed-0aac-bbb0-4c33">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Deflagrate, Light</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Deflagrate" id="f190-6667-facb-0245" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
-            <infoLink name="Light" id="bdc0-72d5-40cb-f069" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="acff-6cf8-465d-9c36"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac97-ce4c-d69a-a8f0"/>
-          </constraints>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="5edd-9f59-9273-aa5e">
           <profiles>
             <profile name="Meltagun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f484-65d4-1fc9-0dfb">
@@ -893,8 +779,16 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Volkite serpenta" hidden="false" id="f34c-8cd4-9a4c-9fee" type="selectionEntry" targetId="da51-54f8-c76b-7e14">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="46eb-a104-bc7b-15e3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d47-9d64-9015-774b"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Artalax" hidden="false" id="e33a-1d7f-90a6-39d9">
+    <selectionEntry type="model" import="true" name="Arlatax" hidden="false" id="e33a-1d7f-90a6-39d9">
       <costs>
         <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
@@ -946,7 +840,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Artalax" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="5604-7154-85b8-4bf6">
+        <profile name="Arlatax" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="5604-7154-85b8-4bf6">
           <characteristics>
             <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
             <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
@@ -1043,7 +937,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </infoLink>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="In-built bolters" hidden="false" id="5ef1-6b78-bfc6-387f" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="In-built bolters" hidden="false" id="5ef1-6b78-bfc6-387f" collective="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd13-1432-21c4-15a6" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c534-51d7-d842-d75a" includeChildSelections="false"/>
@@ -1066,7 +960,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="4162-8988-316f-1d1d" type="selectionEntry" targetId="bd64-14d9-e283-c70e" sortIndex="1"/>
+        <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="4162-8988-316f-1d1d" type="selectionEntry" targetId="bd64-14d9-e283-c70e"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Domitar" hidden="false" id="153b-00ee-9c7c-113c">
@@ -1122,24 +1016,22 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Missile launchers" hidden="false" id="d427-ed3d-c08a-15b2" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Domitar missile launcher" hidden="false" id="d427-ed3d-c08a-15b2" collective="true">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95f3-f866-f948-990a" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffcb-ddf6-9e01-b657" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4540-611b-903e-066d"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4da8-56d7-ee8b-6a8b"/>
           </constraints>
           <profiles>
-            <profile name="Missile launchers - Frag" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="14b3-8c10-2c51-ea9b">
+            <profile name="Domitar missile launcher - frag" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="14b3-8c10-2c51-ea9b">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
                 <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
                 <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Ignores Cover, Light</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Ignores Cover</characteristic>
               </characteristics>
             </profile>
-            <profile name="Missile launchers - Krak" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="cfa5-dddb-6bec-ed34">
+            <profile name="Domitar missile launcher - krak" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="cfa5-dddb-6bec-ed34">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
@@ -1155,7 +1047,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             <infoLink name="Light" id="a95b-741d-6408-6fc2" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Graviton hammers" hidden="false" id="9ef1-e4b5-62b2-252d">
+        <selectionEntry type="upgrade" import="true" name="Graviton hammers" hidden="false" id="9ef1-e4b5-62b2-252d" collective="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae2e-1682-0405-39f4" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdb5-5184-1007-85ad" includeChildSelections="false"/>
@@ -1181,7 +1073,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mauler bolt cannon" hidden="false" id="bd64-14d9-e283-c70e">
+    <selectionEntry type="upgrade" import="true" name="Mauler bolt cannon" hidden="false" id="bd64-14d9-e283-c70e" collective="true">
       <profiles>
         <profile name="Mauler bolt cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="064f-1b46-1114-0c89">
           <characteristics>
@@ -1251,48 +1143,20 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </infoLink>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="c2c4-ce3b-3c46-cb36" hidden="false" defaultSelectionEntryId="824a-57cf-1650-6ae4">
+        <selectionEntryGroup name="Main Weapon" id="c2c4-ce3b-3c46-cb36" hidden="false" defaultSelectionEntryId="a339-dd49-4ced-d3a9">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98ce-0464-271e-b65b" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de53-5ec6-7651-802a" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Plasma Mortar" hidden="false" id="ad33-15a0-97ee-b0b9" sortIndex="1">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Plasma mortar" hidden="false" id="a339-dd49-4ced-d3a9" sortIndex="1">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2436-f07c-3e5d-5172" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7789-5506-401b-8998" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Plasma mortar" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="4403-e74a-b01c-e7f8">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Demolisher, Ignores Cover</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Demolisher" id="3a3b-b70f-0abb-9908" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
-                    <infoLink name="Ignores Cover" id="7631-c627-1b68-6366" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="a248-80d7-392a-49f4" type="selectionEntry" targetId="bd64-14d9-e283-c70e"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Sollex Heavy-Las" hidden="false" id="216d-866c-e92b-0b50" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Sollex heavy-las and graviton ram" hidden="false" id="216d-866c-e92b-0b50">
               <costs>
                 <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
               </costs>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Sollex heavy-las" hidden="false" id="5f85-133a-49cf-6d06" sortIndex="1">
+                <selectionEntry type="upgrade" import="true" name="Sollex heavy-las" hidden="false" id="5f85-133a-49cf-6d06">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7103-9cdf-de0b-cb97" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47eb-2636-0bdf-84ce" includeChildSelections="false"/>
@@ -1312,7 +1176,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
                     <infoLink name="Armourbane" id="cedf-671d-9b80-3080" hidden="false" type="rule" targetId="e2f7-4ff5-3f66-fed5"/>
                   </infoLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Graviton ram" hidden="false" id="d7fd-26ad-6c41-5b46" sortIndex="3">
+                <selectionEntry type="upgrade" import="true" name="Graviton ram" hidden="false" id="d7fd-26ad-6c41-5b46">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c229-aa00-9859-2f9e" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7082-90fb-828b-abf2" includeChildSelections="false"/>
@@ -1337,13 +1201,34 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
-              <entryLinks>
-                <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="8dd9-9d27-7e04-a6b4" type="selectionEntry" targetId="bd64-14d9-e283-c70e" sortIndex="2"/>
-              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plasma mortar" hidden="false" id="a339-dd49-4ced-d3a9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2436-f07c-3e5d-5172" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7789-5506-401b-8998" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Plasma mortar" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="4403-e74a-b01c-e7f8">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Demolisher, Ignores Cover</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Demolisher" id="3a3b-b70f-0abb-9908" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
+                <infoLink name="Ignores Cover" id="7631-c627-1b68-6366" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="8dd9-9d27-7e04-a6b4" type="selectionEntry" targetId="bd64-14d9-e283-c70e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Vorax" hidden="false" id="376b-24b5-a5cd-449a">
       <categoryLinks>
@@ -1398,7 +1283,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         </infoLink>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Rotor cannon" hidden="false" id="ec81-56b1-081e-454d" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Rotor cannon" hidden="false" id="ec81-56b1-081e-454d">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f667-42e6-ebd4-bcf0" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f611-2022-2ebd-3bd6" includeChildSelections="false"/>
@@ -1419,27 +1304,7 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             <infoLink name="Rapid Fire" id="94ec-e92e-add4-8a32" hidden="false" type="rule" targetId="d56d-6332-debe-ab1a"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Lightning guns" hidden="false" id="7271-556e-4b72-06a5" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07c3-aaa9-a9d9-71d9" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45f4-4bf3-fd71-8955" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Lightning guns" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6b3c-d35f-7a22-9e6a">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Light AT" id="f635-6741-eb62-0954" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Power blade arrays" hidden="false" id="8af7-f65d-630b-d706" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="Power blade arrays" hidden="false" id="8af7-f65d-630b-d706">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="532b-d83f-ea1b-4d70" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5a4-1e69-ad1d-957d" includeChildSelections="false"/>
@@ -1460,6 +1325,14 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Lightning guns" hidden="false" id="a0a0-b6c6-0343-4767" type="selectionEntry" targetId="a8eb-b162-9511-b20c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ffe8-b067-5227-af07"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e96-8435-151c-f389"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Vultarax" hidden="false" id="3781-8bcd-8940-7e43">
       <costs>
@@ -1536,13 +1409,13 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
             <infoLink name="Neutron-flux" id="aea8-0c54-e476-1c0c" hidden="false" type="rule" targetId="1f00-9315-8e4-9e22"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Vultarax havoc launcher" hidden="false" id="71f4-4486-f654-9896">
+        <selectionEntry type="upgrade" import="true" name="Vultarax missile launcher" hidden="false" id="71f4-4486-f654-9896">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a71-2b35-2233-f5cf" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="635a-00f4-bd33-9f39" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Vultarax havoc launcher" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8ea7-49a8-d1e3-e017">
+            <profile name="Vultarax missile launcher" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8ea7-49a8-d1e3-e017">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">15&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -1572,72 +1445,35 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
         <entryLink import="true" name="Vultarax" hidden="false" id="8eef-dcba-44b0-75b2" type="selectionEntry" targetId="3781-8bcd-8940-7e43">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ccd4-5931-b989-b0d5" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78c8-6223-42c3-c910" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="78c8-6223-42c3-c910" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Upgrades" id="8084-3241-05c2-c3ea" hidden="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0657-2948-21be-fc80" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 1" hidden="false" id="0784-2bc7-b982-91df">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="35"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Vultarax" hidden="false" id="e5aa-0caf-8061-7428" type="selectionEntry" targetId="3781-8bcd-8940-7e43">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb01-1c04-08d9-78d6" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51f8-ea04-b128-d98c" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 2" hidden="false" id="182d-e1fd-2f95-616e">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="60"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Vultarax" hidden="false" id="cabb-3bbe-98d8-7e29" type="selectionEntry" targetId="3781-8bcd-8940-7e43">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f315-6425-a028-2173" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="697b-faa0-ae8c-314e" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 3" hidden="false" id="ef1a-1d7e-dc3e-5a1f">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="85"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Vultarax" hidden="false" id="68b0-ea20-a095-b1f3" type="selectionEntry" targetId="3781-8bcd-8940-7e43">
-                  <constraints>
-                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5724-eaa8-4af5-6065" includeChildSelections="false"/>
-                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f015-0091-4a63-6a20" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="increment" value="30" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="30" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="25" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Artalax Battle-Automata Maniple" hidden="false" id="e1db-1b55-f141-5eff">
+    <selectionEntry type="unit" import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="e1db-1b55-f141-5eff">
       <categoryLinks>
         <categoryLink name="Support" hidden="false" id="ecb0-df19-8b4b-588b" targetId="be19-7658-5258-71d9" primary="true"/>
         <categoryLink name="Walker (1)" hidden="false" id="e293-9972-8800-a917" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Artalax" hidden="false" id="4a68-80e9-09f7-50fa" type="selectionEntry" targetId="e33a-1d7f-90a6-39d9" sortIndex="1">
+        <entryLink import="true" name="Arlatax" hidden="false" id="4a68-80e9-09f7-50fa" type="selectionEntry" targetId="e33a-1d7f-90a6-39d9" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a394-554a-9ebe-b898" includeChildSelections="false"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8587-0f60-1a31-95d9" includeChildSelections="false"/>
@@ -2186,6 +2022,78 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
       </entryLinks>
       <comment>For use in Support Detachments</comment>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Volkite serpenta" hidden="false" id="da51-54f8-c76b-7e14">
+      <profiles>
+        <profile name="Volkite serpenta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="dea3-bf5b-5381-6435">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Deflagrate, Light</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deflagrate" id="95f5-2792-63a3-ff58" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
+        <infoLink name="Light" id="3a2e-c447-23ec-6b2e" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lightning guns" hidden="false" id="a8eb-b162-9511-b20c" collective="true">
+      <profiles>
+        <profile name="Lightning guns" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="82f2-f14d-b894-a6d4">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Light AT" id="9813-c9dd-6b21-40a1" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Volkite caliver sponsons" hidden="false" id="0f1a-da19-4c29-9936" collective="true">
+      <profiles>
+        <profile name="Volkite caliver sponsons" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c5f7-a005-5a5f-a13d">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Deflagrate, Light, Point Defence</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Accurate" id="88a8-a08b-159e-eddb" hidden="false" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
+        <infoLink name="Deflagrate" id="d77e-b936-96b1-d563" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
+        <infoLink name="Light" id="e045-0227-728c-2bd9" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+        <infoLink name="Point Defence" id="db3d-1466-3967-e0c5" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shock ram" hidden="false" id="b40d-5770-6111-03b4" collective="true">
+      <profiles>
+        <profile name="Shock ram" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c55d-7de9-9bcf-4187">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Wrecker (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Wrecker (X)" id="381b-c99b-6f30-f44e" hidden="false" type="rule" targetId="e40-19fc-8c79-9a12">
+          <modifiers>
+            <modifier type="set" value="Wrecker (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Mechanicum" id="d331-a05e-f676-b8a6" hidden="false"/>
@@ -2201,4 +2109,9 @@ Note: The Cortex Controller does not need to be part of the same Formation, mere
       </characteristics>
     </profile>
   </sharedProfiles>
+  <rules>
+    <rule name="Masters of Machines" id="7207-325d-62f0-302b" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <description>Archmagos Prime, Archmagos Prime on Abeyant and Tech-Priest Auxilia models may be attached to any friendly Infantry, Walker, Cavalry or Vehicle Detachment within the same Formation that has the Cybernetica Cortex (X) special rule. This overrides normal restrictions about joining Detachments of different types.</description>
+    </rule>
+  </rules>
 </catalogue>
