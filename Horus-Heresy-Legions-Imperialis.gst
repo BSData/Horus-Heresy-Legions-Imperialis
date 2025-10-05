@@ -506,19 +506,14 @@ Models in a Detachment with this special rule have a
 Tactical Strength of 0 and this cannot be modified in
 any way.</description>
     </rule>
-    <rule id="9e10-bda9-5ee4-76ee" name="Explorator Adaption" publicationId="c1b8-2180-635c-14cd" hidden="false" page="88">
-      <description>Models with the Explorator Adaption special rule gain a 6+ Invulnerable Save against Hits scored by a weapon with the Barrage or Blast trait.</description>
+    <rule id="9e10-bda9-5ee4-76ee" name="Explorator Adaptation" publicationId="c1b8-2180-635c-14cd" hidden="false" page="88">
+      <description>Models with the Explorator Adaptation special rule gain a 6+ Invulnerable Save against Hits scored by a weapon with the Barrage or Blast trait.</description>
     </rule>
     <rule id="331b-6c13-fad2-58de" name="Feel No Pain" publicationId="c1b8-2180-635c-14cd" hidden="false" page="88">
       <description>If a model with this special rule suffers a Wound from a weapon with the Light trait, roll a D6 after any save rolls are made. On a 5+, the Wound is ignored and has no effect; this triggers before rules such as Deflagrate, meaning extra Hits would not be generated. Feel No Pain cannot be used against Wounds caused in Fights.</description>
     </rule>
     <rule id="54b4-67fd-a64-86d5" name="Forward Deployment" publicationId="559c-6588-c3b1-b0e5" hidden="false" page="2">
-      <description>After both players have deployed their armies, including
-Infiltrating Detachments, but before the first round of the
-battle, if all models in a Detachment have the Forward
-Deployment special rule, the Detachment may make a
-special move.
-
+      <description>After both players have deployed their armies, including Infiltrating Detachments, but before the first round of the battle, if all models in a Detachment have the Forward Deployment special rule, the Detachment may make a special move.
 
 The controlling player can move each Forward Deployment Detachment on the battlefield up to a number of inches equal to its Movement characteristic, ignoring Difficult terrain and Dangerous terrain rules. This move can the Detachment outside of its deployment zone and a Detachment can Garrison a Structure if they are able to.
 
@@ -543,9 +538,7 @@ Models with the Independent and Deep Strike special rules may start the game in 
     <rule id="68b7-f6c7-7925-1567" name="Infiltrate" publicationId="559c-6588-c3b1-b0e5" hidden="false" page="2">
       <description>Detachments with the Infiltrate special rule are not deployed as normal. Instead, after all players have finished deploying, players take it in turns, starting with the player who has command of the battlefield, to deploy an Infiltrating Detachment anywhere on the battlefield outside of the opposing player&apos;s deployment zone. Infiltrating models must be deployed at least 4&quot; away from a previously deployed enemy model; if it cannot be deployed in this way, then it is deployed as normal within the controlling player&apos;s deployment zone.
 
-
-A Detachment that is deployed in this way cannot be
-issued a Charge Order during the first round.</description>
+A Detachment that is deployed in this way cannot be issued a Charge Order during the first round.</description>
     </rule>
     <rule id="941e-dc74-2689-bf1f" name="Inspire (X)" publicationId="c1b8-2180-635c-14cd" hidden="false" page="92">
       <description>Friendly Detachments within a number of inches equal to the value shown in brackets of a Detachment with this special rule may use this Detachment&apos;s Morale value in place of their own when making Morale checks.</description>
@@ -664,8 +657,9 @@ During the End phase, in the Resolve End Phase Effects stage, a model with the V
     <rule name="Remote Controlled Detonation" hidden="false" id="c783-cc80-fdd9-b883" publicationId="559c-6588-c3b1-b0e5">
       <description>If a model with the Remote Controlled Detonation special rule ends its movement within 12&quot; of a friendly model with the Commander special rule, it may detonate. When a model detonates, it attacks with all of its weapons that have the Blast (3&quot;/5&quot;) trait. The central hole of the Blast template is placed within 1&quot; of the detonating model – it does no damage to itself (i.e., don’t make Hit rolls for the detonating model) and the template does not Scatter. Once the effects of the detonation have been resolved, the detonating model is destroyed.
 
+If a Detachment contains more than one model with this rule, the controlling player can choose which models detonate and which do not, doing so before resolving any detonation. Models that detonate are not affected by friendly models that are detonating at the same time. Any model that does not detonate is affected if it is under the Blast template as normal.
 
-If a Detachment contains more than one model with this rule, the controlling player can choose which models detonate and which do not, doing so before resolving any detonation. Models that detonate are not affected by friendly models that are detonating at the same time. Any model that does not detonate is affected if it is under the Blast template as normal.</description>
+In addition, models with the Remote Controlled Detonation special rule are ignored for the purposes of calculating a Formation&apos;s Break Point.</description>
     </rule>
   </sharedRules>
   <selectionEntries>
