@@ -539,7 +539,7 @@
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="3 Krios Battle Tank Detachments" hidden="false" id="6bdb-a397-0971-6289">
+        <selectionEntry type="upgrade" import="true" name="3 Krios Battle Tank models" hidden="false" id="6bdb-a397-0971-6289">
           <entryLinks>
             <entryLink import="true" name="Krios Battle Tank" hidden="false" id="7273-3c64-e485-4744" type="selectionEntry" targetId="5f26-55f1-f9ce-a2b4">
               <constraints>

@@ -931,7 +931,7 @@ All Detachments included in this Support Formation must have the Cybernetica Cor
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="5 Tech-thralls" hidden="false" id="fc9a-bfd3-b9d9-62e3" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="5 Tech-thralls models" hidden="false" id="fc9a-bfd3-b9d9-62e3" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Tech-thralls" hidden="false" id="6df9-b84d-b4cf-fdd7" type="selectionEntry" targetId="a5c2-be99-e3c2-d171">
               <constraints>
@@ -1107,7 +1107,7 @@ All Detachments included in this Support Formation must have the Cybernetica Cor
         <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="5887-1b3a-4def-b76a" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="2 Thallax Detachments" hidden="false" id="74cd-db06-cf7e-2a50" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="2 Thallax models" hidden="false" id="74cd-db06-cf7e-2a50" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Thallax" hidden="false" id="f6d1-fbfb-f1ad-ac08" type="selectionEntry" targetId="b0e5-db48-66c7-ba75">
               <constraints>
@@ -1288,7 +1288,7 @@ All Detachments included in this Support Formation must have the Cybernetica Cor
         <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="a203-8e36-2e3c-7f92" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="2 Myrmidon Secutors Detachments" hidden="false" id="ef7e-1bb3-79ec-4970" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="2 Myrmidon Secutors models" hidden="false" id="ef7e-1bb3-79ec-4970" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Myrmidon Secutors" hidden="false" id="ed92-8d0a-c8b5-23b8" type="selectionEntry" targetId="da42-ba05-1a7e-c6b5">
               <constraints>
@@ -1399,7 +1399,7 @@ All Detachments included in this Support Formation must have the Cybernetica Cor
         <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="32dc-9ac1-3496-c6b6" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="2 Myrmidon Destructors Detachments" hidden="false" id="2197-5658-678d-7cbf">
+        <selectionEntry type="upgrade" import="true" name="2 Myrmidon Destructors models" hidden="false" id="2197-5658-678d-7cbf">
           <entryLinks>
             <entryLink import="true" name="Myrmidon Destructors" hidden="false" id="ffcd-e1c1-70c1-1de0" type="selectionEntry" targetId="d17a-fd59-ab4c-7770">
               <constraints>
@@ -1742,7 +1742,7 @@ All Detachments included in this Support Formation must have the Cybernetica Cor
         <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="4547-d67a-25a7-be4e" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="2 Castellax Detachments" hidden="false" id="5fe1-8da6-fc67-8faa">
+        <selectionEntry type="upgrade" import="true" name="2 Castellax models" hidden="false" id="5fe1-8da6-fc67-8faa">
           <entryLinks>
             <entryLink import="true" name="Castellax" hidden="false" id="59c1-2a76-32ca-13c3" type="selectionEntry" targetId="e623-8b92-b5e1-9482">
               <constraints>
@@ -1837,7 +1837,7 @@ All Detachments included in this Support Formation must have the Cybernetica Cor
         <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="230c-204a-42fd-57ee" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="2 Ursarax Detachments" hidden="false" id="54fb-113a-f9c2-0337" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="2 Ursarax models" hidden="false" id="54fb-113a-f9c2-0337" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Ursarax" hidden="false" id="ce0f-d426-7f81-fb60" type="selectionEntry" targetId="38a8-c364-ebe3-fa7d">
               <constraints>
@@ -2111,7 +2111,7 @@ All Detachments included in this Support Formation must have the Cybernetica Cor
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="2 Krios Venator Detachments" hidden="false" id="7812-0f30-47ae-e5a3" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="2 Krios Venator models" hidden="false" id="7812-0f30-47ae-e5a3" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Krios Venator" hidden="false" id="89bb-e3b8-4a92-eec3">
               <infoLinks>

@@ -537,7 +537,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
               </profiles>
               <infoLinks>
                 <infoLink name="Chain of Command" id="4fc8-28b5-359b-f8eb" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
-                <infoLink name="Explorator Adaption" id="2fa0-7265-7807-0a86" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+                <infoLink name="Explorator Adaptation" id="2fa0-7265-7807-0a86" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
                 <infoLink name="Scout" id="15ee-406b-c87e-3e25" hidden="false" type="rule" targetId="ea1-6996-9b3e-1dc1"/>
                 <infoLink name="Forward Deployment" id="9e25-57b2-4da7-5f59" hidden="false" targetId="54b4-67fd-a64-86d5" type="rule"/>
               </infoLinks>
@@ -661,7 +661,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
               </profiles>
               <infoLinks>
                 <infoLink name="Chain of Command" id="0548-59c4-5ff0-8172" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
-                <infoLink name="Explorator Adaption" id="2684-ea9f-43b2-9f73" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+                <infoLink name="Explorator Adaptation" id="2684-ea9f-43b2-9f73" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
                 <infoLink name="Scout" id="5928-c72e-a704-85e3" hidden="false" type="rule" targetId="ea1-6996-9b3e-1dc1"/>
                 <infoLink name="Forward Deployment" id="c780-a9af-e48f-32f4" hidden="false" targetId="54b4-67fd-a64-86d5" type="rule"/>
               </infoLinks>
@@ -759,7 +759,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
               </profiles>
               <infoLinks>
                 <infoLink name="Chain of Command" id="ee0f-5fe9-a54e-5ef1" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
-                <infoLink name="Explorator Adaption" id="9579-f3f8-276f-f0ee" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+                <infoLink name="Explorator Adaptation" id="9579-f3f8-276f-f0ee" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
                 <infoLink name="Scout" id="b5db-cf3f-58e5-19dd" hidden="false" type="rule" targetId="ea1-6996-9b3e-1dc1"/>
                 <infoLink name="Forward Deployment" id="a12e-d62c-3e8f-4cb4" hidden="false" targetId="54b4-67fd-a64-86d5" type="rule"/>
               </infoLinks>
@@ -1044,7 +1044,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
                 </selectionEntry>
               </selectionEntries>
               <infoLinks>
-                <infoLink name="Explorator Adaption" id="ba60-087b-42f4-0e8a" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
+                <infoLink name="Explorator Adaptation" id="ba60-087b-42f4-0e8a" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
                 <infoLink name="Chain of Command" id="b0ad-df36-2f81-f37d" hidden="false" type="rule" targetId="edea-7a2c-4b66-4ba4"/>
               </infoLinks>
               <costs>
@@ -1127,7 +1127,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
                 </selectionEntry>
               </selectionEntries>
               <infoLinks>
-                <infoLink name="Explorator Adaption" id="919f-c035-9f18-02d1" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
+                <infoLink name="Explorator Adaptation" id="919f-c035-9f18-02d1" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
                 <infoLink name="Chain of Command" id="eb73-697e-bf21-5f8d" hidden="false" type="rule" targetId="edea-7a2c-4b66-4ba4"/>
               </infoLinks>
               <costs>
@@ -1202,7 +1202,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
                 </selectionEntry>
               </selectionEntries>
               <infoLinks>
-                <infoLink name="Explorator Adaption" id="6596-7bcd-6bb6-9c91" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
+                <infoLink name="Explorator Adaptation" id="6596-7bcd-6bb6-9c91" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
                 <infoLink name="Chain of Command" id="158f-f551-2925-6ff3" hidden="false" type="rule" targetId="edea-7a2c-4b66-4ba4"/>
               </infoLinks>
               <costs>
@@ -1379,7 +1379,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
                 </selectionEntry>
               </selectionEntries>
               <infoLinks>
-                <infoLink name="Explorator Adaption" id="2025-0fd2-a58b-69d9" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
+                <infoLink name="Explorator Adaptation" id="2025-0fd2-a58b-69d9" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
                 <infoLink name="Chain of Command" id="65dd-2d06-d105-923c" hidden="false" type="rule" targetId="edea-7a2c-4b66-4ba4"/>
               </infoLinks>
               <costs>
@@ -1462,7 +1462,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
                 </selectionEntry>
               </selectionEntries>
               <infoLinks>
-                <infoLink name="Explorator Adaption" id="d500-3f3e-ada0-d529" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
+                <infoLink name="Explorator Adaptation" id="d500-3f3e-ada0-d529" hidden="false" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
                 <infoLink name="Chain of Command" id="61e8-6c78-b5af-9afe" hidden="false" type="rule" targetId="edea-7a2c-4b66-4ba4"/>
               </infoLinks>
               <costs>
@@ -1983,7 +1983,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
             <modifier type="set" value="Transport (4)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Explorator Adaption" hidden="false" id="15bd-3be6-c9c8-737d" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
+        <infoLink name="Explorator Adaptation" hidden="false" id="15bd-3be6-c9c8-737d" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
         <infoLink name="Dracosan" id="32f4-ce53-9408-2eaf" hidden="false" type="profile" targetId="9809-b42c-1837-84a5"/>
       </infoLinks>
       <selectionEntries>
@@ -2033,7 +2033,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
             <modifier type="set" value="Transport (2)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Explorator Adaption" hidden="false" id="dfb9-810b-3a57-395" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
+        <infoLink name="Explorator Adaptation" hidden="false" id="dfb9-810b-3a57-395" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
         <infoLink name="Dracosan" id="0740-90ae-c2ae-d6c2" hidden="false" type="profile" targetId="9809-b42c-1837-84a5"/>
       </infoLinks>
       <costs>
@@ -2476,7 +2476,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
         <categoryLink name="Solar Auxilia" hidden="false" id="e010-8aa7-d351-c276" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Detachments" id="7dc3-742b-c09f-0a5b" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="Models" id="7dc3-742b-c09f-0a5b" hidden="false" collective="false" import="true">
           <constraints>
             <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="c3de-efc6-9ccc-2a8a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -2559,7 +2559,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
                     <infoLink name="Line" id="5a42-d3af-f335-cbb9" hidden="false" targetId="3da1-56dc-4df5-41c4" type="rule"/>
                   </infoLinks>
                   <entryLinks>
-                    <entryLink import="true" name="Auxilia Lasrifles" hidden="false" id="8014-5af8-159d-23b0" collective="false" targetId="00d9-b942-bf7a-17f3" type="selectionEntry">
+                    <entryLink import="true" name="Auxilia lasrifles" hidden="false" id="8014-5af8-159d-23b0" collective="false" targetId="00d9-b942-bf7a-17f3" type="selectionEntry">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="479c-62ad-8cdd-2b3e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee66-4595-41bc-568a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -3033,7 +3033,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Demolition charge" hidden="false" id="ced5-a66-3ba4-3c4e" flatten="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="2 Cyclops" hidden="false" id="3240-7910-a9cf-f7aa" collective="true" flatten="false">
+                <selectionEntry type="upgrade" import="true" name="2 Cyclops models" hidden="false" id="3240-7910-a9cf-f7aa" collective="true" flatten="false">
                   <selectionEntries>
                     <selectionEntry type="model" import="true" name="Cyclops" hidden="false" id="e18c-4fa-28a7-f4ad" collective="true">
                       <constraints>
@@ -3090,7 +3090,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Incineration charge" hidden="false" id="c1cb-5e13-b353-13c7" flatten="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="2 Cyclops" hidden="false" id="eb09-4b83-b2d4-dfd6" collective="true" flatten="false">
+                <selectionEntry type="upgrade" import="true" name="2 Cyclops models" hidden="false" id="eb09-4b83-b2d4-dfd6" collective="true" flatten="false">
                   <selectionEntries>
                     <selectionEntry type="model" import="true" name="Cyclops" hidden="false" id="4693-82d9-3c3-908e" collective="true">
                       <constraints>
@@ -3262,7 +3262,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
         <categoryLink name="Solar Auxilia" hidden="false" id="b3e2-6907-61b2-3626" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Auxilia Rapiers" id="f0bb-7f6f-f8e6-8249" hidden="false">
+        <selectionEntryGroup name="Models" id="f0bb-7f6f-f8e6-8249" hidden="false">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Auxilia Rapier w/ Laser destroyer array" hidden="false" id="9131-e170-3b31-c767" collective="false">
               <infoLinks>
@@ -3461,7 +3461,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
         <categoryLink name="Solar Auxilia" hidden="false" id="a39f-2413-5ac0-b7dc" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Tarantulas" id="7b8f-54ae-af92-6f7e" hidden="false">
+        <selectionEntryGroup name="Models" id="7b8f-54ae-af92-6f7e" hidden="false">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Auxilia Tarantula w/ Hyperios launcher" hidden="false" id="d62d-c2c1-d4ba-f453" collective="false">
               <infoLinks>
@@ -3627,7 +3627,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
               </profiles>
               <infoLinks>
                 <infoLink name="Chain of Command" id="ed41-dffb-fe62-74e8" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
-                <infoLink name="Explorator Adaption" id="39b7-6d57-ff67-63ef" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+                <infoLink name="Explorator Adaptation" id="39b7-6d57-ff67-63ef" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Sponson weapons" id="dc5d-a54d-5ebd-36d1" hidden="false" collective="false" import="true">
@@ -3825,7 +3825,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
               </profiles>
               <infoLinks>
                 <infoLink name="Chain of Command" id="168c-8fd1-7f74-6723" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
-                <infoLink name="Explorator Adaption" id="54ae-4f1c-f6b2-a049" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+                <infoLink name="Explorator Adaptation" id="54ae-4f1c-f6b2-a049" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Sponson weapons" id="a793-0412-c0ed-b077" hidden="false" collective="false" import="true">
@@ -4005,7 +4005,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
               </profiles>
               <infoLinks>
                 <infoLink name="Chain of Command" id="dfdd-dadb-3839-382e" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
-                <infoLink name="Explorator Adaption" id="faa4-fd35-30ee-5edf" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+                <infoLink name="Explorator Adaptation" id="faa4-fd35-30ee-5edf" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Sponson weapons" id="5883-1edb-b0a0-4f6b" hidden="false" collective="false" import="true">
@@ -4180,7 +4180,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
               </profiles>
               <infoLinks>
                 <infoLink name="Chain of Command" id="15f3-9b76-6564-39b4" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
-                <infoLink name="Explorator Adaption" id="813e-0f05-8cb3-e1a3" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+                <infoLink name="Explorator Adaptation" id="813e-0f05-8cb3-e1a3" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Sponson Weapon" id="bd5e-7cc2-12cc-6127" hidden="false" collective="false" import="true">
@@ -4360,7 +4360,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
               </profiles>
               <infoLinks>
                 <infoLink name="Chain of Command" id="25dd-0e44-70a1-a0b3" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
-                <infoLink name="Explorator Adaption" id="b201-35a3-3ce9-9623" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+                <infoLink name="Explorator Adaptation" id="b201-35a3-3ce9-9623" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Sponson Weapon" id="2294-bd7c-3dad-7f77" hidden="false" collective="false" import="true">
@@ -4536,7 +4536,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
               </profiles>
               <infoLinks>
                 <infoLink name="Chain of Command" id="c65c-1569-f470-cbdf" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
-                <infoLink name="Explorator Adaption" id="f7d4-5bfb-fd8e-4e99" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+                <infoLink name="Explorator Adaptation" id="f7d4-5bfb-fd8e-4e99" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Sponson Weapon" id="369b-4620-a9a8-2730" hidden="false" collective="false" import="true">
@@ -4761,7 +4761,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
           </profiles>
           <infoLinks>
             <infoLink name="Chain of Command" id="760c-8906-efeb-ebf1" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
-            <infoLink name="Explorator Adaption" id="c182-ed1e-c7fa-f7cf" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
+            <infoLink name="Explorator Adaptation" id="c182-ed1e-c7fa-f7cf" hidden="false" targetId="9e10-bda9-5ee4-76ee" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Hull Mounted Weapon" id="3d12-12c4-2050-99f0" hidden="false" collective="false" import="true">
@@ -4770,7 +4770,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d6e-b394-86e6-db5b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Hull Mounted Demolisher Cannon" hidden="false" id="a97a-70e2-5c60-ccca" collective="false" targetId="40a4-f793-62c7-99f1" type="selectionEntry"/>
+                <entryLink import="true" name="Hull Mounted demolisher cannon" hidden="false" id="a97a-70e2-5c60-ccca" collective="false" targetId="40a4-f793-62c7-99f1" type="selectionEntry"/>
                 <entryLink import="true" name="Hull Mounted lascannon" hidden="false" id="97d7-a57b-806a-7e89" collective="false" targetId="6ba5-d691-3a7d-e31e" type="selectionEntry"/>
                 <entryLink import="true" name="Hull Mounted heavy bolter" hidden="false" id="1fe7-db90-1d7b-809e" collective="false" targetId="ab94-459f-d7e5-7a04" type="selectionEntry"/>
               </entryLinks>
@@ -6448,7 +6448,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
         <categoryLink name="Artillery" hidden="false" id="254a-c97-7e08-c38d" targetId="98f1-ce9c-c2b2-cea5" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="4 Medusae" hidden="false" id="ebba-c7e2-fe5a-110b">
+        <selectionEntry type="upgrade" import="true" name="4 Medusae models" hidden="false" id="ebba-c7e2-fe5a-110b">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Medusa" hidden="false" id="ea9-a0c-d560-35c2" collective="true">
               <profiles>
@@ -6540,7 +6540,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
         <categoryLink name="Artillery" hidden="false" id="628e-ba5c-6ff8-4c7d" targetId="98f1-ce9c-c2b2-cea5" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="4 Basilisks" hidden="false" id="26aa-7f71-9c5b-49a5">
+        <selectionEntry type="upgrade" import="true" name="4 Basilisk models" hidden="false" id="26aa-7f71-9c5b-49a5">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Basilisk" hidden="false" id="be4b-aada-63b3-541e" collective="true">
               <profiles>
@@ -6627,7 +6627,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Auxilia Dracosan Detachment" hidden="false" id="12d2-3bf9-e551-2090">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Upgrades" id="79-9935-5b60-6aca" hidden="false" defaultSelectionEntryId="222-4e6-dc4c-e877">
+        <selectionEntryGroup name="Models" id="79-9935-5b60-6aca" hidden="false" defaultSelectionEntryId="222-4e6-dc4c-e877">
           <entryLinks>
             <entryLink import="true" name="Dracosan w/ twin lascannon" hidden="false" id="222-4e6-dc4c-e877" type="selectionEntry" targetId="cc26-409d-a289-38e8">
               <constraints>
@@ -6905,8 +6905,8 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7e54-4c5a-e05d-2bae"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Skystrike Missiles" hidden="false" id="a44b-d9a0-648d-8098" collective="false" targetId="d435-679f-43a6-06f0" type="selectionEntry"/>
-                <entryLink import="true" name="Wing Bombs" hidden="false" id="f9e2-4382-b133-06f4" type="selectionEntry" targetId="5eb7-152b-1c7c-ca93">
+                <entryLink import="true" name="Skystrike missiles" hidden="false" id="a44b-d9a0-648d-8098" collective="false" targetId="d435-679f-43a6-06f0" type="selectionEntry"/>
+                <entryLink import="true" name="Wing bombs" hidden="false" id="f9e2-4382-b133-06f4" type="selectionEntry" targetId="5eb7-152b-1c7c-ca93">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef92-2b9e-5254-597b" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ff1-6a2c-de26-750c" includeChildSelections="false"/>
@@ -7370,7 +7370,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
         <categoryLink name="Solar Auxilia" hidden="false" id="b0fc-71da-5afb-778f" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Marauders" id="46ab-6143-719a-bec3" hidden="false" collective="false" import="true" defaultSelectionEntryId="15b4-c14-35b1-e40">
+        <selectionEntryGroup name="Models" id="46ab-6143-719a-bec3" hidden="false" collective="false" import="true" defaultSelectionEntryId="15b4-c14-35b1-e40">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="addc-4ad7-eb73-8d9a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5425-6ca8-5a4f-9246" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -7549,13 +7549,13 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Rear Mounted Heavy Bolter" hidden="false" id="7d3a-c814-53a-c824" collective="false" targetId="f623-b32d-36fe-cdd7" type="selectionEntry">
+                <entryLink import="true" name="Rear Mounted heavy bolter" hidden="false" id="7d3a-c814-53a-c824" collective="false" targetId="f623-b32d-36fe-cdd7" type="selectionEntry">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f9ea-b821-8b9b-e34a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce2f-8803-c4de-69e6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Nose Mounted Heavy Bolter" hidden="false" id="5579-af74-3caf-a132" collective="false" targetId="4140-571d-f200-923a" type="selectionEntry">
+                <entryLink import="true" name="Nose Mounted heavy bolter" hidden="false" id="5579-af74-3caf-a132" collective="false" targetId="4140-571d-f200-923a" type="selectionEntry">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cfa0-bf6a-883b-8503" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73b0-660e-1d69-5cc2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -7760,13 +7760,13 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
                 </infoLink>
               </infoLinks>
               <entryLinks>
-                <entryLink import="true" name="Nose Mounted Heavy Bolter" hidden="false" id="a2fc-4587-6eba-51" collective="false" targetId="4140-571d-f200-923a" type="selectionEntry">
+                <entryLink import="true" name="Nose Mounted heavy bolter" hidden="false" id="a2fc-4587-6eba-51" collective="false" targetId="4140-571d-f200-923a" type="selectionEntry">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e89-14e9-20fc-7842" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c27-7e99-e005-b6e2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Rear Mounted Heavy Bolter" hidden="false" id="c181-1711-e770-91c5" collective="false" targetId="f623-b32d-36fe-cdd7" type="selectionEntry">
+                <entryLink import="true" name="Rear Mounted heavy bolter" hidden="false" id="c181-1711-e770-91c5" collective="false" targetId="f623-b32d-36fe-cdd7" type="selectionEntry">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9c2-d364-22d6-e546" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d93-8be-a300-d2e7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -7894,7 +7894,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
     <catalogueLink type="catalogue" name="Mechanicum - Library" id="63f8-d006-66ab-7448" targetId="5943-3ab9-e00f-e458"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Artalax Battle-Automata Maniple" hidden="false" id="84bf-9bbb-3d8c-2dcd" type="selectionEntry" targetId="e1db-1b55-f141-5eff">
+    <entryLink import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="84bf-9bbb-3d8c-2dcd" type="selectionEntry" targetId="e1db-1b55-f141-5eff">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -8037,11 +8037,11 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
     <entryLink import="true" name="Leman Russ Demolisher Squadron" hidden="false" id="a56b-ceee-6a44-cb12" type="selectionEntry" targetId="58ae-3a27-ec39-c699"/>
     <entryLink import="true" name="Leman Russ Annihilator Squadron" hidden="false" id="5c3b-bca4-8979-7147" type="selectionEntry" targetId="35a3-e0e3-d57d-db7c"/>
     <entryLink import="true" name="Malcador Tank Squadron" hidden="false" id="0df8-9a8f-220b-1368" type="selectionEntry" targetId="f6f5-66ec-1654-1c38"/>
-    <entryLink import="true" name="Malcador Tank Squadron" hidden="false" id="e96b-0c32-acf5-b6b8" type="selectionEntry" targetId="b15a-7d95-28ce-255d"/>
+    <entryLink import="true" name="Malcador Vanquisher Squadron" hidden="false" id="e96b-0c32-acf5-b6b8" type="selectionEntry" targetId="b15a-7d95-28ce-255d"/>
     <entryLink import="true" name="Malcador Annihilator Squadron" hidden="false" id="ffd4-2462-f274-1bb4" type="selectionEntry" targetId="df19-5699-fa01-d40c"/>
     <entryLink import="true" name="Auxilia Malcador Infernus Squadron" hidden="false" id="4947-0f6b-10c1-3fe5" type="selectionEntry" targetId="c936-afc5-dc20-1d2e"/>
     <entryLink import="true" name="Auxilia Valdor Squadron" hidden="false" id="a9cd-12f1-5ff9-1a7d" type="selectionEntry" targetId="1115-c48e-77f3-f92e"/>
-    <entryLink import="true" name="Auxilia Super-heavy Tank Squadron" hidden="false" id="06bf-d9c8-6751-4fd7" type="selectionEntry" targetId="db83-63c6-e511-8994"/>
+    <entryLink import="true" name="Auxilia Baneblade Squadron" hidden="false" id="06bf-d9c8-6751-4fd7" type="selectionEntry" targetId="db83-63c6-e511-8994"/>
     <entryLink import="true" name="Auxilia Hellhammer Squadron" hidden="false" id="b121-c3ae-516f-8e31" type="selectionEntry" targetId="54ca-d2ab-67b6-0a87"/>
     <entryLink import="true" name="Auxilia Stormhammer Squadron" hidden="false" id="84cb-051d-dd46-12f3" type="selectionEntry" targetId="ace0-e3b9-28e1-ef7a"/>
     <entryLink import="true" name="Auxilia Shadowsword Squadron" hidden="false" id="159d-3c24-842f-7de8" type="selectionEntry" targetId="b5e2-3aa4-7813-114f"/>
