@@ -11384,6 +11384,64 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
           </conditionGroups>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Legion Scimitar Jetbike Squadron" hidden="false" id="7345-3585-482e-79e6" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Scimitar Jetbike" hidden="false" id="f513-2fae-a290-b772" type="selectionEntry" targetId="fc0-fada-8c8b-a56">
+              <constraints>
+                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="bdf3-0148-4a21-3bc8-min"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="bdf3-0148-4a21-3bc8-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6437-3016-e071-aad9-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6437-3016-e071-aad9-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Legion Scimitar Jetbike Squadron" hidden="false" id="9cc7-58d7-52f2-c1c8" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Scimitar Jetbike" hidden="false" id="0328-c2cf-3c85-ad07" type="selectionEntry" targetId="fc0-fada-8c8b-a56">
+              <constraints>
+                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="4cee-70c0-81b3-8f3d-min"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="4cee-70c0-81b3-8f3d-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c32-c423-29e2-dabb-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c32-c423-29e2-dabb-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Legion Scimitar Land Speeder Squadron" hidden="false" id="0d46-415b-084f-1d8d" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Land Speeder w/ multi-melta" hidden="false" id="d38f-f5d8-e6c4-5f56" type="selectionEntry" targetId="1cf8-2308-00b8-35d6">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f940-7fc1-63c9-f99d-min"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f940-7fc1-63c9-f99d-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b6b-6028-7bdd-1900-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b6b-6028-7bdd-1900-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Legion Javelin Squadron" hidden="false" id="89c8-1526-2614-b794" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea1f-98cc-3d72-cb2c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea1f-98cc-3d72-cb2c-max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Javelin w/ lascannon" hidden="false" id="b110-9a2d-7510-1704" type="selectionEntry" targetId="3e5b-4213-da5e-2f67">
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="9591-2902-b112-1a54-min"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="9591-2902-b112-1a54-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="White Scars Chogorian Warband" hidden="false" id="5196-060a-8739-fbff" subType="unit-group">
       <costs>
@@ -11421,7 +11479,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
     <catalogueLink type="catalogue" name="Mechanicum - Library" id="8649-6a4f-f162-f3f0" targetId="5943-3ab9-e00f-e458"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Artalax Battle-Automata Maniple" hidden="false" id="c23b-4cb8-1436-bd8d" type="selectionEntry" targetId="e1db-1b55-f141-5eff">
+    <entryLink import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="c23b-4cb8-1436-bd8d" type="selectionEntry" targetId="e1db-1b55-f141-5eff">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
