@@ -77,108 +77,6 @@
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="5b5e-4ee8-cdf7-a048" collective="false">
-      <profiles>
-        <profile name="Knight Moirax" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="c1de-9668-1100-cb8f">
-          <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
-            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
-            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+6</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">2+</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Ion Shield (X)" id="c41f-19df-4ab2-d24b" hidden="false" targetId="3016-c284-15c3-6753" type="rule">
-          <modifiers>
-            <modifier type="set" value="Ion Shield (5+)" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Nimble" id="83cd-e9f4-0c9c-a76c" hidden="false" targetId="bc40-962f-5fc5-771a" type="rule"/>
-        <infoLink name="Ionic Flare Shield" id="7f43-b689-b6ae-65b7" hidden="false" targetId="91cb-858e-5961-1931" type="rule"/>
-      </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="aba2-4fb2-42d4-71bf" hidden="false" collective="false" import="true" defaultSelectionEntryId="26db-eaee-0f8a-3eb2">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="99c2-b4af-d12b-0dbf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5cf5-7b68-cc0b-d90f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Volkite Veuglair and Gyges Siege Claw" hidden="false" id="5af4-5f38-79a8-52bb" collective="false">
-              <profiles>
-                <profile name="Volkite Veuglair" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f6a9-f85f-9a15-9a91">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">14&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Deflagrate, Light AT</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Gyges Siege Claw" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ec04-c482-432d-1f60">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Rend, Wrecker (2)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Arc (Front/Rear)" id="93d3-a24a-e723-3ba2" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                  <modifiers>
-                    <modifier type="set" value="Arc (Front)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Rend" id="a597-2b1e-a769-78a1" hidden="false" targetId="6d1b-9fcd-3541-f46e" type="rule"/>
-                <infoLink name="Wrecker (X)" id="e8b4-aeac-bd9a-2d60" hidden="false" targetId="e40-19fc-8c79-9a12" type="rule">
-                  <modifiers>
-                    <modifier type="set" value="Wrecker (2)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Deflagrate" id="8ced-f5ef-af64-3d39" hidden="false" targetId="711e-2910-b797-71a8" type="rule"/>
-                <infoLink name="Light AT" id="5e6a-5a33-1036-e041" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Armiger Lightning Locks" hidden="false" id="ba1e-f7c7-2cee-8bb4" collective="false">
-              <profiles>
-                <profile name="Armiger Lightning Locks" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8fec-8eed-2ade-be6b">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Arc (Front/Rear)" id="2bb8-3928-6d14-97a4" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                  <modifiers>
-                    <modifier type="set" value="Arc (Front)" field="name"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="2"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mori quake cannon" hidden="false" id="d431-9b1c-7fa0-05e3" collective="false">
       <profiles>
         <profile name="Mori quake cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="57ef-75f4-0ce8-0115">
@@ -330,6 +228,7 @@
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="354c-429c-cccc-554d" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="8982-3f16-4003-559a" targetId="1302-0157-2be4-3d34" primary="true"/>
+        <categoryLink name="Collegia Titanica" hidden="false" id="deb2-838b-460d-8645" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
@@ -680,6 +579,7 @@
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="7c06-49b9-0c53-bfb8" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="5fcf-11a1-aaa2-86a6" targetId="1302-0157-2be4-3d34" primary="true"/>
+        <categoryLink name="Collegia Titanica" hidden="false" id="bf0d-2799-5645-ee52" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Ardex Mega-Bolters" hidden="false" id="029c-78ab-c1fb-a6c2" collective="false">
@@ -846,6 +746,7 @@
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="3094-1f75-f697-9a25" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="9f32-7166-aa1e-5d2f" targetId="1302-0157-2be4-3d34" primary="true"/>
+        <categoryLink name="Collegia Titanica" hidden="false" id="3b45-7109-279b-6e1f" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Main Weapons" id="5a83-cf42-e4c8-7c8a" hidden="false" collective="false" import="true">
@@ -922,22 +823,22 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Reaver Gatling Blaster" hidden="false" id="7596-20d6-6019-800e" collective="false" targetId="9347-4799-21f6-414b" type="selectionEntry">
+            <entryLink import="true" name="Reaver gatling blaster" hidden="false" id="7596-20d6-6019-800e" collective="false" targetId="9347-4799-21f6-414b" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ad34-b0f5-6416-00a1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Reaver Laser Blaster" hidden="false" id="6b55-0201-906e-c720" collective="false" targetId="ab91-40d8-18ce-dfdb" type="selectionEntry">
+            <entryLink import="true" name="Reaver laser blaster" hidden="false" id="6b55-0201-906e-c720" collective="false" targetId="ab91-40d8-18ce-dfdb" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c993-1d03-1439-fabe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Reaver Melta Cannon" hidden="false" id="651b-1cf8-a2d8-e7e2" collective="false" targetId="5d2a-454f-b448-70dc" type="selectionEntry">
+            <entryLink import="true" name="Reaver melta cannon" hidden="false" id="651b-1cf8-a2d8-e7e2" collective="false" targetId="5d2a-454f-b448-70dc" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="71cd-1275-3fbf-c9a0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Reaver Volcano Cannon" hidden="false" id="4dbf-0a6f-2633-008e" collective="false" targetId="8bc3-4da8-b1e0-b072" type="selectionEntry">
+            <entryLink import="true" name="Reaver volcano cannon" hidden="false" id="4dbf-0a6f-2633-008e" collective="false" targetId="8bc3-4da8-b1e0-b072" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f2d2-ff14-8cf2-3da4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
@@ -1160,6 +1061,7 @@
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="7d29-69ec-511e-bedf" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="f4fd-3d59-c92a-e78c" targetId="1302-0157-2be4-3d34" primary="true"/>
+        <categoryLink name="Collegia Titanica" hidden="false" id="16a2-9fbc-f5aa-880c" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Arm Weapons" id="f829-8ccf-7375-193c" hidden="false" collective="false" import="true">
@@ -1168,22 +1070,22 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ee18-1516-8891-35e9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Reaver Gatling Blaster" hidden="false" id="9228-450d-41bb-8adf" collective="false" targetId="9347-4799-21f6-414b" type="selectionEntry">
+            <entryLink import="true" name="Reaver gatling blaster" hidden="false" id="9228-450d-41bb-8adf" collective="false" targetId="9347-4799-21f6-414b" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a498-e8bb-fd66-033d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Reaver Melta Cannon" hidden="false" id="9e76-02e7-3764-4039" collective="false" targetId="5d2a-454f-b448-70dc" type="selectionEntry">
+            <entryLink import="true" name="Reaver melta cannon" hidden="false" id="9e76-02e7-3764-4039" collective="false" targetId="5d2a-454f-b448-70dc" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0987-36f0-ce1b-25e0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Reaver Laser Blaster" hidden="false" id="cd38-ec8d-f9c4-93cc" collective="false" targetId="ab91-40d8-18ce-dfdb" type="selectionEntry">
+            <entryLink import="true" name="Reaver laser blaster" hidden="false" id="cd38-ec8d-f9c4-93cc" collective="false" targetId="ab91-40d8-18ce-dfdb" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7e41-45db-d3ba-ead2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Reaver Volcano Cannon" hidden="false" id="dd02-5b87-1fe1-cb40" collective="false" targetId="8bc3-4da8-b1e0-b072" type="selectionEntry">
+            <entryLink import="true" name="Reaver volcano cannon" hidden="false" id="dd02-5b87-1fe1-cb40" collective="false" targetId="8bc3-4da8-b1e0-b072" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3d91-dc4a-662f-b937" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
@@ -1196,8 +1098,8 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f99c-ed3e-0f05-ce54" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Belicosa Volcano Cannon" hidden="false" id="4831-655e-67b2-694c" collective="false" targetId="c309-92e3-bbce-25ce" type="selectionEntry"/>
-            <entryLink import="true" name="Mori Quake Cannon" hidden="false" id="bcd7-ca80-91ec-c60f" collective="false" targetId="d431-9b1c-7fa0-05e3" type="selectionEntry"/>
+            <entryLink import="true" name="Belicosa volcano cannon" hidden="false" id="4831-655e-67b2-694c" collective="false" targetId="c309-92e3-bbce-25ce" type="selectionEntry"/>
+            <entryLink import="true" name="Mori quake cannon" hidden="false" id="bcd7-ca80-91ec-c60f" collective="false" targetId="d431-9b1c-7fa0-05e3" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1213,7 +1115,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f40-261f-f14b-3e63" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Anvillus pattern defence batteries" hidden="false" id="2afb-b107-8f16-e513" type="selectionEntry" targetId="ec38-0dd9-e3e9-42d2">
+        <entryLink import="true" name="Anvilus pattern defence batteries" hidden="false" id="2afb-b107-8f16-e513" type="selectionEntry" targetId="ec38-0dd9-e3e9-42d2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be61-efb5-fc22-946b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a0a-3d63-951a-71a0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1243,6 +1145,7 @@
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="e3eb-2054-0851-455f" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="fb19-93ca-f908-6fd6" targetId="1302-0157-2be4-3d34" primary="true"/>
+        <categoryLink name="Collegia Titanica" hidden="false" id="0771-3dd1-c80c-6ceb" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord Arm Weapons" hidden="false" id="d852-e525-b138-31b3" collective="false" targetId="3cdd-30c2-95e4-5260" type="selectionEntryGroup">
@@ -1252,13 +1155,13 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Warlord Carapace Weapon" hidden="false" id="0ef9-df0e-204e-aa26" collective="false" targetId="17c9-3e50-6d8f-9f89" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Ardex-defensor Lascannon turrets" hidden="false" id="9192-ac1d-d341-2b84" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry">
+        <entryLink import="true" name="Ardex-defensor lascannon turrets" hidden="false" id="9192-ac1d-d341-2b84" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e324-de85-2486-c7a6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="28a1-898c-efc8-ecde" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Ardex-defensor Mauler Bolt Cannon Turrets" hidden="false" id="5d05-6ed8-ddb7-9f31" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry">
+        <entryLink import="true" name="Ardex-defensor mauler bolt cannon turrets" hidden="false" id="5d05-6ed8-ddb7-9f31" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1440-924d-a90b-8da4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2198-b5d7-bd3f-60d7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1301,6 +1204,7 @@
         <categoryLink name="Titan (5)" hidden="false" id="2b26-3677-0c53-74aa" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Loyalist" hidden="false" id="161d-4e98-362f-0648" targetId="1b68-cce9-e11c-fde7" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="2967-bc92-2867-4fe8" targetId="1302-0157-2be4-3d34" primary="true"/>
+        <categoryLink name="Collegia Titanica" hidden="false" id="ca7e-774c-970a-c85f" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Death pulse" hidden="false" id="4b4b-5ce8-1826-a67f" collective="false">
@@ -1398,13 +1302,13 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Warlord Carapace Weapon" hidden="false" id="03d0-563e-ebc8-5475" collective="false" targetId="17c9-3e50-6d8f-9f89" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Ardex-defensor Lascannon turrets" hidden="false" id="fcdb-9ed0-0bfe-7db5" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry">
+        <entryLink import="true" name="Ardex-defensor lascannon turrets" hidden="false" id="fcdb-9ed0-0bfe-7db5" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40a0-09f6-cb24-c36f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e8e3-5bd8-de4d-14ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Ardex-defensor Mauler Bolt Cannon Turrets" hidden="false" id="7506-aab1-fbeb-aff6" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry">
+        <entryLink import="true" name="Ardex-defensor mauler bolt cannon turrets" hidden="false" id="7506-aab1-fbeb-aff6" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0e7-fdcb-4a44-aaa0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36e4-8a34-7ab0-36b7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1440,6 +1344,7 @@
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="19b4-8027-667d-4dfc" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="dfe1-383e-7ee2-52fa" targetId="1302-0157-2be4-3d34" primary="true"/>
+        <categoryLink name="Collegia Titanica" hidden="false" id="827a-fabe-b83c-1a70" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Revelator missile launcher" hidden="false" id="1287-ff49-4c3e-777e" collective="false">
@@ -1522,13 +1427,13 @@
       <entryLinks>
         <entryLink import="true" name="Warmaster Shoulder Weapons" hidden="false" id="7835-ef53-c59b-522b" collective="false" targetId="4a61-2ddc-4aa5-a98e" type="selectionEntryGroup"/>
         <entryLink import="true" name="Warmaster Carapace Weapons" hidden="false" id="6a7e-94b0-4e1c-86e8" collective="false" targetId="4d3b-908e-0462-7c96" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Ardex-defensor Mauler Bolt Cannon Turrets" hidden="false" id="0e2d-da2e-9899-fb37" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry">
+        <entryLink import="true" name="Ardex-defensor mauler bolt cannon turrets" hidden="false" id="0e2d-da2e-9899-fb37" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f572-dff6-f176-ccfa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d09-c597-d7bb-6650" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Ardex-defensor Lascannon turrets" hidden="false" id="4fde-5795-1155-b5f1" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry">
+        <entryLink import="true" name="Ardex-defensor lascannon turrets" hidden="false" id="4fde-5795-1155-b5f1" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f0b-f4c2-543a-8d8c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="feeb-c9f9-f180-9717" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1563,6 +1468,7 @@
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="049b-8463-011f-e8e0" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="5e0a-d837-70f9-7d65" targetId="1302-0157-2be4-3d34" primary="true"/>
+        <categoryLink name="Collegia Titanica" hidden="false" id="f2db-afab-bb69-193d" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Desolator chainsword" hidden="false" id="64a5-dd3e-b3d8-4b36" collective="false">
@@ -1702,13 +1608,13 @@
       <entryLinks>
         <entryLink import="true" name="Warmaster Shoulder Weapons" hidden="false" id="21aa-9745-7dc2-58d1" collective="false" targetId="4a61-2ddc-4aa5-a98e" type="selectionEntryGroup"/>
         <entryLink import="true" name="Warmaster Carapace Weapons" hidden="false" id="a363-9e34-29f0-0b99" collective="false" targetId="4d3b-908e-0462-7c96" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Ardex-defensor Mauler Bolt Cannon Turrets" hidden="false" id="a8d4-dcd5-555d-ed07" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry">
+        <entryLink import="true" name="Ardex-defensor mauler bolt cannon turrets" hidden="false" id="a8d4-dcd5-555d-ed07" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dda5-3dc0-f7b2-9ea1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a28b-a364-524d-87f0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Ardex-defensor Lascannon turrets" hidden="false" id="db69-b03e-3021-e0e6" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry">
+        <entryLink import="true" name="Ardex-defensor lascannon turrets" hidden="false" id="db69-b03e-3021-e0e6" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="652f-4256-62c6-a1dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6d2-ad62-bd39-18ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2062,12 +1968,12 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Belicosa Volcano Cannon" hidden="false" id="af40-69cb-0f39-9cac" collective="false" targetId="c309-92e3-bbce-25ce" type="selectionEntry">
+        <entryLink import="true" name="Belicosa volcano cannon" hidden="false" id="af40-69cb-0f39-9cac" collective="false" targetId="c309-92e3-bbce-25ce" type="selectionEntry">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a8b4-d197-cc0b-35eb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mori Quake Cannon" hidden="false" id="96ad-fa34-91ad-1bd5" collective="false" targetId="d431-9b1c-7fa0-05e3" type="selectionEntry">
+        <entryLink import="true" name="Mori quake cannon" hidden="false" id="96ad-fa34-91ad-1bd5" collective="false" targetId="d431-9b1c-7fa0-05e3" type="selectionEntry">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c917-7e0a-153c-4f7e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -2237,7 +2143,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Anvillus pattern defence batteries" hidden="false" id="3da0-459c-9121-7415" type="selectionEntry" targetId="ec38-0dd9-e3e9-42d2"/>
+        <entryLink import="true" name="Anvilus pattern defence batteries" hidden="false" id="3da0-459c-9121-7415" type="selectionEntry" targetId="ec38-0dd9-e3e9-42d2"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Warmaster Shoulder Weapons" id="4a61-2ddc-4aa5-a98e" hidden="false" collective="false" import="true">
@@ -2342,4 +2248,7 @@
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <categoryEntries>
+    <categoryEntry name="Collegia Titanica" id="d965-f291-a87b-657f" hidden="false"/>
+  </categoryEntries>
 </catalogue>

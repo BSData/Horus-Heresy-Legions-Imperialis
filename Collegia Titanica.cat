@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="0fdc-12aa-6f3d-aa58" name="Collegia Titanica" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="28" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry name="Collegia Titanica" id="d965-f291-a87b-657f" hidden="false"/>
     <categoryEntry name="Warhound" id="8cc0-dc3a-0dd0-a375" hidden="false">
       <comment>Detachment Type</comment>
     </categoryEntry>
@@ -230,20 +229,32 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Acastus Knight Banner" hidden="false" id="0c5f-9c3d-5884-4b16" type="selectionEntry" targetId="a677-233e-8405-bc8e">
-      <categoryLinks>
-        <categoryLink name="Collegia Titanica" hidden="false" id="7a6e-0356-5879-9c0b" targetId="d965-f291-a87b-657f" primary="false"/>
-      </categoryLinks>
+    <entryLink import="true" name="Cerastus Knight Atrapos Banner" hidden="false" id="0c5f-9c3d-5884-4b16" type="selectionEntry" targetId="d074-8691-6acd-42a7">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Cerastus Knight Banner" hidden="false" id="2a78-6ee5-87ed-3260" type="selectionEntry" targetId="57b8-770b-ddfc-a0dc">
-      <categoryLinks>
-        <categoryLink targetId="d965-f291-a87b-657f" id="fcf6-c98e-79ce-07de" primary="false" name="Collegia Titanica"/>
-      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Questoris Knight Banner" hidden="false" id="e6eb-ed8b-8f62-659e" type="selectionEntry" targetId="5dbb-aa60-1fae-c471">
-      <categoryLinks>
-        <categoryLink targetId="d965-f291-a87b-657f" id="af90-8b4f-9dfc-52ef" primary="false" name="Collegia Titanica"/>
-      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Thallax Cohort" hidden="false" id="3da5-8096-fc46-cb51" type="selectionEntry" targetId="4faa-4503-048b-8302"/>
     <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="7b45-2f4a-5726-86db" type="selectionEntry" targetId="22a2-1b3d-28a9-de58"/>
@@ -251,7 +262,52 @@
     <entryLink import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="a467-11ae-9790-bc1b" type="selectionEntry" targetId="e1db-1b55-f141-5eff"/>
     <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="4256-4869-0b3c-67f3" type="selectionEntry" targetId="0e15-d028-584f-3685"/>
     <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="14db-1fe8-5c7e-3059" type="selectionEntry" targetId="84c0-0968-cc49-82fc"/>
-    <entryLink import="true" name="Warlord Sinister Battle Titan" hidden="false" id="deb5-aeb2-a106-fa61" type="selectionEntry" targetId="064d-d7bb-373a-a756"/>
+    <entryLink import="true" name="Warlord-Sinister Battle Titan" hidden="false" id="deb5-aeb2-a106-fa61" type="selectionEntry" targetId="064d-d7bb-373a-a756"/>
+    <entryLink import="true" name="Acastus Knight Porphyrion Banner" hidden="false" id="0614-044a-0c20-a95a" type="selectionEntry" targetId="a677-233e-8405-bc8e">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Acastus Knight Asterius Banner" hidden="false" id="691e-3166-37b5-e1c7" type="selectionEntry" targetId="46d4-5713-3d1d-e943">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Questoris Mechanicum Knight Banner" hidden="false" id="6ecb-7c65-1939-ee92" type="selectionEntry" targetId="e661-b495-b7f8-6cce">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Mechanicum Knight Moirax Banner" hidden="false" id="ba23-2d0e-5f08-6791" type="selectionEntry" targetId="b852-6c79-b579-22bd">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Knight Armiger Banner" hidden="false" id="aea0-1837-eefc-a3e9" type="selectionEntry" targetId="4cf9-7f9c-0318-e375">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <forceEntries>
     <forceEntry name="Axiom Battleline Maniple" id="fa2a-ae12-7ed8-6178" hidden="false" publicationId="89ae-8b6d-da44-733f">
@@ -290,6 +346,11 @@
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="Primary Army must be Collegia Titanica" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </forceEntry>
     <forceEntry name="Lupercal Light Maniple" id="666d-9045-0a44-9bb3" hidden="false" publicationId="89ae-8b6d-da44-733f">
@@ -317,6 +378,11 @@
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="3708-58a0-ff0c-1562">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Primary Army must be Collegia Titanica" field="error">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
@@ -352,6 +418,11 @@
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="Primary Army must be Collegia Titanica" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </forceEntry>
     <forceEntry name="Ruptura Battleline Maniple" id="3830-733f-37e7-8731" hidden="false" publicationId="89ae-8b6d-da44-733f">
@@ -379,6 +450,11 @@
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="6fb6-74e7-8dd6-a43a">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Primary Army must be Collegia Titanica" field="error">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
@@ -420,6 +496,11 @@
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="Primary Army must be Collegia Titanica" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </forceEntry>
     <forceEntry name="Corsair Battleline Maniple" id="c82f-752d-6da0-4687" hidden="false" publicationId="89ae-8b6d-da44-733f">
@@ -442,6 +523,11 @@
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="3682-6803-f5f6-c293">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Primary Army must be Collegia Titanica" field="error">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
@@ -510,7 +596,17 @@ All Titan Detachments within this Support Formation gain the Cortex Controller s
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="Primary Army must be Collegia Titanica" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </forceEntry>
   </forceEntries>
+  <rules>
+    <rule name="Titanic Pride" id="5cf7-b077-4d3f-8ac5" hidden="false">
+      <description>Collegia Titanica Formations cannot be taken as part of an Allied Contingent.</description>
+    </rule>
+  </rules>
 </catalogue>

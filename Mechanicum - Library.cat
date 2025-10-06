@@ -10,6 +10,9 @@
       <alias>Cybernetica Cortex</alias>
       <description>Detachments with the Cybernetica Cortex (X) special rule can only be issued an Order shown in brackets unless instructed otherwise. If a Detachment is not eligible to be issued any of the Orders listed - for example it is within a Transport and cannot be issued with anything other than the Advance Order - then this rule is temporarily ignored.</description>
     </rule>
+    <rule name="Masters of Machines" id="7207-325d-62f0-302b" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <description>Archmagos Prime, Archmagos Prime on Abeyant and Tech-Priest Auxilia models may be attached to any friendly Infantry, Walker, Cavalry or Vehicle Detachment within the same Formation that has the Cybernetica Cortex (X) special rule. This overrides normal restrictions about joining Detachments of different types.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Tech-thralls" hidden="false" id="a5c2-be99-e3c2-d171">
@@ -588,6 +591,7 @@
             <modifier type="set" value="Invulnerable Save (6+)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Masters of Machines" id="a808-1cda-6ba9-b498" hidden="false" type="rule" targetId="7207-325d-62f0-302b"/>
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
@@ -715,6 +719,7 @@
         </infoLink>
         <infoLink name="Commander" id="136a-a3fd-ac2b-c400" hidden="false" type="rule" targetId="caaf-3de0-3658-9054"/>
         <infoLink name="Cortex Controller" id="6bf3-21c3-7664-81ae" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319"/>
+        <infoLink name="Masters of Machines" id="1c6a-1e4f-6377-9ce6" hidden="false" type="rule" targetId="7207-325d-62f0-302b"/>
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="25"/>
@@ -773,6 +778,7 @@
             <modifier type="set" value="Invulnerable Save (5+)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Masters of Machines" id="5995-29f2-9f78-885a" hidden="false" type="rule" targetId="7207-325d-62f0-302b"/>
       </infoLinks>
       <costs>
         <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="45"/>
@@ -2109,9 +2115,4 @@
       </characteristics>
     </profile>
   </sharedProfiles>
-  <rules>
-    <rule name="Masters of Machines" id="7207-325d-62f0-302b" hidden="false" publicationId="89ae-8b6d-da44-733f">
-      <description>Archmagos Prime, Archmagos Prime on Abeyant and Tech-Priest Auxilia models may be attached to any friendly Infantry, Walker, Cavalry or Vehicle Detachment within the same Formation that has the Cybernetica Cortex (X) special rule. This overrides normal restrictions about joining Detachments of different types.</description>
-    </rule>
-  </rules>
 </catalogue>

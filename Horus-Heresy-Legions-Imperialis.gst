@@ -739,30 +739,30 @@ In addition, models with the Remote Controlled Detonation special rule are ignor
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38fe-949a-ffca-f477" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="71ba-48d2-4bac-7b28" name="Solar Auxilia" hidden="false" collective="false" import="true" type="upgrade" publicationId="c1b8-2180-635c-14cd" sortIndex="2">
+            <selectionEntry id="71ba-48d2-4bac-7b28" name="Solar Auxilia" hidden="false" collective="false" import="true" type="upgrade" publicationId="c1b8-2180-635c-14cd">
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
               <comment>primary army</comment>
             </selectionEntry>
-            <selectionEntry id="288d-7913-984c-5d0" name="Legiones Astartes" hidden="false" collective="false" import="true" type="upgrade" publicationId="c1b8-2180-635c-14cd" sortIndex="1">
+            <selectionEntry id="288d-7913-984c-5d0" name="Legiones Astartes" hidden="false" collective="false" import="true" type="upgrade" publicationId="c1b8-2180-635c-14cd">
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
               <comment>primary army</comment>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Collegia Titanica" hidden="false" id="6ce5-83db-2122-c90b" publicationId="89ae-8b6d-da44-733f" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Collegia Titanica" hidden="false" id="6ce5-83db-2122-c90b" publicationId="89ae-8b6d-da44-733f">
               <comment>primary army</comment>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Mechanicum Taghmata" hidden="false" id="f444-dd74-3457-560e" publicationId="89ae-8b6d-da44-733f" sortIndex="5">
+            <selectionEntry type="upgrade" import="true" name="Mechanicum Taghmata" hidden="false" id="f444-dd74-3457-560e" publicationId="89ae-8b6d-da44-733f">
               <comment>primary army</comment>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Dark Mechanicum" hidden="false" id="db41-ab79-2993-9b2a" publicationId="89ae-8b6d-da44-733f">
               <comment>primary army</comment>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Knight Household" hidden="false" id="24db-5384-cb9f-157f" sortIndex="4"/>
+            <selectionEntry type="upgrade" import="true" name="Knight Households" hidden="false" id="24db-5384-cb9f-157f"/>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
