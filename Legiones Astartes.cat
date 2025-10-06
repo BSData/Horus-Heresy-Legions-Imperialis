@@ -4156,75 +4156,19 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b5a4-ce11-5ac9-1fd6" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6ff8-b7e1-7ced-66f" includeChildSelections="false"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Scimitar Jetbike" hidden="false" id="fc0-fada-8c8b-a56" collective="true">
-              <constraints>
-                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8223-9640-9509-4503" includeChildSelections="false"/>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="78fa-8d81-a43a-7a81" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Scimitar Jetbike" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="d04e-6379-fdf9-55c8">
-                  <characteristics>
-                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">12&quot;</characteristic>
-                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">5+</characteristic>
-                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
-                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
-                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Scimitar heavy bolter" hidden="false" id="d525-5b03-1f35-eb1d" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b300-6c65-9920-b646" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26e2-d3d3-e60b-266c" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Scimitar heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="b44c-6d44-61d8-b547">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Light" id="a410-c7d2-b42d-ecc0" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-                    <infoLink name="Point Defence" id="bad-964d-66b8-4449" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <infoLinks>
-                <infoLink name="Skimmer" id="25ee-750b-b25c-a3e5" hidden="false" type="rule" targetId="4f70-6a67-930b-d0fc"/>
-                <infoLink name="Jink (X)" id="4da8-3a1e-6a46-15d9" hidden="false" type="rule" targetId="9b11-ba2c-eeaf-2402">
-                  <modifiers>
-                    <modifier type="set" value="Jink (6+)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Outflank" id="6898-809a-ca59-13aa" hidden="false" type="rule" targetId="8785-676-b80f-8709">
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink targetId="fc0-fada-8c8b-a56" id="9a44-92ee-4e6d-bf75" type="selectionEntry" name="Scimitar Jetbike" hidden="false" collective="true">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="6985-e31f-2407-a801-min"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6985-e31f-2407-a801-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -4319,155 +4263,6 @@
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Land Speeders" id="0792-ca32-daa5-7261" hidden="false" defaultSelectionEntryId="188f-89b7-aad6-9360">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Land Speeder w/ multi-melta" hidden="false" id="1cf8-2308-00b8-35d6" collective="true">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Nose Mounted heavy flamer" hidden="false" id="aa09-0e56-fcc9-e67e" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c29-77b3-7dfe-9347" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8653-d9ed-8f2a-746c" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Nose Mounted heavy flamer" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e37f-4c0d-a279-47d8">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Ignores Cover</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Light" id="0090-789c-fe59-4aff" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-                    <infoLink name="Arc (Front/Rear)" id="dd44-ce21-521f-ef96" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
-                      <modifiers>
-                        <modifier type="set" value="Arc (Front)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink name="Ignores Cover" id="2bb6-2044-f741-dd3d" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="494f-53b2-17c7-425e" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67d2-c48d-0491-38c7" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd74-6219-2bc0-5829" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Multi-melta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9ea1-8bed-361b-79ac">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Anti-tank" id="69a7-0126-a81c-054c" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <infoLinks>
-                <infoLink name="Jink (X)" id="a02d-a104-017f-7683" hidden="false" type="rule" targetId="9b11-ba2c-eeaf-2402">
-                  <modifiers>
-                    <modifier type="set" value="Jink (6+)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Skimmer" id="bfc9-bc05-4fb7-9e38" hidden="false" type="rule" targetId="4f70-6a67-930b-d0fc"/>
-                <infoLink name="Outflank" id="2e5f-3a38-a584-ab29" hidden="false" type="rule" targetId="8785-676-b80f-8709">
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Land Speeder" id="43ab-5ef9-2d0e-1f65" hidden="false" type="profile" targetId="fc12-3994-c345-4a23"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="0f26-726e-15dd-1231" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Land Speeder w/ plasma cannon" hidden="false" id="188f-89b7-aad6-9360" collective="true">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Plasma cannon" hidden="false" id="792e-7f6a-be7d-ebce" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23f-9e73-c6e9-5c86" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c211-fc8d-34c2-4bad" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Plasma cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="a366-de19-8f61-1ec0">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Light AT" id="b4b2-70dd-6ed8-502e" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Heavy bolter" hidden="false" id="ccdf-d664-a7d2-b8fe" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17c6-8e88-1986-21b8" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91ba-120b-918e-76d9" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ee5b-641d-fd39-359f">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Light" id="7571-4373-3d34-1c99" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-                    <infoLink name="Point Defence" id="7c7b-ef47-9c87-8666" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <infoLinks>
-                <infoLink name="Jink (X)" id="739e-5778-376f-f8b" hidden="false" type="rule" targetId="9b11-ba2c-eeaf-2402">
-                  <modifiers>
-                    <modifier type="set" value="Jink (6+)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Skimmer" id="1cb2-4c2d-a34f-545" hidden="false" type="rule" targetId="4f70-6a67-930b-d0fc"/>
-                <infoLink name="Outflank" id="ece9-cd49-9502-394a" hidden="false" type="rule" targetId="8785-676-b80f-8709">
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Land Speeder" id="759a-6a4a-2f5a-339e" hidden="false" type="profile" targetId="fc12-3994-c345-4a23"/>
-              </infoLinks>
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8d3f-8848-c58c-df57" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="496d-9da5-61d0-b626-min"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="496d-9da5-61d0-b626-max"/>
@@ -4484,6 +4279,10 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink targetId="188f-89b7-aad6-9360" id="8460-cc2e-7f6c-b572" type="selectionEntry" name="Land Speeder w/ plasma cannon" hidden="false" collective="true"/>
+            <entryLink targetId="1cf8-2308-00b8-35d6" id="17d5-65e1-176d-b992" type="selectionEntry" name="Land Speeder w/ multi-melta" hidden="false" collective="true"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -4495,134 +4294,6 @@
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Javelins" id="28e7-8073-7858-e84c" hidden="false" defaultSelectionEntryId="3e5b-4213-da5e-2f67">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Javelin w/ lascannon" hidden="false" id="3e5b-4213-da5e-2f67" collective="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="4b77-4964-1a24-c961" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4164-d11e-ea1a-a5bc" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32ea-6017-c060-85fe" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Sponson Mounted lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="be6a-4604-a301-363d">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Anti-tank" id="45f-4e0b-c399-f9d1" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
-                    <infoLink name="Arc (Front/Rear)" id="ef99-abd3-7209-666d" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
-                      <modifiers>
-                        <modifier type="set" value="Arc (Front)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="10d6-fcf1-68d2-89e6" includeChildSelections="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Jink (X)" id="7205-aba1-2b8a-6a2" hidden="false" type="rule" targetId="9b11-ba2c-eeaf-2402">
-                  <modifiers>
-                    <modifier type="set" value="Jink (6+)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Skimmer" id="aa9-2ee8-3c2c-907a" hidden="false" type="rule" targetId="4f70-6a67-930b-d0fc"/>
-                <infoLink name="Outflank" id="e2df-d33a-2c38-ede" hidden="false" type="rule" targetId="8785-676-b80f-8709">
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Javelin" id="ebba-545b-ee01-538e" hidden="false" type="profile" targetId="4f8f-91cf-717c-f883"/>
-              </infoLinks>
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Nose Mounted heavy flamer" hidden="false" id="8717-6764-b8f0-fbf6" type="selectionEntry" targetId="60e0-8dab-1018-f9c5">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c9d-9cc7-3afa-4b1b" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9a8-237d-7933-87ec" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Javelin w/ cyclone missile launcher" hidden="false" id="fe53-2635-efc5-fc1c" collective="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Cyclone missile launcher" hidden="false" id="8e8d-f2a-522a-3413" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="84d0-b2d5-f27e-965" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd95-e96d-cba3-fe16" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Cyclone missile launcher" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2d35-7876-20fb-dd6d">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Ignores Cover</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Ignores Cover" id="237-19fd-5d26-3d37" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
-                    <infoLink name="Arc (Front/Rear)" id="59dc-9095-967c-a6e1" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
-                      <modifiers>
-                        <modifier type="set" value="Arc (Front)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink name="Light" id="9471-4ec-ca8f-c974" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="30bd-3930-e471-c765" includeChildSelections="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Skimmer" id="efc8-dea6-545a-d0da" hidden="false" type="rule" targetId="4f70-6a67-930b-d0fc"/>
-                <infoLink name="Jink (X)" id="cb75-b9ec-f717-c76b" hidden="false" type="rule" targetId="9b11-ba2c-eeaf-2402">
-                  <modifiers>
-                    <modifier type="set" value="Jink (6+)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Outflank" id="1628-c0d1-d8f6-a896" hidden="false" type="rule" targetId="8785-676-b80f-8709">
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Javelin" id="fb75-605a-e753-e510" hidden="false" type="profile" targetId="4f8f-91cf-717c-f883"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Nose Mounted heavy flamer" hidden="false" id="3446-0337-a2fe-5808" type="selectionEntry" targetId="60e0-8dab-1018-f9c5">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9200-30f0-718c-2339" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c333-a5be-fe0-174d" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ba4d-4097-6ef9-527b" includeChildSelections="false"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="99ca-a6ef-7536-b9e4" includeChildSelections="false"/>
@@ -4639,6 +4310,10 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Javelin w/ cyclone missile launcher" hidden="false" id="c071-de5c-f7df-3742" type="selectionEntry" targetId="fe53-2635-efc5-fc1c"/>
+            <entryLink import="true" name="Javelin w/ lascannon" hidden="false" id="7b2a-992c-41eb-9153" type="selectionEntry" targetId="3e5b-4213-da5e-2f67"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -7499,6 +7174,331 @@
       <entryLinks>
         <entryLink import="true" name="Legion" hidden="false" id="e456-9318-8ab5-cb86" type="selectionEntryGroup" targetId="6766-137b-4f36-9042"/>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Javelin w/ lascannon" hidden="false" id="3e5b-4213-da5e-2f67" collective="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Sponson Mounted lascannon" hidden="false" id="4b77-4964-1a24-c961" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4164-d11e-ea1a-a5bc" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32ea-6017-c060-85fe" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Sponson Mounted lascannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="be6a-4604-a301-363d">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Anti-tank" id="45f-4e0b-c399-f9d1" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+            <infoLink name="Arc (Front/Rear)" id="ef99-abd3-7209-666d" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+              <modifiers>
+                <modifier type="set" value="Arc (Front)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="10d6-fcf1-68d2-89e6" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Jink (X)" id="7205-aba1-2b8a-6a2" hidden="false" type="rule" targetId="9b11-ba2c-eeaf-2402">
+          <modifiers>
+            <modifier type="set" value="Jink (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Skimmer" id="aa9-2ee8-3c2c-907a" hidden="false" type="rule" targetId="4f70-6a67-930b-d0fc"/>
+        <infoLink name="Outflank" id="e2df-d33a-2c38-ede" hidden="false" type="rule" targetId="8785-676-b80f-8709">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Javelin" id="ebba-545b-ee01-538e" hidden="false" type="profile" targetId="4f8f-91cf-717c-f883"/>
+      </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Nose Mounted heavy flamer" hidden="false" id="8717-6764-b8f0-fbf6" type="selectionEntry" targetId="60e0-8dab-1018-f9c5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c9d-9cc7-3afa-4b1b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9a8-237d-7933-87ec" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Javelin w/ cyclone missile launcher" hidden="false" id="fe53-2635-efc5-fc1c" collective="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Cyclone missile launcher" hidden="false" id="8e8d-f2a-522a-3413" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="84d0-b2d5-f27e-965" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd95-e96d-cba3-fe16" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Cyclone missile launcher" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2d35-7876-20fb-dd6d">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Ignores Cover</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ignores Cover" id="237-19fd-5d26-3d37" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+            <infoLink name="Arc (Front/Rear)" id="59dc-9095-967c-a6e1" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+              <modifiers>
+                <modifier type="set" value="Arc (Front)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Light" id="9471-4ec-ca8f-c974" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="30bd-3930-e471-c765" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Skimmer" id="efc8-dea6-545a-d0da" hidden="false" type="rule" targetId="4f70-6a67-930b-d0fc"/>
+        <infoLink name="Jink (X)" id="cb75-b9ec-f717-c76b" hidden="false" type="rule" targetId="9b11-ba2c-eeaf-2402">
+          <modifiers>
+            <modifier type="set" value="Jink (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="1628-c0d1-d8f6-a896" hidden="false" type="rule" targetId="8785-676-b80f-8709">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Javelin" id="fb75-605a-e753-e510" hidden="false" type="profile" targetId="4f8f-91cf-717c-f883"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Nose Mounted heavy flamer" hidden="false" id="3446-0337-a2fe-5808" type="selectionEntry" targetId="60e0-8dab-1018-f9c5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9200-30f0-718c-2339" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c333-a5be-fe0-174d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Land Speeder w/ multi-melta" hidden="false" id="1cf8-2308-00b8-35d6" collective="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Nose Mounted heavy flamer" hidden="false" id="aa09-0e56-fcc9-e67e" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c29-77b3-7dfe-9347" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8653-d9ed-8f2a-746c" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Nose Mounted heavy flamer" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e37f-4c0d-a279-47d8">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Ignores Cover</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Light" id="0090-789c-fe59-4aff" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+            <infoLink name="Arc (Front/Rear)" id="dd44-ce21-521f-ef96" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+              <modifiers>
+                <modifier type="set" value="Arc (Front)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Ignores Cover" id="2bb6-2044-f741-dd3d" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="494f-53b2-17c7-425e" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67d2-c48d-0491-38c7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd74-6219-2bc0-5829" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Multi-melta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9ea1-8bed-361b-79ac">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Anti-tank" id="69a7-0126-a81c-054c" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Jink (X)" id="a02d-a104-017f-7683" hidden="false" type="rule" targetId="9b11-ba2c-eeaf-2402">
+          <modifiers>
+            <modifier type="set" value="Jink (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Skimmer" id="bfc9-bc05-4fb7-9e38" hidden="false" type="rule" targetId="4f70-6a67-930b-d0fc"/>
+        <infoLink name="Outflank" id="2e5f-3a38-a584-ab29" hidden="false" type="rule" targetId="8785-676-b80f-8709">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Land Speeder" id="43ab-5ef9-2d0e-1f65" hidden="false" type="profile" targetId="fc12-3994-c345-4a23"/>
+      </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Land Speeder w/ plasma cannon" hidden="false" id="188f-89b7-aad6-9360" collective="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Plasma cannon" hidden="false" id="792e-7f6a-be7d-ebce" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23f-9e73-c6e9-5c86" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c211-fc8d-34c2-4bad" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Plasma cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="a366-de19-8f61-1ec0">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Light AT" id="b4b2-70dd-6ed8-502e" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy bolter" hidden="false" id="ccdf-d664-a7d2-b8fe" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17c6-8e88-1986-21b8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91ba-120b-918e-76d9" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ee5b-641d-fd39-359f">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Light" id="7571-4373-3d34-1c99" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+            <infoLink name="Point Defence" id="7c7b-ef47-9c87-8666" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Jink (X)" id="739e-5778-376f-f8b" hidden="false" type="rule" targetId="9b11-ba2c-eeaf-2402">
+          <modifiers>
+            <modifier type="set" value="Jink (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Skimmer" id="1cb2-4c2d-a34f-545" hidden="false" type="rule" targetId="4f70-6a67-930b-d0fc"/>
+        <infoLink name="Outflank" id="ece9-cd49-9502-394a" hidden="false" type="rule" targetId="8785-676-b80f-8709">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Land Speeder" id="759a-6a4a-2f5a-339e" hidden="false" type="profile" targetId="fc12-3994-c345-4a23"/>
+      </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Scimitar Jetbike" hidden="false" id="fc0-fada-8c8b-a56" collective="true">
+      <profiles>
+        <profile name="Scimitar Jetbike" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="d04e-6379-fdf9-55c8">
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">12&quot;</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">5+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Scimitar heavy bolter" hidden="false" id="d525-5b03-1f35-eb1d" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b300-6c65-9920-b646" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26e2-d3d3-e60b-266c" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Scimitar heavy bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="b44c-6d44-61d8-b547">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Point Defence</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Light" id="a410-c7d2-b42d-ecc0" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+            <infoLink name="Point Defence" id="bad-964d-66b8-4449" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Skimmer" id="25ee-750b-b25c-a3e5" hidden="false" type="rule" targetId="4f70-6a67-930b-d0fc"/>
+        <infoLink name="Jink (X)" id="4da8-3a1e-6a46-15d9" hidden="false" type="rule" targetId="9b11-ba2c-eeaf-2402">
+          <modifiers>
+            <modifier type="set" value="Jink (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="6898-809a-ca59-13aa" hidden="false" type="rule" targetId="8785-676-b80f-8709">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9a97-9a76-77cf-aa42" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <forceEntries>
@@ -11387,10 +11387,10 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="Legion Scimitar Jetbike Squadron" hidden="false" id="7345-3585-482e-79e6" sortIndex="1">
           <entryLinks>
-            <entryLink import="true" name="Scimitar Jetbike" hidden="false" id="f513-2fae-a290-b772" type="selectionEntry" targetId="fc0-fada-8c8b-a56">
+            <entryLink import="true" name="Scimitar Jetbike" hidden="false" id="bbc4-d896-c0d4-6851" type="selectionEntry" targetId="fc0-fada-8c8b-a56">
               <constraints>
-                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="bdf3-0148-4a21-3bc8-min"/>
-                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="bdf3-0148-4a21-3bc8-max"/>
+                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="be24-5bae-791f-e836-min"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="be24-5bae-791f-e836-max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -11401,10 +11401,10 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Legion Scimitar Jetbike Squadron" hidden="false" id="9cc7-58d7-52f2-c1c8" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Scimitar Jetbike" hidden="false" id="0328-c2cf-3c85-ad07" type="selectionEntry" targetId="fc0-fada-8c8b-a56">
+            <entryLink import="true" name="Scimitar Jetbike" hidden="false" id="d3da-af51-5ac3-dd17" type="selectionEntry" targetId="fc0-fada-8c8b-a56">
               <constraints>
-                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="4cee-70c0-81b3-8f3d-min"/>
-                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="4cee-70c0-81b3-8f3d-max"/>
+                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="3a2e-2190-79b2-cac7-min"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="3a2e-2190-79b2-cac7-max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -11415,10 +11415,10 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Legion Scimitar Land Speeder Squadron" hidden="false" id="0d46-415b-084f-1d8d" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Land Speeder w/ multi-melta" hidden="false" id="d38f-f5d8-e6c4-5f56" type="selectionEntry" targetId="1cf8-2308-00b8-35d6">
+            <entryLink import="true" name="Land Speeder w/ multi-melta" hidden="false" id="f55a-96b3-f54f-4acf" type="selectionEntry" targetId="1cf8-2308-00b8-35d6">
               <constraints>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f940-7fc1-63c9-f99d-min"/>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f940-7fc1-63c9-f99d-max"/>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="eff7-ef1b-d0c0-eefa-min"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="eff7-ef1b-d0c0-eefa-max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -11433,10 +11433,10 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea1f-98cc-3d72-cb2c-max"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Javelin w/ lascannon" hidden="false" id="b110-9a2d-7510-1704" type="selectionEntry" targetId="3e5b-4213-da5e-2f67">
+            <entryLink import="true" name="Javelin w/ lascannon" hidden="false" id="57e5-d782-bb23-deb7" type="selectionEntry" targetId="3e5b-4213-da5e-2f67">
               <constraints>
-                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="9591-2902-b112-1a54-min"/>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="9591-2902-b112-1a54-max"/>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="4057-a9f2-12bd-d19a-min"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="4057-a9f2-12bd-d19a-max"/>
               </constraints>
             </entryLink>
           </entryLinks>
