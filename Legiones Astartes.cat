@@ -7271,18 +7271,6 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
-          <modifiers>
-            <modifier type="add" value="124c-2927-143f-f513" field="category">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6dd4-9bf9-0679-4c9e-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6dd4-9bf9-0679-4c9e-max"/>
@@ -7335,18 +7323,6 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
-          <modifiers>
-            <modifier type="add" value="124c-2927-143f-f513" field="category">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7eff-8fad-30e2-fb8c-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7eff-8fad-30e2-fb8c-max"/>
@@ -7544,18 +7520,6 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
-          <modifiers>
-            <modifier type="add" value="124c-2927-143f-f513" field="category">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1015-dee6-4262-a329"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43a5-e0a9-7638-b7e1"/>
@@ -7725,18 +7689,6 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37d8-80c6-9e22-c519-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37d8-80c6-9e22-c519-max"/>
           </constraints>
-          <modifiers>
-            <modifier type="add" value="124c-2927-143f-f513" field="category">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <comment>1</comment>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Legion Terminator Detachment" hidden="false" id="ba90-3d50-266d-7c38">
@@ -7822,18 +7774,6 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="858e-b81e-b64b-2bcb"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="125b-4c53-2aea-ca2d"/>
           </constraints>
-          <modifiers>
-            <modifier type="add" value="124c-2927-143f-f513" field="category">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <comment>2</comment>
         </selectionEntry>
       </selectionEntries>
@@ -7943,18 +7883,6 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
-          <modifiers>
-            <modifier type="add" value="124c-2927-143f-f513" field="category">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b09c-b8f4-0831-94b1-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b09c-b8f4-0831-94b1-max"/>
@@ -8043,18 +7971,6 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8560-a8bf-5fe9-e33e"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad89-2b21-369d-f6c6"/>
           </constraints>
-          <modifiers>
-            <modifier type="add" value="124c-2927-143f-f513" field="category">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <comment>3</comment>
         </selectionEntry>
       </selectionEntries>
@@ -8206,18 +8122,6 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
-          <modifiers>
-            <modifier type="add" value="124c-2927-143f-f513" field="category">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5bb1-2c0d-4924-0902-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bb1-2c0d-4924-0902-max"/>
@@ -8334,18 +8238,6 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d910-3ff5-aa46-c39f-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d910-3ff5-aa46-c39f-max"/>
           </constraints>
-          <modifiers>
-            <modifier type="add" value="124c-2927-143f-f513" field="category">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Legion Sicaran Punisher Squadron" hidden="false" id="2469-0b91-04e0-20ed" publicationId="e4cc-404e-be5e-2101" page="104">
           <categoryLinks>
@@ -8398,18 +8290,6 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
-          <modifiers>
-            <modifier type="add" value="124c-2927-143f-f513" field="category">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec22-3bcc-708f-ffd2"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="792e-0b2f-1d78-62d1"/>

@@ -649,61 +649,20 @@
               </constraints>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapons" id="f7fa-15fb-9d6d-7282" hidden="false" sortIndex="2">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Ion gauntlet shield" hidden="false" id="ac45-4e42-122a-cf34" collective="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Ion gauntlet shield" hidden="false" id="39f1-e657-9aa5-0d43" type="selectionEntry" targetId="ac45-4e42-122a-cf34">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="355d-c6a3-828c-5ccf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c024-cd5e-ae90-e354" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
-                      <profiles>
-                        <profile name="Ion gauntlet shield" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1760-ce1c-fe69-deb4">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="908c-d2f0-63d7-21bd" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Shock lance" hidden="false" id="7e3c-96f9-ff52-9078" collective="true">
+                    </entryLink>
+                    <entryLink import="true" name="Shock lance" hidden="false" id="b668-2569-c63e-5587" type="selectionEntry" targetId="7e3c-96f9-ff52-9078">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58bc-1267-4bb3-e43e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c77-7771-a8cb-031f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
-                      <profiles>
-                        <profile name="Shock lance" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c49f-9d1d-b384-5ed2">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Reach, Rend</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                      </costs>
-                      <infoLinks>
-                        <infoLink name="Reach" id="5ca6-ef6d-42ac-4cd7" hidden="false" type="rule" targetId="cfe1-b50e-d70d-6959"/>
-                        <infoLink name="Rend" id="dc90-ce0e-d8a0-7135" hidden="false" type="rule" targetId="6d1b-9fcd-3541-f46e"/>
-                      </infoLinks>
-                    </selectionEntry>
-                  </selectionEntries>
+                    </entryLink>
+                  </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Baron Upgrade" id="6649-2c1d-9d24-070a" hidden="false" sortIndex="1">
                   <entryLinks>
@@ -1927,6 +1886,51 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ion gauntlet shield" hidden="false" id="ac45-4e42-122a-cf34" collective="true">
+      <profiles>
+        <profile name="Ion gauntlet shield" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1760-ce1c-fe69-deb4">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Arc (Front/Rear)" id="908c-d2f0-63d7-21bd" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+          <modifiers>
+            <modifier type="set" value="Arc (Front)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shock lance" hidden="false" id="7e3c-96f9-ff52-9078" collective="true">
+      <profiles>
+        <profile name="Shock lance" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c49f-9d1d-b384-5ed2">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Reach, Rend</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Reach" id="5ca6-ef6d-42ac-4cd7" hidden="false" type="rule" targetId="cfe1-b50e-d70d-6959"/>
+        <infoLink name="Rend" id="dc90-ce0e-d8a0-7135" hidden="false" type="rule" targetId="6d1b-9fcd-3541-f46e"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

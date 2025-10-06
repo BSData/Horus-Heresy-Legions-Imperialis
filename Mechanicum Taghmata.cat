@@ -862,6 +862,8 @@ All Detachments included in this Support Formation must have the Cybernetica Cor
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Exsomnis-Tertia Cybernetica Cohort" hidden="false" id="25fc-aa56-3506-2085" type="selectionEntry" targetId="4b60-13d3-fcaf-373f"/>
+    <entryLink import="true" name="Exsomnis-Tertia Cybernetica Cohort" hidden="false" id="1277-cecf-d405-dfe7" type="selectionEntry" targetId="ebe4-b133-2366-b47b"/>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Tech-Priest Auxilia" id="23ba-51c6-bda6-4b6e" hidden="false"/>
@@ -2237,63 +2239,378 @@ All Detachments included in this Support Formation must have the Cybernetica Cor
       </modifiers>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="2 Krios Venator models" hidden="false" id="7812-0f30-47ae-e5a3" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f03-9f45-d145-a2ad" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="845d-c556-1eee-6734" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Krios Venator" hidden="false" id="f501-d6bd-6d68-b043" type="selectionEntry" targetId="89bb-e3b8-4a92-eec3">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b87a-52c8-e1fa-b788" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7e2a-bd97-bf8d-f647" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Exsomnis-Tertia Cybernetica Cohort" hidden="false" id="ebe4-b133-2366-b47b" subType="unit-group" publicationId="e4cc-404e-be5e-2101" page="96">
+      <comment>Standard</comment>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="610"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d75c-d05a-d30e-7843" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="437a-7951-c93d-1e14" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Defenders of Magma City" id="7477-2644-e065-10a6" hidden="false">
+          <description>This Formation can only be included in an Army with the Loyalist Allegiance.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Archmagos Prime on Abeyant" hidden="false" id="09b6-d650-e3ca-7d87">
+          <categoryLinks>
+            <categoryLink name="HQ" hidden="false" id="39b9-c60c-914a-0270" targetId="d950-ad23-9b2-9325" primary="true"/>
+            <categoryLink name="Infantry (1)" hidden="false" id="62d3-fbc8-35b0-ab00" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+            <categoryLink name="Mechanicum" hidden="false" id="c3c8-fc77-5bc4-7229" targetId="d331-a05e-f676-b8a6" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Archmagos Prime on Abeyant" hidden="false" id="54eb-6747-4459-4121" type="selectionEntry" targetId="83d3-6267-00c8-93c3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d84c-fe53-58f8-4a17" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a983-1363-5e96-2f62" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="add" value="124c-2927-143f-f513" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ddd5-22ab-0798-96cb" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4f4-3045-97eb-0d5a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="7004-7f60-b9e9-b8b2">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="0f75-17df-3e46-2df9" targetId="be19-7658-5258-71d9" primary="true"/>
+            <categoryLink name="Walker (1)" hidden="false" id="3e08-31b6-012a-fc2d" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Domitar" hidden="false" id="50bd-b093-d96f-cbf3" type="selectionEntry" targetId="153b-00ee-9c7c-113c" sortIndex="">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="2001-4ba2-c7ae-c33f" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ae41-ea92-443c-7e66" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a178-81c6-6368-7594" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d51-77bb-bff2-3c71" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="2be4-53de-c259-316d">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="75c5-8b7a-76f6-8494" targetId="be19-7658-5258-71d9" primary="true"/>
+            <categoryLink name="Walker (1)" hidden="false" id="fa82-752f-dab3-a9d9" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Castellax" hidden="false" id="0aa1-ec2d-1ffe-ed5d" type="selectionEntry" targetId="e623-8b92-b5e1-9482">
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="79bd-d610-3e18-9349" includeChildSelections="false"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="b054-1b08-e985-72c7" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd5f-71ec-e111-0faa" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99e6-aa57-cf2e-72dc" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="c2db-a5a4-7ad4-727b">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="a961-95e5-4e27-4c78" targetId="be19-7658-5258-71d9" primary="true"/>
+            <categoryLink name="Walker (1)" hidden="false" id="a414-7376-c05a-6ba2" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Castellax" hidden="false" id="acae-41db-95e5-92b0" type="selectionEntry" targetId="e623-8b92-b5e1-9482">
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="4536-3702-3206-082e" includeChildSelections="false"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e08f-6b7d-c44f-6dd7" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5fd5-5bbc-11e4-0a6a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29cc-35f3-0e6f-fb1a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="b80b-7cb8-f216-ab85">
+          <categoryLinks>
+            <categoryLink name="Vanguard" hidden="false" id="d1d9-451d-591f-9408" targetId="8416-456c-a6f-e059" primary="true"/>
+            <categoryLink name="Walker (1)" hidden="false" id="3eb6-5af7-fc8c-58e7" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Vorax" hidden="false" id="633b-700f-2c7c-075a" type="selectionEntry" targetId="376b-24b5-a5cd-449a">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="fe76-98bc-db87-73f1" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="13f2-8372-704e-3dd9" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="31a1-f0f6-da90-434f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3314-2ea0-767d-dc86" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Standard Detachments" hidden="false" id="b9c9-1581-822b-1407" targetId="e1e0-9c0e-7cab-b244" primary="true"/>
+        <categoryLink name="Mechanicum" hidden="false" id="81e7-7ce5-46e1-d39c" targetId="d331-a05e-f676-b8a6" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Adaptive Protocols" id="a6f2-f4bc-c31f-c7c6" hidden="false" type="rule" targetId="de68-a145-22b3-556c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Exsomnis-Tertia Cybernetica Cohort" hidden="false" id="4b60-13d3-fcaf-373f" subType="unit-group" publicationId="e4cc-404e-be5e-2101" page="96">
+      <comment>Expanded</comment>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="800"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="18fa-9e75-23a3-379f" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="ebe4-b133-2366-b47b" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="437a-7951-c93d-1e14" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Tech-Priest Auxilia" hidden="false" id="5c32-1780-91c3-36f0">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="3c45-354b-5828-1064" targetId="be19-7658-5258-71d9" primary="true"/>
+            <categoryLink name="Infantry (1)" hidden="false" id="46f3-1283-f976-90a0" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+            <categoryLink name="Mechanicum" hidden="false" id="6bbc-a3d1-16a3-ba5a" targetId="d331-a05e-f676-b8a6" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Tech-Priest" hidden="false" id="4c0c-a509-c369-2834" type="selectionEntry" targetId="c96f-9492-7e30-43f4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c19a-9005-101b-6a49" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ac5-3323-964c-f15d" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="9614-7fa2-1d29-cb6f" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4a5b-e20d-95b2-6583" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="4f73-e751-1070-fd16">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="7f03-5f28-f99c-7b56" targetId="be19-7658-5258-71d9" primary="true"/>
+            <categoryLink name="Walker (1)" hidden="false" id="d144-9e5c-6af6-4865" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Castellax" hidden="false" id="145b-321c-70be-220d" type="selectionEntry" targetId="e623-8b92-b5e1-9482">
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="971b-6004-2926-08b1" includeChildSelections="false"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="a6cc-2f5d-9883-9329" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9d6-bddb-9e6d-8223" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f6d-31e6-81d8-3116" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="3c8a-fce6-2f94-0af1">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="f3fb-9b5e-264a-b32a" targetId="be19-7658-5258-71d9" primary="true"/>
+            <categoryLink name="Walker (1)" hidden="false" id="01bf-ba32-f85b-31c0" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Castellax" hidden="false" id="d304-3bff-0050-f038" type="selectionEntry" targetId="e623-8b92-b5e1-9482">
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="88d0-ce11-f0d6-6002" includeChildSelections="false"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="aa60-2036-cc7d-fa9f" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1992-c785-50e6-c66e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2bf-cf6e-9093-5c50" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="d19b-2bfa-5085-5932">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="36ce-659f-d320-6a88" targetId="be19-7658-5258-71d9" primary="true"/>
+            <categoryLink name="Walker (1)" hidden="false" id="f697-c560-4c0b-c32d" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Domitar" hidden="false" id="81a7-def4-b109-4728" type="selectionEntry" targetId="153b-00ee-9c7c-113c" sortIndex="">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="497c-c3cd-ed20-173d" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ae6a-4374-003d-d1a5" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2eaf-d52c-63d5-a690" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc18-46be-2417-68a6" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="3bc5-dc3c-6b17-a58b">
+          <categoryLinks>
+            <categoryLink name="Vanguard" hidden="false" id="efb2-438b-bb50-93b4" targetId="8416-456c-a6f-e059" primary="true"/>
+            <categoryLink name="Walker (1)" hidden="false" id="5cc1-b1e4-9b5a-2223" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Vorax" hidden="false" id="43f6-4f16-7837-51e7" type="selectionEntry" targetId="376b-24b5-a5cd-449a">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="d858-30a3-e5c9-2796" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="3f8e-9d57-5519-a340" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d297-898f-ca38-7c04" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb9f-38c0-fee9-8530" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="aa6b-79de-9544-8730">
+          <categoryLinks>
+            <categoryLink name="Bastion" hidden="false" id="2a7c-378a-a125-cd34" targetId="2005-60e5-e49d-32f2" primary="true"/>
+            <categoryLink name="Walker (1)" hidden="false" id="1dd2-65f5-eaab-087e" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc9f-7d18-30a7-df29" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bae-bf83-167d-ada6" includeChildSelections="false"/>
+          </constraints>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Krios Venator" hidden="false" id="89bb-e3b8-4a92-eec3">
-              <infoLinks>
-                <infoLink name="Krios" id="7c3b-20e3-861e-cf1a" hidden="false" type="profile" targetId="3cb5-a447-0168-09fc"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Pulsar-fusil" hidden="false" id="1209-9cb3-1892-e5ac">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a74b-268c-de14-d0b9-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a74b-268c-de14-d0b9-max" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Pulsar-fusil" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d164-3f41-5e44-598f">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Anti-tank" id="54f7-25f6-2fe3-51b2" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
-                    <infoLink name="Arc (Front/Rear)" id="740b-85dd-fca6-c565" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
-                      <modifiers>
-                        <modifier type="set" value="Arc (Front)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
+            <selectionEntry type="model" import="true" name="Thanatar" hidden="false" id="1db1-243a-f4a8-908b">
               <costs>
                 <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b87a-52c8-e1fa-b788" includeChildSelections="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7e2a-bd97-bf8d-f647" includeChildSelections="false"/>
-              </constraints>
+              <infoLinks>
+                <infoLink name="Armoured" id="5cfd-0c27-10af-930b" hidden="false" type="rule" targetId="665b-47e2-df00-2629"/>
+                <infoLink name="Cybernetica Cortex (X) " id="c5a7-9465-4cd0-20b3" hidden="false" type="rule" targetId="3df1-39f0-9014-cf63">
+                  <modifiers>
+                    <modifier type="set" value="Cybernetica Cortex (Advance, First Fire)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Invulnerable Save (X)" id="193e-582d-75d7-d33f" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
+                  <modifiers>
+                    <modifier type="set" value="Invulnerable Save (6+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Thanatar" id="85cb-69f5-e178-b703" hidden="false" type="profile" targetId="8223-4725-0584-3f18"/>
+              </infoLinks>
               <entryLinks>
-                <entryLink import="true" name="Volkite caliver sponsons" hidden="false" id="5c24-5e3c-7a8d-e1ec" type="selectionEntry" targetId="0f1a-da19-4c29-9936">
+                <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="3efc-da80-7f4b-e33c" type="selectionEntry" targetId="bd64-14d9-e283-c70e">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a0a-6659-0554-94a3"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49f6-3345-b761-181e"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="220b-3eaf-d576-502e" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37cb-9772-2923-d277" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Plasma mortar" hidden="false" id="116d-a3cb-efb9-4e1c" type="selectionEntry" targetId="a339-dd49-4ced-d3a9">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a49e-51b4-779b-5e23" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e21d-f956-f75d-7edf" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="1d6e-b434-e36c-ce83" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9b29-da2a-95ab-e940" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f03-9f45-d145-a2ad" includeChildSelections="false"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="845d-c556-1eee-6734" includeChildSelections="false"/>
-          </constraints>
         </selectionEntry>
       </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Expanded Detachments" hidden="false" id="c084-9171-ee5a-e068" targetId="b2ba-773c-1cc5-56bc" primary="true"/>
+        <categoryLink name="Mechanicum" hidden="false" id="bca8-0bb8-12ca-865b" targetId="d331-a05e-f676-b8a6" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Adaptive Protocols" id="012d-056a-4dd4-cdec" hidden="false" type="rule" targetId="de68-a145-22b3-556c"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2333,4 +2650,9 @@ All Detachments included in this Support Formation must have the Cybernetica Cor
       </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule name="Adaptive Protocols" id="de68-a145-22b3-556c" hidden="false">
+      <description>When a Detachment from this Formation that has the Cybernetica Cortex (X) special rule is activated, its Order may be replaced with a new Order. The new Order must be the same Order as one issued to a friendly Detachment from this Formation that has the Cybernetica Cortex (X) special rule and is within 6&quot; of the activated Detachment. The new Order can be an Order other than those shown in the activated Detachment&apos;s Cybernetica Cortex (X) special rule, even if the activated Detachment is not within range of a Cyber Controller.</description>
+    </rule>
+  </sharedRules>
 </catalogue>

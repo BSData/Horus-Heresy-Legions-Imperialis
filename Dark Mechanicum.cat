@@ -67,7 +67,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Acastus Knight Banner" hidden="false" id="287e-969c-44d4-fc80" type="selectionEntry" targetId="a677-233e-8405-bc8e">
+    <entryLink import="true" name="Acastus Knight Porphyrion Banner" hidden="false" id="287e-969c-44d4-fc80" type="selectionEntry" targetId="a677-233e-8405-bc8e">
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
           <conditionGroups>
@@ -494,6 +494,8 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Sibilans Taghma" hidden="false" id="1771-d326-6bb1-49d9" type="selectionEntry" targetId="0974-2c31-794e-9de6"/>
+    <entryLink import="true" name="Sibilans Taghma" hidden="false" id="da01-6401-f05f-c956" type="selectionEntry" targetId="c40e-6bb2-dc0a-7325"/>
   </entryLinks>
   <sharedRules>
     <rule name="Construct Shields (X)" id="dc39-0d92-7a72-8fa2" hidden="false">
@@ -506,6 +508,9 @@ When one of more Hits are scored against a Detachment which contains one or more
     </rule>
     <rule name="Noosphere Controller" id="1f49-7cd8-709a-2550" hidden="false">
       <description>Noosphere Controller is a special rule that triggers other effects, most often in the case of Formation special rules - it does not have a specific effect itself.</description>
+    </rule>
+    <rule name="Protocol - Surge" id="2af3-c9cc-1dfa-a720" hidden="false">
+      <description>While a Detachment from this Formation with the Networked Anima special rule is within 8&quot; of a model with the Noosphere Controller special rule from this Formation, all models in that Detachment increase the range of their weapons by 4&quot;.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -712,17 +717,6 @@ When one of more Hits are scored against a Detachment which contains one or more
     <selectionEntry type="unit" import="true" name="Scintillax &apos;Cyclops&apos; Noospheric Stalker Network" hidden="false" id="86f2-eb96-d700-b06b">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Scintillax" hidden="false" id="cad0-b211-2d07-4992">
-          <profiles>
-            <profile name="Scintillax" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="1927-97d3-6276-a07c">
-              <characteristics>
-                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
-                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
-                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+3</characteristic>
-                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="c129-350b-f18b-130f" hidden="false">
               <selectionEntries>
@@ -748,29 +742,6 @@ When one of more Hits are scored against a Detachment which contains one or more
                     <infoLink name="Anti-tank" id="afb6-0588-9cd0-0a6c" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
                   </infoLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Storm laser" hidden="false" id="1b80-3361-f6aa-ec62">
-                  <profiles>
-                    <profile name="Storm laser" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2a6c-48c3-95d2-1b72">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">15&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Rapid Fire, Shieldbane</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Shieldbane" id="3a1d-6235-8398-319f" hidden="false" type="rule" targetId="8208-8da0-3822-65da"/>
-                    <infoLink name="Arc (Front/Rear)" id="8061-5fed-9ddd-649d" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
-                      <modifiers>
-                        <modifier type="set" value="Arc (Front)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink name="Light AT" id="f839-81ea-514d-2c4c" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
-                    <infoLink name="Rapid Fire" id="1dff-c0b5-e35a-a779" hidden="false" type="rule" targetId="d56d-6332-debe-ab1a"/>
-                  </infoLinks>
-                </selectionEntry>
               </selectionEntries>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="405f-1b86-76fa-0513" includeChildSelections="false"/>
@@ -778,6 +749,7 @@ When one of more Hits are scored against a Detachment which contains one or more
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Exo-planar cannon" hidden="false" id="785b-1213-7325-c1c4" type="selectionEntry" targetId="8596-73ca-3250-1c6e"/>
+                <entryLink import="true" name="Storm laser" hidden="false" id="2dca-2114-ebc1-e6d7" type="selectionEntry" targetId="1b80-3361-f6aa-ec62"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -794,6 +766,7 @@ When one of more Hits are scored against a Detachment which contains one or more
             <infoLink name="Nimble" id="921b-bd53-4b91-0035" hidden="false" type="rule" targetId="bc40-962f-5fc5-771a"/>
             <infoLink name="Noosphere Controller" id="6632-7eb4-6649-4de4" hidden="false" type="rule" targetId="1f49-7cd8-709a-2550"/>
             <infoLink name="Traitor" id="9c8c-8125-73da-3c71" hidden="false" type="rule" targetId="1ba2-160d-833a-2522"/>
+            <infoLink name="Scintillax" id="c67f-e423-8296-b006" hidden="false" type="profile" targetId="1927-97d3-6276-a07c"/>
           </infoLinks>
           <costs>
             <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
@@ -1195,17 +1168,6 @@ When one of more Hits are scored against a Detachment which contains one or more
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Serperos" hidden="false" id="8d18-d21c-d7ab-5e5b">
-          <profiles>
-            <profile name="Serperos" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="9f9e-9587-40c9-6ebb">
-              <characteristics>
-                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
-                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
-                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+3</characteristic>
-                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="6592-bdec-cf0d-bca4" hidden="false">
               <selectionEntryGroups>
@@ -1239,33 +1201,14 @@ When one of more Hits are scored against a Detachment which contains one or more
                         <infoLink name="Rend" id="4b05-d01a-932a-7fec" hidden="false" type="rule" targetId="6d1b-9fcd-3541-f46e"/>
                       </infoLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Irradiation engine" hidden="false" id="5d96-2dca-f218-1b9b">
-                      <profiles>
-                        <profile name="Irradiation engine" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="89d2-4deb-349f-ccff">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Ignores Cover, Light AT</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Light AT" id="9a88-b772-4863-0910" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
-                        <infoLink name="Arc (Front/Rear)" id="8edb-f461-ac36-af99" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                        <infoLink name="Ignores Cover" id="01ab-ea86-e9ff-ff02" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
-                      </infoLinks>
-                    </selectionEntry>
                   </selectionEntries>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d05-0d6a-8144-b2e0" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8699-c1be-95f5-091c" includeChildSelections="false"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Irradiation engine" hidden="false" id="cf3f-d7ec-7a8b-9b05" type="selectionEntry" targetId="5d96-2dca-f218-1b9b"/>
+                  </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Weapon 1" id="da14-7e2e-85e0-005a" hidden="false">
                   <selectionEntries>
@@ -1292,34 +1235,14 @@ When one of more Hits are scored against a Detachment which contains one or more
                         <infoLink name="Rapid Fire" id="9ecd-bf24-f493-73dd" hidden="false" type="rule" targetId="d56d-6332-debe-ab1a"/>
                       </infoLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Exo-planar bombard" hidden="false" id="a581-25a3-3c61-d81d">
-                      <profiles>
-                        <profile name="Exo-planar bombard" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ec53-6971-f4ab-2622">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">15&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Bypass, Ignores Cover, Shred</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Shred" id="922c-e326-eb59-85c2" hidden="false" type="rule" targetId="f9ba-cb09-cf28-f93b"/>
-                        <infoLink name="Bypass" id="2bc9-868e-88eb-f9c7" hidden="false" type="rule" targetId="9d16-7f73-255c-7e34"/>
-                        <infoLink name="Arc (Front/Rear)" id="3186-22f4-d694-2c82" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                        <infoLink name="Ignores Cover" id="4acd-128f-50ef-57c7" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
-                      </infoLinks>
-                    </selectionEntry>
                   </selectionEntries>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a85-d87f-8539-4872" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6d2-00c2-7dc3-8979" includeChildSelections="false"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Exo-planar bombard" hidden="false" id="1b6a-c11a-5bac-eb71" type="selectionEntry" targetId="a581-25a3-3c61-d81d"/>
+                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
@@ -1333,6 +1256,7 @@ When one of more Hits are scored against a Detachment which contains one or more
             </infoLink>
             <infoLink name="Networked Anima" id="dff3-9d48-aee2-0095" hidden="false" type="rule" targetId="0686-4de6-fc69-0deb"/>
             <infoLink name="Nimble" id="af55-6b6a-b171-04e5" hidden="false" type="rule" targetId="bc40-962f-5fc5-771a"/>
+            <infoLink name="Serperos" id="652b-9f5b-838b-cf4a" hidden="false" type="profile" targetId="9f9e-9587-40c9-6ebb"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="da12-fcc2-5355-d3d1" includeChildSelections="false"/>
@@ -2424,6 +2348,456 @@ When one of more Hits are scored against a Detachment which contains one or more
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sibilans Taghma" hidden="false" id="c40e-6bb2-dc0a-7325" subType="unit-group" publicationId="e4cc-404e-be5e-2101" page="96">
+      <comment>Standard</comment>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="900"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0d49-189c-78f4-4a49" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1b68-cce9-e11c-fde7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Servants of Kelbor-Hal" id="108d-9785-ca5e-fd34" hidden="false">
+          <description>This Formation can only be included in an Army with the Traitor Allegiance.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Scintillax &apos;Cyclops&apos; Noospheric Stalker Network" hidden="false" id="b887-f13a-6bfb-0e17">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Scintillax" hidden="false" id="a645-3046-e2dc-fa82">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="27b5-7b1e-4ff7-1763" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2168-b610-bbe7-d98d" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Construct Shields (X)" id="8456-1fa1-a33f-0e5f" hidden="false" type="rule" targetId="dc39-0d92-7a72-8fa2">
+                  <modifiers>
+                    <modifier type="set" value="Construct Shields (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Nimble" id="d471-4f15-c957-9651" hidden="false" type="rule" targetId="bc40-962f-5fc5-771a"/>
+                <infoLink name="Noosphere Controller" id="affb-1467-6c9e-f42d" hidden="false" type="rule" targetId="1f49-7cd8-709a-2550"/>
+                <infoLink name="Traitor" id="76cf-6e08-05fd-380c" hidden="false" type="rule" targetId="1ba2-160d-833a-2522"/>
+                <infoLink name="Scintillax" id="32f3-12ae-c105-365a" hidden="false" type="profile" targetId="1927-97d3-6276-a07c"/>
+              </infoLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Storm laser" hidden="false" id="25c7-74db-299a-3734" type="selectionEntry" targetId="1b80-3361-f6aa-ec62">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2af2-0415-52ff-4acc" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43f5-c81c-43e1-da1c" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Vehicle (2)" hidden="false" id="9c77-009f-57ce-1c1c" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+            <categoryLink name="HQ" hidden="false" id="223c-5db2-0cad-a9ad" targetId="d950-ad23-9b2-9325" primary="true"/>
+            <categoryLink name="Traitor" hidden="false" id="f3cb-64cc-da4e-72ab" targetId="437a-7951-c93d-1e14" primary="false"/>
+            <categoryLink name="Dark Mechanicum" hidden="false" id="ad59-b47e-4ae9-a3af" targetId="e63d-b61c-bac6-a269" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+            <cost name="Loyalist" typeId="a903-27a9-0810-c526" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa45-6bd7-51bc-b140" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b363-bc2c-f45d-b1a0" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Adsecularis Tech-thrall Covenant" hidden="false" id="af03-3511-2cf8-20dc" publicationId="89ae-8b6d-da44-733f">
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Core" hidden="false" id="32a2-ceb0-dff0-4a06" targetId="446a-abe3-63c3-5709" primary="true"/>
+            <categoryLink name="Infantry (1)" hidden="false" id="c832-5203-c461-1f31" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Tech-thralls" hidden="false" id="54eb-9599-b2cc-2a1a" type="selectionEntry" targetId="a5c2-be99-e3c2-d171">
+              <constraints>
+                <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="9542-804e-d34f-e859"/>
+                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="6c5b-0699-ddc5-9a4f"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b215-8842-92ef-9b4f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="feea-a6e3-b885-840f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Adsecularis Tech-thrall Covenant" hidden="false" id="5c9e-ab4c-ff3a-e89b" publicationId="89ae-8b6d-da44-733f">
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Core" hidden="false" id="61ee-83ac-f929-b3b9" targetId="446a-abe3-63c3-5709" primary="true"/>
+            <categoryLink name="Infantry (1)" hidden="false" id="4637-38e9-f1dd-59e8" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Tech-thralls" hidden="false" id="0367-48f8-1724-ad6a" type="selectionEntry" targetId="a5c2-be99-e3c2-d171">
+              <constraints>
+                <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="b3c0-e314-9f36-7a09"/>
+                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="ab77-bb11-ca58-37be"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f10c-5e14-9b5f-87e3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdf6-9c0e-2a42-da86" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Serperos &apos;Overlord&apos; Heavy Stalker Maniple" hidden="false" id="2edd-8f28-45d1-5f90">
+          <categoryLinks>
+            <categoryLink name="Heavy Armour" hidden="false" id="301c-315d-510f-ba3a" targetId="1f6b-d764-352d-1e74" primary="true"/>
+            <categoryLink name="Super-heavy Vehicle (3)" hidden="false" id="7467-da53-f97b-6dee" targetId="be9f-b973-245e-49bf" primary="false"/>
+            <categoryLink name="Traitor" hidden="false" id="d852-f999-2fd3-3cd2" targetId="437a-7951-c93d-1e14" primary="false"/>
+            <categoryLink name="Dark Mechanicum" hidden="false" id="2d4b-8dae-8d25-6bf8" targetId="e63d-b61c-bac6-a269" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Serperos" hidden="false" id="9497-70b0-4d29-da48">
+              <infoLinks>
+                <infoLink name="Traitor" id="86ad-05cf-6354-760b" hidden="false" type="rule" targetId="1ba2-160d-833a-2522"/>
+                <infoLink name="Construct Shields (X)" id="9d1c-3054-672b-15a1" hidden="false" type="rule" targetId="dc39-0d92-7a72-8fa2">
+                  <modifiers>
+                    <modifier type="set" value="Construct Shields (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Networked Anima" id="fca7-c099-73b3-9b19" hidden="false" type="rule" targetId="0686-4de6-fc69-0deb"/>
+                <infoLink name="Nimble" id="a870-9a1d-8180-4096" hidden="false" type="rule" targetId="bc40-962f-5fc5-771a"/>
+                <infoLink name="Serperos" id="1e06-0be2-faa1-dc6b" hidden="false" type="profile" targetId="9f9e-9587-40c9-6ebb"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="2c7a-11d7-f66b-c01c" includeChildSelections="false"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="6bfa-0645-ace1-d29b" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Exo-planar bombard" hidden="false" id="2272-c558-f41a-f183" type="selectionEntry" targetId="a581-25a3-3c61-d81d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6ce-95c5-9742-6220" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc35-9d1f-770c-6079" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Irradiation engine" hidden="false" id="cf49-8bf1-f92b-5439" type="selectionEntry" targetId="5d96-2dca-f218-1b9b">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aaf7-c8e2-4d34-972f" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="649f-d832-eb55-619a" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+            <cost name="Loyalist" typeId="a903-27a9-0810-c526" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c0bf-a074-f1af-aa98" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9014-c40d-9b5e-bca7" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Myrmidon Secutor Host" hidden="false" id="9b98-08bc-e737-257e">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="2a87-37f2-e28d-7d55" targetId="be19-7658-5258-71d9" primary="true"/>
+            <categoryLink name="Infantry (1)" hidden="false" id="07d5-03d4-e00d-b363" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Myrmidon Secutors" hidden="false" id="c177-d6a0-a4bb-2a2d" type="selectionEntry" targetId="da42-ba05-1a7e-c6b5">
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="813d-0ebc-1cc8-dde6"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8bb3-04d8-75d5-3e4a"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Triaros" hidden="false" id="96f2-4c1d-ce95-4ddd" type="selectionEntry" targetId="ef70-4e36-852e-fd7d">
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="05a2-5518-bbdb-294b" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7fae-c5e7-aa93-4699" includeChildSelections="false" automatic="true"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="422e-7e11-0480-ee61" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8656-eb27-944e-71ce" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Standard Detachments" hidden="false" id="7135-655f-ec18-5ffc" targetId="e1e0-9c0e-7cab-b244" primary="true"/>
+        <categoryLink name="Dark Mechanicum" hidden="false" id="6eb8-e4b8-e50b-788a" targetId="e63d-b61c-bac6-a269" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Protocol - Surge" id="66db-2069-2a1d-c19e" hidden="false" type="rule" targetId="2af3-c9cc-1dfa-a720"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sibilans Taghma" hidden="false" id="0974-2c31-794e-9de6" subType="unit-group" publicationId="e4cc-404e-be5e-2101" page="96">
+      <comment>Expanded</comment>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="700"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="129c-0ecd-f648-2775" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="c40e-6bb2-dc0a-7325" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1b68-cce9-e11c-fde7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Adsecularis Tech-thrall Covenant" hidden="false" id="5606-9634-8c72-c179" publicationId="89ae-8b6d-da44-733f">
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Core" hidden="false" id="b8c8-424d-d3f8-eca4" targetId="446a-abe3-63c3-5709" primary="true"/>
+            <categoryLink name="Infantry (1)" hidden="false" id="281f-67fe-5549-1f0c" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Tech-thralls" hidden="false" id="6635-542f-0228-3e53" type="selectionEntry" targetId="a5c2-be99-e3c2-d171">
+              <constraints>
+                <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="8484-4488-d81a-a355"/>
+                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="b054-49b5-9141-32f2"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9eb-df15-3020-664c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16a7-2f7f-e2bb-a085" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Myrmidon Secutor Host" hidden="false" id="7c79-18d7-4f62-5f29">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="5e85-446e-2209-907b" targetId="be19-7658-5258-71d9" primary="true"/>
+            <categoryLink name="Infantry (1)" hidden="false" id="fd5d-a01c-edb8-ce46" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Myrmidon Secutors" hidden="false" id="29be-2bac-aeb9-558a" type="selectionEntry" targetId="da42-ba05-1a7e-c6b5">
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="b4da-e158-af2b-80ef"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ca73-efe5-c303-3bac"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Triaros" hidden="false" id="441d-f3c5-e1ee-df19" type="selectionEntry" targetId="ef70-4e36-852e-fd7d">
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b793-ba1f-ba20-f47e" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8382-f893-419e-099e" includeChildSelections="false" automatic="true"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b5e-649a-931b-0e21" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f14b-fc00-9fa8-dda6" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Myrmidon Secutor Host" hidden="false" id="3982-0b34-8dd5-34f7">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="d4ab-ba71-8f32-37dd" targetId="be19-7658-5258-71d9" primary="true"/>
+            <categoryLink name="Infantry (1)" hidden="false" id="4501-6f6b-c0fd-0ef9" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Myrmidon Secutors" hidden="false" id="de33-285e-c0c7-d74b" type="selectionEntry" targetId="da42-ba05-1a7e-c6b5">
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="5721-41f0-d8bc-b12e"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="84d3-79a2-5de7-8958"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Triaros" hidden="false" id="8587-1ce4-d305-16b1" type="selectionEntry" targetId="ef70-4e36-852e-fd7d">
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3f36-9156-522a-a0bd" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a702-6381-a009-9e20" includeChildSelections="false" automatic="true"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae19-bff2-6453-71e4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f57e-4941-dbad-e5ef" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Serperos &apos;Overlord&apos; Heavy Stalker Maniple" hidden="false" id="0586-831d-4d93-e22e">
+          <categoryLinks>
+            <categoryLink name="Heavy Armour" hidden="false" id="babe-acc8-9015-d446" targetId="1f6b-d764-352d-1e74" primary="true"/>
+            <categoryLink name="Super-heavy Vehicle (3)" hidden="false" id="bbae-e801-d51d-0c0c" targetId="be9f-b973-245e-49bf" primary="false"/>
+            <categoryLink name="Traitor" hidden="false" id="5879-babd-0d6b-fe17" targetId="437a-7951-c93d-1e14" primary="false"/>
+            <categoryLink name="Dark Mechanicum" hidden="false" id="7364-7a1d-7c16-2ebf" targetId="e63d-b61c-bac6-a269" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Serperos" hidden="false" id="737e-fbc7-b529-c921">
+              <infoLinks>
+                <infoLink name="Traitor" id="5584-f5f0-0313-dcee" hidden="false" type="rule" targetId="1ba2-160d-833a-2522"/>
+                <infoLink name="Construct Shields (X)" id="eade-23bd-881a-55bf" hidden="false" type="rule" targetId="dc39-0d92-7a72-8fa2">
+                  <modifiers>
+                    <modifier type="set" value="Construct Shields (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Networked Anima" id="2c61-37c6-7fc9-30f3" hidden="false" type="rule" targetId="0686-4de6-fc69-0deb"/>
+                <infoLink name="Nimble" id="0e58-aada-b851-2cef" hidden="false" type="rule" targetId="bc40-962f-5fc5-771a"/>
+                <infoLink name="Serperos" id="e3c4-f5fa-d330-94b8" hidden="false" type="profile" targetId="9f9e-9587-40c9-6ebb"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="a72c-750a-0ae7-1780" includeChildSelections="false"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="2346-a787-a07d-60ed" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Exo-planar bombard" hidden="false" id="fc48-9e04-ae97-fa94" type="selectionEntry" targetId="a581-25a3-3c61-d81d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be60-1a85-a770-4ee3" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f61-65b5-5a8c-2801" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Irradiation engine" hidden="false" id="cc61-88f3-f304-e6a2" type="selectionEntry" targetId="5d96-2dca-f218-1b9b">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2fc7-643c-e8a9-b5d5" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee6b-7f28-d246-d20f" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+            <cost name="Loyalist" typeId="a903-27a9-0810-c526" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6eea-1fcf-b693-358b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c970-53e1-611d-bcff" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Expanded Detachments" hidden="false" id="ca65-638e-da62-2ef4" targetId="b2ba-773c-1cc5-56bc" primary="true"/>
+        <categoryLink name="Dark Mechanicum" hidden="false" id="cf45-a1a6-a97d-9afb" targetId="e63d-b61c-bac6-a269" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Protocol - Surge" id="59e7-ae7f-848c-6341" hidden="false" type="rule" targetId="2af3-c9cc-1dfa-a720"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Storm laser" hidden="false" id="1b80-3361-f6aa-ec62">
+      <profiles>
+        <profile name="Storm laser" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2a6c-48c3-95d2-1b72">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">15&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Rapid Fire, Shieldbane</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shieldbane" id="3a1d-6235-8398-319f" hidden="false" type="rule" targetId="8208-8da0-3822-65da"/>
+        <infoLink name="Arc (Front/Rear)" id="8061-5fed-9ddd-649d" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+          <modifiers>
+            <modifier type="set" value="Arc (Front)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Light AT" id="f839-81ea-514d-2c4c" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+        <infoLink name="Rapid Fire" id="1dff-c0b5-e35a-a779" hidden="false" type="rule" targetId="d56d-6332-debe-ab1a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Exo-planar bombard" hidden="false" id="a581-25a3-3c61-d81d">
+      <profiles>
+        <profile name="Exo-planar bombard" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ec53-6971-f4ab-2622">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">15&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Bypass, Ignores Cover, Shred</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shred" id="922c-e326-eb59-85c2" hidden="false" type="rule" targetId="f9ba-cb09-cf28-f93b"/>
+        <infoLink name="Bypass" id="2bc9-868e-88eb-f9c7" hidden="false" type="rule" targetId="9d16-7f73-255c-7e34"/>
+        <infoLink name="Arc (Front/Rear)" id="3186-22f4-d694-2c82" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+          <modifiers>
+            <modifier type="set" value="Arc (Front)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Ignores Cover" id="4acd-128f-50ef-57c7" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Irradiation engine" hidden="false" id="5d96-2dca-f218-1b9b">
+      <profiles>
+        <profile name="Irradiation engine" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="89d2-4deb-349f-ccff">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Ignores Cover, Light AT</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Light AT" id="9a88-b772-4863-0910" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+        <infoLink name="Arc (Front/Rear)" id="8edb-f461-ac36-af99" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+          <modifiers>
+            <modifier type="set" value="Arc (Front)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Ignores Cover" id="01ab-ea86-e9ff-ff02" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <forceEntries>
     <forceEntry name="Terror Protocol Cohort" id="732c-17f9-8345-775c" hidden="false">
@@ -2719,4 +3093,24 @@ All Detachments included in this Support Formation with the Cybernetica Cortex (
   <categoryEntries>
     <categoryEntry name="Dark Mechanicum" id="e63d-b61c-bac6-a269" hidden="false"/>
   </categoryEntries>
+  <sharedProfiles>
+    <profile name="Scintillax" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="1927-97d3-6276-a07c">
+      <characteristics>
+        <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
+        <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
+        <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+3</characteristic>
+        <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+        <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Serperos" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="9f9e-9587-40c9-6ebb">
+      <characteristics>
+        <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
+        <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+        <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+3</characteristic>
+        <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+        <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>

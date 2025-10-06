@@ -308,6 +308,8 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Demi-Maniple Aeterna" hidden="false" id="489e-ac85-0468-f8bb" type="selectionEntry" targetId="2b6d-50d6-6d1e-f976"/>
+    <entryLink import="true" name="Demi-Maniple Aeterna" hidden="false" id="059e-beb4-9d0d-c7de" type="selectionEntry" targetId="8404-1898-90dc-d266"/>
   </entryLinks>
   <forceEntries>
     <forceEntry name="Axiom Battleline Maniple" id="fa2a-ae12-7ed8-6178" hidden="false" publicationId="89ae-8b6d-da44-733f">
@@ -609,4 +611,436 @@ All Titan Detachments within this Support Formation gain the Cortex Controller s
       <description>Collegia Titanica Formations cannot be taken as part of an Allied Contingent.</description>
     </rule>
   </rules>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Demi-Maniple Aeterna" hidden="false" id="2b6d-50d6-6d1e-f976" subType="unit-group">
+      <comment>Standard</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e79b-3acf-78a8-30e5" includeChildSelections="true"/>
+      </constraints>
+      <rules>
+        <rule name="Defenders of Magma City" id="e531-ae9b-3b86-95d1" hidden="false">
+          <description>This Formation can only be included in an Army with the Loyalist Allegiance. In addition, an Army can only include one Demi-Maniple *Aeterna* Formation.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="437a-7951-c93d-1e14" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" value="Primary Army must be Collegia Titanica" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Questoris Knight Banner" hidden="false" id="d84a-c45b-38c3-6288" collective="false">
+          <categoryLinks>
+            <categoryLink name="Knight (4)" hidden="false" id="4d0a-807c-bc1f-c38c" targetId="13e3-8701-239a-fec9" primary="false"/>
+            <categoryLink name="Knight" hidden="false" id="3b30-c45b-f956-9caa" targetId="adde-db57-b7d8-2daa" primary="true"/>
+            <categoryLink name="Questoris Familia" hidden="false" id="6730-8289-a198-3f74" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Knight Errant" hidden="false" id="6951-8b0d-cc86-320d" collective="false">
+              <infoLinks>
+                <infoLink name="Independent" id="e541-8e15-b6bb-68d8" hidden="false" targetId="53f9-310a-fcae-bbd5" type="rule"/>
+                <infoLink name="Ion Shield (X)" id="f843-edcb-4a87-c29e" hidden="false" targetId="3016-c284-15c3-6753" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Ion Shields (3+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Nimble" id="4d19-5053-5948-3105" hidden="false" targetId="bc40-962f-5fc5-771a" type="rule"/>
+                <infoLink name="Questoris Knight" id="5746-770f-aa97-bc44" hidden="false" targetId="a618-6aef-93fa-a9df" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a29-c224-d679-f300" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a59a-d00f-f79e-0d98" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy stubber" hidden="false" id="0260-2b64-61f7-ae46" collective="true" targetId="f8d4-5957-94bc-651b" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8ea-d789-a8a3-0b16" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9748-298f-4f36-b276" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Reaper chainsword" hidden="false" id="f858-9c2a-d259-f691" collective="false" targetId="6b73-916f-8950-e447" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a628-f6d3-e143-b4f3" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f010-a26b-76cb-792d" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Rocket pods" hidden="false" id="b8f1-73b0-7db8-873b" collective="false" targetId="4855-e498-4055-0668" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5904-5090-08d8-9689" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1891-cc7f-9f99-c830" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Thermal cannon" hidden="false" id="6e07-2e2f-546b-6b72" collective="true" targetId="9565-0ef1-6ac1-b86c" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b59-82e2-3d4c-a274" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e74-22a9-e64c-f869" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Knight Gallant" hidden="false" id="d504-38df-f05a-6aed" collective="false">
+              <infoLinks>
+                <infoLink name="Independent" id="ec39-d0c6-440b-e536" hidden="false" targetId="53f9-310a-fcae-bbd5" type="rule"/>
+                <infoLink name="Ion Shield (X)" id="c412-dc22-c09f-233f" hidden="false" targetId="3016-c284-15c3-6753" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Ion Shields (3+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Nimble" id="fa00-6c5d-52ea-7340" hidden="false" targetId="bc40-962f-5fc5-771a" type="rule"/>
+                <infoLink name="Questoris Knight" id="f3f5-f59e-1610-812d" hidden="false" targetId="a618-6aef-93fa-a9df" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0cff-a9ef-e694-563b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25a0-15b6-56ab-9084" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Meltagun" hidden="false" id="745f-5133-b74a-e440" collective="true" targetId="fac6-f726-43ac-1e45" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6a4-a82c-b833-a959" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4491-991f-0ef4-7469" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Reaper chainsword" hidden="false" id="684c-79d0-c75a-c902" collective="true" targetId="6b73-916f-8950-e447" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c460-41d6-c9b1-3d3c" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="33bc-73ef-d170-256f" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Rocket pods" hidden="false" id="6a1d-191c-aab2-1ae0" collective="false" targetId="4855-e498-4055-0668" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d9b-5d29-1868-e240" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8bd7-c344-07c4-86d5" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Thunderstrike gauntlet" hidden="false" id="6930-d20d-2f59-6874" collective="true" targetId="8aed-7256-7506-e3ab" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bab1-5c3e-12b8-9f76" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfc6-fe70-9eb9-e962" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e713-aed0-05dc-29b2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37ff-dd3c-3530-a433" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Reaver Battle Titan" hidden="false" id="8320-4d1a-219c-5fc2">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Reaver Battle Titan" hidden="false" id="697e-19bb-d6ab-83d2" collective="false">
+              <infoLinks>
+                <infoLink name="Void Shields (X)" id="cb5f-a07c-7a58-51a2" hidden="false" targetId="908c-befc-f030-f2e7" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Void Shields (4)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Reaver Battle Titan" id="e33a-3bbe-04fe-1165" hidden="false" type="profile" targetId="be66-070d-ceb3-169b"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Titan (5)" hidden="false" id="fd77-7479-a6a0-1b69" targetId="9072-16ad-262f-a980" primary="false"/>
+                <categoryLink name="Titan" hidden="false" id="6da1-b5b5-4c76-026f" targetId="1302-0157-2be4-3d34" primary="true"/>
+                <categoryLink name="Collegia Titanica" hidden="false" id="b3b8-bab5-a708-d8cd" targetId="d965-f291-a87b-657f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="6"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Reaver volcano cannon" hidden="false" id="fe83-ec1e-3d9e-8074" collective="false" targetId="8bc3-4da8-b1e0-b072" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06f2-9e2b-ad0e-8a51" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a368-8d6c-0d71-c5f2" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Reaver gatling blaster" hidden="false" id="ae5d-927d-b490-3437" collective="false" targetId="9347-4799-21f6-414b" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e63e-2e08-ea51-e0c7" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f41-227d-935b-e82b" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Reaver Vulcan mega-bolter" hidden="false" id="7682-aea7-f610-9699" type="selectionEntry" targetId="6f14-f865-ccdb-0dc5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e353-bb65-120d-d2b9" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5ef-386a-1a05-5f59" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7680-197a-3d38-9d63" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dee0-7dd0-c7c0-a1a3" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="46f7-dcb0-9332-b047" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="346b-17bf-6188-b382" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Krios Venator Squadron" hidden="false" id="34b2-2280-0858-05e9" publicationId="89ae-8b6d-da44-733f">
+          <categoryLinks>
+            <categoryLink name="Battle Tank" hidden="false" id="49f8-2594-46c2-2927" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
+            <categoryLink name="Vehicle (2)" hidden="false" id="0003-c202-95ca-9021" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+            <categoryLink name="Mechanicum" hidden="false" id="25aa-9d15-5268-c715" targetId="d331-a05e-f676-b8a6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Krios Venator" hidden="false" id="2b8e-abf8-d4ea-6e0a" type="selectionEntry" targetId="89bb-e3b8-4a92-eec3">
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="1c49-d6c3-7e72-3163" includeChildSelections="false"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="154a-6594-7233-e606" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Standard Detachments" hidden="false" id="209a-3475-9c75-ddfe" targetId="e1e0-9c0e-7cab-b244" primary="true"/>
+        <categoryLink name="Collegia Titanica" hidden="false" id="1cda-95b6-8ee1-8136" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="780"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Children of the Storm" id="95d6-d778-43ee-6494" hidden="false" type="rule" targetId="3df3-0571-46b5-7202"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Demi-Maniple Aeterna" hidden="false" id="8404-1898-90dc-d266" subType="unit-group" publicationId="e4cc-404e-be5e-2101" page="96">
+      <comment>Expanded</comment>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="960"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0079-cfc5-fd0a-219a" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="2b6d-50d6-6d1e-f976" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="437a-7951-c93d-1e14" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" value="Primary Army must be Collegia Titanica" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Cerastus Knight Banner" hidden="false" id="06b5-a05c-a7c0-7ac4" collective="false">
+          <categoryLinks>
+            <categoryLink name="Knight (4)" hidden="false" id="3486-1fa0-dee4-353d" targetId="13e3-8701-239a-fec9" primary="false"/>
+            <categoryLink name="Knight" hidden="false" id="48d5-b611-6edc-2132" targetId="adde-db57-b7d8-2daa" primary="true"/>
+            <categoryLink name="Questoris Familia" hidden="false" id="8953-1932-020c-846e" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Knight Lancer" hidden="false" id="9bbf-e794-ba8b-db48" collective="false">
+              <infoLinks>
+                <infoLink name="Furious Charge" id="bfcd-c862-569d-baeb" hidden="false" targetId="d78b-750b-2e92-781d" type="rule"/>
+                <infoLink name="Independent" id="e66b-6696-7856-8a9d" hidden="false" targetId="53f9-310a-fcae-bbd5" type="rule"/>
+                <infoLink name="Nimble" id="02b1-1cb1-b905-5e7e" hidden="false" targetId="bc40-962f-5fc5-771a" type="rule"/>
+                <infoLink name="Cerastus Knight" id="8ada-4228-33b2-21c4" hidden="false" type="profile" targetId="8ebf-7230-5599-cb89"/>
+                <infoLink name="Ion Shield (X)" id="d019-7e61-4794-2571" hidden="false" targetId="3016-c284-15c3-6753" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Ion Shields (2+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dcd8-1eab-604b-1caa" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f333-f86e-b024-c1a9" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Shock lance" hidden="false" id="7418-b924-0d9c-d83e" type="selectionEntry" targetId="7e3c-96f9-ff52-9078">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9132-357d-40fd-7909" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6932-023f-7819-f8c4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Ion gauntlet shield" hidden="false" id="9042-badf-6b60-3ec0" type="selectionEntry" targetId="ac45-4e42-122a-cf34">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bbea-7b8b-44b5-d442" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b72b-f499-40c9-3895" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ffe8-4622-21e1-a201" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0d7-a15d-35a8-9392" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Vultarax Stratos-Automata Squadron" hidden="false" id="5844-2a44-dbd3-47a1" publicationId="89ae-8b6d-da44-733f">
+          <categoryLinks>
+            <categoryLink name="Vanguard" hidden="false" id="52d7-10b7-a468-cbc8" targetId="8416-456c-a6f-e059" primary="true"/>
+            <categoryLink name="Cavalry (1)" hidden="false" id="99a1-7185-6b04-b151" targetId="4376-9c33-b1cc-bb06" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Vultarax" hidden="false" id="9048-381b-9714-adef" type="selectionEntry" targetId="3781-8bcd-8940-7e43">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e6ea-d570-afa2-2663" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="31ef-7baa-83c4-1757" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c9e-7eaa-2b29-63bb" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99b1-a2bb-c41e-b0bb" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Warhound Hunting Pack" hidden="false" id="713a-c2ce-6c26-4c5c" collective="false">
+          <categoryLinks>
+            <categoryLink name="Titan (5)" hidden="false" id="8179-34d7-5334-e3ff" targetId="9072-16ad-262f-a980" primary="false"/>
+            <categoryLink name="Titan" hidden="false" id="c571-6a41-2a77-e469" targetId="1302-0157-2be4-3d34" primary="true"/>
+            <categoryLink name="Collegia Titanica" hidden="false" id="cd45-4e0d-449e-a1b4" targetId="d965-f291-a87b-657f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Warhound Titan" hidden="false" id="e283-4f1d-82ca-d18c" collective="false">
+              <infoLinks>
+                <infoLink name="Agile" id="e328-7a55-8994-1929" hidden="false" targetId="36b7-c82d-3af9-3a0" type="rule"/>
+                <infoLink name="Void Shields (X)" id="7e7a-7085-d9b3-6e4c" hidden="false" targetId="908c-befc-f030-f2e7" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Void Shields (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Warhound Titan" id="4677-072d-700e-406a" hidden="false" type="profile" targetId="c300-9c2b-b7c5-b1da"/>
+              </infoLinks>
+              <costs>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a8a7-a62e-ded6-791d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d3b-6daf-0e99-ee27" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Plasma blastgun" hidden="false" id="3063-3ad9-7bda-0a29" type="selectionEntry" targetId="c27b-2f28-3ede-1cec">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b076-cb85-cc49-b3a5" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="739a-508a-616a-3db4" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Vulcan mega-bolter" hidden="false" id="f4e6-6d5b-43cb-5374" type="selectionEntry" targetId="db04-5b4b-6441-b732">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="604a-65e0-92fc-ac4f" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5548-f68b-208e-89b6" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Warhound Titan" hidden="false" id="05a6-2aeb-146a-d120" collective="false">
+              <infoLinks>
+                <infoLink name="Agile" id="fcae-5888-311d-29a2" hidden="false" targetId="36b7-c82d-3af9-3a0" type="rule"/>
+                <infoLink name="Void Shields (X)" id="e44e-6a46-9250-c24c" hidden="false" targetId="908c-befc-f030-f2e7" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Void Shields (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Warhound Titan" id="a3b4-8c9b-eb3d-f4b7" hidden="false" type="profile" targetId="c300-9c2b-b7c5-b1da"/>
+              </infoLinks>
+              <costs>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6607-cce4-092a-5efa" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3730-f28e-2246-dfdd" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Volkite eradicator" hidden="false" id="fad7-ef18-907c-9740" type="selectionEntry" targetId="38b4-86ef-1a4d-d7c8">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1095-e273-1a45-07ad" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d985-a08d-3cae-d59c" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Vulcan mega-bolter" hidden="false" id="b0f2-9b31-1fab-f2bd" type="selectionEntry" targetId="db04-5b4b-6441-b732">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2ae-7417-56f8-91b4" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13fd-fb50-bb5e-4755" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e8c-be0e-a615-797b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5393-11af-cda3-13a4" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Expanded Detachments" hidden="false" id="47ec-21f9-8161-82c0" targetId="b2ba-773c-1cc5-56bc" primary="true"/>
+        <categoryLink name="Collegia Titanica" hidden="false" id="f918-6412-22c1-b5d4" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Children of the Storm" id="df33-ad61-31fe-9e37" hidden="false" type="rule" targetId="3df3-0571-46b5-7202"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedRules>
+    <rule name="Children of the Storm" id="3df3-0571-46b5-7202" hidden="false">
+      <description>Once per game, when a Titan from this Formation finishes its activation during the Combat phase, it may immediately fire one of its weapons again.</description>
+    </rule>
+  </sharedRules>
 </catalogue>

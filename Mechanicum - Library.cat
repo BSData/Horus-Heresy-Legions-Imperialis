@@ -966,7 +966,12 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="4162-8988-316f-1d1d" type="selectionEntry" targetId="bd64-14d9-e283-c70e"/>
+        <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="4162-8988-316f-1d1d" type="selectionEntry" targetId="bd64-14d9-e283-c70e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eabe-2f6d-b81a-32ec" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5927-4165-3e36-266f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Domitar" hidden="false" id="153b-00ee-9c7c-113c">
@@ -1094,10 +1099,6 @@
       <infoLinks>
         <infoLink name="Light AT" id="e5c3-613b-c6be-31c3" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
       </infoLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb45-1945-e69f-68bc" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62d2-36cf-29dd-4e93" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Thanatar" hidden="false" id="cd2f-fcf0-bf9c-73c2">
       <costs>
@@ -1105,17 +1106,6 @@
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
-      <profiles>
-        <profile name="Thanatar" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="8223-4725-0584-3f18">
-          <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">4&quot;</characteristic>
-            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
-            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+4</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink name="Armoured" id="714e-2c89-fa5b-0f81" hidden="false" type="rule" targetId="665b-47e2-df00-2629"/>
         <infoLink name="Cybernetica Cortex (X) " id="18c3-8c0c-fbf7-b626" hidden="false" type="rule" targetId="3df1-39f0-9014-cf63">
@@ -1147,6 +1137,7 @@
             <modifier type="set" value="Dread Aura (3&quot;)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Thanatar" id="2364-411f-7c66-f8db" hidden="false" type="profile" targetId="8223-4725-0584-3f18"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Main Weapon" id="c2c4-ce3b-3c46-cb36" hidden="false" defaultSelectionEntryId="a339-dd49-4ced-d3a9">
@@ -1208,32 +1199,24 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Plasma mortar" hidden="false" id="a339-dd49-4ced-d3a9">
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Plasma mortar" hidden="false" id="1ffe-6e39-2c9a-9cf8" type="selectionEntry" targetId="a339-dd49-4ced-d3a9">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2436-f07c-3e5d-5172" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7789-5506-401b-8998" includeChildSelections="false"/>
               </constraints>
-              <profiles>
-                <profile name="Plasma mortar" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="4403-e74a-b01c-e7f8">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Demolisher, Ignores Cover</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Demolisher" id="3a3b-b70f-0abb-9908" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
-                <infoLink name="Ignores Cover" id="7631-c627-1b68-6366" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="8dd9-9d27-7e04-a6b4" type="selectionEntry" targetId="bd64-14d9-e283-c70e"/>
+        <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="8dd9-9d27-7e04-a6b4" type="selectionEntry" targetId="bd64-14d9-e283-c70e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb45-1945-e69f-68bc" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62d2-36cf-29dd-4e93" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Vorax" hidden="false" id="376b-24b5-a5cd-449a">
@@ -2100,6 +2083,68 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Krios Venator" hidden="false" id="89bb-e3b8-4a92-eec3">
+      <infoLinks>
+        <infoLink name="Krios" id="7c3b-20e3-861e-cf1a" hidden="false" type="profile" targetId="3cb5-a447-0168-09fc"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Pulsar-fusil" hidden="false" id="1209-9cb3-1892-e5ac">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a74b-268c-de14-d0b9-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a74b-268c-de14-d0b9-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Pulsar-fusil" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d164-3f41-5e44-598f">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Anti-tank" id="54f7-25f6-2fe3-51b2" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+            <infoLink name="Arc (Front/Rear)" id="740b-85dd-fca6-c565" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+              <modifiers>
+                <modifier type="set" value="Arc (Front)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Volkite caliver sponsons" hidden="false" id="5c24-5e3c-7a8d-e1ec" type="selectionEntry" targetId="0f1a-da19-4c29-9936">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a0a-6659-0554-94a3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49f6-3345-b761-181e"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Plasma mortar" hidden="false" id="a339-dd49-4ced-d3a9">
+      <profiles>
+        <profile name="Plasma mortar" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="4403-e74a-b01c-e7f8">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Demolisher, Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Demolisher" id="3a3b-b70f-0abb-9908" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
+        <infoLink name="Ignores Cover" id="7631-c627-1b68-6366" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Mechanicum" id="d331-a05e-f676-b8a6" hidden="false"/>
@@ -2112,6 +2157,15 @@
         <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">0</characteristic>
         <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
         <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Thanatar" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="8223-4725-0584-3f18">
+      <characteristics>
+        <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">4&quot;</characteristic>
+        <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+        <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+4</characteristic>
+        <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+        <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
