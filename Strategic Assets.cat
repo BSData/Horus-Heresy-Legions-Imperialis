@@ -14,7 +14,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="90ad-40c2-4b21-1ab3" name="Legion Support" hidden="false">
+    <forceEntry id="90ad-40c2-4b21-1ab3" name="Legio Support" hidden="false">
       <categoryLinks>
         <categoryLink id="9765-5680-5361-8a16" name="Titan" hidden="false" targetId="1302-0157-2be4-3d34" primary="false">
           <constraints>
