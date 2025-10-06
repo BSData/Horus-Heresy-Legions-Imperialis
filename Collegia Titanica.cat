@@ -34,9 +34,14 @@
       </categoryLinks>
       <modifiers>
         <modifier type="set-primary" value="1302-0157-2be4-3d34" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e6aa-a3af-232a-9596" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e6aa-a3af-232a-9596" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -69,9 +74,14 @@
       </infoLinks>
       <modifiers>
         <modifier type="set-primary" value="1302-0157-2be4-3d34" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e6aa-a3af-232a-9596" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e6aa-a3af-232a-9596" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </entryLink>
@@ -93,9 +103,14 @@
       </infoLinks>
       <modifiers>
         <modifier type="set-primary" value="1302-0157-2be4-3d34" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e6aa-a3af-232a-9596" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e6aa-a3af-232a-9596" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </entryLink>
@@ -117,9 +132,14 @@
       </infoLinks>
       <modifiers>
         <modifier type="set-primary" value="1302-0157-2be4-3d34" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e6aa-a3af-232a-9596" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e6aa-a3af-232a-9596" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </entryLink>
@@ -141,9 +161,14 @@
       </infoLinks>
       <modifiers>
         <modifier type="set-primary" value="1302-0157-2be4-3d34" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e6aa-a3af-232a-9596" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e6aa-a3af-232a-9596" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </entryLink>
@@ -165,9 +190,14 @@
       </infoLinks>
       <modifiers>
         <modifier type="set-primary" value="1302-0157-2be4-3d34" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e6aa-a3af-232a-9596" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e6aa-a3af-232a-9596" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </entryLink>
@@ -189,9 +219,14 @@
       </infoLinks>
       <modifiers>
         <modifier type="set-primary" value="1302-0157-2be4-3d34" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e6aa-a3af-232a-9596" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e6aa-a3af-232a-9596" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </entryLink>
@@ -213,9 +248,10 @@
     <entryLink import="true" name="Thallax Cohort" hidden="false" id="3da5-8096-fc46-cb51" type="selectionEntry" targetId="4faa-4503-048b-8302"/>
     <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="7b45-2f4a-5726-86db" type="selectionEntry" targetId="22a2-1b3d-28a9-de58"/>
     <entryLink import="true" name="Adsecularis Tech-thrall Covenant" hidden="false" id="14e9-8a54-c512-8217" type="selectionEntry" targetId="c0b1-535e-3eac-4816"/>
-    <entryLink import="true" name="Artalax Battle-Automata Maniple" hidden="false" id="a467-11ae-9790-bc1b" type="selectionEntry" targetId="e1db-1b55-f141-5eff"/>
+    <entryLink import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="a467-11ae-9790-bc1b" type="selectionEntry" targetId="e1db-1b55-f141-5eff"/>
     <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="4256-4869-0b3c-67f3" type="selectionEntry" targetId="0e15-d028-584f-3685"/>
     <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="14db-1fe8-5c7e-3059" type="selectionEntry" targetId="84c0-0968-cc49-82fc"/>
+    <entryLink import="true" name="Warlord Sinister Battle Titan" hidden="false" id="deb5-aeb2-a106-fa61" type="selectionEntry" targetId="064d-d7bb-373a-a756"/>
   </entryLinks>
   <forceEntries>
     <forceEntry name="Axiom Battleline Maniple" id="fa2a-ae12-7ed8-6178" hidden="false" publicationId="89ae-8b6d-da44-733f">
@@ -451,12 +487,12 @@
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="4d23-764c-affc-70c7" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Dire Wolf" hidden="false" id="2a76-689c-ba27-e0f2" targetId="f8e1-555f-68bb-6744" type="category"/>
-        <categoryLink name="Reaver" hidden="false" id="b3a4-0fba-6228-d084" targetId="5609-1005-053e-b8b8" type="category"/>
-        <categoryLink name="Warbringer" hidden="false" id="efcd-7dec-887d-0276" targetId="6203-da0b-b61a-fa17" type="category"/>
+        <categoryLink name="Dire Wolf" hidden="false" id="2a76-689c-ba27-e0f2" targetId="f8e1-555f-68bb-6744"/>
+        <categoryLink name="Reaver" hidden="false" id="b3a4-0fba-6228-d084" targetId="5609-1005-053e-b8b8"/>
+        <categoryLink name="Warbringer" hidden="false" id="efcd-7dec-887d-0276" targetId="6203-da0b-b61a-fa17"/>
         <categoryLink name="Warhound" hidden="false" id="46b8-6903-e68c-0edc" targetId="8cc0-dc3a-0dd0-a375"/>
-        <categoryLink name="Warlord" hidden="false" id="4f20-bb44-b4fa-7804" targetId="7524-919b-1bbd-3a00" type="category"/>
-        <categoryLink name="Warmaster" hidden="false" id="9b89-939a-1024-91d0" targetId="41d1-121f-2255-f1df" type="category"/>
+        <categoryLink name="Warlord" hidden="false" id="4f20-bb44-b4fa-7804" targetId="7524-919b-1bbd-3a00"/>
+        <categoryLink name="Warmaster" hidden="false" id="9b89-939a-1024-91d0" targetId="41d1-121f-2255-f1df"/>
       </categoryLinks>
       <rules>
         <rule name="Bound Taghma" id="57bd-a241-709b-3af8" hidden="false">
