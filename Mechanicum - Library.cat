@@ -1201,12 +1201,7 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Plasma mortar" hidden="false" id="1ffe-6e39-2c9a-9cf8" type="selectionEntry" targetId="a339-dd49-4ced-d3a9">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2436-f07c-3e5d-5172" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7789-5506-401b-8998" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Plasma mortar" hidden="false" id="1ffe-6e39-2c9a-9cf8" type="selectionEntry" targetId="a339-dd49-4ced-d3a9"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>

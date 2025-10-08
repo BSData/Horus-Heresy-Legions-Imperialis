@@ -10574,6 +10574,14 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             <repeat value="1" repeats="1" field="forces" scope="roster" childId="620f-8488-c57a-b870" shared="true" roundUp="false"/>
             <repeat value="1" repeats="1" field="forces" scope="roster" childId="9a97-9a76-77cf-aa42" shared="true" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Primary Army must be Legiones Astartes" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </forceEntry>
