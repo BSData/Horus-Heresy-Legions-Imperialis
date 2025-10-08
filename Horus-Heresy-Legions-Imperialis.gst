@@ -482,7 +482,7 @@ any way.</description>
     <rule id="caaf-3de0-3658-9054" name="Commander" publicationId="c1b8-2180-635c-14cd" hidden="false">
       <description>Detachments with the Commander special rule are the commanders of your Army.
 
-When deploying a Formation that includes any models with this special rule during deployment, a player must assign all models with this special rule to a Detachment in that Formation, so long as the two of the same Detachment type. For the remainder of the battle, the model counts as part of the Detachment it is attached to an cannot leave it for any reason.
+When deploying a Formation that includes any models with this special rule during deployment, a player must assign all models with this special rule to a Detachment in that Formation, so long as the two are of the same Detachment type. For the remainder of the battle, the model counts as part of the Detachment it is attached to an cannot leave it for any reason.
 
 A Detachment can only ever have one model with the Commander special rule attached to it at any given time.
 
@@ -573,15 +573,7 @@ Models with the Jump Packs special rule count as having the Bulky special rule f
       <description>When a model with the Macro-extinction Targeting Protocols special rule is firing at a Super-heavy, Knight or Titan Detachment, it may re-roll all failed Hit rolls. In addition, when making Fight rolls for a model with this special rule, the controlling player may re-roll one D6 of the controlling player&apos;s choice in Fights against a Super-heavy, Knight or Titan model.</description>
     </rule>
     <rule id="db05-2ad8-6256-20e9" name="Master Tactician" publicationId="559c-6588-c3b1-b0e5" hidden="false" page="2">
-      <description>A Detachment that contains one or more models with
-this special rule may issue a command when it is activated.
-If the controlling player chooses to do so, they may select
-one other friendly Detachment that has yet to be activated
-this round, and is within 6&quot; of one or more models with
-this special rule that are being activated. The selected
-Detachment&apos;s Order token is discarded and replaced with
-a different Order they were eligible to be issued during the
-Orders phase of this round.
+      <description>A Detachment that contains one or more models with this special rule may issue a command when it is activated. If the controlling player chooses to do so, they may select one other friendly Detachment that has yet to be activated this round, and is within 6&quot; of one or more models with this special rule that are being activated. The selected Detachment&apos;s Order token is discarded and replaced with a different Order they were eligible to be issued during the Orders phase of this round.
 
 A Detachment issued with a Fall Back Order cannot discard its Order via this rule, however a Broken Detachment can, and thus can be issued an Order other than Advance or Charge.</description>
     </rule>
