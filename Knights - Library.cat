@@ -218,7 +218,6 @@
       <categoryLinks>
         <categoryLink name="Knight (4)" hidden="false" id="5e0d-343b-3e6a-4651" targetId="13e3-8701-239a-fec9" primary="false"/>
         <categoryLink name="Knight" hidden="false" id="041e-6c99-016d-dce5" targetId="adde-db57-b7d8-2daa" primary="true"/>
-        <categoryLink name="Questoris Familia" hidden="false" id="a3a3-2d7a-0910-ef35" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
@@ -415,7 +414,6 @@
       <categoryLinks>
         <categoryLink name="Knight (4)" hidden="false" id="3f9a-6311-9eb4-ed03" targetId="13e3-8701-239a-fec9" primary="false"/>
         <categoryLink name="Knight" hidden="false" id="0778-196d-942d-ae28" targetId="adde-db57-b7d8-2daa" primary="true"/>
-        <categoryLink name="Questoris Familia" hidden="false" id="251f-7e48-873d-6f68" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Cerastus Knights" id="7c80-2724-c134-fc5e" hidden="false" collective="false" import="true" defaultSelectionEntryId="938a-048a-3cb8-1d12">
@@ -684,7 +682,6 @@
       <categoryLinks>
         <categoryLink name="Knight (4)" hidden="false" id="f397-935e-681e-b46e" targetId="13e3-8701-239a-fec9" primary="false"/>
         <categoryLink name="Knight" hidden="false" id="bd43-1d90-e98e-ba65" targetId="adde-db57-b7d8-2daa" primary="true"/>
-        <categoryLink name="Questoris Familia" hidden="false" id="6e92-bd96-e96a-d159" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Questoris Knights" id="2640-4427-a1a4-321c" hidden="false" collective="false" import="true" defaultSelectionEntryId="6505-3eb3-fe2a-e6ca">
@@ -1176,7 +1173,6 @@
       <categoryLinks>
         <categoryLink name="Knight (4)" hidden="false" id="f00e-51ac-0d62-bb8e" targetId="13e3-8701-239a-fec9" primary="false"/>
         <categoryLink name="Knight" hidden="false" id="bd4b-66c3-2bc4-aa8a" targetId="adde-db57-b7d8-2daa" primary="true"/>
-        <categoryLink name="Questoris Familia" hidden="false" id="1261-be91-9aaf-7f18" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="120"/>
@@ -1193,7 +1189,6 @@
       <categoryLinks>
         <categoryLink name="Knight (4)" hidden="false" id="15b9-68de-8d2d-449e" targetId="13e3-8701-239a-fec9" primary="false"/>
         <categoryLink name="Knight" hidden="false" id="362e-cb2c-ab9b-2ecc" targetId="adde-db57-b7d8-2daa" primary="true"/>
-        <categoryLink name="Questoris Familia" hidden="false" id="021a-caae-f021-009d" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Knight Moirax" hidden="false" id="d17f-b74a-2a3f-96a0" collective="false">
@@ -1543,7 +1538,6 @@
       <categoryLinks>
         <categoryLink name="Knight (4)" hidden="false" id="0a55-87a3-2c5c-3fe5" targetId="13e3-8701-239a-fec9" primary="false"/>
         <categoryLink name="Knight" hidden="false" id="8125-18f3-2cc8-7487" targetId="adde-db57-b7d8-2daa" primary="true"/>
-        <categoryLink name="Questoris Familia" hidden="false" id="8178-6c3b-c8a2-889c" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hekaton siege claw" hidden="false" id="70f5-4b2f-941c-c171" collective="true">
@@ -1729,14 +1723,12 @@
       <categoryLinks>
         <categoryLink name="Knight (4)" hidden="false" id="3aaa-48ba-d893-4490" targetId="13e3-8701-239a-fec9" primary="false"/>
         <categoryLink name="Knight" hidden="false" id="08f7-35c9-9e0d-fedc" targetId="adde-db57-b7d8-2daa" primary="true"/>
-        <categoryLink name="Questoris Familia" hidden="false" id="9644-7843-398e-8378" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Acastus Knight Asterius Banner" hidden="false" id="46d4-5713-3d1d-e943" collective="false">
       <categoryLinks>
         <categoryLink name="Knight (4)" hidden="false" id="bb37-420c-6153-c7f0" targetId="13e3-8701-239a-fec9" primary="false"/>
         <categoryLink name="Knight" hidden="false" id="a463-ddfc-eb41-859e" targetId="adde-db57-b7d8-2daa" primary="true"/>
-        <categoryLink name="Questoris Familia" hidden="false" id="500d-6a9b-c161-2cf3" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>

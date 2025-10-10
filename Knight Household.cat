@@ -305,7 +305,7 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
               <modifiers>
                 <modifier type="set" value="1" field="9f57-7dcc-f4ad-931e">
                   <conditions>
-                    <condition type="atLeast" value="2" field="selections" scope="force" childId="d0a5-ec4a-7b1a-f5ab" shared="true"/>
+                    <condition type="atLeast" value="2" field="selections" scope="force" childId="d1c0-6f40-691e-d7be" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -356,8 +356,11 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Questoris Familia" hidden="false" id="ccbc-9f02-33eb-2ed3" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="954c-db28-b539-ea69" type="selectionEntry" targetId="84c0-0968-cc49-82fc">
+    <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="954c-db28-b539-ea69" type="selectionEntry" targetId="0fa8-1d01-f64a-6bc5">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -365,8 +368,11 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Questoris Familia" hidden="false" id="2a22-8f2b-95b1-ba4a" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="24bb-1c3d-3ac9-9d4f" type="selectionEntry" targetId="e1db-1b55-f141-5eff">
+    <entryLink import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="24bb-1c3d-3ac9-9d4f" type="selectionEntry" targetId="0201-32ed-f09c-06d0">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -374,8 +380,11 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Questoris Familia" hidden="false" id="2216-f3f1-ca0d-60a2" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="6525-878c-3c69-d189" type="selectionEntry" targetId="0e15-d028-584f-3685">
+    <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="6525-878c-3c69-d189" type="selectionEntry" targetId="2bf3-65af-d5ee-9757">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -383,8 +392,11 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Questoris Familia" hidden="false" id="addc-5249-fda3-5ed1" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="ea0f-ab98-a9e6-562a" type="selectionEntry" targetId="d0a5-ec4a-7b1a-f5ab">
+    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="ea0f-ab98-a9e6-562a" type="selectionEntry" targetId="d1c0-6f40-691e-d7be">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -392,8 +404,11 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Questoris Familia" hidden="false" id="15e8-83fc-b78b-d116" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="be32-2334-12e7-2173" type="selectionEntry" targetId="22a2-1b3d-28a9-de58">
+    <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="be32-2334-12e7-2173" type="selectionEntry" targetId="ec82-1c8f-b4ae-6744">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -401,6 +416,9 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Questoris Familia" hidden="false" id="293d-7af7-cf9b-dc42" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Knight Armiger Banner" hidden="false" id="e08e-f61c-f0e5-16ed" type="selectionEntry" targetId="4cf9-7f9c-0318-e375">
       <modifiers>
@@ -463,6 +481,7 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Armiger" hidden="false" id="f6b3-baff-f2dd-f721" targetId="fe26-cfac-c306-cfd8" primary="true"/>
+        <categoryLink name="Questoris Familia" hidden="false" id="dcbb-b7ca-73db-cc1d" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Mechanicum Knight Moirax Banner" hidden="false" id="c00c-fd3c-6f89-924f" type="selectionEntry" targetId="b852-6c79-b579-22bd">
@@ -503,6 +522,7 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Armiger" hidden="false" id="bac5-c4e9-ebd2-e5ef" targetId="fe26-cfac-c306-cfd8" primary="true"/>
+        <categoryLink name="Questoris Familia" hidden="false" id="f79d-4d3d-276a-e09d" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set-primary" value="adde-db57-b7d8-2daa" field="category">
@@ -578,6 +598,7 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
       </modifiers>
       <categoryLinks>
         <categoryLink name="Questoris" hidden="false" id="1056-d0eb-98eb-46d5" targetId="b2bb-ab05-f014-3b33" primary="true"/>
+        <categoryLink name="Questoris Familia" hidden="false" id="2cef-2390-4cb7-77cd" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Cerastus Knight Banner" hidden="false" id="dbea-efc6-d8aa-1679" type="selectionEntry" targetId="57b8-770b-ddfc-a0dc">
@@ -630,11 +651,13 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
       </modifiers>
       <categoryLinks>
         <categoryLink name="Cerastus" hidden="false" id="4368-6a44-0682-8d32" targetId="7e81-3342-b50d-b304" primary="true"/>
+        <categoryLink name="Questoris Familia" hidden="false" id="dcc9-722d-cd7f-3f41" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Questoris Mechanicum Knight Banner" hidden="false" id="f8b0-06c8-9bf2-f995" type="selectionEntry" targetId="e661-b495-b7f8-6cce">
       <categoryLinks>
         <categoryLink name="Questoris" hidden="false" id="2636-0831-74cf-dd46" targetId="b2bb-ab05-f014-3b33" primary="true"/>
+        <categoryLink name="Questoris Familia" hidden="false" id="dca6-3ff2-d63a-be6a" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Outflank" id="1d30-9a2d-1940-3efa" hidden="false" type="rule" targetId="8785-676-b80f-8709">
@@ -734,6 +757,7 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
       </modifiers>
       <categoryLinks>
         <categoryLink name="Cerastus" hidden="false" id="87a5-17f3-051d-3afe" targetId="7e81-3342-b50d-b304" primary="true"/>
+        <categoryLink name="Questoris Familia" hidden="false" id="e0ed-db08-8073-7e4a" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Acastus Knight Porphyrion Banner" hidden="false" id="8daf-97f5-7bee-d462" type="selectionEntry" targetId="a677-233e-8405-bc8e">
@@ -781,6 +805,7 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
       </modifiers>
       <categoryLinks>
         <categoryLink name="Acastus" hidden="false" id="5e52-c645-c57b-3a7d" targetId="0d15-eaf4-cef8-8841" primary="true"/>
+        <categoryLink name="Questoris Familia" hidden="false" id="125b-9491-7eec-4903" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Acastus Knight Asterius Banner" hidden="false" id="603c-8f1e-3cb2-4fb8" type="selectionEntry" targetId="46d4-5713-3d1d-e943">
@@ -828,6 +853,7 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
       </modifiers>
       <categoryLinks>
         <categoryLink name="Acastus" hidden="false" id="7cbc-bd83-da40-451e" targetId="0d15-eaf4-cef8-8841" primary="true"/>
+        <categoryLink name="Questoris Familia" hidden="false" id="af50-3a2a-b45f-4172" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Knight Armiger Banner" hidden="false" id="6ddb-aec4-6121-0698" type="selectionEntry" targetId="4cf9-7f9c-0318-e375">
@@ -848,6 +874,7 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Armiger" hidden="false" id="9bca-4fc2-3a1b-46f6" targetId="fe26-cfac-c306-cfd8" primary="true"/>
+        <categoryLink name="Questoris Familia" hidden="false" id="ee4c-b2c0-663d-cc7a" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
       <comment>Retainer Cohorts extra option</comment>
     </entryLink>
@@ -857,6 +884,7 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Armiger" hidden="false" id="2882-b3a7-1214-5d5f" targetId="fe26-cfac-c306-cfd8" primary="true"/>
+        <categoryLink name="Questoris Familia" hidden="false" id="8913-e21d-c77a-e689" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">

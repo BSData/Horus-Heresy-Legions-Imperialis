@@ -117,6 +117,7 @@
     <categoryEntry name="Questoris" id="b2bb-ab05-f014-3b33" hidden="false" publicationId="89ae-8b6d-da44-733f">
       <comment>detachment role</comment>
     </categoryEntry>
+    <categoryEntry name="Support Formations" id="8948-fa38-100b-2852" hidden="true"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="49dd-d763-6836-b4f8" hidden="false" name="Unbound Formation (Open Play)">

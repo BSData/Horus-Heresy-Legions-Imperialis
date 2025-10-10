@@ -237,6 +237,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Collegia Titanica" hidden="false" id="4dab-f6ad-0547-d600" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Cerastus Knight Banner" hidden="false" id="2a78-6ee5-87ed-3260" type="selectionEntry" targetId="57b8-770b-ddfc-a0dc">
       <modifiers>
@@ -246,6 +249,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Collegia Titanica" hidden="false" id="9e95-27bb-4221-dee1" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Questoris Knight Banner" hidden="false" id="e6eb-ed8b-8f62-659e" type="selectionEntry" targetId="5dbb-aa60-1fae-c471">
       <modifiers>
@@ -255,13 +261,40 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Collegia Titanica" hidden="false" id="3788-8758-3fe2-ab9c" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Thallax Cohort" hidden="false" id="3da5-8096-fc46-cb51" type="selectionEntry" targetId="4faa-4503-048b-8302"/>
-    <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="7b45-2f4a-5726-86db" type="selectionEntry" targetId="22a2-1b3d-28a9-de58"/>
-    <entryLink import="true" name="Adsecularis Tech-thrall Covenant" hidden="false" id="14e9-8a54-c512-8217" type="selectionEntry" targetId="c0b1-535e-3eac-4816"/>
-    <entryLink import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="a467-11ae-9790-bc1b" type="selectionEntry" targetId="e1db-1b55-f141-5eff"/>
-    <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="4256-4869-0b3c-67f3" type="selectionEntry" targetId="0e15-d028-584f-3685"/>
-    <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="14db-1fe8-5c7e-3059" type="selectionEntry" targetId="84c0-0968-cc49-82fc"/>
+    <entryLink import="true" name="Thallax Cohort" hidden="false" id="3da5-8096-fc46-cb51" type="selectionEntry" targetId="f7a7-95d6-d7f2-18ee">
+      <categoryLinks>
+        <categoryLink name="Collegia Titanica" hidden="false" id="0d12-9382-7a04-ba14" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="7b45-2f4a-5726-86db" type="selectionEntry" targetId="ec82-1c8f-b4ae-6744">
+      <categoryLinks>
+        <categoryLink name="Collegia Titanica" hidden="false" id="7bef-9e7c-b357-2919" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Adsecularis Tech-thrall Covenant" hidden="false" id="14e9-8a54-c512-8217" type="selectionEntry" targetId="cfac-ce06-cbf6-cf7a">
+      <categoryLinks>
+        <categoryLink name="Collegia Titanica" hidden="false" id="3934-5490-c4b5-4a53" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="a467-11ae-9790-bc1b" type="selectionEntry" targetId="0201-32ed-f09c-06d0">
+      <categoryLinks>
+        <categoryLink name="Collegia Titanica" hidden="false" id="faf5-0c49-5332-b74f" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="4256-4869-0b3c-67f3" type="selectionEntry" targetId="2bf3-65af-d5ee-9757">
+      <categoryLinks>
+        <categoryLink name="Collegia Titanica" hidden="false" id="41da-f984-2d90-3e20" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="14db-1fe8-5c7e-3059" type="selectionEntry" targetId="0fa8-1d01-f64a-6bc5">
+      <categoryLinks>
+        <categoryLink name="Collegia Titanica" hidden="false" id="ec0d-7fb5-df85-6f85" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Warlord-Sinister Battle Titan" hidden="false" id="deb5-aeb2-a106-fa61" type="selectionEntry" targetId="064d-d7bb-373a-a756">
       <infoLinks>
         <infoLink name="Cortex Controller" id="701f-c051-7bba-3a75" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319">
@@ -274,6 +307,9 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Collegia Titanica" hidden="false" id="888b-8bac-9063-4413" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Acastus Knight Porphyrion Banner" hidden="false" id="0614-044a-0c20-a95a" type="selectionEntry" targetId="a677-233e-8405-bc8e">
       <modifiers>
@@ -283,6 +319,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Collegia Titanica" hidden="false" id="a3d8-f5b2-d090-7d0b" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Acastus Knight Asterius Banner" hidden="false" id="691e-3166-37b5-e1c7" type="selectionEntry" targetId="46d4-5713-3d1d-e943">
       <modifiers>
@@ -292,6 +331,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Collegia Titanica" hidden="false" id="45bb-0234-9e11-dbc5" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Questoris Mechanicum Knight Banner" hidden="false" id="6ecb-7c65-1939-ee92" type="selectionEntry" targetId="e661-b495-b7f8-6cce">
       <modifiers>
@@ -301,6 +343,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Collegia Titanica" hidden="false" id="7273-d3fe-31c9-e2cb" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Mechanicum Knight Moirax Banner" hidden="false" id="ba23-2d0e-5f08-6791" type="selectionEntry" targetId="b852-6c79-b579-22bd">
       <modifiers>
@@ -310,6 +355,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Collegia Titanica" hidden="false" id="7c96-0ca8-c42e-2fc4" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Knight Armiger Banner" hidden="false" id="aea0-1837-eefc-a3e9" type="selectionEntry" targetId="4cf9-7f9c-0318-e375">
       <modifiers>
@@ -319,6 +367,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Collegia Titanica" hidden="false" id="911c-2213-5416-4048" targetId="d965-f291-a87b-657f" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Demi-Maniple Aeterna" hidden="false" id="489e-ac85-0468-f8bb" type="selectionEntry" targetId="2b6d-50d6-6d1e-f976"/>
     <entryLink import="true" name="Demi-Maniple Aeterna" hidden="false" id="059e-beb4-9d0d-c7de" type="selectionEntry" targetId="8404-1898-90dc-d266"/>
@@ -665,7 +716,6 @@ All Titan Detachments within this Support Formation gain the Cortex Controller s
           <categoryLinks>
             <categoryLink name="Knight (4)" hidden="false" id="4d0a-807c-bc1f-c38c" targetId="13e3-8701-239a-fec9" primary="false"/>
             <categoryLink name="Knight" hidden="false" id="3b30-c45b-f956-9caa" targetId="adde-db57-b7d8-2daa" primary="true"/>
-            <categoryLink name="Questoris Familia" hidden="false" id="6730-8289-a198-3f74" targetId="fd9c-c985-3fc3-f5dd" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
@@ -834,7 +884,6 @@ All Titan Detachments within this Support Formation gain the Cortex Controller s
           <categoryLinks>
             <categoryLink name="Battle Tank" hidden="false" id="49f8-2594-46c2-2927" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
             <categoryLink name="Vehicle (2)" hidden="false" id="0003-c202-95ca-9021" targetId="49b3-dae7-33f8-f8e" primary="false"/>
-            <categoryLink name="Mechanicum" hidden="false" id="25aa-9d15-5268-c715" targetId="d331-a05e-f676-b8a6" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>

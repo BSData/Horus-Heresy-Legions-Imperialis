@@ -58,57 +58,6 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Thallax" hidden="false" id="b0e5-db48-66c7-ba75">
-      <profiles>
-        <profile name="Thallax" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="651e-5c4e-15c8-a18e">
-          <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
-            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">5+</characteristic>
-            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
-      </costs>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="b37f-5f5f-0a80-7d77" collective="true">
-          <profiles>
-            <profile name="Multi-melta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="5469-e299-ae66-84d4">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Anti-tank" id="b16b-b4d2-87e7-3567" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="837d-a8a0-a670-3cf1-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="837d-a8a0-a670-3cf1-max"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-      <infoLinks>
-        <infoLink name="Jump Packs" id="7d9e-67c8-878a-ed4c" hidden="false" type="rule" targetId="130c-4ba7-dab7-34b3"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="Lightning guns" hidden="false" id="0955-3dc4-3e56-6348" type="selectionEntry" targetId="a8eb-b162-9511-b20c">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="478a-2c92-19bb-cc27-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="478a-2c92-19bb-cc27-max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-    </selectionEntry>
     <selectionEntry type="model" import="true" name="Myrmidon Secutors" hidden="false" id="da42-ba05-1a7e-c6b5" publicationId="89ae-8b6d-da44-733f" page="100">
       <costs>
         <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
@@ -176,325 +125,6 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Myrmidon Destructors" hidden="false" id="d17a-fd59-ab4c-7770" publicationId="89ae-8b6d-da44-733f" page="101">
-      <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="68c1-de55-26b1-8ca4" id="fcd7-a379-cdc9-e1d7" primary="true" name="Infantry (1)"/>
-      </categoryLinks>
-      <profiles>
-        <profile name="Myrmidon Destructors" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="7b1e-4654-8c57-0e22">
-          <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">5&quot;</characteristic>
-            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
-            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+3</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Implacable" id="0445-d388-385b-a82a" hidden="false" type="rule" targetId="d6b1-1b69-a07c-3ddd"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Conversion beamers" hidden="false" id="f248-1dca-0508-6d92">
-          <profiles>
-            <profile name="Conversion beamers" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9b24-5d13-5e23-09bc">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">4-22&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba69-1e1f-9909-f37f-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba69-1e1f-9909-f37f-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Myrmidon volkites" hidden="false" id="7316-50e3-22d8-dae1">
-          <profiles>
-            <profile name="Myrmidon volkites" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="00b5-ba25-ad2f-b8ec">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Deflagrate, Light</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Deflagrate" id="8e22-0fe8-85fd-abe2" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
-            <infoLink name="Light" id="473d-fd2d-fb9c-1067" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0793-6ab1-0bb0-694c-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0793-6ab1-0bb0-694c-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Ursarax" hidden="false" id="38a8-c364-ebe3-fa7d">
-      <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
-      </costs>
-      <profiles>
-        <profile name="Ursarax" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="b8bb-b7f6-25ce-c239">
-          <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
-            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">5+</characteristic>
-            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+3</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Jump Packs" id="b6ec-1ca5-b0b9-e5c5" hidden="false" type="rule" targetId="130c-4ba7-dab7-34b3"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Volkite incinerators" hidden="false" id="996a-4ac4-f3b9-8aa0" collective="true">
-          <profiles>
-            <profile name="Volkite incinerators" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f173-cfe0-f232-2223">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Deflagrate, Light</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Deflagrate" id="8065-f11c-b005-5196" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
-            <infoLink name="Light" id="3985-11bd-5c4e-cf8c" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eafc-037b-3069-d5e9-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eafc-037b-3069-d5e9-max"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Ursarax claws" hidden="false" id="088e-a9c1-443a-01a2" collective="true">
-          <profiles>
-            <profile name="Ursarax claws" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="7d0c-2c3e-d68a-2d74">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Rend</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Rend" id="b65d-c0f1-173b-b00c" hidden="false" type="rule" targetId="6d1b-9fcd-3541-f46e"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f68-83e5-bb47-9382"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb9b-8bfc-c8d1-ad47"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Krios Battle Tank" hidden="false" id="5f26-55f1-f9ce-a2b4">
-      <infoLinks>
-        <infoLink name="Krios" id="da15-efb1-832c-b14b" hidden="false" type="profile" targetId="3cb5-a447-0168-09fc"/>
-      </infoLinks>
-      <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
-      </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Turret Weapon" id="74a6-be02-b438-021e" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Krios lightning cannon" hidden="false" id="2c42-5b80-531c-578d">
-              <profiles>
-                <profile name="Krios lightning cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="7451-ac3c-ff87-9146">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Arc (Front/Rear)" id="7e73-0cff-6e28-3e2c" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
-                  <modifiers>
-                    <modifier type="set" value="Arc (Front)" field="name"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Irad scourer" hidden="false" id="736c-61ec-4eb4-c69c">
-              <profiles>
-                <profile name="Irad scourer" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="cc7f-d209-8c49-1eb0">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Ignores Cover</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Arc (Front/Rear)" id="99b0-80dc-6e62-0709" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
-                  <modifiers>
-                    <modifier type="set" value="Arc (Front)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Light AT" id="218b-a239-7efd-3615" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
-                <infoLink name="Ignores Cover" id="6904-2453-0880-cae0" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95c3-0727-40cd-b31c-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95c3-0727-40cd-b31c-max"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Cortex Controller" hidden="false" id="fb2a-2e67-763a-6372">
-          <costs>
-            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
-            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Cortex Controller" id="52d8-2dde-34ca-339c" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="38f9-690c-f87e-2128"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="7ea4-70ef-6360-b1a5" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Volkite caliver sponsons" hidden="false" id="1dea-a9e3-6ca9-f9f6" type="selectionEntry" targetId="0f1a-da19-4c29-9936">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="383f-8fc3-596e-6eb5-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="383f-8fc3-596e-6eb5-max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Karacnos" hidden="false" id="94c4-fc51-2e1b-296d">
-      <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
-      </costs>
-      <profiles>
-        <profile name="Karacnos" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="c24f-73fc-8e30-73e3">
-          <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
-            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
-            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">0</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Lightning locks" hidden="false" id="6b49-e80d-b5f0-3208" collective="true">
-          <profiles>
-            <profile name="Lightning locks" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6de4-ec80-2ceb-f368">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Point Defence</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Arc (Front/Rear)" id="29cb-516a-68a5-9f88" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
-              <modifiers>
-                <modifier type="set" value="Arc (Front)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Point Defence" id="f739-b724-1e9a-50ca" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4050-5841-dc85-45f1" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1ba-5b38-b3bf-aada" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Karacnos mortar battery" hidden="false" id="dbe7-9433-c9a6-8988" collective="true">
-          <profiles>
-            <profile name="Karacnos mortar battery" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e58f-785d-350a-2d1c">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">30&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Barrage, Ignores Cover</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Arc (Front/Rear)" id="0566-51ce-ee2e-3a60" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
-              <modifiers>
-                <modifier type="set" value="Arc (Front)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Barrage" id="a0d5-a6bc-0c46-bd31" hidden="false" type="rule" targetId="862d-b036-2018-dbaf"/>
-            <infoLink name="Ignores Cover" id="1051-1d49-a414-b7e7" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc68-8097-d928-bfbb" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6866-5b2d-e668-e76b" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Cortex Controller" hidden="false" id="fb2a-2e67-763a-6372">
-          <costs>
-            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
-            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Cortex Controller" id="52d8-2dde-34ca-339c" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="38f9-690c-f87e-2128"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="7ea4-70ef-6360-b1a5" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Shock ram" hidden="false" id="c668-622d-1cd4-e657" type="selectionEntry" targetId="b40d-5770-6111-03b4">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d09-976b-ed00-19e2" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc5f-39a6-f5a4-7344" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Karacnos Assault Tank Squadron" hidden="false" id="29ba-2b50-94bd-d82c" publicationId="89ae-8b6d-da44-733f">
       <costs>
         <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="40"/>
@@ -505,14 +135,6 @@
         <categoryLink name="Battle Tank" hidden="false" id="6eb6-7f5b-37de-8c9a" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
         <categoryLink name="Vehicle (2)" hidden="false" id="d3f3-a823-1a90-71f2" targetId="49b3-dae7-33f8-f8e" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Karacnos" hidden="false" id="c3d6-0989-f45f-8385" type="selectionEntry" targetId="94c4-fc51-2e1b-296d">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25a7-9acd-bb09-6eae-min"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="25a7-9acd-bb09-6eae-max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <modifiers>
         <modifier type="increment" value="35" field="ee95-a20e-f9ff-e2c2">
           <conditions>
@@ -530,6 +152,111 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Karacnos" hidden="false" id="94c4-fc51-2e1b-296d">
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
+          <profiles>
+            <profile name="Karacnos" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="c24f-73fc-8e30-73e3">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">0</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Lightning locks" hidden="false" id="6b49-e80d-b5f0-3208" collective="true">
+              <profiles>
+                <profile name="Lightning locks" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6de4-ec80-2ceb-f368">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">1</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Arc (Front/Rear)" id="29cb-516a-68a5-9f88" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                  <modifiers>
+                    <modifier type="set" value="Arc (Front)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Point Defence" id="f739-b724-1e9a-50ca" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4050-5841-dc85-45f1" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1ba-5b38-b3bf-aada" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Karacnos mortar battery" hidden="false" id="dbe7-9433-c9a6-8988" collective="true">
+              <profiles>
+                <profile name="Karacnos mortar battery" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e58f-785d-350a-2d1c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">30&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Barrage, Ignores Cover</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Arc (Front/Rear)" id="0566-51ce-ee2e-3a60" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                  <modifiers>
+                    <modifier type="set" value="Arc (Front)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Barrage" id="a0d5-a6bc-0c46-bd31" hidden="false" type="rule" targetId="862d-b036-2018-dbaf"/>
+                <infoLink name="Ignores Cover" id="1051-1d49-a414-b7e7" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc68-8097-d928-bfbb" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6866-5b2d-e668-e76b" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Cortex Controller" hidden="false" id="fb2a-2e67-763a-6372">
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Cortex Controller" id="52d8-2dde-34ca-339c" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="38f9-690c-f87e-2128"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="7ea4-70ef-6360-b1a5" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Shock ram" hidden="false" id="c668-622d-1cd4-e657" type="selectionEntry" targetId="b40d-5770-6111-03b4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d09-976b-ed00-19e2" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc5f-39a6-f5a4-7344" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25a7-9acd-bb09-6eae-min"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="25a7-9acd-bb09-6eae-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Krios Battle Tank Squadron" hidden="false" id="cc8e-6ce4-71bb-aa7e" publicationId="89ae-8b6d-da44-733f">
       <categoryLinks>
@@ -543,18 +270,108 @@
       </costs>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="3 Krios Battle Tank models" hidden="false" id="6bdb-a397-0971-6289">
-          <entryLinks>
-            <entryLink import="true" name="Krios Battle Tank" hidden="false" id="7273-3c64-e485-4744" type="selectionEntry" targetId="5f26-55f1-f9ce-a2b4">
-              <constraints>
-                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="cd64-0072-f612-a079-min"/>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="cd64-0072-f612-a079-max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b000-e6b4-0204-b8cb" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6c82-3439-a4bf-d944" includeChildSelections="false"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Krios Battle Tank" hidden="false" id="5f26-55f1-f9ce-a2b4">
+              <infoLinks>
+                <infoLink name="Krios" id="da15-efb1-832c-b14b" hidden="false" type="profile" targetId="3cb5-a447-0168-09fc"/>
+              </infoLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Turret Weapon" id="74a6-be02-b438-021e" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Krios lightning cannon" hidden="false" id="2c42-5b80-531c-578d">
+                      <profiles>
+                        <profile name="Krios lightning cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="7451-ac3c-ff87-9146">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Arc (Front/Rear)" id="7e73-0cff-6e28-3e2c" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Irad scourer" hidden="false" id="736c-61ec-4eb4-c69c">
+                      <profiles>
+                        <profile name="Irad scourer" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="cc7f-d209-8c49-1eb0">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Ignores Cover</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Arc (Front/Rear)" id="99b0-80dc-6e62-0709" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+                          <modifiers>
+                            <modifier type="set" value="Arc (Front)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Light AT" id="218b-a239-7efd-3615" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+                        <infoLink name="Ignores Cover" id="6904-2453-0880-cae0" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95c3-0727-40cd-b31c-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95c3-0727-40cd-b31c-max"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Cortex Controller" hidden="false" id="e661-ce14-5db9-9dfd">
+                  <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Cortex Controller" id="a28e-1d1f-586d-b905" hidden="false" type="rule" targetId="3579-8e16-d3b1-e319"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="633e-7fb0-c300-649a"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="7ea4-70ef-6360-b1a5" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Volkite caliver sponsons" hidden="false" id="1dea-a9e3-6ca9-f9f6" type="selectionEntry" targetId="0f1a-da19-4c29-9936">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="383f-8fc3-596e-6eb5-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="383f-8fc3-596e-6eb5-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="cd64-0072-f612-a079-min"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="cd64-0072-f612-a079-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -794,102 +611,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Arlatax" hidden="false" id="e33a-1d7f-90a6-39d9">
-      <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink name="Walker (1)" hidden="false" id="9392-fc1b-a746-ba08" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="26a3-c6d9-d49e-3d03">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6de-2ba0-1952-cb9c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e819-a03a-b0f3-394f"/>
-          </constraints>
-          <profiles>
-            <profile name="Autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="cb46-8408-eb93-bcbb">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Light AT" id="111d-5082-d6f8-6772" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Plasma cannon" hidden="false" id="a0d9-f02d-22eb-70c5">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b6dd-340b-ee39-9ec4"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dad5-d691-3337-3288"/>
-          </constraints>
-          <profiles>
-            <profile name="Plasma cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="70ef-ef38-bfaa-521b">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Light AT" id="ae12-7ce2-5272-201b" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <profiles>
-        <profile name="Arlatax" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="5604-7154-85b8-4bf6">
-          <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
-            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
-            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+6</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Armoured" id="6a51-2dcc-7c6f-32af" hidden="false" type="rule" targetId="665b-47e2-df00-2629"/>
-        <infoLink name="Invulnerable Save (X)" id="0a63-6097-7bbf-e78f" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
-          <modifiers>
-            <modifier type="set" value="Invulnerable Save (6+)" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Jump Packs" id="380d-aa83-d6e6-89ae" hidden="false" type="rule" targetId="130c-4ba7-dab7-34b3"/>
-        <infoLink name="Cybernetica Cortex (X) " id="686d-ebad-40d1-e0a3" hidden="false" type="rule" targetId="3df1-39f0-9014-cf63">
-          <modifiers>
-            <modifier type="set" value="Cybernetica Cortex (Advance, Charge)" field="name">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Cybernetica Cortex (March, Charge)" field="name">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Dread Aura (X)" id="2922-75f5-08b5-26e2" hidden="false" type="rule" targetId="2624-3dd4-d87c-5af8">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Dread Aura (3&quot;)" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="model" import="true" name="Castellax" hidden="false" id="e623-8b92-b5e1-9482">
       <costs>
         <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
@@ -1099,120 +820,6 @@
       <infoLinks>
         <infoLink name="Light AT" id="e5c3-613b-c6be-31c3" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
       </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Thanatar" hidden="false" id="cd2f-fcf0-bf9c-73c2">
-      <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Armoured" id="714e-2c89-fa5b-0f81" hidden="false" type="rule" targetId="665b-47e2-df00-2629"/>
-        <infoLink name="Cybernetica Cortex (X) " id="18c3-8c0c-fbf7-b626" hidden="false" type="rule" targetId="3df1-39f0-9014-cf63">
-          <modifiers>
-            <modifier type="set" value="Cybernetica Cortex (Advance, First Fire)" field="name">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Cybernetica Cortex (March, Charge)" field="name">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Invulnerable Save (X)" id="e6de-5c9e-3e1f-3401" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
-          <modifiers>
-            <modifier type="set" value="Invulnerable Save (6+)" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Dread Aura (X)" id="7da8-ae32-3fff-1711" hidden="false" type="rule" targetId="2624-3dd4-d87c-5af8">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="Dread Aura (3&quot;)" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Thanatar" id="2364-411f-7c66-f8db" hidden="false" type="profile" targetId="8223-4725-0584-3f18"/>
-      </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Main Weapon" id="c2c4-ce3b-3c46-cb36" hidden="false" defaultSelectionEntryId="a339-dd49-4ced-d3a9">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98ce-0464-271e-b65b" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de53-5ec6-7651-802a" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Sollex heavy-las and graviton ram" hidden="false" id="216d-866c-e92b-0b50">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Sollex heavy-las" hidden="false" id="5f85-133a-49cf-6d06">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7103-9cdf-de0b-cb97" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47eb-2636-0bdf-84ce" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Sollex heavy-las" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9e20-215f-721a-3fea">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Armourbane</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Armourbane" id="cedf-671d-9b80-3080" hidden="false" type="rule" targetId="e2f7-4ff5-3f66-fed5"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Graviton ram" hidden="false" id="d7fd-26ad-6c41-5b46">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c229-aa00-9859-2f9e" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7082-90fb-828b-abf2" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Graviton ram" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2003-98b2-d9d5-fe5b">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Wrecker (2)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Wrecker (X)" id="f831-22fe-3114-2561" hidden="false" type="rule" targetId="e40-19fc-8c79-9a12">
-                      <modifiers>
-                        <modifier type="set" value="Wrecker (2)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="Plasma mortar" hidden="false" id="1ffe-6e39-2c9a-9cf8" type="selectionEntry" targetId="a339-dd49-4ced-d3a9"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="8dd9-9d27-7e04-a6b4" type="selectionEntry" targetId="bd64-14d9-e283-c70e">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb45-1945-e69f-68bc" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62d2-36cf-29dd-4e93" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Vorax" hidden="false" id="376b-24b5-a5cd-449a">
       <categoryLinks>
@@ -1426,12 +1033,13 @@
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Vultarax" hidden="false" id="8eef-dcba-44b0-75b2" type="selectionEntry" targetId="3781-8bcd-8940-7e43">
+        <entryLink import="true" name="Vultarax" hidden="false" id="8eef-dcba-44b0-75b2" type="selectionEntry" targetId="3781-8bcd-8940-7e43" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ccd4-5931-b989-b0d5" includeChildSelections="false"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="78c8-6223-42c3-c910" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Automata Detachments" hidden="false" id="d1fc-82cf-29a1-0afd" type="selectionEntryGroup" targetId="987a-4ceb-7157-3934" sortIndex="1"/>
       </entryLinks>
       <modifiers>
         <modifier type="increment" value="30" field="ee95-a20e-f9ff-e2c2">
@@ -1450,561 +1058,6 @@
           </conditions>
         </modifier>
       </modifiers>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="e1db-1b55-f141-5eff">
-      <categoryLinks>
-        <categoryLink name="Support" hidden="false" id="ecb0-df19-8b4b-588b" targetId="be19-7658-5258-71d9" primary="true"/>
-        <categoryLink name="Walker (1)" hidden="false" id="e293-9972-8800-a917" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Arlatax" hidden="false" id="4a68-80e9-09f7-50fa" type="selectionEntry" targetId="e33a-1d7f-90a6-39d9" sortIndex="1">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a394-554a-9ebe-b898" includeChildSelections="false"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8587-0f60-1a31-95d9" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="40"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-      </costs>
-      <comment>For use in Support Detachments</comment>
-      <modifiers>
-        <modifier type="set" value="65" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="90" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="120" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="140" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="170" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="atLeast" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="22a2-1b3d-28a9-de58">
-      <categoryLinks>
-        <categoryLink name="Support" hidden="false" id="ef7b-ed3a-d84b-f8eb" targetId="be19-7658-5258-71d9" primary="true"/>
-        <categoryLink name="Walker (1)" hidden="false" id="2b07-02ec-decf-f757" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Castellax" hidden="false" id="83e6-5912-a5bc-a8ae" type="selectionEntry" targetId="e623-8b92-b5e1-9482" sortIndex="1">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c4e7-7cc2-eb05-c2c3" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6881-9e08-f48c-e899" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Upgrades" id="6b37-51ff-d946-89a4" hidden="false" sortIndex="2">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69f4-3528-89d6-da75" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 2" hidden="false" id="fd2a-115f-1682-bfa4">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="70"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Castellax" hidden="false" id="4cf4-8d75-1fd5-98a2" type="selectionEntry" targetId="e623-8b92-b5e1-9482">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="67dc-f4ee-32c5-0c75" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cb98-3b8a-a746-2cad" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 4" hidden="false" id="9e43-8487-228f-4add">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="130"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Castellax" hidden="false" id="8aad-0ef6-b8da-6843" type="selectionEntry" targetId="e623-8b92-b5e1-9482">
-                  <constraints>
-                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ec87-e70a-c498-0bb4" includeChildSelections="false"/>
-                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="a77b-7c91-9626-f647" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 6" hidden="false" id="11a4-092f-624c-09fb">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="180"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Castellax" hidden="false" id="0fa8-ba6a-e031-deb0" type="selectionEntry" targetId="e623-8b92-b5e1-9482">
-                  <constraints>
-                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="e243-2c88-33a8-2af1" includeChildSelections="false"/>
-                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="1301-ab5f-72fb-a957" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="70"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-      </costs>
-      <comment>For use in Support Detachments</comment>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="0e15-d028-584f-3685">
-      <categoryLinks>
-        <categoryLink name="Support" hidden="false" id="74cb-0ba4-e0e2-28f5" targetId="be19-7658-5258-71d9" primary="true"/>
-        <categoryLink name="Walker (1)" hidden="false" id="0e5c-0801-231b-3e23" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="35"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-      </costs>
-      <entryLinks>
-        <entryLink import="true" name="Domitar" hidden="false" id="cbc4-f5b0-800d-ffd4" type="selectionEntry" targetId="153b-00ee-9c7c-113c" sortIndex="1">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c65-e9c9-322c-ca70" includeChildSelections="false"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="a1d9-a509-4dcf-bf86" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <comment>For use in Support Detachments</comment>
-      <modifiers>
-        <modifier type="set" value="75" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="105" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="140" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="150" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="185" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="atLeast" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="84c0-0968-cc49-82fc">
-      <categoryLinks>
-        <categoryLink name="Bastion" hidden="false" id="85b7-13de-2000-115f" targetId="2005-60e5-e49d-32f2" primary="true"/>
-        <categoryLink name="Walker (1)" hidden="false" id="c936-f123-1ae6-f459" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="110"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-      </costs>
-      <entryLinks>
-        <entryLink import="true" name="Thanatar" hidden="false" id="1439-a6db-bbf7-0442" type="selectionEntry" targetId="cd2f-fcf0-bf9c-73c2" sortIndex="1">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9533-6a16-5321-791e" includeChildSelections="false"/>
-            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="d36b-ee63-1743-3a5e" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <comment>For use in Support Detachments</comment>
-      <modifiers>
-        <modifier type="set" value="165" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="210" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="265" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="295" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="equalTo" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="350" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="equalTo" value="7" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="395" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="atLeast" value="8" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="d0a5-ec4a-7b1a-f5ab">
-      <categoryLinks>
-        <categoryLink name="Vanguard" hidden="false" id="97f9-5c3b-2e26-0dfe" targetId="8416-456c-a6f-e059" primary="true"/>
-        <categoryLink name="Walker (1)" hidden="false" id="9eaa-b671-564e-c699" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="40"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-      </costs>
-      <entryLinks>
-        <entryLink import="true" name="Vorax" hidden="false" id="c098-8438-cba8-2d31" type="selectionEntry" targetId="376b-24b5-a5cd-449a" sortIndex="1">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3df4-93a1-1723-af3c" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de3f-7b21-3676-0f50" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Upgrades" id="7f7e-19b3-2dc6-59b1" hidden="false" sortIndex="2">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="818b-03b5-a87b-51fe" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 1" hidden="false" id="8378-ead4-38b2-9abe">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="40"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Vorax" hidden="false" id="c431-3198-783c-252f" type="selectionEntry" targetId="376b-24b5-a5cd-449a">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c876-947c-4538-7f01" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a02-d001-da62-383f" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 2" hidden="false" id="79d3-eab3-e836-53e4">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="70"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Vorax" hidden="false" id="9025-3498-e799-bcd3" type="selectionEntry" targetId="376b-24b5-a5cd-449a">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f8ee-0b95-09ea-1132" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cda2-ba4b-7784-62e7" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 3" hidden="false" id="4039-6d27-0822-b663">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="105"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Vorax" hidden="false" id="9187-e012-65e7-40e1" type="selectionEntry" targetId="376b-24b5-a5cd-449a">
-                  <constraints>
-                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8dc9-a97e-bf44-373e" includeChildSelections="false"/>
-                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e077-37fb-ccb8-35c8" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <comment>For use in Support Detachments</comment>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Thallax Cohort" hidden="false" id="4faa-4503-048b-8302">
-      <entryLinks>
-        <entryLink import="true" name="Thallax" hidden="false" id="c04c-d4bf-95d6-df54" type="selectionEntry" targetId="b0e5-db48-66c7-ba75">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fef0-d435-e737-abff"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1ef1-17b8-81ef-0809"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Upgrades" id="00c3-d5a0-620b-cdae" hidden="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c09-ab81-bfb0-6ccf"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 2" hidden="false" id="78aa-25f3-231b-1643">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="25"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Thallax" hidden="false" id="8658-e6ac-b529-fa42" type="selectionEntry" targetId="b0e5-db48-66c7-ba75">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="25a2-a5aa-f6fa-4d95"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5903-d986-ec71-7bae"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 4" hidden="false" id="3c53-5dfb-59e8-a758">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="40"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Thallax" hidden="false" id="62a5-98e3-ed99-02a6" type="selectionEntry" targetId="b0e5-db48-66c7-ba75">
-                  <constraints>
-                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="cc59-7a99-cc41-c009"/>
-                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ccc2-4e72-d8f9-47b0"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 6" hidden="false" id="7001-0aeb-e754-9abd">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="60"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Thallax" hidden="false" id="152a-3af3-4079-071e" type="selectionEntry" targetId="b0e5-db48-66c7-ba75">
-                  <constraints>
-                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="d202-3cde-67ab-a5e0"/>
-                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="1c14-4ad7-bf6d-7fec"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <comment>For use in Support Detachments</comment>
-      <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="25"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink name="Core" hidden="false" id="97ae-9be8-03cf-e677" targetId="446a-abe3-63c3-5709" primary="true"/>
-        <categoryLink name="Infantry (1)" hidden="false" id="5ce3-34e6-ca3e-9d42" targetId="68c1-de55-26b1-8ca4" primary="false"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Adsecularis Tech-thrall Covenant" hidden="false" id="c0b1-535e-3eac-4816">
-      <categoryLinks>
-        <categoryLink name="Core" hidden="false" id="4c73-e515-5237-c372" targetId="446a-abe3-63c3-5709" primary="true"/>
-        <categoryLink name="Infantry (1)" hidden="false" id="5fac-f43d-88e1-e011" targetId="68c1-de55-26b1-8ca4" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Tech-thralls" hidden="false" id="eecb-ed01-c4e1-9aaa" type="selectionEntry" targetId="a5c2-be99-e3c2-d171" sortIndex="1">
-          <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="20e3-1f23-f951-8b29"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5404-fc17-af01-0ddf"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Upgrades" id="c4aa-6b5e-c874-47ca" hidden="false" sortIndex="2">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b18e-ed6d-ac21-f66d"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 2" hidden="false" id="7ed9-cf67-e4d0-0c16">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="12"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Tech-thralls" hidden="false" id="2047-fe00-0c6f-0fbb" type="selectionEntry" targetId="a5c2-be99-e3c2-d171">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3aaa-199a-ab48-cb30"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c4e0-a8d7-4d74-9eff"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 4" hidden="false" id="4976-bf99-c86b-2c2a">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="22"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Tech-thralls" hidden="false" id="223b-0032-8ac9-dee1" type="selectionEntry" targetId="a5c2-be99-e3c2-d171">
-                  <constraints>
-                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e164-7b42-3cab-83ba" includeChildSelections="false"/>
-                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="b845-b4fe-9beb-8958" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Increase size by 6" hidden="false" id="dd16-09fb-dfa1-d59f">
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Tech-thralls" hidden="false" id="5e6d-f79c-2ca7-a8d2" type="selectionEntry" targetId="a5c2-be99-e3c2-d171">
-                  <constraints>
-                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="dbb7-fee3-6b94-5cd4"/>
-                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="9261-aa6e-6dac-8378"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-      </costs>
-      <comment>For use in Support Detachments</comment>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Tech-Priest Auxilia" hidden="false" id="676c-2349-6a2b-2bf4">
-      <categoryLinks>
-        <categoryLink name="Support" hidden="false" id="df64-f83f-1b0b-016a" targetId="be19-7658-5258-71d9" primary="true"/>
-        <categoryLink name="Infantry (1)" hidden="false" id="dc6e-cb5e-8b24-d097" targetId="68c1-de55-26b1-8ca4" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Tech-Priest" hidden="false" id="ca23-7512-7752-be70" type="selectionEntry" targetId="c96f-9492-7e30-43f4" sortIndex="1">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22ff-cc93-9f36-aa9d" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad41-2c29-581f-ecb3" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <comment>For use in Support Detachments</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Volkite serpenta" hidden="false" id="da51-54f8-c76b-7e14">
       <profiles>
@@ -2140,9 +1193,1077 @@
         <infoLink name="Ignores Cover" id="7631-c627-1b68-6366" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tech-Priest Auxilia" hidden="false" id="0022-3c2b-6a02-79b8">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="3225-1eb0-d08a-8983" targetId="be19-7658-5258-71d9" primary="true"/>
+        <categoryLink name="Infantry (1)" hidden="false" id="2294-84d0-b727-b5de" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Tech-Priest" hidden="false" id="6829-3d27-9f4a-0287" type="selectionEntry" targetId="c96f-9492-7e30-43f4" sortIndex="">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cdb-5855-6d30-f30e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ba2-2945-d399-048a" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="a070-7a95-2eac-d520" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="a053-a5b4-f965-7c36" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="d1c0-6f40-691e-d7be">
+      <categoryLinks>
+        <categoryLink name="Vanguard" hidden="false" id="251f-4ab0-2ade-5e3a" targetId="8416-456c-a6f-e059" primary="true"/>
+        <categoryLink name="Walker (1)" hidden="false" id="2bbb-8e76-5844-3b19" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Vorax" hidden="false" id="ae28-7555-79e9-49fb" type="selectionEntry" targetId="376b-24b5-a5cd-449a" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bdb-ef37-f533-9bd0" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="827d-f01a-382d-80ba" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="35"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Automata Detachments" hidden="false" id="ec6f-546c-7f1e-38ac" type="selectionEntryGroup" targetId="987a-4ceb-7157-3934" sortIndex="2"/>
+        <entryLink import="true" name="Dedicated Transports" hidden="false" id="1d1c-0318-74f7-cbbd" type="selectionEntryGroup" targetId="1a90-4df1-8562-6f2c" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="431c-12c3-ba14-3f08" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="76c7-3609-eab8-88fb" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="b427-3fcf-163d-9af9" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="0fa8-1d01-f64a-6bc5">
+      <categoryLinks>
+        <categoryLink name="Bastion" hidden="false" id="6948-a80d-a4b6-71dd" targetId="2005-60e5-e49d-32f2" primary="true"/>
+        <categoryLink name="Walker (1)" hidden="false" id="5ddd-c052-e4b8-37fc" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="110"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Automata Detachments" hidden="false" id="a7c2-dc04-fd79-a7d1" type="selectionEntryGroup" targetId="987a-4ceb-7157-3934" sortIndex="2"/>
+        <entryLink import="true" name="Dedicated Transports" hidden="false" id="d899-bd4a-cbb2-9a9b" type="selectionEntryGroup" targetId="1a90-4df1-8562-6f2c" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="431c-12c3-ba14-3f08" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="50" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="100" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="150" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="185" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="235" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="7" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="285" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="8" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="e34c-d95a-9b23-bb55" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="dd15-22e4-a2d3-86a9" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Thanatar" hidden="false" id="cd2f-fcf0-bf9c-73c2" sortIndex="3">
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Armoured" id="714e-2c89-fa5b-0f81" hidden="false" type="rule" targetId="665b-47e2-df00-2629"/>
+            <infoLink name="Cybernetica Cortex (X) " id="18c3-8c0c-fbf7-b626" hidden="false" type="rule" targetId="3df1-39f0-9014-cf63">
+              <modifiers>
+                <modifier type="set" value="Cybernetica Cortex (Advance, First Fire)" field="name">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Cybernetica Cortex (March, Charge)" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Invulnerable Save (X)" id="e6de-5c9e-3e1f-3401" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
+              <modifiers>
+                <modifier type="set" value="Invulnerable Save (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Dread Aura (X)" id="7da8-ae32-3fff-1711" hidden="false" type="rule" targetId="2624-3dd4-d87c-5af8">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Dread Aura (3&quot;)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Thanatar" id="2364-411f-7c66-f8db" hidden="false" type="profile" targetId="8223-4725-0584-3f18"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Main Weapon" id="c2c4-ce3b-3c46-cb36" hidden="false" defaultSelectionEntryId="a339-dd49-4ced-d3a9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98ce-0464-271e-b65b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de53-5ec6-7651-802a" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Sollex heavy-las and graviton ram" hidden="false" id="216d-866c-e92b-0b50">
+                  <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                  </costs>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Sollex heavy-las" hidden="false" id="5f85-133a-49cf-6d06">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7103-9cdf-de0b-cb97" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47eb-2636-0bdf-84ce" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Sollex heavy-las" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9e20-215f-721a-3fea">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Armourbane</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Armourbane" id="cedf-671d-9b80-3080" hidden="false" type="rule" targetId="e2f7-4ff5-3f66-fed5"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Graviton ram" hidden="false" id="d7fd-26ad-6c41-5b46">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c229-aa00-9859-2f9e" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7082-90fb-828b-abf2" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Graviton ram" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2003-98b2-d9d5-fe5b">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
+                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
+                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
+                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-</characteristic>
+                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Wrecker (2)</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Wrecker (X)" id="f831-22fe-3114-2561" hidden="false" type="rule" targetId="e40-19fc-8c79-9a12">
+                          <modifiers>
+                            <modifier type="set" value="Wrecker (2)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Plasma mortar" hidden="false" id="1ffe-6e39-2c9a-9cf8" type="selectionEntry" targetId="a339-dd49-4ced-d3a9"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="8dd9-9d27-7e04-a6b4" type="selectionEntry" targetId="bd64-14d9-e283-c70e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb45-1945-e69f-68bc" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62d2-36cf-29dd-4e93" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="340b-b588-9af0-5cb4" includeChildSelections="false"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="d60a-c940-859f-bf24" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="0201-32ed-f09c-06d0">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="964a-8e40-c953-b562" targetId="be19-7658-5258-71d9" primary="true"/>
+        <categoryLink name="Walker (1)" hidden="false" id="c089-1506-3666-b977" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Automata Detachments" hidden="false" id="66ca-0718-db44-a38d" type="selectionEntryGroup" targetId="987a-4ceb-7157-3934" sortIndex="2"/>
+        <entryLink import="true" name="Dedicated Transports" hidden="false" id="5118-79e0-9fbe-531f" type="selectionEntryGroup" targetId="1a90-4df1-8562-6f2c" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="431c-12c3-ba14-3f08" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="8948-fa38-100b-2852" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" value="35" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="e33a-1d7f-90a6-39d9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="65" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="e33a-1d7f-90a6-39d9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="100" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="e33a-1d7f-90a6-39d9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="110" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="e33a-1d7f-90a6-39d9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="145" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="self" childId="e33a-1d7f-90a6-39d9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="40"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="228b-cba2-b3c5-cd0a" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="1437-2a15-9978-bbc5" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Arlatax" hidden="false" id="e33a-1d7f-90a6-39d9" sortIndex="3">
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Walker (1)" hidden="false" id="9392-fc1b-a746-ba08" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="26a3-c6d9-d49e-3d03">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6de-2ba0-1952-cb9c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e819-a03a-b0f3-394f"/>
+              </constraints>
+              <profiles>
+                <profile name="Autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="cb46-8408-eb93-bcbb">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Light AT" id="111d-5082-d6f8-6772" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plasma cannon" hidden="false" id="a0d9-f02d-22eb-70c5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b6dd-340b-ee39-9ec4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dad5-d691-3337-3288"/>
+              </constraints>
+              <profiles>
+                <profile name="Plasma cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="70ef-ef38-bfaa-521b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Light AT" id="ae12-7ce2-5272-201b" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Arlatax" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="5604-7154-85b8-4bf6">
+              <characteristics>
+                <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
+                <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+                <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+6</characteristic>
+                <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+                <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Armoured" id="6a51-2dcc-7c6f-32af" hidden="false" type="rule" targetId="665b-47e2-df00-2629"/>
+            <infoLink name="Invulnerable Save (X)" id="0a63-6097-7bbf-e78f" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
+              <modifiers>
+                <modifier type="set" value="Invulnerable Save (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Jump Packs" id="380d-aa83-d6e6-89ae" hidden="false" type="rule" targetId="130c-4ba7-dab7-34b3"/>
+            <infoLink name="Cybernetica Cortex (X) " id="686d-ebad-40d1-e0a3" hidden="false" type="rule" targetId="3df1-39f0-9014-cf63">
+              <modifiers>
+                <modifier type="set" value="Cybernetica Cortex (Advance, Charge)" field="name">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Cybernetica Cortex (March, Charge)" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Dread Aura (X)" id="2922-75f5-08b5-26e2" hidden="false" type="rule" targetId="2624-3dd4-d87c-5af8">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="0aac-4388-bb47-6fcd" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Dread Aura (3&quot;)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f61-8df5-7a3e-9ee4" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="0da4-b674-00fa-a8d0" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="2bf3-65af-d5ee-9757">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="c0a3-b3a6-24a3-7b44" targetId="be19-7658-5258-71d9" primary="true"/>
+        <categoryLink name="Walker (1)" hidden="false" id="1f43-a17e-142e-5569" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="35"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Domitar" hidden="false" id="b41e-2a98-9aa7-96b1" type="selectionEntry" targetId="153b-00ee-9c7c-113c" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a5cc-400c-c813-74f2" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="d1d8-9af3-ee5c-bac9" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Automata Detachments" hidden="false" id="2f44-2722-ad1a-bdbb" type="selectionEntryGroup" targetId="987a-4ceb-7157-3934" sortIndex="2"/>
+        <entryLink import="true" name="Dedicated Transports" hidden="false" id="be1e-9207-b217-7ad9" type="selectionEntryGroup" targetId="1a90-4df1-8562-6f2c" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="431c-12c3-ba14-3f08" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="30" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="153b-00ee-9c7c-113c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="55" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="153b-00ee-9c7c-113c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="85" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="153b-00ee-9c7c-113c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="105" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="153b-00ee-9c7c-113c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="135" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="self" childId="153b-00ee-9c7c-113c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="b5df-4450-9fee-c2b2" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="f1a8-d4ce-e58f-154e" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="ec82-1c8f-b4ae-6744">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="ad60-b32f-4d47-825f" targetId="be19-7658-5258-71d9" primary="true"/>
+        <categoryLink name="Walker (1)" hidden="false" id="b7f7-d8b7-400f-deb7" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Automata Detachments" hidden="false" id="e3a2-b688-67c1-7d8f" type="selectionEntryGroup" targetId="987a-4ceb-7157-3934" sortIndex="2"/>
+        <entryLink import="true" name="Dedicated Transports" hidden="false" id="efe4-5c06-b138-2545" type="selectionEntryGroup" targetId="1a90-4df1-8562-6f2c" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="431c-12c3-ba14-3f08" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="65" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="65" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="50" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="70"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="ba27-f645-a352-5d4e" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="4547-d67a-25a7-be4e" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="2 Castellax models" hidden="false" id="5fe1-8da6-fc67-8faa" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Castellax" hidden="false" id="59c1-2a76-32ca-13c3" type="selectionEntry" targetId="e623-8b92-b5e1-9482">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3fc2-e5dd-d409-1410" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="36bb-4c00-3321-1076" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba65-9ffb-3af4-149c" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9af4-0d8e-ce8f-ef53" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Adsecularis Tech-thrall Covenant" hidden="false" id="cfac-ce06-cbf6-cf7a">
+      <categoryLinks>
+        <categoryLink name="Core" hidden="false" id="33fb-04e1-e43c-4e0c" targetId="446a-abe3-63c3-5709" primary="true"/>
+        <categoryLink name="Infantry (1)" hidden="false" id="bc71-2afd-8c56-e1c0" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="b5b1-79f2-c51f-2689" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="9aa3-b50e-9be4-be42" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="9e6e-289f-bbd9-4683" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="b5b1-79f2-c51f-2689">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="431c-12c3-ba14-3f08" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="35" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="35" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="40"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="5 Tech-thralls models" hidden="false" id="fc9a-bfd3-b9d9-62e3" sortIndex="">
+          <entryLinks>
+            <entryLink import="true" name="Tech-thralls" hidden="false" id="6df9-b84d-b4cf-fdd7" type="selectionEntry" targetId="a5c2-be99-e3c2-d171">
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="ce02-7270-a4bb-8a62"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="0a66-8c3f-a0a3-1b2a"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="66e4-cb60-0335-6c09" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="79aa-8c2e-3235-c9ac" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Thallax Cohort" hidden="false" id="f7a7-95d6-d7f2-18ee">
+      <categoryLinks>
+        <categoryLink name="Core" hidden="false" id="403b-394a-3331-b5f3" targetId="446a-abe3-63c3-5709" primary="true"/>
+        <categoryLink name="Infantry (1)" hidden="false" id="c76c-66e1-0c39-ac7b" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="e6da-8fc9-1406-3c07" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="5887-1b3a-4def-b76a" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="2 Thallax models" hidden="false" id="74cd-db06-cf7e-2a50" sortIndex="">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e8d-0dd5-ce14-63ac" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="71a3-1a92-121f-cba9" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="20"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Thallax" hidden="false" id="b0e5-db48-66c7-ba75">
+              <profiles>
+                <profile name="Thallax" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="651e-5c4e-15c8-a18e">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">5+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="b37f-5f5f-0a80-7d77" collective="true">
+                  <profiles>
+                    <profile name="Multi-melta" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="5469-e299-ae66-84d4">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" id="b16b-b4d2-87e7-3567" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="837d-a8a0-a670-3cf1-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="837d-a8a0-a670-3cf1-max"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <infoLinks>
+                <infoLink name="Jump Packs" id="7d9e-67c8-878a-ed4c" hidden="false" type="rule" targetId="130c-4ba7-dab7-34b3"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Lightning guns" hidden="false" id="0955-3dc4-3e56-6348" type="selectionEntry" targetId="a8eb-b162-9511-b20c">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="478a-2c92-19bb-cc27-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="478a-2c92-19bb-cc27-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5f96-309e-50e1-53da"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b6ae-4583-46a7-ff02"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Krios Venator Squadron" hidden="false" id="6821-4151-cacf-2e3a" publicationId="89ae-8b6d-da44-733f">
+      <categoryLinks>
+        <categoryLink name="Battle Tank" hidden="false" id="3e00-203d-eb08-bded" targetId="4e02-d7ec-4d81-d5fa" primary="true"/>
+        <categoryLink name="Vehicle (2)" hidden="false" id="d26b-dcdf-f8a2-f68e" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="60"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" value="55" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="55" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="50" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="2 Krios Venator models" hidden="false" id="7812-0f30-47ae-e5a3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f03-9f45-d145-a2ad" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="845d-c556-1eee-6734" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Krios Venator" hidden="false" id="f501-d6bd-6d68-b043" type="selectionEntry" targetId="89bb-e3b8-4a92-eec3">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b87a-52c8-e1fa-b788" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7e2a-bd97-bf8d-f647" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Myrmidon Destructor Host" hidden="false" id="f907-408a-8d70-f5f4">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="6988-b62d-e089-a075" targetId="be19-7658-5258-71d9" primary="true"/>
+        <categoryLink name="Infantry (1)" hidden="false" id="8c4b-e841-ef42-c779" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="b049-3619-565c-d03e" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="32dc-9ac1-3496-c6b6" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="2 Myrmidon Destructors models" hidden="false" id="2197-5658-678d-7cbf" sortIndex="">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44ee-e455-4315-f4fd" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9e40-5099-84b9-f222" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="25"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Myrmidon Destructors" hidden="false" id="d17a-fd59-ab4c-7770" publicationId="89ae-8b6d-da44-733f" page="101">
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Infantry (1)" hidden="false" id="fcd7-a379-cdc9-e1d7" targetId="68c1-de55-26b1-8ca4" primary="true"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Myrmidon Destructors" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="7b1e-4654-8c57-0e22">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">5&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+3</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Implacable" id="0445-d388-385b-a82a" hidden="false" type="rule" targetId="d6b1-1b69-a07c-3ddd"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Conversion beamers" hidden="false" id="f248-1dca-0508-6d92">
+                  <profiles>
+                    <profile name="Conversion beamers" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9b24-5d13-5e23-09bc">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">4-22&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba69-1e1f-9909-f37f-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba69-1e1f-9909-f37f-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Myrmidon volkites" hidden="false" id="7316-50e3-22d8-dae1">
+                  <profiles>
+                    <profile name="Myrmidon volkites" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="00b5-ba25-ad2f-b8ec">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Deflagrate, Light</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Deflagrate" id="8e22-0fe8-85fd-abe2" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
+                    <infoLink name="Light" id="473d-fd2d-fb9c-1067" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0793-6ab1-0bb0-694c-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0793-6ab1-0bb0-694c-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fe18-8ab4-1944-0b52"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="54f9-1344-8cae-c2cc"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Myrmidon Secutor Host" hidden="false" id="e1cf-74e0-fc01-6c93">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="8c1e-3575-ceb8-8cb4" targetId="be19-7658-5258-71d9" primary="true"/>
+        <categoryLink name="Infantry (1)" hidden="false" id="7b6f-fcb8-b9b0-713f" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="bf69-bd2d-363d-61eb" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="a203-8e36-2e3c-7f92" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="2 Myrmidon Secutors models" hidden="false" id="ef7e-1bb3-79ec-4970" sortIndex="">
+          <entryLinks>
+            <entryLink import="true" name="Myrmidon Secutors" hidden="false" id="ed92-8d0a-c8b5-23b8" type="selectionEntry" targetId="da42-ba05-1a7e-c6b5">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6a34-6257-5cfb-6c68"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b6da-4cab-1f13-68a5"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd72-5144-5880-a055" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2c1f-9cf0-7671-95c9" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="25"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ursarax Cohort" hidden="false" id="7c4d-f3ca-eba6-36f3">
+      <categoryLinks>
+        <categoryLink name="Vanguard" hidden="false" id="0ebb-d3e0-f848-63f0" targetId="8416-456c-a6f-e059" primary="true"/>
+        <categoryLink name="Infantry (1)" hidden="false" id="9b87-8e4a-ca03-25b1" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="a88f-f4e2-35f1-9737" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="230c-204a-42fd-57ee" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="2 Ursarax models" hidden="false" id="54fb-113a-f9c2-0337" sortIndex="">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="19ef-1025-863e-bd5e" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="301d-b417-d8e3-2d9f" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="25"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Ursarax" hidden="false" id="38a8-c364-ebe3-fa7d">
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+              <profiles>
+                <profile name="Ursarax" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="b8bb-b7f6-25ce-c239">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">5+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+3</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Jump Packs" id="b6ec-1ca5-b0b9-e5c5" hidden="false" type="rule" targetId="130c-4ba7-dab7-34b3"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Volkite incinerators" hidden="false" id="996a-4ac4-f3b9-8aa0" collective="true">
+                  <profiles>
+                    <profile name="Volkite incinerators" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f173-cfe0-f232-2223">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Deflagrate, Light</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Deflagrate" id="8065-f11c-b005-5196" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
+                    <infoLink name="Light" id="3985-11bd-5c4e-cf8c" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eafc-037b-3069-d5e9-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eafc-037b-3069-d5e9-max"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Ursarax claws" hidden="false" id="088e-a9c1-443a-01a2" collective="true">
+                  <profiles>
+                    <profile name="Ursarax claws" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="7d0c-2c3e-d68a-2d74">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Rend</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Rend" id="b65d-c0f1-173b-b00c" hidden="false" type="rule" targetId="6d1b-9fcd-3541-f46e"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f68-83e5-bb47-9382"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb9b-8bfc-c8d1-ad47"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d6ad-dcd8-fdc5-9691"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fba6-4fd1-f3e6-e59b"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Archmagos Prime" hidden="false" id="8a23-a8e1-7d43-3bc1">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="dd07-3395-abfa-36a8" targetId="d950-ad23-9b2-9325" primary="true"/>
+        <categoryLink name="Infantry (1)" hidden="false" id="9a96-2777-862b-2ee8" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Archmagos Prime" hidden="false" id="7892-f25c-2034-e1b2" type="selectionEntry" targetId="da96-d297-7d75-5e5b" sortIndex="">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d2a-3997-f24c-aa60" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b67-2914-63c8-3fde" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="9468-6fd6-f89d-5c79" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="7f1f-d7af-8901-62b8" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Archmagos Prime on Abeyant" hidden="false" id="af8c-96ee-119d-3a58">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="fe42-4103-b1f8-55c8" targetId="d950-ad23-9b2-9325" primary="true"/>
+        <categoryLink name="Infantry (1)" hidden="false" id="cb63-a922-c2e1-db34" targetId="68c1-de55-26b1-8ca4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Archmagos Prime on Abeyant" hidden="false" id="31fb-17fa-1810-5555" type="selectionEntry" targetId="83d3-6267-00c8-93c3" sortIndex="">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64f8-5640-43ce-79e5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f35b-e80d-e2ac-8ad6" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="db6e-4a02-c9b6-5d68" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="c51d-4987-0eb9-99c6" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Mechanicum" id="d331-a05e-f676-b8a6" hidden="false"/>
+    <categoryEntry name="Tech-Priest Auxilia" id="23ba-51c6-bda6-4b6e" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Krios" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="3cb5-a447-0168-09fc">
@@ -2164,4 +2285,482 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <forceEntries>
+    <forceEntry name="Taghmata Sub-covenant" id="431c-12c3-ba14-3f08" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="3433-1c14-72d6-8718" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="HQ" hidden="false" id="c5f8-aa7c-245f-fe7c" targetId="d950-ad23-9b2-9325">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="29a9-f3e9-4451-0734"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="d8ac-1503-22b0-9fd2" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core" hidden="false" id="8bc5-6cd6-2a63-a1ec" targetId="446a-abe3-63c3-5709">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="dff1-5ff2-02ab-f444" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="a5d5-21f6-452d-2609" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Bastion" hidden="false" id="7b5b-0061-4fa1-990e" targetId="2005-60e5-e49d-32f2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="617d-4a47-f741-001b" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Battle Tank" hidden="false" id="643c-cdc0-d452-79e9" targetId="4e02-d7ec-4d81-d5fa">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2ef2-7e98-4118-e361" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="1520-b076-1458-4d01" targetId="be19-7658-5258-71d9">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="e456-d3ba-2f90-235d" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="c20d-b2f0-dc90-413d" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="c20d-b2f0-dc90-413d">
+              <conditions>
+                <condition type="atLeast" value="2" field="selections" scope="force" childId="0022-3c2b-6a02-79b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="c20d-b2f0-dc90-413d">
+              <conditions>
+                <condition type="atLeast" value="3" field="selections" scope="force" childId="0022-3c2b-6a02-79b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Transport" hidden="false" id="3aac-48a9-e3eb-f45b" targetId="3751-fb88-3656-b7d1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9673-1bb7-d6b4-d75d" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Vanguard" hidden="false" id="954b-fbe1-4290-181e" targetId="8416-456c-a6f-e059">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fa2c-3dcb-c128-3a0e" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Knight" hidden="false" id="593d-0068-c03d-5c59" targetId="adde-db57-b7d8-2daa">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="cdfe-8dc3-6ef3-d245" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="cdfe-8dc3-6ef3-d245">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1302-0157-2be4-3d34" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Titan" hidden="false" id="e2ac-9f3e-e7ba-70a3" targetId="1302-0157-2be4-3d34">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="cde1-9433-10ee-8381" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="cde1-9433-10ee-8381">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="adde-db57-b7d8-2daa" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+      <rules>
+        <rule name="Dedicated Transports" id="7519-4cb0-f083-c15a" hidden="false">
+          <description>Detachments within the Formation that contain only Infantry or Walker models may be upgraded with Triaros Armoured Conveyors as Dedicated Transports.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </forceEntry>
+    <forceEntry name="Ordo Reductor Subdivision" id="5e65-d97a-8c71-91f8" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="4201-175f-0dfc-5793" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="HQ" hidden="false" id="9047-4a79-aea7-09f7" targetId="d950-ad23-9b2-9325">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8c60-4487-8da2-b964" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="5f1a-bd9a-3327-19bf" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Bastion" hidden="false" id="7d3c-00d9-776a-1f61" targetId="2005-60e5-e49d-32f2">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="e6cd-6ad0-70a0-c066" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1c12-c03a-22ba-7078" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Battle Tank" hidden="false" id="b7b4-0c73-3deb-705c" targetId="4e02-d7ec-4d81-d5fa">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="595b-0aaa-6115-f6c8" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="3f46-cdad-10f0-0c79" targetId="be19-7658-5258-71d9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="71c1-0e11-6c57-b076" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="28db-ef95-0571-b614" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="28db-ef95-0571-b614">
+              <conditions>
+                <condition type="atLeast" value="2" field="selections" scope="force" childId="0022-3c2b-6a02-79b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="28db-ef95-0571-b614">
+              <conditions>
+                <condition type="atLeast" value="3" field="selections" scope="force" childId="0022-3c2b-6a02-79b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Knight" hidden="false" id="27fb-af67-a36f-f49b" targetId="adde-db57-b7d8-2daa">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8d29-d671-1d4d-d8b4" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="8d29-d671-1d4d-d8b4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1302-0157-2be4-3d34" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Titan" hidden="false" id="8162-6c8a-b216-5056" targetId="1302-0157-2be4-3d34">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="557f-95b3-a214-0c44" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="557f-95b3-a214-0c44">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="adde-db57-b7d8-2daa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </forceEntry>
+    <forceEntry name="Myrmidax Conclave" id="a4af-c562-7d78-7d19" hidden="false">
+      <rules>
+        <rule name="Cult of Destruction" id="8c94-03d9-2b18-d178" hidden="false">
+          <description>Support Detachment slots within this Formation must be filled with Myrmidon Secutor Host or Myrmidon Destructor Host Detachments.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="5f3f-f1be-9549-55bd" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="HQ" hidden="false" id="72af-a4ab-add6-a7f7" targetId="d950-ad23-9b2-9325">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="0b09-788e-5d4e-6312" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="e930-fdc2-a2de-191c" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="9f93-d4fc-be6d-1c52" targetId="be19-7658-5258-71d9">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="force" shared="true" id="bfdb-c204-5908-b115" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="0998-df81-ec5f-14e4" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Transport" hidden="false" id="8b8c-d062-2538-17d3" targetId="3751-fb88-3656-b7d1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7645-91fa-550b-1c7c" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </forceEntry>
+    <forceEntry name="Legio Cybernetica Cohort" id="94a5-a718-28c1-4053" hidden="false">
+      <rules>
+        <rule name="Legio Cybernetica" id="12cb-0a97-a87d-032b" hidden="false">
+          <description>All slots within this Formation, apart from Core, Transport and Titan slots, must be filled with Detachments that have either the Cortex Controller or Cybernetica Cortex (X) special rule.
+The range of Cortex Controller&apos;s effects for all models within the formation is 12&quot; instead of 8&quot;.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="d937-e623-b55e-2166" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="HQ" hidden="false" id="af13-cf5d-9222-d70a" targetId="d950-ad23-9b2-9325">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3d06-9409-d9e3-28d8" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f3de-6885-0482-6f4e" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core" hidden="false" id="f5ed-b04b-af6b-2127" targetId="446a-abe3-63c3-5709">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="ee20-a44e-8d0f-56eb" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="eb42-54e5-011a-fd25" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="b17d-077f-7b84-9d05" targetId="be19-7658-5258-71d9">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="206d-311d-e427-7e80" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="3ea4-a9b9-d530-7b4c" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="2" field="3ea4-a9b9-d530-7b4c">
+              <conditions>
+                <condition type="atLeast" value="2" field="selections" scope="force" childId="8416-456c-a6f-e059" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="3ea4-a9b9-d530-7b4c">
+              <conditions>
+                <condition type="atLeast" value="3" field="selections" scope="force" childId="0022-3c2b-6a02-79b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="3ea4-a9b9-d530-7b4c">
+              <conditions>
+                <condition type="atLeast" value="2" field="selections" scope="force" childId="0022-3c2b-6a02-79b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Transport" hidden="false" id="31db-3c1c-9d54-3705" targetId="3751-fb88-3656-b7d1">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="ca9b-2e5a-0721-efb3" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Vanguard" hidden="false" id="7a46-b4bc-3d81-db5e" targetId="8416-456c-a6f-e059">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f113-cf2e-f71a-f94b" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="f113-cf2e-f71a-f94b">
+              <conditions>
+                <condition type="atLeast" value="4" field="selections" scope="force" childId="be19-7658-5258-71d9" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Titan" hidden="false" id="0401-bdae-af49-691b" targetId="1302-0157-2be4-3d34">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1621-84ac-c235-490e" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </forceEntry>
+    <forceEntry name="Itinerant Cybernetica Cohort" id="080a-85bb-c07f-6df7" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="6587-4a7d-3270-6446" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="Support" hidden="false" id="b951-bc62-8d94-8870" targetId="be19-7658-5258-71d9">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="force" shared="true" id="d884-fd95-fbc5-0bda" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="0af3-0a21-55c3-ad84" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="3" field="d884-fd95-fbc5-0bda">
+              <conditions>
+                <condition type="atLeast" value="3" field="selections" scope="force" childId="8416-456c-a6f-e059" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="3" field="0af3-0a21-55c3-ad84">
+              <conditions>
+                <condition type="atLeast" value="3" field="selections" scope="force" childId="8416-456c-a6f-e059" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Vanguard" hidden="false" id="c3e7-2bf6-502e-f681" targetId="8416-456c-a6f-e059">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="force" shared="true" id="b445-5e90-c534-bcab" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="1254-0514-94a8-c3cd" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="3" field="b445-5e90-c534-bcab">
+              <conditions>
+                <condition type="atLeast" value="3" field="selections" scope="force" childId="be19-7658-5258-71d9" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="3" field="1254-0514-94a8-c3cd">
+              <conditions>
+                <condition type="atLeast" value="3" field="selections" scope="force" childId="be19-7658-5258-71d9" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="08d8-153c-5c39-a1be">
+          <repeats>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="7ea4-70ef-6360-b1a5" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="94a5-a718-28c1-4053" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="5e65-d97a-8c71-91f8" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="431c-12c3-ba14-3f08" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="a4af-c562-7d78-7d19" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="1e4a-3c76-f375-bc07" shared="true" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Primary Army must be Mechanicum Taghmata" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="08d8-153c-5c39-a1be" includeChildSelections="true"/>
+      </constraints>
+      <comment>Support Detachment</comment>
+      <rules>
+        <rule name="Order Cascade" id="8d20-795d-23c7-9851" hidden="false">
+          <description>Whenever a Detachment in this Support Formation is activated, the controlling player may choose another friendly Detachment from this Support formation within 6&quot; of the activated Detachment that has already revealed its Order this round. The activated Detachment may discard its Order token and replace it with a new Order chosen from those shown in the Cybernetica Cortex (X) special rule of the chosen friendly Detachment.
+
+All Detachments included in this Support Formation must have the Cybernetica Cortex (X) special rule. Detachments within this Support Formation cannot benefit from the Cortex Controller special rule - they cannot be issued Orders other than those from their variant of the Cybernetica Cortex (X) special rule or another variant through the Order Cascade special rule.</description>
+        </rule>
+      </rules>
+    </forceEntry>
+    <forceEntry name="Autokratorii Regiment" id="7ea4-70ef-6360-b1a5" hidden="false" publicationId="89ae-8b6d-da44-733f">
+      <rules>
+        <rule name="Cortex Controller" id="1a4c-dac5-3f4f-13ac" hidden="false" publicationId="89ae-8b6d-da44-733f">
+          <description>One Vehicle model from a Compulsory Detachment may be upgraded with the Cortex Controller special rule for +10 points.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="482f-0ea3-7cd6-4074" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="HQ" hidden="false" id="2c16-8c2f-70b1-75d8" targetId="d950-ad23-9b2-9325">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4d50-7ec2-944f-8791" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Battle Tank" hidden="false" id="97c8-a67c-036a-1f47" targetId="4e02-d7ec-4d81-d5fa">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="force" shared="true" id="70d6-40e6-8e6c-33f9" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="120a-3364-2591-894c" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="a84d-86c4-113e-4c2e" targetId="be19-7658-5258-71d9">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="7642-38bf-ab7d-0b45" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="7642-38bf-ab7d-0b45">
+              <conditions>
+                <condition type="atLeast" value="3" field="selections" scope="force" childId="0022-3c2b-6a02-79b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="7642-38bf-ab7d-0b45">
+              <conditions>
+                <condition type="atLeast" value="2" field="selections" scope="force" childId="0022-3c2b-6a02-79b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Transport" hidden="false" id="a2f8-c16a-eef4-3f79" targetId="3751-fb88-3656-b7d1">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="a238-0662-36b9-2c83" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Knight" hidden="false" id="9f85-15c5-4a47-3f71" targetId="adde-db57-b7d8-2daa">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="d983-9660-bf14-c7ac" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="d983-9660-bf14-c7ac">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1302-0157-2be4-3d34" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Titan" hidden="false" id="b9b6-2274-35c1-a05a" targetId="1302-0157-2be4-3d34">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9036-a285-876b-5a62" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="9036-a285-876b-5a62">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="adde-db57-b7d8-2daa" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </forceEntry>
+  </forceEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Automata Detachments" id="987a-4ceb-7157-3934" hidden="true">
+      <entryLinks>
+        <entryLink import="true" name="Archmagos Prime on Abeyant" hidden="false" id="ba81-22dd-93ea-bee0" type="selectionEntry" targetId="83d3-6267-00c8-93c3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0960-814d-0c3a-fa50" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Archmagos Prime" hidden="false" id="cc69-fc9e-6852-1db9" type="selectionEntry" targetId="da96-d297-7d75-5e5b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaa5-dcc5-f794-36fd" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Tech-Priest" hidden="false" id="f683-d41e-674e-87d0" type="selectionEntry" targetId="c96f-9492-7e30-43f4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ac9-50dd-7613-80a1" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Dedicated Transports" id="1a90-4df1-8562-6f2c" hidden="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Triaros Armoured Conveyors" id="8660-55bc-fbc6-88d8" hidden="false" sortIndex="2">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="ed30-34c3-cddd-7a9f" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Triaros" hidden="false" id="24d1-0aea-aba5-4f95" type="selectionEntry" targetId="ef70-4e36-852e-fd7d">
+              <costs>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="4"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="04f2-cfbc-a42e-b6f8" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a121-9064-3fcb-43f9" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Dedicated Transports" hidden="false" id="68da-5b3d-f166-8170" type="selectionEntry" targetId="ed30-34c3-cddd-7a9f" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3205-e02d-2b81-5200"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>

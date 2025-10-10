@@ -10829,7 +10829,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
     <entryLink targetId="4922-9498-70cc-bb6a" id="a69e-cf86-6d02-3e9d" type="selectionEntry" name="Death Guard Reaping Host" hidden="false"/>
     <entryLink targetId="a80a-8340-4dca-c776" id="cba2-3d3a-f673-767c" type="selectionEntry" name="Legion Stonebreaker Siege Force" hidden="false"/>
     <entryLink targetId="0439-4c6a-b23e-7db2" id="0689-808f-53ae-881c" type="selectionEntry" name="Legion Stonebreaker Siege Force" hidden="false"/>
-    <entryLink import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="c23b-4cb8-1436-bd8d" type="selectionEntry" targetId="e1db-1b55-f141-5eff">
+    <entryLink import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="c23b-4cb8-1436-bd8d" type="selectionEntry" targetId="0201-32ed-f09c-06d0">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -10840,8 +10840,11 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       <infoLinks>
         <infoLink name="Line" id="7007-0a16-70ed-7824" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Legiones Astartes" hidden="false" id="fa83-42d6-d184-c966" targetId="7d0c-e5ec-a086-98a4" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="d2a7-6421-5200-f713" type="selectionEntry" targetId="0e15-d028-584f-3685">
+    <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="d2a7-6421-5200-f713" type="selectionEntry" targetId="2bf3-65af-d5ee-9757">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -10852,10 +10855,13 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       <infoLinks>
         <infoLink name="Line" id="34a4-5868-5458-fca0" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Legiones Astartes" hidden="false" id="298d-8718-6beb-9910" targetId="7d0c-e5ec-a086-98a4" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink targetId="d876-0dd4-0315-dc6f" id="287e-d62a-16b3-cd41" type="selectionEntry" name="Legion Speartip Assault" hidden="false"/>
     <entryLink targetId="c639-bd73-1b75-4b07" id="9474-9623-6eb9-9e20" type="selectionEntry" name="Legion Speartip Assault" hidden="false"/>
-    <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="eccc-d128-f55d-9a8e" type="selectionEntry" targetId="22a2-1b3d-28a9-de58">
+    <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="eccc-d128-f55d-9a8e" type="selectionEntry" targetId="ec82-1c8f-b4ae-6744">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -10866,8 +10872,11 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       <infoLinks>
         <infoLink name="Line" id="b005-7ece-ea02-3f98" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Legiones Astartes" hidden="false" id="5e20-7a06-5d97-cde5" targetId="7d0c-e5ec-a086-98a4" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="9f1c-f40f-e74f-5b81" type="selectionEntry" targetId="d0a5-ec4a-7b1a-f5ab">
+    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="9f1c-f40f-e74f-5b81" type="selectionEntry" targetId="d1c0-6f40-691e-d7be">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -10878,6 +10887,9 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       <infoLinks>
         <infoLink name="Line" id="4b98-32e0-2462-8bcd" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Legiones Astartes" hidden="false" id="7a9c-6c95-ee79-d1c6" targetId="7d0c-e5ec-a086-98a4" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Vultarax Stratos-Automata Squadron" hidden="false" id="e85e-09e3-9be2-00a9" type="selectionEntry" targetId="3aa7-977a-ffc6-e08c">
       <modifiers>
@@ -10890,8 +10902,11 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       <infoLinks>
         <infoLink name="Line" id="988f-e19e-9da4-5fda" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Legiones Astartes" hidden="false" id="cb5a-6963-67d3-7c95" targetId="7d0c-e5ec-a086-98a4" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="90f5-2221-b1e1-708e" type="selectionEntry" targetId="84c0-0968-cc49-82fc">
+    <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="90f5-2221-b1e1-708e" type="selectionEntry" targetId="0fa8-1d01-f64a-6bc5">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -10902,8 +10917,11 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       <infoLinks>
         <infoLink name="Line" id="3d04-628f-1206-131f" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Legiones Astartes" hidden="false" id="7807-75e8-0d64-7c37" targetId="7d0c-e5ec-a086-98a4" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Thallax Cohort" hidden="false" id="f0c6-1e08-ce20-2163" type="selectionEntry" targetId="4faa-4503-048b-8302">
+    <entryLink import="true" name="Thallax Cohort" hidden="false" id="f0c6-1e08-ce20-2163" type="selectionEntry" targetId="f7a7-95d6-d7f2-18ee">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -10914,11 +10932,11 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       <infoLinks>
         <infoLink name="Line" id="0c45-d06a-af89-c154" hidden="false" type="rule" targetId="3da1-56dc-4df5-41c4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Legiones Astartes" hidden="false" id="640f-2f74-5c16-fb04" targetId="7d0c-e5ec-a086-98a4" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Legion Predator Commander" hidden="false" id="9712-c70f-b1be-6072" type="selectionEntry" targetId="7195-e990-7a20-16f4">
-      <categoryLinks>
-        <categoryLink name="HQ" hidden="false" id="fbcf-0147-5b38-a0b3" targetId="d950-ad23-9b2-9325" primary="true"/>
-      </categoryLinks>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
           <conditionGroups>
@@ -10933,9 +10951,6 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Legion Sicaran Commander" hidden="false" id="17ae-3d38-fb8b-e32e" type="selectionEntry" targetId="128a-f1de-0a00-d903">
-      <categoryLinks>
-        <categoryLink name="HQ" hidden="false" id="c05b-b69b-2076-e590" targetId="d950-ad23-9b2-9325" primary="true"/>
-      </categoryLinks>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
           <conditionGroups>
@@ -10950,9 +10965,6 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Legion Kratos Commander" hidden="false" id="51d3-6082-68e6-95ae" type="selectionEntry" targetId="15fe-6700-ee50-d6f8">
-      <categoryLinks>
-        <categoryLink name="HQ" hidden="false" id="9f12-9296-4026-ed21" targetId="d950-ad23-9b2-9325" primary="true"/>
-      </categoryLinks>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
           <conditionGroups>

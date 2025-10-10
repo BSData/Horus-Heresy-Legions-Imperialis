@@ -9472,7 +9472,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
     <catalogueLink type="catalogue" name="Mechanicum - Library" id="63f8-d006-66ab-7448" targetId="5943-3ab9-e00f-e458"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="84bf-9bbb-3d8c-2dcd" type="selectionEntry" targetId="e1db-1b55-f141-5eff">
+    <entryLink import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="84bf-9bbb-3d8c-2dcd" type="selectionEntry" targetId="0201-32ed-f09c-06d0">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -9480,8 +9480,11 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Solar Auxilia" hidden="false" id="9eaa-f0b2-1310-6508" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="846a-7ed8-16b8-f69c" type="selectionEntry" targetId="0e15-d028-584f-3685">
+    <entryLink import="true" name="Domitar Battle-Automata Maniple" hidden="false" id="846a-7ed8-16b8-f69c" type="selectionEntry" targetId="2bf3-65af-d5ee-9757">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -9489,8 +9492,11 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Solar Auxilia" hidden="false" id="77b8-9ebd-a0ee-f9f4" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tech-Priest Auxilia" hidden="false" id="4ed7-1af2-1662-6bdc" type="selectionEntry" targetId="676c-2349-6a2b-2bf4">
+    <entryLink import="true" name="Tech-Priest Auxilia" hidden="false" id="4ed7-1af2-1662-6bdc" type="selectionEntry" targetId="0022-3c2b-6a02-79b8">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -9506,8 +9512,11 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
       <constraints>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="2cd4-8850-a30e-88f3" includeChildSelections="false"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink name="Solar Auxilia" hidden="false" id="2744-1a19-81cd-8126" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="917b-b391-40c2-80cd" type="selectionEntry" targetId="22a2-1b3d-28a9-de58">
+    <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="917b-b391-40c2-80cd" type="selectionEntry" targetId="ec82-1c8f-b4ae-6744">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -9515,8 +9524,11 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Solar Auxilia" hidden="false" id="9e04-bda5-658a-7975" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="0985-1a9d-8f60-fe4c" type="selectionEntry" targetId="d0a5-ec4a-7b1a-f5ab">
+    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="0985-1a9d-8f60-fe4c" type="selectionEntry" targetId="d1c0-6f40-691e-d7be">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -9524,6 +9536,9 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Solar Auxilia" hidden="false" id="9e8e-3b24-8881-17ba" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Vultarax Stratos-Automata Squadron" hidden="false" id="ccce-adf5-bd30-fc83" type="selectionEntry" targetId="3aa7-977a-ffc6-e08c">
       <modifiers>
@@ -9533,8 +9548,11 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Solar Auxilia" hidden="false" id="af7b-2f22-83fe-b360" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="137c-693d-2fc9-55d9" type="selectionEntry" targetId="84c0-0968-cc49-82fc">
+    <entryLink import="true" name="Thanatar Siege-Automata Maniple" hidden="false" id="137c-693d-2fc9-55d9" type="selectionEntry" targetId="0fa8-1d01-f64a-6bc5">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -9542,8 +9560,11 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Solar Auxilia" hidden="false" id="8a53-83b5-83f9-b97c" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Thallax Cohort" hidden="false" id="49b5-beec-4e88-df81" type="selectionEntry" targetId="4faa-4503-048b-8302">
+    <entryLink import="true" name="Thallax Cohort" hidden="false" id="49b5-beec-4e88-df81" type="selectionEntry" targetId="f7a7-95d6-d7f2-18ee">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -9551,6 +9572,9 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Solar Auxilia" hidden="false" id="07ea-a54d-ce6e-0161" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Legate Commander Detachment" hidden="false" id="17e3-4419-8bbb-cb29" type="selectionEntry" targetId="1f7b-2c5e-5931-57e1"/>
     <entryLink import="true" name="Auxilia Tactical Command Detachment" hidden="false" id="51b8-0b30-0d37-7e41" type="selectionEntry" targetId="d6a2-9c78-adb9-ab04"/>

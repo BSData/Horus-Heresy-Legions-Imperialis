@@ -228,7 +228,6 @@
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="354c-429c-cccc-554d" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="8982-3f16-4003-559a" targetId="1302-0157-2be4-3d34" primary="true"/>
-        <categoryLink name="Collegia Titanica" hidden="false" id="deb2-838b-460d-8645" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
@@ -543,7 +542,6 @@
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="7c06-49b9-0c53-bfb8" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="5fcf-11a1-aaa2-86a6" targetId="1302-0157-2be4-3d34" primary="true"/>
-        <categoryLink name="Collegia Titanica" hidden="false" id="bf0d-2799-5645-ee52" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Ardex Mega-Bolters" hidden="false" id="029c-78ab-c1fb-a6c2" collective="false">
@@ -700,7 +698,6 @@
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="3094-1f75-f697-9a25" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="9f32-7166-aa1e-5d2f" targetId="1302-0157-2be4-3d34" primary="true"/>
-        <categoryLink name="Collegia Titanica" hidden="false" id="3b45-7109-279b-6e1f" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Main Weapons" id="5a83-cf42-e4c8-7c8a" hidden="false" collective="false" import="true">
@@ -996,7 +993,6 @@
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="7d29-69ec-511e-bedf" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="f4fd-3d59-c92a-e78c" targetId="1302-0157-2be4-3d34" primary="true"/>
-        <categoryLink name="Collegia Titanica" hidden="false" id="16a2-9fbc-f5aa-880c" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Arm Weapons" id="f829-8ccf-7375-193c" hidden="false" collective="false" import="true">
@@ -1080,7 +1076,6 @@
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="e3eb-2054-0851-455f" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="fb19-93ca-f908-6fd6" targetId="1302-0157-2be4-3d34" primary="true"/>
-        <categoryLink name="Collegia Titanica" hidden="false" id="0771-3dd1-c80c-6ceb" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord Arm Weapons" hidden="false" id="d852-e525-b138-31b3" collective="false" targetId="3cdd-30c2-95e4-5260" type="selectionEntryGroup">
@@ -1139,7 +1134,6 @@
         <categoryLink name="Titan (5)" hidden="false" id="2b26-3677-0c53-74aa" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Loyalist" hidden="false" id="161d-4e98-362f-0648" targetId="1b68-cce9-e11c-fde7" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="2967-bc92-2867-4fe8" targetId="1302-0157-2be4-3d34" primary="true"/>
-        <categoryLink name="Collegia Titanica" hidden="false" id="ca7e-774c-970a-c85f" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Death pulse" hidden="false" id="4b4b-5ce8-1826-a67f" collective="false">
@@ -1279,7 +1273,6 @@
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="19b4-8027-667d-4dfc" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="dfe1-383e-7ee2-52fa" targetId="1302-0157-2be4-3d34" primary="true"/>
-        <categoryLink name="Collegia Titanica" hidden="false" id="827a-fabe-b83c-1a70" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Revelator missile launcher" hidden="false" id="1287-ff49-4c3e-777e" collective="false">
@@ -1403,7 +1396,6 @@
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="049b-8463-011f-e8e0" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="5e0a-d837-70f9-7d65" targetId="1302-0157-2be4-3d34" primary="true"/>
-        <categoryLink name="Collegia Titanica" hidden="false" id="f2db-afab-bb69-193d" targetId="d965-f291-a87b-657f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Desolator chainsword" hidden="false" id="64a5-dd3e-b3d8-4b36" collective="false">
