@@ -3079,13 +3079,20 @@ All Detachments included in this Support Formation with the Cybernetica Cortex (
         </categoryLink>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="-1" field="forces" scope="roster" shared="true" id="e0ac-ab1a-2440-cd18" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="e0ac-ab1a-2440-cd18" includeChildSelections="true"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="0" field="e0ac-ab1a-2440-cd18">
+        <modifier type="increment" value="1" field="e0ac-ab1a-2440-cd18">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="d895-d0b5-9bcf-10af" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="dd78-8b1b-357d-3a91" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="d0ee-0f8c-7748-3f1e" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="732c-17f9-8345-775c" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="1e4a-3c76-f375-bc07" shared="true" roundUp="false"/>
+          </repeats>
         </modifier>
       </modifiers>
     </forceEntry>

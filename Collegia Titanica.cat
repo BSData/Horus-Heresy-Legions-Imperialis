@@ -618,6 +618,7 @@ All Titan Detachments within this Support Formation gain the Cortex Controller s
             <repeat value="1" repeats="1" field="forces" scope="roster" childId="666d-9045-0a44-9bb3" shared="true" roundUp="false"/>
             <repeat value="1" repeats="1" field="forces" scope="roster" childId="8c0d-140b-4232-9e59" shared="true" roundUp="false"/>
             <repeat value="1" repeats="1" field="forces" scope="roster" childId="3830-733f-37e7-8731" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="1e4a-3c76-f375-bc07" shared="true" roundUp="false"/>
           </repeats>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ce5-83db-2122-c90b" shared="true" includeChildSelections="true" includeChildForces="true"/>

@@ -337,6 +337,7 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
             <repeat value="1" repeats="1" field="forces" scope="roster" childId="5e65-d97a-8c71-91f8" shared="true" roundUp="false"/>
             <repeat value="1" repeats="1" field="forces" scope="roster" childId="431c-12c3-ba14-3f08" shared="true" roundUp="false"/>
             <repeat value="1" repeats="1" field="forces" scope="roster" childId="a4af-c562-7d78-7d19" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="1e4a-3c76-f375-bc07" shared="true" roundUp="false"/>
           </repeats>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true" includeChildSelections="true" includeChildForces="true"/>

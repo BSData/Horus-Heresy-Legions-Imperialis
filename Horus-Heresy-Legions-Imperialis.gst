@@ -141,7 +141,7 @@
         <categoryLink name="Questoris" hidden="false" id="93b2-1850-48c5-8ab1" targetId="b2bb-ab05-f014-3b33"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Iconic Formations..." id="1e4a-3c76-f375-bc07" hidden="false">
+    <forceEntry name="Iconic Formations" id="1e4a-3c76-f375-bc07" hidden="false">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="ba86-e610-c6c4-9f21" targetId="3779-422e-5fe9-5654"/>
         <categoryLink name="Standard Detachments" hidden="false" id="86c6-a699-531e-6266" targetId="e1e0-9c0e-7cab-b244">

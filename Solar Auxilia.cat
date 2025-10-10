@@ -463,17 +463,30 @@
 
 Optional Support, Vanguard and Bastion Detachment slots in this Support Formation must be filled with Detachments from the Mechanicum Taghmata Army List. Detachments taken from the Mechanicum Taghmata Army List in this way must have the Cybernetica Cortex (X) special rule.
 
+Compulsory Support Detachment slots in this Support Formation must be filled with Tech-priest Auxilia Detachments from the Mechanicum Taghmata Army List.
+
 Core Detachment slots in this Support formation may be filled by Core Detachments chosen from the Solar Auxilia Army List or with Thallax Cohort Detachments chosen from the Mechanicum Taghmata Army List.</description>
         </rule>
       </rules>
       <constraints>
-        <constraint type="max" value="-1" field="forces" scope="roster" shared="true" id="40a5-1d74-db94-fd91" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="15fd-50c5-0b5d-2970" includeChildSelections="true"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="0" field="40a5-1d74-db94-fd91">
+        <modifier type="increment" value="1" field="15fd-50c5-0b5d-2970">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="71ba-48d2-4bac-7b28" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="6790-d477-e63c-79ea" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="9b81-1926-fdd2-e726" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="7995-3bf3-c59d-3b2c" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="4b34-ed00-fcb0-546a" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="94f6-e9a8-aa4f-483c" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="995d-11ac-aed4-b85a" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="1740-727f-e6f6-3a96" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="1373-7e54-9700-9fe2" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="1e4a-3c76-f375-bc07" shared="true" roundUp="false"/>
+          </repeats>
         </modifier>
       </modifiers>
     </forceEntry>

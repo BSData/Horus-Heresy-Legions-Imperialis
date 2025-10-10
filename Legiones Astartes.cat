@@ -10573,6 +10573,7 @@ Detachments from the Mechanicum Taghmata Army List in this Support Formation do 
             <repeat value="1" repeats="1" field="forces" scope="roster" childId="3ff3-f65b-01af-e00e" shared="true" roundUp="false"/>
             <repeat value="1" repeats="1" field="forces" scope="roster" childId="620f-8488-c57a-b870" shared="true" roundUp="false"/>
             <repeat value="1" repeats="1" field="forces" scope="roster" childId="9a97-9a76-77cf-aa42" shared="true" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="1e4a-3c76-f375-bc07" shared="true" roundUp="false"/>
           </repeats>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
