@@ -9496,26 +9496,6 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
         <categoryLink name="Solar Auxilia" hidden="false" id="77b8-9ebd-a0ee-f9f4" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tech-Priest Auxilia" hidden="false" id="4ed7-1af2-1662-6bdc" type="selectionEntry" targetId="0022-3c2b-6a02-79b8">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="1" field="2cd4-8850-a30e-88f3">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="2cd4-8850-a30e-88f3" includeChildSelections="false"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink name="Solar Auxilia" hidden="false" id="2744-1a19-81cd-8126" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink import="true" name="Castellax Battle-Automata Maniple" hidden="false" id="917b-b391-40c2-80cd" type="selectionEntry" targetId="ec82-1c8f-b4ae-6744">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -9800,4 +9780,35 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Tech-Priest Auxilia" hidden="false" id="77c8-d3fb-392f-244d" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="416a-4bd3-07d7-c5a6" targetId="be19-7658-5258-71d9" primary="true"/>
+        <categoryLink name="Solar Auxilia" hidden="false" id="ed9f-9202-b8c1-5879" targetId="1cf6-bb4c-e11f-3da9" primary="false"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="2cd4-8850-a30e-88f3">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="2cd4-8850-a30e-88f3" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Tech-Priest Auxilia" hidden="false" id="4ed7-1af2-1662-6bdc" type="selectionEntry" targetId="0022-3c2b-6a02-79b8">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc70-28ca-bb06-80d6" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d374-3fd9-f6b1-509f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

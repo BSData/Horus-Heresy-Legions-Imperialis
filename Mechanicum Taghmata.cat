@@ -432,44 +432,6 @@
         <categoryLink name="Mechanicum" hidden="false" id="54e2-bf15-ba8e-7909" targetId="d331-a05e-f676-b8a6" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tech-Priest Auxilia" hidden="false" id="b8c1-8479-ea99-89f7" type="selectionEntry" targetId="0022-3c2b-6a02-79b8">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="080a-85bb-c07f-6df7" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="a4af-c562-7d78-7d19" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" value="124c-2927-143f-f513" field="category">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <entryLinks>
-        <entryLink import="true" name="Dedicated Transports" hidden="false" id="c92f-807b-259f-cf07" type="selectionEntryGroup" targetId="1a90-4df1-8562-6f2c" sortIndex="1">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="431c-12c3-ba14-3f08" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <categoryLinks>
-        <categoryLink name="Mechanicum" hidden="false" id="90d4-691c-86aa-35fb" targetId="d331-a05e-f676-b8a6" primary="false"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink import="true" name="Myrmidon Secutor Host" hidden="false" id="592b-df53-5b99-05c1" type="selectionEntry" targetId="e1cf-74e0-fc01-6c93">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1203,4 +1165,60 @@
       <description>When a Detachment from this Formation that has the Cybernetica Cortex (X) special rule is activated, its Order may be replaced with a new Order. The new Order must be the same Order as one issued to a friendly Detachment from this Formation that has the Cybernetica Cortex (X) special rule and is within 6&quot; of the activated Detachment. The new Order can be an Order other than those shown in the activated Detachment&apos;s Cybernetica Cortex (X) special rule, even if the activated Detachment is not within range of a Cyber Controller.</description>
     </rule>
   </sharedRules>
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Tech-Priest Auxilia" hidden="false" id="368e-a979-be05-750d" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="f260-5189-b409-6fce" targetId="be19-7658-5258-71d9" primary="true"/>
+        <categoryLink name="Mechanicum" hidden="false" id="5ce4-5a48-cca5-3b7e" targetId="d331-a05e-f676-b8a6" primary="false"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="080a-85bb-c07f-6df7" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="a4af-c562-7d78-7d19" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Tech-Priest Auxilia" hidden="false" id="b8c1-8479-ea99-89f7" type="selectionEntry" targetId="0022-3c2b-6a02-79b8">
+          <entryLinks>
+            <entryLink import="true" name="Dedicated Transports" hidden="false" id="c92f-807b-259f-cf07" type="selectionEntryGroup" targetId="1a90-4df1-8562-6f2c" sortIndex="1">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="431c-12c3-ba14-3f08" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink name="Mechanicum" hidden="false" id="90d4-691c-86aa-35fb" targetId="d331-a05e-f676-b8a6" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81b7-49bb-49a0-6637" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8279-a9f4-235f-516b" includeChildSelections="false" automatic="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

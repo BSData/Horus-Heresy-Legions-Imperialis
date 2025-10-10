@@ -534,34 +534,6 @@
         <categoryLink name="Dark Mechanicum" hidden="false" id="81c0-dcd9-9726-8de3" targetId="e63d-b61c-bac6-a269" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tech-Priest Auxilia" hidden="false" id="77f4-6267-12cf-d337" type="selectionEntry" targetId="0022-3c2b-6a02-79b8">
-      <modifiers>
-        <modifier type="add" value="124c-2927-143f-f513" field="category">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <entryLinks>
-        <entryLink import="true" name="Dedicated Transports" hidden="false" id="d160-be7b-549a-6343" type="selectionEntryGroup" targetId="1a90-4df1-8562-6f2c" sortIndex="1">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d895-d0b5-9bcf-10af" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <categoryLinks>
-        <categoryLink name="Dark Mechanicum" hidden="false" id="e8a8-b785-0c13-4967" targetId="e63d-b61c-bac6-a269" primary="false"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink import="true" name="Thallax Cohort" hidden="false" id="cc13-2ed5-71cd-25c1" type="selectionEntry" targetId="f7a7-95d6-d7f2-18ee">
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
@@ -2316,4 +2288,46 @@ All Detachments included in this Support Formation with the Cybernetica Cortex (
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Tech-Priest Auxilia" hidden="false" id="ba66-b8b9-708e-c9b3">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="4994-be37-a4ec-d29a" targetId="be19-7658-5258-71d9" primary="true"/>
+        <categoryLink name="Dark Mechanicum" hidden="false" id="d632-b4b0-aaea-a685" targetId="e63d-b61c-bac6-a269" primary="false"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="db41-ab79-2993-9b2a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Tech-Priest Auxilia" hidden="false" id="77f4-6267-12cf-d337" type="selectionEntry" targetId="0022-3c2b-6a02-79b8">
+          <entryLinks>
+            <entryLink import="true" name="Dedicated Transports" hidden="false" id="d160-be7b-549a-6343" type="selectionEntryGroup" targetId="1a90-4df1-8562-6f2c" sortIndex="1">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d895-d0b5-9bcf-10af" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink name="Dark Mechanicum" hidden="false" id="e8a8-b785-0c13-4967" targetId="e63d-b61c-bac6-a269" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ddd-c8a5-0e16-be5d" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="126a-004d-d754-f308" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
