@@ -8,7 +8,7 @@
     <publication name="The Devastation of Tallarn" id="e4cc-404e-be5e-2101" hidden="false" shortName="DOT" publicationDate="2024" publisherUrl="https://www.warhammer.com/en-GB/shop/legions-imperialis-devastation-of-tallarn-2024-eng"/>
     <publication name="Rise of the Dark Mechanicum" id="89ae-8b6d-da44-733f" hidden="false" shortName="RDM" publicationDate="2024"/>
     <publication name="Bonded Cybernetica Support Formations" id="3a86-b962-115c-2239" hidden="false" publisherUrl="https://assets.warhammer-community.com/legions_imperialis_expandedcyberneticaformations_eng_07-mdsmqowyoy-tu5prvasqe.pdf" shortName="BC" publicationDate="2024"/>
-    <publication name="Liber Strategica" id="5364-464c-3309-a620" hidden="false" shortName="LS" publisher="" publicationDate="2025"/>
+    <publication name="Liber Strategica" id="5364-464c-3309-a620" hidden="false" shortName="LS" publicationDate="2025"/>
   </publications>
   <costTypes>
     <costType id="ee95-a20e-f9ff-e2c2" name="‏‏‎‏points" defaultCostLimit="3000" hidden="false"/>
@@ -117,6 +117,7 @@
     <categoryEntry name="Questoris" id="b2bb-ab05-f014-3b33" hidden="false" publicationId="89ae-8b6d-da44-733f">
       <comment>detachment role</comment>
     </categoryEntry>
+    <categoryEntry name="Support Formations" id="8948-fa38-100b-2852" hidden="true"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="49dd-d763-6836-b4f8" hidden="false" name="Unbound Formation (Open Play)">
@@ -141,7 +142,7 @@
         <categoryLink name="Questoris" hidden="false" id="93b2-1850-48c5-8ab1" targetId="b2bb-ab05-f014-3b33"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Formations of Legend" id="1e4a-3c76-f375-bc07" hidden="false">
+    <forceEntry name="Iconic Formations" id="1e4a-3c76-f375-bc07" hidden="false">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="ba86-e610-c6c4-9f21" targetId="3779-422e-5fe9-5654"/>
         <categoryLink name="Standard Detachments" hidden="false" id="86c6-a699-531e-6266" targetId="e1e0-9c0e-7cab-b244">
@@ -482,7 +483,7 @@ any way.</description>
     <rule id="caaf-3de0-3658-9054" name="Commander" publicationId="c1b8-2180-635c-14cd" hidden="false">
       <description>Detachments with the Commander special rule are the commanders of your Army.
 
-When deploying a Formation that includes any models with this special rule during deployment, a player must assign all models with this special rule to a Detachment in that Formation, so long as the two of the same Detachment type. For the remainder of the battle, the model counts as part of the Detachment it is attached to an cannot leave it for any reason.
+When deploying a Formation that includes any models with this special rule during deployment, a player must assign all models with this special rule to a Detachment in that Formation, so long as the two are of the same Detachment type. For the remainder of the battle, the model counts as part of the Detachment it is attached to an cannot leave it for any reason.
 
 A Detachment can only ever have one model with the Commander special rule attached to it at any given time.
 
@@ -506,19 +507,14 @@ Models in a Detachment with this special rule have a
 Tactical Strength of 0 and this cannot be modified in
 any way.</description>
     </rule>
-    <rule id="9e10-bda9-5ee4-76ee" name="Explorator Adaption" publicationId="c1b8-2180-635c-14cd" hidden="false" page="88">
-      <description>Models with the Explorator Adaption special rule gain a 6+ Invulnerable Save against Hits scored by a weapon with the Barrage or Blast trait.</description>
+    <rule id="9e10-bda9-5ee4-76ee" name="Explorator Adaptation" publicationId="c1b8-2180-635c-14cd" hidden="false" page="88">
+      <description>Models with the Explorator Adaptation special rule gain a 6+ Invulnerable Save against Hits scored by a weapon with the Barrage or Blast trait.</description>
     </rule>
     <rule id="331b-6c13-fad2-58de" name="Feel No Pain" publicationId="c1b8-2180-635c-14cd" hidden="false" page="88">
       <description>If a model with this special rule suffers a Wound from a weapon with the Light trait, roll a D6 after any save rolls are made. On a 5+, the Wound is ignored and has no effect; this triggers before rules such as Deflagrate, meaning extra Hits would not be generated. Feel No Pain cannot be used against Wounds caused in Fights.</description>
     </rule>
     <rule id="54b4-67fd-a64-86d5" name="Forward Deployment" publicationId="559c-6588-c3b1-b0e5" hidden="false" page="2">
-      <description>After both players have deployed their armies, including
-Infiltrating Detachments, but before the first round of the
-battle, if all models in a Detachment have the Forward
-Deployment special rule, the Detachment may make a
-special move.
-
+      <description>After both players have deployed their armies, including Infiltrating Detachments, but before the first round of the battle, if all models in a Detachment have the Forward Deployment special rule, the Detachment may make a special move.
 
 The controlling player can move each Forward Deployment Detachment on the battlefield up to a number of inches equal to its Movement characteristic, ignoring Difficult terrain and Dangerous terrain rules. This move can the Detachment outside of its deployment zone and a Detachment can Garrison a Structure if they are able to.
 
@@ -543,9 +539,7 @@ Models with the Independent and Deep Strike special rules may start the game in 
     <rule id="68b7-f6c7-7925-1567" name="Infiltrate" publicationId="559c-6588-c3b1-b0e5" hidden="false" page="2">
       <description>Detachments with the Infiltrate special rule are not deployed as normal. Instead, after all players have finished deploying, players take it in turns, starting with the player who has command of the battlefield, to deploy an Infiltrating Detachment anywhere on the battlefield outside of the opposing player&apos;s deployment zone. Infiltrating models must be deployed at least 4&quot; away from a previously deployed enemy model; if it cannot be deployed in this way, then it is deployed as normal within the controlling player&apos;s deployment zone.
 
-
-A Detachment that is deployed in this way cannot be
-issued a Charge Order during the first round.</description>
+A Detachment that is deployed in this way cannot be issued a Charge Order during the first round.</description>
     </rule>
     <rule id="941e-dc74-2689-bf1f" name="Inspire (X)" publicationId="c1b8-2180-635c-14cd" hidden="false" page="92">
       <description>Friendly Detachments within a number of inches equal to the value shown in brackets of a Detachment with this special rule may use this Detachment&apos;s Morale value in place of their own when making Morale checks.</description>
@@ -580,15 +574,7 @@ Models with the Jump Packs special rule count as having the Bulky special rule f
       <description>When a model with the Macro-extinction Targeting Protocols special rule is firing at a Super-heavy, Knight or Titan Detachment, it may re-roll all failed Hit rolls. In addition, when making Fight rolls for a model with this special rule, the controlling player may re-roll one D6 of the controlling player&apos;s choice in Fights against a Super-heavy, Knight or Titan model.</description>
     </rule>
     <rule id="db05-2ad8-6256-20e9" name="Master Tactician" publicationId="559c-6588-c3b1-b0e5" hidden="false" page="2">
-      <description>A Detachment that contains one or more models with
-this special rule may issue a command when it is activated.
-If the controlling player chooses to do so, they may select
-one other friendly Detachment that has yet to be activated
-this round, and is within 6&quot; of one or more models with
-this special rule that are being activated. The selected
-Detachment&apos;s Order token is discarded and replaced with
-a different Order they were eligible to be issued during the
-Orders phase of this round.
+      <description>A Detachment that contains one or more models with this special rule may issue a command when it is activated. If the controlling player chooses to do so, they may select one other friendly Detachment that has yet to be activated this round, and is within 6&quot; of one or more models with this special rule that are being activated. The selected Detachment&apos;s Order token is discarded and replaced with a different Order they were eligible to be issued during the Orders phase of this round.
 
 A Detachment issued with a Fall Back Order cannot discard its Order via this rule, however a Broken Detachment can, and thus can be issued an Order other than Advance or Charge.</description>
     </rule>
@@ -664,8 +650,9 @@ During the End phase, in the Resolve End Phase Effects stage, a model with the V
     <rule name="Remote Controlled Detonation" hidden="false" id="c783-cc80-fdd9-b883" publicationId="559c-6588-c3b1-b0e5">
       <description>If a model with the Remote Controlled Detonation special rule ends its movement within 12&quot; of a friendly model with the Commander special rule, it may detonate. When a model detonates, it attacks with all of its weapons that have the Blast (3&quot;/5&quot;) trait. The central hole of the Blast template is placed within 1&quot; of the detonating model – it does no damage to itself (i.e., don’t make Hit rolls for the detonating model) and the template does not Scatter. Once the effects of the detonation have been resolved, the detonating model is destroyed.
 
+If a Detachment contains more than one model with this rule, the controlling player can choose which models detonate and which do not, doing so before resolving any detonation. Models that detonate are not affected by friendly models that are detonating at the same time. Any model that does not detonate is affected if it is under the Blast template as normal.
 
-If a Detachment contains more than one model with this rule, the controlling player can choose which models detonate and which do not, doing so before resolving any detonation. Models that detonate are not affected by friendly models that are detonating at the same time. Any model that does not detonate is affected if it is under the Blast template as normal.</description>
+In addition, models with the Remote Controlled Detonation special rule are ignored for the purposes of calculating a Formation&apos;s Break Point.</description>
     </rule>
   </sharedRules>
   <selectionEntries>
@@ -745,30 +732,30 @@ If a Detachment contains more than one model with this rule, the controlling pla
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38fe-949a-ffca-f477" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="71ba-48d2-4bac-7b28" name="Solar Auxilia" hidden="false" collective="false" import="true" type="upgrade" publicationId="c1b8-2180-635c-14cd" sortIndex="2">
+            <selectionEntry id="71ba-48d2-4bac-7b28" name="Solar Auxilia" hidden="false" collective="false" import="true" type="upgrade" publicationId="c1b8-2180-635c-14cd">
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
               <comment>primary army</comment>
             </selectionEntry>
-            <selectionEntry id="288d-7913-984c-5d0" name="Legiones Astartes" hidden="false" collective="false" import="true" type="upgrade" publicationId="c1b8-2180-635c-14cd" sortIndex="1">
+            <selectionEntry id="288d-7913-984c-5d0" name="Legiones Astartes" hidden="false" collective="false" import="true" type="upgrade" publicationId="c1b8-2180-635c-14cd">
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎‏‏‎ ‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
               <comment>primary army</comment>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Collegia Titanica" hidden="false" id="6ce5-83db-2122-c90b" publicationId="89ae-8b6d-da44-733f" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Collegia Titanica" hidden="false" id="6ce5-83db-2122-c90b" publicationId="89ae-8b6d-da44-733f">
               <comment>primary army</comment>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Mechanicum Taghmata" hidden="false" id="f444-dd74-3457-560e" publicationId="89ae-8b6d-da44-733f" sortIndex="5">
+            <selectionEntry type="upgrade" import="true" name="Mechanicum Taghmata" hidden="false" id="f444-dd74-3457-560e" publicationId="89ae-8b6d-da44-733f">
               <comment>primary army</comment>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Dark Mechanicum" hidden="false" id="db41-ab79-2993-9b2a" publicationId="89ae-8b6d-da44-733f">
               <comment>primary army</comment>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Knight Household" hidden="false" id="24db-5384-cb9f-157f" sortIndex="4"/>
+            <selectionEntry type="upgrade" import="true" name="Knight Households" hidden="false" id="24db-5384-cb9f-157f"/>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>

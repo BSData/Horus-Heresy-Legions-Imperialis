@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="true" id="87f1-3ef8-7e7b-e34c" name="Titans - Library" gameSystemId="sys-9498-516a-178a-3f4f" gameSystemRevision="26" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Ardex-defensor Lascannon turrets" hidden="false" id="5bcc-93b2-4e6a-75a7" collective="false">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e324-de85-2486-c7a6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="28a1-898c-efc8-ecde" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
+    <selectionEntry type="upgrade" import="true" name="Ardex-defensor lascannon turrets" hidden="false" id="5bcc-93b2-4e6a-75a7" collective="false">
       <profiles>
-        <profile name="Ardex-Defensor Lascannon turrets" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ae4a-5825-9b22-621b">
+        <profile name="Ardex-defensor lascannon turrets" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ae4a-5825-9b22-621b">
           <characteristics>
             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
             <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
             <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Rear), Point Defence</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Rear), Anti-tank, Point Defence</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -31,13 +27,9 @@
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ardex-defensor Mauler Bolt Cannon Turrets" hidden="false" id="f85d-0cd7-d99e-dd2f" collective="false">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb80-89dc-91b4-687d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="719e-009c-78cc-cddd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
+    <selectionEntry type="upgrade" import="true" name="Ardex-defensor mauler bolt cannon turrets" hidden="false" id="f85d-0cd7-d99e-dd2f" collective="false">
       <profiles>
-        <profile name="Ardex-defensor Mauler Bolt Cannon Turrets" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2397-47aa-55ce-a9fb">
+        <profile name="Ardex-defensor mauler bolt cannon turrets" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2397-47aa-55ce-a9fb">
           <characteristics>
             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
@@ -56,9 +48,9 @@
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Belicosa Volcano Cannon" hidden="false" id="c309-92e3-bbce-25ce" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Belicosa volcano cannon" hidden="false" id="c309-92e3-bbce-25ce" collective="false">
       <profiles>
-        <profile name="Belicosa Volcano Cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="7a74-f21a-b61b-e11c">
+        <profile name="Belicosa volcano cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="7a74-f21a-b61b-e11c">
           <characteristics>
             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">70&quot;</characteristic>
             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
@@ -85,111 +77,9 @@
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Mechanicum Knight Moirax Talon" hidden="false" id="5b5e-4ee8-cdf7-a048" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Mori quake cannon" hidden="false" id="d431-9b1c-7fa0-05e3" collective="false">
       <profiles>
-        <profile name="Knight Moirax" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="c1de-9668-1100-cb8f">
-          <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
-            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">3+</characteristic>
-            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+6</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">2+</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Ion Shield (X)" id="c41f-19df-4ab2-d24b" hidden="false" targetId="3016-c284-15c3-6753" type="rule">
-          <modifiers>
-            <modifier type="set" value="Ion Shield (5+)" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Nimble" id="83cd-e9f4-0c9c-a76c" hidden="false" targetId="bc40-962f-5fc5-771a" type="rule"/>
-        <infoLink name="Ionic Flare Shield" id="7f43-b689-b6ae-65b7" hidden="false" targetId="91cb-858e-5961-1931" type="rule"/>
-      </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="aba2-4fb2-42d4-71bf" hidden="false" collective="false" import="true" defaultSelectionEntryId="26db-eaee-0f8a-3eb2">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="99c2-b4af-d12b-0dbf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5cf5-7b68-cc0b-d90f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Volkite Veuglair and Gyges Siege Claw" hidden="false" id="5af4-5f38-79a8-52bb" collective="false">
-              <profiles>
-                <profile name="Volkite Veuglair" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f6a9-f85f-9a15-9a91">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">14&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Deflagrate, Light AT</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Gyges Siege Claw" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ec04-c482-432d-1f60">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Rend, Wrecker (2)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Arc (Front/Rear)" id="93d3-a24a-e723-3ba2" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                  <modifiers>
-                    <modifier type="set" value="Arc (Front)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Rend" id="a597-2b1e-a769-78a1" hidden="false" targetId="6d1b-9fcd-3541-f46e" type="rule"/>
-                <infoLink name="Wrecker (X)" id="e8b4-aeac-bd9a-2d60" hidden="false" targetId="e40-19fc-8c79-9a12" type="rule">
-                  <modifiers>
-                    <modifier type="set" value="Wrecker (2)" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Deflagrate" id="8ced-f5ef-af64-3d39" hidden="false" targetId="711e-2910-b797-71a8" type="rule"/>
-                <infoLink name="Light AT" id="5e6a-5a33-1036-e041" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Armiger Lightning Locks" hidden="false" id="ba1e-f7c7-2cee-8bb4" collective="false">
-              <profiles>
-                <profile name="Armiger Lightning Locks" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8fec-8eed-2ade-be6b">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Arc (Front/Rear)" id="2bb8-3928-6d14-97a4" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                  <modifiers>
-                    <modifier type="set" value="Arc (Front)" field="name"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="2"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mori Quake Cannon" hidden="false" id="d431-9b1c-7fa0-05e3" collective="false">
-      <profiles>
-        <profile name="Mori Quake Cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="57ef-75f4-0ce8-0115">
+        <profile name="Mori quake cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="57ef-75f4-0ce8-0115">
           <characteristics>
             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">80&quot;</characteristic>
             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
@@ -217,9 +107,9 @@
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Reaver Gatling Blaster" hidden="false" id="9347-4799-21f6-414b" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Reaver gatling blaster" hidden="false" id="9347-4799-21f6-414b" collective="false">
       <profiles>
-        <profile name="Reaver Gatling Blaster" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9294-0f1d-e38b-c668">
+        <profile name="Reaver gatling blaster" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9294-0f1d-e38b-c668">
           <characteristics>
             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">35&quot;</characteristic>
             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
@@ -241,9 +131,9 @@
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Reaver Laser Blaster" hidden="false" id="ab91-40d8-18ce-dfdb" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Reaver laser blaster" hidden="false" id="ab91-40d8-18ce-dfdb" collective="false">
       <profiles>
-        <profile name="Reaver Laser Blaster" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="a5b2-c611-5d37-27c5">
+        <profile name="Reaver laser blaster" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="a5b2-c611-5d37-27c5">
           <characteristics>
             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">40&quot;</characteristic>
             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
@@ -265,24 +155,24 @@
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Reaver Melta Cannon" hidden="false" id="5d2a-454f-b448-70dc" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Reaver melta cannon" hidden="false" id="5d2a-454f-b448-70dc" collective="false">
       <profiles>
-        <profile name="Reaver Melta Cannon (Far)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="3169-81de-7b67-b15d">
+        <profile name="Reaver melta cannon - far" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="3169-81de-7b67-b15d">
           <characteristics>
             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">14&quot;</characteristic>
             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
             <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
             <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front), Demolisher</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank, Demolisher</characteristic>
           </characteristics>
         </profile>
-        <profile name="Reaver Melta Cannon (Close)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0b1a-0b0b-04d0-289b">
+        <profile name="Reaver melta cannon - close" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0b1a-0b0b-04d0-289b">
           <characteristics>
             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
             <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
             <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
-            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front), Demolisher, Engine Killer (4)</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank, Demolisher, Engine Killer (4)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -305,9 +195,9 @@
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Reaver Volcano Cannon" hidden="false" id="8bc3-4da8-b1e0-b072" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Reaver volcano cannon" hidden="false" id="8bc3-4da8-b1e0-b072" collective="false">
       <profiles>
-        <profile name="Reaver Volcano Cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="4dd9-f68f-c2eb-e690">
+        <profile name="Reaver volcano cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="4dd9-f68f-c2eb-e690">
           <characteristics>
             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">60&quot;</characteristic>
             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
@@ -335,453 +225,308 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Warhound Hunting Pack" hidden="false" id="82a6-d3d2-d7b6-aae5" collective="false">
-      <modifiers>
-        <modifier type="set" value="970" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="greaterThan" value="2" field="selections" scope="self" childId="e709-feb2-89b8-4cac" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="660" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="equalTo" value="2" field="selections" scope="self" childId="e709-feb2-89b8-4cac" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="354c-429c-cccc-554d" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="8982-3f16-4003-559a" targetId="1302-0157-2be4-3d34" primary="true"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Warhound Titans" id="e709-feb2-89b8-4cac" hidden="false" collective="false" import="true" defaultSelectionEntryId="fde1-f35e-66cc-8c20">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7a89-e4b5-1bb9-365c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38bb-a455-cd79-5770" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Warhound Titan" hidden="false" id="999e-0f4e-4ec8-c830" collective="false">
-              <profiles>
-                <profile name="Warhound Titan" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="c300-9c2b-b7c5-b1da">
-                  <characteristics>
-                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
-                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
-                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+10</characteristic>
-                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">4</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Agile" id="9705-23ef-dc1f-9966" hidden="false" targetId="36b7-c82d-3af9-3a0" type="rule"/>
-                <infoLink name="Void Shields (X)" id="a5ca-0593-db67-e88a" hidden="false" targetId="908c-befc-f030-f2e7" type="rule">
-                  <modifiers>
-                    <modifier type="set" value="Void Shields (2)" field="name"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Weapons" id="7431-56df-1151-68dc" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e5d4-84da-4a19-6f45" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9443-1588-eff5-c51f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Inferno Gun" hidden="false" id="0bcc-dfd2-5342-5b2f" collective="false">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0cca-04a1-54c7-fb35" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Inferno Gun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="a384-179c-daf7-352d">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">1&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Firestorm, Light AT, Shieldbane</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="5bfb-fbe6-9e9e-566c" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                        <infoLink name="Light AT" id="b228-f017-de9d-0f6b" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-                        <infoLink name="Firestorm" id="b043-543b-ffe4-48f6" hidden="false" targetId="7d44-6682-5990-8ccf" type="rule"/>
-                        <infoLink name="Shieldbane" id="93f4-160f-6679-e934" hidden="false" targetId="8208-8da0-3822-65da" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Turbo-laser Destructor" hidden="false" id="7d80-c6dc-90db-9fcc" collective="false">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9001-4b73-2bc4-6cfe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Turbo-laser Destructor" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0b73-858e-23a7-0051">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">40&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Arc (Front)</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="c3d0-38b9-9bd8-6ad3" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                        <infoLink name="Accurate" id="e0a1-0975-87a1-832a" hidden="false" targetId="dc55-9f84-39e1-1e1e" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Plasma Blastgun" hidden="false" id="c27b-2f28-3ede-1cec" collective="false">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="384f-b8a7-3a4c-f82d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Plasma Blastgun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="066b-b1a5-6c98-9b30">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="0bad-e7da-7491-e9b8" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Incisor Pattern Melta Lance" hidden="false" id="d1b9-81b7-3a6d-8a21" collective="false">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fb14-4219-0789-321f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Incisor Pattern Melta Lance (Far)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c6ec-58d2-a45c-b921">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">14&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Anti-Tank, Arc (Front), Demolisher</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile name="Incisor Pattern Melta Lance (Close)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c9f2-40ff-285a-b380">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Anti-Tank, Arc (Front), Demolisher, Engine Killer (2)</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="7ea2-d639-84fc-f43d" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                        <infoLink name="Anti-tank" id="37a1-378b-3624-fdd5" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
-                        <infoLink name="Accurate" id="3ad4-5fc7-339c-3936" hidden="false" targetId="dc55-9f84-39e1-1e1e" type="rule"/>
-                        <infoLink name="Demolisher" id="67ad-6759-c36d-3be9" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
-                        <infoLink name="Engine Killer (X)" id="5b87-b8a5-57c5-794e" hidden="false" targetId="7e4c-2264-79e3-9054" type="rule">
-                          <modifiers>
-                            <modifier type="set" value="Engine Killer (2)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Volkite Eradicator" hidden="false" id="38b4-86ef-1a4d-d7c8" collective="false">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="945d-e348-10ac-1ea0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Volkite Eradicator" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d77f-d067-11ff-cdd1">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Beam, Deflagrate, Light AT, Shieldbane</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="a3dc-d1d7-0326-7ee9" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                        <infoLink name="Beam" id="3b07-32bb-d521-e757" hidden="false" targetId="2176-feaf-f8c2-f95a" type="rule"/>
-                        <infoLink name="Deflagrate" id="6750-2323-f568-3704" hidden="false" targetId="711e-2910-b797-71a8" type="rule"/>
-                        <infoLink name="Light AT" id="8ef3-66d4-af28-8ed6" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-                        <infoLink name="Shieldbane" id="279b-3ef3-f160-d5a3" hidden="false" targetId="8208-8da0-3822-65da" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Warhound Shudder Missiles" hidden="false" id="4a57-1947-0686-b7b2" collective="false">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d36d-9f26-485e-9f04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Warhound Shudder Missiles" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d426-ad69-0a6f-63d2">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">35&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Barrage, Quake</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="4ccc-b125-b351-46de" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                        <infoLink name="Barrage" id="f265-1366-b486-f919" hidden="false" targetId="862d-b036-2018-dbaf" type="rule"/>
-                        <infoLink name="Quake" id="6227-cae0-7541-d30f" hidden="false" targetId="1090-d918-d47e-1317" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Warhound Swarmer Missiles" hidden="false" id="e54a-dee0-7a89-e63f" collective="false">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b897-dd62-12ad-8217" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Warhound Swarmer Missiles" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0bf6-fff0-fbf7-370c">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">35&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">8</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Rapid Fire, Shieldbane</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="f557-7dc4-0721-0aa7" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                        <infoLink name="Light AT" id="ca1d-8b8f-509b-808f" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-                        <infoLink name="Shieldbane" id="fe94-988f-9fd3-9e1a" hidden="false" targetId="8208-8da0-3822-65da" type="rule"/>
-                        <infoLink name="Rapid Fire" id="764c-bbfe-ff18-621a" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Ursus Claw" hidden="false" id="ea84-2a9d-95f6-0123" collective="false">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8c81-0e72-d4c5-8b4a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Ursus Claw" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ad82-8686-ca7e-1494">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">SP</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Impale</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Impale" id="1967-2772-d11e-4be1" hidden="false" targetId="1574-c823-a61e-4253" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Vulcan Mega-bolter" hidden="false" id="db04-5b4b-6441-b732" collective="false">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6dd8-71ba-7b01-b476" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Vulcan Mega-bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2ec4-2c28-abc3-3914">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">10</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Rapid Fire, Shieldbane</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="e1a6-380b-b450-23b0" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                        <infoLink name="Light AT" id="5711-27be-fb89-1d30" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-                        <infoLink name="Rapid Fire" id="49cf-56bb-ef16-0b72" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
-                        <infoLink name="Shieldbane" id="f851-2e59-b3c1-8dfb" hidden="false" targetId="8208-8da0-3822-65da" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Natrix Shock Lance" hidden="false" id="6070-c5a6-8525-7955" collective="false">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fff6-b856-476d-b378" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Natrix Shock Lance" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6e4e-2128-040a-80ad">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">2+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Bypass, Shock Pulse</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Shock Pulse" id="d9c6-b886-0f04-a1d9" hidden="false" targetId="495a-71fc-de48-96a" type="rule"/>
-                        <infoLink name="Bypass" id="b6b6-e15a-cdf1-7159" hidden="false" targetId="9d16-7f73-255c-7e34" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Graviton Eradicator" hidden="false" id="bb1a-07a2-da96-0d51" collective="false">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9675-5295-f60f-d8a9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Graviton Eradicator" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="cbe7-305e-da93-5f94">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">30&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher, Graviton Pulse</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="c410-8f1c-6a83-2652" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                        <infoLink name="Graviton Pulse" id="c1ad-f832-69cb-e3b0" hidden="false" targetId="5c36-e0d9-ba67-8110" type="rule"/>
-                        <infoLink name="Demolisher" id="bfaf-6901-f411-81cc" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Conversion Beam Dissolutor" hidden="false" id="59b9-e94e-37e8-f30a" collective="false">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="131d-3534-e057-c916" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Conversion Beam Dissolutor (Close)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="018b-6be1-2541-0349">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile name="Conversion Beam Dissolutor (Medium)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d97e-3a23-03fb-85f3">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;-18&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile name="Conversion Beam Dissolutor (Far)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0394-ebbb-45ce-e409">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot;-35&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">2+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Arc (Front/Rear)" id="8568-218a-67c4-a89a" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-                          <modifiers>
-                            <modifier type="set" value="Arc (Front)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                        <infoLink name="Demolisher" id="32e5-550b-6921-4fb8" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="4"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="330"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Warhound Titan" hidden="false" id="999e-0f4e-4ec8-c830" collective="false">
+          <infoLinks>
+            <infoLink name="Agile" id="9705-23ef-dc1f-9966" hidden="false" targetId="36b7-c82d-3af9-3a0" type="rule"/>
+            <infoLink name="Void Shields (X)" id="a5ca-0593-db67-e88a" hidden="false" targetId="908c-befc-f030-f2e7" type="rule">
+              <modifiers>
+                <modifier type="set" value="Void Shields (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Warhound Titan" id="a5b9-8b93-fe43-0eb2" hidden="false" type="profile" targetId="c300-9c2b-b7c5-b1da"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="7431-56df-1151-68dc" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e5d4-84da-4a19-6f45" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9443-1588-eff5-c51f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Incisor pattern melta lance" hidden="false" id="d1b9-81b7-3a6d-8a21" collective="false">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fb14-4219-0789-321f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Incisor pattern melta lance - far" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c6ec-58d2-a45c-b921">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">14&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Accurate, Anti-Tank, Demolisher</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Incisor pattern melta lance - close" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c9f2-40ff-285a-b380">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Accurate, Anti-Tank, Demolisher, Engine Killer (2)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="7ea2-d639-84fc-f43d" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Anti-tank" id="37a1-378b-3624-fdd5" hidden="false" targetId="5656-4a72-5de3-87ce" type="rule"/>
+                    <infoLink name="Accurate" id="3ad4-5fc7-339c-3936" hidden="false" targetId="dc55-9f84-39e1-1e1e" type="rule"/>
+                    <infoLink name="Demolisher" id="67ad-6759-c36d-3be9" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
+                    <infoLink name="Engine Killer (X)" id="5b87-b8a5-57c5-794e" hidden="false" targetId="7e4c-2264-79e3-9054" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="Engine Killer (2)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Warhound shudder missiles" hidden="false" id="4a57-1947-0686-b7b2" collective="false">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d36d-9f26-485e-9f04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Warhound shudder missiles" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d426-ad69-0a6f-63d2">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">35&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Barrage, Quake</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="4ccc-b125-b351-46de" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Barrage" id="f265-1366-b486-f919" hidden="false" targetId="862d-b036-2018-dbaf" type="rule"/>
+                    <infoLink name="Quake" id="6227-cae0-7541-d30f" hidden="false" targetId="1090-d918-d47e-1317" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Warhound swarmer missiles" hidden="false" id="e54a-dee0-7a89-e63f" collective="false">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b897-dd62-12ad-8217" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Warhound swarmer missiles" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0bf6-fff0-fbf7-370c">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">35&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">8</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Rapid Fire, Shieldbane</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="f557-7dc4-0721-0aa7" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Light AT" id="ca1d-8b8f-509b-808f" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+                    <infoLink name="Shieldbane" id="fe94-988f-9fd3-9e1a" hidden="false" targetId="8208-8da0-3822-65da" type="rule"/>
+                    <infoLink name="Rapid Fire" id="764c-bbfe-ff18-621a" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Ursus claw" hidden="false" id="ea84-2a9d-95f6-0123" collective="false">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8c81-0e72-d4c5-8b4a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Ursus claw" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ad82-8686-ca7e-1494">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">SP</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Impale</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Impale" id="1967-2772-d11e-4be1" hidden="false" targetId="1574-c823-a61e-4253" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Natrix shock lance" hidden="false" id="6070-c5a6-8525-7955" collective="false">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fff6-b856-476d-b378" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Natrix shock lance" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6e4e-2128-040a-80ad">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">2+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Bypass, Shock Pulse</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Shock Pulse" id="d9c6-b886-0f04-a1d9" hidden="false" targetId="495a-71fc-de48-96a" type="rule"/>
+                    <infoLink name="Bypass" id="b6b6-e15a-cdf1-7159" hidden="false" targetId="9d16-7f73-255c-7e34" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Graviton eradicator" hidden="false" id="bb1a-07a2-da96-0d51" collective="false">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9675-5295-f60f-d8a9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Graviton eradicator" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="cbe7-305e-da93-5f94">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">30&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher, Graviton Pulse</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="c410-8f1c-6a83-2652" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Graviton Pulse" id="c1ad-f832-69cb-e3b0" hidden="false" targetId="5c36-e0d9-ba67-8110" type="rule"/>
+                    <infoLink name="Demolisher" id="bfaf-6901-f411-81cc" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Conversion beam dissolutor" hidden="false" id="59b9-e94e-37e8-f30a" collective="false">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="131d-3534-e057-c916" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Conversion beam dissolutor - close" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="018b-6be1-2541-0349">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Conversion beam dissolutor - medium" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d97e-3a23-03fb-85f3">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;-18&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Conversion beam dissolutor - far" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0394-ebbb-45ce-e409">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot;-35&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">2+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Arc (Front/Rear)" id="8568-218a-67c4-a89a" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="Arc (Front)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Demolisher" id="32e5-550b-6921-4fb8" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Inferno gun" hidden="false" id="34f7-babf-5022-1c97" type="selectionEntry" targetId="0bcc-dfd2-5342-5b2f">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0cca-04a1-54c7-fb35" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Plasma blastgun" hidden="false" id="fdc1-397a-6fed-eff7" type="selectionEntry" targetId="c27b-2f28-3ede-1cec">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="384f-b8a7-3a4c-f82d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Turbo-laser destructor" hidden="false" id="8445-6786-32f4-efb7" type="selectionEntry" targetId="7d80-c6dc-90db-9fcc">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9001-4b73-2bc4-6cfe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Vulcan mega-bolter" hidden="false" id="53b8-adf7-8149-dcb4" type="selectionEntry" targetId="db04-5b4b-6441-b732">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6dd8-71ba-7b01-b476" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Volkite eradicator" hidden="false" id="ba1e-af39-a497-e14a" type="selectionEntry" targetId="38b4-86ef-1a4d-d7c8">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="945d-e348-10ac-1ea0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="300"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4041-9480-5755-dead" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c902-43c3-a734-6613" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Dire Wolf Heavy Scout Titan" hidden="false" id="4fc7-0e55-4f96-2ee3" collective="false">
       <profiles>
-        <profile name="Dire Wolf titan" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="8399-2528-ff92-cc7f">
+        <profile name="Dire Wolf Titan" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="8399-2528-ff92-cc7f">
           <characteristics>
             <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
             <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
             <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+10</characteristic>
             <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">4</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -805,7 +550,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b28-c61c-48f8-6002" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Ardex Mega-Bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0883-80d4-9001-64f4">
+            <profile name="Ardex mega-bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0883-80d4-9001-64f4">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">9</characteristic>
@@ -834,9 +579,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d172-a552-3d22-56a2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Neutron Laser" hidden="false" id="2602-8d96-40de-dd4a" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Neutron laser" hidden="false" id="2602-8d96-40de-dd4a" collective="false">
               <profiles>
-                <profile name="Neutron Laser" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="a389-b7e9-24a5-e17e">
+                <profile name="Neutron laser" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="a389-b7e9-24a5-e17e">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">38&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
@@ -859,9 +604,9 @@
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Volcano Cannon" hidden="false" id="8b46-9f15-dd9f-d19a" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Volcano cannon" hidden="false" id="8b46-9f15-dd9f-d19a" collective="false">
               <profiles>
-                <profile name="Volcano Cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6b32-4337-2221-171a">
+                <profile name="Volcano cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6b32-4337-2221-171a">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">70&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
@@ -888,9 +633,9 @@
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Conversion Beam Dissipator" hidden="false" id="ce8e-eafa-09a3-b59c" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Conversion beam dissipator" hidden="false" id="ce8e-eafa-09a3-b59c" collective="false">
               <profiles>
-                <profile name="Conversion Beam Dissipator (Close)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="815d-d096-3158-5994">
+                <profile name="Conversion beam dissipator - close" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="815d-d096-3158-5994">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -899,7 +644,7 @@
                     <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Accurate</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Conversion Beam Dissipator (Medium)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ef6d-13c0-c9e6-8b6a">
+                <profile name="Conversion beam dissipator - medium" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ef6d-13c0-c9e6-8b6a">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;-18&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
@@ -908,7 +653,7 @@
                     <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Accurate, Demolisher</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Conversion Beam Dissipator (Far)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="4e60-1f8e-eac1-632e">
+                <profile name="Conversion beam dissipator - far" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="4e60-1f8e-eac1-632e">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot;-35&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
@@ -936,29 +681,19 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="385"/>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="350"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="4"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Reaver Battle Titan" hidden="false" id="fb7f-81d1-03ab-e53e" collective="false">
-      <profiles>
-        <profile name="Reaver Battle Titan" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="be66-070d-ceb3-169b">
-          <characteristics>
-            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">6&quot;</characteristic>
-            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
-            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+12</characteristic>
-            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">5</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink name="Void Shields (X)" id="59f0-3583-4ed9-c100" hidden="false" targetId="908c-befc-f030-f2e7" type="rule">
           <modifiers>
             <modifier type="set" value="Void Shields (4)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Reaver Battle Titan" id="d4ba-33d2-4737-7834" hidden="false" type="profile" targetId="be66-070d-ceb3-169b"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Titan (5)" hidden="false" id="3094-1f75-f697-9a25" targetId="9072-16ad-262f-a980" primary="false"/>
@@ -971,12 +706,12 @@
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="65dd-a378-03c3-38ee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Reaver Chainfist" hidden="false" id="9969-fe8a-4c74-8c4d" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Reaver chainfist" hidden="false" id="9969-fe8a-4c74-8c4d" collective="false">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ead7-a528-a6b6-c53d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <profiles>
-                <profile name="Reaver Chainfist" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="4c12-27a1-0662-818e">
+                <profile name="Reaver chainfist" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="4c12-27a1-0662-818e">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
@@ -987,11 +722,7 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Rend" id="4467-b6a9-f959-36f3" hidden="false" targetId="6d1b-9fcd-3541-f46e" type="rule">
-                  <modifiers>
-                    <modifier type="set" value="Arc (Front)" field="name"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Rend" id="4467-b6a9-f959-36f3" hidden="false" targetId="6d1b-9fcd-3541-f46e" type="rule"/>
                 <infoLink name="Wrecker (X)" id="d697-53be-6398-d4f6" hidden="false" targetId="e40-19fc-8c79-9a12" type="rule">
                   <modifiers>
                     <modifier type="set" value="Wrecker (3)" field="name"/>
@@ -1008,12 +739,12 @@
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Reaver Power Fist" hidden="false" id="1c5d-592a-5aff-ec66" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Reaver power fist" hidden="false" id="1c5d-592a-5aff-ec66" collective="false">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0922-e171-34a8-c97c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <profiles>
-                <profile name="Reaver Power Fist" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="7aba-0d1e-46d2-fcbf">
+                <profile name="Reaver power fist" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="7aba-0d1e-46d2-fcbf">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
@@ -1024,11 +755,7 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Rend" id="2cdb-e98b-d0cb-ecff" hidden="false" targetId="6d1b-9fcd-3541-f46e" type="rule">
-                  <modifiers>
-                    <modifier type="set" value="Arc (Front)" field="name"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Rend" id="2cdb-e98b-d0cb-ecff" hidden="false" targetId="6d1b-9fcd-3541-f46e" type="rule"/>
                 <infoLink name="Wrecker (X)" id="ea85-3dce-46fa-f780" hidden="false" targetId="e40-19fc-8c79-9a12" type="rule">
                   <modifiers>
                     <modifier type="set" value="Wrecker (4)" field="name"/>
@@ -1047,22 +774,22 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Reaver Gatling Blaster" hidden="false" id="7596-20d6-6019-800e" collective="false" targetId="9347-4799-21f6-414b" type="selectionEntry">
+            <entryLink import="true" name="Reaver gatling blaster" hidden="false" id="7596-20d6-6019-800e" collective="false" targetId="9347-4799-21f6-414b" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ad34-b0f5-6416-00a1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Reaver Laser Blaster" hidden="false" id="6b55-0201-906e-c720" collective="false" targetId="ab91-40d8-18ce-dfdb" type="selectionEntry">
+            <entryLink import="true" name="Reaver laser blaster" hidden="false" id="6b55-0201-906e-c720" collective="false" targetId="ab91-40d8-18ce-dfdb" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c993-1d03-1439-fabe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Reaver Melta Cannon" hidden="false" id="651b-1cf8-a2d8-e7e2" collective="false" targetId="5d2a-454f-b448-70dc" type="selectionEntry">
+            <entryLink import="true" name="Reaver melta cannon" hidden="false" id="651b-1cf8-a2d8-e7e2" collective="false" targetId="5d2a-454f-b448-70dc" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="71cd-1275-3fbf-c9a0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Reaver Volcano Cannon" hidden="false" id="4dbf-0a6f-2633-008e" collective="false" targetId="8bc3-4da8-b1e0-b072" type="selectionEntry">
+            <entryLink import="true" name="Reaver volcano cannon" hidden="false" id="4dbf-0a6f-2633-008e" collective="false" targetId="8bc3-4da8-b1e0-b072" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f2d2-ff14-8cf2-3da4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
@@ -1075,18 +802,18 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55fc-872a-2a36-971a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Reaver Conversion Beam Dissolutor" hidden="false" id="b25d-d4c1-1cfe-69a3" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Reaver conversion beam dissolutor" hidden="false" id="b25d-d4c1-1cfe-69a3" collective="false">
               <profiles>
-                <profile name="Reaver Conversion Beam Dissolutor (Close)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="b045-5f9e-9f63-0ca4">
+                <profile name="Reaver conversion beam dissolutor - close" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="b045-5f9e-9f63-0ca4">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
                     <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
                     <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af"/>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">-</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Reaver Conversion Beam Dissolutor (Medium)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d457-3391-f433-91a9">
+                <profile name="Reaver conversion beam dissolutor - medium" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d457-3391-f433-91a9">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;-18&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -1095,7 +822,7 @@
                     <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Demolisher</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Reaver Conversion Beam Dissolutor (Far)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1242-a553-7751-7105">
+                <profile name="Reaver conversion beam dissolutor - far" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1242-a553-7751-7105">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot;-35&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -1113,33 +840,11 @@
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Reaver Vulcan Mega-bolter" hidden="false" id="6f14-f865-ccdb-0dc5" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Reaver Titan warp missile" hidden="false" id="9a88-56e5-0db5-67fd" collective="false">
               <profiles>
-                <profile name="Reaver Vulcan Mega-bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="19d8-093b-9bf7-0459">
+                <profile name="Reaver Titan warp missile" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="929a-cedf-59af-f329">
                   <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">9</characteristic>
-                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT, Rapid Fire, Shieldbane</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Rapid Fire" id="49a6-559b-b665-fa77" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
-                <infoLink name="Light AT" id="1e1e-bfa4-e0fc-e981" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-                <infoLink name="Shieldbane" id="a71a-1f28-8c9e-ea23" hidden="false" targetId="8208-8da0-3822-65da" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Reaver Titan Warp Missile" hidden="false" id="9a88-56e5-0db5-67fd" collective="false">
-              <profiles>
-                <profile name="Reaver Titan Warp Missile" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="929a-cedf-59af-f329">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot; - 75&quot;</characteristic>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;-75&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">SP</characteristic>
                     <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">2+</characteristic>
                     <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
@@ -1170,9 +875,9 @@
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Reaver Turbo-laser Destructor" hidden="false" id="450e-581f-3a13-58a0" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Reaver turbo-laser destructor" hidden="false" id="450e-581f-3a13-58a0" collective="false">
               <profiles>
-                <profile name="Reaver Turbo-laser Destructor" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="66a4-c70b-0ddd-ebd2">
+                <profile name="Reaver turbo-laser destructor" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="66a4-c70b-0ddd-ebd2">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">40&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -1190,11 +895,11 @@
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Reaver Apocalypse Missile Launcher" hidden="false" id="7367-9e94-3dc7-95ae" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Reaver apocalypse missile launcher" hidden="false" id="7367-9e94-3dc7-95ae" collective="false">
               <profiles>
-                <profile name="Reaver Apocalypse Missile Launcher" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="48f7-586a-63e2-b31d">
+                <profile name="Reaver apocalypse missile launcher" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="48f7-586a-63e2-b31d">
                   <characteristics>
-                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot; - 100&quot;</characteristic>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;-100&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
                     <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
                     <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
@@ -1210,9 +915,9 @@
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Reaver Volkite Eradicator" hidden="false" id="2cb6-78e7-af78-3214" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Reaver volkite eradicator" hidden="false" id="2cb6-78e7-af78-3214" collective="false">
               <profiles>
-                <profile name="Reaver Volkite Eradicator" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d443-5c97-4c38-1799">
+                <profile name="Reaver volkite eradicator" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d443-5c97-4c38-1799">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
@@ -1233,9 +938,9 @@
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Reaver Graviton Eradicator" hidden="false" id="4f48-8303-f0e8-0712" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Reaver graviton eradicator" hidden="false" id="4f48-8303-f0e8-0712" collective="false">
               <profiles>
-                <profile name="Reaver Graviton Eradicator" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="de3f-688e-55bd-193c">
+                <profile name="Reaver graviton eradicator" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="de3f-688e-55bd-193c">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">30&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -1255,12 +960,15 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Reaver Vulcan mega-bolter" hidden="false" id="4b76-be42-c484-428a" type="selectionEntry" targetId="6f14-f865-ccdb-0dc5"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="415"/>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="400"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="5"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warbringer Nemesis Titan" hidden="false" id="a9a3-dedc-f21a-a560" collective="false">
@@ -1271,7 +979,7 @@
             <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
             <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+12</characteristic>
             <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">5</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">6</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1286,58 +994,6 @@
         <categoryLink name="Titan (5)" hidden="false" id="7d29-69ec-511e-bedf" targetId="9072-16ad-262f-a980" primary="false"/>
         <categoryLink name="Titan" hidden="false" id="f4fd-3d59-c92a-e78c" targetId="1302-0157-2be4-3d34" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Ardex-Defensor Mauler Bolt Cannon Turrets" hidden="false" id="a475-b730-1e45-920e" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6dda-d094-6604-446b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="969a-c10e-ef52-8ace" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Ardex-Defensor Mauler Bolt Cannon Turrets" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1cf9-156e-3f95-813f">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT, Point Defence</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Point Defence" id="d57f-0533-fcd8-67f6" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
-            <infoLink name="Light AT" id="dbe3-292b-e8c5-f99d" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Anvillus Pattern Defence Batteries" hidden="false" id="ec38-0dd9-e3e9-42d2" collective="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a0a-3d63-951a-71a0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be61-efb5-fc22-946b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Anvillus Pattern Defence Batteries" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e1a9-d3fe-ba2a-7bcc">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Point Defence, Skyfire</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Skyfire" id="73af-b2ca-7ff7-caec" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-            <infoLink name="Point Defence" id="1ac2-aa99-f530-d8db" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Arm Weapons" id="f829-8ccf-7375-193c" hidden="false" collective="false" import="true">
           <constraints>
@@ -1345,22 +1001,22 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ee18-1516-8891-35e9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Reaver Gatling Blaster" hidden="false" id="9228-450d-41bb-8adf" collective="false" targetId="9347-4799-21f6-414b" type="selectionEntry">
+            <entryLink import="true" name="Reaver gatling blaster" hidden="false" id="9228-450d-41bb-8adf" collective="false" targetId="9347-4799-21f6-414b" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a498-e8bb-fd66-033d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Reaver Melta Cannon" hidden="false" id="9e76-02e7-3764-4039" collective="false" targetId="5d2a-454f-b448-70dc" type="selectionEntry">
+            <entryLink import="true" name="Reaver melta cannon" hidden="false" id="9e76-02e7-3764-4039" collective="false" targetId="5d2a-454f-b448-70dc" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0987-36f0-ce1b-25e0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Reaver Laser Blaster" hidden="false" id="cd38-ec8d-f9c4-93cc" collective="false" targetId="ab91-40d8-18ce-dfdb" type="selectionEntry">
+            <entryLink import="true" name="Reaver laser blaster" hidden="false" id="cd38-ec8d-f9c4-93cc" collective="false" targetId="ab91-40d8-18ce-dfdb" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7e41-45db-d3ba-ead2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Reaver Volcano Cannon" hidden="false" id="dd02-5b87-1fe1-cb40" collective="false" targetId="8bc3-4da8-b1e0-b072" type="selectionEntry">
+            <entryLink import="true" name="Reaver volcano cannon" hidden="false" id="dd02-5b87-1fe1-cb40" collective="false" targetId="8bc3-4da8-b1e0-b072" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3d91-dc4a-662f-b937" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
@@ -1373,16 +1029,30 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f99c-ed3e-0f05-ce54" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Belicosa Volcano Cannon" hidden="false" id="4831-655e-67b2-694c" collective="false" targetId="c309-92e3-bbce-25ce" type="selectionEntry"/>
-            <entryLink import="true" name="Mori Quake Cannon" hidden="false" id="bcd7-ca80-91ec-c60f" collective="false" targetId="d431-9b1c-7fa0-05e3" type="selectionEntry"/>
+            <entryLink import="true" name="Belicosa volcano cannon" hidden="false" id="4831-655e-67b2-694c" collective="false" targetId="c309-92e3-bbce-25ce" type="selectionEntry"/>
+            <entryLink import="true" name="Mori quake cannon" hidden="false" id="bcd7-ca80-91ec-c60f" collective="false" targetId="d431-9b1c-7fa0-05e3" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="525"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="5"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="6"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Ardex-defensor mauler bolt cannon turrets" hidden="false" id="ae7b-aaeb-3f91-2a2f" type="selectionEntry" targetId="f85d-0cd7-d99e-dd2f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b861-2177-ad34-a180" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f40-261f-f14b-3e63" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Anvilus pattern defence batteries" hidden="false" id="2afb-b107-8f16-e513" type="selectionEntry" targetId="ec38-0dd9-e3e9-42d2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be61-efb5-fc22-946b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a0a-3d63-951a-71a0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warlord Battle Titan" hidden="false" id="2792-f2e2-a19c-cd7d" collective="false">
       <profiles>
@@ -1392,14 +1062,14 @@
             <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
             <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+14</characteristic>
             <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">6</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">7</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Void Shields (X)" id="3e45-7689-c592-db7f" hidden="false" targetId="908c-befc-f030-f2e7" type="rule">
           <modifiers>
-            <modifier type="set" value="Void Shields (6)" field="name"/>
+            <modifier type="set" value="Void Shields (8)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1415,31 +1085,41 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Warlord Carapace Weapon" hidden="false" id="0ef9-df0e-204e-aa26" collective="false" targetId="17c9-3e50-6d8f-9f89" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Ardex-defensor Lascannon turrets" hidden="false" id="9192-ac1d-d341-2b84" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry"/>
-        <entryLink import="true" name="Ardex-defensor Mauler Bolt Cannon Turrets" hidden="false" id="5d05-6ed8-ddb7-9f31" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry"/>
+        <entryLink import="true" name="Ardex-defensor lascannon turrets" hidden="false" id="9192-ac1d-d341-2b84" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e324-de85-2486-c7a6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="28a1-898c-efc8-ecde" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Ardex-defensor mauler bolt cannon turrets" hidden="false" id="5d05-6ed8-ddb7-9f31" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1440-924d-a90b-8da4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2198-b5d7-bd3f-60d7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="600"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="6"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="7"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Warlord Sinister Battle Titan" hidden="false" id="064d-d7bb-373a-a756" collective="false">
+    <selectionEntry type="model" import="true" name="Warlord-Sinister Battle Titan" hidden="false" id="064d-d7bb-373a-a756" collective="false">
       <profiles>
-        <profile name="Warlord Sinister" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="d717-8988-29ad-12dd">
+        <profile name="Warlord-Sinister" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="d717-8988-29ad-12dd">
           <characteristics>
             <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">5&quot;</characteristic>
             <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
             <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+14</characteristic>
             <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">6</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">7</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Void Shields (X)" id="7bf4-6409-9cbe-c33e" hidden="false" targetId="908c-befc-f030-f2e7" type="rule">
           <modifiers>
-            <modifier type="set" value="Void Shields (6)" field="name"/>
+            <modifier type="set" value="Void Shields (8)" field="name"/>
           </modifiers>
         </infoLink>
         <infoLink name="Dread Aura (X)" id="8f38-9418-d6f9-6a47" hidden="false" targetId="2624-3dd4-d87c-5af8" type="rule">
@@ -1456,13 +1136,13 @@
         <categoryLink name="Titan" hidden="false" id="2967-bc92-2867-4fe8" targetId="1302-0157-2be4-3d34" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Death Pulse" hidden="false" id="4b4b-5ce8-1826-a67f" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Death pulse" hidden="false" id="4b4b-5ce8-1826-a67f" collective="false">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f85e-7ffa-d622-83b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d462-9539-c2f0-3f3c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Death Pulse" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d7bd-d938-7a7f-1d37">
+            <profile name="Death pulse" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d7bd-d938-7a7f-1d37">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">7&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">D3+1</characteristic>
@@ -1481,13 +1161,13 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Antipathic Tempest" hidden="false" id="4bd5-d289-e15b-a5f2" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Antipathic tempest" hidden="false" id="4bd5-d289-e15b-a5f2" collective="false">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7c9-1afd-b8c4-f75b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="00c0-b5c9-986d-675c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Antipathic Tempest" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="b5df-7257-5ed6-bcc1">
+            <profile name="Antipathic tempest" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="b5df-7257-5ed6-bcc1">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
@@ -1529,7 +1209,11 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Arc (Front/Rear)" id="6f87-7b97-1e04-13cf" hidden="false" targetId="c48c-8f45-e290-9940" type="rule"/>
+            <infoLink name="Arc (Front/Rear)" id="6f87-7b97-1e04-13cf" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+              <modifiers>
+                <modifier type="set" value="Arc (Front)" field="name"/>
+              </modifiers>
+            </infoLink>
             <infoLink name="Psi" id="cecb-c65d-6449-9c99" hidden="false" targetId="5660-5016-824b-2555" type="rule"/>
             <infoLink name="Heavy Beam" id="ee6b-45bd-8072-2ec3" hidden="false" targetId="d3fe-2893-93a3-b954" type="rule"/>
           </infoLinks>
@@ -1547,13 +1231,13 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Warlord Carapace Weapon" hidden="false" id="03d0-563e-ebc8-5475" collective="false" targetId="17c9-3e50-6d8f-9f89" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Ardex-defensor Lascannon turrets" hidden="false" id="fcdb-9ed0-0bfe-7db5" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry">
+        <entryLink import="true" name="Ardex-defensor lascannon turrets" hidden="false" id="fcdb-9ed0-0bfe-7db5" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40a0-09f6-cb24-c36f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e8e3-5bd8-de4d-14ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Ardex-defensor Mauler Bolt Cannon Turrets" hidden="false" id="7506-aab1-fbeb-aff6" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry">
+        <entryLink import="true" name="Ardex-defensor mauler bolt cannon turrets" hidden="false" id="7506-aab1-fbeb-aff6" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0e7-fdcb-4a44-aaa0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36e4-8a34-7ab0-36b7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1563,7 +1247,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="675"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="6"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="7"/>
         <cost name="Traitor" typeId="a76f-c373-858a-f8b0" value="0"/>
       </costs>
     </selectionEntry>
@@ -1575,7 +1259,7 @@
             <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">1+</characteristic>
             <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+18</characteristic>
             <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">7</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">8</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1591,13 +1275,13 @@
         <categoryLink name="Titan" hidden="false" id="dfe1-383e-7ee2-52fa" targetId="1302-0157-2be4-3d34" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Revelator Missile Launcher" hidden="false" id="1287-ff49-4c3e-777e" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Revelator missile launcher" hidden="false" id="1287-ff49-4c3e-777e" collective="false">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0fe-54b2-7cf9-840e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c435-b6a7-f83a-94e8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Revelator Missile Launcher" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0f5c-2981-113e-07bd">
+            <profile name="Revelator missile launcher" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0f5c-2981-113e-07bd">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">40&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -1624,13 +1308,13 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Suzerain Class Plasma Destructors" hidden="false" id="f8aa-693c-3d1d-976c" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Suzerain class plasma destructor" hidden="false" id="f8aa-693c-3d1d-976c" collective="false">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8f72-1a31-3663-707e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="797f-cc40-5797-97fc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Suzerain Class Plasma Destructors (Far)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e8e2-ac32-e5fe-5a52">
+            <profile name="Suzerain class plasma destructor - far" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e8e2-ac32-e5fe-5a52">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">26&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
@@ -1639,7 +1323,7 @@
                 <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher</characteristic>
               </characteristics>
             </profile>
-            <profile name="Suzerain Class Plasma Destructors (Close)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="532d-6d52-c441-ccc1">
+            <profile name="Suzerain class plasma destructor - close" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="532d-6d52-c441-ccc1">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -1671,13 +1355,13 @@
       <entryLinks>
         <entryLink import="true" name="Warmaster Shoulder Weapons" hidden="false" id="7835-ef53-c59b-522b" collective="false" targetId="4a61-2ddc-4aa5-a98e" type="selectionEntryGroup"/>
         <entryLink import="true" name="Warmaster Carapace Weapons" hidden="false" id="6a7e-94b0-4e1c-86e8" collective="false" targetId="4d3b-908e-0462-7c96" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Ardex-defensor Mauler Bolt Cannon Turrets" hidden="false" id="0e2d-da2e-9899-fb37" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry">
+        <entryLink import="true" name="Ardex-defensor mauler bolt cannon turrets" hidden="false" id="0e2d-da2e-9899-fb37" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f572-dff6-f176-ccfa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d09-c597-d7bb-6650" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Ardex-defensor Lascannon turrets" hidden="false" id="4fde-5795-1155-b5f1" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry">
+        <entryLink import="true" name="Ardex-defensor lascannon turrets" hidden="false" id="4fde-5795-1155-b5f1" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f0b-f4c2-543a-8d8c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="feeb-c9f9-f180-9717" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1685,9 +1369,9 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="750"/>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="850"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="7"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="8"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warmaster Iconoclast Titan" hidden="false" id="3219-a349-dcbb-a398" collective="false">
@@ -1698,7 +1382,7 @@
             <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">1+</characteristic>
             <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+18</characteristic>
             <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">7</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">8</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1714,13 +1398,13 @@
         <categoryLink name="Titan" hidden="false" id="5e0a-d837-70f9-7d65" targetId="1302-0157-2be4-3d34" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Desolator Chainsword" hidden="false" id="64a5-dd3e-b3d8-4b36" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Desolator chainsword" hidden="false" id="64a5-dd3e-b3d8-4b36" collective="false">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ac9-1b34-e2ec-5acc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd68-f943-3c90-ff71" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Desolator Chainsword" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9e22-a789-447f-9066">
+            <profile name="Desolator chainsword" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="9e22-a789-447f-9066">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
@@ -1761,7 +1445,11 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Arc (Front/Rear)" id="8611-5158-58fd-f2d3" hidden="false" targetId="c48c-8f45-e290-9940" type="rule"/>
+            <infoLink name="Arc (Front/Rear)" id="8611-5158-58fd-f2d3" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+              <modifiers>
+                <modifier type="set" value="Arc (Front)" field="name"/>
+              </modifiers>
+            </infoLink>
             <infoLink name="Shieldbane" id="46c1-3d8e-235d-c698" hidden="false" targetId="8208-8da0-3822-65da" type="rule"/>
             <infoLink name="Shred" id="0672-73f4-720c-679c" hidden="false" targetId="f9ba-cb09-cf28-f93b" type="rule"/>
             <infoLink name="Light AT" id="162a-17b6-f7fd-1596" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
@@ -1773,15 +1461,15 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Siege Drill" id="fbd9-076f-b5df-0665" hidden="false" collective="false" import="true" defaultSelectionEntryId="29d2-5606-8e8b-3413">
+        <selectionEntryGroup name="Kirus Siege Drill" id="fbd9-076f-b5df-0665" hidden="false" collective="false" import="true" defaultSelectionEntryId="f102-11a8-6498-b7e4">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da7e-e70d-72e2-042e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2889-6f4e-e5b3-6551" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Kirus Siege Drill" hidden="false" id="f102-11a8-6498-b7e4" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Kirus siege drill" hidden="false" id="f102-11a8-6498-b7e4" collective="false">
               <profiles>
-                <profile name="Kirus Siege Drill" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0ce0-a8e9-d87b-0f5e">
+                <profile name="Kirus siege drill" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0ce0-a8e9-d87b-0f5e">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
@@ -1804,9 +1492,9 @@
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Kirus Grav Imploder" hidden="false" id="c70c-a99b-8352-622e" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Kirus grav imploder" hidden="false" id="c70c-a99b-8352-622e" collective="false">
               <profiles>
-                <profile name="Kirus Grav Imploder (Ranged)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e937-5d3f-decf-a719">
+                <profile name="Kirus grav imploder - ranged" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e937-5d3f-decf-a719">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -1815,7 +1503,7 @@
                     <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Demolisher, Ignores Cover, Quake</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Kirus Grav Imploder (Melee)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8178-f856-bc27-472b">
+                <profile name="Kirus grav imploder - melee" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="8178-f856-bc27-472b">
                   <characteristics>
                     <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
                     <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
@@ -1847,13 +1535,13 @@
       <entryLinks>
         <entryLink import="true" name="Warmaster Shoulder Weapons" hidden="false" id="21aa-9745-7dc2-58d1" collective="false" targetId="4a61-2ddc-4aa5-a98e" type="selectionEntryGroup"/>
         <entryLink import="true" name="Warmaster Carapace Weapons" hidden="false" id="a363-9e34-29f0-0b99" collective="false" targetId="4d3b-908e-0462-7c96" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Ardex-defensor Mauler Bolt Cannon Turrets" hidden="false" id="a8d4-dcd5-555d-ed07" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry">
+        <entryLink import="true" name="Ardex-defensor mauler bolt cannon turrets" hidden="false" id="a8d4-dcd5-555d-ed07" collective="false" targetId="f85d-0cd7-d99e-dd2f" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dda5-3dc0-f7b2-9ea1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a28b-a364-524d-87f0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Ardex-defensor Lascannon turrets" hidden="false" id="db69-b03e-3021-e0e6" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry">
+        <entryLink import="true" name="Ardex-defensor lascannon turrets" hidden="false" id="db69-b03e-3021-e0e6" collective="false" targetId="5bcc-93b2-4e6a-75a7" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="652f-4256-62c6-a1dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6d2-ad62-bd39-18ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1861,21 +1549,195 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="750"/>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="850"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="7"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="8"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Inferno gun" hidden="false" id="0bcc-dfd2-5342-5b2f" collective="false">
+      <profiles>
+        <profile name="Inferno gun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="a384-179c-daf7-352d">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">T</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Firestorm, Light AT, Shieldbane</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Arc (Front/Rear)" id="5bfb-fbe6-9e9e-566c" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+          <modifiers>
+            <modifier type="set" value="Arc (Front)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Light AT" id="b228-f017-de9d-0f6b" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+        <infoLink name="Firestorm" id="b043-543b-ffe4-48f6" hidden="false" targetId="7d44-6682-5990-8ccf" type="rule"/>
+        <infoLink name="Shieldbane" id="93f4-160f-6679-e934" hidden="false" targetId="8208-8da0-3822-65da" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Plasma blastgun" hidden="false" id="c27b-2f28-3ede-1cec" collective="false">
+      <profiles>
+        <profile name="Plasma blastgun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="066b-b1a5-6c98-9b30">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Arc (Front/Rear)" id="0bad-e7da-7491-e9b8" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+          <modifiers>
+            <modifier type="set" value="Arc (Front)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Turbo-laser destructor" hidden="false" id="7d80-c6dc-90db-9fcc" collective="false">
+      <profiles>
+        <profile name="Turbo-laser destructor" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0b73-858e-23a7-0051">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">40&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Accurate</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Arc (Front/Rear)" id="c3d0-38b9-9bd8-6ad3" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+          <modifiers>
+            <modifier type="set" value="Arc (Front)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Accurate" id="e0a1-0975-87a1-832a" hidden="false" targetId="dc55-9f84-39e1-1e1e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vulcan mega-bolter" hidden="false" id="db04-5b4b-6441-b732" collective="false">
+      <profiles>
+        <profile name="Vulcan mega-bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2ec4-2c28-abc3-3914">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">10</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Rapid Fire, Shieldbane</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Arc (Front/Rear)" id="e1a6-380b-b450-23b0" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+          <modifiers>
+            <modifier type="set" value="Arc (Front)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Light AT" id="5711-27be-fb89-1d30" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+        <infoLink name="Rapid Fire" id="49cf-56bb-ef16-0b72" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
+        <infoLink name="Shieldbane" id="f851-2e59-b3c1-8dfb" hidden="false" targetId="8208-8da0-3822-65da" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Anvilus pattern defence batteries" hidden="false" id="ec38-0dd9-e3e9-42d2" collective="false">
+      <profiles>
+        <profile name="Anvilus pattern defence batteries" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e1a9-d3fe-ba2a-7bcc">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Point Defence, Skyfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Skyfire" id="73af-b2ca-7ff7-caec" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
+        <infoLink name="Point Defence" id="1ac2-aa99-f530-d8db" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reaver Vulcan mega-bolter" hidden="false" id="6f14-f865-ccdb-0dc5" collective="false">
+      <profiles>
+        <profile name="Reaver Vulcan mega-bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="19d8-093b-9bf7-0459">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">9</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT, Rapid Fire, Shieldbane</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rapid Fire" id="49a6-559b-b665-fa77" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
+        <infoLink name="Light AT" id="1e1e-bfa4-e0fc-e981" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+        <infoLink name="Shieldbane" id="a71a-1f28-8c9e-ea23" hidden="false" targetId="8208-8da0-3822-65da" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Volkite eradicator" hidden="false" id="38b4-86ef-1a4d-d7c8" collective="false">
+      <profiles>
+        <profile name="Volkite eradicator" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d77f-d067-11ff-cdd1">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Beam, Deflagrate, Light AT, Shieldbane</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Arc (Front/Rear)" id="a3dc-d1d7-0326-7ee9" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+          <modifiers>
+            <modifier type="set" value="Arc (Front)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Beam" id="3b07-32bb-d521-e757" hidden="false" targetId="2176-feaf-f8c2-f95a" type="rule"/>
+        <infoLink name="Deflagrate" id="6750-2323-f568-3704" hidden="false" targetId="711e-2910-b797-71a8" type="rule"/>
+        <infoLink name="Light AT" id="8ef3-66d4-af28-8ed6" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+        <infoLink name="Shieldbane" id="279b-3ef3-f160-d5a3" hidden="false" targetId="8208-8da0-3822-65da" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Warlord Arm Weapons" id="3cdd-30c2-95e4-5260" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Sunfury Plasma Annihilator" hidden="false" id="939c-5119-3440-4f56" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Sunfury plasma annihilator" hidden="false" id="939c-5119-3440-4f56" collective="false">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bd59-9f6b-9824-5a13" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Sunfury Plasma Annihilator" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="acba-1bdb-0378-07a0">
+            <profile name="Sunfury plasma annihilator" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="acba-1bdb-0378-07a0">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">25&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
@@ -1897,12 +1759,12 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Volkite Destructor" hidden="false" id="7c5c-f21e-f54b-97c6" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Volkite destructor" hidden="false" id="7c5c-f21e-f54b-97c6" collective="false">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="97bb-3e07-6689-df58" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Volkite Destructor" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d2af-dcfc-f83c-b1a0">
+            <profile name="Volkite destructor" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d2af-dcfc-f83c-b1a0">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
@@ -1928,12 +1790,12 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Macro-gatling Blaster" hidden="false" id="1d14-4aea-d1f5-ecbc" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Macro-gatling blaster" hidden="false" id="1d14-4aea-d1f5-ecbc" collective="false">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f028-45be-b8da-fa5c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Macro-gatling Blaster" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="20e2-9c3d-b391-53d7">
+            <profile name="Macro-gatling blaster" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="20e2-9c3d-b391-53d7">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">35&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
@@ -1956,12 +1818,12 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Warlord Graviton Ruinator" hidden="false" id="2580-85fd-d86f-a948" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Warlord graviton ruinator" hidden="false" id="2580-85fd-d86f-a948" collective="false">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7509-fe39-759d-d8bf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Warlord Graviton Ruinator" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0d9c-bfa4-e2a2-d9bf">
+            <profile name="Warlord graviton ruinator" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0d9c-bfa4-e2a2-d9bf">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">30&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
@@ -1985,12 +1847,12 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Conversion Beam Extripator" hidden="false" id="3b2f-c129-1146-1dff" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Conversion beam extripator" hidden="false" id="3b2f-c129-1146-1dff" collective="false">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6346-db79-cc67-4b0c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Conversion Beam Extripator (Close)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1b0d-c797-1396-a60a">
+            <profile name="Conversion beam extripator - close" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1b0d-c797-1396-a60a">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -1999,18 +1861,18 @@
                 <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
               </characteristics>
             </profile>
-            <profile name="Conversion Beam Extripator (Medium)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6ba3-ac2f-3ffb-aeaf">
+            <profile name="Conversion beam extripator - medium" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6ba3-ac2f-3ffb-aeaf">
               <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot; - 18&quot;</characteristic>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;-18&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
                 <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
                 <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
                 <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher</characteristic>
               </characteristics>
             </profile>
-            <profile name="Conversion Beam Extripator (Far)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d2da-4854-60af-0351">
+            <profile name="Conversion beam extripator - far" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d2da-4854-60af-0351">
               <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot; - 35&quot;</characteristic>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot;-35&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
                 <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">2+</characteristic>
                 <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
@@ -2031,12 +1893,12 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Arioch Power Claw" hidden="false" id="f273-a609-7220-6d02" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Arioch power claw" hidden="false" id="f273-a609-7220-6d02" collective="false">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b76b-5562-f20b-e0c6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Arioch Power Claw (Melee)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="874e-0fba-bc27-f7ee">
+            <profile name="Arioch power claw - melee" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="874e-0fba-bc27-f7ee">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">-</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
@@ -2045,7 +1907,7 @@
                 <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Engine Killer (1), Rend, Wrecker (5)</characteristic>
               </characteristics>
             </profile>
-            <profile name="Arioch Power Claw (Ranged)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6159-889f-b62c-a175">
+            <profile name="Arioch power claw - ranged" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6159-889f-b62c-a175">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">8</characteristic>
@@ -2083,12 +1945,12 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Belicosa Volcano Cannon" hidden="false" id="af40-69cb-0f39-9cac" collective="false" targetId="c309-92e3-bbce-25ce" type="selectionEntry">
+        <entryLink import="true" name="Belicosa volcano cannon" hidden="false" id="af40-69cb-0f39-9cac" collective="false" targetId="c309-92e3-bbce-25ce" type="selectionEntry">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a8b4-d197-cc0b-35eb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mori Quake Cannon" hidden="false" id="96ad-fa34-91ad-1bd5" collective="false" targetId="d431-9b1c-7fa0-05e3" type="selectionEntry">
+        <entryLink import="true" name="Mori quake cannon" hidden="false" id="96ad-fa34-91ad-1bd5" collective="false" targetId="d431-9b1c-7fa0-05e3" type="selectionEntry">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c917-7e0a-153c-4f7e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -2097,13 +1959,13 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Warlord Carapace Weapon" id="17c9-3e50-6d8f-9f89" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="289b-d94a-2581-3145" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="289b-d94a-2581-3145" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="false"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3181-12b9-135d-4c50" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Vulcan Mega-bolter Array" hidden="false" id="ba55-da3f-47b9-1b3c" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Vulcan mega-bolter array" hidden="false" id="ba55-da3f-47b9-1b3c" collective="false">
           <profiles>
-            <profile name="Vulcan Mega-bolter Array" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="4cba-2540-150c-4993">
+            <profile name="Vulcan mega-bolter array" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="4cba-2540-150c-4993">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">20</characteristic>
@@ -2128,9 +1990,9 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Paired Gatling Blasters" hidden="false" id="5e6c-1bc4-fb26-1c8c" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Paired gatling blasters" hidden="false" id="5e6c-1bc4-fb26-1c8c" collective="false">
           <profiles>
-            <profile name="Paired Gatling Blasters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="bab1-0d1e-1a2b-1872">
+            <profile name="Paired gatling blasters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="bab1-0d1e-1a2b-1872">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">35&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">8</characteristic>
@@ -2152,15 +2014,15 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Paired Turbo-laser Destructors" hidden="false" id="2560-d35c-adf7-b4d5" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Paired turbo-laser destructors" hidden="false" id="2560-d35c-adf7-b4d5" collective="false">
           <profiles>
-            <profile name="Paired Turbo-laser Destructors" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e46a-fd7f-cc47-a2d1">
+            <profile name="Paired turbo-laser destructors" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="e46a-fd7f-cc47-a2d1">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">40&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
                 <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
                 <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Arc (Front)</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Accurate</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2177,9 +2039,9 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Paired Laser Blasters" hidden="false" id="7a36-1362-356f-6523" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Paired laser blasters" hidden="false" id="7a36-1362-356f-6523" collective="false">
           <profiles>
-            <profile name="Paired Laser Blasters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="88de-620c-5ccd-242c">
+            <profile name="Paired laser blasters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="88de-620c-5ccd-242c">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">40&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">6</characteristic>
@@ -2201,11 +2063,11 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Apocalypse Missile Launchers" hidden="false" id="297a-ca2e-6f57-2930" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Apocalypse missile launchers" hidden="false" id="297a-ca2e-6f57-2930" collective="false">
           <profiles>
-            <profile name="Apocalypse Missile Launchers" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f42d-78c9-5008-29ba">
+            <profile name="Apocalypse missile launchers" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f42d-78c9-5008-29ba">
               <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot; - 100&quot;</characteristic>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;-100&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">10</characteristic>
                 <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
                 <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
@@ -2234,30 +2096,9 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58ce-3b26-1de5-8ba8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Anvilus Pattern Defence Batteries" hidden="false" id="8d7b-c723-2dc6-5ac4" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Ardex-defensor bombard turrets" hidden="false" id="0be7-4f20-33cb-16e6" collective="false">
           <profiles>
-            <profile name="Anvilus Pattern Defence Batteries" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f571-4262-c22d-b82e">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Point Defence, Skyfire</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Point Defence" id="c052-3007-ed86-c058" hidden="false" targetId="f921-10ce-33f7-19fd" type="rule"/>
-            <infoLink name="Skyfire" id="cc59-0aa8-68f1-1210" hidden="false" targetId="e93f-b83c-b1c9-d744" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Ardes-defensor Bombard Turrets" hidden="false" id="0be7-4f20-33cb-16e6" collective="false">
-          <profiles>
-            <profile name="Ardes-defensor Bombard Turrets" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="3e52-6023-ca89-a73e">
+            <profile name="Ardex-defensor bombard turrets" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="3e52-6023-ca89-a73e">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">15&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
@@ -2278,6 +2119,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Anvilus pattern defence batteries" hidden="false" id="3da0-459c-9121-7415" type="selectionEntry" targetId="ec38-0dd9-e3e9-42d2"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Warmaster Shoulder Weapons" id="4a61-2ddc-4aa5-a98e" hidden="false" collective="false" import="true">
       <constraints>
@@ -2285,44 +2129,14 @@
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="08f8-09c8-3252-5c36" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Vulcan Mega-bolter" hidden="false" id="2150-879c-16c4-47fa" collective="false">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3042-6060-3cba-e5fb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Vulcan Mega-bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="fda8-4974-38fc-cbb4">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">10</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light AT, Rapid Fire, Shieldbane</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Arc (Front/Rear)" id="ab7f-199a-dce8-6efe" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-              <modifiers>
-                <modifier type="set" value="Arc (Front)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Shieldbane" id="6004-e0e8-3815-125a" hidden="false" targetId="8208-8da0-3822-65da" type="rule"/>
-            <infoLink name="Light AT" id="6bef-7acc-4dfe-95cb" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-            <infoLink name="Rapid Fire" id="66e9-bbca-d21c-d2c8" hidden="false" targetId="d56d-6332-debe-ab1a" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Apocalypse Missile Array" hidden="false" id="b2f8-ed6e-b1ed-412d" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Apocalypse missile array" hidden="false" id="b2f8-ed6e-b1ed-412d" collective="false">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="479c-c429-9bb0-340a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Apocalypse Missile Array" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="eb2b-efc8-7410-1106">
+            <profile name="Apocalypse missile array" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="eb2b-efc8-7410-1106">
               <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot; - 100&quot;</characteristic>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;-100&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
                 <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
                 <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
@@ -2343,49 +2157,21 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Turbo-laser Destructor" hidden="false" id="97a7-2ae6-a281-16f3" collective="false">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8bc6-a498-e111-8b35" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Paired Turbo-laser Destructors" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="0d0c-c5a8-d814-b43a">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">40&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Arc (Front)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Arc (Front/Rear)" id="3755-9005-9bed-8b8e" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-              <modifiers>
-                <modifier type="set" value="Arc (Front)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Accurate" id="bea7-6101-e074-e149" hidden="false" targetId="dc55-9f84-39e1-1e1e" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Melta Cannon" hidden="false" id="4dec-3fff-20d3-84f8" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Melta cannon" hidden="false" id="4dec-3fff-20d3-84f8" collective="false">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e8c3-af9b-d56f-0645" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="Melta Cannon (Far)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f914-f891-8dcf-2aff">
+            <profile name="Melta cannon - far" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f914-f891-8dcf-2aff">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">14&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
                 <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
                 <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Arc (Front), Demolisher</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Anti-tank, Demolisher</characteristic>
               </characteristics>
             </profile>
-            <profile name="Melta Cannon (Close)" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2f70-7162-d069-6dcd">
+            <profile name="Melta cannon - close" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="2f70-7162-d069-6dcd">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
@@ -2414,64 +2200,52 @@
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Plasma Blastgun" hidden="false" id="44f2-8d5b-cc4c-9bf0" collective="false">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2b94-6eda-8761-119e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Plasma Blastgun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="20b1-2efb-c972-a3db">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Arc (Front/Rear)" id="ed4a-3e0d-eac8-ba51" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-              <modifiers>
-                <modifier type="set" value="Arc (Front)" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Inferno Gun" hidden="false" id="fe63-386e-84d7-2f00" collective="false">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1735-fe96-4e18-2706" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Inferno Gun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="a37d-3fc7-2b65-7882">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">T</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Firestorm, Light AT, Shieldbane</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Arc (Front/Rear)" id="6501-8f4a-9a1c-871f" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
-              <modifiers>
-                <modifier type="set" value="Arc (Front)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Light AT" id="7678-2e88-f85a-e648" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
-            <infoLink name="Firestorm" id="c5d1-f8e5-8362-634b" hidden="false" targetId="7d44-6682-5990-8ccf" type="rule"/>
-            <infoLink name="Shieldbane" id="a5eb-bc12-2f11-ddd6" hidden="false" targetId="8208-8da0-3822-65da" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Inferno gun" hidden="false" id="2e8d-d696-0583-042d" type="selectionEntry" targetId="0bcc-dfd2-5342-5b2f">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2c48-5a99-fe71-2776" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Plasma blastgun" hidden="false" id="e58d-e039-953f-9028" type="selectionEntry" targetId="c27b-2f28-3ede-1cec">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8dd6-92d1-3907-d9ad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Turbo-laser destructor" hidden="false" id="bbce-a84a-a5c0-4fc8" type="selectionEntry" targetId="7d80-c6dc-90db-9fcc">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6a21-fc98-7833-20ad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Vulcan mega-bolter" hidden="false" id="f32d-47e5-e6ff-ef1f" type="selectionEntry" targetId="db04-5b4b-6441-b732">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4f8f-a514-59d9-f12f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <categoryEntries>
+    <categoryEntry name="Collegia Titanica" id="d965-f291-a87b-657f" hidden="false"/>
+  </categoryEntries>
+  <sharedProfiles>
+    <profile name="Reaver Battle Titan" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="be66-070d-ceb3-169b">
+      <characteristics>
+        <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">6&quot;</characteristic>
+        <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+        <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+12</characteristic>
+        <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+        <characteristic name="W" typeId="b00f-3f1c-eb63-461a">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Warhound Titan" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="c300-9c2b-b7c5-b1da">
+      <characteristics>
+        <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
+        <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+        <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+10</characteristic>
+        <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+        <characteristic name="W" typeId="b00f-3f1c-eb63-461a">5</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
