@@ -7192,7 +7192,7 @@
             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
             <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-4</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
             <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Armourbane</characteristic>
           </characteristics>
         </profile>
