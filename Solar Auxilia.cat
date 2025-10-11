@@ -4488,7 +4488,6 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Stormhammer multi-laser sponsons" hidden="false" id="705b-e254-980d-37a6" collective="true">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68c2-698a-4895-6251" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9559-2d76-e425-b7d1" includeChildSelections="false"/>
                   </constraints>
                   <profiles>
@@ -4509,7 +4508,6 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Stormhammer lascannon sponsons" hidden="false" id="642d-297a-36aa-ca6f" collective="true">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a8c7-8ad6-2feb-a2c" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="797b-2afc-ac9a-4c95" includeChildSelections="false"/>
                   </constraints>
                   <profiles>
@@ -4526,6 +4524,11 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
                   <infoLinks>
                     <infoLink name="Anti-tank" id="c903-a1a-1e59-34a1" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+                    <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                    <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
