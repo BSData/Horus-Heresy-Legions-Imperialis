@@ -2289,7 +2289,7 @@
     </profile>
   </sharedProfiles>
   <forceEntries>
-    <forceEntry name="Taghmata Sub-covenant" id="431c-12c3-ba14-3f08" hidden="false">
+    <forceEntry name="Taghmata Sub-covenant" id="431c-12c3-ba14-3f08" hidden="true">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="3433-1c14-72d6-8718" targetId="3779-422e-5fe9-5654"/>
         <categoryLink name="HQ" hidden="false" id="c5f8-aa7c-245f-fe7c" targetId="d950-ad23-9b2-9325">
@@ -2361,14 +2361,14 @@
         </rule>
       </rules>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" value="false" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
     </forceEntry>
-    <forceEntry name="Ordo Reductor Subdivision" id="5e65-d97a-8c71-91f8" hidden="false">
+    <forceEntry name="Ordo Reductor Subdivision" id="5e65-d97a-8c71-91f8" hidden="true">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="4201-175f-0dfc-5793" targetId="3779-422e-5fe9-5654"/>
         <categoryLink name="HQ" hidden="false" id="9047-4a79-aea7-09f7" targetId="d950-ad23-9b2-9325">
@@ -2420,14 +2420,14 @@
         </categoryLink>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" value="false" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
     </forceEntry>
-    <forceEntry name="Myrmidax Conclave" id="a4af-c562-7d78-7d19" hidden="false">
+    <forceEntry name="Myrmidax Conclave" id="a4af-c562-7d78-7d19" hidden="true">
       <rules>
         <rule name="Cult of Destruction" id="8c94-03d9-2b18-d178" hidden="false">
           <description>Support Detachment slots within this Formation must be filled with Myrmidon Secutor Host or Myrmidon Destructor Host Detachments.</description>
@@ -2454,14 +2454,14 @@
         </categoryLink>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" value="false" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
     </forceEntry>
-    <forceEntry name="Legio Cybernetica Cohort" id="94a5-a718-28c1-4053" hidden="false">
+    <forceEntry name="Legio Cybernetica Cohort" id="94a5-a718-28c1-4053" hidden="true">
       <rules>
         <rule name="Legio Cybernetica" id="12cb-0a97-a87d-032b" hidden="false">
           <description>All slots within this Formation, apart from Core, Transport and Titan slots, must be filled with Detachments that have either the Cortex Controller or Cybernetica Cortex (X) special rule.
@@ -2519,14 +2519,14 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
         </categoryLink>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" value="false" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
     </forceEntry>
-    <forceEntry name="Itinerant Cybernetica Cohort" id="080a-85bb-c07f-6df7" hidden="false">
+    <forceEntry name="Itinerant Cybernetica Cohort" id="080a-85bb-c07f-6df7" hidden="true">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="6587-4a7d-3270-6446" targetId="3779-422e-5fe9-5654"/>
         <categoryLink name="Support" hidden="false" id="b951-bc62-8d94-8870" targetId="be19-7658-5258-71d9">
@@ -2585,9 +2585,9 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="f444-dd74-3457-560e" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" value="false" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2603,7 +2603,7 @@ All Detachments included in this Support Formation must have the Cybernetica Cor
         </rule>
       </rules>
     </forceEntry>
-    <forceEntry name="Autokratorii Regiment" id="7ea4-70ef-6360-b1a5" hidden="false" publicationId="89ae-8b6d-da44-733f">
+    <forceEntry name="Autokratorii Regiment" id="7ea4-70ef-6360-b1a5" hidden="true" publicationId="89ae-8b6d-da44-733f">
       <rules>
         <rule name="Cortex Controller" id="1a4c-dac5-3f4f-13ac" hidden="false" publicationId="89ae-8b6d-da44-733f">
           <description>One Vehicle model from a Compulsory Detachment may be upgraded with the Cortex Controller special rule for +10 points.</description>
@@ -2658,9 +2658,9 @@ All Detachments included in this Support Formation must have the Cybernetica Cor
         </categoryLink>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" value="false" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3f82-29c5-dcbe-7b9e" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
