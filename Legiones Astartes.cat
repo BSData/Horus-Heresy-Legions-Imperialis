@@ -886,14 +886,14 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd94-486d-f054-e664" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd94-486d-f054-e664" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -902,33 +902,30 @@
                 <entryLink import="true" name="Drop Pod" hidden="false" id="da0d-1e6e-d0da-a85d" type="selectionEntry" targetId="e2b4-7724-767f-63e1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebbd-4547-7842-1a54"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e530-36e6-c6f4-ce00" includeChildSelections="false"/>
                   </constraints>
                   <costs>
                     <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="1" field="e530-36e6-c6f4-ce00">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb9c-485a-ff29-e9d5"/>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="36af-6c71-177e-e51e"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
                         <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd94-486d-f054-e664" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="1" field="36af-6c71-177e-e51e">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c639-bd73-1b75-4b07" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d876-0dd4-0315-dc6f" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -1349,10 +1346,18 @@
                 <entryLink import="true" name="Drop Pod" hidden="false" id="8f5c-5096-4153-e640" type="selectionEntry" targetId="e2b4-7724-767f-63e1">
                   <constraints>
                     <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="d096-7b0e-5719-cf65"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1e86-915d-8283-fbf2" includeChildSelections="false"/>
                   </constraints>
                   <costs>
                     <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="2" field="1e86-915d-8283-fbf2">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -1361,7 +1366,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
@@ -1535,7 +1540,7 @@
         <categoryLink name="Infantry (1)" hidden="false" id="7f02-3def-5328-4850" targetId="68c1-de55-26b1-8ca4" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="2 Support Legionaries" hidden="false" id="6941-a4d2-1f8d-fae5">
+        <selectionEntry type="upgrade" import="true" name="2 Support Legionaries" hidden="false" id="6941-a4d2-1f8d-fae5" sortIndex="2">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="16aa-c7f6-5e51-18c7"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f191-2ff4-ab01-7587"/>
@@ -1600,7 +1605,7 @@
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Dedicated Transports" id="6732-607b-250d-904f" hidden="false">
+        <selectionEntryGroup name="Dedicated Transports" id="6732-607b-250d-904f" hidden="false" sortIndex="1">
           <selectionEntryGroups>
             <selectionEntryGroup name="Air Support" id="6201-e9d7-8770-27f7" hidden="false">
               <entryLinks>
@@ -1676,10 +1681,18 @@
                 <entryLink import="true" name="Drop Pod" hidden="false" id="e04f-60cd-e140-137b" type="selectionEntry" targetId="e2b4-7724-767f-63e1">
                   <constraints>
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="af1-ba6a-b63e-dcb5"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="40a3-db46-3807-4c8f" includeChildSelections="false"/>
                   </constraints>
                   <costs>
                     <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="2" field="40a3-db46-3807-4c8f">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -1687,14 +1700,14 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="c852-7443-d4d1-17a3" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="c852-7443-d4d1-17a3" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -1763,7 +1776,7 @@
         <categoryLink name="Infantry (1)" hidden="false" id="e7bb-d94f-db6e-f8eb" targetId="68c1-de55-26b1-8ca4" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="2 Heavy Support Legionaries" hidden="false" id="22c4-4695-b815-3030">
+        <selectionEntry type="upgrade" import="true" name="2 Heavy Support Legionaries" hidden="false" id="22c4-4695-b815-3030" sortIndex="2">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dbdd-3134-2b89-56d8"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8fed-a026-a263-d6f9"/>
@@ -1794,7 +1807,7 @@
         <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Dedicated Transports" id="b0fa-9546-2532-8244" hidden="false">
+        <selectionEntryGroup name="Dedicated Transports" id="b0fa-9546-2532-8244" hidden="false" sortIndex="1">
           <selectionEntryGroups>
             <selectionEntryGroup name="Air Support" id="cea4-9ecb-7b7d-6d43" hidden="false">
               <entryLinks>
@@ -1870,10 +1883,18 @@
                 <entryLink import="true" name="Drop Pod" hidden="false" id="e20-8e96-1ed4-7202" type="selectionEntry" targetId="e2b4-7724-767f-63e1">
                   <constraints>
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f343-5a85-ad66-b961"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e907-e942-b454-9612" includeChildSelections="false"/>
                   </constraints>
                   <costs>
                     <cost name="Transport" typeId="54cb-1324-71d0-d324" value="2"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="2" field="e907-e942-b454-9612">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -1881,14 +1902,14 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="db83-9a3-2bea-ae7e" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="db83-9a3-2bea-ae7e" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -1901,14 +1922,14 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="db83-9a3-2bea-ae7e" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="db83-9a3-2bea-ae7e" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
