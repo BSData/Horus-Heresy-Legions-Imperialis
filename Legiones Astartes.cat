@@ -7997,7 +7997,8 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="5"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23cc-da66-5e2e-2168" includeChildSelections="false"/>
