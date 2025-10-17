@@ -9695,6 +9695,10 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6437-3016-e071-aad9-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6437-3016-e071-aad9-max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Vanguard" hidden="false" id="1cef-6edd-cd93-9c94" targetId="8416-456c-a6f-e059" primary="true"/>
+            <categoryLink name="Cavalry (1)" hidden="false" id="6af0-16ac-eb46-e0a5" targetId="4376-9c33-b1cc-bb06" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Legion Scimitar Jetbike Squadron" hidden="false" id="9cc7-58d7-52f2-c1c8">
           <entryLinks>
@@ -9712,6 +9716,10 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c32-c423-29e2-dabb-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c32-c423-29e2-dabb-max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Vanguard" hidden="false" id="c50f-6631-03ea-b758" targetId="8416-456c-a6f-e059" primary="true"/>
+            <categoryLink name="Cavalry (1)" hidden="false" id="db7d-fbaf-dec2-07db" targetId="4376-9c33-b1cc-bb06" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Legion Scimitar Land Speeder Squadron" hidden="false" id="0d46-415b-084f-1d8d">
           <constraints>
@@ -9764,6 +9772,10 @@
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Vanguard" hidden="false" id="90e5-50b4-a78a-d5f5" targetId="8416-456c-a6f-e059" primary="true"/>
+            <categoryLink name="Cavalry (1)" hidden="false" id="d0b8-8138-a292-ec2e" targetId="4376-9c33-b1cc-bb06" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Legion Javelin Squadron" hidden="false" id="89c8-1526-2614-b794">
           <constraints>
@@ -9816,6 +9828,10 @@
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Vanguard" hidden="false" id="cfdc-41f5-d360-f2ef" targetId="8416-456c-a6f-e059" primary="true"/>
+            <categoryLink name="Cavalry (1)" hidden="false" id="b330-34ce-aa07-693d" targetId="4376-9c33-b1cc-bb06" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -9854,7 +9870,6 @@
         <selectionEntry type="unit" import="true" name="Legion Outrider Squadron" hidden="false" id="d015-c2f8-503d-879e">
           <categoryLinks>
             <categoryLink name="Vanguard" hidden="false" id="7c59-200d-15f5-f4bc" targetId="8416-456c-a6f-e059" primary="true"/>
-            <categoryLink name="Legiones Astartes" hidden="false" id="aa5c-4ca6-c3fa-168b" targetId="7d0c-e5ec-a086-98a4" primary="false"/>
             <categoryLink name="Cavalry (1)" hidden="false" id="1244-b715-9a87-267b" targetId="4376-9c33-b1cc-bb06" primary="false"/>
           </categoryLinks>
           <costs>
@@ -9877,7 +9892,6 @@
         <selectionEntry type="unit" import="true" name="Legion Tactical Detachment" hidden="false" id="612b-9744-22a3-8a3c">
           <categoryLinks>
             <categoryLink name="Core" hidden="false" id="1e1c-2e41-3518-8e0e" targetId="446a-abe3-63c3-5709" primary="true"/>
-            <categoryLink name="Legiones Astartes" hidden="false" id="83d2-3148-7edc-ce96" targetId="7d0c-e5ec-a086-98a4" primary="false"/>
             <categoryLink name="Infantry (1)" hidden="false" id="6c80-d7ab-5d5d-6e96" targetId="68c1-de55-26b1-8ca4" primary="false"/>
           </categoryLinks>
           <constraints>
@@ -9982,7 +9996,6 @@
           <categoryLinks>
             <categoryLink name="Light Armour" hidden="false" id="f1f2-1540-bcde-3367" targetId="3b81-6b3e-4546-ade3" primary="true"/>
             <categoryLink name="Vehicle (2)" hidden="false" id="58f5-edb0-589a-d7d6" targetId="49b3-dae7-33f8-f8e" primary="false"/>
-            <categoryLink name="Legiones Astartes" hidden="false" id="b877-decb-c7b5-5a59" targetId="7d0c-e5ec-a086-98a4" primary="false"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca16-bda3-d032-5f96"/>
