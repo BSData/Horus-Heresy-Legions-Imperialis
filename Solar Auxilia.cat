@@ -5233,18 +5233,9 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
             </selectionEntryGroup>
             <selectionEntryGroup name="Wing Weapons" id="47a6-0331-c19d-927d" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="Hellstrike missiles" hidden="false" id="0d82-3ae7-594d-3caf" collective="false" targetId="5bac-35fe-bb4a-6333" type="selectionEntry">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7e54-4c5a-e05d-2bae"/>
-                  </constraints>
-                </entryLink>
+                <entryLink import="true" name="Hellstrike missiles" hidden="false" id="0d82-3ae7-594d-3caf" collective="false" targetId="5bac-35fe-bb4a-6333" type="selectionEntry"/>
                 <entryLink import="true" name="Skystrike missiles" hidden="false" id="a44b-d9a0-648d-8098" collective="false" targetId="d435-679f-43a6-06f0" type="selectionEntry"/>
-                <entryLink import="true" name="Wing bombs" hidden="false" id="f9e2-4382-b133-06f4" type="selectionEntry" targetId="5eb7-152b-1c7c-ca93">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef92-2b9e-5254-597b" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ff1-6a2c-de26-750c" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
+                <entryLink import="true" name="Wing bombs" hidden="false" id="f9e2-4382-b133-06f4" type="selectionEntry" targetId="5eb7-152b-1c7c-ca93"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9c8-4ec1-04ed-90d0" includeChildSelections="false"/>
@@ -5472,11 +5463,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
             </selectionEntryGroup>
             <selectionEntryGroup name="Wing Weapons" id="c020-4201-cd4b-6220" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="Hellstrike missiles" hidden="false" id="eb6e-3de3-fce4-320b" collective="false" targetId="5bac-35fe-bb4a-6333" type="selectionEntry">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="77f5-a5bc-b1e8-f3a5"/>
-                  </constraints>
-                </entryLink>
+                <entryLink import="true" name="Hellstrike missiles" hidden="false" id="eb6e-3de3-fce4-320b" collective="false" targetId="5bac-35fe-bb4a-6333" type="selectionEntry"/>
                 <entryLink import="true" name="Skystrike missiles" hidden="false" id="fd5a-85a9-52a1-d514" collective="false" targetId="d435-679f-43a6-06f0" type="selectionEntry"/>
                 <entryLink import="true" name="Wing bombs" hidden="false" id="bfd2-3405-008b-2f02" type="selectionEntry" targetId="5eb7-152b-1c7c-ca93"/>
               </entryLinks>
