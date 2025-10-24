@@ -277,6 +277,53 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
         <categoryLink name="Questoris" hidden="false" id="73d6-7b7d-cd42-503e" targetId="b2bb-ab05-f014-3b33"/>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="Barony Guard Lance" id="4ddc-ea92-f616-6a27" hidden="false" publicationId="89ae-8b6d-da44-733f" page="90">
+      <rules>
+        <rule name="Senechal" id="8973-3cec-3104-08b1" hidden="false" publicationId="89ae-8b6d-da44-733f" page="90">
+          <description>After this formation is deployed or after all deployment is finished, if the Formation is deployed in Reserve, choose one model that is part of a Compulsory Detachment to be upgraded to a Baron for free. A model upgraded in this way increases its CAF by +2 and its Wounds characteristic by 1.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="322c-5cff-5660-ad49" targetId="3779-422e-5fe9-5654"/>
+        <categoryLink name="Armiger" hidden="false" id="ff04-20d4-93db-b5a0" targetId="fe26-cfac-c306-cfd8">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="40af-66d6-edb9-6532" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Cerastus" hidden="false" id="4244-1fd3-d780-4930" targetId="7e81-3342-b50d-b304">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="2e69-8ba8-f1d7-5e0d" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="a59a-1925-c34b-66a5" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Questoris" hidden="false" id="879f-a8bd-3701-ebad" targetId="b2bb-ab05-f014-3b33">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="040b-1d8f-09b6-8262"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="0222-9625-be71-553b" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="-1" field="forces" scope="roster" shared="true" id="fc90-ebbf-fa74-7704" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="fc90-ebbf-fa74-7704">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="24db-5384-cb9f-157f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="e123-f142-1cb1-55ac" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Primary Army must be Knight Households" field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="24db-5384-cb9f-157f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </forceEntry>
   </forceEntries>
   <sharedRules>
     <rule name="Knight Retainers" id="b436-dcf6-8ab0-8ed5" hidden="false" publicationId="89ae-8b6d-da44-733f">
@@ -443,6 +490,11 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="09cb-d90a-cd49-5aeb" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4ddc-ea92-f616-6a27" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Knight Retainers" id="23bc-fec2-c88e-20e2" hidden="false" type="rule" targetId="b436-dcf6-8ab0-8ed5"/>
@@ -541,6 +593,11 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="5713-e733-198b-3bb1" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="09cb-d90a-cd49-5aeb" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4ddc-ea92-f616-6a27" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Questoris Knight Banner" hidden="false" id="b125-b2db-c757-8236" type="selectionEntry" targetId="5dbb-aa60-1fae-c471">
@@ -595,6 +652,11 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="0624-634d-f547-038c" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="09cb-d90a-cd49-5aeb" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4ddc-ea92-f616-6a27" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink name="Questoris" hidden="false" id="1056-d0eb-98eb-46d5" targetId="b2bb-ab05-f014-3b33" primary="true"/>
@@ -647,6 +709,11 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" value="09cb-d90a-cd49-5aeb" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4ddc-ea92-f616-6a27" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -705,6 +772,11 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" value="09cb-d90a-cd49-5aeb" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4ddc-ea92-f616-6a27" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Cerastus Knight Atrapos Banner" hidden="false" id="3384-c832-ef23-941f" type="selectionEntry" targetId="d074-8691-6acd-42a7">
@@ -753,6 +825,11 @@ All Knight Detachments within this Support Formation gain the Cortex Controller 
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" value="09cb-d90a-cd49-5aeb" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4ddc-ea92-f616-6a27" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
