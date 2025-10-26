@@ -9641,6 +9641,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
     <entryLink import="true" name="Cthonian Headhunters Sub-Cohort" hidden="false" id="ee99-dd30-095e-8dc6" targetId="13c6-6a95-caeb-d564" type="selectionEntry"/>
     <entryLink import="true" name="Theta-Garmon Deathless Sub-Cohort" hidden="false" id="992c-e0e2-9bab-f7ea" targetId="05a1-a183-ba04-476e" type="selectionEntry"/>
     <entryLink import="true" name="Theta-Garmon Deathless Sub-Cohort" hidden="false" id="4512-7b13-1802-52c5" targetId="2540-1115-d38b-9e56" type="selectionEntry"/>
+    <entryLink import="true" name="Leman Russ Exterminator Squadron" hidden="false" id="d31c-def2-29ec-f691" type="selectionEntry" targetId="7fde-d02d-7313-b04b"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Cyclops" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="6e4d-ce38-68db-639">
