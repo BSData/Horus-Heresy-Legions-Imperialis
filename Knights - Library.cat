@@ -381,7 +381,7 @@
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="220"/>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-            <cost name="Break Point" typeId="5312-855-beda-23c1" value="4"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="2"/>
           </costs>
           <profiles>
             <profile name="Acastus Knight Porphyrion" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="8f1a-dc6d-9f20-e211">
@@ -437,7 +437,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="1.5"/>
               </costs>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8370-1327-c15c-c3da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -553,7 +553,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="1.5"/>
               </costs>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0258-02dc-c30d-e8bf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -640,7 +640,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="1.5"/>
               </costs>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5e3c-208c-363d-7ce1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -747,7 +747,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="120"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="1.5"/>
               </costs>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ead4-6666-6565-492c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -818,7 +818,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="120"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="1.5"/>
               </costs>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="78f4-c558-2e63-6889" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -838,7 +838,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="110"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="1.5"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Baron Upgrade" id="3070-29b5-0c53-4f30" hidden="false" sortIndex="1">
@@ -955,7 +955,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="120"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="1.5"/>
               </costs>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2c58-d556-bd3b-add7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1026,7 +1026,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="120"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="1.5"/>
               </costs>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6668-df0a-6178-af38" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1159,7 +1159,7 @@
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-            <cost name="Break Point" typeId="5312-855-beda-23c1" value="2"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="1"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Knight (4)" hidden="false" id="0bdd-d6cc-5405-0aff" targetId="13e3-8701-239a-fec9" primary="false"/>
@@ -1308,7 +1308,7 @@
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-            <cost name="Break Point" typeId="5312-855-beda-23c1" value="2"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="1"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Knight (4)" hidden="false" id="67ee-d744-0b45-bb15" targetId="13e3-8701-239a-fec9" primary="false"/>
@@ -1345,7 +1345,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="130"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="1.5"/>
               </costs>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5e12-16ad-f8a4-4b7f" includeChildSelections="false"/>
@@ -1443,7 +1443,7 @@
               <costs>
                 <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="130"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="1.5"/>
               </costs>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="846a-9ee9-65df-3e33" includeChildSelections="false"/>
@@ -1621,7 +1621,7 @@
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="170"/>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-            <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="1.5"/>
           </costs>
           <profiles>
             <profile name="Cerastus Knight Atrapos" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="ee50-2f8e-861f-2472">
@@ -1849,7 +1849,7 @@
           <costs>
             <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="230"/>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-            <cost name="Break Point" typeId="5312-855-beda-23c1" value="4"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="2"/>
           </costs>
           <profiles>
             <profile name="Acastus Knight" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="8647-7801-1ba3-7596">

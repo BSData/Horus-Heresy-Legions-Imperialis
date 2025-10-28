@@ -683,7 +683,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="350"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="5"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="2.5"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Reaver Battle Titan" hidden="false" id="fb7f-81d1-03ab-e53e" collective="false">
@@ -968,7 +968,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="400"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="6"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warbringer Nemesis Titan" hidden="false" id="a9a3-dedc-f21a-a560" collective="false">
@@ -1037,7 +1037,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="525"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="6"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="3"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Ardex-defensor mauler bolt cannon turrets" hidden="false" id="ae7b-aaeb-3f91-2a2f" type="selectionEntry" targetId="f85d-0cd7-d99e-dd2f">
@@ -1101,7 +1101,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="600"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="7"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="3.5"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warlord-Sinister Battle Titan" hidden="false" id="064d-d7bb-373a-a756" collective="false">
@@ -1247,7 +1247,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="675"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="7"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="3.5"/>
         <cost name="Traitor" typeId="a76f-c373-858a-f8b0" value="0"/>
       </costs>
     </selectionEntry>
@@ -1371,7 +1371,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="850"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="8"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warmaster Iconoclast Titan" hidden="false" id="3219-a349-dcbb-a398" collective="false">
@@ -1551,7 +1551,7 @@
       <costs>
         <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="850"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="8"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Inferno gun" hidden="false" id="0bcc-dfd2-5342-5b2f" collective="false">

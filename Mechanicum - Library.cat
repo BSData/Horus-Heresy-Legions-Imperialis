@@ -2229,6 +2229,7 @@
             <entryLink import="true" name="Triaros" hidden="false" id="24d1-0aea-aba5-4f95" type="selectionEntry" targetId="ef70-4e36-852e-fd7d">
               <costs>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="4"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
               </costs>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="04f2-cfbc-a42e-b6f8" includeChildSelections="false"/>
