@@ -817,6 +817,11 @@
             </infoLink>
             <infoLink name="Master Tactician" id="8a6d-7a98-8e6b-5c84" hidden="false" type="rule" targetId="db05-2ad8-6256-20e9"/>
           </infoLinks>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -3830,6 +3835,11 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Legion Tarantula w/ Tarantula lascannon battery" hidden="false" id="cb14-e3fe-b5-1e6e">
               <selectionEntries>
@@ -3872,6 +3882,11 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -5537,6 +5552,11 @@
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+            <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -9205,6 +9225,11 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Legion Terminators" hidden="false" id="7fff-da1f-f37a-b156" collective="true">
       <profiles>
