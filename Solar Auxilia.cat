@@ -3798,16 +3798,6 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="55" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="atLeast" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="55" field="ee95-a20e-f9ff-e2c2">
-          <conditions>
-            <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Malcador Infernus" hidden="false" id="f21d-b5d7-bbec-f3ef">
