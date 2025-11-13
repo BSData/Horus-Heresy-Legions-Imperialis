@@ -953,8 +953,9 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
         <infoLink name="Dracosan" id="32f4-ce53-9408-2eaf" hidden="false" type="profile" targetId="9809-b42c-1837-84a5"/>
       </infoLinks>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="37"/>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="42"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <entryLinks>
         <entryLink targetId="ba89-b9e0-3dea-64e6" id="a0d1-fed0-ae79-a388" type="selectionEntry" name="Hull Mounted twin lascannon" hidden="false" collective="true">
@@ -981,8 +982,9 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
         <infoLink name="Dracosan" id="0740-90ae-c2ae-d6c2" hidden="false" type="profile" targetId="9809-b42c-1837-84a5"/>
       </infoLinks>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="42"/>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="47"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Hull Mounted demolisher cannon" hidden="false" id="7451-2d5f-dcf8-e892" type="selectionEntry" targetId="40a4-f793-62c7-99f1">
