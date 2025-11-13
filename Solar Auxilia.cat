@@ -1671,14 +1671,16 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
+            <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="15"/>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+            <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="20"/>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
       <modifiers>
         <modifier type="add" value="124c-2927-143f-f513" field="category">
