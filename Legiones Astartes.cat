@@ -10328,7 +10328,7 @@
           <modifiers>
             <modifier type="set" value="0" field="342b-c21d-51b9-3929">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="98f1-ce9c-c2b2-cea5" shared="true"/>
+                <condition type="atLeast" value="2" field="selections" scope="force" childId="98f1-ce9c-c2b2-cea5" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
