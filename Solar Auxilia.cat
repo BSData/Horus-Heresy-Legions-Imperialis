@@ -944,9 +944,9 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Dracosan w/ twin lascannon" hidden="false" id="cc26-409d-a289-38e8">
       <infoLinks>
-        <infoLink name="Transport (X)" hidden="false" id="f1ce-f30e-a838-55f" type="rule" targetId="b82-1269-e912-cb88">
+        <infoLink name="Large Transport (X)" hidden="false" id="f1ce-f30e-a838-55f" type="rule" targetId="d33b-3fa4-492e-6d3e">
           <modifiers>
-            <modifier type="set" value="Transport (4)" field="name"/>
+            <modifier type="replace" value="(4)" field="name" arg="(X)"/>
           </modifiers>
         </infoLink>
         <infoLink name="Explorator Adaptation" hidden="false" id="15bd-3be6-c9c8-737d" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
@@ -973,9 +973,9 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Dracosan w/ demolisher cannon" hidden="false" id="1edd-da3-e0ac-8fdb">
       <infoLinks>
-        <infoLink name="Transport (X)" hidden="false" id="ea8e-d077-f79f-8afd" type="rule" targetId="b82-1269-e912-cb88">
+        <infoLink name="Large Transport (X)" hidden="false" id="ea8e-d077-f79f-8afd" type="rule" targetId="d33b-3fa4-492e-6d3e">
           <modifiers>
-            <modifier type="set" value="Transport (2)" field="name"/>
+            <modifier type="replace" value="(2)" field="name" arg="(X)"/>
           </modifiers>
         </infoLink>
         <infoLink name="Explorator Adaptation" hidden="false" id="dfb9-810b-3a57-395" type="rule" targetId="9e10-bda9-5ee4-76ee"/>
