@@ -985,8 +985,6 @@
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c639-bd73-1b75-4b07" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d876-0dd4-0315-dc6f" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -1207,16 +1205,21 @@
                 <entryLink targetId="7fff-da1f-f37a-b156" id="0f01-7d7a-a9f3-7d0d" type="selectionEntry" name="Legion Terminators" hidden="false" collective="true">
                   <modifiers>
                     <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="e552-7189-ccb5-1922" childId="d0d1-667-324f-9246" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="d0d1-667-324f-9246" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                     <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="e552-7189-ccb5-1922" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="e552-7189-ccb5-1922" childId="d0d1-667-324f-9246" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="d0d1-667-324f-9246" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -1246,16 +1249,21 @@
                 <entryLink import="true" name="Assault Legionaries" hidden="false" id="30e8-49d8-3d97-c51d" type="selectionEntry" targetId="26df-89d8-6a61-abe8">
                   <modifiers>
                     <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="e552-7189-ccb5-1922" childId="d0d1-667-324f-9246" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="d0d1-667-324f-9246" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                     <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="e552-7189-ccb5-1922" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="e552-7189-ccb5-1922" childId="d0d1-667-324f-9246" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="d0d1-667-324f-9246" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -1276,7 +1284,7 @@
               <entryLinks>
                 <entryLink import="true" name="Thunderhawk Gunship" hidden="false" id="f1d7-7e15-1f00-2165" type="selectionEntry" targetId="2e30-7078-712d-4c9a">
                   <constraints>
-                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="94c2-bf1f-1e85-6f06"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="94c2-bf1f-1e85-6f06"/>
                   </constraints>
                   <costs>
                     <cost name="‏‏‎ points" typeId="ee95-a20e-f9ff-e2c2" value="150"/>
@@ -2034,16 +2042,21 @@
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="54f9-7ac-7b98-a2c6" childId="701d-2b43-5516-d12e" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="54f9-7ac-7b98-a2c6" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="701d-2b43-5516-d12e" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
                 <modifier type="set" value="-2" field="54cb-1324-71d0-d324">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="54f9-7ac-7b98-a2c6" childId="701d-2b43-5516-d12e" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="701d-2b43-5516-d12e" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
