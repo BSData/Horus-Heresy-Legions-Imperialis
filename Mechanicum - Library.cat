@@ -2193,7 +2193,7 @@
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="parent" childId="ed30-34c3-cddd-7a9f" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2204,13 +2204,22 @@
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
               </costs>
               <constraints>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="04f2-cfbc-a42e-b6f8" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e5bc-f0c3-6055-1b3a" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="e5bc-f0c3-6055-1b3a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="c96f-9492-7e30-43f4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="4" field="e5bc-f0c3-6055-1b3a">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cfac-ce06-cbf6-cf7a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a121-9064-3fcb-43f9" includeChildSelections="false"/>
-          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>

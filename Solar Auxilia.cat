@@ -9806,7 +9806,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d895-d0b5-9bcf-10af" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="8bd4-e86c-1cf5-e6d1" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
