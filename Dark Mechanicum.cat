@@ -2289,7 +2289,7 @@ All Detachments included in this Support Formation with the Cybernetica Cortex (
     </profile>
   </sharedProfiles>
   <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Tech-Priest Auxilia" hidden="false" id="ba66-b8b9-708e-c9b3">
+    <selectionEntry type="unit" import="true" name="Tech-Priest Auxilia" hidden="false" id="ba66-b8b9-708e-c9b3" subType="unit-group">
       <categoryLinks>
         <categoryLink name="Support" hidden="false" id="4994-be37-a4ec-d29a" targetId="be19-7658-5258-71d9" primary="true"/>
         <categoryLink name="Dark Mechanicum" hidden="false" id="d632-b4b0-aaea-a685" targetId="e63d-b61c-bac6-a269" primary="false"/>
@@ -2306,10 +2306,23 @@ All Detachments included in this Support Formation with the Cybernetica Cortex (
           </conditionGroups>
         </modifier>
       </modifiers>
-      <entryLinks>
-        <entryLink import="true" name="Tech-Priest Auxilia" hidden="false" id="77f4-6267-12cf-d337" type="selectionEntry" targetId="0022-3c2b-6a02-79b8">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Tech-Priest Auxilia" hidden="false" id="2f26-3dc9-7052-aa39">
           <entryLinks>
-            <entryLink import="true" name="Dedicated Transports" hidden="false" id="d160-be7b-549a-6343" type="selectionEntryGroup" targetId="1a90-4df1-8562-6f2c" sortIndex="1">
+            <entryLink import="true" name="Tech-Priest" hidden="false" id="6829-3d27-9f4a-0287" type="selectionEntry" targetId="c96f-9492-7e30-43f4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cdb-5855-6d30-f30e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ba2-2945-d399-048a" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Dedicated Transports" hidden="false" id="5468-b1d1-d26c-5c7c" type="selectionEntryGroup" targetId="1a90-4df1-8562-6f2c">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -2319,15 +2332,12 @@ All Detachments included in this Support Formation with the Cybernetica Cortex (
               </modifiers>
             </entryLink>
           </entryLinks>
-          <categoryLinks>
-            <categoryLink name="Dark Mechanicum" hidden="false" id="e8a8-b785-0c13-4967" targetId="e63d-b61c-bac6-a269" primary="false"/>
-          </categoryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ddd-c8a5-0e16-be5d" includeChildSelections="false"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="126a-004d-d754-f308" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6dd3-a2e7-ae26-dfa7" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="958b-c004-b837-65df" includeChildSelections="false"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

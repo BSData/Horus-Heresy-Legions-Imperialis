@@ -9786,14 +9786,38 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
       <constraints>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="2cd4-8850-a30e-88f3" includeChildSelections="false"/>
       </constraints>
-      <entryLinks>
-        <entryLink import="true" name="Tech-Priest Auxilia" hidden="false" id="4ed7-1af2-1662-6bdc" type="selectionEntry" targetId="0022-3c2b-6a02-79b8">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Tech-Priest Auxilia" hidden="false" id="684c-0fd1-ca45-4102">
+          <entryLinks>
+            <entryLink import="true" name="Tech-Priest" hidden="false" id="33b9-e85d-7b13-9ff4" type="selectionEntry" targetId="c96f-9492-7e30-43f4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51b4-9081-61b3-dbeb" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9285-b0fa-bd71-a176" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Dedicated Transports" hidden="false" id="f455-9201-23ae-8b33" type="selectionEntryGroup" targetId="1a90-4df1-8562-6f2c">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d895-d0b5-9bcf-10af" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc70-28ca-bb06-80d6" includeChildSelections="false"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d374-3fd9-f6b1-509f" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1df0-c499-15d8-e7a3" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c40f-2736-9bee-9d48" includeChildSelections="false"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

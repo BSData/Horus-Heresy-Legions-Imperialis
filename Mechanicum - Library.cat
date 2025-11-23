@@ -1151,34 +1151,6 @@
         <infoLink name="Ignores Cover" id="7631-c627-1b68-6366" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Tech-Priest Auxilia" hidden="false" id="0022-3c2b-6a02-79b8">
-      <categoryLinks>
-        <categoryLink name="Infantry (1)" hidden="false" id="2294-84d0-b727-b5de" targetId="68c1-de55-26b1-8ca4" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Tech-Priest" hidden="false" id="6829-3d27-9f4a-0287" type="selectionEntry" targetId="c96f-9492-7e30-43f4">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cdb-5855-6d30-f30e" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ba2-2945-d399-048a" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <constraints>
-        <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="a070-7a95-2eac-d520" includeChildSelections="false"/>
-        <constraint type="max" value="3" field="54cb-1324-71d0-d324" scope="self" shared="true" id="a053-a5b4-f965-7c36" includeChildSelections="false"/>
-      </constraints>
-      <costs>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="d1c0-6f40-691e-d7be">
       <categoryLinks>
         <categoryLink name="Vanguard" hidden="false" id="251f-4ab0-2ade-5e3a" targetId="8416-456c-a6f-e059" primary="true"/>

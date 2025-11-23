@@ -1256,32 +1256,42 @@
           </conditionGroups>
         </modifier>
       </modifiers>
-      <entryLinks>
-        <entryLink import="true" name="Tech-Priest Auxilia" hidden="false" id="b8c1-8479-ea99-89f7" type="selectionEntry" targetId="0022-3c2b-6a02-79b8">
+      <costs>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Tech-Priest Auxilia" hidden="false" id="92b4-bc98-f4f8-b6a5">
           <entryLinks>
-            <entryLink import="true" name="Dedicated Transports" hidden="false" id="c92f-807b-259f-cf07" type="selectionEntryGroup" targetId="1a90-4df1-8562-6f2c" sortIndex="1">
+            <entryLink import="true" name="Tech-Priest" hidden="false" id="140a-6280-f16d-3a97" type="selectionEntry" targetId="c96f-9492-7e30-43f4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e19-2009-cd17-3298" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da33-1d05-3224-527e" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="-1" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Dedicated Transports" hidden="false" id="247a-b000-e55f-cbcc" type="selectionEntryGroup" targetId="1a90-4df1-8562-6f2c">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="431c-12c3-ba14-3f08" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="d895-d0b5-9bcf-10af" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </entryLink>
           </entryLinks>
-          <categoryLinks>
-            <categoryLink name="Mechanicum" hidden="false" id="90d4-691c-86aa-35fb" targetId="d331-a05e-f676-b8a6" primary="false"/>
-          </categoryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81b7-49bb-49a0-6637" includeChildSelections="false" automatic="false"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8279-a9f4-235f-516b" includeChildSelections="false" automatic="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3499-a1a4-734b-e7b4" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1c9a-6ec0-30df-5f90" includeChildSelections="false"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
-      </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
