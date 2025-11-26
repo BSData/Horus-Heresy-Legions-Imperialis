@@ -9,9 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@v5
 
+    # (this check breaks when it detects newrecruit-specific elements
     #- uses: BSData/check-datafiles@v1
-    - uses: BSData/check-datafiles@v1.1.0
-      id: check
+    #  id: check
 
     - uses: actions/upload-artifact@v5
       with:
