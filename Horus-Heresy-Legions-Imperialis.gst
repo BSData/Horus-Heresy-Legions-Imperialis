@@ -467,9 +467,7 @@ An Automated Sentry model fires any other weapon at the closest eligible enemy D
 
 Automated Sentry Detachments can fire when Engaged &amp; Pinned. When selecting targets, they ignore any Detachment which is Engaged &amp; Pinned, including any Detachment they are Engaged &amp; Pinned with.
 
-Models in a Detachment with this special rule have a
-Tactical Strength of 0 and this cannot be modified in
-any way.</description>
+Models in a Detachment with this special rule have a Tactical Strength of 0 and this cannot be modified in any way.</description>
     </rule>
     <rule id="bc6e-78fc-8fde-226d" name="Battlesmith" publicationId="c1b8-2180-635c-14cd" hidden="false" page="87">
       <description>If a friendly Walker, Vehicle or Super-heavy Vehicle, or a model with the Automata or Automated Sentry special rule, within 3&quot; of a model with this rule suffers a Wound due to a special rule or one that is inflicted by a weapon with an AP of -2 or worse, roll a D6. On a 5+, that Wound is ignored and has no effect. Battlesmith cannot be used against Wounds suffered in a Fight.</description>
