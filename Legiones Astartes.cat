@@ -10174,6 +10174,145 @@
         <infoLink name="Anti-tank" id="69a7-0126-a81c-054c" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Araknae Weapons Platform" hidden="false" id="4a46-c8c0-899f-82dd" publicationId="a8b9-3a4f-e0a6-825c">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="adc3-96cf-6655-db9e" primary="true" name="Vehicle (2)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="f222-eaf4-b39e-8190" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Araknae Weapons Platform" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="42cf-22e5-f371-08c3" publicationId="a8b9-3a4f-e0a6-825c">
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">-</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">-2</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (X)" id="e45b-2568-65b2-2143" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
+          <modifiers>
+            <modifier type="set" value="Invulnerable Save (5+)
+
+" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="f1ac-8a5b-9f8f-8bad" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Quad accelerator autocannon" hidden="false" id="acab-c187-311c-646a" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Tracking" id="65f1-4e55-b765-fbd2" hidden="false" type="rule" targetId="eb09-d940-39cc-16f7"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Quad accelerator autocannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f585-4e49-387b-1c78">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Tracking</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="add" value="All models in the detachment must select the same weapon option" field="error" scope="unit">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="f145-9d50-108b-5220" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="daa9-6320-6bc7-96c9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin punisher cannon" hidden="false" id="f145-9d50-108b-5220" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Accurate" id="848e-83a6-309a-62e0" hidden="false" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
+                <infoLink name="Light AT" id="8f9b-ad8e-c8b3-dd06" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+                <infoLink name="Rapid Fire" id="93c8-59de-6a86-a04b" hidden="false" type="rule" targetId="d56d-6332-debe-ab1a"/>
+                <infoLink name="Skyfire" id="6ec9-3bf9-9686-12f6" hidden="false" type="rule" targetId="e93f-b83c-b1c9-d744"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Twin punisher cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="15e5-a6e8-d58a-31ac">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Accurate, Light AT, Rapid Fire, Skyfire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="add" value="All models in the detachment must select the same weapon option" field="error" scope="unit">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="acab-c187-311c-646a" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="daa9-6320-6bc7-96c9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Orias heavy frag missiles" hidden="false" id="daa9-6320-6bc7-96c9" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Barrage" id="41e8-9d6f-9b89-84cb" hidden="false" type="rule" targetId="862d-b036-2018-dbaf"/>
+                <infoLink name="Blast (3&quot;/5&quot;)" id="978c-abe4-f0f8-8afd" hidden="false" type="rule" targetId="a981-166d-49aa-1064">
+                  <modifiers>
+                    <modifier type="set" value="Blast (3&quot;)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Light" id="9050-e6d1-bd6a-c18e" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                <infoLink name="Limited (X)" id="090d-3802-9244-71f8" hidden="false" type="rule" targetId="769e-4f43-51b0-537f">
+                  <modifiers>
+                    <modifier type="set" value="Limited (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <profiles>
+                <profile name="Orias heavy frag missiles" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="3476-bfcd-015d-b9c4">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">24&quot;</characteristic>
+                    <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                    <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                    <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                    <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Barrage, Blast (3&quot;), Light, Limited (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="add" value="All models in the detachment must select the same weapon option" field="error" scope="unit">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="acab-c187-311c-646a" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="f145-9d50-108b-5220" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07ec-be0a-600f-6703-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07ec-be0a-600f-6703-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <forceEntries>
     <forceEntry name="Legion Demi-Company" hidden="false" id="6cda-5812-cf52-3fee">
@@ -11416,4 +11555,52 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Araknae Weapons Platform Battery" hidden="false" id="c373-7934-6a84-2798" publicationId="a8b9-3a4f-e0a6-825c">
+      <categoryLinks>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="4278-8c90-4da8-8889" primary="false" name="Vehicle (2)"/>
+        <categoryLink targetId="2005-60e5-e49d-32f2" id="3aee-8d55-7deb-a9a7" primary="true" name="Bastion"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Araknae Weapons Platform" hidden="false" id="b1ee-99ed-1ded-f183" type="selectionEntry" targetId="4a46-c8c0-899f-82dd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9808-30f4-0e41-8f96"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0dc7-6581-97bd-500c"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" value="30" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="55" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="80" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="30"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

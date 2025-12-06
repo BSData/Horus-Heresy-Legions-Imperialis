@@ -9,6 +9,7 @@
     <publication name="Rise of the Dark Mechanicum" id="89ae-8b6d-da44-733f" hidden="false" shortName="RDM" publicationDate="2024"/>
     <publication name="Bonded Cybernetica Support Formations" id="3a86-b962-115c-2239" hidden="false" publisherUrl="https://assets.warhammer-community.com/legions_imperialis_expandedcyberneticaformations_eng_07-mdsmqowyoy-tu5prvasqe.pdf" shortName="BC" publicationDate="2024"/>
     <publication name="Liber Strategica" id="5364-464c-3309-a620" hidden="false" shortName="LS" publicationDate="2025"/>
+    <publication name="Journal Strategia: The Ruins of the Salamanders" id="a8b9-3a4f-e0a6-825c" hidden="false" shortName="The Ruins of the Salamanders" publicationDate="2025"/>
   </publications>
   <costTypes>
     <costType id="ee95-a20e-f9ff-e2c2" name="‏‏‎‏points" defaultCostLimit="3000" hidden="false"/>
@@ -651,6 +652,9 @@ During the End phase, in the Resolve End Phase Effects stage, a model with the V
 If a Detachment contains more than one model with this rule, the controlling player can choose which models detonate and which do not, doing so before resolving any detonation. Models that detonate are not affected by friendly models that are detonating at the same time. Any model that does not detonate is affected if it is under the Blast template as normal.
 
 In addition, models with the Remote Controlled Detonation special rule are ignored for the purposes of calculating a Formation&apos;s Break Point.</description>
+    </rule>
+    <rule name="Very Bulky" id="2769-e805-03dc-a24c" hidden="false" publicationId="a8b9-3a4f-e0a6-825c">
+      <description>Models with the Very Bulky special rule can only Embark on a model with either the Large Transport (X) or Large Assault Transport (X) special rules. In addition, models with the Very Bulky special rule count as two models for the purposes of determining how many models a Transport can carry.</description>
     </rule>
   </sharedRules>
   <selectionEntries>
