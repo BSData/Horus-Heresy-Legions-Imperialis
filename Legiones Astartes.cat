@@ -10477,6 +10477,16 @@
             <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="1f6b-d764-352d-1e74" id="cc5f-43fc-f47e-630a" primary="true" name="Heavy Armour"/>
@@ -10568,6 +10578,16 @@
           <conditions>
             <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true"/>
           </conditions>
+        </modifier>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -10662,6 +10682,16 @@
           <conditions>
             <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true"/>
           </conditions>
+        </modifier>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -10787,6 +10817,16 @@
           <conditions>
             <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true"/>
           </conditions>
+        </modifier>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -11897,8 +11937,22 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
     <entryLink import="true" name="Legion Tactical Strike Force" hidden="false" id="7fe6-dbb1-4ace-efa8" type="selectionEntry" targetId="97e1-11d4-b310-e512"/>
     <entryLink import="true" name="Legion Tactical Strike Force" hidden="false" id="bf63-11ac-d3b7-804d" type="selectionEntry" targetId="3e60-ff62-9318-c23b"/>
     <entryLink import="true" name="Legion Falchion Squadron" hidden="false" id="c527-67fb-e6a1-8a6f" type="selectionEntry" targetId="b71d-999a-c21b-0175"/>
-    <entryLink import="true" name="Legion Ascalon Squadron" hidden="false" id="205b-7c79-7254-62e8" type="selectionEntry" targetId="dd0a-d843-6def-b05b"/>
+    <entryLink import="true" name="Legion Ascalon Squadron" hidden="false" id="205b-7c79-7254-62e8" type="selectionEntry" targetId="dd0a-d843-6def-b05b">
+      <modifiers>
+        <modifier type="add" value="124c-2927-143f-f513" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="288d-7913-984c-5d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="49dd-d763-6836-b4f8" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
     <entryLink import="true" name="Legion Glaive Squadron" hidden="false" id="6b94-627c-6513-4258" type="selectionEntry" targetId="bf78-2963-5e1b-2191"/>
+    <entryLink import="true" name="Legion Fellblade Squadron" hidden="false" id="e522-075a-5c4f-8ca5" type="selectionEntry" targetId="6049-155d-4835-fbe2"/>
   </entryLinks>
   <sharedRules>
     <rule name="Backbone of the Legion" id="1ec9-dfb9-b3df-4ed3" hidden="false" publicationId="5364-464c-3309-a620">
