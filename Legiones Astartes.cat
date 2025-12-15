@@ -9158,35 +9158,8 @@
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Hull Mounted demolisher cannon" hidden="false" id="17a5-4e29-3536-4c6d">
-          <profiles>
-            <profile name="Hull Mounted demolisher cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="b696-b07d-4030-dd2b">
-              <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher, Ignores Cover</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Arc (Front/Rear)" id="ba8b-9f8d-a2d0-bcfe" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
-              <modifiers>
-                <modifier type="set" value="Arc (Front)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Demolisher" id="0193-25fc-fc4f-7920" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
-            <infoLink name="Ignores Cover" id="c7f4-aaea-25f0-890f" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64ef-2a25-68b2-117a" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cc6-f421-05cd-57c7" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
+        <entryLink targetId="17a5-4e29-3536-4c6d" id="43ad-f852-c05a-1227" type="selectionEntry" name="Hull Mounted demolisher cannon" hidden="false"/>
         <entryLink import="true" name="Pintle Mounted twin-linked bolter" hidden="false" id="ecbe-f03d-8b38-48d1" type="selectionEntry" targetId="401b-16f9-3582-6a26">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe5c-b1f4-cc7e-1282"/>
@@ -10511,6 +10484,317 @@
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="6ec3-caa6-6279-36ad" primary="false" name="Legiones Astartes"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ascalon" hidden="false" id="b56f-8cb2-a953-460c" publicationId="a8b9-3a4f-e0a6-825c">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1f6b-d764-352d-1e74" id="1394-eeb9-45be-dff4" primary="true" name="Heavy Armour"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="9ea4-1bc5-8405-1f8e" primary="false" name="Vehicle (2)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="16e9-5637-e3c2-9d98" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Ascalon" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="a4ed-bae8-7b1c-11a6">
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+4</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Sponson Quad Mounts" hidden="false" id="7c0b-b03e-4f85-58a4" type="selectionEntryGroup" targetId="8ed8-f774-6630-0835" sortIndex="2"/>
+        <entryLink import="true" name="Pintle Mounted Weapons" hidden="false" id="0e99-a691-e880-db21" type="selectionEntryGroup" targetId="63d6-e023-5744-efec" sortIndex="3"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ascalon Inferno Gun" hidden="false" id="8c83-68b0-533b-bbc5" sortIndex="1">
+          <profiles>
+            <profile name="Ascalon Inferno Gun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="743d-7ef7-0e8c-2023">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">T</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">-</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Firestorm, Light AT</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c067-5934-764a-b459"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c994-de42-3191-bd05"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Arc (Front/Rear)" id="9ae7-0641-0b7c-5b23" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+              <modifiers>
+                <modifier type="set" value="Arc (Front)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Firestorm" id="7844-b858-0319-bbc7" hidden="false" type="rule" targetId="7d44-6682-5990-8ccf"/>
+            <infoLink name="Light AT" id="b0a6-82f8-0e02-4416" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Ascalon Squadron" hidden="false" id="dd0a-d843-6def-b05b" publicationId="a8b9-3a4f-e0a6-825c">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="110"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Ascalon" hidden="false" id="0502-ba13-2fca-fafd" type="selectionEntry" targetId="b56f-8cb2-a953-460c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="650f-4a20-7733-dc93"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="9118-fc86-1cb2-8aaa"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="100" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="200" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="290" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="1f6b-d764-352d-1e74" id="0d83-c95c-3e94-0b1f" primary="true" name="Heavy Armour"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="4c44-3e6b-976a-bfb2" primary="false" name="Vehicle (2)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="c3b0-4d9e-9c6d-f85e" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Glaive" hidden="false" id="e6fe-da8d-4a60-7326" publicationId="a8b9-3a4f-e0a6-825c">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1f6b-d764-352d-1e74" id="a57e-a1db-f54a-e6fb" primary="true" name="Heavy Armour"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="fd54-e5b7-d984-ee29" primary="false" name="Vehicle (2)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="dc0c-6c79-b20f-9584" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Glaive" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="1ba8-1814-13ef-5899">
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+4</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Sponson Quad Mounts" hidden="false" id="f9fd-110c-8b5c-c739" type="selectionEntryGroup" targetId="8ed8-f774-6630-0835" sortIndex="3"/>
+        <entryLink import="true" name="Hull Mounted heavy bolters" hidden="false" id="d744-df5e-22d7-adcc" type="selectionEntry" targetId="1f76-0c4b-510c-0f18" sortIndex="2"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Volkite Carronade" hidden="false" id="db1a-5df9-ce8d-2949" sortIndex="1">
+          <profiles>
+            <profile name="Volkite Carronade" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="4553-d4fe-2c3e-1593">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">18&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Beam, Light AT, Deflagrate</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7355-ccd2-9d4e-8555"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="333a-1bb1-f7bd-db3d"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Arc (Front/Rear)" id="0c1a-04dc-bdaf-f073" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+              <modifiers>
+                <modifier type="set" value="Arc (Front)" field="name"/>
+              </modifiers>
+              <comment>This will turn up in the errata</comment>
+            </infoLink>
+            <infoLink name="Light AT" id="9d9c-6cd5-f651-8851" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+            <infoLink name="Beam" id="6f9b-4964-18e2-d18f" hidden="false" type="rule" targetId="2176-feaf-f8c2-f95a"/>
+            <infoLink name="Deflagrate" id="9ae0-8be2-f8eb-c757" hidden="false" type="rule" targetId="711e-2910-b797-71a8"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Glaive Squadron" hidden="false" id="bf78-2963-5e1b-2191" publicationId="a8b9-3a4f-e0a6-825c">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="110"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Glaive" hidden="false" id="f188-18dc-9688-1404" type="selectionEntry" targetId="e6fe-da8d-4a60-7326">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c44-c126-3b1a-03dc"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1079-4474-3f4b-a859"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="100" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="200" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="290" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="1f6b-d764-352d-1e74" id="26a9-49ff-be21-85e5" primary="true" name="Heavy Armour"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="7b7a-5ade-4bee-efb8" primary="false" name="Vehicle (2)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="dc8c-9f9f-9975-7224" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Fellblade" hidden="false" id="972b-0236-4d65-f9e6" publicationId="a8b9-3a4f-e0a6-825c">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1f6b-d764-352d-1e74" id="401a-5807-7902-49a0" primary="true" name="Heavy Armour"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="aa60-ba66-a017-b9ef" primary="false" name="Vehicle (2)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="1979-8d88-e4a3-bbcb" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Fellblade" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="06b3-736b-99a4-0d5f">
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+4</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Sponson Quad Mounts" hidden="false" id="2775-343d-a8b8-ae27" type="selectionEntryGroup" targetId="8ed8-f774-6630-0835" sortIndex="4"/>
+        <entryLink import="true" name="Pintle Mounted Weapons" hidden="false" id="eccd-ff15-8a73-417b" type="selectionEntryGroup" targetId="63d6-e023-5744-efec" sortIndex="5"/>
+        <entryLink import="true" name="Hull Mounted heavy bolters" hidden="false" id="2703-1af6-9946-6362" type="selectionEntry" targetId="1f76-0c4b-510c-0f18" sortIndex="3"/>
+        <entryLink import="true" name="Hull Mounted demolisher cannon" hidden="false" id="4085-4d88-dd4e-f075" type="selectionEntry" targetId="17a5-4e29-3536-4c6d" sortIndex="2"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fellblade accelerator cannon" hidden="false" id="f24e-d3ac-5944-38c4" sortIndex="1">
+          <profiles>
+            <profile name="Fellblade accelerator cannon - Antipersonnel" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="a42a-5a64-b152-178c">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">30&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Fellblade accelerator cannon - Antitank" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f8f4-a524-7674-037f">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">25&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Armourbane</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="90d1-8fb1-a05c-2ebf"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dedb-938b-a52f-7861"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Light AT" id="bc48-6617-3dbb-fedc" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+            <infoLink name="Anti-tank" id="c5be-2407-25c9-8798" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+            <infoLink name="Armourbane" id="3790-e0d3-0768-cb80" hidden="false" type="rule" targetId="e2f7-4ff5-3f66-fed5"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hull Mounted demolisher cannon" hidden="false" id="17a5-4e29-3536-4c6d">
+      <profiles>
+        <profile name="Hull Mounted demolisher cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="b696-b07d-4030-dd2b">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">12&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher, Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Arc (Front/Rear)" id="ba8b-9f8d-a2d0-bcfe" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+          <modifiers>
+            <modifier type="set" value="Arc (Front)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Demolisher" id="0193-25fc-fc4f-7920" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
+        <infoLink name="Ignores Cover" id="c7f4-aaea-25f0-890f" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64ef-2a25-68b2-117a" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cc6-f421-05cd-57c7" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Fellblade Squadron" hidden="false" id="6049-155d-4835-fbe2" publicationId="a8b9-3a4f-e0a6-825c">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="129"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Fellblade" hidden="false" id="ed53-3dc5-d70f-1fe0" type="selectionEntry" targetId="972b-0236-4d65-f9e6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="577c-9669-2954-dbff"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="38ff-3386-f6f0-0ae9"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="110" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="220" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="320" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="1f6b-d764-352d-1e74" id="4931-396a-2c9f-f9cb" primary="true" name="Heavy Armour"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="7255-6912-c3ac-81ed" primary="false" name="Vehicle (2)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="9999-7eff-9c96-8284" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <forceEntries>
     <forceEntry name="Legion Demi-Company" hidden="false" id="6cda-5812-cf52-3fee">
@@ -11613,6 +11897,8 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
     <entryLink import="true" name="Legion Tactical Strike Force" hidden="false" id="7fe6-dbb1-4ace-efa8" type="selectionEntry" targetId="97e1-11d4-b310-e512"/>
     <entryLink import="true" name="Legion Tactical Strike Force" hidden="false" id="bf63-11ac-d3b7-804d" type="selectionEntry" targetId="3e60-ff62-9318-c23b"/>
     <entryLink import="true" name="Legion Falchion Squadron" hidden="false" id="c527-67fb-e6a1-8a6f" type="selectionEntry" targetId="b71d-999a-c21b-0175"/>
+    <entryLink import="true" name="Legion Ascalon Squadron" hidden="false" id="205b-7c79-7254-62e8" type="selectionEntry" targetId="dd0a-d843-6def-b05b"/>
+    <entryLink import="true" name="Legion Glaive Squadron" hidden="false" id="6b94-627c-6513-4258" type="selectionEntry" targetId="bf78-2963-5e1b-2191"/>
   </entryLinks>
   <sharedRules>
     <rule name="Backbone of the Legion" id="1ec9-dfb9-b3df-4ed3" hidden="false" publicationId="5364-464c-3309-a620">
