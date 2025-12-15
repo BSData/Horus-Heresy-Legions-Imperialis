@@ -5034,6 +5034,7 @@
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink name="Vehicle (2)" hidden="false" id="527-ea4a-ada5-6597" targetId="49b3-dae7-33f8-f8e" primary="false"/>
+            <categoryLink targetId="1f6b-d764-352d-1e74" id="593b-5ba7-50ab-b6ed" primary="false" name="Heavy Armour"/>
           </categoryLinks>
           <costs>
             <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
@@ -10396,6 +10397,120 @@
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sponson Mounted quad heavy bolters" hidden="false" id="ad4a-d071-0b95-ebb1" collective="false">
+      <profiles>
+        <profile name="Sponson Mounted quad heavy bolters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d322-bcf5-d6aa-b629">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Light, Point Defence</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Arc (Front/Rear)" id="017d-14c0-8bcd-4775" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+          <modifiers>
+            <modifier type="set" value="Arc (Front)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Light" id="6af0-fee7-044e-6f40" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+        <infoLink name="Point Defence" id="8b2f-03a0-ad28-2fce" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Falchion" hidden="false" id="7c39-d83b-7807-cf6f" publicationId="a8b9-3a4f-e0a6-825c">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1f6b-d764-352d-1e74" id="e0e5-dd83-a6d1-4d65" primary="true" name="Heavy Armour"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="1349-0541-f10e-9284" primary="false" name="Vehicle (2)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="8df7-d972-4bea-1d16" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Falchion" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="04f0-6861-801e-da54">
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">8&quot;</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">2+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+4</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Sponson Quad Mounts" hidden="false" id="2557-d2b1-c649-6f08" type="selectionEntryGroup" targetId="8ed8-f774-6630-0835" sortIndex="2"/>
+        <entryLink import="true" name="Pintle Mounted Weapons" hidden="false" id="b42d-19b8-c152-14f4" type="selectionEntryGroup" targetId="63d6-e023-5744-efec" sortIndex="3"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Neutron Wave Cannon" hidden="false" id="c665-11d0-e2ea-7723" sortIndex="1">
+          <profiles>
+            <profile name="Neutron Wave Cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="5d58-0e5b-013c-14e8">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">30&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Accurate, Shock Pulse</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="023f-c6d3-3d42-7023-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="023f-c6d3-3d42-7023-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Accurate" id="31af-cddb-4391-2d40" hidden="false" type="rule" targetId="dc55-9f84-39e1-1e1e"/>
+            <infoLink name="Shock Pulse" id="9da5-85e9-3f6c-2d07" hidden="false" type="rule" targetId="495a-71fc-de48-96a"/>
+            <infoLink name="Arc (Front/Rear)" id="7145-d5f5-75a0-0417" hidden="false" type="rule" targetId="c48c-8f45-e290-9940">
+              <modifiers>
+                <modifier type="set" value="Arc (Front)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Falchion Squadron" hidden="false" id="b71d-999a-c21b-0175" publicationId="a8b9-3a4f-e0a6-825c">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="130"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Falchion" hidden="false" id="a7a4-a43c-2b91-b688" type="selectionEntry" targetId="7c39-d83b-7807-cf6f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e1f-1805-d744-60ae"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5da8-9f86-0af6-91fe"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="120" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="240" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="350" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="1f6b-d764-352d-1e74" id="cc5f-43fc-f47e-630a" primary="true" name="Heavy Armour"/>
+        <categoryLink targetId="49b3-dae7-33f8-f8e" id="f990-eeb7-8375-4e96" primary="false" name="Vehicle (2)"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="6ec3-caa6-6279-36ad" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <forceEntries>
     <forceEntry name="Legion Demi-Company" hidden="false" id="6cda-5812-cf52-3fee">
@@ -11110,6 +11225,26 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Pintle Mounted Weapons" id="63d6-e023-5744-efec" hidden="false" defaultSelectionEntryId="none">
+      <entryLinks>
+        <entryLink import="true" name="Pintle Mounted heavy bolter" hidden="false" id="18a4-617c-eec6-7ada" type="selectionEntry" targetId="9ce0-49ef-2fe6-4da3"/>
+        <entryLink import="true" name="Pintle Mounted multi-melta" hidden="false" id="ab89-193c-573f-cc2e" type="selectionEntry" targetId="b909-4970-be6d-3431"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d272-a1af-2044-d28b"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Sponson Quad Mounts" id="8ed8-f774-6630-0835" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Sponson Mounted quad heavy bolters" hidden="false" id="faa9-148c-3aaf-2a65" type="selectionEntry" targetId="ad4a-d071-0b95-ebb1" sortIndex="1"/>
+        <entryLink import="true" name="Sponson Mounted quad lascannon" hidden="false" id="085d-292b-28d9-26c3" type="selectionEntry" targetId="91e7-cf96-3085-d268" sortIndex="2"/>
+        <entryLink import="true" name="Sponson Mounted laser destroyers" hidden="false" id="0388-4166-48f6-d155" type="selectionEntry" targetId="28c6-aa97-f25b-778b" sortIndex="3"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ce1-da07-4bc5-3cf7-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ce1-da07-4bc5-3cf7-max"/>
+      </constraints>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <categoryEntries>
     <categoryEntry name="Legiones Astartes" hidden="false" id="7d0c-e5ec-a086-98a4"/>
@@ -11477,6 +11612,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
     <entryLink import="true" name="Alpha Legion Harrow Group Arcadus" hidden="false" id="7253-cb3b-d862-278d" type="selectionEntry" targetId="1857-ae3e-b42f-1140"/>
     <entryLink import="true" name="Legion Tactical Strike Force" hidden="false" id="7fe6-dbb1-4ace-efa8" type="selectionEntry" targetId="97e1-11d4-b310-e512"/>
     <entryLink import="true" name="Legion Tactical Strike Force" hidden="false" id="bf63-11ac-d3b7-804d" type="selectionEntry" targetId="3e60-ff62-9318-c23b"/>
+    <entryLink import="true" name="Legion Falchion Squadron" hidden="false" id="c527-67fb-e6a1-8a6f" type="selectionEntry" targetId="b71d-999a-c21b-0175"/>
   </entryLinks>
   <sharedRules>
     <rule name="Backbone of the Legion" id="1ec9-dfb9-b3df-4ed3" hidden="false" publicationId="5364-464c-3309-a620">
