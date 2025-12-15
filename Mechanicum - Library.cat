@@ -2213,9 +2213,14 @@
                   </conditions>
                 </modifier>
                 <modifier type="set" value="4" field="e5bc-f0c3-6055-1b3a">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cfac-ce06-cbf6-cf7a" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cfac-ce06-cbf6-cf7a" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ec82-1c8f-b4ae-6744" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </entryLink>
