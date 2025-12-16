@@ -810,7 +810,7 @@ When one of more Hits are scored against a Detachment which contains one or more
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapons" id="a68c-3f86-1f32-d5d1" hidden="false">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Exo-planar repeaters" hidden="false" id="f24c-5e45-5542-e68f">
+                    <selectionEntry type="upgrade" import="true" name="Exo-planar repeaters" hidden="false" id="f24c-5e45-5542-e68f" sortIndex="1">
                       <profiles>
                         <profile name="Exo-planar repeaters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f109-44f4-459d-ec97">
                           <characteristics>
@@ -826,8 +826,12 @@ When one of more Hits are scored against a Detachment which contains one or more
                         <infoLink name="Light" id="81d7-c2d2-8a6b-faa9" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
                         <infoLink name="Shred" id="b56c-dff4-0fe7-0a2b" hidden="false" type="rule" targetId="f9ba-cb09-cf28-f93b"/>
                       </infoLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f04-dd71-878a-4c43-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f04-dd71-878a-4c43-max"/>
+                      </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Harpax lascutters" hidden="false" id="27ba-aff4-db28-c9f0">
+                    <selectionEntry type="upgrade" import="true" name="Harpax lascutters" hidden="false" id="27ba-aff4-db28-c9f0" sortIndex="2">
                       <profiles>
                         <profile name="Harpax lascutters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="baff-e28b-0d8a-def1">
                           <characteristics>
@@ -843,12 +847,12 @@ When one of more Hits are scored against a Detachment which contains one or more
                         <infoLink name="Anti-tank" id="1b11-ef82-347d-c418" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
                         <infoLink name="Bunker Buster" id="97e8-d3a4-15f1-0951" hidden="false" type="rule" targetId="7543-9f13-322f-a481"/>
                       </infoLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d47c-1aee-09d6-4912-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d47c-1aee-09d6-4912-max"/>
+                      </constraints>
                     </selectionEntry>
                   </selectionEntries>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58b5-c7db-b4b3-5fdc" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdb1-fea9-7011-62c6" includeChildSelections="false"/>
-                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <infoLinks>
