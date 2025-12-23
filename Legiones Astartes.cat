@@ -10835,6 +10835,202 @@
         <categoryLink targetId="7d0c-e5ec-a086-98a4" id="9999-7eff-9c96-8284" primary="false" name="Legiones Astartes"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Saturnine Dreadnought w/Heavy plasma bombard" hidden="false" id="b97b-59a6-b8f0-f573" publicationId="a8b9-3a4f-e0a6-825c">
+      <categoryLinks>
+        <categoryLink targetId="2005-60e5-e49d-32f2" id="7b4f-cb7b-d8cc-d8ff" primary="true" name="Bastion"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="aa43-7031-654c-0788" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="9bb8-6532-d477-2978" primary="false" name="Walker (1)"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Armoured" id="d765-98ff-2e02-5316" hidden="false" type="rule" targetId="665b-47e2-df00-2629"/>
+        <infoLink name="Invulnerable Save (X)" id="44b2-70b8-fe8c-3304" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
+          <modifiers>
+            <modifier type="set" value="Invulnerable Save (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Saturnine Dreadnought" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="35dc-cc50-9d49-1efe">
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">5&quot;</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Heavy plasma bombard" hidden="false" id="4e67-4ebf-301b-6aac">
+          <profiles>
+            <profile name="Heavy plasma bombard" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="1662-b6a9-dea0-fb25">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Barrage, Light AT</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Barrage" id="7ee2-6de6-1d50-e5c7" hidden="false" type="rule" targetId="862d-b036-2018-dbaf"/>
+            <infoLink name="Light AT" id="6625-418c-bfcf-5d41" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b835-beb0-cde0-4a25-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b835-beb0-cde0-4a25-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Inversion beamer" hidden="false" id="30a8-5152-731e-8175">
+          <profiles>
+            <profile name="Inversion beamer - short" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="a819-5295-b3e4-962d">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af"/>
+              </characteristics>
+            </profile>
+            <profile name="Inversion beamer - long" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="795e-b671-e000-4acf">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88e7-9e94-dcde-e892-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88e7-9e94-dcde-e892-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Saturnine Dreadnought w/Graviton pulveriser" hidden="false" id="e2bb-303b-d055-a96a" publicationId="a8b9-3a4f-e0a6-825c">
+      <categoryLinks>
+        <categoryLink targetId="2005-60e5-e49d-32f2" id="ecdd-0ac9-a6dd-fff6" primary="true" name="Bastion"/>
+        <categoryLink targetId="7d0c-e5ec-a086-98a4" id="ce8e-e599-b3da-6e27" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="1a2a-6f7d-dff8-8be1" id="7269-26d6-c12c-fa9b" primary="false" name="Walker (1)"/>
+      </categoryLinks>
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Armoured" id="c539-b287-6476-d531" hidden="false" type="rule" targetId="665b-47e2-df00-2629"/>
+        <infoLink name="Invulnerable Save (X)" id="de19-e328-623e-84a0" hidden="false" type="rule" targetId="49e7-280c-c388-60ba">
+          <modifiers>
+            <modifier type="set" value="Invulnerable Save (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Saturnine Dreadnought" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="1269-b64b-ee52-1794">
+          <characteristics>
+            <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">5&quot;</characteristic>
+            <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">4+</characteristic>
+            <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+2</characteristic>
+            <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">3+</characteristic>
+            <characteristic name="W" typeId="b00f-3f1c-eb63-461a">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Disintegrator cannon" hidden="false" id="f46c-b1ad-df46-eb07">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9be0-ab35-faf1-0c1e-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9be0-ab35-faf1-0c1e-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Disintegrator cannon" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="dc35-bea1-d6e3-585f">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Power Capacitor</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Power Capacitor" id="629f-e4d4-2bbe-e5b1" hidden="false" type="rule" targetId="c37e-b39-44a2-93c0"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Graviton pulveriser" hidden="false" id="5d32-1c92-3df1-8871">
+          <profiles>
+            <profile name="Graviton pulveriser" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="7d41-f506-14a1-45a9">
+              <characteristics>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
+                <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Graviton Pulse</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Graviton Pulse" id="21a6-79f5-f6ab-4e55" hidden="false" type="rule" targetId="5c36-e0d9-ba67-8110"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fae4-6e6d-25e1-f9e9-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fae4-6e6d-25e1-f9e9-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Saturnine Dreadnought Detachment" hidden="false" id="bd73-2553-92f7-a505" publicationId="a8b9-3a4f-e0a6-825c">
+      <costs>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="70"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+        <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Dreadnoughts" id="4680-47cb-b52c-b8a9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Saturnine Dreadnought w/Graviton pulveriser" hidden="false" id="4293-a3c1-4259-ee07" type="selectionEntry" targetId="e2bb-303b-d055-a96a"/>
+            <entryLink import="true" name="Saturnine Dreadnought w/Heavy plasma bombard" hidden="false" id="804f-a06a-3a5c-8f15" type="selectionEntry" targetId="b97b-59a6-b8f0-f573"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7aa9-5df6-ac08-5ae4"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8d39-9a2f-2e54-4a2d"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="4" field="7aa9-5df6-ac08-5ae4">
+              <conditions>
+                <condition type="atLeast" value="3" field="selections" scope="parent" childId="model" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6" field="7aa9-5df6-ac08-5ae4">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="parent" childId="model" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="increment" value="65" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="55" field="ee95-a20e-f9ff-e2c2">
+          <conditions>
+            <condition type="atLeast" value="5" field="selections" scope="self" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <forceEntries>
     <forceEntry name="Legion Demi-Company" hidden="false" id="6cda-5812-cf52-3fee">
@@ -11953,6 +12149,15 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
     </entryLink>
     <entryLink import="true" name="Legion Glaive Squadron" hidden="false" id="6b94-627c-6513-4258" type="selectionEntry" targetId="bf78-2963-5e1b-2191"/>
     <entryLink import="true" name="Legion Fellblade Squadron" hidden="false" id="e522-075a-5c4f-8ca5" type="selectionEntry" targetId="6049-155d-4835-fbe2"/>
+    <entryLink import="true" name="Legion Saturnine Dreadnought Detachment" hidden="false" id="93fc-9fe1-944c-079b" type="selectionEntry" targetId="bd73-2553-92f7-a505">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="6e9c-260f-abd6-7f8e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedRules>
     <rule name="Backbone of the Legion" id="1ec9-dfb9-b3df-4ed3" hidden="false" publicationId="5364-464c-3309-a620">
