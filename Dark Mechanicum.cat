@@ -866,8 +866,8 @@ When one of more Hits are scored against a Detachment which contains one or more
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f00-c4d9-c4af-2e1d" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55b6-c4d6-fd32-071b" includeChildSelections="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4f00-c4d9-c4af-2e1d" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="55b6-c4d6-fd32-071b" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
