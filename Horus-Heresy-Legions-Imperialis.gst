@@ -9,6 +9,7 @@
     <publication name="Rise of the Dark Mechanicum" id="89ae-8b6d-da44-733f" hidden="false" shortName="RDM" publicationDate="2024"/>
     <publication name="Bonded Cybernetica Support Formations" id="3a86-b962-115c-2239" hidden="false" publisherUrl="https://assets.warhammer-community.com/legions_imperialis_expandedcyberneticaformations_eng_07-mdsmqowyoy-tu5prvasqe.pdf" shortName="BC" publicationDate="2024"/>
     <publication name="Liber Strategica" id="5364-464c-3309-a620" hidden="false" shortName="LS" publicationDate="2025"/>
+    <publication name="Journal Strategia: The Ruins of the Salamanders" id="a8b9-3a4f-e0a6-825c" hidden="false" shortName="The Ruins of the Salamanders" publicationDate="2025"/>
   </publications>
   <costTypes>
     <costType id="ee95-a20e-f9ff-e2c2" name="‏‏‎‏points" defaultCostLimit="3000" hidden="false"/>
@@ -167,11 +168,15 @@
     </rule>
     <rule id="c48c-8f45-e290-9940" name="Arc (Front/Rear)" publicationId="c1b8-2180-635c-14cd" hidden="false" page="77">
       <description>A weapon with the Arc (Front/Rear) trait may only target Detachments that are within the specified Arc, shown in brackets, of the firing model.</description>
+      <alias>Arc (Front)</alias>
+      <alias>Arc (Rear)</alias>
     </rule>
     <rule id="7e4c-2264-79e3-9054" name="Engine Killer (X)" publicationId="559c-6588-c3b1-b0e5" hidden="false" page="1">
       <description>When a Vehicle, Super-heavy Vehicle, Knight or Titan suffers a Wound caused by a weapon with the Engine Killer (X) trait, they suffer a number of additional Wounds equal to the number shown in brackets. No Save rolls of any kind can be made against these additional Wounds. Note, only the model that suffered the first Wound suffers the additional Wounds; if this Wound causes to be destroyed, the additional Wounds cannot be assigned to another model within the Detachment.
 
 If a weapon has the Engine Killer (X) trait and the Rend trait, enemy Vehicles, Super-heavy Vehicles, Knights and Titans suffer a number of additional Wounds equal to the number shown in brackets if they lose a Fight against the model that has that weapon.</description>
+      <alias>Engine Killer (1)</alias>
+      <alias>Engine Killer (2)</alias>
     </rule>
     <rule id="4f6f-3184-9172-ef3f" name="Light" publicationId="c1b8-2180-635c-14cd" hidden="false" page="82">
       <description>Hits scored by a weapon with the Light trait against a Vehicle, Super-heavy Vehicle, Knight or Titan model are automatically discarded, before any Save rolls are made. In other words, a weapon with this Trait cannot damage models from the listed Detachment types.
@@ -200,6 +205,8 @@ special rule.</description>
     </rule>
     <rule id="49e7-280c-c388-60ba" name="Invulnerable Save (X)" publicationId="c1b8-2180-635c-14cd" hidden="false" page="92">
       <description>A model with the Invulnerable Save (X) special rule gains an additional Save characteristic equal to the number shown in brackets, referred to as an Invulnerable Save. Invulnerable Saves are not modified by a weapon&apos;s AP characteristic.</description>
+      <alias>Invulnerable Save (6+)</alias>
+      <alias>Invulnerable Save (5+)</alias>
     </rule>
     <rule id="b98c-611f-b469-44a5" name="Steadfast" publicationId="c1b8-2180-635c-14cd" hidden="false" page="96">
       <description>A model with the Steadfast special rule counts its Tactical Strength as one higher than normal (e.g., an Infantry model with the Steadfast special rule would have a Tactical Strength of 6). This rule is cumulative with other special rules.</description>
@@ -301,6 +308,8 @@ If a weapon has the Blast trait and the Skyfire trait, the template only hits mo
 If a Detachment is firing other weapons, then the Blast template must be placed so that at least one model from a Detachment chosen as a target by the other weapons is under the template. If a Detachment contains multiple models with weapons with the Blast trait, then place a single template first and scatter it; any additional templates must be placed so the central hole is within 2&quot; of the first Blast template.
 
 Weapons with the Blast trait cannot be fired as part of an Overwatch.</description>
+      <alias>Blast (3&quot;)</alias>
+      <alias>Blast (5&quot;)</alias>
     </rule>
     <rule id="c99-f84f-dc32-b886" name="Bombing Run" publicationId="c1b8-2180-635c-14cd" hidden="false" page="79">
       <description>Weapons with the Bombing Run trait do not as normal. Instead, at any point during a model&apos;s move it may pause its movement to attack with any weapons it has that have the Bombing Run trait, following the normal firing sequence. A model firing a weapon with the Bombing Run trait can only target a Detachment or Structure within 3&quot; of it. Each of a model&apos;s Bombing Run weapons can only be fired once per round. Models with the Flyer special rule cannot be chosen as targets by a weapon with the Bombing Run trait.
@@ -364,6 +373,8 @@ If the result of the firing player&apos;s roll is higher than the target player&
     </rule>
     <rule id="769e-4f43-51b0-537f" name="Limited (X)" publicationId="c1b8-2180-635c-14cd" hidden="false" page="82">
       <description>Some weapons can only carry a limited amount of ammunition into battle or are difficult to resupply on the move. A weapon with the Limited trait can only be fired a number of times equal to the number shown in brackets; each time the weapon is fired, decrease that number by 1. When the number reaches 0, the weapon cannot be fired again for the remainder of the battle.</description>
+      <alias>Limited (1)</alias>
+      <alias>Limited (2)</alias>
     </rule>
     <rule id="1f00-9315-8e4-9e22" name="Neutron-flux" publicationId="c1b8-2180-635c-14cd" hidden="false" page="82">
       <description>Any Hits scored by a weapon with the Neutron-flux trait against a model with the Cybernetic Cortex special rule count as having the Armourbane and Shred traits.</description>
@@ -651,6 +662,12 @@ During the End phase, in the Resolve End Phase Effects stage, a model with the V
 If a Detachment contains more than one model with this rule, the controlling player can choose which models detonate and which do not, doing so before resolving any detonation. Models that detonate are not affected by friendly models that are detonating at the same time. Any model that does not detonate is affected if it is under the Blast template as normal.
 
 In addition, models with the Remote Controlled Detonation special rule are ignored for the purposes of calculating a Formation&apos;s Break Point.</description>
+    </rule>
+    <rule name="Very Bulky" id="2769-e805-03dc-a24c" hidden="false" publicationId="a8b9-3a4f-e0a6-825c">
+      <description>Models with the Very Bulky special rule can only Embark on a model with either the Large Transport (X) or Large Assault Transport (X) special rules. In addition, models with the Very Bulky special rule count as two models for the purposes of determining how many models a Transport can carry.</description>
+    </rule>
+    <rule name="Disruptive" id="10dc-c17f-44a1-e8c2" hidden="false">
+      <description>If a model using a weapon with the Disruptive trait wins a Fight, if the difference between the results is 4 or more, the losing models suffers two Wounds instead of one.</description>
     </rule>
   </sharedRules>
   <selectionEntries>
