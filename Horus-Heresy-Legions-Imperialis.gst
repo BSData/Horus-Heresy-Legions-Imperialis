@@ -666,6 +666,9 @@ In addition, models with the Remote Controlled Detonation special rule are ignor
     <rule name="Very Bulky" id="2769-e805-03dc-a24c" hidden="false" publicationId="a8b9-3a4f-e0a6-825c">
       <description>Models with the Very Bulky special rule can only Embark on a model with either the Large Transport (X) or Large Assault Transport (X) special rules. In addition, models with the Very Bulky special rule count as two models for the purposes of determining how many models a Transport can carry.</description>
     </rule>
+    <rule name="Disruptive" id="10dc-c17f-44a1-e8c2" hidden="false">
+      <description>If a model using a weapon with the Disruptive trait wins a Fight, if the difference between the results is 4 or more, the losing models suffers two Wounds instead of one.</description>
+    </rule>
   </sharedRules>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Allegiance" hidden="false" id="f8d9-a843-d300-1a63">
