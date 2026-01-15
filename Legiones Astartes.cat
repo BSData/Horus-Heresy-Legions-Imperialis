@@ -10398,11 +10398,6 @@
           </modifiers>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Saturnine Dreadnought w/ Graviton pulveriser" hidden="false" id="e2bb-303b-d055-a96a" publicationId="a8b9-3a4f-e0a6-825c">
-              <categoryLinks>
-                <categoryLink name="Bastion" hidden="false" id="ecdd-0ac9-a6dd-fff6" targetId="2005-60e5-e49d-32f2" primary="true"/>
-                <categoryLink name="Legiones Astartes" hidden="false" id="ce8e-e599-b3da-6e27" targetId="7d0c-e5ec-a086-98a4" primary="false"/>
-                <categoryLink name="Walker (1)" hidden="false" id="7269-26d6-c12c-fa9b" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
@@ -10465,13 +10460,11 @@
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="edb1-b059-b784-eb62" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Saturnine Dreadnought w/ Heavy plasma bombard" hidden="false" id="b97b-59a6-b8f0-f573" publicationId="a8b9-3a4f-e0a6-825c">
-              <categoryLinks>
-                <categoryLink name="Bastion" hidden="false" id="7b4f-cb7b-d8cc-d8ff" targetId="2005-60e5-e49d-32f2" primary="true"/>
-                <categoryLink name="Legiones Astartes" hidden="false" id="aa43-7031-654c-0788" targetId="7d0c-e5ec-a086-98a4" primary="false"/>
-                <categoryLink name="Walker (1)" hidden="false" id="9bb8-6532-d477-2978" targetId="1a2a-6f7d-dff8-8be1" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
                 <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
@@ -10490,6 +10483,9 @@
                 <entryLink targetId="4e67-4ebf-301b-6aac" id="1321-f019-ede4-549f" type="selectionEntry" name="Heavy plasma bombard" hidden="false"/>
                 <entryLink targetId="f46c-b1ad-df46-eb07" id="5cb7-387e-4350-8f9e" type="selectionEntry" name="Disintegrator cannon" hidden="false"/>
               </entryLinks>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5976-5f78-2e80-5729" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -12156,7 +12152,7 @@
         <infoLink name="Overwhelming Destruction" id="bdd0-f523-2aa8-8620" hidden="false" type="rule" targetId="8ba0-513c-b649-5d14"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fellblade accelerator cannon" hidden="false" id="f24e-d3ac-5944-38c4" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Fellblade accelerator cannon" hidden="false" id="f24e-d3ac-5944-38c4">
       <profiles>
         <profile name="Fellblade accelerator cannon - profile 1" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="a42a-5a64-b152-178c">
           <characteristics>
