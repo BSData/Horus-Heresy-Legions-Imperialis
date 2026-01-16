@@ -10353,7 +10353,12 @@
             <entryLink targetId="f24e-d3ac-5944-38c4" id="70bc-170e-2d58-ef0f" type="selectionEntry" name="Fellblade accelerator cannon" hidden="false"/>
             <entryLink import="true" name="Sponson Quad Mounts" hidden="false" id="2775-343d-a8b8-ae27" type="selectionEntryGroup" targetId="8ed8-f774-6630-0835"/>
             <entryLink import="true" name="Pintle Mounted Weapons" hidden="false" id="eccd-ff15-8a73-417b" type="selectionEntryGroup" targetId="63d6-e023-5744-efec"/>
-            <entryLink import="true" name="Hull Mounted heavy bolters" hidden="false" id="2703-1af6-9946-6362" type="selectionEntry" targetId="1f76-0c4b-510c-0f18"/>
+            <entryLink import="true" name="Hull Mounted heavy bolters" hidden="false" id="2703-1af6-9946-6362" type="selectionEntry" targetId="1f76-0c4b-510c-0f18">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9748-4bbd-08f3-0be5-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9748-4bbd-08f3-0be5-max"/>
+              </constraints>
+            </entryLink>
             <entryLink import="true" name="Hull Mounted demolisher cannon" hidden="false" id="4085-4d88-dd4e-f075" type="selectionEntry" targetId="17a5-4e29-3536-4c6d"/>
             <entryLink import="true" name="Crushing treads" hidden="false" id="192b-7d74-0aa7-861d" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb">
               <constraints>
