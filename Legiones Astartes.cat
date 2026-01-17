@@ -11964,7 +11964,12 @@
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Fellblade accelerator cannon" hidden="false" id="3a06-bad9-6329-eaef" targetId="f24e-d3ac-5944-38c4" type="selectionEntry"/>
-                <entryLink import="true" name="Hull Mounted heavy bolters" hidden="false" id="2428-9014-8ff5-59a0" type="selectionEntry" targetId="1f76-0c4b-510c-0f18"/>
+                <entryLink import="true" name="Hull Mounted heavy bolters" hidden="false" id="2428-9014-8ff5-59a0" type="selectionEntry" targetId="1f76-0c4b-510c-0f18">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0cf8-2c14-077f-ac83" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b57c-57d2-4440-d81c" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Hull Mounted demolisher cannon" hidden="false" id="dd6f-c02f-a58e-bfd9" type="selectionEntry" targetId="17a5-4e29-3536-4c6d"/>
                 <entryLink import="true" name="Sponson Mounted quad lascannon" hidden="false" id="37f2-3671-a6f3-01ca" type="selectionEntry" targetId="91e7-cf96-3085-d268">
                   <constraints>
