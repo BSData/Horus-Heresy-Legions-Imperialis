@@ -5065,12 +5065,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dada-6637-b234-ff6c" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Crushing treads" hidden="false" id="f084-e67f-d543-03f8" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c97-b2d0-f004-74dd" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a65d-38aa-cde7-43ed" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Crushing treads" hidden="false" id="f084-e67f-d543-03f8" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Legion Kratos" id="6534-9ced-8eb9-29f4" hidden="false" type="profile" targetId="91a8-1e2e-9a67-e060"/>
@@ -5291,12 +5286,7 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Crushing treads" hidden="false" id="54a0-c090-a161-31b2" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c66d-d00c-a87e-c406" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1eb-0ec5-ba7d-4329" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Crushing treads" hidden="false" id="54a0-c090-a161-31b2" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -5358,12 +5348,7 @@
           </selectionEntryGroups>
           <entryLinks>
             <entryLink targetId="0d36-c1b9-82cd-667c" id="e590-515f-44e3-17b6" type="selectionEntry" name="Hull Mounted dreadhammer siege cannon" hidden="false"/>
-            <entryLink import="true" name="Crushing treads" hidden="false" id="7d5e-6183-086c-09cb" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1383-c43c-57ba-bd89" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bfe-1f85-3950-c342" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Crushing treads" hidden="false" id="7d5e-6183-086c-09cb" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb"/>
           </entryLinks>
           <infoLinks>
             <infoLink targetId="b952-5f6a-88da-093b" id="2d7d-f5fc-047e-eed9" type="profile" name="Typhon" hidden="false"/>
@@ -5460,12 +5445,7 @@
             <entryLink targetId="68da-99b4-b447-ba12" id="75fc-749d-89eb-9ffc" type="selectionEntry" name="Sponson Mounted heavy flamers" hidden="false"/>
             <entryLink targetId="f6a2-9421-72a7-684f" id="39f7-e76b-6f25-133c" type="selectionEntry" name="Skyreaper battery" hidden="false"/>
             <entryLink targetId="af17-adec-33bd-a5fa" id="efcd-de0a-93fa-fff3" type="selectionEntry" name="Siege melta array" hidden="false"/>
-            <entryLink import="true" name="Crushing treads" hidden="false" id="2079-18cb-5648-9c7c" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ca1-2586-c71f-5f01" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1134-8dd1-493a-b9a2" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Crushing treads" hidden="false" id="2079-18cb-5648-9c7c" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -10089,12 +10069,7 @@
             <entryLink targetId="c665-11d0-e2ea-7723" id="de7f-6c47-3ce0-b60b" type="selectionEntry" name="Neutron Wave Cannon" hidden="false"/>
             <entryLink import="true" name="Sponson Quad Mounts" hidden="false" id="2557-d2b1-c649-6f08" type="selectionEntryGroup" targetId="8ed8-f774-6630-0835"/>
             <entryLink import="true" name="Pintle Mounted Weapons" hidden="false" id="b42d-19b8-c152-14f4" type="selectionEntryGroup" targetId="63d6-e023-5744-efec"/>
-            <entryLink import="true" name="Crushing treads" hidden="false" id="1625-3625-d61e-2fed" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53d2-daff-de38-4e8f" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f91-2064-f718-280b" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Crushing treads" hidden="false" id="1625-3625-d61e-2fed" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e1f-1805-d744-60ae"/>
@@ -10165,12 +10140,7 @@
           <entryLinks>
             <entryLink import="true" name="Sponson Quad Mounts" hidden="false" id="7c0b-b03e-4f85-58a4" type="selectionEntryGroup" targetId="8ed8-f774-6630-0835" sortIndex="2"/>
             <entryLink import="true" name="Pintle Mounted Weapons" hidden="false" id="0e99-a691-e880-db21" type="selectionEntryGroup" targetId="63d6-e023-5744-efec" sortIndex="3"/>
-            <entryLink import="true" name="Crushing treads" hidden="false" id="2416-d84a-4e13-4fcd" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e94d-adfd-5f4c-1473" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60e1-4cce-f79d-d4ab" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Crushing treads" hidden="false" id="2416-d84a-4e13-4fcd" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Ascalon inferno gun" hidden="false" id="8c83-68b0-533b-bbc5" sortIndex="1">
@@ -10261,12 +10231,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="582d-a792-f77e-956a" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Crushing treads" hidden="false" id="37c8-7fb9-3c0a-b3f9" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d02-dcde-909f-7319" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8cf-ab7f-4df5-c8c0" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Crushing treads" hidden="false" id="37c8-7fb9-3c0a-b3f9" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c44-c126-3b1a-03dc"/>
@@ -10360,12 +10325,7 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Hull Mounted demolisher cannon" hidden="false" id="4085-4d88-dd4e-f075" type="selectionEntry" targetId="17a5-4e29-3536-4c6d"/>
-            <entryLink import="true" name="Crushing treads" hidden="false" id="192b-7d74-0aa7-861d" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e61-b5ac-d998-a9c5" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77a2-eae2-f04d-7dd4" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Crushing treads" hidden="false" id="192b-7d74-0aa7-861d" type="selectionEntry" targetId="4b65-ec10-d3bc-4bdb"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="577c-9669-2954-dbff"/>
@@ -11137,8 +11097,22 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="1" field="05cb-d2a3-b4ab-8b0e">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ecc8-1310-e41e-d615" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="2" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <comment>Legion Super-heavy Spearhead bonus weapon</comment>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="05cb-d2a3-b4ab-8b0e" includeChildSelections="false" automatic="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7b7-85e1-4175-bd4c" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Saturnine Excubitor Cadre" hidden="false" id="7ac0-2847-f632-7ed8" subType="unit-group" publicationId="e4cc-404e-be5e-2101" page="94">
       <comment>Standard</comment>
