@@ -5022,10 +5022,6 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink name="Vehicle (2)" hidden="false" id="527-ea4a-ada5-6597" targetId="49b3-dae7-33f8-f8e" primary="false"/>
-            <categoryLink targetId="1f6b-d764-352d-1e74" id="593b-5ba7-50ab-b6ed" primary="false" name="Heavy Armour"/>
-          </categoryLinks>
           <costs>
             <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
             <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
