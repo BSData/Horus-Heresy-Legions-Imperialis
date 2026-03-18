@@ -12067,6 +12067,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="54ab-4c5e-2a18-3b49" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="7737-7355-cdf5-cec9" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="7237-4410-4b13-3972" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -12110,6 +12111,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="1a2a-6f7d-dff8-8be1" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="7737-7355-cdf5-cec9" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="7237-4410-4b13-3972" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
