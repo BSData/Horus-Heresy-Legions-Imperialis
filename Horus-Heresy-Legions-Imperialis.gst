@@ -119,6 +119,15 @@
       <comment>detachment role</comment>
     </categoryEntry>
     <categoryEntry name="Support Formations" id="8948-fa38-100b-2852" hidden="true"/>
+    <categoryEntry name="Deep Strike" id="5e67-de45-9a2d-8c63" hidden="true">
+      <comment>Dedicated Transport logic tracker</comment>
+    </categoryEntry>
+    <categoryEntry name="Very Bulky" id="7737-7355-cdf5-cec9" hidden="true">
+      <comment>Dedicated Transport logic tracker</comment>
+    </categoryEntry>
+    <categoryEntry name="Bulky" id="a283-63b9-36f5-dc23" hidden="true">
+      <comment>Dedicated Transport logic tracker</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="49dd-d763-6836-b4f8" hidden="false" name="Unbound Formation (Open Play)">
@@ -281,6 +290,8 @@ Detachments with the Flyer and Hover special rules can be deployed on the battle
     </rule>
     <rule id="c101-1585-cef0-d31b" name="Large Assault Transport (X)" publicationId="c1b8-2180-635c-14cd" hidden="false" page="96">
       <description>Models with the Large Assault Transport (X) special rule follow all the rules for Large Transports, with the exception that Detachments Embarked within them may be issued an Advance Order, March Order or Charge Order.</description>
+      <alias>Large Assault Transport</alias>
+      <alias>Large Assault Transports</alias>
     </rule>
     <rule id="862d-b036-2018-dbaf" name="Barrage" publicationId="c1b8-2180-635c-14cd" hidden="false" page="78">
       <description>When firing a weapon with the Barrage trait, a model may target Detachments that it does not have line of sight to, as long as the target Detachment is in range and meets all other criteria for a valid target. Models firing against targets they cannot draw line of sight to suffer a -1 penalty to all Hit rolls.
@@ -511,10 +522,7 @@ Once deployed on the battlefield, models with the Drop Pod special rule do not n
 
 Many Detachments with the Drop Pod special rule also have the Transport (X) special rule. If another Detachment is loaded into the Transport Detachment during deployment, that Detachment is kept in Reserve alongside the Transport. When the Transport Detachment is set up via Deep Strike, the transported Detachment then immediately Disembarks and can then be activated as normal later in the phase.
 
-
-Models in a Detachment with this special rule have a
-Tactical Strength of 0 and this cannot be modified in
-any way.</description>
+Models in a Detachment with this special rule have a Tactical Strength of 0 and this cannot be modified in any way.</description>
     </rule>
     <rule id="9e10-bda9-5ee4-76ee" name="Explorator Adaptation" publicationId="c1b8-2180-635c-14cd" hidden="false" page="88">
       <description>Models with the Explorator Adaptation special rule gain a 6+ Invulnerable Save against Hits scored by a weapon with the Barrage or Blast trait.</description>
@@ -624,8 +632,7 @@ When a Skimmer Detachment makes a Pop-up attack, they remain at their elevated p
       <description>When a model with the Tracking Array special rule is issued with a First Fire Order, all of its weapons gain the Skyfire special rule if they do not already have it.</description>
     </rule>
     <rule id="b82-1269-e912-cb88" name="Transport (X)" publicationId="559c-6588-c3b1-b0e5" hidden="false" page="3">
-      <description>Models with the Transport (X) special rule can carry Detachments into battle - these models are referred to as Transports. Each model with this special rule may transport a maximum number of Infantry models equal to the value shown in brackets. When a model is within a Transport, place it to the side of the battlefield. Models can only Embark onto Transport Models from the
-same Army List.
+      <description>Models with the Transport (X) special rule can carry Detachments into battle - these models are referred to as Transports. Each model with this special rule may transport a maximum number of Infantry models equal to the value shown in brackets. When a model is within a Transport, place it to the side of the battlefield. Models can only Embark onto Transport Models from the same Army List.
 
 Models may start the battle deployed within a Transport. When deploying a Detachment which contains one or more models with the Transport (X) special rule, the controlling player may declare that it is transporting models - they state which models are Embarked on the Transport and place those to one side. All models Embarked within a Transport must be declared when it is deployed and all models within the same Detachment must be deployed in Transports if one model is, and all the chosen Transports must be part of the same Detachment.
 
@@ -634,12 +641,18 @@ When being issued an Order during the Order phase, a Detachment with the Transpo
 If part of a Detachment is Embarked upon a Transport and another part of it is not (e.g., due to the latter part&apos;s Transport being destroyed), the non-Embarked models maintain Coherency with the Transports.
 
 If a Transport is destroyed while transporting Detachments, make a Save roll for each model within it, using a Save characteristic of 4+, or the model&apos;s own Save characteristic if it is better. This Save roll is not modified by the AP of the weapon that destroyed the Transport. If the Save is failed, that model suffers a Wound. The models are then placed on the battlefield within 2&quot; of the destroyed Transport&apos;s location - if a model cannot be placed (due to enemy models&apos; Engagement Zones, Impassable terrain or not enough space, etc.), that model is destroyed. The models cannot be placed in Combat.</description>
+      <alias>Transport</alias>
+      <alias>Transports</alias>
     </rule>
     <rule id="7e43-609-d300-d807" name="Assault Transport (X)" publicationId="c1b8-2180-635c-14cd" hidden="false" page="96">
       <description>Models with the Assault Transport (X) special rule follow all the rules for Transports, with the exception they may transport Infantry models with the Bulky special rule. In addition, Detachments Embarked within them may be issued an Advance Order, March Order or Charge Order.</description>
+      <alias>Assault Transport</alias>
+      <alias>Assault Transports</alias>
     </rule>
     <rule id="d33b-3fa4-492e-6d3e" name="Large Transport (X)" publicationId="c1b8-2180-635c-14cd" hidden="false" page="96">
       <description>Models with the Large Transport (X) special rule follow all the rules for Transports, with the exception that they may transport Walkers, Infantry and models with the Bulky special rule. Each Walker model counts as two models for the purposes of determining how many models can Embark upon a Transport. In addition, Infantry models with the Bulky special rule take up one space within a Large Transport, not two.</description>
+      <alias>Large Transport</alias>
+      <alias>Large Transports</alias>
     </rule>
     <rule id="1ba2-160d-833a-2522" name="Traitor" publicationId="c1b8-2180-635c-14cd" hidden="false" page="97">
       <description>A Detachment with this special rule may only be included within an Army that has the Traitor Allegiance.</description>
