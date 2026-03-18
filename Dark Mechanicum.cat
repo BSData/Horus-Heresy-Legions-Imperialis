@@ -793,89 +793,6 @@ When one of more Hits are scored against a Detachment which contains one or more
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="2 Harpax models" hidden="false" id="9ba1-2652-2b65-a053" sortIndex="3">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Harpax" hidden="false" id="7cf5-33df-837e-0cfc">
-              <profiles>
-                <profile name="Harpax" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="7f08-d1b1-281c-aae4">
-                  <characteristics>
-                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
-                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">6+</characteristic>
-                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
-                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
-                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Weapons" id="a68c-3f86-1f32-d5d1" hidden="false">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Exo-planar repeaters" hidden="false" id="f24c-5e45-5542-e68f" sortIndex="1">
-                      <profiles>
-                        <profile name="Exo-planar repeaters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f109-44f4-459d-ec97">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Shred</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Light" id="81d7-c2d2-8a6b-faa9" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
-                        <infoLink name="Shred" id="b56c-dff4-0fe7-0a2b" hidden="false" type="rule" targetId="f9ba-cb09-cf28-f93b"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f04-dd71-878a-4c43-min"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f04-dd71-878a-4c43-max"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Harpax lascutters" hidden="false" id="27ba-aff4-db28-c9f0" sortIndex="2">
-                      <profiles>
-                        <profile name="Harpax lascutters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="baff-e28b-0d8a-def1">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">4&quot;</characteristic>
-                            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
-                            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Bunker Buster</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Anti-tank" id="1b11-ef82-347d-c418" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
-                        <infoLink name="Bunker Buster" id="97e8-d3a4-15f1-0951" hidden="false" type="rule" targetId="7543-9f13-322f-a481"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d47c-1aee-09d6-4912-min"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d47c-1aee-09d6-4912-max"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <infoLinks>
-                <infoLink name="Traitor" id="186a-3203-e162-b23c" hidden="false" type="rule" targetId="1ba2-160d-833a-2522"/>
-                <infoLink name="Jump Packs" id="8534-0bed-8a0c-6a0c" hidden="false" type="rule" targetId="130c-4ba7-dab7-34b3"/>
-                <infoLink name="Networked Anima" id="3a78-7f10-3a73-335e" hidden="false" type="rule" targetId="0686-4de6-fc69-0deb"/>
-              </infoLinks>
-              <costs>
-                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
-                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
-              </costs>
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4f00-c4d9-c4af-2e1d" includeChildSelections="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="55b6-c4d6-fd32-071b" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="17e0-f905-60e4-4594" includeChildSelections="false"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="85fc-17b2-2459-a8db" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
       </selectionEntries>
       <constraints>
         <constraint type="min" value="0" field="54cb-1324-71d0-d324" scope="self" shared="true" id="3c72-671f-4149-ec3c" includeChildSelections="false"/>
@@ -913,6 +830,17 @@ When one of more Hits are scored against a Detachment which contains one or more
             <condition type="atLeast" value="9" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="{this} requires an even number of models" field="error">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="7" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="9" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Dedicated Transports" hidden="false" id="e1c6-44e5-023a-63fe" type="selectionEntryGroup" targetId="1a90-4df1-8562-6f2c" sortIndex="1">
@@ -925,6 +853,114 @@ When one of more Hits are scored against a Detachment which contains one or more
           </modifiers>
         </entryLink>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Harpax models" id="67b2-2310-094e-f905" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Harpax w/ Exo-planar repeaters" hidden="false" id="7cf5-33df-837e-0cfc">
+              <profiles>
+                <profile name="Harpax" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="7f08-d1b1-281c-aae4">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">6+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Traitor" id="186a-3203-e162-b23c" hidden="false" type="rule" targetId="1ba2-160d-833a-2522"/>
+                <infoLink name="Jump Packs" id="8534-0bed-8a0c-6a0c" hidden="false" type="rule" targetId="130c-4ba7-dab7-34b3"/>
+                <infoLink name="Networked Anima" id="3a78-7f10-3a73-335e" hidden="false" type="rule" targetId="0686-4de6-fc69-0deb"/>
+              </infoLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="64cf-db52-1bf6-6a58" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Exo-planar repeaters" hidden="false" id="f24c-5e45-5542-e68f">
+                  <profiles>
+                    <profile name="Exo-planar repeaters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="f109-44f4-459d-ec97">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">0</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light, Shred</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Light" id="81d7-c2d2-8a6b-faa9" hidden="false" type="rule" targetId="4f6f-3184-9172-ef3f"/>
+                    <infoLink name="Shred" id="b56c-dff4-0fe7-0a2b" hidden="false" type="rule" targetId="f9ba-cb09-cf28-f93b"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="432a-b592-b922-a393" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="417e-0d1f-6454-1e82" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Harpax w/ Harpax lascutters" hidden="false" id="f78a-28a3-b686-ab10">
+              <profiles>
+                <profile name="Harpax" typeId="6c4e-cc0f-8b44-d1ab" typeName="Detachment" hidden="false" id="f8f1-2c0d-4474-1a53">
+                  <characteristics>
+                    <characteristic name="Move" typeId="77ae-ddcc-f55a-7441">7&quot;</characteristic>
+                    <characteristic name="Sv" typeId="ddb1-4f55-6b17-7bc8">6+</characteristic>
+                    <characteristic name="CAF" typeId="b9d2-6ffb-17a1-757f">+1</characteristic>
+                    <characteristic name="Morale" typeId="8485-4ee2-6feb-d93c">-</characteristic>
+                    <characteristic name="W" typeId="b00f-3f1c-eb63-461a">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Traitor" id="ba8e-5f56-d467-ec12" hidden="false" type="rule" targetId="1ba2-160d-833a-2522"/>
+                <infoLink name="Jump Packs" id="33aa-1fec-6cd7-504b" hidden="false" type="rule" targetId="130c-4ba7-dab7-34b3"/>
+                <infoLink name="Networked Anima" id="adae-a1bd-e1a4-dd6a" hidden="false" type="rule" targetId="0686-4de6-fc69-0deb"/>
+              </infoLinks>
+              <costs>
+                <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+                <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+                <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="c54f-d237-aa07-aaae" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Harpax lascutters" hidden="false" id="4f29-ebeb-3d21-b6d7">
+                  <profiles>
+                    <profile name="Harpax lascutters" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="c3fc-de95-b426-5176">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">4&quot;</characteristic>
+                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
+                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Anti-tank, Bunker Buster</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Anti-tank" id="7ad0-c9c2-d1c9-6aaf" hidden="false" type="rule" targetId="5656-4a72-5de3-87ce"/>
+                    <infoLink name="Bunker Buster" id="aac7-3d55-3450-18d5" hidden="false" type="rule" targetId="7543-9f13-322f-a481"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b73-1db3-0ac8-fadf" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="195b-a225-cbad-bf5a" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="17e0-f905-60e4-4594" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="85fc-17b2-2459-a8db" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Scintillax &apos;Cyclops&apos; Noospheric Stalker Network" hidden="false" id="86f2-eb96-d700-b06b">
       <selectionEntries>
