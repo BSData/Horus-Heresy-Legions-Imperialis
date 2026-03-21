@@ -251,7 +251,7 @@
         <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Rhino" hidden="false" id="3279-c298-e2dc-8b55" collective="false" defaultAmount="1">
+    <selectionEntry type="model" import="true" name="Rhino" hidden="false" id="3279-c298-e2dc-8b55" collective="false" defaultAmount="">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Hunter-killer missile" hidden="false" id="008e-2f23-bbda-60d8" collective="true" sortIndex="3" publicationId="5364-464c-3309-a620">
           <profiles>
@@ -1068,8 +1068,8 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -1124,8 +1124,8 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -12048,7 +12048,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Dedicated Transports" id="5a55-8f28-ba89-29a8" hidden="false" sortIndex="">
+    <selectionEntryGroup name="Dedicated Transports" id="5a55-8f28-ba89-29a8" hidden="false">
       <selectionEntryGroups>
         <selectionEntryGroup name="Air Support" id="56e1-33ae-18de-d272" hidden="false">
           <entryLinks>
@@ -12204,7 +12204,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Rhino" id="7728-eaee-af03-66d6" hidden="false">
+        <selectionEntryGroup name="Rhino" id="7728-eaee-af03-66d6" hidden="false" defaultSelectionEntryId="none">
           <entryLinks>
             <entryLink import="true" name="Rhino" hidden="false" id="cf9d-a527-9a89-8459" type="selectionEntry" targetId="3279-c298-e2dc-8b55">
               <constraints>
@@ -12414,6 +12414,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                       </conditionGroups>
                       <conditions>
                         <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="a283-63b9-36f5-dc23" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true" includeChildSelections="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
