@@ -9532,7 +9532,7 @@
                 </modifier>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Saturnine Terminators w/ Paired plasma bombards and disruption fists" hidden="false" id="aced-ab98-496d-1d48" publicationId="a8b9-3a4f-e0a6-825c">
+            <selectionEntry type="model" import="true" name="Saturnine Terminators w/ Paired plasma bombards" hidden="false" id="aced-ab98-496d-1d48" publicationId="a8b9-3a4f-e0a6-825c">
               <infoLinks>
                 <infoLink targetId="8c1b-90b6-b3b6-09da" id="305c-56dc-bdfc-eba5" type="profile" name="Saturnine Terminators" hidden="false"/>
                 <infoLink name="Very Bulky" id="ff68-995f-bb3f-b155" hidden="false" type="rule" targetId="2769-e805-03dc-a24c"/>
@@ -9575,7 +9575,7 @@
                 </modifier>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Saturnine Terminators w/ Paired twin heavy disintegrators and disruption fists" hidden="false" id="64f1-43d4-6289-86a5" publicationId="a8b9-3a4f-e0a6-825c">
+            <selectionEntry type="model" import="true" name="Saturnine Terminators w/ Paired twin heavy disintegrators" hidden="false" id="64f1-43d4-6289-86a5" publicationId="a8b9-3a4f-e0a6-825c">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Paired twin heavy disintegrators" hidden="false" id="f51e-fa75-17cd-593e">
                   <profiles>
