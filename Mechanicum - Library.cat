@@ -1142,13 +1142,14 @@
             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
             <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
             <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
-            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Demolisher, Ignores Cover</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Barrage, Demolisher, Ignores Cover</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Demolisher" id="3a3b-b70f-0abb-9908" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
+        <infoLink name="Barrage" id="3a3b-b70f-0abb-9908" hidden="false" type="rule" targetId="862d-b036-2018-dbaf"/>
         <infoLink name="Ignores Cover" id="7631-c627-1b68-6366" hidden="false" type="rule" targetId="bff7-b88a-2145-2c63"/>
+        <infoLink name="Demolisher" id="a864-a3b3-94a0-6967" hidden="false" type="rule" targetId="788-9d12-3358-b236"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="d1c0-6f40-691e-d7be">

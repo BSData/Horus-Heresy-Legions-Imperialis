@@ -1627,7 +1627,7 @@ The range of Cortex Controller&apos;s effects for all models within the formatio
       </categoryLinks>
       <rules>
         <rule name="Dedicated Transports" id="7519-4cb0-f083-c15a" hidden="false">
-          <description>Detachments within the Formation that contain only Infantry or Walker models may be upgraded with Triaros Armoured Conveyors as Dedicated Transports.</description>
+          <description>Detachments within this Formation that contain only Infantry models may be upgraded with Triaros Armoured Conveyors as Dedicated Transports.</description>
         </rule>
       </rules>
     </forceEntry>

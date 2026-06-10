@@ -2056,34 +2056,17 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
                 <cost name="‏‏‎Transport Usage" typeId="54cb-1324-71d0-d324" value="0"/>
                 <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
               </costs>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Mole mortar" hidden="false" id="9be0-c964-1ba7-7077" collective="false">
-                  <profiles>
-                    <profile name="Mole mortar" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="bb5c-6f99-a4c9-8adc">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
-                        <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
-                        <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
-                        <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
-                        <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Burrowing</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Burrowing" id="32e0-0959-8444-ba86" hidden="false" targetId="4cf-f30a-63a4-c511" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
-                  </costs>
+              <constraints>
+                <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="85d5-61d8-7070-a227" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink targetId="9be0-c964-1ba7-7077" id="93c7-5a99-5312-82e5" type="selectionEntry" name="Mole mortar" hidden="false" collective="false">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fcee-153e-f16f-b9d1" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b3b-903a-6b84-aab3" includeChildSelections="false"/>
                   </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="85d5-61d8-7070-a227" includeChildSelections="false"/>
-              </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Auxilia Rapier w/ Quad launcher" hidden="false" id="d9a7-679a-4fe2-5a31" collective="false">
               <infoLinks>
@@ -7456,7 +7439,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Auxilia Rapier" hidden="false" id="2e7b-1114-bfe5-a505" collective="false">
+            <selectionEntry type="model" import="true" name="Auxilia Rapier w/ Laser destroyer array" hidden="false" id="2e7b-1114-bfe5-a505" collective="false">
               <infoLinks>
                 <infoLink name="Bulky" id="9fd5-e9ae-aadf-04ab" hidden="false" targetId="e8e6-1f3a-a46-9aa0" type="rule"/>
                 <infoLink name="Chain of Command" id="1e39-e07c-9fc1-af65" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
@@ -7497,7 +7480,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Auxilia Rapier" hidden="false" id="839a-1dfc-69ea-ca7d" collective="false">
+            <selectionEntry type="model" import="true" name="Auxilia Rapier w/ Mole mortar" hidden="false" id="839a-1dfc-69ea-ca7d" collective="false">
               <infoLinks>
                 <infoLink name="Bulky" id="99b5-fee6-da07-47da" hidden="false" targetId="e8e6-1f3a-a46-9aa0" type="rule"/>
                 <infoLink name="Chain of Command" id="bcc0-8a39-7439-7710" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
@@ -7513,10 +7496,10 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="4b43-9dc0-8912-a6d4" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Laser destroyer array" hidden="false" id="be47-2dfe-f061-e66b" targetId="dc7d-7b27-afb9-0ad6" type="selectionEntry" collective="false">
+                <entryLink import="true" name="Mole mortar" hidden="false" id="dc9c-d0a4-8403-c2a2" targetId="9be0-c964-1ba7-7077" type="selectionEntry" collective="false">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b6b6-c74e-74e0-bbd3" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c0f-fb1c-5ca7-ba2f" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3d3-4d3b-336d-d30d" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10d7-1d5e-8ea5-c6ac" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -7538,7 +7521,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
           </costs>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Auxilia Rapier" hidden="false" id="a272-17b0-524c-4054" collective="false">
+            <selectionEntry type="model" import="true" name="Auxilia Rapier w/ Quad launcher" hidden="false" id="a272-17b0-524c-4054" collective="false">
               <infoLinks>
                 <infoLink name="Bulky" id="c4b7-df10-adc2-aa50" hidden="false" targetId="e8e6-1f3a-a46-9aa0" type="rule"/>
                 <infoLink name="Chain of Command" id="7d19-4d6b-6b98-b5ef" hidden="false" targetId="edea-7a2c-4b66-4ba4" type="rule"/>
@@ -7554,10 +7537,10 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="9600-2d4c-31e1-a274" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Laser destroyer array" hidden="false" id="9466-9b16-fed7-371b" targetId="dc7d-7b27-afb9-0ad6" type="selectionEntry" collective="false">
+                <entryLink import="true" name="Quad launcher" hidden="false" id="961a-a4ca-cecd-c3b7" targetId="7707-40d9-a004-8286" type="selectionEntry" collective="false">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f602-af2f-2653-213a" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67ed-cd72-69e1-3dd9" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad78-8d06-ce39-5278" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3481-029b-8c07-0e68" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -9805,6 +9788,25 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
         <infoLink name="Point Defence" id="6aef-caf7-b6ed-cb1a" hidden="false" type="rule" targetId="f921-10ce-33f7-19fd"/>
         <infoLink name="Light AT" id="ec89-8b8c-ba14-8724" hidden="false" type="rule" targetId="c731-70f4-ffcd-4ff7"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mole mortar" hidden="false" id="9be0-c964-1ba7-7077" collective="false">
+      <profiles>
+        <profile name="Mole mortar" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="bb5c-6f99-a4c9-8adc">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Burrowing</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Burrowing" id="32e0-0959-8444-ba86" hidden="false" targetId="4cf-f30a-63a4-c511" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>

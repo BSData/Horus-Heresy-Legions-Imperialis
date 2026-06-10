@@ -195,19 +195,13 @@ In addition, Hits scored by a weapon with this Trait cannot be allocated to Void
     <rule id="0462-6759-307e-3004" name="Deep Strike" publicationId="559c-6588-c3b1-b0e5" hidden="false" page="2">
       <description>During deployment, if all models within a Detachment have the Deep Strike special rule, then the Detachment can be placed in Reserve instead of being deployed as normal. Detachments with the Deep Strike special rule in Reserve can only be issued the Advance Order or March Order.
 
-When a Detachment with the Deep Strike special rule that is in Reserve is activated in any Movement phase other than the first, the controlling player may choose to leave it in Reserve or Deep Strike the Detachment. When a Detachment Deep Strikes, the controlling player places a single model from that Detachment anywhere on the battlefield at least 2&quot; from an enemy model. They then Scatter that model D6&quot;. If the model scatters off the battlefield, into an area of Impassable terrain or a Structure then that model, and the model&apos;s Detachment, is destroyed. If it scatters within 1&quot; of an enemy model, it must be moved the shortest possible distance so it is no longer within 1&quot; of an enemy model.
+When a Detachment with the Deep Strike special rule that is in Reserve is activated in any Movement phase other than the first, the controlling player may choose to leave it in Reserve or Deep Strike the Detachment. When a Detachment Deep Strikes, the controlling player places a single model from that Detachment anywhere on the battlefield at least 2&quot; from an enemy model. They then Scatter that model D6&quot;. If the model scatters off the battlefield, into an area of Impassable terrain or onto a Structure then that model, and the model’s Detachment, are destroyed. If it scatters within 1&quot; of another model or onto an Objective marker, it must be moved the shortest possible distance so it is no longer within 1&quot; of any other models or on an Objective marker.
 
 Once scattered, any remaining models within the same Detachment are placed on the battlefield within 2&quot; of the already placed model. A model cannot be placed in an area of Impassable terrain or overlapping a Structure, not can it be placed within 1&quot; of any enemy model. Any model that cannot be placed in this manner is destroyed. Once a Detachment has Deep Striked, it may complete its activation as normal (i.e., it may move during the Movement phase and/or fire during the Combat phase, etc.).
 
 Some Detachments have both the Deep Strike and Transport (X) special rule. If another Detachment is loaded into the Transport model during deployment, that Detachment is kept in Reserve alongside the Transport model. When the Transport model is set up via Deep Strike, the Embarked model then immediately Disembarks and can then be activated as normal later in the phase.
 
-
-An Overwatch called against a Detachment that has Deep
-Striked is resolved after all Models have been set up, and
-all other effects of that Deep Strike have been resolved,
-including Disembarking from Models with the Transport
-(X) special rule and the effects of the Orbital Assault
-special rule.</description>
+An Overwatch called against a Detachment that has Deep Striked is resolved after all Models have been set up, and all other effects of that Deep Strike have been resolved, including Disembarking from Models with the Transport (X) special rule and the effects of the Orbital Assault special rule.</description>
     </rule>
     <rule id="d6b1-1b69-a07c-3ddd" name="Implacable" publicationId="c1b8-2180-635c-14cd" hidden="false" page="90">
       <description>A Detachment which contains one or more models with the Implacable special rule does not take Morale checks when they lose a Combat. Instead, the controlling player may choose if the Detachment Withdraws or not. An Engaged Implacable Detachment that does not Withdraw remains Engaged; if no models in the Detachment are in base to base contact with an enemy model, the Detachment does not move and is no longer Engaged.</description>
@@ -435,14 +429,9 @@ If a weapon with the Saturation Fire trait also has the Arc (X) trait, then only
       <description>Hits caused by a weapon with the Shieldbane trait can be allocated to Void Shields, even if they normally could not be (e.g., because the weapon&apos;s AP is 0 or worse).</description>
     </rule>
     <rule id="495a-71fc-de48-96a" name="Shock Pulse" publicationId="559c-6588-c3b1-b0e5" hidden="false" page="2">
-      <description>If one or more Hits are scored against a Vehicle,
-Super-heavy Vehicle, Knight or Titan Detachment by a
-weapon with the Shock Pulse trait:
-• The next time that Detachment moves, halve the
-Movement characteristic of all models within
-that Detachment.
-• The next time that Detachment fires, it can only fire
-with a maximum of one weapon.
+      <description>If one or more Hits are scored against a Vehicle, Super-heavy Vehicle, Knight or Titan Detachment by a weapon with the Shock Pulse trait:
+• The next time that Detachment moves, halve the Movement characteristic of all models within that Detachment.
+• The next time that Detachment fires, it can only fire with a maximum of one weapon per model.
 
 In addition, each Hit scored by a weapon with Shock Pulse that is allocated to a Void Shield decreases the Void Shield level by 2 instead of 1.</description>
     </rule>
