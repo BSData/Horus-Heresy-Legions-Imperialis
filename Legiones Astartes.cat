@@ -12473,6 +12473,13 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="false" id="9a23-dbae-023f-f168"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="4" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="b616-3ee9-825e-2b17" shared="true" childName="Legion Terminator Detachment"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <modifiers>
