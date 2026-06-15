@@ -1518,7 +1518,7 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="self" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="self" childId="2e8d-9082-ab37-c4cd" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="self" childId="2e8d-9082-ab37-c4cd" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1553,30 +1553,15 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="4" field="1adb-e919-2705-153a">
+        <modifier type="set" value="1" field="1adb-e919-2705-153a">
           <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="self" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="self" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="self" childId="2e30-7078-712d-4c9a" shared="true" includeChildSelections="true"/>
+              </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="set" value="1" field="1adb-e919-2705-153a">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="self" childId="ed30-34c3-cddd-7a9f" shared="true" includeChildSelections="true"/>
-          </conditions>
         </modifier>
       </modifiers>
       <entryLinks>
@@ -12120,6 +12105,11 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" value="4" field="54cb-1324-71d0-d324">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="b616-3ee9-825e-2b17" shared="true" childName="Legion Terminator Detachment"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </entryLink>
