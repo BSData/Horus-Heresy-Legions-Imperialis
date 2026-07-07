@@ -4494,7 +4494,6 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
             </infoLink>
           </infoLinks>
           <costs>
-            <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="90"/>
             <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
             <cost name="Break Point" typeId="5312-855-beda-23c1" value="0.5"/>
           </costs>
@@ -4564,7 +4563,7 @@ Core Detachment slots in this Support formation may be filled by Core Detachment
         </modifier>
       </modifiers>
       <costs>
-        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="10"/>
+        <cost name="‏‏‎‏points" typeId="ee95-a20e-f9ff-e2c2" value="100"/>
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
         <cost name="Break Point" typeId="5312-855-beda-23c1" value="0"/>
       </costs>
