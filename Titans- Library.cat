@@ -361,7 +361,7 @@
                   <profiles>
                     <profile name="Ursus claw" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ad82-8686-ca7e-1494">
                       <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">10&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
                         <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
                         <characteristic name="AP" typeId="3932-ca12-de16-c1b7">SP</characteristic>
@@ -384,7 +384,7 @@
                   <profiles>
                     <profile name="Natrix shock lance" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="6e4e-2128-040a-80ad">
                       <characteristics>
-                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">6&quot;</characteristic>
+                        <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">8&quot;</characteristic>
                         <characteristic name="Dice" typeId="e416-76d6-5762-ed21">1</characteristic>
                         <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">2+</characteristic>
                         <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
@@ -784,9 +784,19 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c993-1d03-1439-fabe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
+            <entryLink targetId="ada0-d199-28af-1b36" id="19fd-03fd-ee33-4622" type="selectionEntry" name="Reaver graviton obliterator" hidden="false" collective="false">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8e4e-2307-c179-9323" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
             <entryLink import="true" name="Reaver melta cannon" hidden="false" id="651b-1cf8-a2d8-e7e2" collective="false" targetId="5d2a-454f-b448-70dc" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="71cd-1275-3fbf-c9a0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink targetId="961e-b940-7dd5-1fb9" id="f809-81a1-993f-006a" type="selectionEntry" name="Reaver volkite annihilator" hidden="false" collective="false">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dd47-53f2-00ad-596a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Reaver volcano cannon" hidden="false" id="4dbf-0a6f-2633-008e" collective="false" targetId="8bc3-4da8-b1e0-b072" type="selectionEntry">
@@ -1019,6 +1029,16 @@
             <entryLink import="true" name="Reaver volcano cannon" hidden="false" id="dd02-5b87-1fe1-cb40" collective="false" targetId="8bc3-4da8-b1e0-b072" type="selectionEntry">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3d91-dc4a-662f-b937" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Reaver graviton obliterator" hidden="false" id="e0d4-aac9-0d87-adcf" targetId="ada0-d199-28af-1b36" type="selectionEntry" collective="false">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4212-be37-8af9-c9ab" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Reaver volkite annihilator" hidden="false" id="8002-3002-72d7-4006" targetId="961e-b940-7dd5-1fb9" type="selectionEntry" collective="false">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ab2f-1cbc-36bf-b904" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1585,7 +1605,7 @@
       <profiles>
         <profile name="Plasma blastgun" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="066b-b1a5-6c98-9b30">
           <characteristics>
-            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">20&quot;</characteristic>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">25&quot;</characteristic>
             <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
             <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
             <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
@@ -1683,7 +1703,7 @@
         <profile name="Reaver Vulcan mega-bolter" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="19d8-093b-9bf7-0459">
           <characteristics>
             <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">22&quot;</characteristic>
-            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">9</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">10</characteristic>
             <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">5+</characteristic>
             <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-1</characteristic>
             <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Light AT, Rapid Fire, Shieldbane</characteristic>
@@ -1728,6 +1748,60 @@
         <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reaver volkite annihilator" hidden="false" id="961e-b940-7dd5-1fb9" collective="false">
+      <profiles>
+        <profile name="Reaver volkite annihilator" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="5f56-b8ff-97aa-5411">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Beam, Deflagrate, Light AT, Shieldbane</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Light AT" id="b597-10d9-db97-88d9" hidden="false" targetId="c731-70f4-ffcd-4ff7" type="rule"/>
+        <infoLink name="Arc (Front/Rear)" id="c3af-6028-03e7-b173" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+          <modifiers>
+            <modifier type="set" value="Arc (Front)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Beam" id="dd2d-9eab-f6c4-860b" hidden="false" targetId="2176-feaf-f8c2-f95a" type="rule"/>
+        <infoLink name="Deflagrate" id="2a16-e3dc-cd0a-0a95" hidden="false" targetId="711e-2910-b797-71a8" type="rule"/>
+        <infoLink name="Shieldbane" id="04ae-3d41-b57b-6e37" hidden="false" targetId="8208-8da0-3822-65da" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reaver graviton obliterator" hidden="false" id="ada0-d199-28af-1b36" collective="false">
+      <profiles>
+        <profile name="Reaver graviton obliterator" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="ec53-825a-1cf2-37ba">
+          <characteristics>
+            <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">30&quot;</characteristic>
+            <characteristic name="Dice" typeId="e416-76d6-5762-ed21">2</characteristic>
+            <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">-</characteristic>
+            <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
+            <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Demolisher, Graviton Pulse</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Graviton Pulse" id="8f2d-b027-0b56-c0c9" hidden="false" targetId="5c36-e0d9-ba67-8110" type="rule"/>
+        <infoLink name="Arc (Front/Rear)" id="647f-bdc5-3266-0c45" hidden="false" targetId="c48c-8f45-e290-9940" type="rule">
+          <modifiers>
+            <modifier type="set" value="Arc (Front)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Demolisher" id="b151-1b8f-ef28-cc12" hidden="false" targetId="788-9d12-3358-b236" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="‏‏‎‏‏‎ ‎points" typeId="ee95-a20e-f9ff-e2c2" value="0"/>
+        <cost name="‏‏‎Transport" typeId="54cb-1324-71d0-d324" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Warlord Arm Weapons" id="3cdd-30c2-95e4-5260" hidden="false" collective="false" import="true">
@@ -1739,7 +1813,7 @@
           <profiles>
             <profile name="Sunfury plasma annihilator" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="acba-1bdb-0378-07a0">
               <characteristics>
-                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">25&quot;</characteristic>
+                <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">30&quot;</characteristic>
                 <characteristic name="Dice" typeId="e416-76d6-5762-ed21">3</characteristic>
                 <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">3+</characteristic>
                 <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-3</characteristic>
@@ -1767,7 +1841,7 @@
             <profile name="Volkite destructor" typeId="ac1f-57b2-e1a8-3b2a" typeName="Weapon" hidden="false" id="d2af-dcfc-f83c-b1a0">
               <characteristics>
                 <characteristic name="Range" typeId="9b59-b345-bfe2-c99b">16&quot;</characteristic>
-                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">4</characteristic>
+                <characteristic name="Dice" typeId="e416-76d6-5762-ed21">5</characteristic>
                 <characteristic name="To Hit" typeId="c441-9eb2-b00a-5c8c">4+</characteristic>
                 <characteristic name="AP" typeId="3932-ca12-de16-c1b7">-2</characteristic>
                 <characteristic name="Traits" typeId="d0f2-61ea-138a-81af">Arc (Front), Beam, Deflagrate, Light AT, Shieldbane</characteristic>
