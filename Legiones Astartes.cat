@@ -12525,6 +12525,7 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="6cda-5812-cf52-3fee" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="or">
@@ -12546,13 +12547,16 @@ Knights, Titans and models with a Morale characteristic of &quot;-&quot; are una
             <modifier type="set" value="1" field="05a1-972a-0963-c42f">
               <conditionGroups>
                 <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
-                  </conditions>
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="620f-8488-c57a-b870" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="root-entry" childId="b616-3ee9-825e-2b17" shared="true" childName="Legion Terminator Detachment"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3cfc-34c7-6d10-10f0" shared="true"/>
                         <condition type="notInstanceOf" value="1" field="selections" scope="root-entry" childId="b616-3ee9-825e-2b17" shared="true" childName="Legion Terminator Detachment"/>
                       </conditions>
                     </conditionGroup>
